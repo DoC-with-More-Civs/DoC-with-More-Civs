@@ -129,7 +129,7 @@ tAsiaBR = (138, 64)
 
 
 # third English goal: Cape to Cairo Railway by 1920 AD
-lNorthernEgypt = [(66, 36), (66, 37), (67, 36), (68, 36), (69, 36), (70, 36), (71, 36)]
+lNorthernEgypt = [(76, 44), (77, 44), (78, 44), (79, 44), (80, 44), (81, 44)]
 
 # first Russian goal: found seven cities in Siberia by 1700 AD and build the Trans-Siberian Railway by 1920 AD
 tSiberiaTL = (97, 66)
@@ -1277,7 +1277,7 @@ def checkTurn(iGameTurn, iPlayer):
 				lose(iEngland, 2)
 				
 		if isPossible(iEngland, 2):
-			if isConnectedByRailroad(iEngland, (63, 10), lNorthernEgypt):
+			if isConnectedByRailroad(iEngland, (72, 11), lNorthernEgypt):
 				if gc.getGame().getGameTurn() >= getTurnForYear(1860):
 					win(iEngland, 2)
 				else:
@@ -2234,8 +2234,8 @@ def onCityBuilt(iPlayer, city):
 			bNAmerica = getNumCitiesInRegions(iEngland, lNorthAmerica) >= 5
 			bSCAmerica = getNumCitiesInRegions(iEngland, lSouthAmerica) >= 3
 			bAfrica = getNumCitiesInRegions(iEngland, lAfrica) >= 4
-			bAsia = getNumCitiesInRegions(iEngland, lAsia) >= 5
-			bOceania = getNumCitiesInRegions(iEngland, lOceania) >= 3
+			bAsia = getNumCitiesInRegions(iEngland, lAsia) >= 6
+			bOceania = getNumCitiesInRegions(iEngland, lOceania) >= 6
 			if bNAmerica and bSCAmerica and bAfrica and bAsia and bOceania:
 				win(iEngland, 0)
 
@@ -5049,7 +5049,7 @@ def getUHVHelp(iPlayer, iGoal):
 			bSunset = ((iNAmerica >= 5) and (iSCAmerica >= 3) and (iOceania >= 6) and (iAfrica) >= 4 and (iAsia >= 6)) or gc.getGame().getGameTurn() >= getTurnForYear(1860)
 			sunsetText = localText.getText("TXT_KEY_VICTORY_ENGLAND_SUNSET", (iSunset, 24))
 			if bSunset: sunsetText = localText.getText("TXT_KEY_VICTORY_ENGLAND_SUNSET_COMPLETE", ())
-			bCapetoCairo = isConnectedByRailroad(iEngland, (63, 10), lNorthernEgypt)
+			bCapetoCairo = isConnectedByRailroad(iEngland, (72, 11), lNorthernEgypt)
 			aHelp.append(getIcon(bSunset) + sunsetText + ' ' + getIcon(bCapetoCairo) + localText.getText("TXT_KEY_VICTORY_CAPE_TO_CAIRO_RAILWAY", ()))
 
 	elif iPlayer == iHolyRome:
