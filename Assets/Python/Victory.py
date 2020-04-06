@@ -128,6 +128,9 @@ tAsiaTL = (90, 24)
 tAsiaBR = (138, 64)
 
 
+# third English goal: Cape to Cairo Railway by 1920 AD
+lNorthernEgypt = [(66, 36), (66, 37), (67, 36), (68, 36), (69, 36), (70, 36), (71, 36)]
+
 # first Russian goal: found seven cities in Siberia by 1700 AD and build the Trans-Siberian Railway by 1920 AD
 tSiberiaTL = (97, 66)
 tSiberiaBR = (148, 78)
@@ -149,8 +152,12 @@ tMediterraneanExceptions = ((81,53),(81,54),(82,52),(82,53),(82,54),(82,55),(83,
 lAndeanCoast = [(26, 29), (26, 31), (27, 27), (27, 26), (27, 28), (27, 29), (27, 30), (28, 24), (29, 24), (28, 25), (29, 23), (30, 22), (31, 22), (32, 21), (33, 20), (33, 19), (33, 18), (33, 17), (33, 16), (33, 15), (33, 14), (33, 13)]
 
 # first Swedish goal: Control the Baltic Coast, the Kattegat and the Skagerak in 1700 AD
-lSkagerrak = [(59, 57), (59, 56), (60, 56), (62, 56), (62, 57), (61, 58), (61, 59), (60, 59), (59, 59)]
-lBalticSea = [(59, 56), (59, 55), (60, 56), (59, 54), (60, 54), (61, 54), (62, 54), (63, 54), (64, 54), (65, 54), (65, 55), (65, 56), (66, 56), (66, 57), (67, 57), (68, 57), (69, 57), (69, 58), (69, 59), (68, 59), (67, 59), (66, 59), (66, 60), (66, 61), (66, 62), (65, 62), (64, 62), (64, 61), (63, 61), (63, 60), (63, 59), (63, 58), (63, 57), (62, 56), (62, 57)]
+tSkagerrakTL = (67, 65)
+tSkagerrakBR = (71, 72)
+lSkagerrak = utils.getPlotList(tSkagerrakTL, tSkagerrakBR)
+tBalticSeaTL = (72, 65)
+tBalticSeaBR = (79, 75)
+lBalticSea = utils.getPlotList(tBalticSeaTL, tBalticSeaBR)
 
 # third Incan goal: control 60% of South America in 1700 AD
 # second Colombian goal: control South America in 1920 AD
@@ -242,8 +249,10 @@ tSubSaharaBR = (89, 32)
 tSubSaharaExceptions = ((61, 31), (61, 32))
 
 # second Kievan Rus goal: control a continuous empire from the Barents Sea to the Mediterranean Sea in 1400 AD
-lBarents = [(63, 64), (65, 64),  (65, 65), (66, 65), (67, 65), (67, 64), (68, 64), (69, 64),(70, 63), (69, 63), (68, 63), (68, 62), (68, 61), (69, 61), (70, 61), (70, 60), (71, 60), (72, 60), (72, 61), (72, 62), (73, 62), (73, 61), (74, 61), (75, 61), (75, 62), (76, 62), (77, 62), (78, 62), (78, 63), (79, 62)]
-tMediterraneanCoastExceptions = ((51,36),(51,46),(52,46),(53,46),(53,47),(67,47),(67,46),(73,44),(73,45),(72,45),(71,45),(71,44),(70,44),(73,36),(51, 42),(51, 43),(51, 44),(51, 45),(52, 36),(52, 37),(52, 42),(52, 43),(52, 44),(52, 45),(53, 36),(53, 37),(53, 43),(53, 44),(53, 45),(54, 36),(54, 37),(54, 45),(54, 46),(54, 47),(55, 36),(55, 37),(55, 38),(55, 47),(56, 36),(56, 37),(56, 38),(56, 47),(57, 36),(57, 37),(57, 38),(57, 47),(58, 36),(58, 47),(59, 36),(59, 47),(60, 36),(64, 47),(65, 45),(65, 46),(65, 47),(66, 45),(66, 46),(66, 47),(71, 43),(72, 43),(72, 44),(73, 43))
+tBarentsTL = (82, 72)
+tBarentsBR = (91, 77)
+lBarents = utils.getPlotList(tBarentsTL, tBarentsBR)
+tMediterraneanCoastExceptions = ((81,53),(81,54),(82,52),(82,53),(82,54),(82,55),(83,52),(83,53),(83,54),(83,55),(84,53),(84,54),(84,55),(85,53))
 lMediterraneanCoast = utils.getPlotList(tMediterraneanTL, tMediterraneanBR, tMediterraneanCoastExceptions)
 
 tDanubeTL = (73, 57)
@@ -1243,23 +1252,45 @@ def checkTurn(iGameTurn, iPlayer):
 		
 	elif iPlayer == iEngland:
 	
-		# first goal: colonize every continent by 1730 AD
-		if iGameTurn == getTurnForYear(1730):
-			expire(iEngland, 0)
-			
-		# second goal: control a total of 25 frigates and ships of the line and sink 50 enemy ships by 1800 AD
-		if isPossible(iEngland, 1):
+		# first goal: control a total of 25 frigates and ships of the line and sink 50 enemy ships by 1815 AD
+		if isPossible(iEngland, 0):
 			iEnglishNavy = 0
 			iEnglishNavy += pEngland.getUnitClassCount(gc.getUnitInfo(iFrigate).getUnitClassType())
 			iEnglishNavy += pEngland.getUnitClassCount(gc.getUnitInfo(iShipOfTheLine).getUnitClassType())
 			
 			if iEnglishNavy >= 25 and data.iEnglishSinks >= 50:
-				win(iEngland, 1)
+				win(iEngland, 0)
 		
-		if iGameTurn == getTurnForYear(1800):
-			expire(iEngland, 1)
+		if iGameTurn == getTurnForYear(1815):
+			expire(iEngland, 0)
 			
-		# third goal: be the first to enter the Industrial and Modern eras
+		# second goal: be the first to discover a number of Industrial techs
+
+		# third goal: colonize every continent by 1860 AD and build the Cape to Cairo Railway by 1920 AD
+		if iGameTurn == getTurnForYear(1860):
+			bNAmerica = getNumCitiesInArea(iEngland, utils.getPlotList(tNorthAmericaTL, tNorthAmericaBR)) < 5
+			bSCAmerica = getNumCitiesInArea(iEngland, utils.getPlotList(tSouthCentralAmericaTL, tSouthCentralAmericaBR)) < 3
+			bAfrica = getNumCitiesInArea(iEngland, utils.getPlotList(tAfricaTL, tAfricaBR)) < 4
+			bAsia = getNumCitiesInArea(iEngland, utils.getPlotList(tAsiaTL, tAsiaBR)) < 6
+			bOceania = getNumCitiesInArea(iEngland, utils.getPlotList(tOceaniaTL, tOceaniaBR)) < 6
+			if bNAmerica or bSCAmerica or bAfrica or bAsia or bOceania:
+				lose(iEngland, 2)
+				
+		if isPossible(iEngland, 2):
+			if isConnectedByRailroad(iEngland, (63, 10), lNorthernEgypt):
+				if gc.getGame().getGameTurn() >= getTurnForYear(1860):
+					win(iEngland, 2)
+				else:
+					bNAmerica = getNumCitiesInArea(iEngland, utils.getPlotList(tNorthAmericaTL, tNorthAmericaBR)) >= 5
+					bSCAmerica = getNumCitiesInArea(iEngland, utils.getPlotList(tSouthCentralAmericaTL, tSouthCentralAmericaBR)) >= 3
+					bAfrica = getNumCitiesInArea(iEngland, utils.getPlotList(tAfricaTL, tAfricaBR)) >= 4
+					bAsia = getNumCitiesInArea(iEngland, utils.getPlotList(tAsiaTL, tAsiaBR)) >= 6
+					bOceania = getNumCitiesInArea(iEngland, utils.getPlotList(tOceaniaTL, tOceaniaBR)) >= 6
+					if bNAmerica and bSCAmerica and bAfrica and bAsia and bOceania:
+						win(iEngland, 2)
+
+		if iGameTurn == getTurnForYear(1920):
+			expire(iEngland, 2)
 		
 	elif iPlayer == iHolyRome:
 	
@@ -2258,8 +2289,8 @@ def onCityAcquired(iPlayer, iOwner, city, bConquest):
 			bNAmerica = getNumCitiesInRegions(iEngland, lNorthAmerica) >= 5
 			bSCAmerica = getNumCitiesInRegions(iEngland, lSouthAmerica) >= 3
 			bAfrica = getNumCitiesInRegions(iEngland, lAfrica) >= 4
-			bAsia = getNumCitiesInRegions(iEngland, lAsia) >= 5
-			bOceania = getNumCitiesInRegions(iEngland, lOceania) >= 3
+			bAsia = getNumCitiesInRegions(iEngland, lAsia) >= 6
+			bOceania = getNumCitiesInRegions(iEngland, lOceania) >= 6
 			if bNAmerica and bSCAmerica and bAfrica and bAsia and bOceania:
 				win(iEngland, 0)
 				
@@ -2311,14 +2342,11 @@ def onTechAcquired(iPlayer, iTech):
 				if not isFirstDiscoveredPossible(iJapan, iGlobal, 8) or not isFirstDiscoveredPossible(iJapan, iDigital, 8):
 					lose(iJapan, 2)
 				
-		# third English goal: be the first to discover ten Renaissance and ten Industrial technologies
-		if isPossible(iEngland, 2):
-			if iEra in [iRenaissance, iIndustrial]:
-				if countFirstDiscovered(iPlayer, iRenaissance) >= 8 and countFirstDiscovered(iPlayer, iIndustrial) >= 8:
-					if iPlayer == iEngland: win(iEngland, 2)
-					else: lose(iEngland, 2)
-				if not isFirstDiscoveredPossible(iEngland, iRenaissance, 8) or not isFirstDiscoveredPossible(iEngland, iIndustrial, 8):
-					lose(iEngland, 2)
+		# second English goal: be the first to discover ten Industrial technologies
+		if isPossible(iEngland, 1):
+			if countFirstDiscovered(iPlayer, iIndustrial) >= 10:
+				if iPlayer == iEngland: win(iEngland, 1)
+				else: lose(iEngland, 1)
 				
 		# third German goal: be the first to discover ten Industrial and ten Global technologies
 		if isPossible(iGermany, 2):
@@ -2592,9 +2620,9 @@ def onCombatResult(pWinningUnit, pLosingUnit):
 	pLosingUnitInfo = gc.getUnitInfo(pLosingUnit.getUnitType())
 	iDomainSea = DomainTypes.DOMAIN_SEA
 	
-	# second English goal: control a total of 25 frigates and ships of the line and sink 50 ships in 1800 AD
+	# first English goal: control a total of 25 frigates and ships of the line and sink 50 ships by 1815 AD
 	if iWinningPlayer == iEngland:
-		if isPossible(iEngland, 1):
+		if isPossible(iEngland, 0):
 			if pLosingUnitInfo.getDomainType() == iDomainSea:
 				data.iEnglishSinks += 1
 				
@@ -5000,24 +5028,29 @@ def getUHVHelp(iPlayer, iGoal):
 
 	elif iPlayer == iEngland:
 		if iGoal == 0:
-			iNAmerica = getNumCitiesInRegions(iEngland, lNorthAmerica)
-			iSCAmerica = getNumCitiesInRegions(iEngland, lSouthAmerica)
-			iAfrica = getNumCitiesInRegions(iEngland, lAfrica)
-			iAsia = getNumCitiesInRegions(iEngland, lAsia)
-			iOceania = getNumCitiesInRegions(iEngland, lOceania)
-			aHelp.append(getIcon(iNAmerica >= 5) + localText.getText("TXT_KEY_VICTORY_ENGLAND_CONTROL_NORTH_AMERICA", (iNAmerica, 5)) + ' ' + getIcon(iAsia >= 5) + localText.getText("TXT_KEY_VICTORY_ENGLAND_CONTROL_ASIA", (iAsia, 5)) + ' ' + getIcon(iAfrica >= 4) + localText.getText("TXT_KEY_VICTORY_ENGLAND_CONTROL_AFRICA", (iAfrica, 4)))
-			aHelp.append(getIcon(iSCAmerica >= 3) + localText.getText("TXT_KEY_VICTORY_ENGLAND_CONTROL_SOUTH_AMERICA", (iSCAmerica, 3)))
-			aHelp.append(getIcon(iOceania >= 3) + localText.getText("TXT_KEY_VICTORY_ENGLAND_CONTROL_OCEANIA", (iOceania, 3)))
-		elif iGoal == 1:
 			iEnglishNavy = 0
 			iEnglishNavy += pEngland.getUnitClassCount(gc.getUnitInfo(iFrigate).getUnitClassType())
 			iEnglishNavy += pEngland.getUnitClassCount(gc.getUnitInfo(iShipOfTheLine).getUnitClassType())
 			iEnglishSinks = data.iEnglishSinks
 			aHelp.append(getIcon(iEnglishNavy >= 25) + localText.getText("TXT_KEY_VICTORY_NAVY_SIZE", (iEnglishNavy, 25)) + ' ' + getIcon(iEnglishSinks >= 50) + localText.getText("TXT_KEY_VICTORY_ENEMY_SHIPS_SUNK", (iEnglishSinks, 50)))
-		elif iGoal == 2:
-			iRenaissanceTechs = countFirstDiscovered(iEngland, iRenaissance)
+		elif iGoal == 1:
 			iIndustrialTechs = countFirstDiscovered(iEngland, iIndustrial)
-			aHelp.append(getIcon(iRenaissanceTechs >= 8) + localText.getText("TXT_KEY_VICTORY_TECHS_FIRST_DISCOVERED", (gc.getEraInfo(iRenaissance).getText(), iRenaissanceTechs, 8)) + ' ' + getIcon(iIndustrialTechs >= 8) + localText.getText("TXT_KEY_VICTORY_TECHS_FIRST_DISCOVERED", (gc.getEraInfo(iIndustrial).getText(), iIndustrialTechs, 8)))
+			aHelp.append(getIcon(iIndustrialTechs >= 10) + localText.getText("TXT_KEY_VICTORY_TECHS_FIRST_DISCOVERED", (gc.getEraInfo(iIndustrial).getText(), iIndustrialTechs, 10)))
+		elif iGoal == 2:
+			iNAmerica = getNumCitiesInArea(iEngland, utils.getPlotList(tNorthAmericaTL, tNorthAmericaBR))
+			iSCAmerica = getNumCitiesInArea(iEngland, utils.getPlotList(tSouthCentralAmericaTL, tSouthCentralAmericaBR))
+			iAfrica = getNumCitiesInArea(iEngland, utils.getPlotList(tAfricaTL, tAfricaBR))
+			iAsia = getNumCitiesInArea(iEngland, utils.getPlotList(tAsiaTL, tAsiaBR))
+			iOceania = getNumCitiesInArea(iEngland, utils.getPlotList(tOceaniaTL, tOceaniaBR))
+			aHelp.append(getIcon(iNAmerica >= 5) + localText.getText("TXT_KEY_VICTORY_ENGLAND_CONTROL_NORTH_AMERICA", (iNAmerica, 5)) + ' ' + getIcon(iAsia >= 6) + localText.getText("TXT_KEY_VICTORY_ENGLAND_CONTROL_ASIA", (iAsia, 6)) + ' ' + getIcon(iAfrica >= 4) + localText.getText("TXT_KEY_VICTORY_ENGLAND_CONTROL_AFRICA", (iAfrica, 4)))
+			aHelp.append(getIcon(iSCAmerica >= 3) + localText.getText("TXT_KEY_VICTORY_ENGLAND_CONTROL_SOUTH_AMERICA", (iSCAmerica, 3)))
+			aHelp.append(getIcon(iOceania >= 6) + localText.getText("TXT_KEY_VICTORY_ENGLAND_CONTROL_OCEANIA", (iOceania, 6)))
+			iSunset = iNAmerica + iSCAmerica + iAfrica + iAsia + iOceania
+			bSunset = ((iNAmerica >= 5) and (iSCAmerica >= 3) and (iOceania >= 6) and (iAfrica) >= 4 and (iAsia >= 6)) or gc.getGame().getGameTurn() >= getTurnForYear(1860)
+			sunsetText = localText.getText("TXT_KEY_VICTORY_ENGLAND_SUNSET", (iSunset, 24))
+			if bSunset: sunsetText = localText.getText("TXT_KEY_VICTORY_ENGLAND_SUNSET_COMPLETE", ())
+			bCapetoCairo = isConnectedByRailroad(iEngland, (63, 10), lNorthernEgypt)
+			aHelp.append(getIcon(bSunset) + sunsetText + ' ' + getIcon(bCapetoCairo) + localText.getText("TXT_KEY_VICTORY_CAPE_TO_CAIRO_RAILWAY", ()))
 
 	elif iPlayer == iHolyRome:
 		if iGoal == 0:
