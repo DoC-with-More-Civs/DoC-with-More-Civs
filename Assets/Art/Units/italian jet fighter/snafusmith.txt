@@ -1,0 +1,15 @@
+This unit was created by Snafusmith from Civfanatics.com.  
+
+
+[QUOTE]The Eurofighter Typhoon is a twin-engine canard-delta wing multirole aircraft designed and built by a consortium of three companies: Alenia Aeronautica, BAE Systems, and EADS working through a holding company Eurofighter GmbH, which was formed in 1986. The project is managed by the NATO Eurofighter and Tornado Management Agency, which acts as the prime customer.
+
+The series production of the Eurofighter Typhoon is underway, and the aircraft is being procured under three separate contracts (named "tranches"), each for aircraft with generally improved capabilities. The aircraft has entered service with the British Royal Air Force, the German Luftwaffe, the Italian Air Force, the Spanish Air Force and the Austrian Air Force. - Wikipedia[/QUOTE]
+
+This download includes skins for Austria (Holy Rome), Britain, Germany, Italy, and Spain.
+
+This unit uses the standard jet fighter animations.  Buttons are included for each skin, when your adding the files the skin should be called, 'Eurofighter.dds.'
+
+This version of the Eurofighter is not the same as the earlier one floating around the forums - I'd created that a couple years back when I was still working on Modern Warfare for Warlords.  This has a nearly new model and all new skin maps and textures.  The polycount is about 2/3 of what the old one was.  Use this one!
+
+ENJOY!
+-Snafusmith

@@ -1,0 +1,247 @@
+
+
+ArtDefinesUnit XML is below:
+
+<UnitArtInfo>
+			<Type>ART_DEF_UNIT_SPY_MOD_EURO</Type>
+			<Button>,Art/Interface/Buttons/TechTree/Corporation.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,12</Button>
+			<fScale>0.46</fScale>
+			<fInterfaceScale>1.1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/CD/Spy/MOD_EURO/Great_Spy_Modern_FX.nif</NIF>
+			<KFM>Art/Units/Great_Spy_Modern/Great_Spy_Modern.kfm</KFM>
+			<SHADERNIF>Art/CD/Spy/MOD_EURO/Great_Spy_Modern_FX.nif</SHADERNIF>
+			<ShadowDef>
+			<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+			<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+			<fShadowScale>0.8</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+			<AudioRunTypeLoop/>
+			<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo> 
+<UnitArtInfo>
+			<Type>ART_DEF_UNIT_SPY_MOD_AFRICAN</Type>
+			<Button>,Art/Interface/Buttons/TechTree/Corporation.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,12</Button>
+			<fScale>0.46</fScale>
+			<fInterfaceScale>1.1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/CD/Spy/MOD_AFRICAN/Great_Spy_Modern_FX.nif</NIF>
+			<KFM>Art/Units/Great_Spy_Modern/Great_Spy_Modern.kfm</KFM>
+			<SHADERNIF>Art/CD/Spy/MOD_AFRICAN/Great_Spy_Modern_FX.nif</SHADERNIF>
+			<ShadowDef>
+			<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+			<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+			<fShadowScale>0.8</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+			<AudioRunTypeLoop/>
+			<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo> 
+<UnitArtInfo>
+			<Type>ART_DEF_UNIT_SPY_MOD_ARAB</Type>
+			<Button>,Art/Interface/Buttons/TechTree/Corporation.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,12</Button>
+			<fScale>0.46</fScale>
+			<fInterfaceScale>1.1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/CD/Spy/MOD_ARAB/Great_Spy_Modern_FX.nif</NIF>
+			<KFM>Art/Units/Great_Spy_Modern/Great_Spy_Modern.kfm</KFM>
+			<SHADERNIF>Art/CD/Spy/MOD_ARAB/Great_Spy_Modern_FX.nif</SHADERNIF>
+			<ShadowDef>
+			<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+			<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+			<fShadowScale>0.8</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+			<AudioRunTypeLoop/>
+			<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo> 
+<UnitArtInfo>
+			<Type>ART_DEF_UNIT_SPY_MOD_CELT</Type>
+			<Button>,Art/Interface/Buttons/TechTree/Corporation.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,12</Button>
+			<fScale>0.46</fScale>
+			<fInterfaceScale>1.1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/CD/Spy/MOD_CELT/Great_Spy_Modern_FX.nif</NIF>
+			<KFM>Art/Units/Great_Spy_Modern/Great_Spy_Modern.kfm</KFM>
+			<SHADERNIF>Art/CD/Spy/MOD_CELT/Great_Spy_Modern_FX.nif</SHADERNIF>
+			<ShadowDef>
+			<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+			<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+			<fShadowScale>0.8</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+			<AudioRunTypeLoop/>
+			<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo> 
+<UnitArtInfo>
+			<Type>ART_DEF_UNIT_SPY_MOD_NORWAY</Type>
+			<Button>,Art/Interface/Buttons/TechTree/Corporation.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,12</Button>
+			<fScale>0.46</fScale>
+			<fInterfaceScale>1.1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/CD/Spy/MOD_NORWAY/Great_Spy_Modern_FX.nif</NIF>
+			<KFM>Art/Units/Great_Spy_Modern/Great_Spy_Modern.kfm</KFM>
+			<SHADERNIF>Art/CD/Spy/MOD_NORWAY/Great_Spy_Modern_FX.nif</SHADERNIF>
+			<ShadowDef>
+			<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+			<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+			<fShadowScale>0.8</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+			<AudioRunTypeLoop/>
+			<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo> 
+<UnitArtInfo>
+			<Type>ART_DEF_UNIT_SPY_MOD_ITALIAN</Type>
+			<Button>,Art/Interface/Buttons/TechTree/Corporation.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,12</Button>
+			<fScale>0.46</fScale>
+			<fInterfaceScale>1.1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/CD/Spy/MOD_ITALIAN/Great_Spy_Modern_FX.nif</NIF>
+			<KFM>Art/Units/Great_Spy_Modern/Great_Spy_Modern.kfm</KFM>
+			<SHADERNIF>Art/CD/Spy/MOD_ITALIAN/Great_Spy_Modern_FX.nif</SHADERNIF>
+			<ShadowDef>
+			<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+			<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+			<fShadowScale>0.8</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+			<AudioRunTypeLoop/>
+			<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo> 
+<UnitArtInfo>
+			<Type>ART_DEF_UNIT_SPY_MOD_INDIAN</Type>
+			<Button>,Art/Interface/Buttons/TechTree/Corporation.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,12</Button>
+			<fScale>0.46</fScale>
+			<fInterfaceScale>1.1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/CD/Spy/MOD_INDIAN/Great_Spy_Modern_FX.nif</NIF>
+			<KFM>Art/Units/Great_Spy_Modern/Great_Spy_Modern.kfm</KFM>
+			<SHADERNIF>Art/CD/Spy/MOD_INDIAN/Great_Spy_Modern_FX.nif</SHADERNIF>
+			<ShadowDef>
+			<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+			<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+			<fShadowScale>0.8</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+			<AudioRunTypeLoop/>
+			<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo> 
+<UnitArtInfo>
+			<Type>ART_DEF_UNIT_SPY_MOD_MEXICAN</Type>
+			<Button>,Art/Interface/Buttons/TechTree/Corporation.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,12</Button>
+			<fScale>0.46</fScale>
+			<fInterfaceScale>1.1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/CD/Spy/MOD_MEXICAN/Great_Spy_Modern_FX.nif</NIF>
+			<KFM>Art/Units/Great_Spy_Modern/Great_Spy_Modern.kfm</KFM>
+			<SHADERNIF>Art/CD/Spy/MOD_MEXICAN/Great_Spy_Modern_FX.nif</SHADERNIF>
+			<ShadowDef>
+			<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+			<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+			<fShadowScale>0.8</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+			<AudioRunTypeLoop/>
+			<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo> 
+<UnitArtInfo>
+			<Type>ART_DEF_UNIT_SPY_MOD_ASIAN</Type>
+			<Button>,Art/Interface/Buttons/TechTree/Corporation.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,12</Button>
+			<fScale>0.46</fScale>
+			<fInterfaceScale>1.1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/CD/Spy/MOD_ASIAN/Great_Spy_Modern_FX.nif</NIF>
+			<KFM>Art/Units/Great_Spy_Modern/Great_Spy_Modern.kfm</KFM>
+			<SHADERNIF>Art/CD/Spy/MOD_ASIAN/Great_Spy_Modern_FX.nif</SHADERNIF>
+			<ShadowDef>
+			<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+			<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+			<fShadowScale>0.8</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+			<AudioRunTypeLoop/>
+			<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo> 
+<UnitArtInfo>
+			<Type>ART_DEF_UNIT_SPY_MOD_RUSSIAN</Type>
+			<Button>,Art/Interface/Buttons/TechTree/Corporation.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,12</Button>
+			<fScale>0.46</fScale>
+			<fInterfaceScale>1.1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/CD/Spy/MOD_RUSSIAN/Great_Spy_Modern_FX.nif</NIF>
+			<KFM>Art/Units/Great_Spy_Modern/Great_Spy_Modern.kfm</KFM>
+			<SHADERNIF>Art/CD/Spy/MOD_RUSSIAN/Great_Spy_Modern_FX.nif</SHADERNIF>
+			<ShadowDef>
+			<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+			<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+			<fShadowScale>0.8</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+			<AudioRunTypeLoop/>
+			<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo> 
+
+
+

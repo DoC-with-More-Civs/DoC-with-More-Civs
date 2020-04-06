@@ -1,0 +1,1580 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Firaxis Games (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Unit art path information -->
+<Civ4ArtDefines xmlns="x-schema:CIV4ArtDefinesSchema.xml">
+	<UnitArtInfos>
+<!--________________________________________________________________________________________________________________________________________________-->
+<!--                                                                                                                                                -->
+<!-- VD mod BEGIN Italy UnitArt                                                                                                                   -->
+<!--________________________________________________________________________________________________________________________________________________-->
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_SETTLER_MALE_ITALIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/Settler.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,2,5</Button>
+			<fScale>0.46</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Italian Settler/Male/settler_male.nif</NIF>
+			<KFM>Art/Units/Italian Settler/Male/settler_male.kfm</KFM>
+			<SHADERNIF>Art/Units/Italian Settler/Male/settler_male_fx.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_SETTLER_FEMALE_ITALIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/Settler.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,2,5</Button>
+			<fScale>0.43</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Italian Settler/Female/settler_female.nif</NIF>
+			<KFM>Art/Units/Italian Settler/Female/settler_female.kfm</KFM>
+			<SHADERNIF>Art/Units/Italian Settler/Female/settler_female_fx.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_SETTLER_CHILD_ITALIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/Settler.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,2,5</Button>
+			<fScale>0.43</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Italian Settler/Child/settler_child.nif</NIF>
+			<KFM>Art/Units/Italian Settler/Child/settler_child.kfm</KFM>
+			<SHADERNIF>Art/Units/Italian Settler/Child/settler_child_fx.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_SETTLER_GREY_CATTLE_ITALIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/Settler.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,2,5</Button>
+			<fScale>0.43</fScale>
+			<fInterfaceScale>0.9</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Italian Settler/Cattle/Ox.nif</NIF>
+			<KFM>Art/Units/Italian Settler/Cattle/SupplyTrain.kfm</KFM>
+			<SHADERNIF>Art/Units/Italian Settler/Cattle/Ox.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/HorseShadow.nif</ShadowNIF>
+				<ShadowAttachNode>HorseBip Spine1</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_SETTLER_GREY_COW_ITALIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/Settler.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,2,5</Button>
+			<fScale>0.33</fScale>
+			<fInterfaceScale>0.9</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Italian Settler/Cow/Ox.nif</NIF>
+			<KFM>Art/Units/Italian Settler/Cow/SupplyTrain.kfm</KFM>
+			<SHADERNIF>Art/Units/Italian Settler/Cow/Ox.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/HorseShadow.nif</ShadowNIF>
+				<ShadowAttachNode>HorseBip Spine1</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_DOG</Type>
+			<Button>,Art/Interface/Buttons/Units/Settler.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,2,5</Button>
+			<fScale>0.40</fScale>
+			<fInterfaceScale>1.3</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Italian Settler/Wolf/wolf.nif</NIF>
+			<KFM>Art/Units/Italian Settler/Wolf/wolf.kfm</KFM>
+			<SHADERNIF>Art/Units/Italian Settler/Wolf/wolf_fx.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/WolfShadow.nif</ShadowNIF>
+				<ShadowAttachNode>LionBip Spine</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_WORKER_ITALIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/Worker.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,3,5</Button>
+			<fScale>0.43</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Italian Worker/worker.nif</NIF>
+			<KFM>Art/Units/Italian Worker/anim/Worker.kfm</KFM>
+			<SHADERNIF>Art/Units/Italian Worker/worker_fx.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.9</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_SCOUT_ITALIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/Scout.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,1,1</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Italian Scout/scout.nif</NIF>
+			<KFM>Art/Units/Italian Scout/anim/scout.kfm</KFM>
+			<SHADERNIF>Art/Units/Italian Scout/scout_fx.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_SPY_ANCIENT_ITALIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/Spy.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,14</Button>
+			<fScale>0.40</fScale>
+			<fInterfaceScale>1.1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Italian Spy ancient/ancient_spy.nif</NIF>
+			<KFM>Art/Units/Italian Spy ancient/anim/ancient_spy.kfm</KFM>
+			<SHADERNIF>Art/Units/Italian Spy ancient/ancient_spy_fx.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.8</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_SPY_MOD_ITALIAN</Type>
+			<Button>,Art/Interface/Buttons/TechTree/Corporation.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,12</Button>
+			<fScale>0.46</fScale>
+			<fInterfaceScale>1.1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Italian Spy modern/Great_Spy_Modern_FX.nif</NIF>
+			<KFM>Art/Units/Great_Spy_Modern/Great_Spy_Modern.kfm</KFM>
+			<SHADERNIF>Art/Units/Italian Spy modern/Great_Spy_Modern_FX.nif</SHADERNIF>
+			<ShadowDef>
+			<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+			<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+			<fShadowScale>0.8</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+			<AudioRunTypeLoop/>
+			<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_WARRIOR_ITALIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/Warrior.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,2,1</Button>
+			<fScale>0.45</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Italian warrior/warrior.nif</NIF>
+			<KFM>Art/Units/Italian warrior/anim/warrior.kfm</KFM>
+			<SHADERNIF>Art/Units/Italian warrior/warrior_fx.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_ARCHER_ITALIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/Archer.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,4,1</Button>
+			<fScale>0.445</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Italian Archer/archer.nif</NIF>
+			<KFM>Art/Units/Italian Archer/anim/archer.kfm</KFM>
+			<SHADERNIF>Art/Units/Italian Archer/archer_fx.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.85</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_HORSE_ARCHER_ITALIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/HorseArcher.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,7,7</Button>
+			<fScale>0.42</fScale>
+			<fInterfaceScale>0.9</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Italian Horsearcher/horsearcher.nif</NIF>
+			<KFM>Art/Units/Italian Horsearcher/anim/horsearcher_2.kfm</KFM>
+			<SHADERNIF>Art/Units/Italian Horsearcher/horsearcher_fx.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/HorseShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_SPEARMAN_ITALIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/Spearman.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,4,6</Button>
+			<fScale>0.43</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Italian Spearman/spearman.nif</NIF>
+			<KFM>Art/Units/Italian Spearman/anim/spearman.kfm</KFM>
+			<SHADERNIF>Art/Units/Italian Spearman/spearman_fx.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_SPEARMAN_MEDIEVAL_ITALIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/Spearman.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,4,6</Button>
+			<fScale>0.43</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Italian Spearman medieval/spearman_caucasian.nif</NIF>
+			<KFM>Art/Units/Spearman/Spearman.kfm</KFM>
+			<SHADERNIF>Art/Units/Italian Spearman medieval/spearman_caucasian_fx.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_SWORDSMAN_ITALIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/Swordsman.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,4,5</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Italian Swordsman/Militia.nif</NIF>
+			<KFM>Art/Units/Warrior/Warrior.kfm</KFM>
+			<SHADERNIF>Art/Units/Italian Swordsman/Militia.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_SWORDSMAN_MEDIEVAL_ITALIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/Swordsman.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,4,5</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Italian Swordsman medieval/Medieval_Militia_Swordsman.nif</NIF>
+			<KFM>Art/Units/Scenario/Knigts_templar/knightstemplar.kfm</KFM>
+			<SHADERNIF>Art/Units/Italian Swordsman medieval/Medieval_Militia_Swordsman.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_CHARIOT_ITALIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/Chariot.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,5,7</Button>
+			<fScale>0.37</fScale>
+			<fInterfaceScale>0.9</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Italian Chariot/chariot.nif</NIF>
+			<KFM>Art/Units/Italian Chariot/anim_gr/chariot.kfm</KFM>
+			<SHADERNIF>Art/Units/Italian Chariot/chariot_fx.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/ChariotShadow.nif</ShadowNIF>
+				<ShadowAttachNode>Chariot_Chariot</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<TrailDefinition>
+				<Texture>Art/Shared/wheeltread.dds</Texture>
+				<fWidth>0.9</fWidth>
+				<fLength>180.0</fLength>
+				<fTaper>0.0</fTaper>
+				<fFadeStartTime>0.2</fFadeStartTime>
+				<fFadeFalloff>0.35</fFadeFalloff>
+			</TrailDefinition>
+			<fBattleDistance>0.20</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bSmoothMove>1</bSmoothMove>
+			<fAngleInterpRate>360.0</fAngleInterpRate>
+			<fExchangeAngle>-30.0</fExchangeAngle>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_AXEMAN_ITALIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/Axeman.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,3,1</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Italian Axeman/axeman.nif</NIF>
+			<KFM>Art/Units/Italian Axeman/anim_berserk/axeman.kfm</KFM>
+			<SHADERNIF>Art/Units/Italian Axeman/axeman_fx.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_AXEMAN2_ITALIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/Axeman.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,3,1</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Italian Axeman 2/Militia_axeman.nif</NIF>
+			<KFM>Art/Units/Swordsman/Swordsman.kfm</KFM>
+			<SHADERNIF>Art/Units/Italian Axeman 2/Militia_axeman.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_AXEMAN_MEDIEVAL_ITALIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/Axeman.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,3,1</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Italian Axeman medieval/Medieval_Militia_Axeman.nif</NIF>
+			<KFM>Art/Units/Swordsman/Swordsman.kfm</KFM>
+			<SHADERNIF>Art/Units/Italian Axeman medieval/Medieval_Militia_Axeman.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_HEAVY_SWORDSMAN_ITALIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/Maceman.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,1,2</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Italian Heavy Footman/ItalyHeavyFootfinal.nif</NIF>
+			<KFM>Art/Units/Swordsman/Swordsman.kfm</KFM>
+			<SHADERNIF>Art/Units/Italian Heavy Footman/ItalyHeavyFootfinal.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_PIKEMAN_ITALIAN_OLD</Type>
+			<Button>,Art/Interface/Buttons/Units/Pikeman.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,7,1</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Italian Pikeman/italypikemanx_fx.nif</NIF>
+			<KFM>Art/Units/Pikeman/Pikeman.kfm</KFM>
+			<SHADERNIF>Art/Units/Italian Pikeman/italypikemanx_fx.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_LONGBOWMAN_ITALIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/Longbowman.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,8,7</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Italian Longbowman/italylongbowman.nif</NIF>
+			<KFM>Art/Units/Longbowman/Longbowman.kfm</KFM>
+			<SHADERNIF>Art/Units/Italian Longbowman/italylongbowman.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_CROSSBOWMAN_ITALIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/Crossbowman.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,4,8</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Italian Crossbowman/italycrossbowmanfinal.nif</NIF>
+			<KFM>Art/Units/Crossbowman/Crossbowman.kfm</KFM>
+			<SHADERNIF>Art/Units/Italian Crossbowman/italycrossbowmanfinal.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_KNIGHT_ITALIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/Knight.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,8,1</Button>
+			<fScale>0.42</fScale>
+			<fInterfaceScale>0.9</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Italian Knight/italyknightfinal_fx.nif</NIF>
+			<KFM>Art/Units/Knight/Knight.kfm</KFM>
+			<SHADERNIF>Art/Units/Italian Knight/italyknightfinal_fx.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/HorseShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_WAR_ELEPHANT_ITALIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/WarElephant.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,7,2</Button>
+			<fScale>0.34</fScale>
+			<fInterfaceScale>0.6</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Italian War Elephant/WarElephant_African.nif</NIF>
+			<KFM>Art/Units/WarElephant_Greco_Roman/WarElephant_Carthage.kfm</KFM>
+			<SHADERNIF>Art/Units/Italian War Elephant/WarElephant_African_fx.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/WarElephantShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.45</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_ARQUEBUSIER_ITALIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/Musketman.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,6,1</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Italian Musketman/gun.nif</NIF>
+			<KFM>Art/Units/Unique/England/Redcoat/redcoat.kfm</KFM>
+			<SHADERNIF>Art/Units/Italian Musketman/gun.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.05</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_RIFLEMAN_ITALIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/Rifleman.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,4,2</Button>
+			<fScale>0.445</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Italian Rifleman/alpinirifleman.nif</NIF>
+			<KFM>Art/Units/Rifleman/Rifleman.kfm</KFM>
+			<SHADERNIF>Art/Units/Italian Rifleman/alpinirifleman_fx.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.05</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_GRENADIER_ITALIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/Grenadier.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,7,6</Button>
+			<fScale>0.445</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Italian Grenadier/italiangrenadierblackuniformnew.nif</NIF>
+			<KFM>Art/Units/Grenadier/Grenadier.kfm</KFM>
+			<SHADERNIF>Art/Units/Italian Grenadier/italiangrenadierblackuniformnew.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.95</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_PARATROOPER_ITALIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/ICBM.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,4,11</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Italian Paratrooper/Paratrooper.nif</NIF>
+			<KFM>Art/Units/Italian Paratrooper/Paratrooper.kfm</KFM>
+			<SHADERNIF>Art/Units/Italian Paratrooper/Paratrooper_FX.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>Bip01 Neck</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.05</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_CAVALRY_ITALIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/Cavalry.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,6,2</Button>
+			<fScale>0.42</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Italian Cavalry/Italiancavalry.nif</NIF>
+			<KFM>Art/Units/Cavalry/Cavalry.kfm</KFM>
+			<SHADERNIF>Art/Units/Italian Cavalry/Italiancavalry.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/HorseShadow.nif</ShadowNIF>
+				<ShadowAttachNode>HorseBip Spine1</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_MARINE_WW2_ITALIAN</Type>
+			<Button>Art/Buttons/Units/ww2marines.dds</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Italian Marine/marines.nif</NIF>
+			<KFM>Art/Units/Marine/Marines.kfm</KFM>
+			<SHADERNIF>Art/Units/Italian Marine/marines.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.05</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_MODERN_INFANTRY_ITALIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/Marine.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,3,7</Button>
+			<fScale>0.45</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Italian Modern Infantry/marines.nif</NIF>
+			<KFM>Art/Units/Marine/Marines.kfm</KFM>
+			<SHADERNIF>Art/Units/Italian Modern Infantry/marines.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.05</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_LANCIA_IZ_ITALIAN</Type>
+			<Button>Art/units/Italian Armoured Car/ButtonLanciaItaly.dds</Button>
+			<fScale>0.4</fScale>
+			<fInterfaceScale>0.9</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/units/Italian Armoured Car/LanciaIZ/Lancia1Z.nif</NIF>
+			<KFM>Art/units/Italian Armoured Car/LanciaIZ/Lancia1Z.kfm</KFM>
+			<SHADERNIF>Art/units/Italian Armoured Car/LanciaIZ/Lancia1Z.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/TankShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<iDamageStates>4</iDamageStates>
+			<TrailDefinition>
+				<Texture>Art/Shared/tanktread.dds</Texture>
+				<fWidth>1.0</fWidth>
+				<fLength>180.0</fLength>
+				<fTaper>0.0</fTaper>
+				<fFadeStartTime>0.2</fFadeStartTime>
+				<fFadeFalloff>0.35</fFadeFalloff>
+			</TrailDefinition>
+			<fBattleDistance>0.5</fBattleDistance>
+			<fRangedDeathTime>0.12</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop>SND_FT17_LOOP</AudioRunTypeLoop>
+				<AudioRunTypeEnd>SND_FT17_END</AudioRunTypeEnd>
+			</AudioRunSounds>
+			<SelectionSound>AS3D_UN_TANK_FORT</SelectionSound>
+			<ActionSound>AS3D_UN_TANK_FORT</ActionSound>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_HUMVEE_ITALIAN</Type>
+			<Button>Art/Buttons/Units/Humvee.dds</Button>
+			<fScale>0.42</fScale>
+			<fInterfaceScale>0.9</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Italian HUMVEE/HUMVEE.nif</NIF>
+			<KFM>Art/Units/Italian HUMVEE/HUMVEE.kfm</KFM>
+			<SHADERNIF>Art/Units/Italian HUMVEE/HUMVEE.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/TankShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<iDamageStates>4</iDamageStates>
+			<TrailDefinition>
+				<Texture>Art/Shared/tanktread.dds</Texture>
+				<fWidth>1.0</fWidth>
+				<fLength>180.0</fLength>
+				<fTaper>0.0</fTaper>
+				<fFadeStartTime>0.2</fFadeStartTime>
+				<fFadeFalloff>0.35</fFadeFalloff>
+			</TrailDefinition>
+			<fBattleDistance>0.5</fBattleDistance>
+			<fRangedDeathTime>0.12</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop>LOOPSTEP_TANK</AudioRunTypeLoop>
+				<AudioRunTypeEnd>ENDSTEP_TANK</AudioRunTypeEnd>
+			</AudioRunSounds>
+			<SelectionSound>AS3D_UN_TANK_FORT</SelectionSound>
+			<ActionSound>AS3D_UN_TANK_FORT</ActionSound>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_LIGHT_TANK_ITALIAN</Type>
+			<Button>Art/Units/Italian light Tank/Tank_Button_Rome.dds</Button>
+			<fScale>0.53</fScale>
+			<fInterfaceScale>0.9</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Italian light Tank/l640.nif</NIF>
+			<KFM>Art/Units/Italian light Tank/l640.kfm</KFM>
+			<SHADERNIF>Art/Units/Italian light Tank/l640.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/TankShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<iDamageStates>4</iDamageStates>
+			<TrailDefinition>
+				<Texture>Art/Shared/tanktread.dds</Texture>
+				<fWidth>0.8</fWidth>
+				<fLength>180.0</fLength>
+				<fTaper>0.0</fTaper>
+				<fFadeStartTime>0.2</fFadeStartTime>
+				<fFadeFalloff>0.35</fFadeFalloff>
+			</TrailDefinition>
+			<fBattleDistance>0.5</fBattleDistance>
+			<fRangedDeathTime>0.12</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop>LOOPSTEP_TANK</AudioRunTypeLoop>
+				<AudioRunTypeEnd>ENDSTEP_TANK</AudioRunTypeEnd>
+			</AudioRunSounds>
+			<SelectionSound>AS3D_UN_TANK_FORT</SelectionSound>
+			<ActionSound>AS3D_UN_TANK_FORT</ActionSound>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_MEDIUM_TANK_ITALIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/Tank.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,4,11</Button>
+			<fScale>0.63</fScale>
+			<fInterfaceScale>0.9</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Italian medium Tank/Fiat.nif</NIF>
+			<KFM>Art/Units/Italian medium Tank/Fiat.kfm</KFM>
+			<SHADERNIF>Art/Units/Italian medium Tank/Fiat.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/TankShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.1</fShadowScale>
+			</ShadowDef>
+			<iDamageStates>4</iDamageStates>
+			<TrailDefinition>
+				<Texture>Art/Shared/tanktread.dds</Texture>
+				<fWidth>0.8</fWidth>
+				<fLength>180.0</fLength>
+				<fTaper>0.0</fTaper>
+				<fFadeStartTime>0.2</fFadeStartTime>
+				<fFadeFalloff>0.35</fFadeFalloff>
+			</TrailDefinition>
+			<fBattleDistance>0.5</fBattleDistance>
+			<fRangedDeathTime>0.12</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop>LOOPSTEP_TANK</AudioRunTypeLoop>
+				<AudioRunTypeEnd>ENDSTEP_TANK</AudioRunTypeEnd>
+			</AudioRunSounds>
+			<SelectionSound>AS3D_UN_TANK_FORT</SelectionSound>
+			<ActionSound>AS3D_UN_TANK_FORT</ActionSound>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_MECHINF_ITALIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/MechanizedInfantry.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,8,8</Button>
+			<fScale>0.53</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Italian Mechanized Infantry/mechanizedinfantry.nif</NIF>
+			<KFM>Art/Units/Mechanizedinfantry/Mechanizedinfantry.kfm</KFM>
+			<SHADERNIF>Art/Units/Italian Mechanized Infantry/mechanizedinfantry.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/MechInfantryShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<iDamageStates>4</iDamageStates>
+			<TrailDefinition>
+				<Texture>Art/Shared/tanktread.dds</Texture>
+				<fWidth>0.9</fWidth>
+				<fLength>180.0</fLength>
+				<fTaper>0.0</fTaper>
+				<fFadeStartTime>0.2</fFadeStartTime>
+				<fFadeFalloff>0.35</fFadeFalloff>
+			</TrailDefinition>
+			<fBattleDistance>0.5</fBattleDistance>
+			<fRangedDeathTime>0.12</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop>LOOPSTEP_TANK</AudioRunTypeLoop>
+				<AudioRunTypeEnd>ENDSTEP_TANK</AudioRunTypeEnd>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_SUBMARINE_ITALIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/Submarine.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,6,9</Button>
+			<fScale>0.55</fScale>
+			<fInterfaceScale>1.3</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Italian Submarine/Marconi.nif</NIF>
+			<KFM>Art/Units/Submarine/Submarine.kfm</KFM>
+			<SHADERNIF>Art/Units/Italian Submarine/Marconi.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/BattleshipShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.001</fShadowScale>
+			</ShadowDef>
+			<iDamageStates>4</iDamageStates>
+			<fBattleDistance>0.55</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bSmoothMove>1</bSmoothMove>
+			<fAngleInterpRate>720.0</fAngleInterpRate>
+			<fBankRate>.2</fBankRate>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop>LOOPSTEP_SUBMARINE</AudioRunTypeLoop>
+				<AudioRunTypeEnd>ENDSTEP_SUBMARINE</AudioRunTypeEnd>
+			</AudioRunSounds>
+			<SelectionSound>AS3D_UN_SUBMARINE_FORT</SelectionSound>
+			<ActionSound>AS3D_UN_SUBMARINE_FORT</ActionSound>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_SPAD_XIII_ITALIAN2</Type>
+			<Button>Art/Buttons/Units/SPADXIII Button.dds</Button>
+			<fScale>0.5</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Italian Early Fighter/spadxiii.nif</NIF>
+			<KFM>Art/Units/Fighter/Fighter.kfm</KFM>
+			<SHADERNIF>Art/Units/Italian Early Fighter/spadxiii.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/FighterShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.75</fShadowScale>
+			</ShadowDef>
+			<iDamageStates>4</iDamageStates>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bSmoothMove>1</bSmoothMove>
+			<fBankRate>0.35</fBankRate>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+			<PatrolSound>AS3D_UN_FIGHTER_PATROL</PatrolSound>
+			<SelectionSound>AS3D_UN_FIGHTER_COMMAND_PATROL</SelectionSound>
+			<ActionSound>AS3D_UN_FIGHTER_COMMAND_PATROL</ActionSound>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_CAPRONI_CA3_ITALY2</Type>
+			<Button>Art/Buttons/Units/CaproniCa3 Button.dds</Button>
+			<fScale>0.33</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Italian Early Bomber/Capronica3.nif</NIF>
+			<KFM>Art/Units/Bomber/Bomber.kfm</KFM>
+			<SHADERNIF>Art/Units/Italian Early Bomber/Capronica3.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/BomberShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.75</fShadowScale>
+			</ShadowDef>
+			<iDamageStates>4</iDamageStates>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bSmoothMove>1</bSmoothMove>
+			<fBankRate>0.35</fBankRate>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+			<PatrolSound>AS3D_UN_FIGHTER_PATROL</PatrolSound>
+			<SelectionSound>AS3D_UN_FIGHTER_COMMAND_PATROL</SelectionSound>
+			<ActionSound>AS3D_UN_FIGHTER_COMMAND_PATROL</ActionSound>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_FIGHTER_ITALIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/Fighter.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,6,10</Button>
+			<fScale>0.5</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Italian Fighter/G55.nif</NIF>
+			<KFM>Art/Units/Fighter/Fighter.kfm</KFM>
+			<SHADERNIF>Art/Units/Italian Fighter/G55.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/FighterShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.75</fShadowScale>
+			</ShadowDef>
+			<iDamageStates>4</iDamageStates>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bSmoothMove>1</bSmoothMove>
+			<fBankRate>0.35</fBankRate>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+			<PatrolSound>AS3D_UN_FIGHTER_PATROL</PatrolSound>
+			<SelectionSound>AS3D_UN_FIGHTER_COMMAND_PATROL</SelectionSound>
+			<ActionSound>AS3D_UN_FIGHTER_COMMAND_PATROL</ActionSound>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_AMBROSINI_SV15</Type>
+			<Button>Art/Units/Italian Early Jet Fighter/button_caproni_campini.dds</Button>
+			<fScale>0.69</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Italian Early Jet Fighter/Yak_15.nif</NIF>
+			<KFM>Art/Units/JetFighter/JetFighter.kfm</KFM>
+			<SHADERNIF>Art/Units/Italian Early Jet Fighter/Yak_15.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/JetFighterShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.60</fShadowScale>
+			</ShadowDef>
+			<iDamageStates>4</iDamageStates>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bSmoothMove>1</bSmoothMove>
+			<fBankRate>0.35</fBankRate>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+			<PatrolSound>AS3D_UN_JET_PATROL</PatrolSound>
+			<SelectionSound>AS3D_UN_JET_COMMAND_PATROL</SelectionSound>
+			<ActionSound>AS3D_UN_JET_COMMAND_PATROL</ActionSound>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_BOMBER_ITALIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/Bomber.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,4,10</Button>
+			<fScale>0.50</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Italian Bomber/b17g.nif</NIF>
+			<KFM>Art/Units/Bomber/Bomber.kfm</KFM>
+			<SHADERNIF>Art/Units/Italian Bomber/b17g.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/BomberShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.75</fShadowScale>
+			</ShadowDef>
+			<iDamageStates>4</iDamageStates>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bSmoothMove>1</bSmoothMove>
+			<fBankRate>0.35</fBankRate>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+			<PatrolSound>AS3D_UN_FIGHTER_PATROL</PatrolSound>
+			<SelectionSound>AS3D_UN_FIGHTER_COMMAND_PATROL</SelectionSound>
+			<ActionSound>AS3D_UN_FIGHTER_COMMAND_PATROL</ActionSound>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_SUPERSONIC_JET_ITALIAN</Type>
+			<Button>Art/Buttons/Units/Tornado.dds</Button>
+			<fScale>0.55</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Italian supersonic Jet Fighter/Tornado.nif</NIF>
+			<KFM>Art/Units/JetFighter/JetFighter.kfm</KFM>
+			<SHADERNIF>Art/Units/Italian supersonic Jet Fighter/Tornado.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/JetFighterShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.75</fShadowScale>
+			</ShadowDef>
+			<iDamageStates>4</iDamageStates>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bSmoothMove>1</bSmoothMove>
+			<fBankRate>0.35</fBankRate>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+			<PatrolSound>AS3D_UN_JET_PATROL</PatrolSound>
+			<SelectionSound>AS3D_UN_JET_COMMAND_PATROL</SelectionSound>
+			<ActionSound>AS3D_UN_JET_COMMAND_PATROL</ActionSound>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_EUROFIGHTER2</Type>
+			<Button>Art/Units/Italian Jet Fighter/ButtonEurofighterItaly.dds</Button>
+			<fScale>0.545</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Italian Jet Fighter/Eurofighter.nif</NIF>
+			<KFM>Art/Units/JetFighter/JetFighter.kfm</KFM>
+			<SHADERNIF>Art/Units/Italian Jet Fighter/Eurofighter.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/JetFighterShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.75</fShadowScale>
+			</ShadowDef>
+			<iDamageStates>4</iDamageStates>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bSmoothMove>1</bSmoothMove>
+			<fBankRate>0.35</fBankRate>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+			<PatrolSound>AS3D_UN_JET_PATROL</PatrolSound>
+			<SelectionSound>AS3D_UN_JET_COMMAND_PATROL</SelectionSound>
+			<ActionSound>AS3D_UN_JET_COMMAND_PATROL</ActionSound>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_GUNSHIP_ITALIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/Gunship.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,5,10</Button>
+			<fScale>0.57</fScale>
+			<fInterfaceScale>0.7</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Italian Gunship/tiger.nif</NIF>
+			<KFM>Art/Units/Italian Gunship/tiger.kfm</KFM>
+			<SHADERNIF>Art/Units/Italian Gunship/tiger.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/GunshipShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.75</fShadowScale>
+			</ShadowDef>
+			<iDamageStates>4</iDamageStates>
+			<fBattleDistance>1.5</fBattleDistance>
+			<fRangedDeathTime>0.12</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop>LOOPSTEP_GUNSHIP</AudioRunTypeLoop>
+				<AudioRunTypeEnd>ENDSTEP_GUNSHIP</AudioRunTypeEnd>
+			</AudioRunSounds>
+			<SelectionSound>AS3D_UN_GUNSHIP_FORT</SelectionSound>
+			<ActionSound>AS3D_UN_GUNSHIP_FORT</ActionSound>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_WARLORD_MODERN_ITALIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/GreatEngineer.dds,Art/Interface/Buttons/Warlords_Atlas_1.dds,5,10</Button>
+			<fScale>0.5</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Italian Warlord modern/Mannerheim.nif</NIF>
+			<KFM>Art/Units/Warlord_Modern/Warlord_Modern.kfm</KFM>
+			<SHADERNIF>Art/Units/Italian Warlord modern/Mannerheim.nif</SHADERNIF>
+			<ShadowDef>
+			<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+			<ShadowAttachNode>Bip01 Pelvis</ShadowAttachNode>
+			<fShadowScale>0.9</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+			<AudioRunTypeLoop/>
+			<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_ITALIAN_WORKBOAT</Type>
+			<Button>,Art/Interface/Buttons/Units/WorkBoat.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,4,9</Button>
+			<fScale>0.1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Italian Workboat/EE2_WhalingBoat.nif</NIF>
+			<KFM>Art/Units/Italian Workboat/EE2_WhalingBoat.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/WorkboatShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<TrailDefinition>
+				<Texture>Art/Shared/water_ship_wake.dds</Texture>
+				<fWidth>1</fWidth>
+				<fLength>180.0</fLength>
+				<fTaper>1</fTaper>
+				<fFadeStartTime>.2</fFadeStartTime>
+				<fFadeFalloff>0.35</fFadeFalloff>
+			</TrailDefinition>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bSmoothMove>1</bSmoothMove>
+			<fAngleInterpRate>720.0</fAngleInterpRate>
+			<fBankRate>.3</fBankRate>
+			<fExchangeAngle>25.0</fExchangeAngle>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop>LOOPSTEP_OCEAN1</AudioRunTypeLoop>
+				<AudioRunTypeEnd>ENDSTEP_OCEAN1</AudioRunTypeEnd>
+			</AudioRunSounds>
+			<SelectionSound>AS3D_UN_WRK_BOAT_ANC_FORT</SelectionSound>
+			<ActionSound>AS3D_UN_WRK_BOAT_ANC_FORT</ActionSound>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_ITALIAN_GALLEY</Type>
+			<Button>Art/Units/Italian Galley/EE2_AncientMerchant_Button.dds</Button>
+			<fScale>0.23</fScale>
+			<fInterfaceScale>0.6</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Italian Galley/EE2_AncientMerchant.nif</NIF>
+			<KFM>Art/Units/Italian Galley/EE2_AncientMerchant.kfm</KFM>
+			<SHADERNIF>Art/Units/Italian Galley/EE2_AncientMerchant_FX.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/GalleyShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<iDamageStates>4</iDamageStates>
+			<TrailDefinition>
+				<Texture>Art/Shared/water_ship_wake.dds</Texture>
+				<fWidth>1</fWidth>
+				<fLength>180.0</fLength>
+				<fTaper>1</fTaper>
+				<fFadeStartTime>.2</fFadeStartTime>
+				<fFadeFalloff>0.35</fFadeFalloff>
+			</TrailDefinition>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bSmoothMove>1</bSmoothMove>
+			<fAngleInterpRate>720.0</fAngleInterpRate>
+			<fBankRate>.2</fBankRate>
+			<fExchangeAngle>25.0</fExchangeAngle>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop>LOOPSTEP_OCEAN1</AudioRunTypeLoop>
+				<AudioRunTypeEnd>ENDSTEP_OCEAN1</AudioRunTypeEnd>
+			</AudioRunSounds>
+			<SelectionSound>AS3D_UN_OCEAN_END1</SelectionSound>
+			<ActionSound>AS3D_UN_OCEAN_END1</ActionSound>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_ITALIAN_GALLEAS</Type>
+			<Button>Art/Buttons/Units/Galleas.dds</Button>
+			<fScale>0.275</fScale>
+			<fInterfaceScale>0.6</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Italian Galleas/ee2_galleas.nif</NIF>
+			<KFM>Art/Units/Italian Galleas/ee2_galleas.kfm</KFM>
+			<SHADERNIF>Art/Units/Italian Galleas/ee2_galleas_fx.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/IroncladShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<iDamageStates>4</iDamageStates>
+			<TrailDefinition>
+				<Texture>Art/Shared/water_ship_wake.dds</Texture>
+				<fWidth>1</fWidth>
+				<fLength>180.0</fLength>
+				<fTaper>1</fTaper>
+				<fFadeStartTime>.2</fFadeStartTime>
+				<fFadeFalloff>0.4</fFadeFalloff>
+			</TrailDefinition>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bSmoothMove>1</bSmoothMove>
+			<fAngleInterpRate>720.0</fAngleInterpRate>
+			<fBankRate>.2</fBankRate>
+			<fExchangeAngle>25.0</fExchangeAngle>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop>LOOPSTEP_OCEAN1</AudioRunTypeLoop>
+				<AudioRunTypeEnd>ENDSTEP_OCEAN1</AudioRunTypeEnd>
+			</AudioRunSounds>
+			<SelectionSound>AS3D_UN_OCEAN_END1</SelectionSound>
+			<ActionSound>AS3D_UN_OCEAN_END1</ActionSound>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_ITALIAN_CARAVEL</Type>
+			<Button>,Art/Interface/Buttons/Units/Caravel.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,1,9</Button>
+			<fScale>0.14</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Italian Caravel/EE2_Caravel.nif</NIF>
+			<KFM>Art/Units/Italian Caravel/EE2_Caravel.kfm</KFM>
+			<SHADERNIF>Art/Units/Italian Caravel/EE2_Caravel_FX.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/CaravelShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<iDamageStates>4</iDamageStates>
+			<TrailDefinition>
+				<Texture>Art/Shared/water_ship_wake.dds</Texture>
+				<fWidth>1</fWidth>
+				<fLength>180.0</fLength>
+				<fTaper>1</fTaper>
+				<fFadeStartTime>.2</fFadeStartTime>
+				<fFadeFalloff>0.35</fFadeFalloff>
+			</TrailDefinition>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bSmoothMove>1</bSmoothMove>
+			<fAngleInterpRate>720.0</fAngleInterpRate>
+			<fBankRate>.4</fBankRate>
+			<fExchangeAngle>25.0</fExchangeAngle>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop>LOOPSTEP_OCEAN2</AudioRunTypeLoop>
+				<AudioRunTypeEnd>ENDSTEP_OCEAN2</AudioRunTypeEnd>
+			</AudioRunSounds>
+			<SelectionSound>AS3D_UN_OCEAN_END1</SelectionSound>
+			<ActionSound>AS3D_UN_OCEAN_END1</ActionSound>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_ITALIAN_GALLEON</Type>
+			<Button>Art/Units/Italian Galleon/EE2_Carrack_Button.dds</Button>
+			<fScale>0.21</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Italian Galleon/EE2_Carrack.nif</NIF>
+			<KFM>Art/Units/Italian Galleon/EE2_Carrack.kfm</KFM>
+			<SHADERNIF>Art/Units/Italian Galleon/EE2_Carrack_FX.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/GalleonShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<iDamageStates>4</iDamageStates>
+			<TrailDefinition>
+				<Texture>Art/Shared/water_ship_wake.dds</Texture>
+				<fWidth>1</fWidth>
+				<fLength>180.0</fLength>
+				<fTaper>1</fTaper>
+				<fFadeStartTime>.2</fFadeStartTime>
+				<fFadeFalloff>0.35</fFadeFalloff>
+			</TrailDefinition>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bSmoothMove>1</bSmoothMove>
+			<fAngleInterpRate>720.0</fAngleInterpRate>
+			<fBankRate>.3</fBankRate>
+			<fExchangeAngle>25.0</fExchangeAngle>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop>LOOPSTEP_OCEAN2</AudioRunTypeLoop>
+				<AudioRunTypeEnd>ENDSTEP_OCEAN2</AudioRunTypeEnd>
+			</AudioRunSounds>
+			<SelectionSound>AS3D_UN_OCEAN_END1</SelectionSound>
+			<ActionSound>AS3D_UN_OCEAN_END1</ActionSound>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_ITALIAN_FRIGATE</Type>
+			<Button>,Art/Interface/Buttons/Units/Frigate.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,2,9</Button>
+			<fScale>0.24</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Italian Frigate/frigate.nif</NIF>
+			<KFM>Art/Units/Italian Frigate/frigate.kfm</KFM>
+			<SHADERNIF>Art/Units/Italian Frigate/frigate_fx.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/FrigateShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<iDamageStates>4</iDamageStates>
+			<TrailDefinition>
+				<Texture>Art/Shared/water_ship_wake.dds</Texture>
+				<fWidth>1</fWidth>
+				<fLength>180.0</fLength>
+				<fTaper>1</fTaper>
+				<fFadeStartTime>.2</fFadeStartTime>
+				<fFadeFalloff>0.35</fFadeFalloff>
+			</TrailDefinition>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bSmoothMove>1</bSmoothMove>
+			<fAngleInterpRate>720.0</fAngleInterpRate>
+			<fBankRate>.3</fBankRate>
+			<fExchangeAngle>25.0</fExchangeAngle>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop>LOOPSTEP_OCEAN2</AudioRunTypeLoop>
+				<AudioRunTypeEnd>ENDSTEP_OCEAN2</AudioRunTypeEnd>
+			</AudioRunSounds>
+			<SelectionSound>AS3D_UN_OCEAN_END1</SelectionSound>
+			<ActionSound>AS3D_UN_OCEAN_END1</ActionSound>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_ITALIAN_SHIP_OF_THE_LINE</Type>
+			<Button>,Art/Interface/Buttons/Units/ICBM.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,1,12</Button>
+			<fScale>0.22</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Italian Ship of the Line/Ship_of_the_Line.nif</NIF>
+			<KFM>Art/Units/Italian Ship of the Line/Ship_of_the_Line.kfm</KFM>
+			<SHADERNIF>Art/Units/Italian Ship of the Line/Ship_of_the_Line_FX.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/FrigateShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.1</fShadowScale>
+			</ShadowDef>
+			<iDamageStates>4</iDamageStates>
+			<TrailDefinition>
+				<Texture>Art/Shared/water_ship_wake.dds</Texture>
+				<fWidth>1</fWidth>
+				<fLength>180.0</fLength>
+				<fTaper>1</fTaper>
+				<fFadeStartTime>.2</fFadeStartTime>
+				<fFadeFalloff>0.35</fFadeFalloff>
+			</TrailDefinition>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bSmoothMove>1</bSmoothMove>
+			<fAngleInterpRate>720.0</fAngleInterpRate>
+			<fBankRate>.3</fBankRate>
+			<fExchangeAngle>25.0</fExchangeAngle>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop>LOOPSTEP_OCEAN1</AudioRunTypeLoop>
+				<AudioRunTypeEnd>ENDSTEP_OCEAN1</AudioRunTypeEnd>
+			</AudioRunSounds>
+			<SelectionSound>AS3D_UN_OCEAN_END1</SelectionSound>
+			<ActionSound>AS3D_UN_OCEAN_END1</ActionSound>
+		</UnitArtInfo>
+<!--________________________________________________________________________________________________________________________________________________-->
+<!--                                                                                                                                                -->
+<!-- VD mod END Italy UnitArt                                                                                                                   -->
+<!--________________________________________________________________________________________________________________________________________________-->
+	</UnitArtInfos>
+</Civ4ArtDefines>

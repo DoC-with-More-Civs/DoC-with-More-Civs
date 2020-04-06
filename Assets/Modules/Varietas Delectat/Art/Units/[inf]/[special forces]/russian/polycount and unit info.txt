@@ -1,0 +1,8 @@
+PolyCount for Russian Flavored Special Forces unit:
+1779
+
+
+The Russian Flavored Special Forces unit (or Spetsnaz) was made by taking the head of the Next War Anti-Tank guy, and putting it on the Paratrooper, who i'd given the AK-101 from the Next War Automaton. I then replaced the Para's body with a the marine, which i textured with a slightly modified version of the Russian flavored marine in HISTORY IN THE MAKING (not sure where Grave got it, he may have madfe it himself).
+
+
+This one was relatively difficult, but i learned a lot throughout it. This is the first unit i've ever made EVER with Blender's help. Although most of the unit was made by using NifScope, i had to manually remove the Next War Anti-Tank unit's head, because even in my archives of units, not one had that head. I had tried doing something similar before, but failed multiple times. So this unit is special to me.

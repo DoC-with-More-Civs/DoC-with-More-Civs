@@ -1,0 +1,1213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Firaxis Games (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Unit art path information -->
+<Civ4ArtDefines xmlns="x-schema:CIV4ArtDefinesSchema.xml">
+	<UnitArtInfos>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_JUDGE_SOUTH_AMERICA</Type>
+			<Button>Art/Interface/Buttons/Units/sparth/judge.dds</Button>
+			<fScale>0.42</fScale>
+			<fInterfaceScale>0.9</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Polynesian/Great_Statesman/firebrand_preacher.nif</NIF>
+			<KFM>Art/Polynesian/Great_Statesman/Firebrand_Preacher.kfm</KFM>
+			<SHADERNIF>Art/Polynesian/Great_Statesman/firebrand_preacher.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds/>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_SETTLER_MALE_PACIFIC</Type>
+			<Button>,Art/Interface/Buttons/Units/Settler.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,2,5</Button>
+			<fScale>0.46</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Modules/Varietas Delectat/Art/Units/Polynesia/Settlers/settler_male_fx.nif</NIF>
+			<KFM>Art/Units/Settler/Settler_Male.kfm</KFM>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Polynesia/Settlers/settler_male_fx.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_SETTLER_FEMALE_PACIFIC</Type>
+			<Button>,Art/Interface/Buttons/Units/Settler.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,2,5</Button>
+			<fScale>0.47</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Settler_South_America/Settler_South_America_Female_FX.nif</NIF>
+			<KFM>Art/Units/Settler_South_America/Settler_Female.kfm</KFM>
+			<SHADERNIF>Art/Units/Settler_South_America/Settler_South_America_Female_FX.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_SETTLER_CHILD_PACIFIC</Type>
+			<Button>,Art/Interface/Buttons/Units/Settler.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,2,5</Button>
+			<fScale>0.47</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Settler_South_America/Settler_South_America_Child_FX.nif</NIF>
+			<KFM>Art/Units/Settler_South_America/Settler_Child.kfm</KFM>
+			<SHADERNIF>Art/Units/Settler_South_America/Settler_South_America_Child_FX.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.7</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bCombatExempt>1</bCombatExempt>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_WORKER_PACIFIC</Type>
+			<Button>,Art/Interface/Buttons/Units/Worker.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,3,5</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Modules/Varietas Delectat/Art/Units/Polynesia/Worker/worker_south_america_fx.nif</NIF>
+			<KFM>Art/Units/Worker/Worker.kfm</KFM>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Polynesia/Worker/worker_south_america_fx.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.9</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_LABOURER_NATIVE</Type>
+			<Button>Art/Interface/Buttons/Units/Labourer.dds</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Modules/Varietas Delectat/Art/Units/Polynesia/Labourer/modworkercap.nif</NIF>
+			<KFM>Art/Units/ModernWorker/ModernWorker.kfm</KFM>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Polynesia/Labourer/modworkercap.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.9</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_SCOUT_PACIFIC</Type>
+			<Button>,Art/Interface/Buttons/Units/Scout.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,1,1</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Modules/Varietas Delectat/Art/Units/Polynesia/Scout/scout_fx.nif</NIF>
+			<KFM>Art/Units/Scout/Scout.kfm</KFM>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Polynesia/Scout/scout_fx.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_WARRIOR_PACIFIC</Type>
+			<Button>,Art/Interface/Buttons/Units/Warrior.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,2,1</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Modules/Varietas Delectat/Art/Units/Polynesia/Warrior/mayawarriornew.nif</NIF>
+			<KFM>Art/Units/Warrior/Warrior.kfm</KFM>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Polynesia/Warrior/mayawarriornew.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_ARCHER_POLYNESIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/Archer.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,4,1</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Modules/Varietas Delectat/Art/Units/Polynesia/Polynesian Archer/archer_polynesia.nif</NIF>
+			<KFM>Art/Units/Archer_Egyptian/Archer_Egyptian.kfm</KFM>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Polynesia/Polynesian Archer/archer_polynesia.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.85</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_SPEARMAN_POLYNESIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/Spearman.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,4,6</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Modules/Varietas Delectat/Art/Units/Polynesia/Polynesian Spearman/PolynesiaSpearman.nif</NIF>
+			<KFM>Art/Units/Unique_Maya_Holkan/Unique_Mayan_Holkan.kfm</KFM>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Polynesia/Polynesian Spearman/PolynesiaSpearman.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_SWORDSMAN_POLYNESIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/Swordsman.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,4,5</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Modules/Varietas Delectat/Art/Units/Polynesia/Polynesian Swordsman/PolynesianSwordsman.nif</NIF>
+			<KFM>Art/Units/Unique_NativeAmerica_DogSoldier/Dogsoldier.kfm</KFM>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Polynesia/Polynesian Swordsman/PolynesianSwordsman.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIQUE_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_CHARIOT_POLYNESIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/Chariot.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,5,7</Button>
+			<fScale>0.4</fScale>
+			<fInterfaceScale>0.9</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Modules/Varietas Delectat/Art/Units/Polynesia/Polynesian Chariot/PolynesianChariot.nif</NIF>
+			<KFM>Art/Units/Chariot_Celtic/Chariot_Celtic.kfm</KFM>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Polynesia/Polynesian Chariot/PolynesianChariot.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/ChariotShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<TrailDefinition>
+				<Texture>Art/Shared/wheeltread.dds</Texture>
+				<fWidth>1.0</fWidth>
+				<fLength>180.0</fLength>
+				<fTaper>0.0</fTaper>
+				<fFadeStartTime>0.2</fFadeStartTime>
+				<fFadeFalloff>0.35</fFadeFalloff>
+			</TrailDefinition>
+			<fBattleDistance>0.20</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bSmoothMove>1</bSmoothMove>
+			<fAngleInterpRate>360.0</fAngleInterpRate>
+			<fExchangeAngle>-30.0</fExchangeAngle>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_HORSEMAN_POLYNESIAN</Type>
+			<Button>Art/Interface/Buttons/Units/Horseman.dds</Button>
+			<fScale>0.42</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Modules/Varietas Delectat/Art/Units/Polynesia/Polynesian Horseman/PolynesiaHorsemanNEW.nif</NIF>
+			<KFM>Art/Units/Unique/Persia/Immortal/PersianImmortal.kfm</KFM>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Polynesia/Polynesian Horseman/PolynesiaHorsemanNEW.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/HorseShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_HORSE_ARCHER_SOUTH_AMERICA</Type>
+			<Button>,Art/Interface/Buttons/Units/HorseArcher.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,7,7</Button>
+			<fScale>0.42</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/HorseArcher_South_America/HorseArcher_South_America.nif</NIF>
+			<KFM>Art/Units/HorseArcher_South_America/HorseArcher.kfm</KFM>
+			<SHADERNIF>Art/Units/HorseArcher_South_America/HorseArcher_South_America_FX.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/HorseShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_WAR_ELEPHANT_POLYNESIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/WarElephant.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,7,2</Button>
+			<fScale>0.34</fScale>
+			<fInterfaceScale>0.6</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Modules/Varietas Delectat/Art/Units/Polynesia/Polynesian War Elephant/maoriwarelephant.nif</NIF>
+			<KFM>Art/Units/Unique_Khmer_ElephantBallista/Khmer_ElephantBallista.kfm</KFM>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Polynesia/Polynesian War Elephant/maoriwarelephant.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/WarElephantShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.45</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_MACEMAN_POLYNESIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/Worker.dds,Art/Interface/Buttons/Charlemagne_Atlas.dds,2,2</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Modules/Varietas Delectat/Art/Units/Polynesia/Polynesian Heavy Footman/PolynesiaHvyFootmanfinal.nif</NIF>
+			<KFM>Art/Units/Charlemagne_HeavySwordsman/HeavySwordsman.kfm</KFM>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Polynesia/Polynesian Heavy Footman/PolynesiaHvyFootmanfinal.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_PIKEMAN_POLYNESIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/Pikeman.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,7,1</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Modules/Varietas Delectat/Art/Units/Polynesia/Polynesian Pikeman/PolynesiaPikemanHeavyFinal.nif</NIF>
+			<KFM>Art/Units/Charlemagne_HeavySpearman/HeavySpearman.kfm</KFM>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Polynesia/Polynesian Pikeman/PolynesiaPikemanHeavyFinal.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_LONGBOWMAN_POLYNESIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/Longbowman.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,8,7</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Modules/Varietas Delectat/Art/Units/Polynesia/Polynesian Longbowman/Polynesialongbowmanfinal.nif</NIF>
+			<KFM>Art/Units/Longbowman/Longbowman.kfm</KFM>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Polynesia/Polynesian Longbowman/Polynesialongbowmanfinal.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.85</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_CROSSBOWMAN_POLYNESIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/Crossbowman.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,4,8</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.1</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Modules/Varietas Delectat/Art/Units/Polynesia/Polynesian Crossbowman/polyesiancrossbowmanfinal.nif</NIF>
+			<KFM>Art/Units/Crossbowman/Crossbowman.kfm</KFM>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Polynesia/Polynesian Crossbowman/polyesiancrossbowmanfinal.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_KNIGHT_POLYNESIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/Knight.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,8,1</Button>
+			<fScale>0.42</fScale>
+			<fInterfaceScale>0.9</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Modules/Varietas Delectat/Art/Units/Polynesia/Polynesian Heavy Horseman/PolynesianHeavyCavalryfinal.nif</NIF>
+			<KFM>Art/Units/Charlemagne_HeavyCavalry/HeavyCavalry.kfm</KFM>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Polynesia/Polynesian Heavy Horseman/PolynesianHeavyCavalryfinal.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/HorseShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_ARQUEBUSIER_POLYNESIAN</Type>
+			<Button>Art/Interface/Buttons/Units/Musketman.dds</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Modules/Varietas Delectat/Art/Units/Polynesia/Polynesian musketman/PolynesiaMusketman.nif</NIF>
+			<KFM>Art/Units/Musketman/Musketman.kfm</KFM>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Polynesia/Polynesian musketman/PolynesiaMusketman.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.05</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_CUIRASSIER_POLYNESIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/ICBM.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,3,11</Button>
+			<fScale>0.42</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Modules/Varietas Delectat/Art/Units/Polynesia/Polynesian Cuirassier/PolynesiaCuirassier.nif</NIF>
+			<KFM>Art/Units/Cuirassier/Cuirassier.kfm</KFM>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Polynesia/Polynesian Cuirassier/PolynesiaCuirassier.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/HorseShadow.nif</ShadowNIF>
+				<ShadowAttachNode>HorseBip Spine1</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_GRENADIER_POLYNESIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/Grenadier.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,7,6</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Modules/Varietas Delectat/Art/Units/Polynesia/Polynesian Grenadier/PolyGren.nif</NIF>
+			<KFM>Art/Units/Grenadier/Grenadier.kfm</KFM>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Polynesia/Polynesian Grenadier/PolyGren.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.95</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_RIFLEMAN_POLYNESIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/Rifleman.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,4,2</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Modules/Varietas Delectat/Art/Units/Polynesia/Polynesian Rifleman/polyriflemandef.nif</NIF>
+			<KFM>Art/Units/Unique/England/Redcoat/RedCoat.kfm</KFM>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Polynesia/Polynesian Rifleman/polyriflemandef.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.28</fBattleDistance>
+			<fRangedDeathTime>0.05</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_CAVALRY_POLYNESIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/Cavalry.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,6,2</Button>
+			<fScale>0.42</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Modules/Varietas Delectat/Art/Units/Polynesia/Polynesian Cavalry/polycavalrydef.nif</NIF>
+			<KFM>Art/Units/Cavalry/Cavalry.kfm</KFM>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Polynesia/Polynesian Cavalry/polycavalrydef.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/HorseShadow.nif</ShadowNIF>
+				<ShadowAttachNode>HorseBip Spine1</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_INFANTRY_POLYNESIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/Infantry.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,8,3</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Modules/Varietas Delectat/Art/Units/Polynesia/Polynesian Infantry/polyinfantry_fx.nif</NIF>
+			<KFM>Art/Units/Infantry/Infantry.kfm</KFM>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Polynesia/Polynesian Infantry/polyinfantry_fx.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.9</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.05</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_MACHINE_GUN_POLYNESIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/MachineGun.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,1,6</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Modules/Varietas Delectat/Art/Units/Polynesia/Polynesian Machine Gun/polymachinegunner.nif</NIF>
+			<KFM>Art/Units/MachineGun/MachineGunner.kfm</KFM>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Polynesia/Polynesian Machine Gun/polymachinegunner.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.05</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_AT_INFANTRY_POLYNESIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/ICBM.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,5,11</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Modules/Varietas Delectat/Art/Units/Polynesia/Polynesian AT Infantry/polyatinfantry.nif</NIF>
+			<KFM>Art/Units/AntiTankInfantry/WWAntiTankInfantry.kfm</KFM>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Polynesia/Polynesian AT Infantry/polyatinfantry.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_SAM_INFANTRY_POLYNESIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/SAM_Infantry.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,1,8</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Modules/Varietas Delectat/Art/Units/Polynesia/Polynesian SAM Infantry/polysaminfantry.nif</NIF>
+			<KFM>Art/Units/SAMInfantry/SAMInfantry.kfm</KFM>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Polynesia/Polynesian SAM Infantry/polysaminfantry.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.05</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_MARINE_POLYNESIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/Marine.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,3,7</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Modules/Varietas Delectat/Art/Units/Polynesia/Polynesian Marine/polycommando.nif</NIF>
+			<KFM>Art/Units/Unique/America/NavySEAL/NavySeal.kfm</KFM>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Polynesia/Polynesian Marine/polycommando.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.05</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_PARATROOPER_POLYNESIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/ICBM.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,4,11</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Modules/Varietas Delectat/Art/Units/Polynesia/Polynesian Paratrooper/polyparatrooper.nif</NIF>
+			<KFM>Art/Units/Paratrooper/Paratrooper.kfm</KFM>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Polynesia/Polynesian Paratrooper/polyparatrooper.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>Bip01 Neck</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.05</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_WAR_GALLEY_MESOAMERICAN</Type>
+			<Button>,Art/Interface/Buttons/Units/Galley.dds,Art/Interface/Buttons/Warlords_Atlas_1.dds,8,8</Button>
+			<fScale>0.13</fScale>
+			<fInterfaceScale>0.6</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Modules/Varietas Delectat/Art/Units/Polynesia/War Galley/Trireme_FX.nif</NIF>
+			<KFM>Art/Units/Trireme/Trireme.kfm</KFM>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Polynesia/War Galley/Trireme_FX.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/IroncladShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>4.0</fShadowScale>
+			</ShadowDef>
+			<iDamageStates>4</iDamageStates>
+			<TrailDefinition>
+				<Texture>Art/Shared/water_ship_wake.dds</Texture>
+				<fWidth>1</fWidth>
+				<fLength>180.0</fLength>
+				<fTaper>1</fTaper>
+				<fFadeStartTime>.2</fFadeStartTime>
+				<fFadeFalloff>0.4</fFadeFalloff>
+			</TrailDefinition>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bSmoothMove>1</bSmoothMove>
+			<fAngleInterpRate>720.0</fAngleInterpRate>
+			<fBankRate>.2</fBankRate>
+			<fExchangeAngle>25.0</fExchangeAngle>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop>LOOPSTEP_OCEAN1</AudioRunTypeLoop>
+				<AudioRunTypeEnd>ENDSTEP_OCEAN1</AudioRunTypeEnd>
+			</AudioRunSounds>
+			<SelectionSound>AS3D_UN_OCEAN_END1</SelectionSound>
+			<ActionSound>AS3D_UN_OCEAN_END1</ActionSound>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_CARAVEL_MESOAMERICAN</Type>
+			<Button>,Art/Interface/Buttons/Units/Caravel.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,1,9</Button>
+			<fScale>0.16</fScale>
+			<fInterfaceScale>0.6</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Modules/Varietas Delectat/Art/Units/Polynesia/Caravel/Galley_FX.nif</NIF>
+			<KFM>Art/Units/Galley/Galley.kfm</KFM>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Polynesia/Caravel/Galley_FX.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/GalleyShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.9</fShadowScale>
+			</ShadowDef>
+			<iDamageStates>4</iDamageStates>
+			<TrailDefinition>
+				<Texture>Art/Shared/water_ship_wake.dds</Texture>
+				<fWidth>1</fWidth>
+				<fLength>180.0</fLength>
+				<fTaper>1</fTaper>
+				<fFadeStartTime>.2</fFadeStartTime>
+				<fFadeFalloff>0.35</fFadeFalloff>
+			</TrailDefinition>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bSmoothMove>1</bSmoothMove>
+			<fAngleInterpRate>720.0</fAngleInterpRate>
+			<fBankRate>.2</fBankRate>
+			<fExchangeAngle>25.0</fExchangeAngle>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop>LOOPSTEP_OCEAN1</AudioRunTypeLoop>
+				<AudioRunTypeEnd>ENDSTEP_OCEAN1</AudioRunTypeEnd>
+			</AudioRunSounds>
+			<SelectionSound>AS3D_UN_OCEAN_END1</SelectionSound>
+			<ActionSound>AS3D_UN_OCEAN_END1</ActionSound>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_GALLEASS_MESOAMERICAN</Type>
+			<Button>Art/Interface/Buttons/Units/Galleass.dds</Button>
+			<fScale>0.14</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Modules/Varietas Delectat/Art/Units/Polynesia/Galleass/trireme_fx.nif</NIF>
+			<KFM>Art/Units/Trireme/Trireme.kfm</KFM>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Polynesia/Galleass/trireme_fx.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/CaravelShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<iDamageStates>4</iDamageStates>
+			<TrailDefinition>
+				<Texture>Art/Shared/water_ship_wake.dds</Texture>
+				<fWidth>1</fWidth>
+				<fLength>180.0</fLength>
+				<fTaper>1</fTaper>
+				<fFadeStartTime>.2</fFadeStartTime>
+				<fFadeFalloff>0.35</fFadeFalloff>
+			</TrailDefinition>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bSmoothMove>1</bSmoothMove>
+			<fAngleInterpRate>720.0</fAngleInterpRate>
+			<fBankRate>.4</fBankRate>
+			<fExchangeAngle>25.0</fExchangeAngle>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop>LOOPSTEP_OCEAN2</AudioRunTypeLoop>
+				<AudioRunTypeEnd>ENDSTEP_OCEAN2</AudioRunTypeEnd>
+			</AudioRunSounds>
+			<SelectionSound>AS3D_UN_OCEAN_END1</SelectionSound>
+			<ActionSound>AS3D_UN_OCEAN_END1</ActionSound>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_GALLEON_MESOAMERICAN</Type>
+			<Button>,Art/Interface/Buttons/Units/Galleon.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,5,9</Button>
+			<fScale>0.19</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Modules/Varietas Delectat/Art/Units/Polynesia/Galleon/galleon_fx.nif</NIF>
+			<KFM>Art/Units/Galleon/Galleon.kfm</KFM>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Polynesia/Galleon/galleon_fx.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/GalleonShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<iDamageStates>4</iDamageStates>
+			<TrailDefinition>
+				<Texture>Art/Shared/water_ship_wake.dds</Texture>
+				<fWidth>1</fWidth>
+				<fLength>180.0</fLength>
+				<fTaper>1</fTaper>
+				<fFadeStartTime>.2</fFadeStartTime>
+				<fFadeFalloff>0.35</fFadeFalloff>
+			</TrailDefinition>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bSmoothMove>1</bSmoothMove>
+			<fAngleInterpRate>720.0</fAngleInterpRate>
+			<fBankRate>.3</fBankRate>
+			<fExchangeAngle>25.0</fExchangeAngle>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop>LOOPSTEP_OCEAN2</AudioRunTypeLoop>
+				<AudioRunTypeEnd>ENDSTEP_OCEAN2</AudioRunTypeEnd>
+			</AudioRunSounds>
+			<SelectionSound>AS3D_UN_OCEAN_END1</SelectionSound>
+			<ActionSound>AS3D_UN_OCEAN_END1</ActionSound>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_FRIGATE_MESOAMERICAN</Type>
+			<Button>,Art/Interface/Buttons/Units/Frigate.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,2,9</Button>
+			<fScale>0.18</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Modules/Varietas Delectat/Art/Units/Polynesia/Frigate/galleon_fx.nif</NIF>
+			<KFM>Art/Units/Frigate/Frigate.kfm</KFM>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Polynesia/Frigate/galleon_fx.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/FrigateShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<iDamageStates>4</iDamageStates>
+			<TrailDefinition>
+				<Texture>Art/Shared/water_ship_wake.dds</Texture>
+				<fWidth>1</fWidth>
+				<fLength>180.0</fLength>
+				<fTaper>1</fTaper>
+				<fFadeStartTime>.2</fFadeStartTime>
+				<fFadeFalloff>0.35</fFadeFalloff>
+			</TrailDefinition>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bSmoothMove>1</bSmoothMove>
+			<fAngleInterpRate>720.0</fAngleInterpRate>
+			<fBankRate>.3</fBankRate>
+			<fExchangeAngle>25.0</fExchangeAngle>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop>LOOPSTEP_OCEAN2</AudioRunTypeLoop>
+				<AudioRunTypeEnd>ENDSTEP_OCEAN2</AudioRunTypeEnd>
+			</AudioRunSounds>
+			<SelectionSound>AS3D_UN_OCEAN_END1</SelectionSound>
+			<ActionSound>AS3D_UN_OCEAN_END1</ActionSound>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_SHIP_OF_THE_LINE_MESOAMERICAN</Type>
+			<Button>,Art/Interface/Buttons/Units/ICBM.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,1,12</Button>
+			<fScale>0.16</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Modules/Varietas Delectat/Art/Units/Polynesia/Ship of the Line/galleon_fx.nif</NIF>
+			<KFM>Art/Units/Galleon/Galleon.kfm</KFM>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Polynesia/Ship of the Line/galleon_fx.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/FrigateShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.1</fShadowScale>
+			</ShadowDef>
+			<iDamageStates>4</iDamageStates>
+			<TrailDefinition>
+				<Texture>Art/Shared/water_ship_wake.dds</Texture>
+				<fWidth>1</fWidth>
+				<fLength>180.0</fLength>
+				<fTaper>1</fTaper>
+				<fFadeStartTime>.2</fFadeStartTime>
+				<fFadeFalloff>0.35</fFadeFalloff>
+			</TrailDefinition>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bSmoothMove>1</bSmoothMove>
+			<fAngleInterpRate>720.0</fAngleInterpRate>
+			<fBankRate>.3</fBankRate>
+			<fExchangeAngle>25.0</fExchangeAngle>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop>LOOPSTEP_OCEAN1</AudioRunTypeLoop>
+				<AudioRunTypeEnd>ENDSTEP_OCEAN1</AudioRunTypeEnd>
+			</AudioRunSounds>
+			<SelectionSound>AS3D_UN_OCEAN_END1</SelectionSound>
+			<ActionSound>AS3D_UN_OCEAN_END1</ActionSound>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_GENERAL_MODERN_SOUTHERN</Type>
+			<Button>,Art/Interface/Buttons/Units/GreatEngineer.dds,Art/Interface/Buttons/Warlords_Atlas_1.dds,5,10</Button>
+			<fScale>0.5</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Modules/Varietas Delectat/Art/Units/Polynesia/General (Modern)/warlord_modern_fx.nif</NIF>
+			<KFM>Art/Units/Warlord_Modern/Warlord_Modern.kfm</KFM>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Polynesia/General (Modern)/warlord_modern_fx.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>Bip01 Pelvis</ShadowAttachNode>
+				<fShadowScale>0.9</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_ARTIST_INDIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/GreatArtist.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,2,4</Button>
+			<fScale>0.46</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Modules/Varietas Delectat/Art/Units/Polynesia/Artist/IndianGreatPersonArtist.nif</NIF>
+			<KFM>Art/Units/GreatPeople/Artist/GreatArtist.kfm</KFM>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Polynesia/Artist/IndianGreatPersonArtist.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.9</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_ENGINEER_MESOAMERICAN</Type>
+			<Button>,Art/Interface/Buttons/Units/GreatEngineer.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,2,8</Button>
+			<fScale>0.46</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Modules/Varietas Delectat/Art/Units/Polynesia/Engineer/engineer_fx.nif</NIF>
+			<KFM>Art/Units/GreatPeople/Engineer/Engineer.kfm</KFM>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Polynesia/Engineer/engineer_fx.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.9</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_MERCHANT_MESOAMERICAN</Type>
+			<Button>,Art/Interface/Buttons/Units/GreatTycoon.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,3,4</Button>
+			<fScale>0.46</fScale>
+			<fInterfaceScale>0.8</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Modules/Varietas Delectat/Art/Units/Polynesia/Merchant/andean_greatmerchantancient_fx.nif</NIF>
+			<KFM>Modules/Varietas Delectat/Art/Units/Polynesia/Merchant/andean_greatmerchantancient.kfm</KFM>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Polynesia/Merchant/andean_greatmerchantancient_fx.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/GreatMerchantShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_PROPHET_INDIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/GreatProphet.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,5,1</Button>
+			<fScale>0.46</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Modules/Varietas Delectat/Art/Units/Polynesia/Prophet/IndianGreatPeopleProphetAnceint.nif</NIF>
+			<KFM>Art/Units/GreatPeople/Prophet/GreatProphet.kfm</KFM>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Polynesia/Prophet/IndianGreatPeopleProphetAnceint.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_MERCHANT_MODERN_INDIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/GreatTycoon.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,3,4</Button>
+			<fScale>0.46</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Modules/Varietas Delectat/Art/Units/Polynesia/Merchant (Modern)/IndianGreatMerchantModern.nif</NIF>
+			<KFM>Art/Units/GreatPeople/ModernMerchant/ModernMerchant.kfm</KFM>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Polynesia/Merchant (Modern)/IndianGreatMerchantModern.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_SCIENTIST_INDIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/GreatScientist.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,1,4</Button>
+			<fScale>0.46</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Modules/Varietas Delectat/Art/Units/Polynesia/Scientist/IndianGreatScientistAncient.nif</NIF>
+			<KFM>Art/Units/GreatPeople/Scientist/GreatScientistAncient.kfm</KFM>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Polynesia/Scientist/IndianGreatScientistAncient.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_SCIENTIST_MODERN_INDIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/GreatScientist.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,1,4</Button>
+			<fScale>0.46</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Modules/Varietas Delectat/Art/Units/Polynesia/Scientist (Modern)/IndianModernScientist.nif</NIF>
+			<KFM>Art/Units/GreatPeople/ModernScientist/ModernScientist.kfm</KFM>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Polynesia/Scientist (Modern)/IndianModernScientist.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.9</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_SKIRMISHER_POLYNESIAN</Type>
+			<Button>Art/Interface/Buttons/Units/Skirmisher.dds</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Modules/Varietas Delectat/Art/Units/Polynesia/Polynesian Skirmisher/polynesia_skirmisher_fx.nif</NIF>
+			<KFM>Art/Units/Unique/Mali/Skirmisher/MaliSkirmisher.kfm</KFM>
+			<SHADERNIF>Modules/Varietas Delectat/Art/Units/Polynesia/Polynesian Skirmisher/polynesia_skirmisher_fx.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+	</UnitArtInfos>
+</Civ4ArtDefines>

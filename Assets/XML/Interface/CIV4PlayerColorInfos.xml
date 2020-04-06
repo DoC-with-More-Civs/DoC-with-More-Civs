@@ -1,0 +1,532 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Firaxis Games (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Player Color -->
+<Civ4PlayerColorInfos xmlns="x-schema:CIV4InterfaceSchema.xml">
+	<PlayerColorInfos>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_BLACK</Type> <!-- Barbarians -->
+			<ColorTypePrimary>COLOR_PLAYER_BLACK</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_WHITE</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_BLACK_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_BLUE</Type> <!-- Babylonia -->
+			<ColorTypePrimary>COLOR_PLAYER_BLUE</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_WHITE</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_BLUE_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_BROWN</Type> <!-- Mongolia -->
+			<ColorTypePrimary>COLOR_PLAYER_BROWN</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_DARK_YELLOW</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_LIGHT_BROWN_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_CYAN</Type> <!-- Greece -->
+			<ColorTypePrimary>COLOR_PLAYER_CYAN</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_DARKER_GRAY</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_CYAN_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_DARK_BLUE</Type> <!-- France -->
+			<ColorTypePrimary>COLOR_PLAYER_DARK_BLUE</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_YELLOW</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_DARK_BLUE_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_DARK_CYAN</Type> <!-- Inca -->
+			<ColorTypePrimary>COLOR_PLAYER_DARK_CYAN</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_DARK_YELLOW</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_DARK_CYAN_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_DARK_GREEN</Type> <!-- Arabia -->
+			<ColorTypePrimary>COLOR_PLAYER_DARK_GREEN</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_WHITE</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_DARK_GREEN_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_DARK_PINK</Type>
+			<ColorTypePrimary>COLOR_PLAYER_DARK_PINK</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_YELLOW</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_DARK_PINK_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_DARK_PURPLE</Type> <!-- Byzantium -->
+			<ColorTypePrimary>COLOR_PLAYER_DARK_PURPLE</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_YELLOW</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_DARK_PURPLE_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_DARK_RED</Type> <!-- Rome -->
+			<ColorTypePrimary>COLOR_PLAYER_DARK_RED</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_DARK_YELLOW</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_DARK_RED_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_DARK_YELLOW</Type> <!-- Spain -->
+			<ColorTypePrimary>COLOR_PLAYER_DARK_YELLOW</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_RED</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_DARK_YELLOW_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_GRAY</Type> <!-- Prussia -->
+			<ColorTypePrimary>COLOR_PLAYER_GRAY</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_BLACK</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_GRAY_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_GREEN</Type> <!-- Aztecs and Mexico -->
+			<ColorTypePrimary>COLOR_PLAYER_GREEN</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_BLACK</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_GREEN_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_ORANGE</Type> <!-- Netherlands -->
+			<ColorTypePrimary>COLOR_PLAYER_ORANGE</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_BLACK</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_ORANGE_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_PEACH</Type> <!-- Mali -->
+			<ColorTypePrimary>COLOR_PLAYER_PEACH</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_BLACK</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_PEACH_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_PINK</Type>
+			<ColorTypePrimary>COLOR_PLAYER_PINK</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_DARKER_GRAY</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_PINK_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_PURPLE</Type> <!-- Harappa -->
+			<ColorTypePrimary>COLOR_PLAYER_PURPLE</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_LIGHT_YELLOW</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_PURPLE_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_RED</Type> <!-- England -->
+			<ColorTypePrimary>COLOR_PLAYER_RED</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_YELLOW</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_RED_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_WHITE</Type> <!-- Japan -->
+			<ColorTypePrimary>COLOR_PLAYER_WHITE</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_RED</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_WHITE_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_YELLOW</Type> <!-- Egypt -->
+			<ColorTypePrimary>COLOR_PLAYER_YELLOW</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_BLUE</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_YELLOW_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_LIGHT_GREEN</Type>
+			<ColorTypePrimary>COLOR_PLAYER_LIGHT_GREEN</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_BLACK</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_LIGHT_GREEN_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_LIGHT_BLUE</Type> <!-- Tamils -->
+			<ColorTypePrimary>COLOR_PLAYER_LIGHT_BLUE</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_LIGHT_YELLOW</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_LIGHT_BLUE_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_VERY_LIGHT_BLUE</Type> <!-- Argentina -->
+			<ColorTypePrimary>COLOR_PLAYER_VERY_LIGHT_BLUE</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_WHITE</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_VERY_LIGHT_BLUE_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_LIGHT_YELLOW</Type> <!-- China and Zulus-->
+			<ColorTypePrimary>COLOR_PLAYER_LIGHT_YELLOW</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_BLACK</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_LIGHT_YELLOW_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_LIGHT_PURPLE</Type> <!-- Viking -->
+			<ColorTypePrimary>COLOR_PLAYER_LIGHT_PURPLE</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_BLACK</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_LIGHT_PURPLE_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_LIGHT_ORANGE</Type> <!-- Persia and Iran -->
+			<ColorTypePrimary>COLOR_PLAYER_LIGHT_ORANGE</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_PERSIA_RED</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_LIGHT_ORANGE_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_VERYDARK_BLUE</Type> <!-- America -->
+			<ColorTypePrimary>COLOR_PLAYER_VERYDARK_BLUE</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_WHITE</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_VERYDARK_BLUE_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_VERYDARK_RED</Type> <!-- Russia -->
+			<ColorTypePrimary>COLOR_PLAYER_VERYDARK_RED</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_DARK_YELLOW</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_VERYDARK_RED_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_DARK_GRAY1</Type> <!-- Independent -->
+			<ColorTypePrimary>COLOR_PLAYER_DARK_GRAY1</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_WHITE</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_DARK_GRAY_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_DARK_GRAY2</Type> <!-- Independent2 -->
+			<ColorTypePrimary>COLOR_PLAYER_DARK_GRAY2</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_WHITE</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_DARK_GRAY_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_DARK_GRAY_GREEN</Type> <!-- Celts -->
+			<ColorTypePrimary>COLOR_PLAYER_DARK_GRAY3</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_LIGHT_GREEN</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_DARK_GRAY_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_DARK_GRAY_YELLOW</Type> <!-- Native -->
+			<ColorTypePrimary>COLOR_PLAYER_DARK_GRAY4</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_YELLOW</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_DARK_GRAY_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_MIDDLE_PURPLE</Type>
+			<ColorTypePrimary>COLOR_PLAYER_MIDDLE_PURPLE</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_GOLDENROD</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_MIDDLE_PURPLE_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_DARK_GRAY</Type> <!-- Minor -->
+			<ColorTypePrimary>COLOR_PLAYER_DARK_GRAY</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_PALE_RED</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_DARK_GRAY_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_MIDDLE_GREEN</Type> <!-- Brazil -->
+			<ColorTypePrimary>COLOR_PLAYER_MIDDLE_GREEN</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_YELLOW</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_MIDDLE_GREEN_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_DARK_LEMON</Type> <!-- Germany -->
+			<ColorTypePrimary>COLOR_PLAYER_DARK_LEMON</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_BLACK</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_DARK_LEMON_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_MIDDLE_BLUE</Type> <!-- Thailand -->
+			<ColorTypePrimary>COLOR_PLAYER_MIDDLE_BLUE</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_RED</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_MIDDLE_BLUE</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_MIDDLE_CYAN</Type>
+			<ColorTypePrimary>COLOR_PLAYER_MIDDLE_CYAN</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_MAROON</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_MIDDLE_CYAN_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_LIGHT_BROWN</Type> <!-- Moors and Native America -->
+			<ColorTypePrimary>COLOR_PLAYER_LIGHT_BROWN</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_DARK_YELLOW</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_BROWN_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_DARK_ORANGE</Type> <!-- Turkey -->
+			<ColorTypePrimary>COLOR_PLAYER_DARK_ORANGE</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_YELLOW</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_DARK_ORANGE_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_DARK_DARK_GREEN</Type> <!-- Portugal -->
+			<ColorTypePrimary>COLOR_PLAYER_DARK_DARK_GREEN</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_PALE_RED</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_DARK_DARK_GREEN_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_DARK_INDIGO</Type> <!-- Phoenicia and Sumeria -->
+			<ColorTypePrimary>COLOR_PLAYER_DARK_INDIGO</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_YELLOW</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_DARK_INDIGO_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_CANADA_RED</Type> <!-- Canada -->
+			<ColorTypePrimary>COLOR_PLAYER_CANADA_RED</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_WHITE</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_CANADA_RED</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_RED_AND_GOLD</Type>
+			<ColorTypePrimary>COLOR_PLAYER_RED</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_DARK_YELLOW</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_RED_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_GOLD_AND_BLACK</Type>
+			<ColorTypePrimary>COLOR_PLAYER_GOLDENROD</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_BLACK</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_GOLDENROD</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_GREEN_AND_BLACK</Type>
+			<ColorTypePrimary>COLOR_PLAYER_DARK_GREEN</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_BLACK</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_DARK_GREEN_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_DARK_CYAN_AND_LEMON</Type>
+			<ColorTypePrimary>COLOR_PLAYER_DARK_CYAN</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_LIGHT_YELLOW</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_DARK_CYAN_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_BLACK_AND_GREEN</Type>
+			<ColorTypePrimary>COLOR_PLAYER_LIGHT_BLACK</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_MIDDLE_GREEN</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_LIGHT_BLACK_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_GREEN_AND_WHITE</Type>
+			<ColorTypePrimary>COLOR_PLAYER_DARK_GREEN</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_WHITE</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_WHITE_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_CYAN_AND_GRAY</Type>
+			<ColorTypePrimary>COLOR_PLAYER_CYAN</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_DARK_GRAY</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_CYAN_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_DARK_INDIGO_AND_WHITE</Type>
+			<ColorTypePrimary>COLOR_PLAYER_DARK_INDIGO</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_WHITE</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_DARK_INDIGO_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_ORANGE_AND_GREEN</Type>
+			<ColorTypePrimary>COLOR_PLAYER_ORANGE</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_DARK_GREEN</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_ORANGE_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_LIME</Type> <!-- Ethiopia -->
+			<ColorTypePrimary>COLOR_PLAYER_LIME</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_DARK_GREEN</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_LIME_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_GREYISH_GREEN</Type>
+			<ColorTypePrimary>COLOR_PLAYER_GREYISH_GREEN</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_WHITE</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_GREYISH_GREEN_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_GREYISH_CYAN</Type> <!-- Maya -->
+			<ColorTypePrimary>COLOR_PLAYER_GREYISH_CYAN</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_DARK_BLUE</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_GREYISH_CYAN_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_KOREA</Type> <!-- Korea -->
+			<ColorTypePrimary>COLOR_PLAYER_PALE_RED</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_WHITE</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_PALE_RED</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_TEAL</Type> <!-- Indonesia -->
+			<ColorTypePrimary>COLOR_PLAYER_TEAL</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_DARK_DARK_GREEN</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_TEAL</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_DARK_ROT_GREEN</Type> <!-- Mughals -->
+			<ColorTypePrimary>COLOR_PLAYER_DARK_ROT_GREEN</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_YELLOW</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_DARK_ROT_GREEN_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_SILVER</Type> <!-- Seljuks -->
+			<ColorTypePrimary>COLOR_SILVER</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_BLACK</ColorTypeSecondary>
+			<TextColorType>COLOR_SILVER</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_ITALY</Type> <!-- Italy -->
+			<ColorTypePrimary>COLOR_PLAYER_DARK_RED_ITALY</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_DARK_YELLOW</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_DARK_RED_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_MIDDLE_PINK</Type> <!-- Poland -->
+			<ColorTypePrimary>COLOR_PLAYER_MIDDLE_PINK</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_WHITE</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_MIDDLE_PINK_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_KHAKI</Type> <!-- Congo -->
+			<ColorTypePrimary>COLOR_PLAYER_KHAKI</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_LIGHT_BROWN</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_KHAKI_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_MAROON</Type> <!-- Tibet -->
+			<ColorTypePrimary>COLOR_PLAYER_MAROON</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_ORANGE</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_MAROON_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_MEXICO</Type>
+			<ColorTypePrimary>COLOR_X_OLIVEDRAB</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_RED</ColorTypeSecondary>
+			<TextColorType>COLOR_X_OLIVEDRAB</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_MIDDLE_INDIGO</Type> <!-- Colombia -->
+			<ColorTypePrimary>COLOR_PLAYER_MIDDLE_INDIGO</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_DARK_YELLOW</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_MIDDLE_INDIGO</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_PALE_ORANGE</Type> <!-- India -->
+			<ColorTypePrimary>COLOR_PLAYER_PALE_ORANGE</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_YELLOW</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_PALE_ORANGE</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_BROWNISH_RED</Type> <!-- Khmer -->
+			<ColorTypePrimary>COLOR_PLAYER_BROWNISH_RED</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_WHITE</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_BROWNISH_RED</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_POLYNESIA</Type> <!-- Polynesia -->
+			<ColorTypePrimary>COLOR_PLAYER_ROSE</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_WHITE</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_ROSE_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_GREYISH_BLUE</Type> <!-- Turks -->
+			<ColorTypePrimary>COLOR_PLAYER_GREYISH_BLUE</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_WHITE</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_BLUE_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_SWEDISH_BLUE_AND_YELLOW</Type> <!-- Sweden -->
+			<ColorTypePrimary>COLOR_PLAYER_SWEDISH_BLUE</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_SWEDISH_YELLOW</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_SWEDISH_BLUE</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_AUSTRALIA</Type> <!-- Australia -->
+			<ColorTypePrimary>COLOR_PLAYER_GOLD</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_AUSTGREEN</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_GOLD</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_MEDIUM_YELLOW</Type> <!-- Mamluks -->
+			<ColorTypePrimary>COLOR_PLAYER_MEDIUM_YELLOW</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_WHITE</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_MEDIUM_YELLOW_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_DARK_ROSE</Type> <!-- Philippines -->
+			<ColorTypePrimary>COLOR_PLAYER_DARK_ROSE</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_GOLDENROD</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_DARK_ROSE_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_GOLDEN_BROWN</Type> <!-- Boers -->
+			<ColorTypePrimary>COLOR_PLAYER_GOLDEN_BROWN</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_WHITE</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_GOLDEN_BROWN</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_SWAHILI</Type> <!-- Swahili -->
+			<ColorTypePrimary>COLOR_CIVILIZATION_GREENBLUE</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_CIVILIZATION_MOSS</ColorTypeSecondary>
+			<TextColorType>COLOR_CIVILIZATION_GREENBLUE_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_ORANGE_GREEN</Type> <!-- Vietnam -->
+			<ColorTypePrimary>COLOR_PLAYER_ORANGE_GREEN</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_BROWNISH_RED</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_ORANGE_GREEN_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_MIDDLE_RED_INDIGO</Type> <!-- Zimbabwe -->
+			<ColorTypePrimary>COLOR_PLAYER_MIDDLE_RED_INDIGO</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_DARK_YELLOW</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_MIDDLE_RED_INDIGO</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_PEACH_AND_DARK_BLUE</Type> <!-- Burma -->
+			<ColorTypePrimary>COLOR_PLAYER_PEACH</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_DARK_BLUE</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_PEACH_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_DARK_YELLOW_AND_LIGHT_SKY_BLUE</Type> <!-- Kievan Rus -->
+			<ColorTypePrimary>COLOR_PLAYER_LIGHT_SKY_BLUE</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_DARK_YELLOW</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_LIGHT_SKY_BLUE</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_SIENNA_AND_WHITE</Type> <!-- Hungary -->
+			<ColorTypePrimary>COLOR_CIVILIZATION_SIENNA</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_WHITE</ColorTypeSecondary>
+			<TextColorType>COLOR_CIVILIZATION_SIENNA_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_TEOTIHUACAN</Type> <!-- Teotihuacan -->
+			<ColorTypePrimary>COLOR_PLAYER_MESOAMERICAN_RED</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_MESOAMERICAN_JADE</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_MESOAMERICAN_RED</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_ISRAEL</Type> <!-- Israel -->
+			<ColorTypePrimary>COLOR_PLAYER_ISRAEL_BLUE</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_WHITE</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_ISRAEL_BLUE</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_AMANITA_MUSCARIA</Type> <!-- Oman -->
+			<ColorTypePrimary>COLOR_PLAYER_BEIGE_TEXT</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_RED</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_BEIGE_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_MAROON_AND_WHITE</Type> <!-- Yemen -->
+			<ColorTypePrimary>COLOR_PLAYER_MAROON</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_WHITE</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_MAROON_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_BLUISH_WHITE</Type> <!-- Khazar -->
+			<ColorTypePrimary>COLOR_PLAYER_BLUISH_WHITE</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_DARK_YELLOW</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_BLUISH_WHITE</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_ASPARAGUS</Type> <!-- Nubia -->
+			<ColorTypePrimary>COLOR_PLAYER_ASPARAGUS</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_WHITE</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_ASPARAGUS_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_THISTLE</Type> <!-- Chad -->
+			<ColorTypePrimary>COLOR_PLAYER_THISTLE</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_RED</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_THISTLE</TextColorType>
+		</PlayerColorInfo>
+	</PlayerColorInfos>
+</Civ4PlayerColorInfos>

@@ -1,0 +1,937 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by lcollins (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - New -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_AMERICAN_NAVY_SEAL_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Navy SEAL[COLOR_REVERT], the American replacement for the the [COLOR_UNIT_TEXT]Marine[COLOR_REVERT], is extra first strikes and begins with the [COLOR_HIGHLIGHT_TEXT]March[COLOR_REVERT] promotion.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ARABIA_GHAZI</Tag>
+		<English>Ghazi</English>
+		<French>Ghazi</French>
+		<German>Ghazi</German>
+		<Italian>Ghazi</Italian>
+		<Spanish>Ghazi</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ARABIA_GHAZI_PEDIA</Tag>
+		<English>[TAB]Ghazi warriors were fierce Arabic light/medium cavalry armed with sword and lance, who raided deep into enemy territory to make war on unbelievers. Depending largely on plunder for their livelihood they were organized in bands similiar to mercenary companies which attracted religious zealots and adventurers of every kind. Within the context of Islamic jihad warfare, they struck fast and hard inside enemy borders to destroy war materials and morale, then withdrawing with all the loot they could carry. As flexible and highly mobile border defenders and raiders they often preceeded the deployment of much larger armies during the early Arab invasions of Persia, Egypt and North Africa.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ARABIA_GHAZI_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Ghazi[COLOR_REVERT], the Arabian replacement for the the [COLOR_UNIT_TEXT]Heavy Sworsman[COLOR_REVERT], is immune to first strikes and can withdraw from combat.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ARGENTINA_PATRICIOS</Tag>
+		<English>Patricios</English>
+		<French>Patricios</French>
+		<German>Patricios</German>
+		<Italian>Patricios</Italian>
+		<Spanish>Patricios</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ARGENTINA_PATRICIOS_PEDIA</Tag>
+		<English>[TAB]The 1st Infantry Regiment "Patricios" (Regimiento de Infantería 1 "Patricios") is oldest and one of the most prestigious regiments of the Argentine Army. The title is often shortened to the Patricians' Regiment (Regimiento de Patricios). Since the 1990s the regiment has been designated as air assault infantry. It is also the custodian of the Buenos Aires Cabildo, the welcoming party for visiting foreign dignitaries to Argentina and the escort and honor guard battalion for the City Government of Buenos Aires. By September 22, 2010, the Regiment's headquarters building has been declared as a National Historical Monument by the Argentine government, on the occasion of the country's bicentennial year.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ARGENTINA_PATRICIOS_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Patricios[COLOR_REVERT], the Argentinian replacement for the the [COLOR_UNIT_TEXT]Infantry[COLOR_REVERT], begins with the [COLOR_HIGHLIGHT_TEXT]Drill I[COLOR_REVERT] promotion.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_AZTEC_EAGLE</Tag>
+		<English>Eagle</English>
+		<French>Aigle</French>
+		<German>Adler</German>
+		<Italian>Aquila</Italian>
+		<Spanish>Águila</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_AZTEC_EAGLE_PEDIA</Tag>
+		<English>[TAB]Eagle warriors were a special class of infantry soldier of the Aztec army. Along with the Jaguar warriors, Eagle warriors were the only Aztec warrior society for which access was not restricted to the nobility, but to which even commoners could be admitted for special merit.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_AZTEC_EAGLE_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Eagle[COLOR_REVERT], the Aztec replacement for the the [COLOR_UNIT_TEXT]Spearman[COLOR_REVERT], requires no resources, can enter [COLOR_HIGHLIGHT_TEXT]Rainforest[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT] and has a first strike.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_BABYLON_RAM</Tag>
+		<English>Battering Ram</English>
+		<French>Bélier</French>
+		<German>Rammbock</German>
+		<Italian>Ariete</Italian>
+		<Spanish>Ariete</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_BABYLON_RAM_PEDIA</Tag>
+		<English>[TAB]Fortified towns arrive with civilization, and sieges are as old as organized warfare. But siege implements are simple until the Babylons. They pay special attention to the battering ram. Soldiers in early sieges swing a heavy timber ram against a town gate. They are vulnerable to missiles or heated oil from above. Under the Babylons the ram becomes an engine. It is suspended from the roof of a timber structure, which in turn is mounted on wheels so that it can be pushed into position. Protected within this contraption, soldiers can swing the ram relentlessly against the gate. Archers, in protected turrets on top of the engine, exchange shots on almost equal terms with the defenders on the walls.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_BABYLON_RAM_STRATEGY</Tag>
+		<English>This Babylonian replacement for the [COLOR_UNIT_TEXT]Catapult[COLOR_REVERT] is earlier available than its vanilla counterpart. So conquering cities is easy early on.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_BRAZIL_GUARDA_NACIONAL</Tag>
+		<English>Guarda Nacional</English>
+		<French>Guarda Nacional</French>
+		<German>Guarda Nacional</German>
+		<Italian>Guarda Nacional</Italian>
+		<Spanish>Guarda Nacional</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_BRAZIL_GUARDA_NACIONAL_PEDIA</Tag>
+		<English>[TAB]The National Guard of Brazil was a paramilitary force organized by law in Brazil during the Regency period in August 1831 to serve as "sentinel judge constitution" and disbanded in September 1922. At the time of its creation it read: "With the creation of the National Guard were extinct ancient bodies of militia, ordinances and municipal guards. In 1850, the National Guard was reorganized and held its powers subordinate to the Minister of Justice and the provincial presidents. New reforms in 1873 reduced the importance of the institution in relation to the Brazilian Army. With the advent of the Republic National Guard was transferred in 1892 to the Ministry of Justice and Internal Affairs. In 1918, the National Guard passed to be subordinate to the Ministry of War by organizing the National Army of 2nd Line, which was somehow their absorption by the Army.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_BRAZIL_GUARDA_NACIONAL_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Guarda Nacional[COLOR_REVERT], the Brazilian replacement for the the [COLOR_UNIT_TEXT]Marine[COLOR_REVERT], receives a bonus when defending cities.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_BYZANTIUM_TAGMATA</Tag>
+		<English>Tagmata</English>
+		<French>Tagmata</French>
+		<German>Tagmata</German>
+		<Italian>Tagmata</Italian>
+		<Spanish>Tagmata</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_BYZANTIUM_TAGMATA_PEDIA</Tag>
+		<English>[TAB]The tagma is a term for a military unit of battalion size. The best-known use of the term however refers to the elite regiments comprising the central imperial army of the middle and late Byzantine Empire.
+[TAB]In Byzantine usage, the term came to refer exclusively to the professional, standing troops, garrisoned in and around the capital of Constantinople. Most of them traced their origins to the Imperial guard units of the later Roman Empire. By the 7th century, these had declined to little more than parade troops, meaning that the emperors were hard put to face the frequent revolts of the new and powerful thematic formations, especially the Opsician theme, the Asian theme closest to the capital. Within the first sixty years since its creation, it was involved in five revolts, culminating in the rebellion and usurpation of the throne by its commander, the Count Artabasdos, in 741 - 743.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_BYZANTIUM_TAGMATA_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Tagmata[COLOR_REVERT], the Byzantine replacement for the the [COLOR_UNIT_TEXT]Pikeman[COLOR_REVERT], receives a bonus when defending cities.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CANADA_ARROW</Tag>
+		<English>Avro Arrow</English>
+		<French>Avro Arrow</French>
+		<German>Avro Arrow</German>
+		<Italian>Avro Arrow</Italian>
+		<Spanish>Avro Arrow</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CANADA_ARROW_PEDIA</Tag>
+		<English>[TAB]The Avro CF-105 Arrow was a delta-wing interceptor aircraft, designed and built by Avro Aircraft Limited as the culmination of a design study that began in 1953. Considered to be both an advanced technical and aerodynamic achievement for the Canadian aviation industry, the CF-105 held the promise of Mach 2 speeds at 50,000 ft+ altitude, intended to serve as the Royal Canadian Air Force's interceptor for the 1960s and beyond.[PARAGRAPH:1]Following the start of its flight test program in 1958, the Arrow, and its accompanying Iroquois jet engine program, were abruptly cancelled in 1959, sparking a long and bitter political debate. The Arrow is still the subject of controversy, over forty years after it was cancelled.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CANADA_ARROW_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Avro Arrow[COLOR_REVERT], the Canadian replacement for the the [COLOR_UNIT_TEXT]Jet Fighter[COLOR_REVERT], is cheaper and has a bigger range.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CHINA_FIRELANCE</Tag>
+		<English>Pen Huo Qi</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CHINA_FIRELANCE_PEDIA</Tag>
+		<English>[TAB]The Pen Huo Qi is a double-piston pump naphtha flamethrower used in 919 AD in China, during the Five Dynasties and Ten Kingdoms period. The flamethrower was carefully documented and illustrated in the Chinese military manual known as the Wujing Zongyao, compiled in the year 1044 AD during the Song Dynasty. Among various descriptions of equipment and components of the device, the book also provided instructions for how to keep up maintenance and repair of double-piston flamethrowers.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CHINA_FIRELANCE_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Pen Huo Qi[COLOR_REVERT], the Chinese replacement for the [COLOR_UNIT_TEXT]Trebuchet[COLOR_REVERT], requires the [COLOR_TECH_TEXT]Engineering[COLOR_REVERT] technology and doesn't require the [COLOR_TECH_TEXT]Fortification[COLOR_REVERT] technology.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_COLOMBIA_LLANERO</Tag>
+		<English>Llanero</English>
+		<French>Llanero</French>
+		<German>Llanero</German>
+		<Italian>Llanero</Italian>
+		<Spanish>Llanero</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_COLOMBIA_LLANERO_PEDIA</Tag>
+		<English>[TAB]A llanero (plainsman) is a Venezuelan or Colombian herder. The name is taken from the Llanos grasslands occupying western Venezuela and eastern Colombia. The Llanero were originally part Spanish and Indian and have a strong culture including a distinctive form of music.[PARAGRAPH:1]During the wars of independence, Llaneros served in both armies and provided the bulk of the cavalry during the war. In 1819, an army of Llaneros, led by Simón Bolívar and Jos?Antonio Páez, defeated the Spanish with a surprise attack when they crossed over the Orinoco plains and the Andes mountains.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_COLOMBIA_LLANERO_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Llanero[COLOR_REVERT], the Colombian replacement for the [COLOR_UNIT_TEXT]Cavalry[COLOR_REVERT], is cheaper and receives a defensive bonus.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CONGO_NGOLO</Tag>
+		<English>Ebamba Ngolo</English>
+		<French>Ebamba Ngolo</French>
+		<German>Ebamba Ngolo</German>
+		<Italian>Ebamba Ngolo</Italian>
+		<Spanish>Ebamba Ngolo</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CONGO_NGOLO_PEDIA</Tag>
+		<English>[TAB]No pedia yet.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CONGO_NGOLO_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Embamba Ngolo[COLOR_REVERT], the Congolese replacement for the [COLOR_UNIT_TEXT]Longbowman[COLOR_REVERT], has more first strikes.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_DUTCH_GARDIST</Tag>
+		<English>Gardist</English>
+		<French>Gardist</French>
+		<German>Gardist</German>
+		<Italian>Gardist</Italian>
+		<Spanish>Gardist</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_DUTCH_GARDIST_PEDIA</Tag>
+		<English>[TAB]A grenadier (from the word "grenade") was originally a specialized soldier who threw explosive grenades and sometimes took part in assault operations on the field of battle. From the 17thC. grenadiers were chosen from the largest and strongest soldiers and often led the storming of breaches in seige warfare, a role later performed by sappers and pioneers. Grenades were small iron spheres, the size of a baseball or cricket ball, filled with gunpowder and fused by a slow match. The wide hats worn by grenadiers were gradually replaced by tall caps shaped like a bishop's mitre which permitted the grenadier greater ease in throwing the grenade overhand.[PARAGRAPH:1]Grenade usage declined in the late 18thC. although the need for elite assault troops remained and grenadiers were retained for this purpose and specially selected for their strength, experience and steadiness under fire. All the major European armies continued to employ elite grenadier companies until the early 19thC.. Their use was particularly marked in the battles of the Dutch Republic from 1648 to the 1790s as Dutch grenadiers wearing their distinctive guilded "bishop's mitres" saw action in numerous battles during the Anglo-Dutch wars. Grenadiers remained prominent on the battlefield until the invasion and occupation of the Netherlands by Revolutionary France in 1795.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_DUTCH_GARDIST_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Gardist[COLOR_REVERT], the Dutch replacement for the [COLOR_UNIT_TEXT]Grenadier[COLOR_REVERT], has a combat bonus against [COLOR_UNIT_TEXT]Gunpowder Units[COLOR_REVERT].</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_EGYPT_HEQA_KHASEWET</Tag>
+		<English>Heqa Khasewet</English>
+		<French>Heqa Khasewet</French>
+		<German>Heqa Khasewet</German>
+		<Italian>Heqa Khasewet</Italian>
+		<Spanish>Heqa Khasewet</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_EGYPT_AXEMAN_PEDIA</Tag>
+		<English>[TAB]Axes were probably used very early in Egyptian warfare, though at first they were perhaps no different than the tool used for peaceful purposes, such as cutting would. As a practical weapon, it was the battle axe that eventually replaced the mace as one of the Egyptian military's primary close combat weapons.[PARAGRAPH:1]Infantry armed with battle axes were typically deployed after the enemy had been weakened by archers. The axe was more effective in cutting wounded or fleeing enemies to pieces than it was in breaching an intact battle line. The Hyksos, Asiatics themselves, are credited with having introduced scale body armor into Egypt and brought about changes in the form of the battle axe there by the middle of the 2nd millennium.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_EGYPT_KHOPESH</Tag>
+		<English>Khopesh</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_EGYPT_KHOPESH_PEDIA</Tag>
+		<English>[TAB]The khopesh is a characteristic type of ancient Egyptian sword, known for its oddly curved blade, which evolved from pre-existing Egyptian battleaxes. The khopesh could be used to hook, to bludgeon, and to slash using the sharpened portion on the outside of the curved blade. Khopesh became an iconic weapon in Egyptian art, were often used as grave goods, and were frequently made with decorative features or for ceremonial purposes.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_EGYPT_KHOPESH_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Khopesh[COLOR_REVERT], the Egyptian replacement for the [COLOR_UNIT_TEXT]Light Swordsman[COLOR_REVERT], has a combat bonus against [COLOR_UNIT_TEXT]Melee Units[COLOR_REVERT].</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_EGYPT_HEQA_KHASEWET_STRATEGY</Tag>
+		<English>This Egyptian replacement for the [COLOR_UNIT_TEXT]Axeman[COLOR_REVERT] gets a bonus against other [COLOR_UNIT_TEXT]Axeman[COLOR_REVERT], making it the strongest classical melee unit.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ENGLAND_MAN_O_WAR</Tag>
+		<English>Man-O-War</English>
+		<French>Man-O-War</French>
+		<German>Man-O-War</German>
+		<Italian>Man-O-War</Italian>
+		<Spanish>Man-O-War</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ENGLAND_MAN_O_WAR_PEDIA</Tag>
+		<English>[TAB]A man of war is an armed naval vessel. The term often refers to ship armed with cannon and propelled primarily by sails as opposed to a galley propelled primarily by oars. The man of war was developed in the Mediterranean in the 15th century from earlier roundships with the addition of a second mast to form the carrack. The 16th century saw the carrack evolve into the galleon and then the ship of the line.[PARAGRAPH:1]A first-rate man of war, such as the HMS Victory was armed with 100 or more guns (as many as 120). The 90-gun HMS Coronation was a second-rate man of war. A seventy-four, a common ship carrying 74 guns, was a third-rate man of war. A sixth-rate man of war carried only 20 guns. First and second-rate men of war had three gun decks. It took over 2,000 oak and elm trees to build a second-rate man of war.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ENGLAND_MAN_O_WAR_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Man-O-War[COLOR_REVERT], the English replacement for the [COLOR_UNIT_TEXT]Ship of the Line[COLOR_REVERT], is stronger.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ETHIOPIA_SAVANNA_HUNTER</Tag>
+		<English>Savanna Hunter</English>
+		<French>Chasseur Savane</French>
+		<German>Savanne Jäger</German>
+		<Italian>Cacciatore Savana</Italian>
+		<Spanish>Cazador Sabana</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ETHIOPIA_SAVANNA_HUNTER_PEDIA</Tag>
+		<English>[TAB]A safari, from a Swahili word meaning a long journey, is an overland journey (especially in Africa).[PARAGRAPH:1]Safari as a distinctive way of hunting was popularized by US author Ernest Hemingway and president Theodore Roosevelt. A safari may consist of several days or even weeks-long journey and camping in the bush or jungle, while pursuing big game. Nowadays, it's often used to describe tours through African national parks to watch or hunt wildlife.
+[TAB]Hunters are usually tourists, accompanied by (licensed and highly regulated) professional hunters, local guides, skinners and porters in more difficult terrains. A special safari type is the solo-safari where all the license acquiring, stalking, preparation and outfitting is done by the hunter himself.
+</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ETHIOPIA_SAVANNA_HUNTER_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Savanna Hunter[COLOR_REVERT], the Ethiopian replacement for the the [COLOR_UNIT_TEXT]Pistolier[COLOR_REVERT], can enter [COLOR_HIGHLIGHT_TEXT]Rainforest[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT] and begins with the [COLOR_HIGHLIGHT_TEXT]Mobility[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Sentry[COLOR_REVERT] promotions.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_FRANCE_CHEVALIER</Tag>
+		<English>Chevalier</English>
+		<French>Chevalier</French>
+		<German>Chevalier</German>
+		<Italian>Chevalier</Italian>
+		<Spanish>Chevalier</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_FRANCE_CHEVALIER_PEDIA</Tag>
+		<English>[TAB]The Paladins (often called Chevaliers) were Medieval knights who followed the code of chivalry or knightly conduct, which emphasized courage, honour and service. The Paladin was adept at the art of war, trained in fighting in armour on horses with lances, swords and shields. They were expected to show courage, be gallant to women, defend the Church and swear off cowardice and baseness. Their origins lie with the first mounted infantry in the armies of the Emperor Charlemange as some elite warriors who wore armour and fought on horseback were rewarded with grants of land called "benefices" and became powerful captains with feudal fiefs that soon became hereditary and powerful, both in political influence and economic wealth.[PARAGRAPH:1]These knights became the mainstay of governing power under the King, raising their own armies in time of war and often rivalled the Church in wealth and influence. But chivalry and the Church remained closely entwined and the Crusades helped to reinforce the moral code of chivalry as it related to religion. Thus Christian armies were encouraged to devote their efforts to sacred purposes and the Paladins were expected to use their weapons for the protection of the weak and defenceless, to women and children, and above all to the defence of churches and pilgrims, giving rise to the religious military orders like the Templars, the Hospitallers and the Teutonic Knights. Some knightly orders, like the English "Order of the Bath" or the "Order of the Garter" remain day as honorary associations whose membership is granted by the Monarch for meritorious achievement.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_FRANCE_CHEVALIER_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Chevalier[COLOR_REVERT], the French replacement for the [COLOR_UNIT_TEXT]Lancer[COLOR_REVERT], has a combat bonus against [COLOR_UNIT_TEXT]Heavy Cavalry Units[COLOR_REVERT] and [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_GERMANY_DOPPELSOLDNER</Tag>
+		<English>Doppelsöldner</English>
+		<French>Doppelsöldner</French>
+		<German>Doppelsöldner</German>
+		<Italian>Doppelsöldner</Italian>
+		<Spanish>Doppelsöldner</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_GERMANY_DOPPELSOLDNER_PEDIA</Tag>
+		<English>[TAB]Doppelsöldner (Double mercenary) were Landsknechts in 16th-century Germany who were prepared to fight in the front line, taking an extra risk, in exchange for double payment. The stated ratio was that one Landsknecht in four would be a Doppelsöldner. A small number of the Doppelsöldner of each company were usually issued with firearms.[PARAGRAPH:1]Likewise, Landsknechts schooled in the use of the Zweihänder (two-hander), a massive two-handed sword, were entitled to double pay and thus qualified as Doppelsöldner. The fencing guild of the Brotherhood of St. Mark had the monopoly on the use of the Zweihänder after Frederick III, Holy Roman Emperor granted it to them in 1487.[PARAGRAPH:1]The Zweihänder was allegedly used by the Doppelsöldner to break through formations of pikemen, especially Swiss pikemen, by either being swung to break the ends of the pikes themselves or to knock them aside and attack the pikemen directly. The factuality of this tradition is disputed, but at least as a legend, it appears to date to at least the 17th century.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_GERMANY_DOPPELSOLDNER_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Doppelsöldner[COLOR_REVERT], the Holy Roman replacement for the the [COLOR_UNIT_TEXT]Heavy Swordsman[COLOR_REVERT], begins with the [COLOR_HIGHLIGHT_TEXT]Shock[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Formation[COLOR_REVERT] promotions.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_GREEK_HETAIROI</Tag>
+		<English>Hetairoi</English>
+		<French>Hetairoi</French>
+		<German>Hetairoi</German>
+		<Italian>Hetairoi</Italian>
+		<Spanish>Hetairoi</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_GREEK_HETAIROI_PEDIA</Tag>
+		<English>[TAB]The "Hetairoi" (Companions) were Alexander's elite cavalry and the primary offensive arm of his army. A master of cavalry tactics, Alexander would hold them back during the opening part of the battle, committing them at the decisive point to charge the shaken foe, often leading the attack himself. [PARAGRAPH:2:1]Alexander's father, Philip of Macedon, created the Companions, who were originally his closest retainers, picked from the Macedonian nobility. As their numbers rose, additional young noblemen were recruited from Thessaly and other parts of the Greek world. [PARAGRAPH:2:1]The Companions were organized into "ilai" (wings) of about 200 men, under the command of close personal friends of the king. They generally wore the usual Boeotian helmet with plumes out the top, a dyed cloak and cuirass. Underneath, they wore linen or leather corslets reinforced with metal scales. They carried long thrusting spears and a short sword; few carried shields unless afoot. Occasionally, Alexander armed them with javelins for specific battles. Their mounts were the best that Greece had to offer - short, sturdy animals trained for war. The horses were partially armored, likely with leather skirts over their flanks and rumps. [PARAGRAPH:2:1]The legends of Alexander's Companions have grown with the telling over the centuries. Though their prowess has undoubtedly been exaggerated, it cannot be denied that they played a significant role in victorious battles such as Issus and Chaeronea. And their loyalty was never questioned. For the next several centuries, elite cavalry of many ancient kingdoms would take the Companions as their ideal model.</English>
+		<French>[TAB]Les "Hetairoi" (compagnons) constituent la cavalerie d'&#233;lite d'Alexandre et la premi&#232;re force offensive de son arm&#233;e. Pass&#233; ma&#238;tre en tactiques de cavaleries, Alexandre les retient durant le prologue de la bataille, ne les lan&#231;ant &#224; l'attaque qu'&#224; l'instant d&#233;cisif pour charger sur l'ennemi en d&#233;route, le plus souvent menant lui-m&#234;me l'assaut. [PARAGRAPH:2:1]C'est le p&#232;re d'Alexandre, Philippe II de Mac&#233;doine, cr&#233;e les compagnons qui regroupent ses connaissances les plus proches, issues de la noblesse de Mac&#233;doine. A mesure que leur nombre augmente, de jeunes nobles sont recrut&#233;s en Thessalie ou dans d'autres r&#233;gions de Gr&#232;ce. [PARAGRAPH:2:1]Les compagnons sont organis&#233;s en "ilai" (ailes) d'environ 200 hommes plac&#233;s sous le commandement d'un ami personnel du roi. Ils portent en g&#233;n&#233;ral le casque B&#233;otien surmont&#233; d'un plumet, une cape teinte et d'un plastron. Dessous, ils sont v&#234;tus d'une cuirasse en lin ou en cuir renforc&#233;e de plaques de m&#233;tal. Ils portent de longues lances et une &#233;p&#233;e courte. Peu d'entre eux portent un bouclier &#224; moins d'&#234;tre &#224; pieds. Occasionnellement, Alexandre les &#233;quipe de javelots pour des batailles sp&#233;cifiques. Leurs montures sont ce que la Gr&#232;ce a de mieux &#224; offrir en la mati&#232;re : des animaux petits mais puissants, taill&#233;s pour le combat. Leurs chevaux sont partiellement prot&#233;g&#233;s, le plus souvent avec des pans de cuir pos&#233;s sur leurs flancs et leur croupe. [PARAGRAPH:2:1]Les l&#233;gendes concernant les compagnons d'Alexandre ont enfl&#233; au fil des si&#232;cles. M&#234;me si leurs prouesses sont sans aucun doute exag&#233;r&#233;es, il est ind&#233;niable qu'ils ont jou&#233; un r&#244;le d&#233;cisif dans l'obtention de la victoire lors de batailles telles que Ch&#233;ron&#233;e ou Issos. De plus, leur loyaut&#233; est sans faille. Durant les nombreux si&#232;cles qui suivent, les troupes de cavalerie d'&#233;lite consid&#232;rent les Compagnons comme leur mod&#232;le id&#233;al.</French>
+		<German>[TAB]Die "Hetairoi" (Begleitreiter) dienten in Alexanders Heer als Elitekavallerie und Hauptoffensivregiment. Als Meister der Kavallerietaktiken hielt Alexander sie in der Anfangsphase einer Schlacht normalerweise zur&#252;ck und setzte sie erst am entscheidenden Punkt des Gefechts gegen den bereits angeschlagenen Feind ein, wobei er h&#228;ufig selbst die F&#252;hrung &#252;bernahm. [PARAGRAPH:2:1]Die von Alexanders Vater, Philipp II. von Makedonien begr&#252;ndete Begleitkavallerie, deren Mitglieder makedonischen Adelsh&#228;usern entstammten, diente urspr&#252;nglich als direkte Vorhut des K&#246;nigs und wurde durch die Rekrutierung weiterer junger Adliger aus Thessalien und anderen Teilen der griechischen Welt stetig erweitert. [PARAGRAPH:2:1]Alexanders Begleitkavallerie war in "Ilai" (Fl&#252;gel) von je etwa 200 Mann organisiert, die unter dem Kommando enger pers&#246;nlicher Freunde des K&#246;nigs standen. Sie waren normalerweise mit b&#246;otischen, federbesetzten Helmen, einem gef&#228;rbten Umhang und einem Brustharnisch bekleidet. Darunter trugen sie mit Metallschuppen verst&#228;rkte Brust- und R&#252;ckenpanzer aus Leinen oder Leder. Bewaffnet waren sie mit Wurfspeeren und einem Kurzschwert, einige waren au&#223;erdem mit Schilden ausger&#252;stet, es sei denn, sie waren zu Fu&#223; unterwegs. Gelegentlich stattete Alexander seine Begleitkavalleristen f&#252;r bestimmte Gefechte auch mit Wurfspie&#223;en aus. Ihre Pferde geh&#246;rten zu den besten Reittieren, die in Griechenland zu finden waren - kleine, robuste Tiere, die speziell f&#252;r den Einsatz auf dem Schlachtfeld ausgebildet waren. Sie waren zum Teil mit Leder&#252;berw&#252;rfen ausgestattet, welche die Flanken und das Hinterteil sch&#252;tzten. [PARAGRAPH:2:1]Im Laufe der Jahrhunderte rankten sich immer mehr Legenden um Alexanders Begleitkavallerie. Hierbei wurde im Hinblick auf ihre &#220;berlegenheit sicherlich enorm &#252;bertrieben, unzweifelhaft ist allerdings, dass sie bedeutende Beitr&#228;ge f&#252;r den siegreichen Ausgang diverser Schlachten leisteten, wie zum Beispiel bei Issos und Chaironeia. Und auch ihre Loyalit&#228;t steht au&#223;er Zweifel. In den folgenden Jahrhunderten wurden in vielen K&#246;nigreichen der Antike Elitekavallerien errichte, die sich am Vorbild der Begleitkavallerie orientierten.</German>
+		<Italian>[TAB]Gli "Hetairoi" (cavalleria di supporto) costituivano la cavalleria d'&#233;lite di Alessandro e il primo braccio offensivo del suo esercito. Maestro nelle tattiche di cavalleria, Alessandro li manteneva lontani dal conflitto nella prima parte della battaglia, attendendo il momento buono per caricare il nemico ormai scosso, spesso conducendo l'attacco personalmente. [PARAGRAPH:2:1]Fu il padre di Alessandro, Filippo il Macedone, a creare la cavalleria di supporto, che inizialmente era composta dai suoi pi&#249; fedeli seguaci scelti tra i nobili macedoni. Quando fu necessario aumentarne il numero, vennero reclutati anche giovani nobili dalla Tessaglia e da altre parti del mondo greco. [PARAGRAPH:2:1]La cavalleria di supporto era organizzata in "ilai" (ali), composte da circa 200 uomini sotto il comando di amici stretti del re. In genere, essi indossavano il classico elmo piumato, un mantello colorato e la corazza; sotto, indossavano corsetti di lino o cuoio rinforzati con piastre di metallo; erano armati con lunghe lance e spade corte e alcuni utilizzavano gli scudi quando si trovavano a piedi. Occasionalmente Alessandro li dotava di giavellotti da impiegare in battaglie specifiche. Le loro cavalcature erano le migliori di tutta la Grecia, animali vigorosi addestrati per la guerra. Anche i cavalli erano parzialmente corazzati con protezioni di cuoio sulla groppa e sui fianchi. [PARAGRAPH:2:1]La leggenda intorno alla cavalleria di Alessandro &#232; cresciuta con il passare dei secoli. Malgrado il suo valore sia stato esaltato a volte eccessivamente, &#232; innegabile che questa unit&#224; militare gioc&#242; un ruolo fondamentale nelle battaglie vittoriose di Isso e di Cheronea e inoltre, la sua lealt&#224; era fuori discussione. Nei secoli successivi, le cavallerie d'&#233;lite presero come esempio quella di Alessandro.[PARAGRAPH:2:1]Fu il padre di Alessandro, Filippo il Macedone, a creare la cavalleria di supporto, che inizialmente era composta dai suoi pi&#249; fedeli seguaci scelti tra i nobili macedoni. Quando fu necessario aumentarne il numero, vennero reclutati anche giovani nobili dalla Tessaglia e da altre parti del mondo greco.[PARAGRAPH:2:1]La cavalleria di supporto era organizzata in "ilai" (ali), composte da circa 200 uomini sotto il comando di amici stretti del re. In genere, essi indossavano il classico elmo piumato, un mantello colorato e la corazza; sotto, indossavano corsetti di lino o cuoio rinforzati con piastre di metallo; erano armati con lunghe lance e spade corte e alcuni utilizzavano gli scudi quando si trovavano a piedi. Occasionalmente Alessandro li dotava di giavellotti da impiegare in battaglie specifiche. Le loro cavalcature erano le migliori di tutta la Grecia, animali vigorosi addestrati per la guerra. Anche i cavalli erano parzialmente corazzati con protezioni di cuoio sulla groppa e sui fianchi.[PARAGRAPH:2:1]La leggenda intorno alla cavalleria di Alessandro &#232; cresciuta con il passare dei secoli. Malgrado il suo valore sia stato esaltato a volte eccessivamente, &#232; innegabile che questa unit&#224; militare gioc&#242; un ruolo fondamentale nelle battaglie vittoriose di Isso e di Cheronea e inoltre, la sua lealt&#224; era fuori discussione. Nei secoli successivi , le cavallerie d'&#232;lite presero come esempio quella di Alessandro.</Italian>
+		<Spanish>[TAB]Los "hetairoi" (Compa&#241;eros) formaban la caballer&#237;a de &#233;lite de Alejandro y la principal arma ofensiva de su ej&#233;rcito. Alejandro, un maestro de las t&#225;cticas de caballer&#237;a, los manten&#237;a en reserva durante las primeras fases de la batalla y solo los lanzaba a la carga en el momento decisivo, a menudo con &#233;l mismo a la cabeza del ataque. [PARAGRAPH:2:1]El padre de Alejandro, Filipo de Macedonia, fue el creador de los Compa&#241;eros, que originalmente eran sus partidarios m&#225;s pr&#243;ximos, escogidos entre las filas de la nobleza macedonia. A medida que aumentaba su n&#250;mero, se fueron reclutando m&#225;s j&#243;venes nobles, procedentes de Tesalia o de otras regiones del mundo griego. [PARAGRAPH:2:1]Los Compa&#241;eros estaban organizados en "ilai" (alas) de unos doscientos hombres, dirigidos por amigos personales del rey. Generalmente llevaban el t&#237;pico yelmo beocio con cresta de plumas, una capa te&#241;ida y una coraza. Por debajo vest&#237;an corseletes de lino o cuero reforzados con escamas de metal. Llevaban largas lanzas y espada corta; pocos empleaban escudo, salvo cuando luchaban a pie. A veces, Alejandro los armaba con jabalinas para batallas concretas. Sus monturas eran las mejores que Grecia pod&#237;a ofrecer: bestias menudas y compactas entrenadas para la guerra. Estos caballos llevaban una armadura incompleta, normalmente con faldillas de cuero sobre los flancos y los cuatros traseros.[PARAGRAPH:2:1]Las leyendas de los Compa&#241;eros de Alejandro han crecido con el paso de los siglos. Aunque es indudable que su habilidad marcial ha sido exagerada, no puede negarse que desempe&#241;aron un papel crucial en victorias como Issos y Queronea. Y su lealtad nunca estuvo en cuesti&#243;n. Durante los siglos siguientes, la caballer&#237;a de &#233;lite de muchos reinos de la Antig&#252;edad extraer&#237;a su modelo de los Compa&#241;eros.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_GREEK_HETAIROI_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Hetairoi[COLOR_REVERT], the Greek replacement for the the [COLOR_UNIT_TEXT]Horseman[COLOR_REVERT], is immune to first strikes and doesn't have a penalty in cities.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_HARAPPA_CITY_GUARD</Tag>
+		<English>City Guard</English>
+		<French>Garde de la ville</French>
+		<German>Stadtwache</German>
+		<Italian>Guardia della citt&#224;</Italian>
+		<Spanish>Guardia de la ciudad</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_HARAPPA_CITY_GUARD_PEDIA</Tag>
+		<English>[TAB]No pedia yet.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_HARAPPA_CITY_GUARD_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]City Guard[COLOR_REVERT], the Harappan replacement for the [COLOR_UNIT_TEXT]Militia[COLOR_REVERT], begins with the [COLOR_HIGHLIGHT_TEXT]City Garrison I[COLOR_REVERT] promotion.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_INCA_SLINGER</Tag>
+		<English>Huaraca</English>
+		<French>Huaraca</French>
+		<German>Huaraca</German>
+		<Italian>Huaraca</Italian>
+		<Spanish>Huaraca</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_INCA_SLINGER_PEDIA</Tag>
+		<English>[TAB]The sling was known throughout the Americas. In the ancient Andean civilizations such as Inca Empire slings were made from llama wool. These slings typically have a cradle that is long and thin and features a relatively long slit. Andean slings were constructed from contrasting colours of wool; complex braids and fine workmanship result in beautiful patterns. Ceremonial slings were also made; these were large, non-functional and generally lacked a slit. To this day, ceremonial slings are used in parts of the Andes as accessories in dances and in mock battles. They are also used by llama herders; the animals will move away from the thump of a stone. The stones are not slung to hit the animals, but to persuade them to move in the desired direction.[PARAGRAPH:1]The sling was used for hunting and warfare. One notable use was in Incan resistance against the conquistadors. These slings were apparently very powerful; in 1491: New Revelations of the Americas Before Columbus, historian Charles C. Mann quoted a conquistador, who said that an Incan sling "could break a sword in two pieces" and "kill a horse." Some slings could hurl massive stones and its span could be as much as 86 inches (2.18 m) and could weigh an impressive 14.4 ounces (408g).</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_INCA_SLINGER_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Huaraca[COLOR_REVERT], the Incan replacement for the [COLOR_UNIT_TEXT]Longbowman[COLOR_REVERT], requires the [COLOR_TECH_TEXT]Feudalism[COLOR_REVERT] technology and doesn't require the [COLOR_TECH_TEXT]Commune[COLOR_REVERT] technology.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_INDIA_MAHOUT</Tag>
+		<English>Mahout</English>
+		<French>Mahout</French>
+		<German>Mahut</German>
+		<Italian>Mahout</Italian>
+		<Spanish>Mahout</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_INDIA_MAHOUT_PEDIA</Tag>
+		<English>[TAB]There is uncertainty as to when elephant warfare first began. The earliest Indian Vedic hymns, the Rigveda, dating from the late 2nd and early 1st millennia BC, make reference to the use of elephants for transport - especially Indra and his divine white elephant, Airavata - but make no reference to the use of elephants in war, focusing instead on Indra's role in leading horse cavalry.[5] The later stories of the Mahabharata and the Ramayana, dating from around the 4th century BC,[6] do however mention elephant warfare, suggesting its introduction during the intervening period.[7] The ancient Indian kings certainly valued the elephant in war, some stating that an army without elephants is as despicable as a forest without a lion, a kingdom without a king or as valour unaided by weapons.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_INDIA_MAHOUT_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Mahout[COLOR_REVERT], the Indian replacement for the the [COLOR_UNIT_TEXT]War Elephant[COLOR_REVERT], does receive a defensive bonus and begins with the [COLOR_HIGHLIGHT_TEXT]City Garrison I[COLOR_REVERT] promotion.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_INDONESIA_BAMBOO_RUNCING</Tag>
+		<English>Bamboo Runcing</English>
+		<French>Bambou Runcing</French>
+		<German>Bambus Runcing</German>
+		<Italian>Bambu Runcing</Italian>
+		<Spanish>Bambu Runcing</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_INDONESIA_BAMBOO_RUNCING_PEDIA</Tag>
+		<English>[TAB]Pointy bamboo is a weapon made of bamboo. This weapon supposedly first used by the Indonesian people as a means of resistance against the occupation of the Dutch colonialists. At this time sharpened bamboo symbol was used by various regions in Indonesia to symbolize courage and sacrifice in winning independence. </English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_INDONESIA_BAMBOO_RUNCING_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Bamboo Runcing[COLOR_REVERT], the Indonesian replacement for the the [COLOR_UNIT_TEXT]Heavy Spearman[COLOR_REVERT], can enter [COLOR_HIGHLIGHT_TEXT]Rainforest[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT], has a first strike and begins with the [COLOR_HIGHLIGHT_TEXT]Drill I[COLOR_REVERT] promotion.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_IRAN_NAFFATUN</Tag>
+		<English>Naffatun</English>
+		<French>Naffatun</French>
+		<German>Naffatun</German>
+		<Italian>Naffatun</Italian>
+		<Spanish>Naffatun</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_IRAN_NAFFATUN_PEDIA</Tag>
+		<English>[TAB]Naffatun were Arabian infantry corps armed with naphtha grenades. They are noted for the successful defense during the Seljuk Siege of Baghdad in 1157, when they managed to destroy several catapults.</English>
+		<German>[TAB]Ohne jegliche nennenswerte Nahkampfbewaffnung machen die arabischen Naffatun auf den ersten Blick keinen gefährlichen Eindruck. Doch wenn sie erst angreifen, dann wird es hei? wirklich hei? Ausgerüstet mit Keramiktöpfe, die randvoll mit der leicht entflammbaren Naphtha-Chemikalie gefüllt sind, sollte jeder Gegner in Acht nehmen. Denn geht der brennende Naptha-Krug erst einmal auf seinem Ziel zu Bruch, wird ein höllisches und so gut wie unlöschbares Flammeninferno entfacht, vor dem es kein Entrinnen gibt und vor dem selbst die stärkste Rüstung keinen ausreichenden Schutz bietet. </German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_IRAN_NAFFATUN_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Naffatun[COLOR_REVERT], the Iranian replacement for the the [COLOR_UNIT_TEXT]Grenadier[COLOR_REVERT], does more collateral damage.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ITALY_CONDOTTIERI</Tag>
+		<English>Condottiero</English>
+		<French>Condottiero</French>
+		<German>Condottiere</German>
+		<Italian>Condottiero</Italian>
+		<Spanish>Condottiero</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ITALY_CONDOTTIERI_PEDIA</Tag>
+		<English>[TAB]Condottieri (singular condottiero and condottiere) were the mercenary soldier leaders (or warlords) of the professional, military free companies contracted by the Italian city-states and the Papacy, from the late Middle Ages until the mid-16th century. In contemporary Italian, condottiero means "contractor", and is synonymous with the modern English title Mercenary Captain, which, historiographically, does not connote the hired soldier's nationality.[PARAGRAPH:1]These Italian words were standard usage in English writing of the Napoleonic times that remained current in the histories until the late 20th century; because formally-employed, standing, professional armies were uncommon until late in the Napoleonic Wars (1800-1815) thus, the word Condottiere in the English language has come to denote any hired soldier.[PARAGRAPH:1]In the thirteenth and fourteenth centuries, the Italian city-states of Venice, Florence, and Genoa were very rich from their trade with the Levant, yet possessed woefully small national armies. In the event that foreign powers and envious neighbours attacked, the ruling nobles hired foreign mercenaries to fight for them. The military-service terms and conditions were stipulated in a condotta (contract) between the City-State and the Soldier (officer and enlisted man), thus, the contracted leader, the Mercenary Captain commanding, was titled the Condottiere.[PARAGRAPH:1]From the eleventh to the thirteenth century, European soldiers led by professional officers, fought against the Muslims in the Crusades (1095-1291). These officers provided large-scale warfare combat experience in the foreign Holy Land of the Asian Middle East. On the Crusades' conclusion, the first masnada (bands of roving soldiers) appeared; they were not Italian, but (mostly) German, from the Duchy of Brabant (hence, Brabanzoni), and from Catalonia and Aragon. The latter were Spanish soldiers who had followed King Peter III of Aragon to the Holy Land in October 1282, and, post-war, remained there, seeking military employment. In Italy, in 1333, other mercenaries arrived with John of Bohemia to fight, as the Compagnia della Colomba (Dove Company), Perugia's war against Arezzo. Given the profession, some masnade were less mercenaries than bandits and desperate men.[PARAGRAPH:1]The first organised mercenaries were the Ventura Companies of Duke Werner of Urslingen and Count Konrad von Landau. Werner's company differed from other mercenary companies because its code of military justice imposed discipline and an equal division of the contract's income. The Ventura Company increased in number until becoming the fearsome "Great Company" of some 3,000 barbute (each barbuta comprised a knight and a sergeant). To this, the Italian nobleman Lodrisio Visconti countered with the "Company of St. George"-featuring cavalrymen as the key fighting men, and not infantrymen. In Italy, the first mercenary army was led by Alberico da Barbiano, the Count of Conio, who later taught military science to condottieri such as Braccio da Montone and Giacomuzzo Attendolo Sforza.[PARAGRAPH:1]Once aware of their military power monopoly in Italy, the condottieri bands became notorious for their capriciousness, and soon dictated terms to their ostensible employers. In turn, many condottieri, such as Braccio da Montone and Muzio Sforza, became powerful politicians. As most were educated men acquainted with Roman military-science manuals (e.g. Vegetius's Epitoma rei militarii), they began viewing warfare from the perspective of military science, rather than that of guts (physical courage)-a great, consequential departure from chivalry, the traditional medieval model of soldiering. Consequently, the condottieri fought by out-manoeuvring the opponent and fighting his ability to wage war, rather than risk uncertain fortune-defeat, capture, death-in battlefield combat.[PARAGRAPH:1]The medieval condottieri developed the art of war (strategy and tactics) into military science more than any of their historical military predecessors-fighting indirectly, not directly-thus, only reluctantly endangering themselves and their enlisted men, avoiding battle when possible. As a political scientist, Niccolo Machiavelli mis-interpreted that condottieri fought each other in grandiose, but often pointless and near-bloodless battles. Militarily, the condottieri line of battle still deployed the grand armoured knight and medieval weapons and tactics after most European powers had begun employing professional standing armies of pikemen and musketeers.[PARAGRAPH:1]In 1347, Cola di Rienzo (Tribune and effective dictator of the city) had Werner of Urslingen executed in Rome, and Konrad von Landau assumed command of the Great Company. In 1362, Count von Landau was betrayed by his Hungarian soldiers, and defeated in combat, by the White Company's more advanced tactics under commanders Albert Sterz and John Hawkwood. Stategically, the barbuta was replaced with the three-soldier, mounted lancia (a capo-lancia, a groom, and a boy); five lance composed a posta, five poste composed a bandiera (flag). By that time, the campaigning condottieri companies were as much Italian as foreign: the Astorre I Manfredi's Compagnia della Stella (Star Company); a new Company of St. George under Ambrogio Visconti; Niccolo da Montefeltro's Compagnia del Cappelletto (Little Hat Company); and the Compagnia della Rosa, commanded by Giovanni da Buscareto and Bartolomeo Gonzaga.[PARAGRAPH:1]From the fifteenth century hence, most condottieri were landless Italian nobles who had chosen the profession of arms as livelihood; the most famous of such mercenary captains was the son of Caterina Sforza, Giovanni dalle Bande Nere, from Forl? known as The Last Condottiere; his son was Cosimo I de' Medici, Grand Duke of Tuscany; besides noblemen, princes also fought as condottieri, given the sizable income to their estates, notably Sigismondo Malatesta, Lord of Rimini, and Federico da Montefeltro, Duke of Urbino.</English>
+		<German>[TAB]Condottiere (Singular, Plural: Condottieri) ist die Bezeichnung für einen Söldnerführer, wie ihn die italienischen Stadtstaaten vom späten Mittelalter bis in die Mitte des 15. Jahrhunderts beschäftigten. Der Begriff leitet sich vom italienischen condottiero (Singular) beziehungsweise condottieri (Plural) ab. Die Form condottiere entsprach der im Italienischen bzw. Toskanischen um 1500 gebräuchlichen Form. Die italienische Mehrzahl ist international geworden, die Einzahl wird im Deutschen wiederum in Analogie zu anderen italienischen Berufsbezeichnungen mit der Endung -iere geformt.[PARAGRAPH:1]Im 13. und 14. Jahrhundert waren italienische Stadtstaaten wie Venedig, Florenz und Genua durch ihren Orienthandel reich geworden. Diese Städte hatten aber nur schwache Streitkräfte und wurden so zum Angriffsziel fremder Mächte wie auch neidischer Nachbarn. Der regierende Adel suchte seine Länder durch das Anmieten von Söldnertruppen zu verteidigen, die einen condotta (Sold bzw. Soldvertrag) abschlossen und dann als compagnia di ventura bekannt waren. Jede compagnia wurde durch einen condottiero angeführt. Aufgrund ständiger interner Streitigkeiten zwischen den Adelsfamilien wurde auch die oberste Führung der Stadt oft für jeweils ein Jahr in die Hand auswärtiger Personen gegeben, die als Podest?bezeichnet wurden. Die Truppen der Condottieri waren für ihre Launen berüchtigt. Sie wechselten oft die Seiten für bessere Bezahlung, und dies nicht nur vor, sondern auch in der Schlacht. Die Condottieri rekrutierten sich auch von außerhalb Italiens. Während der Kampfpausen im Hundertjährigen Krieg verdingten sich viele Söldner in Italien. Schwäbische Niederadelige, welche ohne feste Lehensbindungen waren, zogen ebenfalls verstärkt über die Alpen. Die Condottieri spürten bald, dass sie ein Monopol auf die militärische Macht in Italien hatten, und begannen damit, ihren Arbeitgebern die Bedingungen zu diktieren. Viele Condottieri wie Braccio da Montone oder Muzio Attendolo Sforza wurden im 14. Jahrhundert mächtige Figuren auf der politischen Bühne. Währenddessen stellten sich die Condottieri nicht schnell genug auf moderne Methoden der Kriegsführung ein. Sie hielten an geharnischten Rittern und mittelalterlicher Bewaffnung und Taktik sogar noch fest, als in weiten Teilen Europas bereits moderne Armeen aus Pikenieren und Arkebusieren aufgestellt worden waren. Auch begannen sie damit, sich gegenseitig aus Prestigegründen in Schlachten zu verwickeln, die meist unblutig blieben.[PARAGRAPH:1]Als 1494 französische Truppen in Italien einmarschierten und der Kirchenstaat Spanien zur Hilfe rufen musste, wurden die verschwenderisch geschmückten, aber wenig effektiven Condottieri von jeder der nacheinander einmarschierenden ausländischen Armeen geschlagen. Gegen Schweizer Pikeniere, französische Kavalleristen und spanische Arkebusiere konnten sie keine Verteidigung mehr bieten. Bis 1500 verschwanden die Condottieri und ihre Truppen daher völlig.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ITALY_CONDOTTIERI_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Condottiero[COLOR_REVERT], the Italian replacement for the the [COLOR_UNIT_TEXT]Cuirassier[COLOR_REVERT], doesn't have a penalty in cities.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_JAPAN_ASHIGARU</Tag>
+		<English>Ashigaru</English>
+		<French>Ashigaru</French>
+		<German>Ashigaru</German>
+		<Italian>Ashigaru</Italian>
+		<Spanish>Ashigaru</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_JAPAN_ASHIGARU_PEDIA</Tag>
+		<English>[TAB]Ashigaru (lightfeet) were foot-soldiers who were employed by the samurai class of feudal Japan. The first known reference to ashigaru was in the 1300s, but it was during the Ashikaga Shogunate-Muromachi period that the use of ashigaru became prevalent by various warring factions.[PARAGRAPH:1]Attempts were made in Japan by the Emperor Tenmu (673-86) to have a conscripted national army, but this did not come about and by the 10th century Japan instead relied on individual land owners to provide men for conflicts and wars. These horse owning land owners were the beginnings of the samurai class and the men who worked the land for the land owners became the common foot soldiers during times of war. These foot soldiers could have long ties and loyalty to the land owners which went back many generations.[PARAGRAPH:1]The land owning samurai and peasant foot soldier combination fought in many wars and conflicts including the Mongol invasions of Japan in 1274 and 1281. Constant warfare between the 1300s and the 1500s made the hiring and use of foot soldiers with no loyalty to a particular land owner necessary at times and these mercenaries or adventurers who were paid only in loot but were hard to control and not well trained and they could not always be counted on during a fight. It was these wandering mercenary farmer, foot soldiers for hire who eventually became what we call ashigaru.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_JAPAN_ASHIGARU_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Ashigaru[COLOR_REVERT], the Japanese replacement for the [COLOR_UNIT_TEXT]Pikeman[COLOR_REVERT], begins with the [COLOR_HIGHLIGHT_TEXT]Leadership[COLOR_REVERT] promotion.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_KHMER_PHAKAK</Tag>
+		<English>Phak'ak</English>
+		<French>Phak'ak</French>
+		<German>Phak'ak</German>
+		<Italian>Phak'ak</Italian>
+		<Spanish>Phak'ak</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_KHMER_PHAKAK_PEDIA</Tag>
+		<English>[TAB]The early 11th to 13th centuries AD marked the zenith of the Khmer Empire. During this period, the country was involved in constant wars against the Cham, Thai and Burmese.[PARAGRAPH:1]Footsoldiers with long blade-weapons, the Phak'ak, similar to European pikes, were the main force of many east-Asian armies. They were generally used by the peasant soldiers who could not afford more expensive weapons. In the jungles of the Khmer Empire, these weapons were called Phak'ak and the long wooden part of the weapon was ideal for defending against elephants.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_KHMER_PHAKAK_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Phak'ak[COLOR_REVERT], the Khmer replacement for the the [COLOR_UNIT_TEXT]Heavy Spearman[COLOR_REVERT], can enter [COLOR_HIGHLIGHT_TEXT]Rainforest[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT] and begins with the [COLOR_HIGHLIGHT_TEXT]Woodsman I[COLOR_REVERT] promotion.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_KOREA_KOBUKSON</Tag>
+		<English>Kobukson</English>
+		<French>Kobukson</French>
+		<German>Kobukson</German>
+		<Italian>Kobukson</Italian>
+		<Spanish>Kobukson</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_KOREA_KOBUKSON_PEDIA</Tag>
+		<English>[TAB]The Turtle ship, also known as Geobukseon or Kobukson, was a type of large warship belonging to the Panokseon class in Korea that was used intermittently by the Royal Korean Navy during the Joseon Dynasty from the early 15th century up until the 19th century.[PARAGRAPH:1]The first references to older, first generation turtle ships, known as Gwiseon, come from 1413 and 1415 records in the Annals of the Joseon Dynasty, which mention a mock battle between a gwiseon and a Japanese warship. However, these early turtle ships soon fell out of use as Korea's naval preparedness decreased during a long period of relative peace.[PARAGRAPH:1]Turtle ships participated in numerous victories against Japanese naval forces that supported Toyotomi Hideyoshi's attempts to conquer Korea from 1592-1598, inflicting heavy losses. However, their historical role may have been exaggerated since "the entire Korean fleet probably did not have more than half a dozen turtleboats in action at any one time". Korean admiral Yi Sun-sin is credited with designing the ship while one of his lieutenants, Na Dae Yong, was in charge of building it. His turtle ships were equipped with at least five different types of cannon. Their most distinguishable feature was a fully covered deck that was shielded to deflect cannon fire, and with iron spikes to discourage enemy men from attempting to board the ship.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_KOREA_KOBUKSON_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Kobukson[COLOR_REVERT], the Korean replacement for the [COLOR_UNIT_TEXT]Ironclad[COLOR_REVERT], is cheaper, doesn't require any resources, requires the [COLOR_TECH_TEXT]Physics[COLOR_REVERT] technology and doesn't require the [COLOR_TECH_TEXT]Thermodynamics[COLOR_REVERT] technology.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MALI_CARAVAN</Tag>
+		<English>Trade Caravan</English>
+		<French>Caravane de Commerce</French>
+		<German>Handel Karawane</German>
+		<Italian>Carovana del Commercio</Italian>
+		<Spanish>Caravana Comercial</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MALI_CARAVAN_PEDIA</Tag>
+		<English>[TAB]The Mali Empire flourished because of trade above all else. It contained three immense gold mines within its borders unlike the Ghana Empire, which was only a transit point for gold. The empire taxed every ounce of gold or salt that entered its borders. By the beginning of the 14th century, Mali was the source of almost half the Old World's gold exported from mines in Bambuk, Boure and Galam. There was no standard currency throughout the realm, but several forms were prominent by region. The Sahelian and Saharan towns of the Mali Empire were organized as both staging posts in the long-distance caravan trade and trading centers for the various West African products. At Taghaza, for example, salt was exchanged; at Takedda, copper. Ibn Battuta observed the employment of slave labor in both towns. During most of his journey, Ibn Battuta traveled with a retinue that included slaves, most of whom carried goods for trade but would also be traded as slaves. On the return from Takedda to Morocco, his caravan transported 600 female slaves, suggesting that slavery was a substantial part of the commercial activity of the empire.
+</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MALI_CARAVAN_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Trade Caravan[COLOR_REVERT], the Malinese replacement for the [COLOR_UNIT_TEXT]Explorer[COLOR_REVERT], can conduct trade missions.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MAYAN_BLOWGUNNER</Tag>
+		<English>Blowgunner</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MAYAN_BLOWGUNNER_PEDIA</Tag>
+		<English>[TAB]A blowgun is a narrow pipe. A fletched dart is loaded into the breech of the blowgun, and the user blows into the pipe, propelling the dart out the muzzle in much the same way that a bullet is propelled out of a gun. The blowgun is an extremely quiet and unobtrusive way to launch a ranged attack, making it desirable for hunting. It comes with the major drawback that the human lungs cannot power a large or high-velocity dart. Therefore, the blowgun is limited to short-range attacks, and the small size of the darts makes them relatively harmless to a man-sized opponent. The typical solution is to tip the darts with poison, making them ferociously lethal and turning the blowgun into a devastating ambush weapon.[NEWLINE][NEWLINE]The blowgun was used by many peoples, especially in southeast Asia and by the Native Americans.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MAYAN_BLOWGUNNER_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Blowgunner[COLOR_REVERT], the Mayan replacement for the [COLOR_UNIT_TEXT]Skirmisher[COLOR_REVERT], is able to enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Rainforest[COLOR_REVERT], provides food to the nearest city when it wins a fight and has a higher chance to withdraw from combat.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MAYAN_HOLKAN_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Holkan[COLOR_REVERT], the Mayan replacement for the [COLOR_UNIT_TEXT]Spearman[COLOR_REVERT], is able to enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Rainforest[COLOR_REVERT], doesn't require any resources and is cheaper.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MEXICO_EJERCITO</Tag>
+		<English>Ejercito Constitucionalista</English>
+		<French>Ejercito Constitucionalista</French>
+		<German>Ejercito Constitucionalista</German>
+		<Italian>Ejercito Constitucionalista</Italian>
+		<Spanish>Ejercito Constitucionalista</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MEXICO_EJERCITO_PEDIA</Tag>
+		<English>[TAB]The Constitutional Army (also known as the Constitutionalist Army) was the army that fought against Huerta's Federal Army, and later, against the Villistas and Zapatistas during the Mexican Revolution. It was formed in March 1913 by Venustiano Carranza, so-called "First-Chief" of the army, as a response to the murder of President Francisco I. Madero and Vice President Jos?María Pino Suárez by Victoriano Huerta during La decena tragica (Ten Tragic Days) of 1913, and the resulting usurption of presidential power by Huerta.[PARAGRAPH:1]Carranza had few military forces on which he could rely for loyalty. He had the theoretical support of Pancho Villa and Emiliano Zapata, but they soon turned against the Constitutionalists after Huerta's defeat in 1914.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MEXICO_EJERCITO_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Ejercito Constitucionalista[COLOR_REVERT], the Mexican replacement for the [COLOR_UNIT_TEXT]Infantry[COLOR_REVERT], has a combat bonus against [COLOR_UNIT_TEXT]Gunpowder Units[COLOR_REVERT].</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MONGOL_SIEGE_ENGINEER</Tag>
+		<English>Siege Engineer</English>
+		<French>Engénieur de Si&#232;ge</French>
+		<German>Belagerungsingenieur</German>
+		<Italian>Siege Ingegnere</Italian>
+		<Spanish>Ingeniero de Asedio</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MONGOL_SIEGE_ENGINEER_PEDIA</Tag>
+		<English>[TAB]Technology was one of the important facets of Mongolian warfare. For instance, siege machines were an important part of Genghis Khan's warfare, especially in attacking fortified cities. The siege engines were not disassembled and carried by horses to be rebuilt at the site of the battle like European armies. Instead the Mongol horde would travel with skilled engineers who would build siege engines from materials on site.[PARAGRAPH:1]The engineers building the machines were recruited among captives, mostly from China and Persia. When Mongols slaughtered whole populations, they often spared the engineers and technicians, swiftly assimilating them into the Mongol armies.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MONGOL_SIEGE_ENGINEER_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Siege Engineer[COLOR_REVERT], the Mongol replacement for the [COLOR_UNIT_TEXT]Trebuchet[COLOR_REVERT], is faster.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MOORS_BERBER_CAVALRY</Tag>
+		<English>Berber Cavalry</English>
+		<French>Cavalerie Berber</French>
+		<German>Berberkavallerie</German>
+		<Italian>Cavalleria Berbera</Italian>
+		<Spanish>Caballería Ber&#233;ber</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MOORS_BERBER_CAVALRY_PEDIA</Tag>
+		<English>[TAB]Following the Muslim conquest of North Africa in the 7th century, the Berber peoples of the Maghreb and Morocco largely adopted Islam and became the mainstay of Arab armies in the West. Skilled with bow and javelin and mounted on camels, they soon mastered the horse and became adept as scouting and raiding light cavalry. The Arab conquest of Iberia initiated by the Berber general, Tarik ibn-Zihad consisted of about 300 elite Arabian cavalry and a mixed Berber army of about 1800-2000 bowmen, spearmen and light cavalry. Later Andalusian armies were largely comprised of a core of Arabian noble horsemen and a majority of Berber voluteers and mercenaries who fought both on foot and on horseback.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MOORS_BERBER_CAVALRY_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Berber Cavalry[COLOR_REVERT], the Moorish replacement for the [COLOR_UNIT_TEXT]Horse Archer[COLOR_REVERT], is immune to first strikes and has a bigger withdraw chance.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MUGHAL_SEPOY</Tag>
+		<English>Sepoy</English>
+		<French>Sepoy</French>
+		<German>Sepoy</German>
+		<Italian>Sepoy</Italian>
+		<Spanish>Cipayo</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MUGHAL_SEPOY_PEDIA</Tag>
+		<English>[TAB]In its most common application Sepoy was the term used in the British Indian Army, and earlier in that of the British East India Company, for an infantry private (a cavalry trooper was a Sowar). It is still so used in the modern Indian Army, Pakistan Army and Bangladesh Army. Close to 300,000 sepoys were crucial in securing the subcontinent for the British East India Company. There was widespread mutiny amongst the sepoys of the Bengal Army in the Indian Rebellion of 1857 after it was alleged that the new rifles being issued to them used animal fat to grease the casing.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MUGHAL_SEPOY_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Sepoy[COLOR_REVERT], the Mughal replacement for the [COLOR_UNIT_TEXT]Infantry[COLOR_REVERT], starts with 1-2 first strikes.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PERSIA_SCYTHED_CHARIOT</Tag>
+		<English>Scythed Chariot</English>
+		<French>Char &#224; Faux</French>
+		<German>Sensenstreitwagen</German>
+		<Italian>Carro Falcato</Italian>
+		<Spanish>Carro Segado</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PERSIA_SCYTHED_CHARIOT_PEDIA</Tag>
+		<English>[TAB]The scythed chariot was a war chariot with scythe-like blades mounted on each side, employed in ancient times.[PARAGRAPH:1]The scythed chariot was a modified war chariot. The blades extended horizontally for about 1 meter (3 ft) to each side of the wheels. The Greek general Xenophon (430-354 BC), an eyewitness at the battle of Cunaxa, tells of them: "These had thin scythes extending at an angle from the axles and also under the driver's seat, turned toward the ground".[PARAGRAPH:1]Dismissing completely 17th to 19th century ideas of a Canaanite, Assyrian, Indian or Macedonian origin, Nefiodkin also challenges Xenophon's attribution of scythed chariots to the first Persian king Cyrus, pointing to their notable absence in the invasion of Greece (480-479 BC) by one of his successors, Xerxes I. Instead, he argues that the Persians introduced scythed chariots sometime later during the Greco-Persian Wars, between 467 BC and 458 BC, as a response to their experience fighting against Greek heavy infantry.[PARAGRAPH:2]The scythed chariot was pulled by a team of four horses and manned by a crew of up to three men, one driver and two warriors. Theoretically the scythed chariot would plow through infantry lines, cutting combatants in half or at least opening gaps in the line which could be exploited. It was difficult to get horses to charge into the tight phalanx formation of the Greek/Macedonian hoplites (infantry). The scythed chariot avoided this inherent problem for cavalry, by the scythe cutting into the formation, even when the horses avoided the men. A disciplined army could diverge as the chariot approached, and then re-form quickly behind it, allowing the chariot to pass without causing many casualties. War chariots had limited military capabilities. They were strictly an offensive weapon and were best suited against infantry in open flat country where the charioteers had room to maneuver. At a time when cavalry were without stirrups, and probably had neither spurs nor an effective saddle, though they certainly had saddle blankets, scythed chariots added weight to a cavalry attack on infantry. Historical sources come from the infantry side of such engagements i.e. the Greek and Roman side. Here is one recorded encounter where scythed chariots were on the winning side:
+The soldiers had got into the habit of collecting their supplies carelessly and without taking precautions. There was one occasion when Pharnabazus, with 2 scythed chariots and about 400 cavalry, came on them when they were scattered all over the plain. When the Greeks saw him bearing down on them, they ran to join up with each other, about 700 altogether; but Pharnabazus did not waste time. Putting the chariots in front, and following behind them himself with the cavalry, he ordered a charge. The chariots dashing into the Greek ranks, broke up their close formation, and the cavalry soon cut down about a hundred men. The rest fled and took refuge with Agesilaus, who happened to be close at hand with the hoplites.[PARAGRAPH:1]The only other example of their successful use seems to be when units of Mithradates VI of Pontus defeated a Bithynian force on the River Amnias in 89BC. (Appian)[PARAGRAPH:1]One of the most notable defeats to the Persian scythed chariot was in combat against the Macedonian phalanx led by Alexander the Great. Realizing that the chariots were already a cumbersome element of the Persian army (as shock units are prone to be) led by Darius III, the phalangites were instructed to increase this disadvantage. At the last seconds before the chariots would close with infantry, the phalangites would quickly fold into an enveloping formation in the shape of an E, where the middle tab would be the chariot. By doing this, the chariots would be trapped by the bodies of soldiers it killed, and the long Greek sarissa. This particular tactic was most successful at the Battle of Gaugamela, where Darius fled.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PERSIA_SCYTHED_CHARIOT_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Scythed Chariot[COLOR_REVERT], the Persian replacement for the [COLOR_UNIT_TEXT]Chariot[COLOR_REVERT], has a combat bonus against [COLOR_UNIT_TEXT]Melee Units[COLOR_REVERT].</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PHOENICIAN_BIREME_PEDIA</Tag>
+		<English>[TAB]Galleys travelled the Mediterranean from perhaps 3000 BC. The Greeks and Phoenicians built and operated the first known ships to navigate the Mediterranean: merchant vessels with square-rigged sails. The first military vessels, as described in the works of Homer and represented in paintings, had a single row of oarsmen along each side (in addition to the sail) to provide speed and manoeuvrability.  Around the 7th or 6th century BC the design of galleys changed. Shipbuilders, probably first in Phoenicia, added a second row of oars above the first, creating the biere or bireme.  This was driven in part by the development of the ram in naval warfare.  Now a more maneuverable ship could render a slower ship useless by staving in its sides rather than boarding an enemy to engage in hand to hand fighting.</English>
+		<Italian>[TAB]La Bireme, imbarcazione di legno risalente al VI secolo a.C., ha una lunghezza di circa 20-25 metri ed una larghezza intorno ai 3 metri. Ai marinai spettano le incombenze specificatamente nautiche, soprattutto la manovra delle vele che generalmente sono due: una grande vela quadra portata da un albero maestro, collocato a mezza nave, e una pi?piccola portata da un albero minore a prua. La bireme ?il risultato di una filosofia costruttiva che mira a concentrare la massima potenza propulsiva con uno scafo il pi?possibile maneggevole. Per questo si preferisce l'uso del legno leggero di conifera, perch? essendo una nave da guerra, la leggerezza ?pi?apprezzata della durata e spesso anche della robustezza.</Italian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PHOENICIAN_BIREME</Tag>
+		<English>The [COLOR_UNIT_TEXT]Bireme[COLOR_REVERT], the Phoenician replacement for the [COLOR_UNIT_TEXT]Galley[COLOR_REVERT], has one more cargo space and has a defense bonus against [COLOR_UNIT_TEXT]War Galleys[COLOR_REVERT].</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_POLAND_TABOR</Tag>
+		<English>Tabor</English>
+		<French>Tabor</French>
+		<German>Tabor</German>
+		<Italian>Tabor</Italian>
+		<Spanish>Tabor</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_POLAND_TABOR_PEDIA</Tag>
+		<English>[TAB]A tabor is a convoy or a camp formed by horse-drawn wagons. For example, nomadic Gypsies used to wander and camp in tabor formations. Tabors supported the armies in Europe between the 13th and 20th centuries. Tabors usually followed the armies and carried all the necessary supplies and rear units, such as field kitchens, armourers or shoemakers.[PARAGRAPH:1]The tactics were later copied by various armies of Central Europe, including the army of the Polish-Lithuanian Commonwealth. In the 16th and 17th centuries, these tactics were also mastered by the Cossacks, who used their tabors for the protection of marching troops as well.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_POLAND_TABOR_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Tabor[COLOR_REVERT], the Polish replacement for the the [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT], begins with the [COLOR_HIGHLIGHT_TEXT]Medic I[COLOR_REVERT] promotion.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_POLYNESIA_KOA</Tag>
+		<English>Koa</English>
+		<French>Koa</French>
+		<German>Koa</German>
+		<Italian>Koa</Italian>
+		<Spanish>Koa</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_POLYNESIA_KOA_PEDIA</Tag>
+		<English>No pedia yet.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_POLYNESIA_KOA_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Koa[COLOR_REVERT], the Polynesian replacement for the the [COLOR_UNIT_TEXT]Militia[COLOR_REVERT], begins with the [COLOR_HIGHLIGHT_TEXT]Amphibious[COLOR_REVERT] promotion.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PORTUGAL_BANDEIRANTES</Tag>
+		<English>Bandeirantes</English>
+		<French>Bandeirante</French>
+		<German>Bandeirantes</German>
+		<Italian>Bandeirantes</Italian>
+		<Spanish>Bandeirantes</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PORTUGAL_BANDEIRANTES_PEDIA</Tag>
+		<English>[TAB]The bandeirantes (Portuguese: "Followers of the banner") were composed of Indians (slaves and allies), caboclos (people of Indian mixed with white), and whites who were the captains of the Bandeiras. Members of the 16th-18th century South American slave-hunting expeditions called bandeiras (Portuguese for "flags"). Though their original purpose was to capture and force amerindians into slavery, the bandeirantes later began to focus their expeditions on finding gold, silver and diamond mines. They ventured into unmapped regions in search of profit and adventure. From 1580-1670 the Bandeirantes focused on slave hunting, then from 1670-1750 they focused on mineral wealth. Through these expeditions, the Bandeirantes also expanded Portuguese America from the small limits of the Tordesilhas Line to roughly the same territory as current Brazil. This expansion discovered mineral wealth that made the fortune of Portugal during the 17th and 18th centuries.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PORTUGAL_BANDEIRANTES_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Bandeirantes[COLOR_REVERT], the Portuguese replacement for the the [COLOR_UNIT_TEXT]Arquebusier[COLOR_REVERT], is faster, ignores terrain movement costs, can enter [COLOR_HIGHLIGHT_TEXT]Rainforest[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Jungles[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT] and gains only positive bonuses from Tribal villages.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PRUSSIA_HOWITZER</Tag>
+		<English>Heavy Howitzer</English>
+		<French>Obusier</French>
+		<German>Haubitze</German>
+		<Italian>Obice</Italian>
+		<Spanish>Obús</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PRUSSIA_HOWITZER_PEDIA</Tag>
+		<English>[TAB]Big Bertha (German: Dicke Bertha) - literal translation "Thick (or fat) Bertha" - is the name of a type of super-heavy howitzer developed by the famous armaments manufacturer Krupp in Germany on the eve of World War I. Its official designation was the L/12, i.e., the barrel was 12 calibre in length, 42-cm (16.5 inch) Type M-Gerät 14 (M-Equipment 1914) Kurze Marine-Kanone ("short naval gun", a name intended to camouflage the weapon's real purpose).[PARAGRAPH:1]Only two examples of the howitzer were available at the beginning of World War I, and they were used to destroy the Belgian forts at Liège, Namur, and Antwerp, and the French fort at Maubeuge, as well as other forts in northern France. Bertha proved very effective against older constructions such as the Belgian forts designed in the 1880s by Brialmont, destroying several in a few days. The most spectacular success was the Belgian Fort Loncin which exploded after taking a direct hit to its ammunition magazine. The concrete used in the Belgian forts was of poor quality, however, and consisted of layers of concrete only, with no steel reinforcement.[PARAGRAPH:1]Big Bertha gained a strong reputation on both sides of the lines due to its early impressive successes in smashing the forts at Liege. The German press went wild with enthusiasm and declared the Bertha a Wunderwaffe. When used later during the German assault upon Verdun in February, 1916, however, it proved less effective, as the newer construction of this fort, consisting of concrete reinforced with steel, could mostly withstand the large semi-armour-piercing shells of the Berthas. Only Fort Vaux was severely damaged during this event, destroying the water storage and leading to the surrender of the fort.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PRUSSIA_HOWITZER_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Heavy Howitzer[COLOR_REVERT], the Prussian replacement for the the [COLOR_UNIT_TEXT]Howitzer[COLOR_REVERT], is stronger.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ROME_BALLISTA</Tag>
+		<English>Ballista</English>
+		<French>Baliste</French>
+		<German>Balliste</German>
+		<Italian>Balista</Italian>
+		<Spanish>Balista</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ROME_BALLISTA_PEDIA</Tag>
+		<English>[TAB]The ballista (Latin, from Greek ballistra and that from ballo, "throw"), plural ballistae, was an ancient missile weapon which launched a large projectile at a distant target.[PARAGRAPH:1]Developed from earlier Greek weapons, it relied upon different mechanics, using two levers with torsion springs instead of a prod, the springs consisting of several loops of twisted skeins. Early versions ejected heavy darts or spherical stone projectiles of various sizes for siege warfare. It developed into a smaller sniper weapon, the Scorpio, and possibly the polybolos.[PARAGRAPH:2]After the absorption of the Ancient Greek city-states into the Roman Republic in 146 BC, the highly advanced Greek technology began to spread across many areas of Roman influence. This included the hugely advantageous military advances the Greeks had made (most notably by Dionysus of Syracuse), as well as all the scientific, mathematical, political and artistic developments.[PARAGRAPH:1]The Romans 'inherited' the torsion powered Ballista, which had by now spread to several cities around the Mediterranean, all of which became Roman spoils of war in time, including one from Pergamum, which was depicted among a pile of 'trophy' weapons in relief on a balustrade.[PARAGRAPH:1]The torsion ballista, developed by Alexander, was a far more complicated weapon than its predecessor and the Romans developed it even further, especially into much smaller versions, that could easily be carried.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ROME_BALLISTA_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Ballista[COLOR_REVERT], the Roman replacement for the the [COLOR_UNIT_TEXT]Catapult[COLOR_REVERT], begins with the [COLOR_HIGHLIGHT_TEXT]Barrage I[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Drill I[COLOR_REVERT] promotions.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_RUSSIA_STRELETS</Tag>
+		<English>Strelets</English>
+		<French>Strelets</French>
+		<German>Strelets</German>
+		<Italian>Strelets</Italian>
+		<Spanish>Strelets</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_RUSSIA_STRELETS_PEDIA</Tag>
+		<English>[TAB]Streltsy were the units of Russian guardsmen in the 16th - early 18th centuries, armed with firearms. They are also collectively known as Marksman Troops.[PARAGRAPH:1]The first streltsy units were created by Ivan the Terrible sometime between 1545 and 1550 and armed with the arquebus. They first saw combat at the Siege of Kazan in 1552. Initially, the streltsy were recruited from among the free tradespeople and rural population. Subsequently, military service in this unit became lifelong and hereditary. Thus, while initially an elite force in the sixteenth century, their effectiveness was reduced by poor training and lack of volunteerism in recruiting.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_RUSSIA_STRELETS_STRELETS</Tag>
+		<English>The [COLOR_UNIT_TEXT]Strelets[COLOR_REVERT], the Russian replacement for the the [COLOR_UNIT_TEXT]Musketman[COLOR_REVERT], is immune to first strikes and begins with the [COLOR_HIGHLIGHT_TEXT]City Garrison I[COLOR_REVERT] promotion.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_SPAIN_TERCIO</Tag>
+		<English>Tercio</English>
+		<French>Tercio</French>
+		<German>Tercio</German>
+		<Italian>Tercio</Italian>
+		<Spanish>Tercio</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_SPAIN_TERCIO_PEDIA</Tag>
+		<English>[TAB]The Tercio ("one third"), also known as Tercio Español, was a Renaissance era military formation similar to and derivative of the Swiss pike square and was a term used to describe a mixed infantry formation of about 3,000 pikemen, swordsmen and arquebusiers in a mutually supportive formation; it was also sometimes referred to by other nations as a Spanish Square after its introduction by the Spanish army, and was widely adopted across international lines and dominated formalized field warfare for more than a century.[PARAGRAPH:1]The Tercio Español was the product of the Italian Wars in which the Spanish general, Gonzalo Fernández de Córdoba, would reorganize the Spanish army throughout a series of conflicts at the end of the 15th and early 16th centuries, into a tactically unique combination of modern and medieval combined arms centered around armored infantry. This emphasis on the infantry was the result of Spain's great dependence on mules in daily life, which in turn resulted in an inability to raise large cavalry forces. It marked the transformation of medieval military institutions into the early modern combined-arms army. Gonzalo Fernández, developed the Tercio to further increase the effectiveness of Spanish infantry against every manner of opposing infantry while remaining impervious to the dangers of a cavalry charge.[PARAGRAPH:1]At first the army consisted of units of around 6000 men, called coronelias, which by 1534 had been reduced into the Tercios of 3000 for increased mobility on the offensive.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_SPAIN_TERCIO_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Tercio[COLOR_REVERT], the Spanish replacement for the [COLOR_UNIT_TEXT]Musketman[COLOR_REVERT], has a combat bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT] and [COLOR_UNIT_TEXT]Heavy Cavalry Units[COLOR_REVERT].</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_TAMIL_KALLARANI</Tag>
+		<English>Kallarani</English>
+		<French>Kallarani</French>
+		<German>Kallarani</German>
+		<Italian>Kallarani</Italian>
+		<Spanish>Kallarani</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_TAMIL_KALLARANI_PEDIA</Tag>
+		<English>[TAB]Technically, the Kallarani weren't employed by either the sovereign or the state. Rather, they were pirates who received the Royal Pardon on the pledge of their support of the Chola Empire. They were used in more than a few instances to deal with the Arab piracy in the western water. They were also used as Coast Guard.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_TAMIL_KALLARANI_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Kallarani[COLOR_REVERT], the Tamil replacement for the [COLOR_UNIT_TEXT]Heavy Swordsman[COLOR_REVERT], has a combat bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT] and [COLOR_UNIT_TEXT]Heavy Cavalry Units[COLOR_REVERT].</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_THAI_MAHARDLEK</Tag>
+		<English>Mahardlek</English>
+		<French>Mahardlek</French>
+		<German>Mahardlek</German>
+		<Italian>Mahardlek</Italian>
+		<Spanish>Mahardlek</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_THAI_MAHARDLEK_PEDIA</Tag>
+		<English>[TAB]During the reign of Mongkut Siam began a massive modernization initiative, as Mongkut actively recruited Western Experts and technologies and adapting them to Siamese culture.  The rifle regiments formed were under the command of the King and his appointed western military officers, and soon the King had a powerful modern force.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_THAI_MAHARDLEK_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Mahardlek[COLOR_REVERT], the Thai replacement for the the [COLOR_UNIT_TEXT]Rifleman[COLOR_REVERT], begins with the [COLOR_HIGHLIGHT_TEXT]Woodsman I[COLOR_REVERT] promotion.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_TIBET_DOB_DOB</Tag>
+		<English>Dob Dob</English>
+		<French>Dob Dob</French>
+		<German>Dob Dob</German>
+		<Italian>Dob Dob</Italian>
+		<Spanish>Dob Dob</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_TIBET_DOB_DOB_PEDIA</Tag>
+		<English>[TAB]The dob dobs (refered to as both "warrior monks" and "police monks") were primarily tasked with mantaining law and order in the various monastries that dotted the country. Dob dobs were more often than not, men from the north and north eastern region of Tibet (Kham). The men of Kham had distinct physical characterstics - essentially, tall and sturdy well-built men. Mostly on account of their diet owing to the geography of the area they came from. They were also noted for their ferocity. Tibet was full of monasteries - the larger ones often housed thousands of monks. The Sera monastery was famous for it's fighting monks.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_TIBET_DOB_DOB_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Dob Dob[COLOR_REVERT], the Tibetan replacement for the the [COLOR_UNIT_TEXT]Pikeman[COLOR_REVERT], begins with the [COLOR_HIGHLIGHT_TEXT]Medic I[COLOR_REVERT] promotion.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_TURKEY_GREAT_BOMBARD</Tag>
+		<English>Great Bombard</English>
+		<French>Grande Bombard</French>
+		<German>Gro&#223;e Bombarde</German>
+		<Italian>Bombardare Grande</Italian>
+		<Spanish>Bombardean Gran</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_TURKEY_GREAT_BOMBARD_PEDIA</Tag>
+		<English>[TAB]Although gunpowder weapons were used in China in the early 10thC., the Arabs first acquired gunpwder about 1240AD and it is believed that the first cannon in history was used by the Mamluks against the Mongols in 1260. The Ottoman Empire became the first in Europe to put gunpowder into widespread use in both hand weaponry and seige cannons. The army of Mehmet I which conquered Constantinople in 1453 included foot soldiers armed with matchlock muskets and bombard artillery of various sizes. The barrage of Ottoman cannon fire, from 69 guns firing over 19,000 times, is said to have lasted for at least 40 days.[PARAGRAPH:1]Amongst these were a number of extremely large and powerful seige bombards. Bombards had been deployed by many European armies since the late 1300's but the Ottoman siege guns were especially massive and powerful "superguns", like the "Dardanelles Gun" or Great Turkish Bombard, weighing over 18 tons and firing huge stone or iron projectiles of over 2 feet in diameter. This famous gun along with many others, remained in use by the Ottomans until the early 19thC.,even causing serious damage to British naval operations against the Ottomans in 1807.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_TURKEY_GREAT_BOMBARD_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Great Bombard[COLOR_REVERT], the Turkish replacement for the the [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT], is stronger and has a higher bombard rate.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_VIKING_LONGSHIP</Tag>
+		<English>Longship</English>
+		<French>Drakkar</French>
+		<German>Langschiff</German>
+		<Italian>Drakkar</Italian>
+		<Spanish>Drakkar</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_VIKING_LONGSHIP_PEDIA</Tag>
+		<English>[TAB]Longships (aka longboats) were sea vessels made and used by the Vikings from the Nordic countries for trade, commerce, exploration, and warfare during the Viking Age although scientific analysis of the oak timber shows at least one well known ship was built in Dublin, Ireland. The longship's design evolved over many years, beginning in the Stone Age with the invention of the umiak and continuing up to the 9th century with the Nydam and Kvalsund ships. The longship appeared in its complete form between the 9th and 13th centuries. The character and appearance of these ships have been reflected in Scandinavian boat-building traditions until today. The particular skills and methods employed in making longships are still used world wide, often with modern adaptations. They were all made out of wood, with cloth flags and had lots of details and carvings on the hull.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_VIKING_LONGSHIP_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Longship[COLOR_REVERT], the Viking replacement for the the [COLOR_UNIT_TEXT]Galley[COLOR_REVERT], is faster and begins with the [COLOR_HIGHLIGHT_TEXT]Drill I[COLOR_REVERT] promotion.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PHOENICIAN_ATLAS_ELEPHANT_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Atlas Elephant[COLOR_REVERT], the Phoenician replacement for the [COLOR_UNIT_TEXT]War Elephant[COLOR_REVERT], begins with the [COLOR_HIGHLIGHT_TEXT]Shock[COLOR_REVERT] promotion.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PHOENICIAN_ATLAS_ELEPHANT</Tag>
+		<English>Atlas Elephant</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PHOENICIAN_ATLAS_ELEPHANT_PEDIA</Tag>
+		<English>[TAB]Carthage maintained a stable of 300 elephants, both the larger central African species and the slightly smaller elephant from Barbary. Slaves and enemies were used to train elephants in the art of stomping people to death, at least according to the Roman propaganda of the time. Elephants were used against the Romans in Sicily, against Regulus, and later in the conquest of Spain. Then came Hannibal's fantastic feat of marching his troops and 40 elephants over the Pyrenees and the Alps into northern Italy. Elephants are difficult to get across swift rivers; do not do well on narrow, rocky trails; and are not accustomed to the cold. Still, Hannibal got them across, only to lose most of them in northern Italy, in Piedmont. One survived and was used by Hannibal himself to enhance his presence. The native Celts of northern Italy and the Italian peasants further south were duly impressed. But the Romans eventually found a way to cope with the dangerous elephant charges. In Hannibal's last battle (Zama, 202 BC), his elephant charge was ineffective because the Roman maniples simply made way for them to pass. After the Carthaginians were defeated, the treaty signed at Zama with the Romans specified that they were to give up their elephants and train no more. Thus ended about 60 years where the elephant was a central part of the Carthaginian attack force.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ETHIOPIAN_ASKARI_PEDIA</Tag>
+		<English>[TAB]An Askari was a local soldier serving in the armies of the European colonial powers in Africa, particularly in East Africa, Northeast Africa, and Central Africa. Not only was the word used in that sense in English, but also in French, German, Italian, Urdu and Portuguese. The designation is still in use today to describe police, gendarmerie and security guards.[PARAGRAPH:1]During the period of the European colonial empires in Africa, locally recruited soldiers were employed by Italian, British, Portuguese, German and Belgian colonial armies. They played a crucial role in the conquest of the various colonial possessions, and subsequently served as garrison and internal security forces. During both World Wars askari units served outside their colonies of origin, in various parts of Africa, the Middle East and Asia.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ITALIAN_BERSAGLIERE</Tag>
+		<English>Bersagliere</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ITALIAN_BERSAGLIERE_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Bersagliere[COLOR_REVERT], the Italian replacement for the the [COLOR_UNIT_TEXT]Infantry[COLOR_REVERT], has an additional movement point.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ITALIAN_BERSAGLIERE_PEDIA</Tag>
+		<English>[TAB]The Bersaglieri (Marksmen in English) are a corps of the Italian Army originally created by General Alessandro La Marmora on 18 June 1836 to serve in the Piedmontese Army, later to become the Royal Italian Army. They have always been a high-mobility light infantry unit, and can still be recognized by the distinctive wide brimmed hat that they wear (only in dress uniform in modern times), decorated with black capercaillie feathers. The feathers are usually applied to their combat helmets. Another distinctive trait of the Bersaglieri is the fast jog pace they keep on parades, instead of marching.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MOORISH_CAMEL_GUNNER</Tag>
+		<English>Berber Camel Gunner</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MOORISH_CAMEL_GUNNER_PEDIA</Tag>
+		<English>[TAB]Probably developed by Egyptian warriors who originally mounted large crossbows on the camels, the Camel Gunner was rapidly adopted by Arab, Afghan, Indian and especially Persian Safavid armies. Camel Gunners were one of the royal guard units in the 19th-century Persian army. A Persian Camel Gunner regiment would be accompanied by musicians with huge camel-mounted drums, in order to create even more noise and impress the enemy. Camel Gunners were used against the invading British in the Anglo-Afghan Wars and in the Anglo-Sikh Wars.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_SELJUK_GHULAM_WARRIOR</Tag>
+		<English>Ghulam Warrior</English>
+		<German>Ghulam-Krieger</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_SELJUK_GHULAM_WARRIOR_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]Ghulam Warrior[COLOR_REVERT], the Seljuk replacement for the [COLOR_UNIT_TEXT]Lancer[COLOR_REVERT], doesn't require the [COLOR_HIGHLIGHT_TEXT]Iron[COLOR_REVERT] resource, can withdraw from combat, has a combat bonus against the [COLOR_UNIT_TEXT]Pikeman[COLOR_REVERT] and [COLOR_UNIT_TEXT]Lancer[COLOR_REVERT] units and cannot be upgraded.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_SELJUK_GHULAM_WARRIOR_PEDIA</Tag>
+		<English>[TAB]The Ghulam warriors were slave-soldiers in service of kings and generals throughout the Turkish and Persian Empires of the Medieval and Early Modern eras. Since the break-up of the Abbasid Caliphate, the Ghulam were grouped into whole armies. They were usually Turkic in origin and fought as cavalrymen. The Ghulam seem to have lived celibate lives. The absence of family life and offspring was one of the reasons why Ghulam, even when attaining power, generally failed to start dynasties or proclaim their independence. The only exception to this was the Ghaznavid dynasty of Afghanistan, which originated amongst the Ghulam of the Samanid dynasty.</English>
+		<French>[TAB]L'utilisation des &#233;l&#233;phants pour la guerre a commenc&#233; en Inde et &#233;tait connue des Perses au IVe si&#232;cle av. J.-C. C'est gr&#226;ce &#224; ses &#233;l&#233;phants de guerre que Chandragupta parvint &#224; vaincre Seleucos, le successeur d'Alexandre le Grand, et &#224; fonder l'Empire maurya. M&#234;me si les &#233;l&#233;phants africains de Carthage ont peu d'exploits &#224; leur actif, leur pr&#233;sence dans l'arm&#233;e d'Hannibal lors de la travers&#233;e des Alpes en 218 av. J.-C. leur a valu une r&#233;putation d'arme redoutable. L'importance tactique des &#233;l&#233;phants repose beaucoup sur leur capacit&#233; &#224; attaquer l'infanterie comme la cavalerie, et &#224; inspirer la terreur. Bien que les arm&#233;es indiennes aient utilis&#233; l'&#233;l&#233;phant jusqu'au XXe si&#232;cle, son utilit&#233; dans la pratique de la guerre a pris fin avec l'invention de la poudre &#224; canon.</French>
+		<German>[TAB]Der Kriegselefant wurde zuerst in Indien eingesetzt und war den Persern im 4. Jahrhundert vor Christus schon gel&#228;ufig. Mit Hilfe von Kriegselefanten gelang es dem indischen K&#246;nig Chandragupta, die Truppen von Seleukos, dem Nachfolger Alexanders des Gro&#223;en, zu besiegen und das Maurya-Reich zu begr&#252;nden. Auch wenn die afrikanischen Kriegselefanten der Karthager nur wenig ausrichten konnten, so machten sie ihrem Ruf als gef&#252;rchtetes Kriegsger&#228;t alle Ehre, als Hannibal seine Truppen mitsamt den Dickh&#228;utern &#252;ber die Alpen f&#252;hrte, um im Jahre 218 vor Christus in Rom einzufallen. Die taktische Bedeutung der Kriegselefanten resultiert zum gro&#223;en Teil aus ihrer Eigenschaft, sowohl Fu&#223;soldaten als auch die Kavallerie anzugreifen und in Panik zu versetzen. Das indische Milit&#228;r setzte sie zwar noch bis zum 20. Jahrhundert aktiv ein, letztlich erging es ihnen am Ende aber wie vielen anderen traditionellen "Waffen": Ihr milit&#228;rischer Nutzen endete mit dem verbreiteten Einsatz von Schie&#223;pulver.</German>
+		<Italian>[TAB]L'elefante da guerra fu usato per la prima volta in India e fu conosciuto dai Persiani intorno al quarto secolo a. C. Grazie a queste unit&#224;, Candra Gupta sconfisse il successore di Alessandro, Seleuco, e fond&#242; l'Impero Maurya. Anche se gli elefanti da guerra africani di Cartagine non furono determinanti, la loro presenza nell'esercito di Annibale durante la sua traversata delle Alpi verso il cuore di Roma, nel 218 a. C., afferm&#242; la loro reputazione di arma temibile. Apparentemente, l'importanza tattica dell'elefante si basa in gran parte sulla sua predisposizione a caricare sia i fanti che la cavalleria, nonch&#233; sul panico che &#232; in grado di suscitare. Malgrado sia stato usato nelle truppe indiane fino al XX secolo, alla pari di molte armi tradizionali, la sua utilit&#224; in guerra &#232; cessata con la diffusione della polvere da sparo.</Italian>
+		<Spanish>[TAB]Los elefantes de guerra fueron utilizados por primera vez en la India, y los persas ya lo conoc&#237;an hacia el siglo IV a. C. Utilizando elefantes de guerra, Chandragupta derrot&#243; a Seleuco, sucesor de Alejandro, y fund&#243; el imperio mauryan. Aunque estos animales no sirvieron de mucho a Cartago, su presencia en el ej&#233;rcito de An&#237;bal durante el cruce de los Alpes y la invasi&#243;n de Roma en el a&#241;o 218 a. C. bast&#243; para cimentar su reputaci&#243;n como armas terribles. La importancia t&#225;ctica de los elefantes derivaba aparentemente de su disposici&#243;n a cargar tanto contra la infanter&#237;a como contra la caballer&#237;a, y del p&#225;nico que esto inspiraba. Aunque sirvieron en el ej&#233;rcito indio hasta el siglo XX, su utilidad real, al igual que ocurri&#243; con muchas otras armas tradicionales, termin&#243; con la difusi&#243;n generalizada de la p&#243;lvora.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_FRENCH_HEAVY_CANNON_PEDIA</Tag>
+		<English>[TAB]A culverin was a relatively simple ancestor of the musket, and later a medieval cannon, adapted for use by the French in the 15th century, and later adapted for naval use by the English in the late 16th century. The culverin was used to bombard targets from a distance. The weapon had a relatively long barrel and a light construction. The culverin fired solid round shot projectiles with a high muzzle velocity, producing a relatively long range and flat trajectory. Round shot refers to the classic solid spherical cannonball.</English>
+	</TEXT>
+                <TEXT>
+		<Tag>TXT_KEY_UNIT_FRENCH_HEAVY_CANNON</Tag>
+		<English>Heavy Cannon</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_FRENCH_HEAVY_CANNON_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Culverin[COLOR_REVERT], the French replacement for the [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT], has a combat bonus against [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT] and [COLOR_UNIT_TEXT]Gunpowder Units[COLOR_REVERT].</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_NORTE_CHICO_SHICRA</Tag>
+		<English>Shicra</English>
+		<French>Shicra</French>
+		<German>Shicra</German>
+		<Italian>Shicra</Italian>
+		<Spanish>Shicra</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_WIRACOCHA</Tag>
+		<English>Wiracocha</English>
+		<French>Wiracocha</French>
+		<German>Wiracocha</German>
+		<Italian>Wiracocha</Italian>
+		<Spanish>Wiracocha</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_NOR_TITLE</Tag>
+		<English>The Power of Aceramics:</English>
+		<French>The Power of Aceramics:</French>
+		<German>The Power of Aceramics:</German>
+		<Italian>The Power of Aceramics:</Italian>
+		<Spanish>The Power of Aceramics:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_NOR</Tag>
+		<English>Doubled [ICON_RESEARCH] prior to the discovery of Pottery.</English>
+		<French>Doubled [ICON_RESEARCH] prior to the discovery of Pottery.</French>
+		<German>Doubled [ICON_RESEARCH] prior to the discovery of Pottery.</German>
+		<Italian>Doubled [ICON_RESEARCH] prior to the discovery of Pottery.</Italian>
+		<Spanish>Doubled [ICON_RESEARCH] prior to the discovery of Pottery.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_NORTE_CHICO_AYLLU</Tag>
+		<English>Ayllu</English>
+		<French>Ayllu</French>
+		<German>Ayllu</German>
+		<Italian>Ayllu</Italian>
+		<Spanish>Ayllu</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_NORTE_CHICO_AYLLU_HELP</Tag>
+		<English>[ICON_BULLET]Creates 10 [ICON_CULTURE] in the capital when it constructs an improvement</English>
+		<French>[ICON_BULLET]Creates 10 [ICON_CULTURE] in the capital when it constructs an improvement</French>
+		<German>[ICON_BULLET]Creates 10 [ICON_CULTURE] in the capital when it constructs an improvement</German>
+		<Italian>[ICON_BULLET]Creates 10 [ICON_CULTURE] in the capital when it constructs an improvement</Italian>
+		<Spanish>[ICON_BULLET]Creates 10 [ICON_CULTURE] in the capital when it constructs an improvement</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_NOR1_TITLE</Tag>
+		<English>The Andean Progenitor</English>
+		<French>The Andean Progenitor</French>
+		<German>The Andean Progenitor</German>
+		<Italian>The Andean Progenitor</Italian>
+		<Spanish>The Andean Progenitor</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_NOR1</Tag>
+		<English>Have a capital with developing culture in 1800 BC</English>
+		<French>Have a capital with developing culture in 1800 BC</French>
+		<German>Have a capital with developing culture in 1800 BC</German>
+		<Italian>Have a capital with developing culture in 1800 BC</Italian>
+		<Spanish>Have a capital with developing culture in 1800 BC</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_NOR2_TITLE</Tag>
+		<English>Quipu</English>
+		<French>Quipu</French>
+		<German>Quipu</German>
+		<Italian>Quipu</Italian>
+		<Spanish>Quipu</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_NOR2</Tag>
+		<English>Be the first to discover Writing and Calendar</English>
+		<French>Be the first to discover Writing and Calendar</French>
+		<German>Be the first to discover Writing and Calendar</German>
+		<Italian>Be the first to discover Writing and Calendar</Italian>
+		<Spanish>Be the first to discover Writing and Calendar</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_NOR3_TITLE</Tag>
+		<English>Andean Metropolis</English>
+		<French>Andean Metropolis</French>
+		<German>Andean Metropolis</German>
+		<Italian>Andean Metropolis</Italian>
+		<Spanish>Andean Metropolis</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_NOR3</Tag>
+		<English>Have a capital with 5 populations and 6 buildings in 1500 BC</English>
+		<French>Have a capital with 5 populations and 6 buildings in 1500 BC</French>
+		<German>Have a capital with 5 populations and 6 buildings in 1500 BC</German>
+		<Italian>Have a capital with 5 populations and 6 buildings in 1500 BC</Italian>
+		<Spanish>Have a capital with 5 populations and 6 buildings in 1500 BC</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_CAPITAL_POPULATION</Tag>
+		<English>Population of %s1: %d2 / %d3</English>
+		<French>Population of %s1: %d2 / %d3</French>
+		<German>Population of %s1: %d2 / %d3</German>
+		<Italian>Population of %s1: %d2 / %d3</Italian>
+		<Spanish>Population of %s1: %d2 / %d3</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_CAPITAL_BUILDINGS</Tag>
+		<English>Buildings in %s1: %d2 / %d3</English>
+		<French>Buildings in %s1: %d2 / %d3</French>
+		<German>Buildings in %s1: %d2 / %d3</German>
+		<Italian>Buildings in %s1: %d2 / %d3</Italian>
+		<Spanish>Buildings in %s1: %d2 / %d3</Spanish>
+	</TEXT>
+</Civ4GameText>

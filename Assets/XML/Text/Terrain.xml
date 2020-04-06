@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Terrain -->
+<Civ4GameText>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAIN_MARSH</Tag>
+		<English>Marsh</English>
+		<French>
+			<Text>Mar&#233;cage</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Sumpf</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Palude</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Ci&#233;naga</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAIN_LAGOON</Tag>
+		<English>Lagoon</English>
+		<French>Lagoon</French>
+		<German>Lagune</German>
+		<Italian>Lagoon</Italian>
+		<Spanish>Lagoon</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAIN_ARCTIC_COAST</Tag>
+		<English>Arctic Coast</English>
+		<French>Arctic Coast</French>
+		<German>Arktische Küste</German>
+		<Italian>Arctic Coast</Italian>
+		<Spanish>Arctic Coast</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAIN_SEMIDESERT</Tag>
+		<English>Semidesert</English>
+		<French>Semidesert</French>
+		<German>Halbwüste</German>
+		<Italian>Semidesert</Italian>
+		<Spanish>Semidesert</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAIN_MOORLAND</Tag>
+		<English>Moorland</English>
+		<French>Moorland</French>
+		<German>Moor</German>
+		<Italian>Moorland</Italian>
+		<Spanish>Moorland</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAIN_STEPPE</Tag>
+		<English>Steppe</English>
+		<French>Steppe</French>
+		<German>Steppe</German>
+		<Italian>Steppe</Italian>
+		<Spanish>Steppe</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_TAIGA</Tag>
+		<English>Taiga</English>
+		<French>Taiga</French>
+		<German>Taiga</German>
+		<Italian>Taiga</Italian>
+		<Spanish>Taiga</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAIN_SALTLAKE</Tag>
+		<English>Salt Lake</English>
+		<French>Lac salé </French>
+		<German>Salzsee</German>
+		<Italian>Lago salato</Italian>
+		<Spanish>Lago salado</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAIN_SALTFLAT</Tag>
+		<English>Salt Flat</English>
+		<French>Salar</French>
+		<German>Salztonebene</German>
+		<Italian>Piana di sale</Italian>
+		<Spanish>Salar</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAIN_ATOLL</Tag>
+		<English>Atoll</English>
+		<French>Atoll</French>
+		<German>Atoll</German>
+		<Italian>Atoll</Italian>
+		<Spanish>Atoll</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAIN_SAVANNA</Tag>
+		<English>Savanna</English>
+		<French>Savanna</French>
+		<German>Savanne</German>
+		<Italian>Savanna</Italian>
+		<Spanish>Savanna</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_SAVANNA</Tag>
+		<English>Savanna</English>
+		<French>Savanna</French>
+		<German>Savanne</German>
+		<Italian>Savanna</Italian>
+		<Spanish>Savanna</Spanish>
+	</TEXT>
+</Civ4GameText>

@@ -1,0 +1,19 @@
+This unit was created by Snafusmith from Civfanatics.com.  
+
+
+[QUOTE]The Lancia IZ and the Lancia IZM were two variations of an Italian armoured car built during World War I and which saw limited service during that war, the interwar period, and during World War II.
+
+The Lancia IZ/IZM armoured car saw little combat in World War I due to the mountainous terrain in which the Italian Royal Army (Regio Esercito Italia) fought. However, a few were deployed in the northern parts of the country where they saw combat against the Austro-Hungarian Army.
+
+After World War I, Lancia IZ/IZM armoured cars were sent to North Africa and to East Africa for policing duties. Many were also sent to the Albanian Kingdom where they were to form the sole armoured force of the country for many years. Some Lancia IZ/IZM played a minor role during the Italian invasion and the occupation of Ethiopia. Some Lancia IZ/IZM were sent to Spain during the Spanish Civil War and were used by the Italian Corps of Volunteer Troops (Corpo Truppe Volontarie Italia, or CTV). These armoured cars were already hopelessly outdated by this point and performed poorly for the CTV against the Spanish Republican forces.
+
+A few obsolete Lancia IZ/IZM armoured cars were still in use with the Italian Royal Army during World War II. In 1940 and 1941, several vehicles served with the Royal Army during the East African Campaign. In some instances, operable machines were pressed into service by other Axis forces even after Italy quit the war. In the service of the forces of Nazi Germany, the vehicle was identified as the "Lancia IZM Panzerspähwagen, PK 501."
+
+- Wikipedia[/QUOTE]
+
+This download includes skins for Italy and Germany/Austria-Hungary.
+
+This unit uses custom animations, please make sure to point to the correct files in your XML.  A button is included for both skins.
+
+ENJOY!
+-Snafusmith

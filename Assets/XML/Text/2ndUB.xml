@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by lcollins (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- -->
+<!-- Game Text - Unit Upgrades for Civilopedia -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_AMERICA_PUBLIC_UNIVERSITY</Tag>
+		<English>Public University</English>
+		<French>Universit&#233; publique</French>
+		<German>&#214;ffentliche Universit&#228;t</German>
+		<Italian>Universit&#224; pubblica</Italian>
+		<Spanish>Universidad p&#250;blica</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_AMERICA_PUBLIC_UNIVERSITY_PEDIA</Tag>
+		<English>[TAB]In the United States, the term "state school" is colloquial for state university, a college or university in a state university system. The term "public school" is used for elementary and high schools which are funded and/or run by a governmental entity. The term "public school" is used in the United States to mean what other countries call "state school". "State school" is sometimes used in reference to state universities but is almost never used in reference to elementary and high schools. "Private school" generally refers to primary, secondary and tertiary educational institutions that are not government-owned. Elementary and high schools that are operated by a religious organization are commonly called "parochial schools."[PARAGRAPH:1]The United States Department of Education supervises the role of the federal government in education. Direct regulation of public, private and parochial schools in the United States is done by state and territorial governments (in Washington, DC, by the District Government). Broad regulation of public schools is typically accomplished through a state board of education and a state department of education. There is usually a state superintendent of schools, who is appointed or elected to coordinate the state department of education, the state board of education, and the state legislature itself. Statewide education policies are disseminated to school "districts" or their equivalents. These are associated with counties, or with groups of counties; but their boundaries are not necessarily coterminous with county boundaries. These intermediate school districts encompass many local school districts. The local school districts operate with their own local boards, which oversee operations of the individual schools within their jurisdiction.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_AMERICA_PUBLIC_UNIVERSITY_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Public University[COLOR_REVERT], the American replacement for the [COLOR_BUILDING_TEXT]University[COLOR_REVERT], increases the wealth output of a city.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ARABIA_NIZAMIYYA</Tag>
+		<English>Nizamiyya</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ARABIA_NIZAMIYYA_PEDIA</Tag>
+		<English>[TAB]A nizamiyya is one of the medieval institutions of higher education established by Khwaja Nizam al-Mulk in the eleventh century in Iran. The name nizamiyyah derives from his name. Founded at the beginning of the Seljuk empire, they are considered to be the model of madrassas, or Islamic religious schools.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ARABIA_NIZAMIYYA_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Nizamiyya[COLOR_REVERT], the Arabian replacement for the [COLOR_BUILDING_TEXT]University[COLOR_REVERT], allows you to hire one [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] and one [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT].</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ARGENTINA_ESTANCIA</Tag>
+		<English>Estancia</English>
+		<French>Estancia</French>
+		<German>Estancia</German>
+		<Italian>Estancia</Italian>
+		<Spanish>Estancia</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ARGENTINA_ESTANCIA_PEDIA</Tag>
+		<English>[TAB]Estancia is a Spanish and Brazilian Portuguese term describing a large rural estate with similarities to the English term ranch. The term is used in Argentina, Uruguay, southern Chile and southern Brazil.[PARAGRAPH:1]Unlike a hacienda, which could be any type of agricultural venture, producing grain, coffee, vegetable, beef, etc., an estancia, most typically located in the southern South American grasslands, the pampas, has historically always been a livestock (cattle or sheep) estate.[PARAGRAPH:1]During the first centuries of Spanish colonial rule, cattle introduced by the Spanish roamed free and man undertook raids to catch and slaughter them.[PARAGRAPH:1]In the 19th century stationary ranching ventures started to form in the pampas, with permanent buildings and marked livestock with clearly defined ownership. They were called estancias, the term indicating the stationary, permanent character.[PARAGRAPH:1]The estancia's ranch worker on horseback, the gaucho, is of similar importance to national folklore and identity to the cowboy in North America.[PARAGRAPH:1]In recent decades agriculture has intensified and often shifted from livestock to crop farming in the pampas of Argentina and Uruguay, due to the region's high soil fertility.[PARAGRAPH:1]A small number of estancias, particularly those with historic architecture have been converted into guest ranches, paradores, in Argentina and Uruguay as well as in Paraguay or Chile.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ARGENTINA_ESTANCIA_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Estancia[COLOR_REVERT], the Argentian replacement for the [COLOR_BUILDING_TEXT]Stable[COLOR_REVERT], provides a free specialist for every [COLOR_HIGHLIGHT_TEXT]Pasture[COLOR_REVERT] in its city radius.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_AZTEC_CHINAMPA</Tag>
+		<English>Chinampa</English>
+		<French>Chinampa</French>
+		<German>Chinampa</German>
+		<Italian>Chinampa</Italian>
+		<Spanish>Chinampa</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_AZTEC_CHINAMPA_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Chinampa[COLOR_REVERT], the Aztec replacement for the [COLOR_BUILDING_TEXT]Aqueduct[COLOR_REVERT], provides health. It increases the food and commerce yield of improved [COLOR_HIGHLIGHT_TEXT]Corn[COLOR_REVERT] tiles and the commerce yield of improved [COLOR_HIGHLIGHT_TEXT]Spice[COLOR_REVERT] tiles.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BRAZIL_SAMBADROME</Tag>
+		<English>Sambadrome</English>
+		<French>Sambodrome</French>
+		<German>Sambadrome</German>
+		<Italian>Sambodromo</Italian>
+		<Spanish>Sambodromo</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BRAZIL_SAMBADROME_PEDIA</Tag>
+		<English>[TAB]Samba is a Brazilian dance and musical genre originating in Bahia, Brazil, and with its roots in Rio de Janeiro and Africa via the West African slave trade and African religious traditions. It is recognized around the world as a symbol of Brazil and the Brazilian Carnival. Considered one of the most popular Brazilian cultural expressions, samba has become an icon of Brazilian national identity. The Bahian Samba de Roda (dance circle), which became a UNESCO Heritage of Humanity in 2005, is the main root of the samba carioca, the samba that is played and danced in Rio de Janeiro.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BRAZIL_SAMBADROME_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Sambadrome[COLOR_REVERT], the Brazilian replacement for the [COLOR_BUILDING_TEXT]Civic Square[COLOR_REVERT], increases happiness.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BYZANTIUM_BASILICA</Tag>
+		<English>Basilica</English>
+		<French>Basilique</French>
+		<German>Basilika</German>
+		<Italian>Basilica</Italian>
+		<Spanish>Basílica</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BYZANTIUM_BASILICA_PEDIA</Tag>
+		<English>[TAB]The Latin word basilica was originally used to describe a Roman public building (as in Greece, mainly a tribunal), usually located in the forum of a Roman town. In Hellenistic cities, public basilicas appeared in the 2nd century BC.[PARAGRAPH:1]After the Roman Empire became officially Christian, the term came by extension to refer to a large and important church that has been given special ceremonial rites by the Pope. Thus the word retains two senses today, one architectural and the other ecclesiastical.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BYZANTIUM_BASILICA_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Basilica[COLOR_REVERT], the Byzantine replacement for the [COLOR_BUILDING_TEXT]Amphitheatre[COLOR_REVERT], it doesn't increase the city's happiness with access to [COLOR_HIGHLIGHT_TEXT]Hit Football Event[COLOR_REVERT], it does increas the city's happiness with access to [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT] and it gives one free [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT].</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CANADA_MICROWAVE</Tag>
+		<English>Microwave Station</English>
+		<French>Station de micro-ondes</French>
+		<German>Mikrowelle Station</German>
+		<Italian>Stazione Microonde</Italian>
+		<Spanish>Estaci&#243;n de Microondas</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CANADA_MICROWAVE_PEDIA</Tag>
+		<English>[TAB]During World War II, microwaves had proven themselves for communications but never on a scale demanded for a trans-Canada network. In a project marked by significant electrical engineering as well as extremely difficult feats of construction, the Trans-Canada Microwave system was officially completed on 1 July 1958. It was the largest microwave transmission network in the world, placing Canada at the forefront of communications technology.[PARAGRAPH:1]After the completion of the Trans-Canada Microwave System, Canadian engineers went on to build the Panaftel network linking the 5 African countries of Benin, Niger, Upper Volta, Mali and Senegal. The experience gained by Canadian engineering firms has been a major factor in their ability to gain contracts abroad, and to develop telecommunications infrastructure across the world.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CANADA_MICROWAVE_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Microwave Station[COLOR_REVERT], the Canadian replacement for the [COLOR_BUILDING_TEXT]Broadcast Tower[COLOR_REVERT], increases the culture output with access to power even more.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CHINESE_PAVILLION_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Pavilion[COLOR_REVERT], the Chinese replacement for the [COLOR_BUILDING_TEXT]Coffee House[COLOR_REVERT], allows you to hire one [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT].</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_COLOMBIA_RESORT</Tag>
+		<English>Resort</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_COLOMBIA_RESORT_PEDIA</Tag>
+		<English>[TAB]A resort is a place used for relaxation or recreation, attracting visitors for vacations and/or tourism. Resorts are places, towns or sometimes commercial establishment operated by a single company.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_COLOMBIA_RESORT_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Resort[COLOR_REVERT], the Colombian replacement for the [COLOR_BUILDING_TEXT]Hotel[COLOR_REVERT], increases trade route yield even more and even more for each level of culture.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CONGO_WENE</Tag>
+		<English>Wene</English>
+		<French>Wene</French>
+		<German>Wene</German>
+		<Italian>Wene</Italian>
+		<Spanish>Wene</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CONGO_WENE_PEDIA</Tag>
+		<English>[TAB]In Kongo, villages were grouped in wene, small states, led by awene (plural of mwene) or mani to the Portuguese. The vata (village), referred to as libata in Kongo documents and by the Portuguese in the sixteenth century, served as Kongo's basic social unit after the family. Nkuluntu, or mocolunto to the Portuguese, chiefs headed the villages. The one to two hundred citizens per village migrated about every ten years to accommodate soil exhaustion. Communal land-ownership and collective farms produced harvests divided by families according to the number of people per household. The nkuluntu received special premium from the harvest before the division.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CONGO_WENE_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Wene[COLOR_REVERT], the Congolese replacement for the [COLOR_BUILDING_TEXT]Civic Square[COLOR_REVERT], provides a free [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT].</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_DUTCH_MILL</Tag>
+		<English>Molen</English>
+		<French>Moulin</French>
+		<German>Mühle</German>
+		<Italian>Mulino</Italian>
+		<Spanish>Molino</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_DUTCH_MILL_PEDIA</Tag>
+		<English>[TAB]The Netherlands is so closely associated with windmills, that it's often the first fact people recall about the country. The Dutch built windmills for many centuries (and to some extent, the windmills built the country itself, since without them much of the land drainage could not have occured). In that time the mills were developed for corn milling, land drainage, saw milling, and in fact all manner of industrial purposes. Despite this widespread use, Dutch mills are in many ways quite primitive - using canvas sails, and turned to wind by hand (as distinct from the automated mechanisms that were developed for English windmills, including the fantail, and shuttered sails).[PARAGRAPH:1]There are a very pleasing number of remaining windmills in the Netherlands - the number is about 1150 and rising, in that the Dutch only count complete workable mills, and in the past 10 years especially, many extensive rebuilds have occured to add to this number.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_DUTCH_MILL_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Molen[COLOR_REVERT], the Dutch replacement for the [COLOR_BUILDING_TEXT]Forge[COLOR_REVERT], increases the building speed of naval units and it allows you to hire one [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT].</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_EGYPT_PYRAMID</Tag>
+		<English>Kushite Pyramid</English>
+		<French>Pyramide Koushite</French>
+		<German>Kusch Pyramide</German>
+		<Italian>Piramide Kushite</Italian>
+		<Spanish>Pirámide Cusita</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_EGYPT_PYRAMID_PEDIA</Tag>
+		<English>[TAB]When the Egyptians pulled out of the lower Nile, they left a legacy that merged with indigenous customs forming the kingdom of Kush. Kush adopted many Egyptian practices such as their religion and the practice of building pyramids. Approximately 220 pyramids were eventually constructed at three sites in Nubia to serve as tombs for the kings and queens of Napata and Meroë. The first of these were built at the site of el-Kurru.[PARAGRAPH:1]The physical proportions of Nubian pyramids differ markedly from the Egyptian edifices that influenced them: they are built of stepped courses of horizontally positioned stone blocks, and range from approximately six to thirty metres in height, but rise from fairly small foundation footprints that rarely exceed eight metres in width, resulting in tall, narrow structures inclined at around seventy degrees. Most also have small Egyptian-inspired offering temple structures abutting their base. The oldest and largest pyramid at Nuri is that of the Napatan king and twenty-fifth dynasty pharaoh Taharqa.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_EGYPT_PYRAMID_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Kushite Pyramid[COLOR_REVERT], the Egyptian replacement for the [COLOR_BUILDING_TEXT]Observatory[COLOR_REVERT], is cheaper and doesn't require the [COLOR_TECH_TEXT]Physics[COLOR_REVERT] technology, does require the [COLOR_TECH_TEXT]Mathematics[COLOR_REVERT] technology and it requires a [COLOR_BUILDING_TEXT]Library[COLOR_REVERT] present.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ENGLAND_PUBLIC_HOUSE</Tag>
+		<English>Public House</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ENGLAND_PUBLIC_HOUSE_PEDIA</Tag>
+		<English>[TAB]A pub, or public house, is an establishment licensed to sell alcoholic drinks, which traditionally include beer (such as ale) and cider. It is a relaxed, social drinking establishment and a prominent part of British, Irish, Breton, New Zealand, Canadian, South African and Australian cultures. In many places, especially in villages, a pub is the focal point of the community. In his 17th-century diary Samuel Pepys described the pub as "the heart of England".[PARAGRAPH:2]Pubs can be traced back to Roman taverns, through the Anglo-Saxon alehouse to the development of the tied house system in the 19th century. In 1393, King Richard II of England introduced legislation that pubs had to display a sign outdoors to make them easily visible for passing ale tasters, who would assess the quality of ale sold. Most pubs focus on offering beers, ales and similar drinks. As well, pubs often sell wines, spirits, and soft drinks, meals and snacks. The owner, tenant or manager (licensee) is known as the pub landlord or publican. Referred to as their "local" by regulars, pubs are typically chosen for their proximity to home or work, the availability of a particular beer or ale or a good selection, good food, a social atmosphere, the presence of friends and acquaintances, and the availability of recreational activities such as a darts team, a skittles team, and a pool or snooker table. The pub quiz was established in the UK in the 1970s</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ENGLAND_PUBLIC_HOUSE_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Public House[COLOR_REVERT], the English replacement for the [COLOR_BUILDING_TEXT]Coffee House[COLOR_REVERT], increases trade route yield.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ETHIOPIA_XEER</Tag>
+		<English>Xeer</English>
+		<French>Xeer</French>
+		<German>Xeer</German>
+		<Italian>Xeer</Italian>
+		<Spanish>Xeer</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ETHIOPIA_XEER_PEDIA</Tag>
+		<English>[TAB]Xeer is the polycentric legal system of Somalia. Under this system, elders serve as judges and help mediate cases using precedents. It is a good example of how customary law works within a stateless society and is a fair approximation of what is thought of as natural law. Several scholars have noted that even though Xeer may be centuries old, it has the potential to serve as the legal system of a modern, well-functioning economy.[PARAGRAPH:1]According to one report, the Somali nation did not begin with the common use of the Somali language by the clans, but rather with the collective observance of Xeer. Xeer is thus referred to as being both the father and child of the Somali nation. An analogous phenomenon is said to have occurred among the neighbouring Oromo nation, which is now under Ethiopian rule.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ETHIOPIA_XEER_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Xeer[COLOR_REVERT], the Ethiopian replacement for the [COLOR_BUILDING_TEXT]Courthouse[COLOR_REVERT], is much cheaper.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_FRANCE_CHATEAU</Tag>
+		<English>Ch&#226;teau</English>
+		<French>Grand Ch&#226;teau</French>
+		<German>Ch&#226;teau</German>
+		<Italian>Ch&#226;teau</Italian>
+		<Spanish>Ch&#226;teau</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_FRANCE_CHATEAU_PEDIA</Tag>
+		<English>[TAB]A château is a manor house or residence of the lord of the manor or a country house of nobility or gentry, with or without fortifications, originally-and still most frequently-in French-speaking regions. Where clarification is needed, a fortified château (that is, a castle) is called a château fort, such as Château fort de Roquetaillade. Care should be taken when translating the word château into English. It is not used in the same way as "castle", and most châteaux are described in English as "palaces" or "country houses" rather than "castles". For example, the Château de Versailles is so called because it was located in the countryside when it was built, but it does not bear any resemblance to a castle, so it is usually known in English as the Palace of Versailles.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_FRANCE_CHATEAU_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Ch&#226;teau[COLOR_REVERT], the French replacement for the [COLOR_BUILDING_TEXT]Estate[COLOR_REVERT], allows you to hire one additional [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT].</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HOLY_ROMAN_OPERA</Tag>
+		<English>Opera House</English>
+		<French>Salle d'Op&#233;ra</French>
+		<German>Opernhaus</German>
+		<Italian>Teatro dell'Opera</Italian>
+		<Spanish>Teatro de ópera</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HOLY_ROMAN_OPERA_PEDIA</Tag>
+		<English>[TAB]An opera house is a theater building used for opera performances that consists of a stage, an orchestra pit, audience seating, and backstage facilities for costumes and set building. While some venues are constructed specifically for operas, other opera houses are part of larger performing arts centers.[PARAGRAPH:1]Because many operas call for large-scale productions, opera houses are usually large - generally more than 1,000 seats and often several thousand seats. Traditionally, Europe's major opera houses built in the 19th century contained between about 1,500 to 3,000 seats. Since the latter part of the nineteenth century, opera houses generally have an orchestra pit, where a large number of orchestra players may be seated at a level below the audience, so that they can play without overwhelming the singing voices.[PARAGRAPH:1]The Vienna Opera House (Staatsoper) has a world-wide reputation for its first-class opera performances and is also known because of the Vienna Philharmonic Orchestra. A night at the State Opera is one of the most impressive events any visitor to Vienna can experience.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HOLY_ROMAN_OPERA_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Opera House[COLOR_REVERT], the Holy Roman replacement for the [COLOR_BUILDING_TEXT]Theatre[COLOR_REVERT], increase a city's cultural output. They also increase the city's happiness with access to [COLOR_HIGHLIGHT_TEXT]Dye[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Hit Singles[COLOR_REVERT] or [COLOR_HIGHLIGHT_TEXT]Marble[COLOR_REVERT].</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_GREEK_AGORA</Tag>
+		<English>Agora</English>
+		<French>Agora</French>
+		<German>Agora</German>
+		<Italian>Agor&#224;</Italian>
+		<Spanish>Agora</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_GREEK_AGORA_PEDIA</Tag>
+		<English>[TAB]In Greek, "agora" means "place of gathering." Agoras appeared in all of the Greek city-states ("polis") of the classical period, serving as marketplaces where merchants and artisans congregated to put their wares on sale. Agoras were much more than mere places of business, however. Everybody came to the agoras, and here much of the business of the city-state was concluded. Here politicians met the citizenry to debate policy. Here teachers congregated with their students. Socrates could often be found in the Athenian agora, teaching his philosophy in the streets to anyone who would listen. In short, agoras were the heart and soul of the city-state.[PARAGRAPH:1]The best surviving example of an agora can be found in Athens. Located near the high ground of the Acropolis, the agora contains the ruins of several great temples, most notably the Temple of Hephestus (Thesion). The original Athenian agora was destroyed during the Persian invasion of 480 BC; it was entirely rebuilt during the Athenian golden age that took place in the decades that followed. Today the agora is one of the most popular destinations for tourists visiting Athens.[PARAGRAPH:1]In this scenario the agoras perform the same function as marketplaces in the main game.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_GREEK_AGORA_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Agora[COLOR_REVERT], the Greek replacement for the [COLOR_BUILDING_TEXT]Market[COLOR_REVERT], increases the science output and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialist.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HARAPPAN_SEWER</Tag>
+		<English>Early Sewer</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HARAPPAN_SEWER_PEDIA</Tag>
+		<English>[TAB]The Indus Valley Civilization in Asia shows early evidence of public water supply and sanitation. The system the Indus developed and managed included a number of advanced features. A typical example is the Indus city of Lothal (c. 2350 BCE). In Lothal all houses had their own private toilet which was connected to a covered sewer network constructed of brickwork held together with a gypsum-based mortar that emptied either into the surrounding water bodies or alternatively into cesspits, the latter of which were regularly emptied and cleaned.[PARAGRAPH:2]The urban areas of the Indus Valley civilization included public and private baths. Sewage was disposed through underground drains built with precisely laid bricks, and a sophisticated water management system with numerous reservoirs was established. In the drainage systems, drains from houses were connected to wider public drains.[PARAGRAPH:2]The earliest evidence of urban sanitation was seen in Harappa, Mohenjo-daro, and the recently discovered Rakhigarhi of Indus Valley civilization. This urban plan included the world's first urban sanitation systems. Within the city, individual homes or groups of homes obtained water from wells. From a room that appears to have been set aside for bathing, waste water was directed to covered drains, which lined the major streets.[PARAGRAPH:2]Devices such as shadoofs and sakias were used to lift water to ground level. Ruins from the Indus Valley Civilization like Mohenjo-daro in Pakistan and Dholavira in Gujarat in India had settlements with some of the ancient world's most sophisticated sewage systems. They included drainage channels, rainwater harvesting, and street ducts.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HARAPPAN_SEWER_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Early Sewer[COLOR_REVERT], the Harappan replacement for the [COLOR_BUILDING_TEXT]Sewer[COLOR_REVERT], is cheaper and doesn't require the [COLOR_TECH_TEXT]Urban Planning[COLOR_REVERT] technology, does require the [COLOR_TECH_TEXT]Cement[COLOR_REVERT] technology.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_INCA_STONECUTTER</Tag>
+		<English>Stone Cutter</English>
+		<French>Tailleur de Pierre</French>
+		<German>Steinmetzer</German>
+		<Italian>Scalpelino</Italian>
+		<Spanish>Cortador de Piedra</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_INCA_STONECUTTER_PEDIA</Tag>
+		<English>[TAB]Architecture was by far the most important of the Inca arts, with textiles reflecting motifs that were at their height in architecture. The main example is the capital city of Cusco. The site of Machu Picchu was constructed by Inca engineers. The stone temples constructed by the Inca used a mortarless construction that fit together so well that a knife could not be fitted through the stonework.[PARAGRAPH:1]This was a process first used on a large scale by the Pucara (ca. 300 BC-AD 300) peoples to the south in Lake Titicaca, and later in the great city of Tiwanaku (ca. AD 400-1100) in present day Bolivia. The rocks used in construction were sculpted to fit together exactly by repeatedly lowering a rock onto another and carving away any sections on the lower rock where the dust was compressed. The tight fit and the concavity on the lower rocks made them extraordinarily stable.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_INCA_STONECUTTER_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Stone Cutter[COLOR_REVERT], the Incan replacement for the [COLOR_BUILDING_TEXT]Forge[COLOR_REVERT], doesn't increase the city's unhealth, it increases the happiness with access to [COLOR_HIGHLIGHT_TEXT]Stone[COLOR_REVERT] and it can be build very quickly if [COLOR_HIGHLIGHT_TEXT]Stone[COLOR_REVERT] is available.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_INDIA_SHRENI</Tag>
+		<English>Shreni</English>
+		<French>Shreni</French>
+		<German>Shreni</German>
+		<Italian>Shreni</Italian>
+		<Spanish>Shreni</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_INDIA_SHRENI_PEDIA</Tag>
+		<English>[TAB]Shreni, in the context of Ancient India, was an association of traders, merchants, and artisans. Generally, a separate shreni existed for a particular group of persons engaged in the same vocation or activity. Shrenis have sometimes been compared with the guilds. However, persons engaged in life destroying activities like hunting and fishing did not form any shreni.[PARAGRAPH:1]Well documents references to the existing of shreni have been found from 5th century BC, and texts pertaining to Buddhism and Jainism mention existence of shrenis and conversion of entire members of some shrenis to Buddhism or Jainism. Over a period of time, some shrenis became very wealthy with surplus resources, and acted as custodians and bankers of religious and other endowments. One of the widely referred shreni was of ivory carvers of Vidisha (located in the modern Indian state of Madhya Pradesh). This shreni is accredited with sponsoring and financially supporting the construction of the southern gateway of the Stupa at Sanchi, which is currently a World Heritage Site.[PARAGRAPH:1]Some scholars have opined that as the each economic activity and craft was having its specific traditions and trade secrets, shrenis were formed to protect the same, and fathers used to pass on the same to their sons, and so it continued from one generation to the next generation. Daughters were excluded from becoming the members of the shreni, as once married they went to their husbands' homes, and were prone to divulge the trade secrets to the families of their husbands.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_INDIA_SHRENI_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Shreni[COLOR_REVERT], the Indian replacement for the [COLOR_BUILDING_TEXT]Trading Post[COLOR_REVERT], provides health.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_INDONESIA_PENDOPO</Tag>
+		<English>Pendopo</English>
+		<French>Pendopo</French>
+		<German>Pendopo</German>
+		<Italian>Pendopo</Italian>
+		<Spanish>Pendopo</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_INDONESIA_PENDOPO_PEDIA</Tag>
+		<English>[TAB]A Pendopo or Pendapa is a fundamental element of Javanese architecture; a large pavilion-like structure built on columns. Either square or rectangular in plan, it is open on all sides and provides shelter from the sun and rain, but allows breeze and indirect light. The word pendopo is a variant on the Sanskrit word mandapa ('hall'). The Dutch writer Multatuli in his colonial reformist novel Max Havelaar described the pendopo as "next to a broad-rimmed hat, an umbrella or a hollow tree, a pendopo is undoubtedly the simplest representation there is of the concept of 'roof'".[PARAGRAPH:1]Derived from ancient Javanese architectural elements, pendopo are common ritual spaces primarily intended for ceremony, and also for a variety of purposes such as receiving guests in the compounds of wealthy Javanese, and even as cottage industry work spaces. Pendopo can be constructed as a stand alone structure or attached to walled inner structure called dalem, it formed the front part of Joglo, Javanese traditional house.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_INDONESIA_PENDOPO_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Pendopo[COLOR_REVERT], the Indonesian replacement for the [COLOR_BUILDING_TEXT]Civic Square[COLOR_REVERT], allows you to hire one [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT].</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_IRAN_AB_ANBAR</Tag>
+		<English>Ab Anbar</English>
+		<French>Ab Anbar</French>
+		<German>Ab Anbar</German>
+		<Italian>Ab Anbar</Italian>
+		<Spanish>Ab Anbar</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_IRAN_AB_ANBAR_PEDIA</Tag>
+		<English>[TAB]An Ab Anbar is a traditional reservoir or cistern of drinking water in Persian antiquity. The Persian phrase literally translates as "water reservoir".[PARAGRAPH:1]In order to access the water, one would go through the entrance (sar-dar) which would always be open, traverse a stairway and reach the bottom where there would be faucets to access the water in the storage. Next to the faucet would be a built-in seat or platform, a water drain for disposing water from the faucet, and ventilation shafts. Depending on where (i.e. what depth) the faucets would be, the water would be colder or warmer. Some storages would have multiple faucets located at intervals along the stairway. Thus nobody had access to the body of water itself, hence minimizing possible contamination. The storage is completely isolated from the outside except for ventilation shafts or windcatchers. To further minimize contamination, the storage tank's interior was scattered with a salty compound that would form a surface on top of the water. The storage tank would then be monitored year round to ensure that the surface had not been disturbed. The water of course would be drawn from the bottom using the pasheer.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_IRAN_AB_ANBAR_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Ab Anbar[COLOR_REVERT], the Iranian replacement for the [COLOR_BUILDING_TEXT]Aqueduct[COLOR_REVERT], provides a culture boost.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ITALY_COLLEGANTIA</Tag>
+		<English>Collegantia</English>
+		<French>Collegantia</French>
+		<German>Collegantia</German>
+		<Italian>Collegantia</Italian>
+		<Spanish>Collegantia</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ITALY_COLLEGANTIA_PEDIA</Tag>
+		<English>[TAB]The typical form of company was the so-called Collegantia. Within its frame a silent partner introduced about three quarters of the capital investment, the active partner, who conducted the trade, introduced the rest. Aims, responsibility assignment and shares were fixed before the journey being started, but the active partner could also reinvest his gains during the same journey. In a way silent and active partner were only roles that were fixed before each adventure, in which several silent partners could dare their luck. This way the risks diminished and the opportunities to accumulate capital increased. Close relationships and dependencies were developed and as a consequence family partnerships were largely preferred.[PARAGRAPH:1]Not before the Late Middle Ages - and thus very late in comparison to Tuscany - veritable societates prevailed, companies conceived for longer periods. In addition double-entry bookkeeping enhanced the possibilities to stretch initiatives into rather far away countries by founding outposts or factories, and by enhancing controlling. Directing activities and intensification of local contacts were facilitated this way, too.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ITALY_COLLEGANTIA_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Collegantia[COLOR_REVERT], the Italian replacement for the [COLOR_BUILDING_TEXT]Customs House[COLOR_REVERT], doesn't require a [COLOR_BUILDING_TEXT]Harbor[COLOR_REVERT] or coast.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_JAPAN_TEAHOUSE</Tag>
+		<English>Teahouse</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_JAPAN_TEAHOUSE_PEDIA</Tag>
+		<English>[TAB]In Japanese tradition a tea house can refer to a structure designed for holding Japanese tea ceremonies. This structure and specifically the room in it where the tea ceremony takes place is called chashitsu. The architectural space called chashitsu was created for aesthetic and intellectual fulfillment.[PARAGRAPH:2]In Japan a tea house can also refer to a place of entertainment with geisha. These kinds of tea houses, called ochaya, are typically very exclusive establishments. The most notable ochaya is the Ichiriki Ochaya.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_JAPAN_TEAHOUSE_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Teahouse[COLOR_REVERT], the Japanese replacement for the [COLOR_BUILDING_TEXT]Coffeehouse[COLOR_REVERT], increases commerce and espionage output with access to [COLOR_HIGHLIGHT_TEXT]Tea[COLOR_REVERT].</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_KHMER_PAGODA</Tag>
+		<English>Pagoda</English>
+		<French>Pagode</French>
+		<German>Pagode</German>
+		<Italian>Pagoda</Italian>
+		<Spanish>Pagoda</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_KHMER_PAGODA_PEDIA</Tag>
+		<English>[TAB]A pagoda is the general term in the English language for a tiered tower with multiple eaves common in India, China, Japan, Korea, Burma, Vietnam, Nepal and other parts of Asia. Some pagodas are used as Taoist houses of worship. Most pagodas were built to have a religious function, most commonly Buddhist, and were often located in or near temples. This term may refer to other religious structures in some countries. In Vietnam, pagoda is a more generic term referring to a place of worship, although pagoda is not an accurate word to describe a Buddhist temple. The modern pagoda is an evolution of the Ancient Indian stupa, a tomb-like structure where sacred relics could be kept safe and venerated. The architectural structure of the stupa has spread across Asia, taking on many diverse forms as details specific to different regions are incorporated into the overall design.[PARAGRAPH:1]Pagodas attract lightning strikes because of their height. This tendency may have played a role in their perception as spiritually charged places. Many pagodas have a decorated finial at the top of the structure. The finial is designed in such a way as to have symbolic meaning within Buddhism; for example, it may include designs representing a lotus. The finial also functions as a lightning rod, and thus helps to both attract lightning and protect the pagoda from lightning damage. Early pagodas were constructed out of wood, but steadily progressed to sturdier materials, which helped protect against fires and rot.[PARAGRAPH:1]Pagodas traditionally have an odd number of levels, a notable exception being the eighteenth century pagoda "folly" designed by Sir William Chambers at Kew Gardens in London.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_KHMER_PAGODA_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Pagoda[COLOR_REVERT], the Khmer replacement for the [COLOR_BUILDING_TEXT]Coffee House[COLOR_REVERT], allows you to hire two [COLOR_HIGHLIGHT_TEXT]Priests[COLOR_REVERT].</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_KOREA_MOUNTAIN_FORTRESS</Tag>
+		<English>Mountain Fortress</English>
+		<French>Forteresse Montagne</French>
+		<German>Bergfestung</German>
+		<Italian>Fortezza Montagna</Italian>
+		<Spanish>Fortaleza de Monta&#241;a</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_KOREA_MOUNTAIN_FORTRESS_PEDIA</Tag>
+		<English>[TAB]Goguryeo, the largest of the Three Kingdoms of Korea, is renowned for its mountain fortresses built horizontally and vertically along the incline of slopes. One of the well-preserved Goguryeo fortresses is Baekam fortress constructed before 6th century in present-day South-West Manchuria. A Chinese historian noted, "The Koguryo people like to build their palaces well." Patterned tiles and ornate bracket systems were already in use in many palaces in P'yongyang, the capital, and other town-fortresses in what now is Manchuria.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_KOREA_MOUNTAIN_FORTRESS_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Mountain Fortress[COLOR_REVERT], the Korean replacement for the [COLOR_BUILDING_TEXT]Castle[COLOR_REVERT], increases culture output of a city and it allows you to hire one [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT].</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MALI_SALT_MINE</Tag>
+		<English>Salt Mine</English>
+		<French>Mine de Sel</French>
+		<German>Salzbergwerk</German>
+		<Italian>Estrazione di Sale</Italian>
+		<Spanish>Mina de Sal</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MALI_SALT_MINE_PEDIA</Tag>
+		<English>[TAB]After gold, salt was the next great unit of exchange in the Mali Empire. Salt was as valuable, if not more valuable than gold in Sub-Saharan Africa. It was cut into pieces and spent on goods with close to equal buying power throughout the empire. While it was as good as gold in the north, it was even better in the south. The people of the south needed salt for their diet, but it was extremely rare. The northern region on the other hand had no shortage of salt. Every year merchants entered Mali via Oualata with camel loads of salt to sell in Niani. According to Ibn Battuta who visited Mali in the mid-14th century, one camel load of salt sold at Walata for 8-10 mithkals of gold, but in Mali proper it realized 20-30 ducats and sometimes even 40.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MALI_SALT_MINE_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Salt Mine[COLOR_REVERT], the Mali replacement for the [COLOR_BUILDING_TEXT]Bank[COLOR_REVERT], allows you to hire one additional [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] and one [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT].</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MAYA_KATUN</Tag>
+		<English>K'atun Stele</English>
+		<French>Stèle K'atun</French>
+		<German>K'atun Stele</German>
+		<Italian>Stele K'atun</Italian>
+		<Spanish>Estela K'atun</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MAYA_KATUN_PEDIA</Tag>
+		<English>[TAB]Maya stelae (singular stela) are monuments that were fashioned by the Maya civilization of ancient Mesoamerica. They consist of tall sculpted stone shafts and are often associated with low circular stones referred to as altars, although their actual function is uncertain. Many stelae were sculpted in low relief, although plain monuments are found throughout the Maya region. The sculpting of these monuments spread throughout the Maya area during the Classic Period (250-900 AD), and these pairings of sculpted stelae and circular altars are considered a hallmark of Classic Maya civilization. The earliest dated stela to have been found in situ in the Maya lowlands was recovered from the great city of Tikal in Guatemala. During the Classic Period almost every Maya kingdom in the southern lowlands raised stelae in its ceremonial centre.[PARAGRAPH:1]Stelae became closely associated with the concept of divine kingship and declined at the same time as this institution. The production of stelae by the Maya had its origin around 400 BC and continued through to the end of the Classic Period, around 900, although some monuments were reused in the Postclassic (c. 900-1521). The major city of Calakmul in Mexico raised the greatest number of stelae known from any Maya city, at least 166, although they are very poorly preserved.[PARAGRAPH:1]Hundreds of stelae have been recorded in the Maya region, displaying a wide stylistic variation. Many are upright slabs of limestone sculpted on one or more faces, with available surfaces sculpted with figures carved in relief and with hieroglyphic text. Stelae in a few sites display a much more three dimensional appearance where locally available stone permits, such as at Copán and Toniná. Plain stelae do not appear to have been painted nor overlaid with stucco decoration, but most Maya stelae were probably brightly painted in red, yellow, black, blue and other colours.[PARAGRAPH:1]Stelae were essentially stone banners raised to glorify the king and record his deeds, although the earliest examples depict mythological scenes. Imagery developed throughout the Classic Period, with Early Classic stelae (c. 250-600) displaying non-Maya characteristics from the 4th century onwards, with the introduction of imagery linked to the central Mexican metropolis of Teotihuacan. This influence receded in the 5th century although some minor Teotihuacan references continued to be used. In the late 5th century, Maya kings began to use stelae to mark the end of calendrical cycles. In the Late Classic (c. 600-900), imagery linked to the Mesoamerican ballgame was introduced, once again displaying influence from central Mexico. By the Terminal Classic, the institution of divine kingship declined, and Maya kings began to be depicted with their subordinate lords. As the Classic Period came to an end, stelae ceased to be erected, with the last known examples being raised in 909-910.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MAYA_KATUN_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]K'atun Stele[COLOR_REVERT], the Mayan replacement for the [COLOR_BUILDING_TEXT]Observatory[COLOR_REVERT], increases the science output of a city. It can be build very quickly if [COLOR_HIGHLIGHT_TEXT]Stone[COLOR_REVERT] is available.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MEXICO_MENDICANT_ORDER</Tag>
+		<English>Mendicant Order</English>
+		<French>Ordre Mendiant</French>
+		<German>Bettelorden</German>
+		<Italian>Ordini Mendicanti</Italian>
+		<Spanish>Orden Mendicante</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MEXICO_MENDICANT_ORDER_PEDIA</Tag>
+		<English>[TAB]Mendicant orders are religious orders which depend directly on charity for their livelihood. Christian mendicant orders, in principle, do not own property, either individually or collectively, believing that they are thereby copying the way of life followed by Jesus, and able to spend all their time and energy on religious work. The mendicant orders are marked by two characteristics: poverty, practised in common; and a way of life that combined praying together in community with the work of the public ministry of the Church.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MEXICO_MENDICANT_ORDER_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Mendicant Order[COLOR_REVERT], the Mexican replacement for the [COLOR_BUILDING_TEXT]Hospital[COLOR_REVERT], increases health and provides a food bonus.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MONGOL_YAM</Tag>
+		<English>Yam</English>
+		<French>Yam</French>
+		<German>Yam</German>
+		<Italian>Yam</Italian>
+		<Spanish>Yam</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MONGOL_YAM_PEDIA</Tag>
+		<English>[TAB]Yam is a supply point route messenger system employed and extensively used and expanded by Genghis Khan and used by his descendants, including the Timurids. [PARAGRAPH:1]Relay stations were used to give food, shelter and spare horses for Mongol armies messengers. Genghis Khan gave special attention to Yam because Mongol armies traveled very fast, so their messengers had to be even faster, covering 200-300 km per day. It was used to speed up the process of information and intelligence.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MONGOL_YAM_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Yam[COLOR_REVERT], the Mongolian replacement for the [COLOR_BUILDING_TEXT]Post Office[COLOR_REVERT], gives the [COLOR_HIGHLIGHT_TEXT]Mobility I[COLOR_REVERT] promotion to [COLOR_UNIT_TEXT]TMounted units[COLOR_REVERT].</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MOORS_KASBAH</Tag>
+		<English>Kasbah</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MOORS_KASBAH_PEDIA</Tag>
+		<English>[TAB]A Kasbah is a kind of medina, islamic city or citadel. It was a place for the local leader to live and a defense when a city was under attack. A kasbah has high walls, usually without windows. Sometimes, they were built on hilltops so that they could be more easily defended. Some were placed near the entrance to harbors.[PARAGRAPH:2]The ownership of a Kashab was a sign of wealth. When colonisation started in 1830, in northern Algeria, there were numerous kashabs that lasted over a century.[PARAGRAPH:2]Another use for the word is to describe the old part of a city, in which case its equivalent to a Medina. A Medina is a district of many north African cities that is typically walled, with narrow and maze-like streets. Many historical fountains, palaces and mosques tend to be here.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MOORS_KASBAH_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Kasbah[COLOR_REVERT], the Moorish replacement for the [COLOR_BUILDING_TEXT]Walls[COLOR_REVERT], provides extra food.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MUGHAL_FORT</Tag>
+		<English>Qila</English>
+		<French>Qila</French>
+		<German>Qila</German>
+		<Italian>Qila</Italian>
+		<Spanish>Qila</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MUGHAL_FORT_PEDIA</Tag>
+		<English>[TAB]The Mughals were an Islamic empire that invaded India in the 15th century, and ruled most of the subcontinent until the mid-19th. During their rule they constructed elaborate forts across the countryside which served as administrative centers and living quarters for the occupiers. These forts were beautiful structures, fitting palaces for the rulers of a vast empire. Several - including the magnificent "Lahore Fort" and Red Fort of Agra - survive today and remain as some of the largest tourist attractions to India, monuments to the Mughals' power and style.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MUGHAL_FORT_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Qila[COLOR_REVERT], the Mughal replacement for the [COLOR_BUILDING_TEXT]Star Fort[COLOR_REVERT], provides experience for gunpowder units.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PERSIA_SATRAP_COURT</Tag>
+		<English>Satrap Court</English>
+		<French>Tribunal Satrape</French>
+		<German>Satrapen Gericht</German>
+		<Italian>Tribunale Satrapo</Italian>
+		<Spanish>Tribunal Sátrapa</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PERSIA_SATRAP_COURT_PEDIA</Tag>
+		<English>[TAB]Satrap was the name given to the governors of the provinces of the ancient Median and Achaemenid (Persian) Empires and in several of their successors, such as the Sassanid Empire and the Hellenistic empires. The word satrap is also often used in modern literature to refer to world leaders or governors who are heavily influenced by larger world superpowers or hegemonies and act as their surrogates.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PERSIA_SATRAP_COURT_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Satrap Court[COLOR_REVERT], the Persian replacement for the [COLOR_BUILDING_TEXT]Courthouse[COLOR_REVERT], increases happiness.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CARTHAGE_COTHON_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Cothon[COLOR_REVERT], the Phoenician replacement for the [COLOR_BUILDING_TEXT]Harbor[COLOR_REVERT], provides an extra trade route.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_POLAND_FOLWARK</Tag>
+		<English>Folwark</English>
+		<French>Folwark</French>
+		<German>Vorwerk</German>
+		<Italian>Folwark</Italian>
+		<Spanish>Folwark</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_POLAND_FOLWARK_PEDIA</Tag>
+		<English>[TAB]Folwarks are giant Polish farms that were operated in the Polish-Lithuanian Commonwealth from the 14th century into the 20th. They were used to produce a surplus of food. The first folwarks were created on church and monastery owned grounds, but were later adopted by nobility and rich peasants. The creation of folwarks was boosted by a growing demand for grain and its high profit. Folwark-based grain export was an important part of the economy of the Polish-Lithuanian commonwealth.[PARAGRAPH:1]The fall of agriculture goods prices in the end of the 17th century marked the start of a crisis for the folwark related economy. The noble's attempt to increase use of folwarks only hurt the economic crisis more. Until the 18th century, folwarks remained the basis for Polish noble's economic and political power. After the abolition of serfdom in Poland, folwarks used paid labor. Folwarks were abolished by the People's Republic of Poland with the PKWN decree of 6 September 1944 about agricultural reform.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_POLAND_FOLWARK_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Folwark[COLOR_REVERT], the Polish replacement for the [COLOR_BUILDING_TEXT]Estate[COLOR_REVERT], stores food after growth.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PORTUGAL_COLONY_ADMINISTRATION</Tag>
+		<English>Colonial Administration</English>
+		<French>L'adminstration Coloniale</French>
+		<German>Kolonialverwaltung</German>
+		<Italian>Amministrazione Coloniale</Italian>
+		<Spanish>Administración Colonial</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PORTUGAL_COLONY_ADMINISTRATION_PEDIA</Tag>
+		<English>[TAB]During the 15th and 16th centuries, Portugal was a major European power, ranking with England, France and Spain in terms of economic, political, and cultural influence. Though not predominant in European affairs, Portugal did have an extensive colonial trading empire throughout the world backed by a powerful thalassocracy.
+[TAB]In 1448, on a small island known as Arguim off the coast of Mauritania, an important castle was built, working as a feitoria, a trading post, for commerce with inland Africa. Some years before the first African gold was brought to Portugal, circumventing the Arab caravans that crossed the Sahara. Some time later, the caravels explored the Gulf of Guinea which lead to the discovery of several uninhabited islands: Cape Verde, Fernão Póo, São Tomé, Príncipe and Annobón. On November 13, 1460, Prince Henry the Navigator died. He had been the leading patron of all maritime exploration by Portugal up to that time. Immediately following Henry's death, there was a lapse of further exploration. However, Henry's patronage of explorations had shown that profits could be made in trade which followed the exploration of new lands. Accordingly when exploration was commenced again private merchants led the way in attempting to stretch trade routes further down the African coast. In the 1470's, Portuguese trading ships reached the Gold Coast. Finally, in 1471, the Portuguese captured Tangier, after years of attempts. Eleven years later in 1482, the fortress of São Jorge da Mina in the town of Elmina on the Gold Coast in the Gulf of Guinea was built. (Setting sail aboard the fleet of ships taking the materials and building crews to Elmina on this trip in December of 1481 was Christopher Columbus.) In 1483, Diogo Cão reached and explored the Congo River.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PORTUGAL_COLONY_ADMINISTRATION_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Colonial Administration[COLOR_REVERT], the Portuguese replacement for the [COLOR_BUILDING_TEXT]Estate[COLOR_REVERT], provides a free specialist for every [COLOR_HIGHLIGHT_TEXT]Plantation[COLOR_REVERT] its radius.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_POLYNESIA_FISHERY</Tag>
+		<English>Fishery</English>
+		<French>P&#234;cherie</French>
+		<German>Fischerei</German>
+		<Italian>Della pesca</Italian>
+		<Spanish>Pesquer&#237;a</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_POLYNESIA_FISHERY_PEDIA</Tag>
+		<English>[TAB]Fisheries have been important parts of human life and food production throughout history. Fish acts as one main food in people's everyday life as well as food security of the nation. Fisheries have become a part of human cultures and mythologies, providing a community identity and a subject for artists throughout the ages. Partially, this is because fisheries are irretrievably wrapped up in humanity’s perpetual fascination with the sea, and partially, because they have been a major source of food and income for many communities throughout the ages.[PARAGRAPH:2]</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_POLYNESIA_FISHERY_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Fishery[COLOR_REVERT], the Polynesian replacement for the [COLOR_BUILDING_TEXT]Harbor[COLOR_REVERT], provides commerce for improved sea resources.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PRUSSIA_PILLBOX</Tag>
+		<English>Pillbox</English>
+		<French>Pillbox</French>
+		<German>Pillbox</German>
+		<Italian>Pillbox</Italian>
+		<Spanish>Pillbox</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PRUSSIA_PILLBOX_PEDIA</Tag>
+		<English>[TAB]Dug-in guard posts (with loopholes through which to fire weapons) made from concrete are also known as "pillboxes". The originally jocular name arose from their perceived similarity to the cylindrical boxes in which medical pills were once sold. They are in effect a trench firing step hardened to protect against small-arms fire and grenades and raised to improve the field of fire.[PARAGRAPH:1]Pillboxes are often camouflaged in order to conceal their location and to maximize the element of surprise. They may be part of a trench system, form an interlocking line of defence with other pillboxes by providing covering fire to each other (defence in depth), or they may be placed to guard strategic structures such as bridges and jetties.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PRUSSIA_PILLBOX_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Pillbox[COLOR_REVERT], the Prussian replacement for the [COLOR_BUILDING_TEXT]Bunker[COLOR_REVERT], lowers damage done by enemy bombers and lowers war weariness.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ROME_CASTRA</Tag>
+		<English>Castrum</English>
+		<French>Castrum</French>
+		<German>Castrum</German>
+		<Italian>Castrum</Italian>
+		<Spanish>Castrum</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ROME_CASTRA_PEDIA</Tag>
+		<English>[TAB]The Latin word castra, with its singular castrum, was used by the ancient Romans to mean buildings or plots of land reserved to or constructed for use as a military defensive position. As the word appears in both Oscan and Umbrian (dialects of Italic) as well as in Latin, it probably descended from Indo-European to Italic. In classical Latin the word castra always means great legionary encampment, both marching, temporary ones and the fortified permanent ones, while the diminutive form castellum was used for the smaller forts, which were usually, but not always, occupied by the auxiliary units and used as logistic bases for the legions, as explained by Vegetius. A generic term is praesidium ("guard post or garrison"). The terms stratopedon ("army camp") and phrourion ("fort") were used by Greek language authors, in order to designate the Roman castra and the Roman castellum respectively. In English, the terms Roman Fortress, Roman Fort and Roman Camp are commonly used for the castra. However the scholars' convention always wants the use of the word Camp, Marching Camp and Fortress as a translation of castra and the use of the word Fort as a translation of castellum and this type of convention is usually followed and found in all the scholarly works.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ROME_CASTRA_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Castrum[COLOR_REVERT], the Roman replacement for the [COLOR_BUILDING_TEXT]Barracks[COLOR_REVERT] provides experience for [COLOR_UNIT_TEXT]Melee Units[COLOR_REVERT] and [COLOR_UNIT_TEXT]Siege Units[COLOR_REVERT].</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_RUSSIA_KREMLIN</Tag>
+		<English>Kremlin</English>
+		<French>Kremlin</French>
+		<German>Kreml</German>
+		<Italian>Cremlino</Italian>
+		<Spanish>Kremlin</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_RUSSIA_KREMLIN_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Kremlin[COLOR_REVERT], the Russian replacement for the [COLOR_BUILDING_TEXT]Star Fort[COLOR_REVERT], increases the espionage outpunt and help thwart rival spies and provides experience to [COLOR_UNIT_TEXT]Spy units[COLOR_REVERT].</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SPAIN_BULLRING</Tag>
+		<English>Bullring</English>
+		<French>Ar&#232;ne</French>
+		<German>Stierkampfarena</German>
+		<Italian>Plaza de toros</Italian>
+		<Spanish>Plaza de toros</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SPAIN_BULLRING_PEDIA</Tag>
+		<English>[TAB]Bullfighting (also known as tauromachy or as corrida de toros in Spanish) is a traditional spectacle of Spain, Portugal, some cities in southern France and in several Latin American countries, in which one or more bulls are ritually killed in a bullring as a public spectacle. It can be considered a blood sport. In Portugal it is illegal to kill a bull in the arena. A nonlethal variant stemming from Portuguese influence is also practiced on the Tanzanian island of Pemba.[PARAGRAPH:1]The tradition, as it is practiced today, involves professional toreros (toureiros in Portuguese; also referred to as toreadors in English), who execute various formal moves in order to subdue the bull. Such maneuvers are performed at close range, and have in some cases resulted in injury or death of the bullfighter. The bullfight usually concludes with the killing of the bull by a sword thrust. In Portugal the finale consists of a tradition called the pega, where men (forcados) try to grab and hold the bull by its horns when it runs at them. Forcados are dressed in a traditional costume of damask or velvet, with long knit hats as worn by the campinos (bull headers) from Ribatejo. Bullfighting has generated controversy in many parts of the world, including Spain, Portugal, Peru, Mexico, and Ecuador. Supporters of bullfighting argue that it is a culturally important tradition, while animal rights advocates hold that it is a blood sport resulting in the suffering of bulls and horses.[PARAGRAPH:1]There are many historic fighting venues in the Iberian Peninsula and Latin America. The largest venue of its kind is the Plaza de toros México in central Mexico City, which seats 48,000 people, and the oldest is the Plaza de Toros de Acho in Lima, Peru, which was built in 1766.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SPAIN_BULLRING_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Bullring[COLOR_REVERT], the Spanish replacement for the [COLOR_BUILDING_TEXT]Stable[COLOR_REVERT], increases the commerce yield of improved [COLOR_HIGHLIGHT_TEXT]Horse[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Cow[COLOR_REVERT].</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TAMIL_TRADE_GUILD</Tag>
+		<English>Trade Guild</English>
+		<French>Guilde Commerce</French>
+		<German>Handel Gilde</German>
+		<Italian>Gilda Commercio</Italian>
+		<Spanish>Gremio Comercio</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TAMIL_TRADE_GUILD_PEDIA</Tag>
+		<English>[TAB]Towards the end of the 9th century, southern India had developed extensive maritime and commercial activity, especially with the Chinese and Arabs. The Cholas, being in possession of parts of both the west and the east coasts of peninsular India, were at the forefront of these ventures. The Tang dynasty of China, the Srivijaya empire in the Malayan archipelago under the Sailendras, and the Abbasid Kalifat at Bagdad were the main trading partners. The trade with the Chinese was a very lucrative enterprise, and Trade guilds needed the king's approval and the license from the customs force/department to embark on overseas voyages for trade.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TAMIL_TRADE_GUILD_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Trade Guild[COLOR_REVERT], the Tamil replacement for the [COLOR_BUILDING_TEXT]Customs House[COLOR_REVERT], increases wealth.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_THAI_FLOATING_MARKET</Tag>
+		<English>Floating Market</English>
+		<French>March&#233; Flotter</French>
+		<German>Schwebenmarkt</German>
+		<Italian>Mercato di Galleggiare</Italian>
+		<Spanish>Mercado Flotar</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_THAI_FLOATING_MARKET_PEDIA</Tag>
+		<English>[TAB]Floating markets have a long standing tradition within countries of the Mekong River Delta (Burma, Thailand, Laos, Cambodia and Vietnam). Though the floating market's recent resurgence has led many to associate the practice mainly with Thailand, numerous can be found within Vietnam as well.[PARAGRAPH:1]Can Tho, Vietnam is the main city of the Mekong Delta. It is the transportation center for the region, as it is connected to the other towns of the Delta by an extensive system of rivers and canals. The Mekong River is particularly wide there, and must be crossed by ferry, but it is along the smaller canals that most of the rural population lives. One of the most interesting sights in the delta are the floating markets and associated river life. Near Can Tho there are three different floating markets. Although they are well-known, the level of "commercialization" is still considerably less than the floating markets of Thailand. Often you won't see other travelers on the water at all.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_THAI_FLOATING_MARKET_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Floating Market[COLOR_REVERT], the Thai replacement for the [COLOR_BUILDING_TEXT]Levee[COLOR_REVERT], increases commerce yield on riverside tiles.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TIBET_STATUE</Tag>
+		<English>Statue</English>
+		<French>Statue</French>
+		<German>Statue</German>
+		<Italian>Statua</Italian>
+		<Spanish>Estatua</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TIBET_STATUE_PEDIA</Tag>
+		<English>[TAB]The Statues (sometimes called "Buddharupa") of India, Tibet, and the other Buddhist cultures usually depict a well proportioned figure, but sometimes he is shown emaciated, in recollection of the Buddha 's years of ascetic practices. Japanese ones are often very square and stolid, while Indian and Southeast Asian ones often have thinner figures.[PARAGRAPH:1]Many people may be familiar with the "Happy" or "Laughing" statues, a different historical figure, who should not be confused with the images of Gautama Buddha. Hotei or Budai, a Chinese Buddhist monk, is depicted as fat and happy, often travelling or bearing wealth. Images of Buddha sometimes shown him reclining, recalling the Buddha Shakyamuni's departure into final nirvana. Other times he is holding various symbolic objects, or making symbolic mudras (gestures). The clothing also varies; in China and Japan, where it is considered socially improper for monks and nuns to expose the upper arm, the statue has a tunic and long sleeves, much like the traditional monks and nuns, while in India they are often topless.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TIBET_STATUE_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Statue[COLOR_REVERT], the Tibetan replacement for the [COLOR_BUILDING_TEXT]Monument[COLOR_REVERT], allows you to hire one [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT].</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TURKS_BAZAAR</Tag>
+		<English>Bazaar</English>
+		<French>Bazar</French>
+		<German>Bazar</German>
+		<Italian>Bazar</Italian>
+		<Spanish>Bazar</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TURKS_BAZAAR_PEDIA</Tag>
+		<English>[TAB]Ottoman bazaars are lively and crowded places with hundreds of stalls, and the air is filled with the cries of merchants trying to entice wary customers to purchase their goods. Virtually anything imaginable can be found in markets, from food to clothing, DVDs, rugs, perfume, furniture, and so forth. Such places can be perilous for the uninitiated, for the merchants will seek to wring out the largest sum possible for their wares, and a customer who is not versed in the fine art of haggling is very likely to get taken for every penny he or she has. Bazaars have existed virtually unchanged in Arabian cities for centuries. The Grand Bazaar in Istanbul, Turkey, covers some 60 streets and contains around 400 shops. The Grand Bazaar in Tehran, Iran, has been around in one form or another for over a thousand years: with over 10 km of corridors, it is the largest covered neighborhood in the world.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TURKS_BAZAAR_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Bazaar[COLOR_REVERT], the Turkish replacement for the [COLOR_BUILDING_TEXT]Market[COLOR_REVERT], provides five commerce.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_VIKING_MEADHALL</Tag>
+		<English>Meadhall</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_VIKING_MEADHALL_PEDIA</Tag>
+		<English>[TAB]In ancient Scandinavia and Germanic Europe a mead hall or feasting hall was initially simply a large building with a single room. From the fifth century to early medieval times such a building was the residence of a lord and his retainers. The mead hall was generally the great hall of the king.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_VIKING_MEADHALL_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Meadhall[COLOR_REVERT], the Viking replacement for the [COLOR_BUILDING_TEXT]Coffee House[COLOR_REVERT], increases happiness.</English>
+	</TEXT>
+</Civ4GameText>

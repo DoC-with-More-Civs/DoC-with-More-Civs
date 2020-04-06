@@ -1,0 +1,4 @@
+Uses the Carrier animation.
+Modified original model to include gloss map and damage textue. Also modified model to distort when damaged like other Firaxis models.
+
+Model orginally by General Matt. Modified by Xenomorph

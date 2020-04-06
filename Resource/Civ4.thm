@@ -1,0 +1,9 @@
+
+// *** Control Bitmap Theme file
+
+// Set the resource 
+resource_path	"Mods/RFC Dawn of Civilization/Resource";
+
+// Setup common properties
+include			"Mods/RFC Dawn of Civilization/Resource/Themes/Civ4/Civ4Theme.thm";
+

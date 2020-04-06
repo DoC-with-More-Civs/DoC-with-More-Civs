@@ -1,0 +1,1 @@
+This is a modified version of Total Realism's Pallada-class vessel. I gave it a gloss map and team colors. Alternate skins courtesy of Wolfshanze. Use included animation.

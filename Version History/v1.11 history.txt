@@ -1,0 +1,166 @@
+# changed American UP to +2 happiness from running Republic, Capitalism and Free Market (respectively)
+# changed American Mall from +20% gold to +10% commerce
+# changed American UU to Minuteman (replaces Rifleman, costs 80 instead of 110 hammers), starts with March
+# Unhappiness from slavery or conscription reset on city flip
+# The Statue of Liberty is now placed in water
+# fixed the buy/resell exploit in slave trade
+# fixed the French UP: the French now refuse to talk to other civs as intended
+# map improvements in Australia for realism and better city locations
+# fixed the Mongolian stability, they should collapse easier now
+# adjusted the statistics screen legend so it can fit all civs
+# introduced generic immigration mechanic to replace America's old UP
+	# occurs every 3-7 turns
+	# potential target cities are cities in the New World (Americas + Australia) owned by a civ with its capital in the New World
+	# cities of Native American civs cannot be target cities
+	# potential source cities are cities in the Old World with its owner capital in the Old World
+	# immigration occurs from the source city with most excess unhappiness to the target city with the highest sum of excess happiness and food surplus divided by two
+	# the migration notification is now more visible, mentions the target/source city and marks them on the map
+# Egypt's settler is now selected at the beginning of the game
+# The German Panzer now starts with Leadership (+100% experience) instead of Mobility
+# added the Empire State Building to the American wonder goal
+# included an option to ignore the UHV goals of AI civs to improve speed
+# streamlined various parts of the victory checks to improve speed
+# rewrote certain wonder goals so that they fail when another civ constructs one of their wonders
+# added marble near Wahran
+# if the first contact between two civs triggers a war (American or Mongol conquerors) there is no diplomacy screen anymore
+# terrain changes in Mexico to allow for a larger Tenochtitlan/Mexico City
+# new Floating Gardens: requires river, corn, Pantheon and Calendar, increased cost but accelerated with Stone, flat +6 food
+# made Montezuma more focused on growth
+# made Hongwu more focused on building units
+# the Aztecs now start with Pantheon
+# new Aztec UHV:
+	# Make Tenochtitlan the largest city in the world in 1520 AD
+	# Build 6 pagan temples and sacrificial altars by 1650 AD
+	# Enslave 20 European units
+# 600 AD scenario now with Herat instead of Kandahar and Lahore instead of Peshawar
+# moved Afghan gems 1W to be in range of Herat
+# additional flood plains in Transoxania, disappear in 1600 AD
+# happiness from Dynasticism is capped at 8
+# Theocracy now allows to hire unlimited priests
+# Totalitarianism now allows to hire unlimited spies
+# Autocracy now gives +3 happiness from barracks
+# fixed the capital ruins on civ switch bug
+# added Coffee in the Congo
+# a Horse resource spawns in Mexico in 1800 AD
+# added a scripted respawn for the Aztecs as Mexico in 1810
+	# Unique Unit: Rurales (Cavalry with -20 cost, can fortify, starts with Combat I)
+	# Unique Building: Charreada Arena (Amphitheatre with +1 happiness with Horse, +2 experience for mounted units)
+	# Unique Power: Arid Agriculture (can build farms on hills)
+	# Unique Historical Victory:
+		# Build three cathedrals of your state religion by 1880 AD
+		# Create three great generals by 1940 AD
+		# Make Mexico City the largest city in the world in 1960 AD
+# harbors can now be built in cities situated at lakes
+# added the Machu Picchu wonder: +2 gold per peak tile in city radius
+# reduced Incan starting units and settlers
+# Chan Chan and Tiwanaku spawn before the Incans appear
+# reduced the Incan core to only include the vicinity of Qusqu
+# opened up the Altiplano basin and placed sheep (alpacas) and stone there
+# new Incan UB: Tambo (replaces Castle, requires Construction, +2 culture)
+# new Incan UHV:
+	# Build five Tambos and a road along the Andean Coast by 1500 AD
+	# Have 2500 gold in 1550 AD
+	# Control 60% of South America in 1700 AD
+# minor civs will not receive conquerors anymore
+# minor civs and barbarians are now generally forbidden from building wonders
+# European AI civs receive a free defender and worker when founding colonies
+# AIs now properly target independents in their war target areas
+# Mongol Keshiks now start with Formation and ignore city defenses
+# Dog Soldiers only receive +75% against melee units
+# Rework of the resurrection mechanic: more accurate starting techs, new civs receives an army, city infrastructure
+# Culture of minor civs converted at city conquest
+# Mexico renames all flipped cities to location-appropriate names
+# complete rework of the City Name Manager, for improved speed and multiple languages per civ
+# slave plantations cannot be built on jungles or forests anymore
+# prevented the AI to build the embassy of civs it shares borders with, and made the construction of embassies less likely in general
+# renamed Incan Quechuas to Aucacs
+# removed Viking war on spawn against Holy Rome
+# new Portuguese UP: The Power of Exploration: Ocean Trade and Resettlement are allowed with Optics
+# building a palace now only hurts your stability when doing so in ahistorical tiles
+# units from other civs don't create happiness when running Dynasticism anymore
+# Added the Brazilian civilization
+	# Spawn: 1822 AD
+	# Capital: Rio de Janeiro
+	# Leader: Dom Pedro II
+	# Unique Unit: Madeireiro (Worker with Woodsman II, creates production and gold from chopping jungles and forests)
+	# Unique Building: Fazenda (Grocer with +5% with Banana, Sugar, Spices, Tobacco and Coffee, +1 health with coffee)
+	# Unique Power: Ethanol (sugar counts as oil for the Oil Industry)
+	# Unique Historical Victory:
+		# Control 10 slave plantations and 4 pastures in 1880 AD
+		# Build Wembley, Cristo Redentor and the Three Gorges Dam
+		# Control 20 Forest Preserves and build a National Park in your capital in 1950 AD
+# National Parks give +8 health instead of completely removing unhealth
+# removed slave specialist icon from the city screen
+# enabled trading company spread for Vikings
+# broader conditions for fascism and communism so that their dynamic names appear more often
+# Added the Argentine civilization
+	# Spawn: 1810 AD
+	# Capital: Buenos Aires
+	# Leaders: San Martin, Peron
+	# Unique Unit: Grenadier Cavalry (Cavalry with +25% against Rifleman)
+	# Unique Building: Cold Storage Plant (Supermarket with +10% with Cow, Pig, Sheep)
+	# Unique Power: Justicialism (+1 happiness per 10% culture rate)
+	# Unique Historical Victory:
+		# Settle 2 great generals in your capital in 1900 AD
+		# Control the city with the highest commerce output in 1930 AD
+		# Have 25000 culture in Buenos Aires in 1960 AD
+# the least advanced third of all civilizations now gets an additional benefit from already discovered techs
+# removed extra happiness from sheep and cotton from the Congolese Mbwadi
+# Congolese Mbwadi now gives +10% gold with sheep, cotton and silk
+# You now need Electricity to access Aluminum
+# Wembley now requires Radio
+# the number of settlers a civ receives on spawn depends on the number of cities already present in their core
+# removed and relocated some marshes in South America
+# additional resources spawn in Argentina in 1850 AD
+# late trading company conquerors are triggered by discovering Economics and Rifling for the AI
+# Economics requires Astronomy now
+# The Eiffel Tower now requires Electricity and Steel
+# Portuguese Carracks start with Sentry
+# no AI conquerors against their own masters anymore
+# American cities outside of the Mexican core ignored by Mexican flip
+# made Argentina and Brazil optional civs
+# Argentina and Brazil now have conditional spawns based on the stability of their owners
+# added a tech history graph to the demographics advisor
+# free buildings when founding a city from at least the previous era
+# improved Polish settler map
+# new Polish UP: free cultural control of historical tiles in city radius
+# Poland now focuses more on researching Military Tradition, Astronomy and Liberalism
+# the Polish Sejmik now also gives +2 happiness
+# independents pay no unit upkeep
+# Argentina, Mexico, Colombia and Brazil have a dynamic state religion based on the religions in their core
+# moved Indian respawn into the 20th century
+# AI conquerors start with additional experience
+# new capital locations should now prefer city on the same continent instead of far away colonies
+# included a 1700 AD scenario
+# Infantry no longer receives +25% against gunpowder units
+# India cannot respawn while the Mughals are alive
+# new third HRE goal: settle three great artists in Vienna by 1700 AD
+# Forbidden Palace now also reduces civic upkeep by 33%
+# wars on spawn now only start when the spawn actually happens
+# Mughals as an English vassal are called British Raj if India is not alive
+# pass over the Andes in Bolivia opens when the Incan conquerors arrive
+# adjusted Incan respawn to suit Peru more
+# fixed the invisible/unselectable slaves after trade bug
+# the first American goal now also requires to control or vassalize Mexico
+# Added the Colombian civilization as a Maya respawn
+	# Respawn: 1814 AD
+	# Capital: Bogotá
+	# Leader: Bolivar
+	# Unique Unit: Albion Legion (Grenadier with 2 moves, starts with City Raider I)
+	# Unique Building: Hacienda (Grocer with +25% gold with Coffee)
+	# Unique Power: The Power of the Liberator (no resistance in conquered cities in Latin America)
+	# Unique Historical Victory:
+		# Allow no European colonies in Peru, Gran Colombia, the Guayanas and the Caribbean in 1870 AD
+		# Control South America in 1920 AD
+		# Acquire 5000 gold by selling resources by 1950 AD
+# Seljuk army decays around the time of the Mongol expansion
+# the Mexican and Colombian rebirths can be disabled in GlobalDefinesAlt.xml
+# added additional capes around the Canaries and the Gold Coast to delay the circumnavigation of Africa
+# opened the Canary Islands for settlement
+# minor civs cannot take goody huts
+# civilopedia now better displays building requirements (civics, coast, river)
+# civilopedia now better displays religion requirements
+# pastures and plantation yield +1 commerce with railroads
+# pastures yield +1 food with Refrigeration
+# changed Winged Hussar's 50% against gunpowder units to +50% attack strength against Musketman, Rifleman
+# Argentina and Brazil don't spawn if their core is empty

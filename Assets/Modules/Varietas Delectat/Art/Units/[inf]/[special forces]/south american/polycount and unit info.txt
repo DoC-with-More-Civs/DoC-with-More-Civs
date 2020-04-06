@@ -1,0 +1,5 @@
+Polycount for South America flavored Special Forces:
+1940
+
+
+Made using a backpack-less Anti-Tank unit from Refar's motorbike unit, then textured with the dds file from DWOLF's Mexico pack, which was edited by mechaerik to remove the Mexican flag and make it more generic, which hurt me a little inside.

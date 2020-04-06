@@ -1,0 +1,12 @@
+Armor Arjun
+.
+It doesn't exist the blueprints.
+I've read that this Indian Modern Armor is similar to a big T72 with a turret similar 
+to Leopard2A4... 
+So I've uploaded the 3ds meshes on Snafusmith T72 (uses tank animations NOT included) 
+and the turret from my Type 90 (a little reshaped), 
+
+The traks are from type 97 Chi-Ha (reshaped). 
+Texture:Snafusmith's T72 re-coloured 
+Feel free to use it as You want.
+KrugerPritz

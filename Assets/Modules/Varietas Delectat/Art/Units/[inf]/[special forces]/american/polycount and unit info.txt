@@ -1,0 +1,5 @@
+PolyCount for American Flavored Special Forces unit:
+1975
+
+
+Simple unit, made by simply placing the SEAL on the Para's kfm, then adding in the doodads from GarretSidzaka's Modern Paratrooper unit which, oddly, did not use the para's animations.

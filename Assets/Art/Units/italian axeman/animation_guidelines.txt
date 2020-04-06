@@ -1,0 +1,15 @@
+In order to assign the right animation to each axeman unit, you must follow the instructions below:
+
+Quechua model : use firaxis Quechua anims or use "anim_quechua" folder anims
+Civs using it : assyrian, babylonian, briton, dacian, gaul, illyrian, kolchis and scythian
+
+Axeman model  : use firaxis Axeman anims or use "anim" folder anims
+Civs using it : german, goth, hittite and medes
+
+Egyptian model: use firaxis Egyptian Axeman anims or use "anim_egyptian" folder anims
+Civs using it : egyptian, nubian, persian and phoenician
+
+Berserk model : use firaxis Berserk anims or use "anim_berserk" folder anims
+Civs using it : iberian, roman, greek, minoan, lydian, thrachian, carthaginian and tartessian
+
+Also you must refer to the corresponding Civ4 axeman type artdefines for XML purpose.

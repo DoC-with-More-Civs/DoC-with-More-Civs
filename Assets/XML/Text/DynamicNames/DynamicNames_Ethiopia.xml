@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Ethiopia -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ETHIOPIA_DESC</Tag>
+		<English>The Ethiopians</English>
+		<French>
+			<Text>Les &#201;thiopiens</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</French>
+		<German>
+			<Text>&#196;thiopier:Die &#196;thiopier:den &#196;thiopiern</Text>
+			<Gender>Neuter:Neuter:Neuter</Gender>
+			<Plural>1:1:1</Plural>
+		</German>
+		<Italian>
+			<Text>Gli Etiopi</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Los Et&#237;opes</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ETHIOPIA_PEOPLES</Tag>
+		<English>Abyssinian Peoples</English>
+		<French>
+			<Text>Peuplades abyssiniennes</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</French>
+		<German>
+			<Text>Abessinische V&#246;lker:Abessinischen V&#246;lker:Abessinischen V&#246;lkern</Text>
+			<Gender>Neuter:Neuter:Neuter</Gender>
+			<Plural>1:1:1</Plural>
+		</German>
+		<Italian>
+			<Text>Popoli Abissini</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Pueblos Abisinios</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ETHIOPIA_DEFAULT</Tag>
+		<English>Kingdom of %s1</English>
+		<French>
+			<Text>Royaume d'%s1</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>K&#246;nigreich %s1:K&#246;nigreich %s1:K&#246;nigreich %s1</Text>
+			<Gender>Neuter:Neuter:Neuter</Gender>
+			<Plural>0:0:0</Plural>
+		</German>
+		<Italian>
+			<Text>Regno del %s1</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Reino de %s1</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ETHIOPIA_FASCIST</Tag>
+		<English>%s2 Junta</English>
+		<French>
+			<Text>Junte %s2</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>%s2 Junta:%s2 Junta:%s2 Junta</Text>
+			<Gender>Female:Female:Female</Gender>
+			<Plural>0:0:0</Plural>
+		</German>
+		<Italian>
+			<Text>Giunta %s2</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Junta %s2</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ETHIOPIA_REPUBLIC</Tag>
+		<English>Federal Democratic Republic of %s1</English>
+		<French>
+			<Text>R&#233;publique d&#233;mocratique f&#233;d&#233;rale d’%s1</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>Federal Democratic Republic of %s1</German>
+		<Italian>Federal Democratic Republic of %s1</Italian>
+		<Spanish>Federal Democratic Republic of %s1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ETHIOPIA_COMMUNIST</Tag>
+		<English>People's Democratic Republic of %s1</English>
+		<French>
+			<Text>R&#233;publique d&#233;mocratique populaire d’%s1</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>People's Democratic Republic of %s1</German>
+		<Italian>People's Democratic Republic of %s1</Italian>
+		<Spanish>People's Democratic Republic of %s1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ETHIOPIA_AKSUM</Tag>
+		<English>Aksum</English>
+		<French>Aksoum</French>
+		<German>Aksum</German>
+		<Italian>Aksum</Italian>
+		<Spanish>Aksum</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ETHIOPIA_AKSUMITE</Tag>
+		<English>Aksumite</English>
+		<French>
+			<Text>aksoumite:aksoumite:aksoumites:aksoumites</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</French>
+		<German>Aksumite</German>
+		<Italian>Aksumite</Italian>
+		<Spanish>Aksumite</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ETHIOPIA_ADAL</Tag>
+		<English>Adal</English>
+		<French>Adal</French>
+		<German>Adal</German>
+		<Italian>Adal</Italian>
+		<Spanish>Adal</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ETHIOPIA_ADJECTIVE</Tag>
+		<English>
+			<Text>Ethiopian:Ethiopians</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</English>
+		<French>
+			<Text>&#233;thiopien:&#233;thiopienne:&#233;thiopiens:&#233;thiopiennes</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</French>
+		<German>
+			<Text>&#196;thiopisch:&#228;thiopischen:&#228;thiopische</Text>
+			<Gender>Neuter:Neuter:Neuter</Gender>
+			<Plural>0:0:0</Plural>
+		</German>
+		<Italian>
+			<Text>etiope:etiope:etiopi:etiopi</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>et&#237;ope:et&#237;ope:et&#237;opes:et&#237;opes</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ETHIOPIA_SHORT_DESC</Tag>
+		<English>Ethiopia</English>
+		<French>
+			<Text>&#201;thiopie</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>&#196;thiopien</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Etiopia</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Etiop&#237;a</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+</Civ4GameText>

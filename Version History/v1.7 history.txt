@@ -1,0 +1,65 @@
+# decreased China's inclination to research Education
+# Netherlands start with Paper and Astronomy
+# Netherlands start with two East Indiamen
+# German dynamic names: "German Democratic Republic" when vassal of Russia, "Free Socialist Republic of Germany" when communist
+# Viking inclination to found Haithabu lessened
+# assigned the proper building sounds to Protestant buildings and the Temple of Solomon
+# some civilizations (Arabia, Mongolia, Turkey) fight their initial spawn wars longer
+# added Rhye as a Great Italian Artist
+# added Durres as German name for the Durazzo tile, Belgrad for 1E of copper
+# conqueror events automatically trigger war (and set the conquering AI's warplan to total war)
+# war continues against independents when your former opponent collapses
+# Netherlands and Portugal are much less likely to become peacevassals
+# settlers can only be built in cities on the same continent as the capital until the discovery of Astronomy
+# new Babylonian UP: free Absolutism bonus after the discovery of Code of Laws
+# Temple of Solomon now expires with Liberalism, as intended
+# Oil Industry doesn't produce oil anymore
+# civs cannot be vassals of too far away civs until the discovery of Astronomy
+# Reworded the first Chinese UHV
+# fixed the third Italian goal
+# slowed down Italy's research speed, slightly increased inflation, city upkeep and civic upkeep
+# slightly buffed some of Netherlands' coefficients
+# fascist names now also with (Autocracy or Totalitarianism) and no Parliament
+# removed some city names from Italy's standard list that are also in the CityNameManager
+# removed the Dutch war on spawn against Vikings
+# AI conquerors now attack native cities immediately (unitai_attack_city_lemming)
+# Byzantium now starts with Machinery instead of Engineering
+# Turkey starts with 3 missionaries and 0 settlers, but gets 3 settlers when their workers arrive
+# implemented the Byzantine civilization
+	# Spawn: 330 AD
+	# Leader: Justinian
+	# UP: Byzantine Diplomacy - +2 espionage per culture level in every city
+	# UU: Cataphract
+	# UB: Hippodrome
+	# UHV:	- Own 5000 gold in 1000 AD
+		- Make Constantinopolis the world's largest and most cultured city in 1200 AD
+		- Own three cities in the Balkans, Northern Africa and the Near East in 1450 AD
+# removed Justinian as a Roman leader
+# added Roman total war on spawn on Greece
+# added Persian total war on spawn on Babylonia and Phoenicia
+# Legions get +25% strength against the axeman unit class
+# Rome starts with mathematics (catapults)
+# increased Roman, Greek, Persian aggression level
+# more Roman interest in Greece, more Greek interest in Anatolia and Persia, more Persian interest in Anatolia and Greece
+# removed Gordion and Hattusas spawns
+# added Barbarian spawns in Anatolia from 2000 to 800 BC (Hittites)
+# forbade Phoenicia from settling in Anatolia
+# increased Greece's likeliness to settle in Anatolia
+# less Barbarians in Europe until 300 AD
+# larger Roman starting army
+# reduced intervals between early wars
+# modified Julius' and Augustus' personality for less wonders, more units and more wars
+# changed State Property's upkeep to high
+# modified Cyrus and Dareios' personality for a more warlike behavior
+# removed artificial continents, now there's only America, Australia and Eurasiafrica
+# added an interface message when the Mongol UP triggers
+# new Roman UP:
+	An army spawns near your enemy's cities when you declare war on them for the first time
+# increased likeliness for Phoenicia and Rome to settle in Iberia, decreased Roman likeliness to settle at the Danube
+# corrected Phoenicia's dynamic names, you should see Phoenician city states and Carthaginian Empire more often now
+# Mali spawns with an Islamic Missionary now
+# Khmer late name changed to Empire of Siam
+# Changed slave revolt text to peasant revolt
+# Mansa Musa is now way more reluctant to become a peace vassal (you need to become friendly with him)
+# Rome and Greece get research penalties from the Renaissance onward
+# prevented Babylonia from founding cities too far into Anatolia
