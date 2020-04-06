@@ -6814,4 +6814,20 @@
 		<Italian>Strategic Resources Purchased: %d1 / %d2</Italian>
 		<Spanish>Strategic Resources Purchased: %d1 / %d2</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_CAPE_TO_CAIRO_RAILWAY</Tag>
+		<English>Railroad from Cape Town to an Egyptian Mediterranean port</English>
+		<French>Railroad from Cape Town to an Egyptian Mediterranean port</French>
+		<German>Eisenbahn von Kapstadt an einen aegyptischen Mittelmeer-Hafen</German>
+		<Italian>Railroad from Cape Town to an Egyptian Mediterranean port</Italian>
+		<Spanish>Railroad from Cape Town to an Egyptian Mediterranean port</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_ENGLAND_SUNSET_COMPLETE</Tag>
+		<English>Colonize the world</English>
+		<French>Colonize the world</French>
+		<German>Welt kolonisiert</German>
+		<Italian>Colonize the world</Italian>
+		<Spanish>Colonize the world</Spanish>
+	</TEXT>
 </Civ4GameText>
