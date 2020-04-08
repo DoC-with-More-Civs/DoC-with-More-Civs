@@ -891,22 +891,6 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ENG1_TITLE</Tag>
-		<English>The Sun Never Sets</English>
-		<French>Le soleil ne se couche jamais </French>
-		<German>Die Sonne geht niemals unter</German>
-		<Italian>The Sun Never Sets</Italian>
-		<Spanish>The Sun Never Sets</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UHV_ENG1</Tag>
-		<English>Colonize every continent by 1730 AD</English>
-		<French>Coloniser tous les continents avant 1730 ap. J.-C.</French>
-		<German>Kolonisieren Sie bis zum Jahr 1730 n. Chr. jeden Kontinent</German>
-		<Italian>Colonize every continent by 1730 AD</Italian>
-		<Spanish>Colonize every continent by 1730 AD</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UHV_ENG2_TITLE</Tag>
 		<English>Britannia Rule the Waves</English>
 		<French>Grande-Bretagne, r&#232;gne sur les flots </French>
 		<German>Britannia Rule the Waves</German>
@@ -914,7 +898,7 @@
 		<Spanish>Britannia Rule the Waves</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UHV_ENG2</Tag>
+		<Tag>TXT_KEY_UHV_ENG1</Tag>
 		<English>Control a total of 25 frigates or man-o-wars and sink 50 enemy ships by 1800 AD</English>
 		<French>Contr&#244;ler un total de 25 fr&#233;gates et man'o'wars et couler 50 navires ennemis avant 1800 ap. J.-C.</French>
 		<German>Kontrollieren Sie bis zum Jahr 1800 n. Chr. insgesamt 25 Fregatten oder Man-o-wars und versenken Sie 50 gegnerische Schiffe</German>
@@ -922,7 +906,7 @@
 		<Spanish>Control a total of 25 frigates or man-o-wars and sink 50 enemy ships by 1800 AD</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UHV_ENG3_TITLE</Tag>
+		<Tag>TXT_KEY_UHV_ENG2_TITLE</Tag>
 		<English>The Industrial Revolution</English>
 		<French>La r&#233;volution industrielle </French>
 		<German>Die industrielle Revolution</German>
@@ -930,12 +914,25 @@
 		<Spanish>The Industrial Revolution</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_UHV_ENG2</Tag>
+		<English>Be the first to discover ten Industrial technologies</English>
+		<French>Be the first to discover ten Industrial technologies</French>
+		<German>Entdecken Sie als erste Zivilisation zehn Technologien des Industriezeitalters</German>
+		<Italian>Be the first to discover ten Industrial technologies</Italian>
+		<Spanish>Be the first to discover ten Industrial technologies</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_ENG3_TITLE</Tag>
+		<English>The Sun Never Sets</English>
+		<German>Die Sonne geht niemals unter</German>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_UHV_ENG3</Tag>
-		<English>Be the first to discover eight Renaissance and eight Industrial technologies</English>
-		<French>&#202;tre le premier &#224; d&#233;couvrir huit technologies de la Renaissance et huit technologies industrielles</French>
-		<German>Entdecken Sie als erste Zivilisation acht Technologien der Renaissance und acht Technologien des Industriezeitalters</German>
-		<Italian>Be the first to discover eight Renaissance and eight Industrial technologies</Italian>
-		<Spanish>Be the first to discover eight Renaissance and eight Industrial technologies</Spanish>
+		<English>Colonize every continent by 1860 AD and build the Cape to Cairo Railway by 1920 AD</English>
+		<French>Colonize every continent by 1860 AD and build the Cape to Cairo Railway by 1920 AD</French>
+		<German>Kolonisieren Sie bis zum Jahr 1860 n. Chr. jeden Kontinent und bauen Sie bis zum Jahr 1920 n. Chr. die Kap-Kairo-Bahn</German>
+		<Italian>Colonize every continent by 1860 AD and build the Cape to Cairo Railway by 1920 AD</Italian>
+		<Spanish>Colonize every continent by 1860 AD and build the Cape to Cairo Railway by 1920 AD</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_ETH1_TITLE</Tag>
