@@ -827,6 +827,21 @@ class RiseAndFall:
 			if pIndependent2.isAlive():
 				utils.updateMinorTechs(iIndependent2, iBarbarian)
 
+		#Leoreth: give Celtia a settler in England in 500BC
+		if not pCeltia.isHuman():
+			#1SDAN: give AI Celtia three Settlers in La Tene in 450BC
+			if iGameTurn == getTurnForYear(-450) - (data.iSeed % 5):
+				utils.makeUnit(iSettler, iCeltia, (57, 49), 3)
+				utils.makeUnit(iArcher, iCeltia, (57, 49), 3)
+				utils.makeUnit(iCidainh, iCeltia, (57, 49), 3)
+				utils.makeUnit(iGallicWarrior, iCeltia, (57, 49), 3)
+
+			#1SDAN: give AI Celtia a settler in England in 500BC
+			if iGameTurn == getTurnForYear(-500) - (data.iSeed % 10):
+				utils.makeUnit(iSettler, iCeltia, (53, 54), 1)
+				utils.makeUnit(iArcher, iCeltia, (53, 54), 2)
+				utils.makeUnit(iCidainh, iCeltia, (53, 54), 2)
+
 		#Leoreth: give Phoenicia a settler in Qart-Hadasht in 820BC
 		if not pCarthage.isHuman() and iGameTurn == getTurnForYear(-820) - (data.iSeed % 10):
 			utils.makeUnit(iSettler, iCarthage, (67, 48), 1)
@@ -850,8 +865,10 @@ class RiseAndFall:
 		if iGameTurn == getTurnForYear(tBirth[iIndia])-utils.getTurns(1):
 			if pHarappa.isAlive() and not pHarappa.isHuman():
 				sta.completeCollapse(iHarappa)
+			if pNorteChico.isAlive() and not pNorteChico.isHuman():
+				sta.completeCollapse(iNorteChico)
 			
-		if iGameTurn == getTurnForYear(-100):
+		if iGameTurn == getTurnForYear(600):
 			if pMamluks.isHuman() and pEgypt.isAlive():
 				sta.completeCollapse(iEgypt)
 			
@@ -1777,7 +1794,7 @@ class RiseAndFall:
 			iCultureChange = 0
 			
 			# Case 1: Minor civilization
-			if iOwner in [iBarbarian, iIndependent, iIndependent2, iCeltia, iNative]:
+			if iOwner in [iBarbarian, iIndependent, iIndependent2, iNative]:
 				iCultureChange = 100
 				
 			# Case 2: Human city
@@ -1826,6 +1843,7 @@ class RiseAndFall:
 		for (x, y) in lPlots:
 			pPlot = gc.getMap().plot(x, y)
 			if pPlot.isOwned() and pPlot.isCore(pPlot.getOwner()) and not pPlot.isCore(iCiv): continue
+			pPlot.resetCultureConversion()
 			if not pPlot.isCity():
 				utils.convertPlotCulture(pPlot, iCiv, 100, False)
 
@@ -2380,6 +2398,8 @@ class RiseAndFall:
 			utils.makeUnit(iHoplite, iCiv, tPlot, 4)
 		elif iCiv == iPersia:
 			utils.makeUnit(iImmortal, iCiv, tPlot, 4)
+		elif iCiv == iCeltia:
+			utils.makeUnit(iGallicWarrior, iCiv, tPlot, 3)
 		elif iCiv == iCarthage:
 			utils.makeUnit(iWarElephant, iCiv, tPlot, 1)
 			utils.makeUnit(iNumidianCavalry, iCiv, tPlot, 1)
@@ -2580,6 +2600,10 @@ class RiseAndFall:
 			utils.makeUnit(iImmortal, iCiv, tPlot, 4)
 			utils.makeUnit(iHorseman, iCiv, tPlot, 2)
 			utils.makeUnit(iWarElephant, iCiv, tPlot, 1)
+		elif iCiv == iCeltia:
+			utils.createSettlers(iCiv, 1)
+			utils.makeUnitAI(iArcher, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 2)
+			utils.makeUnit(iGallicWarrior, iCiv, tPlot, 2)
 		elif iCiv == iCarthage:
 			utils.createSettlers(iCiv, 1)
 			utils.makeUnitAI(iArcher, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
@@ -3194,6 +3218,8 @@ class RiseAndFall:
 			utils.makeUnit(iWorker, iCiv, tPlot, 3)
 		elif iCiv == iCarthage:
 			utils.makeUnit(iWorker, iCiv, tPlot, 2)
+		elif iCiv == iCeltia:
+			utils.makeUnit(iWorker, iCiv, tPlot, 2)
 		elif iCiv == iRome:
 			utils.makeUnit(iWorker, iCiv, tPlot, 2)
 		elif iCiv == iMaya:
@@ -3408,7 +3434,7 @@ class RiseAndFall:
 
 	def arabianSpawn(self):
 		tBaghdad = (89, 47)
-		tCairo = (80, 43)
+		tCairo = (79, 43)
 		tMecca = Areas.getCapital(iArabia)
 
 

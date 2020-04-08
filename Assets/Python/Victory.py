@@ -269,6 +269,9 @@ tNigeriaBR = (69, 33)
 tCameroonTL = (69, 26)
 tCameroonBR = (75, 31)
 
+tGermaniaTL = (58, 48)
+tGermaniaBR = (65, 52)
+
 ### GOAL CONSTANTS ###
 
 dTechGoals = {
@@ -557,6 +560,33 @@ def checkTurn(iGameTurn, iPlayer):
 				win(iCarthage, 2)
 			else:
 				lose(iCarthage, 2)
+
+	elif iPlayer == iCeltia:
+		# first goal: Raze 2 Capitals by 200 BC
+		if iGameTurn == getTurnForYear(-200):
+			expire(iCeltia, 0)
+
+		# second goal: Control 3 cities in Gallia and Germania and 1 in Italy, Iberia, and Britain in 1 BC
+		if iGameTurn == getTurnForYear(-1):
+			iGallia =  getNumCitiesInArea(iCeltia, utils.getPlotList(tFranceTL, Areas.tNormalArea[iFrance][1]))
+			if gc.getMap().plot(56, 46).isCity() and gc.getMap().plot(56, 46).getPlotCity().getOwner() == iCeltia:
+				iGallia += 1
+			iGermania = getNumCitiesInArea(iCeltia, utils.getPlotList(tGermaniaTL, tGermaniaBR))
+			iItalia = getNumCitiesInRegions(iCeltia, [rItaly])
+			iIberia = getNumCitiesInRegions(iCeltia, [rIberia])
+			iBritannia = getNumCitiesInRegions(iCeltia, [rBritain])
+			bControlled = iGallia >= 3 and iGermania >= 3 and iItalia >= 1 and iIberia >= 1 and iBritannia >= 1
+			if bControlled:
+				win(iCeltia, 1)
+			else:
+				lose(iCeltia, 1)
+
+		# third goal: Be the most cultured Civilization in the world in 200 BC, 1 BC, and 60 AD
+		if iGameTurn in [getTurnForYear(-200), getTurnForYear(-1), getTurnForYear(60)]:
+			if not isBestPlayer(iCeltia, playerTotalCulture):
+				lose(iCeltia, 2)
+			elif iGameTurn == getTurnForYear(60):
+				win(iCeltia, 2)
 				
 	elif iPlayer == iPolynesia:
 	
@@ -2245,9 +2275,17 @@ def onCityBuilt(iPlayer, city):
 			if city.getRegionID() == rAustralia:
 				win(iSwahili, 2)
 				
-def onCityAcquired(iPlayer, iOwner, city, bConquest):
+def onCityAcquired(iPlayer, iOwner, city, bConquest, bCapital):
 
 	if not gc.getGame().isVictoryValid(7): return
+
+	if (city.getX(), city.getY()) in data.lCeltiaConqueredCapitals:
+		data.lCeltiaConqueredCapitals.remove((city.getX(), city.getY()))
+
+	if isPossible(iCeltia, 0):
+		if iPlayer == iCeltia:
+			if bConquest and bCapital:
+				data.lCeltiaConqueredCapitals.append((city.getX(), city.getY()))
 	
 	# third Yemeni goal: Do not allow any Persian or Turkic nation to conquer a city in the Arabian Peninsula prior to the Collapse of the Ottomans
 	if isPossible(iYemen, 2):
@@ -2276,6 +2314,15 @@ def onCityAcquired(iPlayer, iOwner, city, bConquest):
 		expire(iVietnam, 2)
 	
 	if utils.getHumanID() != iPlayer and data.bIgnoreAI: return
+
+	# first Celtic goal: Raze 2 Capitals by 200 BC
+	if iPlayer == iCeltia:
+		if isPossible(iCeltia, 0):
+			if (city.getX(), city.getY()) in data.lCeltiaConqueredCapitals:
+				data.iCeltiaRazedCapitals += 1
+				data.lCeltiaConqueredCapitals.remove((city.getX(), city.getY()))
+				if data.iCeltiaRazedCapitals >= 2:
+					win(iCeltia, 0)
 				
 	# first Tibetan goal: acquire five cities by 1000 AD
 	if iPlayer == iTibet:
@@ -3349,6 +3396,12 @@ def playerRealPopulation(iPlayer):
 	
 def playerCultureOutput(iPlayer):
 	return gc.getPlayer(iPlayer).getCommerceRate(CommerceTypes.COMMERCE_CULTURE)
+
+def playerTotalCulture(iPlayer):
+	iCulture = 0
+	for city in utils.getCityList(iPlayer):
+		iCulture += cityCulture(city)
+	return iCulture
 	
 def playerResearchOutput(iPlayer):
 	return gc.getPlayer(iPlayer).getCommerceRate(CommerceTypes.COMMERCE_RESEARCH)
@@ -4655,6 +4708,26 @@ def getUHVHelp(iPlayer, iGoal):
 		elif iGoal == 2:
 			iTreasury = pCarthage.getGold()
 			aHelp.append(getIcon(iTreasury >= utils.getTurns(5000)) + localText.getText("TXT_KEY_VICTORY_TOTAL_GOLD", (iTreasury, utils.getTurns(5000))))
+
+	elif iPlayer == iCeltia:
+		if iGoal == 0:
+			aHelp.append(getIcon(isWon(iPlayer, 0)) + localText.getText("TXT_KEY_VICTORY_CAPITALS_RAZED", (data.iCeltiaRazedCapitals, 2)))
+
+		if iGoal == 1:
+			iGallia =  getNumCitiesInArea(iPlayer, utils.getPlotList(tFranceTL, Areas.tNormalArea[iFrance][1]))
+			if gc.getMap().plot(56, 46).isCity() and gc.getMap().plot(56, 46).getPlotCity().getOwner() == iCeltia:
+				iGallia += 1
+			iGermania = getNumCitiesInArea(iPlayer, utils.getPlotList(tGermaniaTL, tGermaniaBR))
+			iItalia = getNumCitiesInRegions(iPlayer, [rItaly])
+			iIberia = getNumCitiesInRegions(iPlayer, [rIberia])
+			iBritannia = getNumCitiesInRegions(iPlayer, [rBritain])
+			bControlled = iGallia >= 3 and iGermania >= 3 and iItalia >= 1 and iIberia >= 1 and iBritannia >= 1
+
+			aHelp.append(getIcon(bControlled) + localText.getText("TXT_KEY_VICTORY_CELTIA_CONTROL_GALLIA", (iGallia, 3)) + ' ' + localText.getText("TXT_KEY_VICTORY_CELTIA_CONTROL_GERMANIA", (iGermania, 3)) + ' ' + localText.getText("TXT_KEY_VICTORY_CELTIA_CONTROL_ITALIA", (iItalia, 1)) + ' ' + localText.getText("TXT_KEY_VICTORY_IBERIA", (iIberia, 1)) + ' ' + localText.getText("TXT_KEY_VICTORY_CELTIA_CONTROL_BRITANNIA", (iBritannia, 1)))
+
+		if iGoal == 2:
+			iBestCiv = getBestPlayer(iPlayer, playerTotalCulture)
+			aHelp.append(getIcon(iBestCiv == iPlayer) + localText.getText("TXT_KEY_VICTORY_MOST_CULTURED_CIVILIZATION", (str(gc.getPlayer(iBestCiv).getCivilizationShortDescriptionKey()),)))
 
 	elif iPlayer == iPolynesia:
 		if iGoal == 0 or iGoal == 1:

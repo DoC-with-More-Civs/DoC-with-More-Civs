@@ -124,7 +124,7 @@ class CvRFCEventHandler:
 
 
 	def onCityAcquired(self, argsList):
-		iOwner, iPlayer, city, bConquest, bTrade = argsList
+		iOwner, iPlayer, city, bConquest, bTrade, bCapital = argsList
 		tCity = (city.getX(), city.getY())
 		
 		cnm.onCityAcquired(city, iPlayer)
@@ -232,10 +232,10 @@ class CvRFCEventHandler:
 					
 		self.pla.onCityAcquired(iOwner, iPlayer, city) # Plague
 		self.com.onCityAcquired(city) # Communications
-		self.corp.onCityAcquired(argsList) # Companies
+		self.corp.onCityAcquired((iOwner, iPlayer, city, bConquest, bTrade)) # Companies
 		dc.onCityAcquired(iOwner, iPlayer) # DynamicCivs
 		
-		vic.onCityAcquired(iPlayer, iOwner, city, bConquest)
+		vic.onCityAcquired(iPlayer, iOwner, city, bConquest, bCapital)
 		
 		lTradingCompanyList = [iSpain, iFrance, iEngland, iPortugal, iNetherlands]
 		

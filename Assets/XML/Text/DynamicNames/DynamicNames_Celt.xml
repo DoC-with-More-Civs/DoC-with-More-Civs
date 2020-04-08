@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Harappa -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CELTIA_DESC</Tag>
+		<English>The Celts</English>
+		<French>The Celts</French>
+		<German>The Celts</German>
+		<Italian>The Celts</Italian>
+		<Spanish>The Celts</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CELTIA_PEOPLES</Tag>
+		<English>Urnfield Peoples</English>
+		<French>Urnfield Peoples</French>
+		<German>Urnfield Peoples</German>
+		<Italian>Urnfield Peoples</Italian>
+		<Spanish>Urnfield Peoples</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CELTIA_DEFAULT</Tag>
+		<English>%s2 Culture</English>
+		<French>%s2 Culture</French>
+		<German>%s2 Culture</German>
+		<Italian>%s2 Culture</Italian>
+		<Spanish>%s2 Culture</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CELTIA_FASCIST</Tag>
+		<English>Resurrectionist %s1</English>
+		<French>Resurrectionist %s1</French>
+		<German>Resurrectionist %s1</German>
+		<Italian>Resurrectionist %s1</Italian>
+		<Spanish>Resurrectionist %s1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CELTIA_COMMUNIST</Tag>
+		<English>%s1 People's Union</English>
+		<French>%s1 People's Union</French>
+		<German>%s1 People's Union</German>
+		<Italian>%s1 People's Union</Italian>
+		<Spanish>%s1 People's Union</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CELTIA_ADJECTIVE</Tag>
+		<English>Celtic</English>
+		<French>Celtic</French>
+		<German>Celtic</German>
+		<Italian>Celtic</Italian>
+		<Spanish>Celtic</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CELTIA_SHORT_DESC</Tag>
+		<English>Celtia</English>
+		<French>Celtia</French>
+		<German>Celtia</German>
+		<Italian>Celtia</Italian>
+		<Spanish>Celtia</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CELTIA_IRELAND_DESC</Tag>
+		<English>The Irish</English>
+		<French>The Irish</French>
+		<German>The Irish</German>
+		<Italian>The Irish</Italian>
+		<Spanish>The Irish</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CELTIA_IRELAND_ADJECTIVE</Tag>
+		<English>Irish</English>
+		<French>Irish</French>
+		<German>Irish</German>
+		<Italian>Irish</Italian>
+		<Spanish>Irish</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CELTIA_IRELAND_SHORT_DESC</Tag>
+		<English>Ireland</English>
+		<French>Ireland</French>
+		<German>Ireland</German>
+		<Italian>Ireland</Italian>
+		<Spanish>Ireland</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CELTIA_SCOTLAND_DESC</Tag>
+		<English>The Scottish</English>
+		<French>The Scottish</French>
+		<German>The Scottish</German>
+		<Italian>The Scottish</Italian>
+		<Spanish>The Scottish</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CELTIA_SCOTLAND_ADJECTIVE</Tag>
+		<English>Scottish</English>
+		<French>Scottish</French>
+		<German>Scottish</German>
+		<Italian>Scottish</Italian>
+		<Spanish>Scottish</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CELTIA_SCOTLAND_SHORT_DESC</Tag>
+		<English>Scotland</English>
+		<French>Scotland</French>
+		<German>Scotland</German>
+		<Italian>Scotland</Italian>
+		<Spanish>Scotland</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CELTIA_ROME_BRITANNIA</Tag>
+		<English>Magna Britannia</English>
+		<French>Magna Britannia</French>
+		<German>Magna Britannia</German>
+		<Italian>Magna Britannia</Italian>
+		<Spanish>Magna Britannia</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CELTIA_ROME_GALLIA</Tag>
+		<English>Magna Gallia</English>
+		<French>Magna Gallia</French>
+		<German>Magna Gallia</German>
+		<Italian>Magna Gallia</Italian>
+		<Spanish>Magna Gallia</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CELTIA_ROME_GERMANIA</Tag>
+		<English>Magna Germania</English>
+		<French>Magna Germania</French>
+		<German>Magna Germania</German>
+		<Italian>Magna Germania</Italian>
+		<Spanish>Magna Germania</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CELTIC_GALLIC_WARRIOR</Tag>
+		<English>Gaesatae</English>
+		<French>Gaesatae</French>
+		<German>Gaesatae</German>
+		<Italian>Gaesatae</Italian>
+		<Spanish>Gaesatae</Spanish>
+	</TEXT>
+                 <TEXT>
+		<Tag>TXT_KEY_UP_CEL</Tag>
+		<English>Cities start with extra Culture..</English>
+		<French>Cities start with extra Culture.</French>
+		<German>Cities start with extra Culture.</German>
+		<Italian>Cities start with extra Culture.</Italian>
+		<Spanish>Cities start with extra Culture.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_HELP_CULTURE_UNIQUE_POWER</Tag>
+		<English>[ICON_BULLET]%D1%[ICON_CULTURE] from Unique Power</English>
+		<French>[ICON_BULLET]%D1%[ICON_CULTURE] gr&#226;ce au pouvoir unique</French>
+		<German>[ICON_BULLET]%D1%[ICON_CULTURE] durch Einzigartige Macht</German>
+		<Italian>[ICON_BULLET]%D1%[ICON_CULTURE] from Unique Power</Italian>
+		<Spanish>[ICON_BULLET]%D1%[ICON_CULTURE] from Unique Power</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_CEL_TITLE</Tag>
+		<English>The Power of Ceilidh:</English>
+		<French>The Power of Ceilidh:</French>
+		<German>The Power of Ceilidh:</German>
+		<Italian>The Power of Ceilidh:</Italian>
+		<Spanish>The Power of Ceilidh:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_CEL</Tag>
+		<English>Cities start with extra [ICON_CULTURE]. +2 [ICON_PRODUCTION] on unimproved forests.</English>
+		<French>Cities start with extra [ICON_CULTURE]. +2 [ICON_PRODUCTION] on unimproved forests.</French>
+		<German>Cities start with extra [ICON_CULTURE]. +2 [ICON_PRODUCTION] on unimproved forests.</German>
+		<Italian>Cities start with extra [ICON_CULTURE]. +2 [ICON_PRODUCTION] on unimproved forests.</Italian>
+		<Spanish>Cities start with extra [ICON_CULTURE]. +2 [ICON_PRODUCTION] on unimproved forests.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_CEL1_TITLE</Tag>
+		<English>Brennus' Legacy</English>
+		<French>Brennus' Legacy</French>
+		<German>Brennus' Legacy</German>
+		<Italian>Brennus' Legacy</Italian>
+		<Spanish>Brennus' Legacy</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_CEL1</Tag>
+		<English>Raze 2 Capitals by 200 BC</English>
+		<French>Raze 2 Capitals by 200 BC</French>
+		<German>Raze 2 Capitals by 200 BC</German>
+		<Italian>Raze 2 Capitals by 200 BC</Italian>
+		<Spanish>Raze 2 Capitals by 200 BC</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_CEL2_TITLE</Tag>
+		<English>Europa Celtica</English>
+		<French>Europa Celtica</French>
+		<German>Europa Celtica</German>
+		<Italian>Europa Celtica</Italian>
+		<Spanish>Europa Celtica</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_CEL2</Tag>
+		<English>Control 3 cities in Gallia and Germania and 1 in Italia, Iberia, and Britannia in 1 BC</English>
+		<French>Control 3 cities in Gallia and Germania and 1 in Italia, Iberia, and Britannia in 1 BC</French>
+		<German>Control 3 cities in Gallia and Germania and 1 in Italia, Iberia, and Britannia in 1 BC</German>
+		<Italian>Control 3 cities in Gallia and Germania and 1 in Italia, Iberia, and Britannia in 1 BC</Italian>
+		<Spanish>Control 3 cities in Gallia and Germania and 1 in Italia, Iberia, and Britannia in 1 BC</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_CEL3_TITLE</Tag>
+		<English>Ensured Legacy</English>
+		<French>Ensured Legacy</French>
+		<German>Ensured Legacy</German>
+		<Italian>Ensured Legacy</Italian>
+		<Spanish>Ensured Legacy</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_CEL3</Tag>
+		<English>Be the most cultured Civilization in the world in 200 BC, 1 BC, and 60 AD</English>
+		<French>Be the most cultured Civilization in the world in 200 BC, 1 BC, and 60 AD</French>
+		<German>Be the most cultured Civilization in the world in 200 BC, 1 BC, and 60 AD</German>
+		<Italian>Be the most cultured Civilization in the world in 200 BC, 1 BC, and 60 AD</Italian>
+		<Spanish>Be the most cultured Civilization in the world in 200 BC, 1 BC, and 60 AD</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_CAPITALS_RAZED</Tag>
+		<English>Capitals Razed: %d1 / %d2</English>
+		<French>Capitals Razed: %d1 / %d2</French>
+		<German>Capitals Razed: %d1 / %d2</German>
+		<Italian>Capitals Razed: %d1 / %d2</Italian>
+		<Spanish>Capitals Razed: %d1 / %d2</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_CELTIA_CONTROL_GALLIA</Tag>
+		<English>Gallia: %d1 / %d2</English>
+		<French>Gallia : %d1 / %d2</French>
+		<German>Gallia: %d1 / %d2</German>
+		<Italian>Gallia: %d1 / %d2</Italian>
+		<Spanish>Gallia: %d1 / %d2</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_CELTIA_CONTROL_GERMANIA</Tag>
+		<English>Germania: %d1 / %d2</English>
+		<French>Germania : %d1 / %d2</French>
+		<German>Germania: %d1 / %d2</German>
+		<Italian>Germania: %d1 / %d2</Italian>
+		<Spanish>Germania: %d1 / %d2</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_CELTIA_CONTROL_ITALIA</Tag>
+		<English>Italia: %d1 / %d2</English>
+		<French>Italia : %d1 / %d2</French>
+		<German>Italia: %d1 / %d2</German>
+		<Italian>Italia: %d1 / %d2</Italian>
+		<Spanish>Italia: %d1 / %d2</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_CELTIA_CONTROL_BRITANNIA</Tag>
+		<English>Britannia: %d1 / %d2</English>
+		<French>Britannia : %d1 / %d2</French>
+		<German>Britannia: %d1 / %d2</German>
+		<Italian>Britannia: %d1 / %d2</Italian>
+		<Spanish>Britannia: %d1 / %d2</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_MOST_CULTURED_CIVILIZATION</Tag>
+		<English>Most cultured civilizacion: %s1_city</English>
+		<French>Most cultured civilizacion: %s1_city</French>
+		<German>Most cultured civilizacion: %s1_city</German>
+		<Italian>Most cultured civilizacion: %s1_city</Italian>
+		<Spanish>Most cultured civilizacion: %s1_city</Spanish>
+	</TEXT>
+	
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_ROBERT_I_PEDIA</Tag>
+		<English>[H1]Robert I[\H1][NEWLINE][BOLD]King of Scots[\BOLD][NEWLINE][BOLD]Lived:[\BOLD] 1274 - 1329 AD [NEWLINE][PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB]Robert I, or as he is more commonly known as Robert the Bruce, was the first child of Robert de Brus, 6th Lord of Annandale and Marjorie, Countess of Carrick, daughter of Niall, Earl of Carrick.  According to legend, Robert's mother kept his father captive until he agreed to marriage.  Little is known about his youth, although it is possible he was sent to be fostered with a local family, which was a custom in those times.  Bruce was most likely raised speaking the languages Gaelic, Norman French, and Latin.  It is also believed that he knew English.  Robert saw the events of the 'Great Cause' unjust, in which the Crown of Scotland was given to his distant relative, John Balliol.  Robert thought it prevented his branch of the family from their accession to the throne of Scotland.  Soon later, Robert's grandfather resigned lordship to Robert's father.  Thus, Robert the Bruce was the Earl of Carrick.  Both Robert and his father sided with King Edward I of England against Balliol.  In 1295, Robert married his first wife, Isabella of Mar.  Some sources claim that there is lineage between Isabella and King John of England.  [PARAGRAPH: 1] In August of 1296, Bruce and his father swore allegiance to Edward I of England.  In the following year, Bruce joined the Scottish revolt against King Edward.  Letters were sent to Robert urging him to support the English.  He responded by laying waste to the lands owned by Edward.  Bruce eventually made terms with a treaty and he was pardoned in return for swearing loyalty to King Edward.  After William Wallace resigned as Guardian of Scotland after the Battle of Falkirk, Robert the Bruce and John Comyn succeeded him as joint rulers.  The following year, Bruce resigned from his position.  Later, Comyn and his joint ruler, Sir Gilbert, were replaced by Sir John de Soules. [PARAGRAPH: 1] In July, King Edward launched his sixth campaign into Scotland and captured two castles.  Robert the Bruce along with other nobles then submitted to King Edward.  In 1303, Edward invaded again.  John Comyn, who was now the Guardian of Scotland, didn't fight against the King because he had no hope to win.  By 1304, all the leading Scots, except for William Wallace, surrendered to King Edward.  Later that year, Robert made a secret pact with William Lamberton committing to patriotism toward Scotland.  The next year, William Wallace was executed and King Edward took control of Scotland. [PARAGRAPH: 1] In June of 1306, Bruce was defeated at the Battle of Methven and fled to an island of the northern coast of Ireland.  King Edward I marched north the next spring and granted all the Scottish estates of Bruce to his own followers.  On July 7 however, King Edward I died.  Robert the Bruce's only opposition was the new weak ruler, Edward II.  Bruce then returned to Scotland and won a small victory at the Battle of Glen Trool and capturing two castles.  He also burned Inverness Castle and Nairn to the ground.  Bruce continued his successful campaigns throughout the year 1308.  In 1309, he held his first Parliament at St. Andrew and the clergy of Scotland recognized Bruce as King at a general council.  During the next few years, Bruce oversaw the capture and destruction of several English castles.  In May, Bruce raided England and restrained the Isle of Man.  Bruce secured Scottish independence from England through powerful military might at the Battle of Bannockburn. [PARAGRAPH: 1] Now on a military high, Bruce invaded Ireland in 1315, supposedly to free the country from English rule.  Most likely, Bruce wanted to open a second front in the continuing wars with England.  The Irish even crowned Bruce's brother Edward as High King of Ireland in 1316.  The campaigns into Ireland made some successes, but none were significant enough to make any major changes.  With the support of only the Ulster chiefs, victory was unlikely.  Bruce died on June 7, 1329 at the Manor of Cardross in Cardross Parish, Dumbarton.  He suffered some years of disease, and it is sometimes believed that he died of leprosy just as his father did.</English>
+		<French>[H1]Robert Ier[\H1][NEWLINE][BOLD]Roi des Ecossais[\BOLD][NEWLINE][BOLD]Dates :[\BOLD] 1274 - 1329 ap. J.C.[NEWLINE][PARAGRAPH:2][BOLD]Biographie :[\BOLD][NEWLINE][TAB]Robert I, ou comme il est plus communément connu sous le nom de Robert de Bruce, a été le premier enfant de Robert de Brus, 6th Lord of Annandale et Marjorie, comtesse de Carrick fille de Niall, Comte de Carrick. Selon la légende, la mère de Robert gardés en captivité jusqu'à ce que son père, il a accepté de mariage. On sait peu de chose de sa jeunesse, bien qu'il soit possible, il a été envoyé à être favorisée par une famille locale, qui était une coutume dans ces moments. Bruce a très probablement été soulevées parlant la langue gaélique, Norman français, et en latin. On croit aussi qu'il connaissait l'anglais. Robert a vu les événements de la "Grande Cause" injuste, dans laquelle le ministère public de l'Écosse a été donnée à son parent éloigné, John Balliol. Robert pense qu'il a empêché sa branche de la famille de leur accession au trône d'Écosse. Peu de temps plus tard, son grand-père Robert démissionné seigneurie à son père Robert. Ainsi, Robert de Bruce était le comte de Carrick. Robert et les deux faces avec son père le roi Edouard Ier d'Angleterre contre Balliol. En 1295, Robert épouse sa première femme, Isabelle de Mars Certaines sources prétendent qu'il n'ya lignage entre Isabella et le roi Jean d'Angleterre. [PARAGRAPH 1] En août 1296, Bruce et son père a juré allégeance à Edouard Ier d'Angleterre. L'année suivante, Bruce s'est joint à la révolte contre Scottish King Edward. Des lettres ont été envoyées à Robert exhortant à soutenir les Anglais. Il a répondu en jetant des déchets sur les terres détenues par Edward. Bruce finalement faite termes d'un traité et il a été gracié en échange de prestation de serment de loyauté envers le roi Edward. Après William Wallace a démissionné en tant que gardienne de l'Écosse après la bataille de Falkirk, Robert de Bruce et John Comyn lui a succédé en tant que co-législateurs. L'année suivante, Bruce démissionné de son poste. Plus tard, son conjoint et Comyn règle, Sir Gilbert, a été remplacé par Sir John de Soules. [PARAGRAPH 1] En juillet, le roi Édouard a lancé sa sixième campagne en Ecosse et capturé deux châteaux. Robert de Bruce ainsi que d'autres nobles ensuite soumis au King Edward. En 1303, Edward envahi à nouveau. John Comyn, qui est maintenant le gardien de l'Ecosse, ne se battent pas contre le roi parce qu'il n'avait aucun espoir de gagner. En 1304, tous les leaders écossais, à l'exception de William Wallace, offerte à la King Edward. Plus tard la même année, Robert fait un pacte secret avec William Lamberton s'engageant à patriotisme vers l'Ecosse. L'année suivante, William Wallace fut exécuté et King Edward a pris le contrôle de l'Écosse. [PARAGRAPH 1] En juin 1306, Bruce a été défait à la bataille de Methven et ont fui vers l'île de la côte nord de l'Irlande. King Edward I marchèrent le nord au printemps prochain et a accordé tous les domaines écossais de Bruce pour ses propres adeptes. Le 7 juillet, toutefois, le roi Edouard Ier mourut. Robert Bruce l'opposition a été la seule faiblesse de la nouvelle règle, d'Edward II. Bruce retourne ensuite à l'Écosse et a remporté une mince victoire lors de la bataille de Glen Trool et capturant deux châteaux. Il a également brûlé Château Inverness Nairn et à la terre. Bruce a poursuivi ses campagnes efficaces tout au long de l'année 1308. En 1309, il a occupé son premier Parlement à St. Andrew et le clergé de l'Écosse Bruce reconnu comme roi à un conseil général. Au cours des prochaines années, Bruce a supervisé la capture et la destruction de plusieurs châteaux anglais. En mai, une descente de Bruce Angleterre et retenu à l'Ile de Man. Bruce obtenu son indépendance de l'Écosse à travers l'Angleterre puissante force militaire à la bataille de Bannockburn. [PARAGRAPH: 1] Maintenant, sur un militaire de haut, Bruce envahi l'Irlande en 1315, sous prétexte de libérer le pays de la domination anglaise. Très probablement, Bruce voulait ouvrir un deuxième front dans la poursuite de la guerre avec l'Angleterre. Le gaélique, même couronnée de Bruce, le frère de Edward comme Haut Roi de l'Irlande en 1316. Les campagnes en Irlande a fait quelques succès, mais aucune n'a été suffisamment importantes pour faire des modifications majeures. Avec l'aide des seuls chefs de l'Ulster, la victoire est peu probable. Bruce est mort le 7 juin 1329 au Manoir de Cardross à Cardross Paroisse de Dumbarton. Il a souffert de plusieurs années de la maladie, et il est parfois cru qu'il mourut de la lèpre tout comme son père a fait.</French>
+		<German>[H1]Robert I.[\H1][NEWLINE][BOLD]König von Scots[\BOLD][NEWLINE][BOLD]Lebte:[\BOLD] 1274 - 1329 n. Chr. [NEWLINE][PARAGRAPH:2][BOLD]Hintergrund:[\BOLD][NEWLINE][TAB]Robert I, oder, wie er ist besser bekannt als Robert the Bruce, war das erste Kind von Robert de Brus, 6. Lord of Annandale und Marjorie, Gräfin von Carrick Tochter von Niall, Earl of Carrick. Nach der Legende, Robert Mutter seinen Vater in Gefangenschaft gehalten, bis er sich bereit erklärte, die Ehe. Wenig ist bekannt über seine Jugend, obwohl es möglich ist, wurde er gefördert werden mit einer lokalen Familie, das war ein Brauch in dieser Zeit. Bruce wurde am häufigsten angesprochen sprechen die Sprache Gälisch, Norman Französisch und Latein. Es ist auch der Meinung, dass er wusste, Englisch. Robert sah die Ereignisse der 'Great Cause "ungerecht, in der die Krone von Schottland wurde zu seinem entfernten Verwandten, John Balliol. Robert dachte, es verhindert seine Zweig der Familie aus ihrem Beitritt zu den Thron von Schottland. Bald später, Robert Großvater trat Herrschaft von Robert Vater. So, Robert the Bruce war der Earl of Carrick. Beide Robert und sein Vater einseitig mit König Edward I. von England gegen Balliol. In 1295, Robert heiratete seine erste Frau, Isabella von März Einige Quellen behaupten, dass es zwischen Linie und Isabella König Johann von England. [PARAGRAPH: 1] Im August 1296, Bruce und sein Vater schwor Treue zu Edward I. von England. Im folgenden Jahr, Bruce trat der schottischen Revolte gegen König Edward. Briefe wurden an Robert drängt ihn zur Unterstützung der Englisch. Er reagierte, indem der Abfall landet im Besitz von Edward. Bruce machte schließlich mit einem Vertrag und er begnadigt wurde im Gegenzug für die Treue zu schwören König Edward. Nach dem Rücktritt als William Wallace Guardian of Scotland nach der Schlacht von Falkirk, Robert the Bruce und John Comyn gelungen, ihn als gemeinsamen Herrscher. Im folgenden Jahr, Bruce Rücktritt von seiner Position. Später, Comyn und seine Joint-Lineal, Sir Gilbert, wurden ersetzt durch Sir John de SOULES. [PARAGRAPH: 1] Im Juli, König Edward hat seine sechste Kampagne in Schottland und zwei Burgen erfasst. Robert the Bruce zusammen mit anderen Adligen dann vorgelegt König Edward. In 1303, Edward erobert erneut. John Comyn, wer war nun der Guardian of Scotland, nicht im Kampf gegen den König, denn er hatte keine Hoffnung zu gewinnen. By 1304, die alle zu den führenden Schotten, mit Ausnahme von William Wallace, verzichtet auf König Edward. Später in diesem Jahr, die Robert einer geheimen Pakt mit William Lamberton sich auf Patriotismus in Richtung Schottland. Im nächsten Jahr, William Wallace hingerichtet wurde und König Edward die Kontrolle über Schottland. [PARAGRAPH: 1] Im Juni 1306, wurde Bruce besiegt in der Schlacht bei Methven und floh zu einer Insel der nördlichen Küste von Irland. König Edward I marschierte nach Norden den nächsten Frühling und gewährt allen schottischen Nachlässen von Bruce zu seiner eigenen Anhänger. Am 7. Juli jedoch, König Edward I starb. Robert the Bruce's nur Opposition wurde der neue Herrscher schwach, Edward II.. Bruce dann zurück nach Schottland und gewann einen kleinen Sieg in der Schlacht von Glen Trool Erfassung und zwei Burgen. Er brannte auch Nairn Inverness Castle und auf den Boden. Bruce setzte seine erfolgreiche Kampagnen während des gesamten Jahres 1308. In 1309 hielt er seine erste Parlament in der St. Andreas und der Klerus von Schottland anerkannt Bruce als König auf eine allgemeine Gemeindebezirk. Während der nächsten Jahre, Bruce überwachte die Erfassung und Vernichtung von mehreren englischen Burgen. Im Mai, Bruce Razzia England und zurückhaltend auf der Isle of Man. Bruce gesichert schottische Unabhängigkeit von England durch leistungsfähige militärische Macht in der Schlacht von Bannockburn. [PARAGRAPH: 1] nun auf eine militärische hoch, Bruce Invasion in Irland 1315, angeblich, um das Land frei aus dem Englischen Regel. Wahrscheinlich, Bruce wollte, um eine zweite Front in der anhaltenden Kriege mit England. Die irische selbst gekrönt Bruce Bruder Edward als High King of Ireland in 1316. Die Kampagnen in Irland einige Erfolge, aber keine war signifikant genug, um keine großen Veränderungen. Mit der Unterstützung von Ulster nur die Häuptlinge, Sieg war unwahrscheinlich. Bruce starb am 7. Juni 1329 in der Manor in der Cardross Cardross Parish, Dumbarton. Er litt einige Jahre der Krankheit, und es ist manchmal geglaubt, dass er starb an Lepra genauso wie sein Vater getan hat.</German>
+		<Italian>[H1]Roberto I[\H1][NEWLINE][BOLD]Re di Scots[\BOLD][NEWLINE][BOLD]Vita:[\BOLD] 1274 - 1329 d.C. [NEWLINE][PARAGRAPH:2][BOLD]Informazioni:[\BOLD][NEWLINE][TAB]Robert I, o come egli è più comunemente noto come il Robert Bruce, era il primo figlio di Robert de Brus, 6 ° Signore di Annandale e Marjorie, Contessa di Carrick figlia di Niall, Earl di Carrick. Secondo la leggenda, la madre di Robert tenuti in cattività fino a quando il padre ha deciso di matrimonio. Poco si sa sulla sua gioventù, anche se è possibile, è stato inviato per essere promosso con una famiglia locale, che è stata una consuetudine in quei tempi. Bruce è stato sollevato più probabile che parlano le lingue gaelico, Norman francese, e il latino. È anche creduto che lui conosceva l'inglese. Robert ha visto gli eventi della 'Grande Causa' ingiusto, in cui la Corona di Scozia, è stato dato al suo lontano parente, John Balliol. Robert pensato che ha impedito il suo ramo della famiglia dalla loro adesione al trono di Scozia. Poco dopo, il nonno di Robert rassegnata a Robert signoria del padre. Così, il Robert Bruce è stato il Conte di Carrick. Sia Robert e suo padre schierati con il re Edoardo I d'Inghilterra contro Balliol. Nel 1295, Robert sposato la sua prima moglie, Isabella di marzo Alcune fonti sostengono che non vi è lignaggio tra Isabella e il re Giovanni d'Inghilterra. [PARAGRAPH: 1] Nel mese di agosto del 1296, Bruce e suo padre giurò fedeltà a Edoardo I d'Inghilterra. L'anno successivo, Bruce aderito alla rivolta contro il re scozzese Edward. Lettere sono state inviate a Robert che lo sollecitavano a sostenere l'inglese. Ha risposto con la posa dei rifiuti per le terre di proprietà di Edward. Bruce eventualmente apportate termini con un trattato ed è stato graziato in cambio di un giuramento di fedeltà al re Edward. William Wallace, dopo le dimissioni di custode della Scozia dopo la battaglia di Falkirk, il Robert Bruce e John Comyn gli successe come comune governanti. L'anno seguente, Bruce dimesso dalla sua posizione. Più tardi, e il suo congiunto Comyn righello, Sir Gilbert, sono stati sostituiti da Sir John de SOULES. [PARAGRAPH: 1] Nel mese di luglio, King Edward ha lanciato il suo sesto campagna in Scozia e catturato due castelli. Il Robert Bruce, insieme ad altri nobili poi sottoposto al King Edward. Nel 1303, Edward invaso nuovamente. John Comyn, che ora è stato il custode della Scozia, non lotta contro il re, perché egli non aveva alcuna speranza di vincere. Dal 1304, tutti i leader scozzese, ad eccezione di William Wallace, rinuncia a King Edward. Più tardi quello stesso anno, Robert fatto un patto segreto con William Lamberton impegnando a patriottismo verso la Scozia. Il prossimo anno, William Wallace è stato eseguito e King Edward ha preso il controllo della Scozia. [PARAGRAPH: 1] Nel giugno del 1306, Bruce è stato sconfitto nella battaglia di Methven e fuggiti in un'isola della costa settentrionale d'Irlanda. King Edward ho marciato a nord la prossima primavera e tutti gli scozzesi concesso dimore di Bruce ai propri seguaci. Il 7 luglio tuttavia, il re Edoardo I morì. Robert Bruce's solo l'opposizione era il nuovo sovrano debole, Edward II. Bruce poi tornò in Scozia e ha vinto una piccola vittoria nella battaglia di Glen Trool e la cattura di due castelli. Egli ha anche bruciato Inverness Castle e Nairn al suolo. Bruce ha continuato il suo campagne di successo per tutto l'anno 1308. Nel 1309, ha ricoperto il suo primo Parlamento a S. Andrea e il clero della Scozia riconosciuta come Bruce King in un consiglio generale. Nel corso dei prossimi anni, Bruce sovrintese la cattura e la distruzione di numerosi castelli inglesi. In maggio, Bruce irruzione Inghilterra e riservata l'Isola di Man. Bruce indipendenza scozzese garantiti da Inghilterra attraverso la potente forza militare nella battaglia di Bannockburn. [PARAGRAPH: 1] ora su un alto militare, Bruce invaso l'Irlanda nel 1315, presumibilmente per liberare il paese dalla regola inglese. Molto probabilmente, Bruce voluto aprire un secondo fronte a continue guerre con l'Inghilterra. L'irlandese coronato anche il fratello di Edward Bruce forte come re d'Irlanda nel 1316. Le campagne in Irlanda compiuto alcuni successi, ma non sono stati abbastanza significativo di apportare importanti modifiche. Con il sostegno di solo l'Ulster notabili, la vittoria è improbabile. Bruce è morto il 7 giugno 1329 presso il Manor di Cardross nella Parrocchia Cardross, Dumbarton. Ha sofferto alcuni anni di malattia, e talvolta è creduto che morì di lebbra così come ha fatto suo padre.</Italian>
+		<Spanish>[H1]Roberto I[\H1][NEWLINE][BOLD]Rey de Escocés[\BOLD][NEWLINE][BOLD]Vivió:[\BOLD] 1274 - 1329 d. C. [NEWLINE][PARAGRAPH:2][BOLD]Historia:[\BOLD][NEWLINE][TAB]Robert I, o como es más comúnmente conocido como el Robert Bruce, fue el primer hijo de Robert de Brus, 6 º Señor de Annandale y Marjorie, Condesa de Carrick hija de Niall, Conde de Carrick. Según la leyenda, la madre de Robert mantenido cautivo hasta que su padre está de acuerdo con el matrimonio. Poco se sabe acerca de su juventud, aunque es posible que se envió para ser promovido con una familia local, que es una costumbre en aquellos tiempos. Bruce era muy probable planteadas hablando los idiomas gaélico, Norman francés, y latín. También se cree que él sabía Inglés. Robert vio los acontecimientos de la 'gran causa' injusta, en el que la Corona de Escocia fue dado a su lejano pariente, John Balliol. Robert pensó que impidió su rama de la familia de su acceso al trono de Escocia. Poco después, el abuelo de Robert renunció a Robert señorío del padre. Así, Robert el Bruce fue el Conde de Carrick. Tanto Robert como del lado de su padre, el Rey Eduardo I de Inglaterra en contra de Balliol. En 1295, Robert se casó con su primera esposa, Isabel de Marzo Algunas fuentes afirman que es de linaje entre Isabel y el rey Juan de Inglaterra. [PARAGRAPH: 1] En agosto de 1296, Bruce y su padre juró lealtad a Eduardo I de Inglaterra. En el año siguiente, el escocés Bruce se sumaron a la revuelta contra el Rey Edward. Se enviaron cartas a Robert instándolo a apoyar el Inglés. Él respondió por la que se establecen los residuos a las tierras de propiedad de Edward. Bruce finalmente lo hizo con un tratado y fue indultado a cambio de juramento de fidelidad al Rey Edward. Después de William Wallace renuncia como Guardián de Escocia después de la batalla de Falkirk, el Robert Bruce y John Comyn, le sucedió como conjunto gobernantes. Al año siguiente, Bruce dimitió de su posición. Más tarde, Comyn y su conjunto gobernante, Sir Gilbert, se sustituyeron por Sir John de Soules. [PARAGRAPH: 1] En julio, el King Edward lanzó su sexta campaña en Escocia y se apoderaron de dos castillos. Robert el Bruce junto con otros nobles luego presentó a King Edward. En 1303, Edward invadido de nuevo. John Comyn, que fue ahora el Guardián de Escocia, no lucha contra el Rey porque no tenía la esperanza de ganar. En 1304, todas las principales escocés, con excepción de William Wallace, que se entregó a King Edward. Más tarde, ese mismo año, Robert hizo un secreto pacto con William Lamberton a la comisión de patriotismo hacia Escocia. El próximo año, William Wallace fue ejecutado y King Edward se hizo con el control de Escocia. [PARAGRAPH: 1] En junio de 1306, Bruce fue derrotado en la batalla de Methven y huido a una isla de la costa norte de Irlanda. King Edward I marchó al norte en la primavera siguiente y concedido todas las fincas del escocés Bruce a sus propios seguidores. El 7 de julio Sin embargo, el rey Eduardo I murió. Robert el Bruce fue la única oposición del nuevo gobernante débil, Edward II. Bruce regresó a Escocia y obtuvo una pequeña victoria en la Batalla de Glen Trool y la captura de dos castillos. También quemaron el castillo de Inverness Nairn y al suelo. Bruce continuó sus campañas exitosas a lo largo del año 1308. En 1309, celebró su primer Parlamento en San Andrés y el clero de Escocia Bruce reconoció como rey a un consejo general. Durante los próximos años, Bruce supervisó la captura y destrucción de varios castillos Inglés. En mayo, Bruce irrumpieron en Inglaterra y moderada en la Isla de Man. Bruce garantizado escocés independencia de Inglaterra a través de la fuerza militar poderosa en la batalla de Bannockburn. [PARAGRAPH: 1] Ahora, en un militar de alta, Bruce invadieron Irlanda en 1315, supuestamente para liberar al país de Inglés regla. Lo más probable es que Bruce quería abrir un segundo frente en la continuación de las guerras con Inglaterra. El irlandés incluso coronado Bruce hermano de Edward como Alto Rey de Irlanda en 1316. Las campañas en Irlanda logrado algunos éxitos, pero ninguno fue lo suficientemente importantes como para hacer cualquier cambio importante. Con el apoyo de sólo el Ulster jefes, la victoria es poco probable. Bruce murió el 7 de junio de 1329 en el Turismo de Cardross, en Cardross Parish, Dumbarton. Sufrió varios años de enfermedad, por lo que a veces se cree que murió de lepra al igual que su padre hizo.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_COLLINS_PEDIA</Tag>
+		<English>[H1]Michael Collins[\H1][NEWLINE][BOLD]Irish revolutionary leader[\BOLD][NEWLINE][BOLD]Lived: [\BOLD] 1890 - 1922 AD[NEWLINE][PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB]Michael John ("Mick") Collins was an Irish revolutionary leader, Minister for Finance in the First DÃ¡il of 1919, Director of Intelligence for the IRA, and member of the Irish delegation during the Anglo-Irish Treaty negotiations, both as Chairman of the Provisional Government and Commander-in-Chief of the National Army. In April 1922, a group of 200 anti-Treaty IRA men occupied the Four Courts in Dublin in defiance of the Provisional government. Collins, who wanted to avoid civil war at all costs, did not attack them until June 1922, needing to know the result of the general election which proved favourable to his party. British pressure also forced his hand. On 22 June 1922, Sir Henry Wilson, a retired British Army field marshal now serving as Military Advisor to the Craig Administration, was shot dead by two IRA men in Belgravia, London. At the time, it was presumed that the anti-Treaty faction of the IRA were responsible and Winston Churchill told Collins that unless he moved against the Four Courts garrison, he (Churchill) would use British troops to do so.[PARAGRAPH:1]In fact, it has since been proved that Collins himself ordered the killing of Wilson in reprisal for failing to prevent the attacks on Roman Catholics in Northern Ireland. Joe Dolan - a member of Collins' "Squad" or assassination unit in the War of Independence and in 1922 a captain in the National Army - revealed this in the 1950s, along with the revelation that Collins had ordered him to try to rescue the two gunmen before they were executed. In any event, this forced Collins to take action against the Four Courts men and the final provocation came when they kidnapped J.J. O'Connell, a provisional government general. After a final attempt to persuade the men to leave, Collins borrowed two 18 pounder artillery pieces from the British and bombarded the Four Courts until its garrison surrendered.[PARAGRAPH:1]He was shot and killed in August 1922, during the Irish Civil War. Although most Irish political parties recognise his contribution to the foundation of the modern Irish state, members and supporters of the Fine Gael political party hold his memory in particular esteem, regarding him as their movement's founding father (even though his link to them was through their precursor Cumann na nGaedhael, a name adopted in 1923 by the pro-Treaty wing of Sinn Fein).</English>
+		<French>[H1]Michael Collins[\H1][BOLD]Irish revolutionary leader[\BOLD][NEWLINE][BOLD]Lived: [\BOLD] 1890 - 1922 AD[NEWLINE][PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB]Michael John ("Mick") Collins was an Irish revolutionary leader, Minister for Finance in the First DÃ¡il of 1919, Director of Intelligence for the IRA, and member of the Irish delegation during the Anglo-Irish Treaty negotiations, both as Chairman of the Provisional Government and Commander-in-Chief of the National Army. In April 1922, a group of 200 anti-Treaty IRA men occupied the Four Courts in Dublin in defiance of the Provisional government. Collins, who wanted to avoid civil war at all costs, did not attack them until June 1922, needing to know the result of the general election which proved favourable to his party. British pressure also forced his hand. On 22 June 1922, Sir Henry Wilson, a retired British Army field marshal now serving as Military Advisor to the Craig Administration, was shot dead by two IRA men in Belgravia, London. At the time, it was presumed that the anti-Treaty faction of the IRA were responsible and Winston Churchill told Collins that unless he moved against the Four Courts garrison, he (Churchill) would use British troops to do so.[PARAGRAPH:1]In fact, it has since been proved that Collins himself ordered the killing of Wilson in reprisal for failing to prevent the attacks on Roman Catholics in Northern Ireland. Joe Dolan - a member of Collins' "Squad" or assassination unit in the War of Independence and in 1922 a captain in the National Army - revealed this in the 1950s, along with the revelation that Collins had ordered him to try to rescue the two gunmen before they were executed. In any event, this forced Collins to take action against the Four Courts men and the final provocation came when they kidnapped J.J. O'Connell, a provisional government general. After a final attempt to persuade the men to leave, Collins borrowed two 18 pounder artillery pieces from the British and bombarded the Four Courts until its garrison surrendered.[PARAGRAPH:1]He was shot and killed in August 1922, during the Irish Civil War. Although most Irish political parties recognise his contribution to the foundation of the modern Irish state, members and supporters of the Fine Gael political party hold his memory in particular esteem, regarding him as their movement's founding father (even though his link to them was through their precursor Cumann na nGaedhael, a name adopted in 1923 by the pro-Treaty wing of Sinn Fein).</French>
+		<German>[H1]Michael Collins[\H1][NEWLINE][BOLD]Irish revolutionary leader[\BOLD][NEWLINE][BOLD]Lived: [\BOLD] 1890 - 1922 AD[NEWLINE][PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB]Michael John ("Mick") Collins was an Irish revolutionary leader, Minister for Finance in the First DÃ¡il of 1919, Director of Intelligence for the IRA, and member of the Irish delegation during the Anglo-Irish Treaty negotiations, both as Chairman of the Provisional Government and Commander-in-Chief of the National Army. In April 1922, a group of 200 anti-Treaty IRA men occupied the Four Courts in Dublin in defiance of the Provisional government. Collins, who wanted to avoid civil war at all costs, did not attack them until June 1922, needing to know the result of the general election which proved favourable to his party. British pressure also forced his hand. On 22 June 1922, Sir Henry Wilson, a retired British Army field marshal now serving as Military Advisor to the Craig Administration, was shot dead by two IRA men in Belgravia, London. At the time, it was presumed that the anti-Treaty faction of the IRA were responsible and Winston Churchill told Collins that unless he moved against the Four Courts garrison, he (Churchill) would use British troops to do so.[PARAGRAPH:1]In fact, it has since been proved that Collins himself ordered the killing of Wilson in reprisal for failing to prevent the attacks on Roman Catholics in Northern Ireland. Joe Dolan - a member of Collins' "Squad" or assassination unit in the War of Independence and in 1922 a captain in the National Army - revealed this in the 1950s, along with the revelation that Collins had ordered him to try to rescue the two gunmen before they were executed. In any event, this forced Collins to take action against the Four Courts men and the final provocation came when they kidnapped J.J. O'Connell, a provisional government general. After a final attempt to persuade the men to leave, Collins borrowed two 18 pounder artillery pieces from the British and bombarded the Four Courts until its garrison surrendered.[PARAGRAPH:1]He was shot and killed in August 1922, during the Irish Civil War. Although most Irish political parties recognise his contribution to the foundation of the modern Irish state, members and supporters of the Fine Gael political party hold his memory in particular esteem, regarding him as their movement's founding father (even though his link to them was through their precursor Cumann na nGaedhael, a name adopted in 1923 by the pro-Treaty wing of Sinn Fein).</German>
+		<Italian>[H1]Michael Collins[\H1][NEWLINE][BOLD]Irish revolutionary leader[\BOLD][NEWLINE][BOLD]Lived: [\BOLD] 1890 - 1922 AD[NEWLINE][PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB]Michael John ("Mick") Collins was an Irish revolutionary leader, Minister for Finance in the First DÃ¡il of 1919, Director of Intelligence for the IRA, and member of the Irish delegation during the Anglo-Irish Treaty negotiations, both as Chairman of the Provisional Government and Commander-in-Chief of the National Army. In April 1922, a group of 200 anti-Treaty IRA men occupied the Four Courts in Dublin in defiance of the Provisional government. Collins, who wanted to avoid civil war at all costs, did not attack them until June 1922, needing to know the result of the general election which proved favourable to his party. British pressure also forced his hand. On 22 June 1922, Sir Henry Wilson, a retired British Army field marshal now serving as Military Advisor to the Craig Administration, was shot dead by two IRA men in Belgravia, London. At the time, it was presumed that the anti-Treaty faction of the IRA were responsible and Winston Churchill told Collins that unless he moved against the Four Courts garrison, he (Churchill) would use British troops to do so.[PARAGRAPH:1]In fact, it has since been proved that Collins himself ordered the killing of Wilson in reprisal for failing to prevent the attacks on Roman Catholics in Northern Ireland. Joe Dolan - a member of Collins' "Squad" or assassination unit in the War of Independence and in 1922 a captain in the National Army - revealed this in the 1950s, along with the revelation that Collins had ordered him to try to rescue the two gunmen before they were executed. In any event, this forced Collins to take action against the Four Courts men and the final provocation came when they kidnapped J.J. O'Connell, a provisional government general. After a final attempt to persuade the men to leave, Collins borrowed two 18 pounder artillery pieces from the British and bombarded the Four Courts until its garrison surrendered.[PARAGRAPH:1]He was shot and killed in August 1922, during the Irish Civil War. Although most Irish political parties recognise his contribution to the foundation of the modern Irish state, members and supporters of the Fine Gael political party hold his memory in particular esteem, regarding him as their movement's founding father (even though his link to them was through their precursor Cumann na nGaedhael, a name adopted in 1923 by the pro-Treaty wing of Sinn Fein).</Italian>
+		<Spanish>[H1]Michael Collins[\H1][NEWLINE][BOLD]Irish revolutionary leader[\BOLD][NEWLINE][BOLD]Lived: [\BOLD] 1890 - 1922 AD[NEWLINE][PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB]Michael John ("Mick") Collins was an Irish revolutionary leader, Minister for Finance in the First DÃ¡il of 1919, Director of Intelligence for the IRA, and member of the Irish delegation during the Anglo-Irish Treaty negotiations, both as Chairman of the Provisional Government and Commander-in-Chief of the National Army. In April 1922, a group of 200 anti-Treaty IRA men occupied the Four Courts in Dublin in defiance of the Provisional government. Collins, who wanted to avoid civil war at all costs, did not attack them until June 1922, needing to know the result of the general election which proved favourable to his party. British pressure also forced his hand. On 22 June 1922, Sir Henry Wilson, a retired British Army field marshal now serving as Military Advisor to the Craig Administration, was shot dead by two IRA men in Belgravia, London. At the time, it was presumed that the anti-Treaty faction of the IRA were responsible and Winston Churchill told Collins that unless he moved against the Four Courts garrison, he (Churchill) would use British troops to do so.[PARAGRAPH:1]In fact, it has since been proved that Collins himself ordered the killing of Wilson in reprisal for failing to prevent the attacks on Roman Catholics in Northern Ireland. Joe Dolan - a member of Collins' "Squad" or assassination unit in the War of Independence and in 1922 a captain in the National Army - revealed this in the 1950s, along with the revelation that Collins had ordered him to try to rescue the two gunmen before they were executed. In any event, this forced Collins to take action against the Four Courts men and the final provocation came when they kidnapped J.J. O'Connell, a provisional government general. After a final attempt to persuade the men to leave, Collins borrowed two 18 pounder artillery pieces from the British and bombarded the Four Courts until its garrison surrendered.[PARAGRAPH:1]He was shot and killed in August 1922, during the Irish Civil War. Although most Irish political parties recognise his contribution to the foundation of the modern Irish state, members and supporters of the Fine Gael political party hold his memory in particular esteem, regarding him as their movement's founding father (even though his link to them was through their precursor Cumann na nGaedhael, a name adopted in 1923 by the pro-Treaty wing of Sinn Fein).</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DOM_CELTIA</Tag>
+		<English>It is the year 1200 BC. As the social structure of the Germanic Celtic culture grows in its complexity, an elite class of chieftains and warriors begin taking the first steps towards consolidating power. With an advanced knowledge of Metal Working and abundant fertile land, the Celtic culture is set to spread far and wide.</English>
+	</TEXT>
+</Civ4GameText>

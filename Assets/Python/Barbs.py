@@ -26,13 +26,13 @@ tMinorCities = (
 (-1000, (124, 56), iIndependent, 'Ji', 2, iSpearman, 1),	# Beijing
 (-1000, (82, 53), iIndependent, 'Ankuwash', 2, iArcher, 2),		# Ankara
 (-850, (93, 51), iIndependent, 'Rag&#226;', 2, iArcher, 2),		# Ragha
-(-760, (66, 57), iCeltia, 'Melpum', 2, iArcher, 2),				# Milan
+#(-760, (66, 57), iCeltia, 'Melpum', 2, iArcher, 2),				# Milan
 (-500, (96, 56), iIndependent, 'Urganj', 1, iArcher, 2), 	# Urgench
 (-500, (98, 54), iIndependent2, 'Numijkat', 2, iArcher, 2), 	# Bukhara
-(-350, (63, 58), iCeltia, 'Lugodunon', 2, -1, -1),				# Lyon
+#(-350, (63, 58), iCeltia, 'Lugodunon', 2, -1, -1),				# Lyon
 (-325, (107, 35), iIndependent, 'Kanchipuram', 2, iArcher, 1),	# Madras
 (-300, (128, 58), iBarbarian, 'Simiyan hoton', 2, iChariot, 2),	# Shenyang
-(-300, (59, 56), iCeltia, 'Burdigala', 2, -1, -1),				# Bordeaux
+#(-300, (59, 56), iCeltia, 'Burdigala', 2, -1, -1),				# Bordeaux
 (-300, (106, 33), iIndependent, 'Tanjapuri', 1, iWarElephant, 1),	# Thanjavur
 #(-258, (121, 42), iIndependent, 'Co Loa', 2, iArcher, 3),			# Hanoi
 (-250, (19, 41), iNative, 'Danib&#225;an', 2, iHolkan, 2),		# Monte Alban
@@ -42,7 +42,7 @@ tMinorCities = (
 (-100, (114, 57), iBarbarian, 'Dunhuang', 2, iArcher, 1),		# Dunhuang
 (-100, (109, 56), iBarbarian, 'Kuqa', 2, iArcher, 1),			# Kuqa
 (-75, (105, 55), iBarbarian, 'Kashgar', 2, iArcher, 1),			# Kashgar
-(-50, (61, 60), iCeltia, 'Lutetia', 2, -1, -1),					# Paris
+#(-50, (61, 60), iCeltia, 'Lutetia', 2, -1, -1),					# Paris
 (100, (17, 43), iBarbarian, 'Tolan', 2, iJaguar, 2),		# Teotihuacan
 (100, (88, 36), iIndependent, "Sana'a", 2, -1, -1),				# Sana'a
 (107, (117, 41), iIndependent2, 'Pugam', 2, -1, -1),			# Pagan
@@ -142,10 +142,10 @@ class Barbs:
 			self.checkSpawn(iBarbarian, iPanther, 1, (67, 12), (84, 34), self.spawnNatives, iGameTurn, 4, 3)
 
 		#celts
-		if utils.isYearIn(-650, -110):
-			self.checkSpawn(iCeltia, iGallicWarrior, 1, (57, 56), (76, 61), self.spawnMinors, iGameTurn, 6, 0)
-			if iHandicap >= 0:
-				self.checkSpawn(iCeltia, iAxeman, 1, (57, 56), (76, 61), self.spawnMinors, iGameTurn, 8, 5, ["TXT_KEY_ADJECTIVE_GAUL"])
+		#if utils.isYearIn(-650, -110):
+			#self.checkSpawn(iCeltia, iGallicWarrior, 1, (57, 56), (76, 61), self.spawnMinors, iGameTurn, 6, 0)
+			#if iHandicap >= 0:
+				#self.checkSpawn(iCeltia, iAxeman, 1, (57, 56), (76, 61), self.spawnMinors, iGameTurn, 8, 5, ["TXT_KEY_ADJECTIVE_GAUL"])
 
 		#norse
 		if utils.isYearIn(-650, 550):
@@ -409,7 +409,8 @@ class Barbs:
 			
 			if sName == 'Kyiv': lReligions = [iOrthodoxy]
 			if sName == 'Kilwa': lReligions = [iIslam]
-			if iPlayer == iCeltia and utils.getScenario() != i3000BC: iPlayer = iIndependent
+			if iPlayer == iCeltia and utils.getHumanID() == iCeltia: continue
+			if iPlayer == iCeltia: iPlayer = iIndependent
 			if sName == 'Muqdisho': lReligions = [iIslam]
 			
 			if not self.isFreePlot(tPlot, bForceSpawn): continue
