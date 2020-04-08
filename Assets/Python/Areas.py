@@ -109,7 +109,7 @@ tCapitals = (
 (76, 51), # Athens				
 (110, 44), # Pataliputra				
 (84, 47), # Sur
-(71, 59), # Hallstatt				
+(67, 60), # Hallstatt				
 (3, 20), # Tonga				
 (94, 45), # Persepolis				
 (68, 53), # Rome				
@@ -225,7 +225,7 @@ tBirthArea = (
 ((74, 48),	(80, 55)),	# Greece		
 ((101, 42),	(114, 48)),	# India		
 ((83, 47),	(86, 49)),	# Carthage
-((71, 56),	(71, 59)),	# Celtia		
+((62, 58),	(67, 61)),	# Celtia		
 ((2, 19),	(6, 24)),	# Polynesia		
 ((91, 43),	(98, 52)),	# Persia		
 ((64, 50),	(72, 57)),	# Rome		

@@ -269,8 +269,8 @@ tNigeriaBR = (69, 33)
 tCameroonTL = (69, 26)
 tCameroonBR = (75, 31)
 
-tGermaniaTL = (58, 48)
-tGermaniaBR = (65, 52)
+tGermaniaTL = (66, 58)
+tGermaniaBR = (71, 65)
 
 ### GOAL CONSTANTS ###
 
