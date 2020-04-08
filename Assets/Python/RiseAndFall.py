@@ -831,16 +831,16 @@ class RiseAndFall:
 		if not pCeltia.isHuman():
 			#1SDAN: give AI Celtia three Settlers in La Tene in 450BC
 			if iGameTurn == getTurnForYear(-450) - (data.iSeed % 5):
-				utils.makeUnit(iSettler, iCeltia, (57, 49), 3)
-				utils.makeUnit(iArcher, iCeltia, (57, 49), 3)
-				utils.makeUnit(iCidainh, iCeltia, (57, 49), 3)
-				utils.makeUnit(iGallicWarrior, iCeltia, (57, 49), 3)
+				utils.makeUnit(iSettler, iCeltia, (63, 58), 3)
+				utils.makeUnit(iArcher, iCeltia, (63, 58), 3)
+				utils.makeUnit(iCidainh, iCeltia, (63, 58), 3)
+				utils.makeUnit(iGallicWarrior, iCeltia, (63, 58), 3)
 
 			#1SDAN: give AI Celtia a settler in England in 500BC
 			if iGameTurn == getTurnForYear(-500) - (data.iSeed % 10):
-				utils.makeUnit(iSettler, iCeltia, (53, 54), 1)
-				utils.makeUnit(iArcher, iCeltia, (53, 54), 2)
-				utils.makeUnit(iCidainh, iCeltia, (53, 54), 2)
+				utils.makeUnit(iSettler, iCeltia, (57, 69), 1)
+				utils.makeUnit(iArcher, iCeltia, (57, 69), 2)
+				utils.makeUnit(iCidainh, iCeltia, (57, 69), 2)
 
 		#Leoreth: give Phoenicia a settler in Qart-Hadasht in 820BC
 		if not pCarthage.isHuman() and iGameTurn == getTurnForYear(-820) - (data.iSeed % 10):
