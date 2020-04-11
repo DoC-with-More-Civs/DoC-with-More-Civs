@@ -695,14 +695,12 @@ def onCivRespawn(iPlayer, tOriginalOwners):
 	data.players[iPlayer].iResurrections += 1
 	
 	if iPlayer in lRespawnNameChanges:
-	
-		nameChange(iPlayer)
-		adjectiveChange(iPlayer)
-		
 		if iPlayer == iCarthage:
 			if gc.getGame().getGameTurnYear() >= 1956:
 				setShort(iPlayer, text("TXT_KEY_CIV_TUNISIA_SHORT_DESC"))
 				setAdjective(iPlayer, text("TXT_KEY_CIV_TUNISIA_ADJECTIVE"))
+		nameChange(iPlayer)
+		adjectiveChange(iPlayer)
 				
 	setDesc(iPlayer, defaultTitle(iPlayer))
 	checkName(iPlayer)

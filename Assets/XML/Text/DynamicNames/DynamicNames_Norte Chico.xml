@@ -169,4 +169,8 @@
 		<Italian>Buildings in %s1: %d2 / %d3</Italian>
 		<Spanish>Buildings in %s1: %d2 / %d3</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DOM_NORTE_CHICO</Tag>
+		<English>It is the year 3000 BC. Settling along the river beds of the Fortaleza, Pativilca, and Supe rivers, the Andean peoples form the first civilizations in the Americas...</English>
+	</TEXT>
 </Civ4GameText>

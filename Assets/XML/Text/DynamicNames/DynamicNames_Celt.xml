@@ -286,4 +286,31 @@
 		<Tag>TXT_KEY_DOM_CELTIA</Tag>
 		<English>It is the year 1200 BC. As the social structure of the Germanic Celtic culture grows in its complexity, an elite class of chieftains and warriors begin taking the first steps towards consolidating power. With an advanced knowledge of Metal Working and abundant fertile land, the Celtic culture is set to spread far and wide.</English>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_SCOTLAND_SHELTRON</Tag>
+		<English>Sheltron</English>
+		<French>Sheltron</French>
+		<German>Sheltron</German>
+		<Italian>Sheltron</Italian>
+		<Spanish>Sheltron</Spanish>
+		<Portuguese>Sheltron</Portuguese>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_SCOTLAND_SHELTRON_PEDIA</Tag>
+		<English>[TAB]A sheltron (also sceld-trome, schiltrom or shiltron) is a compact body of troops forming a battle array, shield wall or phalanx. The term is most often associated with Scottish pike formations during the Wars of Scottish Independence in the late 13th and early 14th centuries.[PARAGRAPH:2]The term dates from at least 1000 AD and derives from Old English roots expressing the idea of a "shield-troop". Some researchers have also posited this etymological relation may show the schiltron is directly descended from the Anglo-Saxon shield wall, and still others give evidence "schiltron" is a name derived from a Viking circular formation (generally no less than a thousand fighters) in extremely close formation, intended to present an enemy's cavalry charge with an "infinite" obstacle (that is, a perimeter horses refuse to breach). Matters are confused by the fact that the term in Middle English could clearly refer to a body of soldiers without reference to formation, including cavalry and archers. The first mention of the schiltron as a specific formation of spearmen appears to be at the Battle of Falkirk in 1297. There is, however, no reason to believe this is the first time such a formation was used and, indeed, may have had a long previous history in Scotland, as the Picts used to employ spears in block formation as the backbone of their armies.</English>
+		<French>.</French>
+		<German></German>
+		<Italian>.</Italian>
+		<Spanish>.</Spanish>
+		<Portuguese>.</Portuguese>
+	</TEXT>
+	<TEXT> <!-- Scotland -->
+		<Tag>TXT_KEY_DOM_SCOTLAND</Tag>
+		<English>It is the year 960 AD. While you are the sole ruler over some loyal subjects, most Scottish men still remember the shadows of the past. Your goal is to unite all the tribes and clans of Scotland and establish the "last free kingdom".[NEWLINE][NEWLINE]You can choose to pass the old walls of Hadrian or stay behind it, but it would be wise to gather some mighty allies on the Continent. Whatever path you choose, it is clear to you: your nation is destined to survive the storms of centuries to come, and be bright forever. Make the Highlanders proud and show the world: Scotland, be foe or ally, solid as a rock!</English>
+		<French>.</French>
+		<German>.</German>
+		<Italian>.</Italian>
+		<Spanish>.</Spanish>
+		<Portuguese>.</Portuguese>
+	</TEXT>
 </Civ4GameText>
