@@ -181,8 +181,6 @@ class GameData:
 		self.bAlreadySwitched = False
 		self.bUnlimitedSwitching = False
 		self.bCheatMode = False
-
-		self.bAngloCeltia = False
 		
 		# Religions
 		

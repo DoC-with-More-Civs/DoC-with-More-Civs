@@ -26971,6 +26971,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=58,y=51
+	BonusType=BONUS_WHEAT
 	isNOfRiver
 	RiverWEDirection=3
 	TerrainType=TERRAIN_PLAINS
@@ -26978,7 +26979,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=58,y=52
-	BonusType=BONUS_WHEAT
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot

@@ -539,8 +539,8 @@ dAdjectiveChanges = {
 dCapitals = {
 	iPolynesia : ["Kaua'i", "O'ahu", "Maui", "Manu'a", "Niue"],
 	iBabylonia : ["Ninua", "Kalhu"],
-	iTeotihuacan : ["Tollan"],
 	iCeltia : ["Hallstat", "La Tene", "&#193;th Cliath", "D&#249;n &#200;ideann", "Dublin", "Edinburgh"],
+	iTeotihuacan : ["Tollan"],
 	iByzantium : ["Dyrrachion", "Athena", "Konstantinoupolis"],
 	iVikings : ["Oslo", "Nidaros", "Roskilde"],
 	iKhmer : ["Pagan", "Dali", "Angkor"],
@@ -571,10 +571,10 @@ dStartingLeaders = [
 	iNubia : iPiye,
 	iChina : iQinShiHuang,
 	iGreece : iPericles,
-	iCeltia : iBrennus,
 	iPersia : iCyrus,
 	iCarthage : iHiram,
 	iPolynesia : iAhoeitu,
+	iCeltia : iBrennus,
 	iRome : iJuliusCaesar,
 	iMaya : iPacal,
 	iJapan : iKammu,
@@ -634,11 +634,13 @@ dStartingLeaders = [
 # 600 AD
 {
 	iChina : iTaizong,
+	iCeltia : iRobert,
 },
 # 1700 AD
 {
 	iChina : iHongwu,
 	iIndia : iShahuji,
+	iCeltia : iCollins,
 	iPersia : iAbbas,
 	iTamils : iKrishnaDevaRaya,
 	iKorea : iSejong,
@@ -693,13 +695,15 @@ def onCivRespawn(iPlayer, tOriginalOwners):
 	data.players[iPlayer].iResurrections += 1
 	
 	if iPlayer in lRespawnNameChanges:
+	
+		nameChange(iPlayer)
+		adjectiveChange(iPlayer)
+		
 		if iPlayer == iCarthage:
 			if gc.getGame().getGameTurnYear() >= 1956:
 				setShort(iPlayer, text("TXT_KEY_CIV_TUNISIA_SHORT_DESC"))
 				setAdjective(iPlayer, text("TXT_KEY_CIV_TUNISIA_ADJECTIVE"))
-		nameChange(iPlayer)
-		adjectiveChange(iPlayer)
-		
+				
 	setDesc(iPlayer, defaultTitle(iPlayer))
 	checkName(iPlayer)
 	checkLeader(iPlayer)
@@ -886,7 +890,7 @@ def capitalName(iPlayer):
 	capital = gc.getPlayer(iPlayer).getCapitalCity()
 	if capital: 
 		sCapitalName = capital.getName()
-		if iPlayer != iBurma:
+		if iPlayer not in [iBurma, iNubia]:
 			sCapitalName = cnm.getRenameName(iEngland, sCapitalName)
 		if sCapitalName: return sCapitalName
 		else: return capital.getName()
@@ -1122,8 +1126,8 @@ def specificName(iPlayer):
 		elif iReligion == iIslam:
 			return "TXT_KEY_CIV_FUNJ"
 			
-		elif iReligion < 0 and pPlayer.isStateReligion():
-			if bEmpire or not isCapital(iPlayer, ["Kerma"]):
+		elif (iReligion < 0 or iReligion == iJudaism) and pPlayer.isStateReligion():
+			if bEmpire:
 				return "TXT_KEY_CIV_NUBIA_KUSH"
 			return capitalName(iPlayer)
 	
@@ -1151,16 +1155,20 @@ def specificName(iPlayer):
 			
 		return "TXT_KEY_CIV_POLYNESIA_TONGA"
 		
+	elif iPlayer == iCeltia:
+		if bReborn:
+			if capital.getRegionID() == rBritain:
+				if capital.getX() <= 54:
+					return "TXT_KEY_CIV_CELTIA_IRELAND_SHORT_DESC"
+				elif capital.getY() >= 58:
+					return "TXT_KEY_CIV_CELTIA_SCOTLAND_SHORT_DESC"
+		
 	elif iPlayer == iTamils:
 		if iEra >= iRenaissance:
 			return "TXT_KEY_CIV_TAMILS_MYSORE"
 			
-		if isCapital(iPlayer, ["Madurai", "Thiruvananthapuram"]):
-			return capitalName(iPlayer)
-			
 		if iEra >= iMedieval:
 			return "TXT_KEY_CIV_TAMILS_VIJAYANAGARA"
-			
 			
 	elif iPlayer == iEthiopia:
 		if not gc.getGame().isReligionFounded(iIslam):
@@ -1552,6 +1560,17 @@ def specificAdjective(iPlayer):
 			if getColumn(iPlayer) >= 6: 
 				return "TXT_KEY_CIV_PERSIA_SASSANID"
 				
+	elif iPlayer == iCeltia:
+		if bReborn:
+			if capital.getRegionID() == rBritain:
+				if capital.getX() <= 54:
+					return "TXT_KEY_CIV_CELTIA_IRELAND_ADJECTIVE"
+				elif capital.getY() >= 58:
+					return "TXT_KEY_CIV_CELTIA_SCOTLAND_ADJECTIVE"
+					
+		elif isCapital(iPlayer, ["Hallstat", "La Tene"]):
+			return capitalName(iPlayer)
+				
 	elif iPlayer == iPolynesia:
 		if isCapital(iPlayer, ["Manu'a"]):
 			return "TXT_KEY_CIV_POLYNESIA_TUI_MANUA"
@@ -1566,7 +1585,7 @@ def specificAdjective(iPlayer):
 		if iReligion == iIslam:
 			if iEra in [iMedieval, iRenaissance]:
 				return "TXT_KEY_CIV_TAMILS_BAHMANI"
-	
+				
 		if iEra <= iClassical:
 			if isCapital(iPlayer, ["Madurai", "Thiruvananthapuram"]):
 				return "TXT_KEY_CIV_TAMILS_PANDYAN"
@@ -1924,7 +1943,7 @@ def specificTitle(iPlayer, lPreviousOwners=[]):
 		if iReligion == iIslam:
 			return "TXT_KEY_SULTANATE_NAME"
 			
-		if bEmpire or iReligion > 0 or not pPlayer.isStateReligion() or not isCapital(iPlayer, ["Kerma"]):
+		if bEmpire or iReligion >= 0 or not pPlayer.isStateReligion() or not isCapital(iPlayer, ["Kerma"]):
 			return "TXT_KEY_KINGDOM_OF"
 			
 	elif iPlayer == iChina:
@@ -1957,6 +1976,19 @@ def specificTitle(iPlayer, lPreviousOwners=[]):
 	elif iPlayer == iPersia:
 		if bEmpire:
 			return "TXT_KEY_EMPIRE_ADJECTIVE"
+			
+	elif iPlayer == iCeltia:
+		if bReborn:
+			return "TXT_KEY_KINGDOM_OF"
+			
+		elif teamCeltia.isVassal(iRome):
+			if capital.getRegionID() == rBritain:
+				return "TXT_KEY_CIV_CELTIA_ROME_BRITANNIA"
+			if capital.getRegionID() == rEurope:
+				if capital.getX() < 58:
+					return "TXT_KEY_CIV_CELTIA_ROME_GALLIA"
+				else:
+					return "TXT_KEY_CIV_CELTIA_ROME_GERMANIA"
 			
 	elif iPlayer == iPhoenicia:
 		if bEmpire:
@@ -2001,9 +2033,6 @@ def specificTitle(iPlayer, lPreviousOwners=[]):
 		if iReligion == iIslam:
 			return "TXT_KEY_SULTANATE_ADJECTIVE"
 			
-		if isCapital(iPlayer, ["Madurai", "Thiruvananthapuram"]):
-			return "TXT_KEY_CIV_TAMILS_PANDYA_OF"
-		
 		if iEra >= iMedieval:
 			return "TXT_KEY_KINGDOM_OF"
 		
@@ -2449,6 +2478,13 @@ def leader(iPlayer):
 		
 		if iEra >= iMedieval: return iTaizong
 		
+	elif iPlayer == iCeltia:
+		if iGameTurn >= getTurnForYear(100): return iBoudica
+
+		if iGameTurn >= getTurnForYear(600): return iRobert
+
+		if iGameTurn >= getTurnForYear(1900): return iCollins
+		
 	elif iPlayer == iBabylonia:
 		if iGameTurn >= getTurnForYear(-1600): return iHammurabi
 		
@@ -2532,7 +2568,7 @@ def leader(iPlayer):
 		if bEmpire: return iHayamWuruk
 		
 	elif iPlayer == iBurma:
-		if iNumCities > 2:
+		if iNumCities > 4:
 			return iBayinnuang
 		
 	elif iPlayer == iMoors:
@@ -2719,5 +2755,9 @@ def leaderName(iPlayer):
 			return "TXT_KEY_LEADER_NURSULTAN"
 		if data.players[iPlayer].iResurrections > 0:
 			return "TXT_KEY_ABLAI_KHAN"
+			
+	elif iPlayer == iCarthage:
+		if gc.getGame().getGameTurnYear() >= 1956:
+			return "TXT_KEY_LEADER_BEJI"
 				
 	return None

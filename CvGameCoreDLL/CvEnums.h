@@ -1278,6 +1278,8 @@ enum LeaderHeadTypes			// Exposed to Python
 	BULAN,
 	PIYE,
 	DUNAMA,
+	ROBERT,
+	COLLINS,
 	WIRACOCHA,
 	NUM_LEADERHEADS
 };
@@ -1362,6 +1364,7 @@ enum PlayerTypes				// Exposed to Python
 	GREECE,
 	INDIA,
 	PHOENICIA,
+	CELTIA,
 	POLYNESIA,
 	PERSIA,
 	ROME,
@@ -1422,7 +1425,6 @@ enum PlayerTypes				// Exposed to Python
 	INDEPENDENT,
 	INDEPENDENT2,
 	NATIVE,
-	CELTIA,
 	BARBARIAN
 };
 

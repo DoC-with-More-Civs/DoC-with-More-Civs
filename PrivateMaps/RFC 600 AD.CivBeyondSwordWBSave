@@ -315,7 +315,7 @@ BeginPlayer
 	CivShortDesc=TXT_KEY_CIV_CELTIA_SCOTLAND_SHORT_DESC
 	CivAdjective=TXT_KEY_CIV_CELTIA_SCOTLAND_ADJECTIVE
 	CivType=CIVILIZATION_CELT
-	PlayableCiv=0
+	PlayableCiv=1
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
@@ -25461,6 +25461,19 @@ EndPlot
 BeginPlot
 	x=54,y=65
 	TerrainType=TERRAIN_GRASS
+                BeginUnit
+		UnitType=UNIT_ARCHER, UnitOwner=9, (Celtia)
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER, UnitOwner=9, (Celtia)
+	EndUnit
+	BeginCity
+		CityOwner=9, (Celtia)
+		CityName=&#193;th Cliath
+		CityPopulation=3
+		BuildingType=BUILDING_MONUMENT
+		Player9Culture=20, (Celtia)
+	EndCity
 	PlotType=2
 EndPlot
 BeginPlot
@@ -26785,6 +26798,21 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=1
 	TerrainType=TERRAIN_GRASS
+	BeginUnit
+		UnitType=UNIT_ARCHER, UnitOwner=9, (Celtia)
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER, UnitOwner=9, (Celtia)
+	EndUnit
+	BeginCity
+		CityOwner=9, (Celtia)
+		CityName=D&#249;n &#200;ideann
+		CityPopulation=2
+		BuildingType=BUILDING_PALACE
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_MONUMENT
+		Player9Culture=20, (Celtia)
+	EndCity
 	PlotType=2
 EndPlot
 BeginPlot

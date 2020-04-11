@@ -1103,6 +1103,10 @@
 					<UnitClassType>UNITCLASS_CHARIOT</UnitClassType>
 					<UnitType>UNIT_CELTIC_CIDAINH</UnitType>
 				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_HEAVY_SPEARMAN</UnitClassType>
+					<UnitType>UNIT_SCOTLAND_SHELTRON</UnitType>
+				</Unit>
 			</Units>
 			<FreeUnitClasses>
 				<FreeUnitClass>

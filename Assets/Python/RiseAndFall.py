@@ -293,6 +293,11 @@ class RiseAndFall:
 			self.adjust600ADWonders()
 			self.adjust600ADGreatPeople()
 			
+
+			for iPlayer in [iCeltia]:
+				utils.setReborn(iPlayer, True)
+			
+
 		if utils.getScenario() == i1700AD:
 			self.create1700ADstartingUnits()
 			self.init1700ADDiplomacy()
@@ -839,8 +844,8 @@ class RiseAndFall:
 			#1SDAN: give AI Celtia a settler in England in 500BC
 			if iGameTurn == getTurnForYear(-500) - (data.iSeed % 10):
 				utils.makeUnit(iSettler, iCeltia, (57, 69), 1)
-				utils.makeUnit(iArcher, iCeltia, (57, 69), 2)
-				utils.makeUnit(iCidainh, iCeltia, (57, 69), 2)
+				utils.makeUnit(iArcher, iCeltia, (57, 69), 1)
+				utils.makeUnit(iCidainh, iCeltia, (57, 69), 1)
 
 		#Leoreth: give Phoenicia a settler in Qart-Hadasht in 820BC
 		if not pCarthage.isHuman() and iGameTurn == getTurnForYear(-820) - (data.iSeed % 10):
@@ -865,8 +870,7 @@ class RiseAndFall:
 		if iGameTurn == getTurnForYear(tBirth[iIndia])-utils.getTurns(1):
 			if pHarappa.isAlive() and not pHarappa.isHuman():
 				sta.completeCollapse(iHarappa)
-			if pNorteChico.isAlive() and not pNorteChico.isHuman():
-				sta.completeCollapse(iNorteChico)
+
 			
 		if iGameTurn == getTurnForYear(600):
 			if pMamluks.isHuman() and pEgypt.isAlive():

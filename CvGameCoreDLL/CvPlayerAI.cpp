@@ -1247,14 +1247,7 @@ void CvPlayerAI::AI_conquerCity(CvCity* pCity, PlayerTypes ePreviousOwner, Playe
 
 	if (canRaze(pCity))
 	{
-		// 1SDAN: AI Always Raze Kerma after conquering it from the Nubians prior to 350 AD
-		if (pCity->getOriginalOwner() == NUBIA && pCity->getX_INLINE() == 66 && pCity->getY_INLINE() == 31 && !GET_PLAYER(NUBIA).isHuman() && GC.getGameINLINE().getGameTurnYear() < 350)
-		{
-			bRaze = true;
-			log(CvWString::format(L"AI chose raze: %s", pCity->getNameKey()));
-			pCity->raze(iCaptureGold);
-			return;
-		}
+		
 
 	    iRazeValue = 0;
 		if (GC.getGameINLINE().getElapsedGameTurns() > 20)
@@ -2949,15 +2942,7 @@ int CvPlayerAI::AI_targetCityValue(CvCity* pCity, bool bRandomize, bool bIgnoreA
 
 	FAssertMsg(pCity != NULL, "City is not assigned a valid value");
 
-	// 1SDAN: Egypt favours Kerma over Meroe
-	if (getID() == EGYPT && pCity->getX() == 66 && pCity->getY() == 31 && pCity->getOwner() == NUBIA)
-	{
-		if (GC.getMapINLINE().plot(68, 29)->isCity() && GC.getMapINLINE().plot(68, 29)->getPlotCity()->getOwner() == NUBIA)
-		{
-			return AI_targetCityValue(GC.getMapINLINE().plot(68, 29)->getPlotCity(), bRandomize, bIgnoreAttackers) + 2;
-		}
-	}
-
+	
 	iValue = 1;
 
 	iValue += ((pCity->getPopulation() * (50 + pCity->calculateCulturePercent(getID()))) / 100);
@@ -9154,7 +9139,7 @@ int CvPlayerAI::AI_unitValue(UnitTypes eUnit, UnitAITypes eUnitAI, CvArea* pArea
 			if (pArea->isWater())
 			{
 				//if (pArea->getUnitsPerPlayer(BARBARIAN_PLAYER) > 0) //Rhye
-				if ((pArea->getUnitsPerPlayer(BARBARIAN_PLAYER) > 0) || (pArea->getUnitsPerPlayer((PlayerTypes)CELTIA) > 0) || (pArea->getUnitsPerPlayer((PlayerTypes)NATIVE) > 0)) //Rhye
+				if ((pArea->getUnitsPerPlayer(BARBARIAN_PLAYER) > 0) || (pArea->getUnitsPerPlayer((PlayerTypes)NATIVE) > 0)) //Rhye
 				{
 					iExploreValue += (2 * iCombatValue);
 				}
@@ -10984,6 +10969,10 @@ ReligionTypes CvPlayerAI::AI_bestReligion() const
 				iValue /= 2;
 			}
 			else if (iI != JUDAISM && iI != NO_RELIGION && getID() == KHAZARS)
+			{
+				iValue /= 2;
+			}
+			else if (iI == CELTIA)
 			{
 				iValue /= 2;
 			}

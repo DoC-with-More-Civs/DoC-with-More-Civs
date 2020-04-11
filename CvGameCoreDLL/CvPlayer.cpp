@@ -1490,6 +1490,7 @@ void CvPlayer::acquireCity(CvCity* pOldCity, bool bConquest, bool bTrade, bool b
 	int iI, iJ;
 	CLinkList<IDInfo> oldUnits;
 	std::vector<int> aeFreeSpecialists;
+	bool bCapital = pOldCity->isCapital();
 
 	int iCaptureMaxTurns = GC.getDefineINT("CAPTURE_GOLD_MAX_TURNS");
 
@@ -2013,7 +2014,7 @@ void CvPlayer::acquireCity(CvCity* pOldCity, bool bConquest, bool bTrade, bool b
 		}
 	}
 
-	CvEventReporter::getInstance().cityAcquired(eOldOwner, getID(), pNewCity, bConquest, bTrade);
+	CvEventReporter::getInstance().cityAcquired(eOldOwner, getID(), pNewCity, bConquest, bTrade, bCapital);
 
 	SAFE_DELETE_ARRAY(pabHasReligion);
 	SAFE_DELETE_ARRAY(pabHolyCity);
@@ -11823,7 +11824,7 @@ void CvPlayer::verifyAlive()
 
 		if (!bKill)
 		{
-			if (!isBarbarian() && getID() != NATIVE && getID() != CELTIA) // Leoreth: natives and celts should behave like barbarians
+			if (!isBarbarian() && getID() != NATIVE) // Leoreth: natives and celts should behave like barbarians
 			{
 				if (getNumCities() == 0 && getAdvancedStartPoints() < 0)
 				{

@@ -17,16 +17,16 @@ PyPlayer = PyHelpers.PyPlayer	# LOQ
 # Year, coordinates, owner, name, population, unit type, unit number, religions, forced spawn
 tMinorCities = (
 (-3000, (84, 45), iIndependent, 'Yerushalayim', 2, iArcher, 3),	# Jerusalem
-(-3000, (92, 46), iIndependent, 'Shushan', 1, iArcher, 1), 		# Susa
-(-3000, (88, 50), iIndependent2, 'Ashur', 2, iArcher, 2), 		# Assur
 (-3000, (124, 52), iIndependent2, 'Chengzhou', 2, iArcher, 1), 		# Luoyang
+(-2000, (92, 46), iIndependent, 'Shushan', 1, iArcher, 1), 		# Susa
+(-2000, (88, 50), iIndependent2, 'Ashur', 2, iArcher, 2), 		# Assur
 (-2000, (100, 54), iIndependent, 'Afrasiyab', 1, iArcher, 1), 	# Samarkand
 (-2000, (108, 45), iIndependent, 'Varanasi', 1, iMilitia, 1), 	# Varanasi
 (-1600, (105, 46), iIndependent, 'Indraprastha', 1, iMilitia, 1),	# Delhi
-(-1000, (124, 56), iIndependent, 'Ji', 2, iSpearman, 1),	# Beijing
+(-1000, (124, 56), iIndependent2, 'Ji', 2, iSpearman, 1),	# Beijing
 (-1000, (82, 53), iIndependent, 'Ankuwash', 2, iArcher, 2),		# Ankara
 (-850, (93, 51), iIndependent, 'Rag&#226;', 2, iArcher, 2),		# Ragha
-#(-760, (66, 57), iCeltia, 'Melpum', 2, iArcher, 2),				# Milan
+(-760, (66, 57), iIndependent, 'Melpum', 2, iArcher, 2),				# Milan
 (-500, (96, 56), iIndependent, 'Urganj', 1, iArcher, 2), 	# Urgench
 (-500, (98, 54), iIndependent2, 'Numijkat', 2, iArcher, 2), 	# Bukhara
 #(-350, (63, 58), iCeltia, 'Lugodunon', 2, -1, -1),				# Lyon
@@ -36,7 +36,7 @@ tMinorCities = (
 (-300, (106, 33), iIndependent, 'Tanjapuri', 1, iWarElephant, 1),	# Thanjavur
 #(-258, (121, 42), iIndependent, 'Co Loa', 2, iArcher, 3),			# Hanoi
 (-250, (19, 41), iNative, 'Danib&#225;an', 2, iHolkan, 2),		# Monte Alban
-(-214, (125, 44), iIndependent, 'Panyu', 2, iArcher, 2),	# Guangzhou
+(-214, (125, 43), iIndependent, 'Panyu', 2, iArcher, 2),	# Guangzhou
 (-190, (89, 54), iIndependent2, 'Artashat', 1, -1, -1),			# Artaxata
 (-130, (87, 51), iIndependent2, 'Urfa', 2, iArcher, 2),		# Edessa
 (-100, (114, 57), iBarbarian, 'Dunhuang', 2, iArcher, 1),		# Dunhuang
@@ -47,6 +47,8 @@ tMinorCities = (
 (100, (88, 36), iIndependent, "Sana'a", 2, -1, -1),				# Sana'a
 (107, (117, 41), iIndependent2, 'Pugam', 2, -1, -1),			# Pagan
 (200, (87, 33), iIndependent2, 'Barbara', 2, iArcher, 2),	# Berbera
+(200, (54, 65), iIndependent, '&#193;th Cliath', 1, iArcher, 1),			# Dublin
+(200, (57, 69), iIndependent2, 'D&#249;n &#200;ideann', 1, iArcher, 1),			# Edinburgh
 (500, (123, 39), iIndependent, 'Indrapura', 2, iArcher, 1),		# Indrapura
 (500, (73, 54), iIndependent, "Ragusa", 3, iCrossbowman, 3), # Ragusa
 (500, (86, 39), iIndependent, 'Bakkah', 3, iArcher, 1),		# Mecca
@@ -66,8 +68,7 @@ tMinorCities = (
 (900, (27, 28), iNative, 'Chan Chan', 2, iArcher, 2),			# Chan Chan
 (900, (87, 30), iIndependent, 'Muqdisho', 3, iCrossbowman, 2),	# Mogadishu
 (944, (63, 48), iIndependent, "Dzayer", 3, iCrossbowman, 2),	# Algiers
-(990, (54, 65), iCeltia, '&#193;th Cliath', 1, -1, -1),			# Dublin
-(990, (130, 38), iIndependent, 'Maynila', 2, iArcher, 2),		# Manila
+#(990, (130, 38), iIndependent, 'Maynila', 2, iArcher, 2),		# Manila
 (1000, (68, 75), iIndependent2, 'Nidaros', 1, iHuscarl, 1),		# Trondheim
 (1000, (87, 30), iNative, 'Muqdisho', 1, iImpi, 1),				# Mogadishu
 (1115, (131, 61), iIndependent, "Huining", 3, iHorseArcher, 3),		# Huining
@@ -85,7 +86,7 @@ tMinorCities = (
 (1300, (100, 67), iBarbarian, "Qasliq", 4, iCrossbowman, 3),	# Sibir (Tobolsk)
 (1400, (123, 35), iIndependent, 'Sai Gon', 5, iCrossbowman, 3),	# Saigon
 (1483, (70, 24), iNative, "M'banza-Kongo", 1, iPombos, 1),		# Mbanza Kongo
-# (1515, (130, 33), iIndependent2, 'Maguindanao', 2, iCrossbowman, 2),		# Maguindanao
+#(1515, (130, 33), iIndependent2, 'Maguindanao', 2, iCrossbowman, 2),		# Maguindanao
 )
 
 # do some research on dates here
@@ -142,10 +143,11 @@ class Barbs:
 			self.checkSpawn(iBarbarian, iPanther, 1, (67, 12), (84, 34), self.spawnNatives, iGameTurn, 4, 3)
 
 		#celts
-		#if utils.isYearIn(-650, -110):
-			#self.checkSpawn(iCeltia, iGallicWarrior, 1, (57, 56), (76, 61), self.spawnMinors, iGameTurn, 6, 0)
-			#if iHandicap >= 0:
-				#self.checkSpawn(iCeltia, iAxeman, 1, (57, 56), (76, 61), self.spawnMinors, iGameTurn, 8, 5, ["TXT_KEY_ADJECTIVE_GAUL"])
+		if utils.isYearIn(-650, -110):
+			self.checkSpawn(iBarbarian, iSwordsman, 1, (57, 56), (76, 61), self.spawnMinors, iGameTurn, 6, 0)
+			if iHandicap >= 0:
+				self.checkSpawn(iBarbarian, iAxeman, 1, (57, 56), (76, 61), self.spawnMinors, iGameTurn, 8, 5, ["TXT_KEY_ADJECTIVE_GAUL"])
+
 
 		#norse
 		if utils.isYearIn(-650, 550):
@@ -245,11 +247,11 @@ class Barbs:
 			self.checkSpawn(iBarbarian, iAxeman, 2 + iHandicap, (74, 58), (81, 66), self.spawnInvaders, iGameTurn, 12, 2, ["TXT_KEY_ADJECTIVE_GERMANIC"])
 		# Leoreth: begins 100 AD instead of 50 AD
 		if utils.isYearIn(100, 470):
-			self.checkSpawn(iBarbarian, iSwordsman, 3, (66, 55), (82, 66), self.spawnInvaders, iGameTurn, 8, 5, ["TXT_KEY_ADJECTIVE_GERMANIC"])
+			self.checkSpawn(iBarbarian, iSwordsman, 4, (66, 55), (82, 66), self.spawnInvaders, iGameTurn, 8, 5, ["TXT_KEY_ADJECTIVE_GERMANIC"])
 		if utils.isYearIn(300, 550):
 			self.checkSpawn(iBarbarian, iAxeman, 4 + iHandicap, (55, 49), (63, 61), self.spawnInvaders, iGameTurn, 5, 4, ["TXT_KEY_ADJECTIVE_VISIGOTHIC"])
 			self.checkSpawn(iBarbarian, iSwordsman, 4 + iHandicap, (55, 49), (63, 61), self.spawnInvaders, iGameTurn, 5, 2, ["TXT_KEY_ADJECTIVE_VISIGOTHIC"])
-			self.checkSpawn(iBarbarian, iHorseArcher, 3, (62, 58), (76, 64), self.spawnInvaders, iGameTurn, 5, 0, ["TXT_KEY_ADJECTIVE_HUNNIC"])
+			self.checkSpawn(iBarbarian, iHorseArcher, 4, (62, 58), (76, 64), self.spawnInvaders, iGameTurn, 5, 0, ["TXT_KEY_ADJECTIVE_HUNNIC"])
 		if utils.isYearIn(300, 700):
 			self.checkSpawn(iBarbarian, iHorseArcher, 3 + iHandicap, (65, 60), (106, 63), self.spawnInvaders, iGameTurn, 3, 2, ["TXT_KEY_ADJECTIVE_HUNNIC"])
 
@@ -378,6 +380,13 @@ class Barbs:
 
 		if iGameTurn < getTurnForYear(tMinorCities[len(tMinorCities)-1][0])+10:
 			self.foundMinorCities(iGameTurn)
+
+
+		if iGameTurn == getTurnForYear(410):
+			if utils.getHumanID() != iCeltia:
+				if gc.getMap().plot(54, 65).isCity() and gc.getMap().plot(57, 69).isCity():
+					sta.doResurrection(iCeltia, [gc.getMap().plot(54, 65).getPlotCity(), gc.getMap().plot(57, 69).getPlotCity()])
+
 
 		if iGameTurn == getTurnForYear(-1200):	
 			pJerusalem = gc.getGame().getHolyCity(iJudaism)

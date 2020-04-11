@@ -1245,7 +1245,7 @@ void CvCityAI::AI_chooseProduction()
 		{
 			int iStartAttackStackRand = 0;
 		//if (pArea->getCitiesPerPlayer(BARBARIAN_PLAYER)) //Rhye
-		if ((pArea->getCitiesPerPlayer(BARBARIAN_PLAYER)) || (pArea->getCitiesPerPlayer((PlayerTypes)CELTIA)) || (pArea->getCitiesPerPlayer((PlayerTypes)NATIVE))) //Rhye
+		if ((pArea->getCitiesPerPlayer(BARBARIAN_PLAYER)) || (pArea->getCitiesPerPlayer((PlayerTypes)NATIVE))) //Rhye
 			{
 				iStartAttackStackRand += 15;
 			}
@@ -2427,6 +2427,12 @@ UnitTypes CvCityAI::AI_bestUnit(bool bAsync, AdvisorTypes eIgnoreAdvisor, UnitAI
 		aiUnitAIVal[UNITAI_SETTLER_SEA] *= 3;
 		if (!GET_TEAM((TeamTypes)getOwnerINLINE()).isHasTech((TechTypes)OPTICS))
 				aiUnitAIVal[UNITAI_SETTLE] *= 2;
+		break;
+	case CELTIA:
+		aiUnitAIVal[UNITAI_ATTACK] *= 2;
+		aiUnitAIVal[UNITAI_SETTLE] *= 3;
+		aiUnitAIVal[UNITAI_SETTLER_SEA] /= 2;
+		aiUnitAIVal[UNITAI_EXPLORE_SEA] /= 3;
 		break;
 	case POLYNESIA:
 		aiUnitAIVal[UNITAI_SETTLER_SEA] *= 3;
