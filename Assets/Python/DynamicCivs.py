@@ -597,6 +597,7 @@ dStartingLeaders = [
 	iSpain : iIsabella,
 	iFrance : iCharlemagne,
 	iOman : iSaif,
+	iKhitan : iAbaoji,
 	iYemen : iArwa,
 	iEngland : iAlfred,
 	iHolyRome : iBarbarossa,
@@ -1604,6 +1605,10 @@ def specificAdjective(iPlayer):
 		if iGameTurn >= getTurnForYear(800):
 			return "TXT_KEY_CIV_TEOTIHUACAN_TOLTEC"
 			
+	elif iPlayer == iKhitan:
+		if iGameTurn >= getTurnForYear(1050):
+			return "TXT_KEY_CIV_KHITAN_JURCHEN"
+			
 	elif iPlayer == iByzantium:
 		if pRome.getNumCities() > 0:
 			return "TXT_KEY_CIV_BYZANTIUM_EASTERN"
@@ -2212,6 +2217,13 @@ def specificTitle(iPlayer, lPreviousOwners=[]):
 		
 		if bEmpire:
 			return "TXT_KEY_EMPIRE_ADJECTIVE"
+			
+	elif iPlayer == iKhitan:
+		if bEmpire:
+			return "TXT_KEY_EMPIRE_OF_KHITAN"
+
+		if iReligion == iIslam:
+			return "TXT_KEY_SULTANATE_OF"
 			
 	elif iPlayer == iEngland:
 		if not utils.isPlotInCore(iPlayer, tCapitalCoords):

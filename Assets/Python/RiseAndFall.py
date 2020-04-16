@@ -2468,6 +2468,9 @@ class RiseAndFall:
 		elif iCiv == iOman:
 			utils.makeUnit(iArcher, iCiv, tPlot, 3)
 			utils.makeUnit(iCamelArcher, iCiv, tPlot, 3)
+		elif iCiv == iKhitan:
+			utils.makeUnit(iArcher, iCiv, tPlot, 3)
+			utils.makeUnit(iIronpagoda, iCiv, tPlot, 3)
 		elif iCiv == iYemen:
 			utils.makeUnit(iArcher, iCiv, tPlot, 2)
 			utils.makeUnit(iSkirmisher, iCiv, tPlot, 2)
@@ -2828,6 +2831,12 @@ class RiseAndFall:
 			if utils.getHumanID() == iOman:
 				utils.makeUnit(iIslamicMissionary, iCiv, tPlot, 1)
 				utils.makeUnit(iArcher, iCiv, tPlot, 2)
+		elif iCiv == iKhitan:
+			utils.createSettlers(iCiv, 3)
+			utils.makeUnit(iArcher, iCiv, tPlot, 4)
+			utils.makeUnit(iIronpagoda, iCiv, tPlot, 2)
+			if utils.getHumanID() != iKhitan:
+			                utils.makeUnit(iIronpagoda, iCiv, tPlot, 3)
 		elif iCiv == iYemen:
 			utils.createSettlers(iCiv, 2)
 			utils.makeUnitAI(iArcher, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
@@ -3268,6 +3277,8 @@ class RiseAndFall:
 		elif iCiv == iFrance:
 			utils.makeUnit(iWorker, iCiv, tPlot, 3)
 		elif iCiv == iOman:
+			utils.makeUnit(iWorker, iCiv, tPlot, 2)
+		elif iCiv == iKhitan:
 			utils.makeUnit(iWorker, iCiv, tPlot, 2)
 		elif iCiv == iYemen:
 			utils.makeUnit(iArchitect, iCiv, tPlot, 1)

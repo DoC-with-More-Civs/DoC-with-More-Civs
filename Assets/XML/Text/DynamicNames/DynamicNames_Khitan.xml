@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Inca -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_KHITAN_DESC</Tag>
+		<English>The Khitan</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_KHITAN_PEOPLES</Tag>
+		<English>Khitan People</English>
+	</TEXT>
+                <TEXT>
+		<Tag>TXT_KEY_EMPIRE_OF_KHITAN</Tag>
+		<English>Empire of Liao</English>
+	</TEXT>
+                <TEXT>
+		<Tag>TXT_KEY_CIV_KHITAN_JURCHEN</Tag>
+		<English>Empire of Jin</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_KHITAN_DEFAULT</Tag>
+		<English>Khitan Federation</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_KHITAN_ADJECTIVE</Tag>
+		<English>Khitan</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_KHITAN_SHORT_DESC</Tag>
+		<English>Khitan</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_NORTE_CHICO_SHICRA</Tag>
+		<English>Shicra</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_ABAOJI</Tag>
+		<English>Yelu abaoji</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_KHI_TITLE</Tag>
+		<English>The Power of Two Administrations:</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_KHI</Tag>
+		<English>Reduced city distance maintenance and city maintenance.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_IRON_PAGODA</Tag>
+		<English>Ironpagoda</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_NORTE_CHICO_AYLLU_HELP</Tag>
+		<English>[ICON_BULLET]Creates 10 [ICON_CULTURE] in the capital when it constructs an improvement</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_KHI1_TITLE</Tag>
+		<English>Establish trade with 3 Silk Road countries</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_KHI1</Tag>
+		<English>Establish trade with 3 Silk Road countries</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_KHI2_TITLE</Tag>
+		<English>Have 3 Wats, 1 Mosque, and 1 Fire Temple in 1150 AD</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_KHI2</Tag>
+		<English>Have 3 Wats, 1 Mosque, and 1 Fire Temple in 1150 AD</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_KHI3_TITLE</Tag>
+		<English>Control or Vassalize Korea, Song, and Jurchen</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_KHI3</Tag>
+		<English>Control or Vassalize Korea, Song, and Jurchen</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_CAPITAL_POPULATION</Tag>
+		<English>Population of %s1: %d2 / %d3</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_CAPITAL_BUILDINGS</Tag>
+		<English>Buildings in %s1: %d2 / %d3</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DOM_KHITAN</Tag>
+		<English>It's the year 901 AD. Abaoji has risen as head of the Yila tribe, the most powerful of all the Khitans to extablish the Liao Dynasty! The land of the steppes and northern forests is vast, but the aging dynasty of China has opened up new opprotunities as well. You must choose where to expand knowing that far flung vassals may one day rise against you.</English>
+	</TEXT>
+</Civ4GameText>

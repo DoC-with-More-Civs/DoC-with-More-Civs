@@ -1281,6 +1281,7 @@ enum LeaderHeadTypes			// Exposed to Python
 	ROBERT,
 	COLLINS,
 	WIRACOCHA,
+	ABAOJI,
 	NUM_LEADERHEADS
 };
 
@@ -1388,6 +1389,7 @@ enum PlayerTypes				// Exposed to Python
 	SPAIN,
 	FRANCE,
 	OMAN,
+	KHITAN,
 	KHMER,
 	YEMEN,
 	ENGLAND,

@@ -1088,8 +1088,8 @@
 		</LeaderheadArtInfo>
 		<LeaderheadArtInfo>
 			<Type>ART_DEF_LEADER_KANGXI</Type>
-			<Button>Art/LeaderHeads/Kangxi/Kangxi.dds</Button>
-			<NIF>art/LeaderHeads/Kangxi/alexander.nif</NIF>
+			<Button>Art/LeaderHeads/Kangxi/Kangxi1.dds</Button>
+			<NIF>art/LeaderHeads/Kangxi/kangxi.dds</NIF>
 			<KFM>art/LeaderHeads/Kangxi/alexander.kfm</KFM>
 			<NoShaderNIF>art/LeaderHeads/Kangxi/alexander_noshader.nif</NoShaderNIF>
 			<BackgroundKFM>art/LeaderHeads/Kangxi/alexander_bg.kfm</BackgroundKFM>
@@ -1333,6 +1333,14 @@
 			<KFM>Art/Leaderheads/Robert I/Napoleon.kfm</KFM>
 			<NoShaderNIF>Art/Leaderheads/Robert I/Napoleon_noshader.nif</NoShaderNIF>
 			<BackgroundKFM>Art/Leaderheads/Robert I/Napoleon_BG.kfm</BackgroundKFM>
+		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_ABAOJI</Type>
+			<Button>,-,Art/Interface/Buttons/RFCA_Leaders_Atlas.dds,1,1</Button>
+			<NIF>art/LeaderHeads/Abaoji/Abaoji_v2.nif</NIF>
+			<KFM>art/LeaderHeads/Abaoji/tokugawa.kfm</KFM>
+			<NoShaderNIF>art/LeaderHeads/Abaoji/Abaoji_v2.nif</NoShaderNIF>
+			<BackgroundKFM>art/LeaderHeads/Abaoji/montezuma_bg.kfm</BackgroundKFM>
 		</LeaderheadArtInfo>
 	</LeaderheadArtInfos>
 </Civ4ArtDefines>

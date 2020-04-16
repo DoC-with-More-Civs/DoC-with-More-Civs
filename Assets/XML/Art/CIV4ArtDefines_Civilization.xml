@@ -468,5 +468,11 @@
 			<Path>Art/Interface/TeamColor/FlagDECAL_Sun.dds</Path>
 			<bWhiteFlag>0</bWhiteFlag>
 		</CivilizationArtInfo>
+		<CivilizationArtInfo>
+			<Type>ART_DEF_CIVILIZATION_JURCHEN</Type>
+			<Button>,-,Art/Interface/Buttons/RFCA_Civilizations_Atlas.dds,2,3</Button>
+			<Path>Art/Interface/TeamColor/FlagDECAL_Jurchen.dds</Path>
+			<bWhiteFlag>0</bWhiteFlag>
+		</CivilizationArtInfo>
 	</CivilizationArtInfos>
 </Civ4ArtDefines>

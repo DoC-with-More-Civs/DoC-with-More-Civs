@@ -177,6 +177,7 @@ iCivMoors :	Techs([iMachinery, iAlchemy, iTheology], column=6, exceptions=[iPoli
 iCivSpain : 	Techs([iFeudalism, iAlchemy, iGuilds], column=6),
 iCivFrance :	Techs([iFeudalism, iTheology], column=6),
 iCivOman :		Techs([iDoctrine, iTheology, iFeudalism], column=6, exceptions=[iArchitecture, iArtisanry]),
+iCivKhitan :		Techs([iDoctrine, iTheology, iFeudalism], column=6, exceptions=[iArchitecture, iArtisanry]),
 iCivKhmer :	Techs([iNobility, iArchitecture, iArtisanry, iScholarship, iEthics], column=5),
 iCivYemen :		Techs([iGuilds, iTheology, iAlchemy], column=6),
 iCivEngland :	Techs([iFeudalism, iTheology], column=6),
@@ -537,6 +538,8 @@ dTechPreferences = {
 		iOptics : 20,
 		iCompass: 20,
 		iExploration : 20,
+	},
+	iCivKhitan : {
 	},
 	iCivKhmer : {
 		iPhilosophy: 30,
@@ -1031,6 +1034,8 @@ dBuildingPreferences = {
 		iITER: 20,
 	},
 	iCivOman: {
+	},
+	iCivKhitan: {
 	},
 	iCivKhmer : {
 		iWatPreahPisnulok: 30,
