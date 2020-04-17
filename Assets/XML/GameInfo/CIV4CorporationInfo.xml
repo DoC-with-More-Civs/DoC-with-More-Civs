@@ -116,7 +116,6 @@
 			<iHealth>0</iHealth>
 			<PrereqBonuses>
 				<BonusType>BONUS_BANANA</BonusType>
-				<BonusType>BONUS_COCOA</BonusType>
 				<BonusType>BONUS_COFFEE</BonusType>
 				<BonusType>BONUS_SPICES</BonusType>
 				<BonusType>BONUS_SUGAR</BonusType>
@@ -151,10 +150,8 @@
 			<iHealth>0</iHealth>
 			<PrereqBonuses>
 				<BonusType>BONUS_CORN</BonusType>
-				<BonusType>BONUS_POTATO</BonusType>
 				<BonusType>BONUS_RICE</BonusType>
 				<BonusType>BONUS_WHEAT</BonusType>
-				<BonusType>BONUS_MILLET</BonusType>
 			</PrereqBonuses>
 			<HeadquarterCommerces>
 				<iHeadquarterCommerce>0</iHeadquarterCommerce>
@@ -264,8 +261,6 @@
 				<BonusType>BONUS_COAL</BonusType>
 				<BonusType>BONUS_COPPER</BonusType>
 				<BonusType>BONUS_IRON</BonusType>
-				<BonusType>BONUS_RARE_EARTHS</BonusType>
-				<BonusType>BONUS_OBSIDIAN</BonusType>
 			</PrereqBonuses>
 			<HeadquarterCommerces>
 				<iHeadquarterCommerce>0</iHeadquarterCommerce>
@@ -336,8 +331,6 @@
 				<BonusType>BONUS_GEMS</BonusType>
 				<BonusType>BONUS_PEARL</BonusType>
 				<BonusType>BONUS_SILVER</BonusType>
-				<BonusType>BONUS_JADE</BonusType>
-				<BonusType>BONUS_AMBER</BonusType>
 			</PrereqBonuses>
 			<HeadquarterCommerces>
 				<iHeadquarterCommerce>0</iHeadquarterCommerce>
@@ -373,8 +366,6 @@
 				<BonusType>BONUS_ALUMINUM</BonusType>
 				<BonusType>BONUS_COPPER</BonusType>
 				<BonusType>BONUS_OIL</BonusType>
-				<BonusType>BONUS_RARE_EARTHS</BonusType>
-				<BonusType>BONUS_RUBBER</BonusType>
 			</PrereqBonuses>
 			<HeadquarterCommerces>
 				<iHeadquarterCommerce>0</iHeadquarterCommerce>

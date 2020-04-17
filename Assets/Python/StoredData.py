@@ -161,7 +161,7 @@ class GameData:
 		self.lMinorCityFounded = [False] * iNumMinorCities
 		
 		self.lDeleteMode = [-1] * 3
-		self.lFirstContactConquerors = [False] * 4
+		self.lFirstContactConquerors = [False] * 7
 		self.lFirstContactMongols = [True] * 5
 		self.lTradingCompanyConquerorsTargets = [[] for _ in range(5)]
 		
@@ -272,6 +272,7 @@ class GameData:
 		self.iChadStrategicBonuses = 0
 		self.iCeltiaRazedCapitals = 0
 		self.lCeltiaConqueredCapitals = []
+		self.iTiwanakuGoldenAgeTurns = 0
 		
 		self.tFirstTurkicCapital = None
 		self.tSecondTurkicCapital = None

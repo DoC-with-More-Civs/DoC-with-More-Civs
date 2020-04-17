@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Inca -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_WARI_DESC</Tag>
+		<English>The Wari</English>
+		<French>The Wari</French>
+		<German>The Wari</German>
+		<Italian>The Wari</Italian>
+		<Spanish>El Huari</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_WARI_PEOPLES</Tag>
+		<English>Andean Peoples</English>
+		<French>
+			<Text>Peuplades andines</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</French>
+		<German>
+			<Text>Andenv&#246;lker:Andenv&#246;lker:Andenv&#246;lkern</Text>
+			<Gender>Female:Female:Female</Gender>
+			<Plural>1:1:1</Plural>
+		</German>
+		<Italian>
+			<Text>Popoli Andini</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Pueblos Andinos</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_WARI_DEFAULT</Tag>
+		<English>Wari Empire</English>
+		<French>Wari Empire</French>
+		<German>Wari Empire</German>
+		<Italian>Wari Empire</Italian>
+		<Spanish>Wari Empire</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_WARI_ADJECTIVE</Tag>
+		<English>Wari</English>
+		<French>Wari</French>
+		<German>Wari</German>
+		<Italian>Wari</Italian>
+		<Spanish>Huari</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_WARI_SHORT_DESC</Tag>
+		<English>Wari</English>
+		<French>Wari</French>
+		<German>Wari</German>
+		<Italian>Wari</Italian>
+		<Spanish>Huari</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_WARI_COLCAS</Tag>
+		<English>Colcas</English>
+		<French>Colcas</French>
+		<German>Colcas</German>
+		<Italian>Colcas</Italian>
+		<Spanish>Colcas</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DOM_WARI</Tag>
+		<English>It is the year 400 AD. North of the flourishing Tiwanaku, the rist of the Wari Empire heralds what will soon become the first major Andean power struggle...</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DOM_WARI_600AD</Tag>
+		<English>It is the year 600 AD. The Wari Empire is in the middle of a cold war with their southern neighbors...</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_WARI_CAPAC</Tag>
+		<English>Wari Capac</English>
+		<French>Wari Capac</French>
+		<German>Wari Capac</German>
+		<Italian>Wari Capac</Italian>
+		<Spanish>Wari Capac</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_WAR_TITLE</Tag>
+		<English>The Power of Terraces:</English>
+		<French>Le pouvoir des terrasses :</French>
+		<German>Die Macht der Terrassen:</German>
+		<Italian>Il potere delle terrazze:</Italian>
+		<Spanish>El poder de las terrazas:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_WAR</Tag>
+		<English>+1 Food on tiles adjacent to Mountains.</English>
+		<French>+1 Food on tiles adjacent to Mountains.</French>
+		<German>+1 Food on tiles adjacent to Mountains.</German>
+		<Italian>+1 Food on tiles adjacent to Mountains.</Italian>
+		<Spanish>+1 Food on tiles adjacent to Mountains.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_WARI_PICTA_AUCAC</Tag>
+		<English>Picta Aucac</English>
+		<French>Picta Aucac</French>
+		<German>Picta Aucac</German>
+		<Italian>Picta Aucac</Italian>
+		<Spanish>Picta Aucac</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_WAR1_TITLE</Tag>
+		<English>Wari Arts</English>
+		<French>Wari Arts</French>
+		<German>Wari Arts</German>
+		<Italian>Wari Arts</Italian>
+		<Spanish>Wari Arts</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_WAR1</Tag>
+		<English>Acquire gold, dyes, cotton, and sheep and have at least 500 Culture by 900 AD</English>
+		<French>Acquire gold, dyes, cotton, and sheep and have at least 500 Culture by 900 AD</French>
+		<German>Acquire gold, dyes, cotton, and sheep and have at least 500 Culture by 900 AD</German>
+		<Italian>Acquire gold, dyes, cotton, and sheep and have at least 500 Culture by 900 AD</Italian>
+		<Spanish>Acquire gold, dyes, cotton, and sheep and have at least 500 Culture by 900 AD</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_WAR2_TITLE</Tag>
+		<English>The First Andine Empire</English>
+		<French>The First Andine Empire</French>
+		<German>The First Andine Empire</German>
+		<Italian>The First Andine Empire</Italian>
+		<Spanish>The First Andine Empire</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_WAR2</Tag>
+		<English>Build 3 barracks and colcas and connect your cities by road by 1000 AD</English>
+		<French>Build 3 barracks and colcas and connect your cities by road by 1000 AD</French>
+		<German>Build 3 barracks and colcas and connect your cities by road by 1000 AD</German>
+		<Italian>Build 3 barracks and colcas and connect your cities by road by 1000 AD</Italian>
+		<Spanish>Build 3 barracks and colcas and connect your cities by road by 1000 AD</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_WAR3_TITLE</Tag>
+		<English>The Great Centers</English>
+		<French>The Great Centers</French>
+		<German>The Great Centers</German>
+		<Italian>The Great Centers</Italian>
+		<Spanish>The Great Centers</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_WAR3</Tag>
+		<English>Have four cities with developing culture and 5 population by 1100 AD</English>
+		<French>Have four cities with developing culture and 5 population by 1100 AD</French>
+		<German>Have four cities with developing culture and 5 population by 1100 AD</German>
+		<Italian>Have four cities with developing culture and 5 population by 1100 AD</Italian>
+		<Spanish>Have four cities with developing culture and 5 population by 1100 AD</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_NUM_COLCAS</Tag>
+		<English>Colcas: %d1 / %d2</English>
+		<French>Colcas : %d1 / %d2</French>
+		<German>Colcas: %d1 / %d2</German>
+		<Italian>Colcas: %d1 / %d2</Italian>
+		<Spanish>Colcas: %d1 / %d2</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_CONNECTED</Tag>
+		<English>All Cities Connected by Routes</English>
+		<French>All Cities Connected by Routes</French>
+		<German>All Cities Connected by Routes</German>
+		<Italian>All Cities Connected by Routes</Italian>
+		<Spanish>All Cities Connected by Routes</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_NUM_REFINED_7POP_CITIES</Tag>
+		<English>Cities with Developing Culture and 5 Population: %d1 / %d2</English>
+		<French>Cities with Developing Culture and 5 Population : %d1 / %d2</French>
+		<German>Cities with Developing Culture and 5 Population: %d1 / %d2</German>
+		<Italian>Cities with Developing Culture and 5 Population: %d1 / %d2</Italian>
+		<Spanish>Cities with Developing Culture and 5 Population: %d1 / %d2</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_GATE_OF_THE_SUN</Tag>
+		<English>Gate of the Sun</English>
+		<French>Gate of the Sun</French>
+		<German>Gate of the Sun</German>
+		<Italian>Gate of the Sun</Italian>
+		<Spanish>Gate of the Sun</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_GATE_OF_THE_SUN_HELP</Tag>
+		<English>[ICON_BULLET]Great Person births require 50% less [COLOR_HIGHLIGHT_TEXT]Great Person Points[COLOR_REVERT]</English>
+		<French>[ICON_BULLET]Great Person births require 50% less [COLOR_HIGHLIGHT_TEXT]Great Person Points[COLOR_REVERT]</French>
+		<German>[ICON_BULLET]Great Person births require 50% less [COLOR_HIGHLIGHT_TEXT]Great Person Points[COLOR_REVERT]</German>
+		<Italian>[ICON_BULLET]Great Person births require 50% less [COLOR_HIGHLIGHT_TEXT]Great Person Points[COLOR_REVERT]</Italian>
+		<Spanish>[ICON_BULLET]Great Person births require 50% less [COLOR_HIGHLIGHT_TEXT]Great Person Points[COLOR_REVERT]</Spanish>
+	</TEXT>
+</Civ4GameText>

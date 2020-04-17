@@ -54,7 +54,7 @@ tMinorCities = (
 (500, (86, 39), iIndependent, 'Bakkah', 3, iArcher, 1),		# Mecca
 #(633, (113, 48), iBarbarian, 'Lhasa', 2, iKhampa, 1),			# Lhasa
 (680, (57, 44), iIndependent, 'Murrakush', 3, iCrossbowman, 1),	# Marrakesh
-(700, (34, 22), iNative, 'Tiwanaku', 1, -1, -1),				# Tiahuanaco
+#(700, (34, 22), iNative, 'Tiwanaku', 1, -1, -1),				# Tiahuanaco
 (700, (67, 48), iIndependent2, 'Tunis', 3, iCrossbowman, 2),	# Tunis
 (738, (118, 45), iIndependent2, 'Darllit', 2, iArcher, 1),		# Dali
 (800, (71, 59), iIndependent, 'Vindobona', 1, iCrossbowman, 1),	# Wien
@@ -215,7 +215,11 @@ class Barbs:
 		elif utils.isYearIn(600, 1000):
 			self.checkSpawn(iBarbarian, iHolkan, 1, (15, 36), (27, 44), self.spawnUprising, iGameTurn, 4, 2)
 		
-	                # 1SDAN Jaguars in classical Mesoamerica
+	               # Picta Aucacs in pre-Incan Andes
+		if utils.isYearIn(800, 1100):
+			 self.checkSpawn(iBarbarian, iPictaAucac, 1, (29, 17), (33, 24), self.spawnUprising, iGameTurn, 4, 2)
+
+		# Jaguars in classical Mesoamerica
 		if utils.isYearIn(150, 500):
 			self.checkSpawn(iBarbarian, iJaguar, 1, (15, 36), (27, 44), self.spawnUprising, iGameTurn, 6, 4)	
 		elif utils.isYearIn(500, 1150):

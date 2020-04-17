@@ -1282,6 +1282,8 @@ enum LeaderHeadTypes			// Exposed to Python
 	COLLINS,
 	WIRACOCHA,
 	ABAOJI,
+	MALKU_HUYUSTUS,
+	WARI_CAPAC,
 	NUM_LEADERHEADS
 };
 
@@ -1375,7 +1377,9 @@ enum PlayerTypes				// Exposed to Python
 	VIETNAM,
 	TEOTIHUACAN,
 	KOREA,
+	TIWANAKU,
 	BYZANTIUM,
+	WARI,
 	JAPAN,
 	VIKINGS,
 	TURKS,

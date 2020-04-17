@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Inca -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TIWANAKU_DESC</Tag>
+		<English>The Tiwanaku</English>
+		<French>The Tiwanaku</French>
+		<German>The Tiwanaku</German>
+		<Italian>The Tiwanaku</Italian>
+		<Spanish>The Tiwanaku</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TIWANAKU_PEOPLES</Tag>
+		<English>Andean Peoples</English>
+		<French>
+			<Text>Peuplades andines</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</French>
+		<German>
+			<Text>Andenv&#246;lker:Andenv&#246;lker:Andenv&#246;lkern</Text>
+			<Gender>Female:Female:Female</Gender>
+			<Plural>1:1:1</Plural>
+		</German>
+		<Italian>
+			<Text>Popoli Andini</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Pueblos Andinos</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TIWANAKU_DEFAULT</Tag>
+		<English>%s2 Empire</English>
+		<French>
+			<Text>Empire %s2</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>%s2 Reich:%s2 Reich:%s2 Reich</Text>
+			<Gender>Neuter:Neuter:Neuter</Gender>
+			<Plural>0:0:0</Plural>
+		</German>
+		<Italian>
+			<Text>Impero %s2</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Imperio %s2</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TIWANAKU_ADJECTIVE</Tag>
+		<English>Tiwanaku</English>
+		<French>Tiwanaku</French>
+		<German>Tiwanaku</German>
+		<Italian>Tiwanaku</Italian>
+		<Spanish>Tiwanaku</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TIWANAKU_SHORT_DESC</Tag>
+		<English>Tiwanaku</English>
+		<French>Tiwanaku</French>
+		<German>Tiwanaku</German>
+		<Italian>Tiwanaku</Italian>
+		<Spanish>Tiwanaku</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TIWANAKU_KALASASAYA</Tag>
+		<English>Kalasasaya</English>
+		<French>Kalasasaya</French>
+		<German>Kalasasaya</German>
+		<Italian>Kalasasaya</Italian>
+		<Spanish>Kalasasaya</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DOM_TIWANAKU</Tag>
+		<English>It is the year 110 AD. As the invention of ceramics strengthens existing trade routes, the pilgrimige site of Tiwanaku begins growing into a true city and the first great regional power since the fall of the Norte Chican Civilization. With an economy built on the seasonal swelling of visitors from far and wide, the city of Tiwanaku is primed to grow into an empire of great fame and glory.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DOM_TIWANAKU_600</Tag>
+		<English>It is the year 600 AD. The Tiwanaku Empire is in the middle of a cold war with their northern neighbors...</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_MALKU_HUYUSTUS</Tag>
+		<English>Malku Huyustus</English>
+		<French>Malku Huyustus</French>
+		<German>Malku Huyustus</German>
+		<Italian>Malku Huyustus</Italian>
+		<Spanish>Malku Huyustus</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_TIW_TITLE</Tag>
+		<English>The Power of Hospitality:</English>
+		<French>The Power of Hospitality:</French>
+		<German>The Power of Hospitality:</German>
+		<Italian>The Power of Hospitality:</Italian>
+		<Spanish>The Power of Hospitality:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_TIW</Tag>
+		<English>Extra Production in the Capital. +1 Priest Slot from Pagan Temples.</English>
+		<French>Extra Production in the Capital. +1 Priest Slot from Pagan Temples.</French>
+		<German>Extra Production in the Capital. +1 Priest Slot from Pagan Temples.</German>
+		<Italian>Extra Production in the Capital. +1 Priest Slot from Pagan Temples.</Italian>
+		<Spanish>Extra Production in the Capital. +1 Priest Slot from Pagan Temples.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_TIWANAKU_SISQENO</Tag>
+		<English>Sisqeno</English>
+		<French>Sisqeno</French>
+		<German>Sisqeno</German>
+		<Italian>Sisqeno</Italian>
+		<Spanish>Sisqeno</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_TIWANAKU_SISQENO_HELP</Tag>
+		<English>[ICON_BULLET]+1 [COLOR_UNIT_TEXT]Great Prophet Points[COLOR_REVERT] per turn in the capital when stationed in a foreign city</English>
+		<French>[ICON_BULLET]+1 [COLOR_UNIT_TEXT]Great Prophet Points[COLOR_REVERT] per turn in the capital when stationed in a foreign city</French>
+		<German>[ICON_BULLET]+1 [COLOR_UNIT_TEXT]Great Prophet Points[COLOR_REVERT] per turn in the capital when stationed in a foreign city</German>
+		<Italian>[ICON_BULLET]+1 [COLOR_UNIT_TEXT]Great Prophet Points[COLOR_REVERT] per turn in the capital when stationed in a foreign city</Italian>
+		<Spanish>[[ICON_BULLET]+1 [COLOR_UNIT_TEXT]Great Prophet Points[COLOR_REVERT] per turn in the capital when stationed in a foreign city</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_TIW1_TITLE</Tag>
+		<English>The Great Andine Theocracy</English>
+		<French>The Great Andine Theocracy</French>
+		<German>The Great Andine Theocracy</German>
+		<Italian>The Great Andine Theocracy</Italian>
+		<Spanish>The Great Andine Theocracy</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_TIW1</Tag>
+		<English>Build the Gate of Sun and settle a Great Prophet in your capital by 900 AD</English>
+		<French>Build the Gate of Sun and settle a Great Prophet in your capital by 900 AD</French>
+		<German>Build the Gate of Sun and settle a Great Prophet in your capital by 900 AD</German>
+		<Italian>Build the Gate of Sun and settle a Great Prophet in your capital by 900 AD</Italian>
+		<Spanish>Build the Gate of Sun and settle a Great Prophet in your capital by 900 AD</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_TIW2_TITLE</Tag>
+		<English>The Multi-Cultural Empire</English>
+		<French>The Multi-Cultural Empire</French>
+		<German>The Multi-Cultural Empire</German>
+		<Italian>The Multi-Cultural Empire</Italian>
+		<Spanish>The Multi-Cultural Empire</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_TIW2</Tag>
+		<English>Have two cities with refined culture by 1000 AD</English>
+		<French>Have two cities with refined culture by 1000 AD</French>
+		<German>Have two cities with refined culture by 1000 AD</German>
+		<Italian>Have two cities with refined culture by 1000 AD</Italian>
+		<Spanish>Have two cities with refined culture by 1000 AD</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_TIW3_TITLE</Tag>
+		<English>The Splendor of Tiwanaku</English>
+		<French>The Splendor of Tiwanaku</French>
+		<German>The Splendor of Tiwanaku</German>
+		<Italian>The Splendor of Tiwanaku</Italian>
+		<Spanish>The Splendor of Tiwanaku</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_TIW3</Tag>
+		<English>Experiece two golden ages by 1100 AD</English>
+		<French>Experiece two golden ages by 1100 AD</French>
+		<German>Experiece two golden ages by 1100 AD</German>
+		<Italian>Experiece two golden ages by 1100 AD</Italian>
+		<Spanish>Experiece two golden ages by 1100 AD</Spanish>
+	</TEXT>
+</Civ4GameText>

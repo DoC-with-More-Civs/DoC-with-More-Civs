@@ -11,12 +11,12 @@ typedef list<char*> LISTCHAR;
 
 #define MAX_COM_SHRINE			(20)
 
-#define BEGIN_WONDERS				(236) // increment if normal building (not for wonders) is added
+#define BEGIN_WONDERS				(239) // increment if normal building (not for wonders) is added
 #define BEGIN_GREAT_WONDERS			(BEGIN_WONDERS+13)
 
-#define NUM_MAJOR_PLAYERS		(68)
+#define NUM_MAJOR_PLAYERS		(70)
 #define NUM_MINORS				(4)	 // Independent, Independent2, Natives, #Celtia, Barbarians
-#define NUM_CIVS				(74)
+#define NUM_CIVS				(76)
 
 #define NUM_ERAS				(ERA_DIGITAL+1)
 
@@ -358,6 +358,7 @@ enum DoCBuildings
 	SPACE_ELEVATOR, 
 	LARGE_HADRON_COLLIDER, 
 	ITER,
+	GATE_OF_THE_SUN,
 };
 
 enum DoCEras

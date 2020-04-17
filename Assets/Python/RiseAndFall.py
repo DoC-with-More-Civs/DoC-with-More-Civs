@@ -1982,6 +1982,15 @@ class RiseAndFall:
 					elif iNewWorldCiv == iInca:
 						tContactZoneTL = (21, 11)
 						tContactZoneBR = (42, 46)
+					elif iNewWorldCiv == iTiwanaku:
+						tContactZoneTL = (21, 11)
+						tContactZoneBR = (42, 46)
+					elif iNewWorldCiv == iWari:
+						tContactZoneTL = (21, 11)
+						tContactZoneBR = (42, 46)
+					elif iNewWorldCiv == iNorteChico:
+						tContactZoneTL = (21, 11)
+						tContactZoneBR = (42, 46)
 						
 					data.lFirstContactConquerors[iIndex] = True
 					
@@ -2062,6 +2071,12 @@ class RiseAndFall:
 						elif iNewWorldCiv == iMaya:
 							utils.makeUnitAI(iHolkan, iOldWorldCiv, tArrivalPlot, UnitAITypes.UNITAI_ATTACK_CITY, 2)
 							utils.makeUnitAI(iJaguar, iOldWorldCiv, tArrivalPlot, UnitAITypes.UNITAI_ATTACK_CITY, 1)
+						elif iNewWorldCiv == iNorteChico:
+							utils.makeUnitAI(iAucac, iOldWorldCiv, tArrivalPlot, UnitAITypes.UNITAI_ATTACK_CITY, 3)
+						elif iNewWorldCiv == iTiwanaku:
+							utils.makeUnitAI(iAucac, iOldWorldCiv, tArrivalPlot, UnitAITypes.UNITAI_ATTACK_CITY, 3)
+						elif iNewWorldCiv == iWari:
+							utils.makeUnitAI(iAucac, iOldWorldCiv, tArrivalPlot, UnitAITypes.UNITAI_ATTACK_CITY, 3)
 						
 						if utils.getHumanID() == iNewWorldCiv:
 							CyInterface().addMessage(iNewWorldCiv, True, iDuration, CyTranslator().getText("TXT_KEY_FIRST_CONTACT_NEWWORLD", ()), "", 0, "", ColorTypes(iWhite), -1, -1, True, True)
@@ -2411,6 +2426,9 @@ class RiseAndFall:
 			utils.makeUnit(iMilitia, iCiv, tPlot, 2)
 		elif iCiv == iRome:
 			utils.makeUnit(iLegion, iCiv, tPlot, 4)
+		elif iCiv == iMaya:
+			utils.makeUnit(iArcher, iCiv, tPlot, 2)
+			utils.makeUnit(iHolkan, iCiv, tPlot, 2)
 		elif iCiv == iJapan:
 			utils.makeUnit(iArcher, iCiv, tPlot, 2)
 			utils.makeUnit(iSwordsman, iCiv, tPlot, 2)
@@ -2426,12 +2444,14 @@ class RiseAndFall:
 		elif iCiv == iKorea:
 			for iUnit in [iHorseArcher, iCrossbowman]:
 				utils.makeUnit(iUnit, iCiv, tPlot, 2)
-		elif iCiv == iMaya:
+		elif iCiv == iTiwanaku:
 			utils.makeUnit(iArcher, iCiv, tPlot, 2)
-			utils.makeUnit(iHolkan, iCiv, tPlot, 2)
+			utils.makeUnit(iSkirmisher, iCiv, tPlot, 2)
 		elif iCiv == iByzantium:
 			utils.makeUnit(iCataphract, iCiv, tPlot, 2)
 			utils.makeUnit(iHorseArcher, iCiv, tPlot, 2)
+		elif iCiv == iWari:
+			utils.makeUnit(iPictaAucac, iCiv, tPlot, 3)
 		elif iCiv == iVikings:
 			utils.makeUnit(iHuscarl, iCiv, tPlot, 3)
 		elif iCiv == iTurks:
@@ -2698,6 +2718,10 @@ class RiseAndFall:
 			if utils.getHumanID() != iKorea:
 				utils.makeUnit(iSpearman, iCiv, tPlot, 2)
 				utils.makeUnit(iCrossbowman, iCiv, tPlot, 2)
+		elif iCiv == iTiwanaku:
+			utils.createSettlers(iCiv, 1)
+			utils.makeUnitAI(iArcher, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
+			utils.makeUnit(iSkirmisher, iCiv, tPlot, 2)
 		elif iCiv == iByzantium:
 			utils.makeUnit(iLegion, iCiv, tPlot, 4)
 			utils.makeUnit(iSpearman, iCiv, tPlot, 2)
@@ -2721,6 +2745,10 @@ class RiseAndFall:
 				pVikings.initUnit(iGalley, tSeaPlot[0], tSeaPlot[1], UnitAITypes.UNITAI_SETTLER_SEA, DirectionTypes.DIRECTION_SOUTH)
 				pVikings.initUnit(iLongship, tSeaPlot[0], tSeaPlot[1], UnitAITypes.UNITAI_EXPLORE_SEA, DirectionTypes.DIRECTION_SOUTH)
 				pVikings.initUnit(iLongship, tSeaPlot[0], tSeaPlot[1], UnitAITypes.UNITAI_EXPLORE_SEA, DirectionTypes.DIRECTION_SOUTH)
+		elif iCiv == iWari:
+			utils.createSettlers(iCiv, 1)
+			utils.makeUnitAI(iPictaAucac, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
+			utils.makeUnitAI(iPictaAucac, iCiv, tPlot, UnitAITypes.UNITAI_ATTACK, 2)
 		elif iCiv == iTurks:
 			utils.createSettlers(iCiv, 6)
 			if utils.getHumanID() == iTurks:
@@ -2847,10 +2875,9 @@ class RiseAndFall:
 				utils.makeUnit(iCog, iCiv, tPlot, 1)
 		elif iCiv == iEngland:
 			utils.createSettlers(iCiv, 3)
-			utils.makeUnitAI(iCrossbowman, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 3)
+			utils.makeUnitAI(iCrossbowman, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 2)
 			if utils.getHumanID() != iEngland:
 				utils.makeUnit(iHeavySwordsman, iCiv, tPlot, 2)
-			utils.createMissionaries(iCiv, 1)
 			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
 			if tSeaPlot:
 				utils.makeUnit(iWorkboat, iCiv, tSeaPlot, 2)
@@ -2860,7 +2887,7 @@ class RiseAndFall:
 				utils.makeUnit(iGalley, iCiv, tSeaPlot, 2)
 			if utils.getHumanID() != iEngland:
 			                utils.makeUnit(iLancer, iCiv, tPlot, 1)
-			                utils.createMissionaries(iCiv, 4)
+			                utils.createMissionaries(iCiv, 3)
 		elif iCiv == iHolyRome:
 			utils.createSettlers(iCiv, 3)
 			utils.makeUnitAI(iCrossbowman, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 3)
@@ -2975,10 +3002,13 @@ class RiseAndFall:
 			                utils.createMissionaries(iCiv, 2)
 		elif iCiv == iInca:
 			utils.createSettlers(iCiv, 1)
-			utils.makeUnit(iAucac, iCiv, tPlot, 4)
-			utils.makeUnit(iArcher, iCiv, tPlot, 2)
+			utils.makeUnit(iAucac, iCiv, tPlot, 5)
+			utils.makeUnit(iArcher, iCiv, tPlot, 4)
+			utils.makeUnit(iCatapult, iCiv, tPlot, 1)
 			if utils.getHumanID() != iInca:
 				utils.makeUnit(iSettler, iCiv, tPlot, 1)
+			if utils.getHumanID() != iInca:
+				utils.makeUnit(iAucac, iCiv, tPlot, 3)
 		elif iCiv == iItaly:
 			utils.createSettlers(iCiv, 1)
 			utils.makeUnit(iBalestriere, iCiv, tPlot, 3)
@@ -3249,9 +3279,13 @@ class RiseAndFall:
 			utils.makeUnit(iArtisan, iCiv, tPlot, 2)
 		elif iCiv == iKorea:
 			utils.makeUnit(iWorker, iCiv, tPlot, 3)
+		elif iCiv == iTiwanaku:
+			utils.makeUnit(iWorker, iCiv, tPlot, 1)
 		elif iCiv == iByzantium:
 			utils.makeUnit(iWorker, iCiv, tPlot, 3)
 			#utils.makeUnit(iSettler, iCiv, tPlot, 1)
+		elif iCiv == iWari:
+			utils.makeUnit(iWorker, iCiv, tPlot, 1)
 		elif iCiv == iVikings:
 			utils.makeUnit(iWorker, iCiv, tPlot, 3)
 		elif iCiv == iTurks:
