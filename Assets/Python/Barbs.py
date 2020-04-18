@@ -78,7 +78,7 @@ tMinorCities = (
 (1200, (92, 65), iBarbarian, 'Qazan', 2, iHorseArcher, 1),		# Kazan
 (1200, (78, 68), iIndependent, 'Riga', 3, iCrossbowman, 2),		# Riga
 (1200, (89, 61), iBarbarian, 'Tsaritsyn', 3, iHorseArcher, 1),		# Tsaritsyn
-(1200, (131, 36), iIndependent2, 'Sugbo', 2, iArcher, 2),		# Cebu
+#(1200, (131, 36), iIndependent2, 'Sugbo', 2, iArcher, 2),		# Cebu
 (1252, (72, 71), iIndependent2, 'Stockholm', 3, iCrossbowman, 3),		# Stockholm
 (1255, (75, 65), iIndependent, 'K&#246;nigsberg', 3, iCrossbowman, 3),		# Konigsberg
 (1300, (120, 30), iIndependent2, 'Melaka', 5, iCrossbowman, 3),	# Malacca

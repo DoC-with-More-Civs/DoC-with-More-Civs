@@ -147,10 +147,10 @@ iTan = 90
 iLime = 100
 
 # independent cities
-iNumMinorCities = 61
+iNumMinorCities = 60
 
 # scripted conquerors
-iNumConquests = 19
+iNumConquests = 20
 
 #neighbours
 lNeighbours = [
@@ -668,7 +668,7 @@ lEnemyCivsOnSpawn = [
 [], #Poland
 [],	#Zimbabwe
 [], #Portugal
-[iTiwanaku, iTiwanaku, iWari, iWari], #Inca
+[iTiwanaku, iTiwanaku, iTiwanaku, iWari, iWari, iWari], #Inca
 [], #Italy
 [iChad],	#Nigeria
 [iChina, iChina, iChina, iKorea, iKorea, iTurks, iTurks, iTurks, iKhitan, iKhitan, iIndependent, iIndependent, iIndependent2, iIndependent2], #Mongolia

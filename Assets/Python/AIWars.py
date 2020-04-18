@@ -94,7 +94,11 @@ tSpainMayaBR = (23, 42)
 
 iSpainIncaYear = 1500
 tSpainIncaTL = (31, 21)
-tSpainIncaBR = (35, 25)
+tSpainIncaBR = (32, 25)
+
+iSpainTiwanakuYear = 1500
+tSpainTiwanakuTL = (31, 19)
+tSpainTiwanakuBR = (35, 22)
 
 iSpainAztecsYear = 1500
 tSpainAztecsTL = (16, 42)
@@ -103,7 +107,8 @@ tSpainAztecsBR = (18, 44)
 tConquestSpainMoors = (11, iSpain, iMoors, tSpainMoorsTL, tSpainMoorsBR, 1, iSpainMoorsYear, 10)
 tConquestSpainMaya = (12, iSpain, iMaya, tSpainMayaTL, tSpainMayaBR, 1, iSpainMayaYear, 10)
 tConquestSpainInca = (13, iSpain, iInca, tSpainIncaTL, tSpainIncaBR, 1, iSpainIncaYear, 10)
-tConquestSpainAztecs = (14, iSpain, iAztecs, tSpainAztecsTL, tSpainAztecsBR, 1, iSpainAztecsYear, 10)
+tConquestSpainTiwanaku = (14, iSpain, iTiwanaku, tSpainTiwanakuTL, tSpainTiwanakuBR, 1, iSpainTiwanakuYear, 10)
+tConquestSpainAztecs = (15, iSpain, iAztecs, tSpainAztecsTL, tSpainAztecsBR, 1, iSpainAztecsYear, 10)
 
 iTurksPersiaYear = 1000
 tTurksPersiaTL = (91, 43)
@@ -113,22 +118,22 @@ iTurksAnatoliaYear = 1030
 tTurksAnatoliaTL = (82, 51)
 tTurksAnatoliaBR = (87, 55)
 
-tConquestTurksPersia = (15, iTurks, iArabia, tTurksPersiaTL, tTurksPersiaBR, 4, iTurksPersiaYear, 20)
-tConquestTurksAnatolia = (16, iTurks, iByzantium, tTurksAnatoliaTL, tTurksAnatoliaBR, 5, iTurksAnatoliaYear, 20)
+tConquestTurksPersia = (16, iTurks, iArabia, tTurksPersiaTL, tTurksPersiaBR, 4, iTurksPersiaYear, 20)
+tConquestTurksAnatolia = (17, iTurks, iByzantium, tTurksAnatoliaTL, tTurksAnatoliaBR, 5, iTurksAnatoliaYear, 20)
 
 
 iMongolsPersiaYear = 1210
 tMongolsPersiaTL = (87, 45)
 tMongolsPersiaBR = (98, 58)
 
-tConquestMongolsPersia = (17, iMongolia, iTurks, tMongolsPersiaTL, tMongolsPersiaBR, 7, iMongolsPersiaYear, 10)
+tConquestMongolsPersia = (18, iMongolia, iTurks, tMongolsPersiaTL, tMongolsPersiaBR, 10, iMongolsPersiaYear, 10)
 
 
 iConquestEnglandIrelandYear = 1150
 tConquestEnglandIrelandTL = (52, 64)
 tConquestEnglandIrelandBR = (59, 71)
 
-tConquestEnglandIreland = (18, iEngland, iCeltia, tConquestEnglandIrelandTL, tConquestEnglandIrelandBR, 1, iConquestEnglandIrelandYear, 10)
+tConquestEnglandIreland = (19, iEngland, iCeltia, tConquestEnglandIrelandTL, tConquestEnglandIrelandBR, 1, iConquestEnglandIrelandYear, 10)
 
 
 lConquests = [
@@ -146,11 +151,12 @@ tConquestChinaVietnam2, #10
 tConquestSpainMoors, #11
 tConquestSpainMaya,  #15
 tConquestSpainInca, #16
-tConquestSpainAztecs, #17
+tConquestSpainTiwanaku, #17
+tConquestSpainAztecs, #18
 tConquestTurksPersia, #12
 tConquestTurksAnatolia, #13
 tConquestMongolsPersia, #14
-tConquestEnglandIreland #18
+tConquestEnglandIreland #19
 ]
 
 class AIWars:
