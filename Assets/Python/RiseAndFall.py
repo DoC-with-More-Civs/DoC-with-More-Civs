@@ -413,7 +413,9 @@ class RiseAndFall:
 		data.players[iPortugal].iColonistsAlreadyGiven = 6
 		data.players[iNetherlands].iColonistsAlreadyGiven = 4
 		data.players[iSweden].iColonistsAlreadyGiven = 1
-		
+	
+	
+
 	def init1700ADDiplomacy(self):
 		teamEngland.declareWar(iMughals, False, WarPlanTypes.WARPLAN_LIMITED)
 		teamIndia.declareWar(iMughals, False, WarPlanTypes.WARPLAN_TOTAL)
@@ -2410,6 +2412,8 @@ class RiseAndFall:
 	def createAdditionalUnits(self, iCiv, tPlot):
 		if iCiv == iNubia:
 			utils.makeUnit(iMilitia, iCiv, tPlot, 1)
+		if iCiv == iAssyria:
+			utils.makeUnit(iArcher, iCiv, tPlot, 2)
 		if iCiv == iIndia:
 			utils.makeUnit(iArcher, iCiv, tPlot, 2)
 			utils.makeUnit(iLightSwordsman, iCiv, tPlot, 1)
@@ -2599,6 +2603,10 @@ class RiseAndFall:
 		if iCiv == iNubia:
 			utils.createSettlers(iCiv, 1)
 			utils.makeUnit(iMilitia, iCiv, tPlot, 1)
+		if iCiv == iAssyria:
+			utils.createSettlers(iCiv, 1)
+			utils.makeUnit(iMilitia, iCiv, tPlot, 1)
+			utils.makeUnitAI(iRam, iCiv, tPlot, UnitAITypes.UNITAI_ATTACK_CITY, 1)
 		if iCiv == iChina:
 			utils.createSettlers(iCiv, 1)
 			utils.makeUnit(iArcher, iCiv, tPlot, 1)
@@ -2627,6 +2635,9 @@ class RiseAndFall:
 			utils.makeUnit(iImmortal, iCiv, tPlot, 4)
 			utils.makeUnit(iHorseman, iCiv, tPlot, 2)
 			utils.makeUnit(iWarElephant, iCiv, tPlot, 1)
+			if utils.getHumanID() != iPersia:
+				utils.makeUnit(iHorseman, iCiv, tPlot, 1)
+				utils.makeUnit(iWarElephant, iCiv, tPlot, 1)
 		elif iCiv == iCeltia:
 			utils.createSettlers(iCiv, 1)
 			utils.makeUnitAI(iArcher, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 2)
@@ -3249,6 +3260,8 @@ class RiseAndFall:
 				
 	def createStartingWorkers( self, iCiv, tPlot ):
 		if iCiv == iNubia:
+			utils.makeUnit(iWorker, iCiv, tPlot, 1)
+		if iCiv == iAssyria:
 			utils.makeUnit(iWorker, iCiv, tPlot, 1)
 		if iCiv == iChina:
 			utils.makeUnit(iWorker, iCiv, tPlot, 1)

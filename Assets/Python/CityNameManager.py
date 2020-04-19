@@ -12,9 +12,9 @@ from StoredData import data
 gc = CyGlobalContext()
 PyPlayer = PyHelpers.PyPlayer
 
-iNumLanguages = 50
+iNumLanguages = 51
 (iLangEgyptian, iLangEgyptianArabic, iLangIndian, iLangChinese, iLangTibetan, 
-iLangBabylonian, iLangPersian, iLangGreek, iLangPhoenician, iLangLatin, 
+iLangBabylonian, iLangPersian, iLangGreek, iLangPhoenician, iLangLatin, iLangAssyria, 
  iLangMayan,iLangJapanese, iLangEthiopian, iLangTeotihuacan, iLangKorean, iLangByzantine, 
 iLangViking, iLangArabian, iLangKhmer, iLangIndonesian, iLangSpanish, 
 iLangFrench, iLangEnglish, iLangGerman, iLangRussian, iLangDutch, 
@@ -42,6 +42,7 @@ def getLanguages(iCiv):
 		elif data.lReligionFounder[iIslam] != -1:
 			return (iLangArabian, iLangNubian, iLangEgyptian)
 		return (iLangNubian, iLangEgyptian,)
+	elif iCiv == iAssyria: return (iLangAssyria,iLangBabylonian)
 	elif iCiv == iChina: return (iLangChinese,)
 	elif iCiv == iGreece: return (iLangGreek,)
 	elif iCiv == iIndia: return (iLangIndian,)
@@ -4689,6 +4690,10 @@ tRenames = (
 },
 #Language: Hebrew
 {
+},
+#Language: Assyria
+{
+	"Ashur"			:	"Nineveh",
 },
 #Language: Nubian
 {

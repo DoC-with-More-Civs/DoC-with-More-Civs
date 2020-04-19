@@ -73,6 +73,36 @@
 		</BuildingInfo>
 		<BuildingInfo>
 			<BuildingClass>BUILDINGCLASS_BARRACKS</BuildingClass>
+			<Type>BUILDING_ASSYRIA_EKAL</Type>
+			<Description>TXT_KEY_BUILDING_ASSYRIA_EKAL</Description>
+			<Civilopedia>TXT_KEY_BUILDING_ASSYRIA_EKAL_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_ASSYRIA_EKAL_STRATEGY</Strategy>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_ASSYRIA_EKAL</ArtDefineTag>
+			<bNeverCapture>1</bNeverCapture>
+			<iCost>50</iCost>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iMilitaryProductionModifier>15</iMilitaryProductionModifier>
+			<iMinAreaSize>-1</iMinAreaSize>
+			<iAsset>2</iAsset>
+			<iPower>3</iPower>
+			<fVisibilityPriority>1.0</fVisibilityPriority>
+			<ConstructSound>AS2D_BUILD_BARRACKS</ConstructSound>
+			<DomainFreeExperiences>
+				<DomainFreeExperience>
+					<DomainType>DOMAIN_LAND</DomainType>
+					<iExperience>3</iExperience>
+				</DomainFreeExperience>
+			</DomainFreeExperiences>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_MILITARY</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+			</Flavors>
+		</BuildingInfo>
+		<BuildingInfo>
+			<BuildingClass>BUILDINGCLASS_BARRACKS</BuildingClass>
 			<Type>BUILDING_ZULU_IKHANDA</Type>
 			<Description>TXT_KEY_BUILDING_ZULU_IKHANDA</Description>
 			<Civilopedia>TXT_KEY_BUILDING_ZULU_IKHANDA_PEDIA</Civilopedia>
@@ -7094,12 +7124,12 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_PERSIA_SATRAP_COURT</ArtDefineTag>
 			<FreeStartEra>ERA_GLOBAL</FreeStartEra>
-			<PrereqTech>TECH_SOCIAL_CONTRACT</PrereqTech>
+			<PrereqTech>TECH_NOBILITY</PrereqTech>
 			<iCost>200</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>66</iConquestProb>
-			<iMaintenanceModifier>-25</iMaintenanceModifier>
+			<iMaintenanceModifier>-20</iMaintenanceModifier>
 			<iHappiness>2</iHappiness>
 			<iAsset>4</iAsset>
 			<fVisibilityPriority>1.0</fVisibilityPriority>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Inca -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ASSYRIA_DESC</Tag>
+		<English>The Assyria</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ASSYRIA_PEOPLES</Tag>
+		<English>Assyria Peoples</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ASSYRIA_DEFAULT</Tag>
+		<English>Kingdom of %s1</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ASSYRIA_ADJECTIVE</Tag>
+		<English>Assyria</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ASSYRIA_SHORT_DESC</Tag>
+		<English>Assyria</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ASSYRIA_EKAL</Tag>
+		<English>Ekal</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_ASHUR</Tag>
+		<English>Ashurbanipal</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_ASS_TITLE</Tag>
+		<English>The Power of Militarism:</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_ASS</Tag>
+		<English>Reduced unit keep cost.</English>
+	</TEXT>
+</Civ4GameText>

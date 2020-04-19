@@ -11529,6 +11529,10 @@ int CvHandicapInfo::getUnitCostPercentByID(PlayerTypes ePlayer) const
 	{
 	    iUnitCost /= 2;
 	}
+	else if (ePlayer == ASSYRIA && GC.getGameINLINE().getGameTurnYear() < 50)
+	{
+	    iUnitCost /= 2;
+	}
 	else if (ePlayer == GERMANY && GC.getGameINLINE().getGameTurnYear() < 1775)
 	{
 	    iUnitCost /= 2;

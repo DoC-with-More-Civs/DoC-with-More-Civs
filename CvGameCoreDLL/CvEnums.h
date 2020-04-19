@@ -1284,6 +1284,7 @@ enum LeaderHeadTypes			// Exposed to Python
 	ABAOJI,
 	MALKU_HUYUSTUS,
 	WARI_CAPAC,
+	ASHUR,
 	NUM_LEADERHEADS
 };
 
@@ -1363,6 +1364,7 @@ enum PlayerTypes				// Exposed to Python
 	HARAPPA,
 	NORTECHICO,
 	NUBIA,
+	ASSYRIA,
 	CHINA,
 	GREECE,
 	INDIA,

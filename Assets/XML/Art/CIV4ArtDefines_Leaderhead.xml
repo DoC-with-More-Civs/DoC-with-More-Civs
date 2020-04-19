@@ -1358,5 +1358,13 @@
 			<NoShaderNIF>Art/Leaderheads/Atlatl Cauac/Arawak.nif</NoShaderNIF>
 			<BackgroundKFM>Art/Leaderheads/Atlatl Cauac/Hannibal_BG.kfm</BackgroundKFM>
 		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_ASHUR</Type>
+			<Button>,Art/Interface/Buttons/Empty.dds,Art/Interface/Buttons/Atlases/AND_misc_buttons.dds,1,5</Button>
+			<NIF>art/LeaderHeads/Ashur/brennus.nif</NIF>
+			<KFM>art/LeaderHeads/Ashur/brennus.kfm</KFM>
+			<NoShaderNIF>art/LeaderHeads/Ashur/brennus_noshader.nif</NoShaderNIF>
+			<BackgroundKFM>art/LeaderHeads/Ashur/brennus_BG.kfm</BackgroundKFM>
+		</LeaderheadArtInfo>
 	</LeaderheadArtInfos>
 </Civ4ArtDefines>

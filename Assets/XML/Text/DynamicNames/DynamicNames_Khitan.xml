@@ -30,10 +30,6 @@
 		<English>Khitan</English>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_NORTE_CHICO_SHICRA</Tag>
-		<English>Shicra</English>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_LEADER_ABAOJI</Tag>
 		<English>Yelu abaoji</English>
 	</TEXT>
@@ -48,10 +44,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_IRON_PAGODA</Tag>
 		<English>Ironpagoda</English>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_NORTE_CHICO_AYLLU_HELP</Tag>
-		<English>[ICON_BULLET]Creates 10 [ICON_CULTURE] in the capital when it constructs an improvement</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_KHI1_TITLE</Tag>
@@ -76,14 +68,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UHV_KHI3</Tag>
 		<English>Control or Vassalize Korea, Song, and Jurchen</English>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_VICTORY_CAPITAL_POPULATION</Tag>
-		<English>Population of %s1: %d2 / %d3</English>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_VICTORY_CAPITAL_BUILDINGS</Tag>
-		<English>Buildings in %s1: %d2 / %d3</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DOM_KHITAN</Tag>

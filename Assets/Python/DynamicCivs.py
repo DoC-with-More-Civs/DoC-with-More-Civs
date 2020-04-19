@@ -569,6 +569,7 @@ dStartingLeaders = [
 	iHarappa : iVatavelli,
 	iNorteChico : iWiracocha,
 	iNubia : iPiye,
+	iAssyria : iAshur,
 	iChina : iQinShiHuang,
 	iGreece : iPericles,
 	iPersia : iCyrus,
@@ -1950,7 +1951,18 @@ def specificTitle(iPlayer, lPreviousOwners=[]):
 			
 		if bEmpire or iReligion >= 0 or not pPlayer.isStateReligion() or not isCapital(iPlayer, ["Kerma"]):
 			return "TXT_KEY_KINGDOM_OF"
+	
 			
+	elif iPlayer == iAssyria:
+		if bCityStates:
+			return "TXT_KEY_CITY_STATES_ADJECTIVE"
+	
+		if iReligion == iIslam:
+			return "TXT_KEY_SULTANATE_ADJECTIVE"
+	
+		if bEmpire:
+			return "TXT_KEY_EMPIRE_ADJECTIVE"
+		
 	elif iPlayer == iChina:
 		if bEmpire:
 			if iEra >= iIndustrial or utils.getScenario() == i1700AD:

@@ -4217,5 +4217,15 @@
 			<KFM/>
 			<Button>Art/Structures/Buildings/Huaca/Huaca.dds</Button>
 		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_ASSYRIA_EKAL</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>0.8</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Unique/Assyria/Ekal/Mali_mint.nif</NIF>
+			<KFM/>
+			<Button>,Art/Interface/Buttons/Buildings/Assyria_Ekal.dds,Art/Interface/Buttons/Atlases/RoM_building_atlas.dds,8,1</Button>
+		</BuildingArtInfo>
 	</BuildingArtInfos>
 </Civ4ArtDefines>

@@ -2409,6 +2409,8 @@ UnitTypes CvCityAI::AI_bestUnit(bool bAsync, AdvisorTypes eIgnoreAdvisor, UnitAI
 		break;
 	case NORTECHICO:
 		break;
+	case ASSYRIA:
+		break;
 	case GREECE:
 		aiUnitAIVal[UNITAI_SETTLE] *= 2;
 		aiUnitAIVal[UNITAI_EXPLORE] *= 2;

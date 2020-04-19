@@ -527,10 +527,6 @@
 					<UnitClassType>UNITCLASS_ARCHER</UnitClassType>
 					<UnitType>UNIT_BABYLONIAN_ASHARITTU_BOWMAN</UnitType>
 				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_CATAPULT</UnitClassType>
-					<UnitType>UNIT_BABYLON_RAM</UnitType>
-				</Unit>
 			</Units>
 			<FreeUnitClasses>
 				<FreeUnitClass>
