@@ -13339,6 +13339,7 @@ EndPlot
 BeginPlot
 	x=27,y=30
 	BonusType=BONUS_COCOA
+	ImprovementType=IMPROVEMENT_PLANTATION
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
@@ -34442,7 +34443,7 @@ BeginPlot
 	x=73,y=58
 	RiverNSDirection=2
 	isWOfRiver
-	TerrainType=TERRAIN_STEPPE
+	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
@@ -34450,7 +34451,7 @@ BeginPlot
 	RiverNSDirection=2
 	isWOfRiver
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
-	TerrainType=TERRAIN_STEPPE
+	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
@@ -34947,7 +34948,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=74,y=58
-	BonusType=BONUS_HORSE
+	BonusType=BONUS_PIG
 	TerrainType=TERRAIN_STEPPE
 	PlotType=2
 EndPlot
@@ -35462,6 +35463,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=75,y=59
+	BonusType=BONUS_HORSE
 	TerrainType=TERRAIN_STEPPE
 	PlotType=2
 EndPlot
@@ -36351,16 +36353,19 @@ BeginPlot
 	x=77,y=34
 	BonusType=BONUS_COW
 	BonusVarietyType=BONUS_COW_BROWN
+	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=77,y=35
+	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=77,y=36
+	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 EndPlot

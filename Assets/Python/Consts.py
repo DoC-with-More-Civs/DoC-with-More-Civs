@@ -60,9 +60,9 @@ l0ArrayTotal =  [0 for i in range(iNumTotalPlayers)]
 lm1Array =      [-1 for i in range(iNumPlayers)]
 
 # civilizations, not players
-iNumCivilizations = 82
+iNumCivilizations = 83
 (iCivAmerica, iCivArabia, iCivArgentina, iCivAssyria, iCivAustralia, iCivAztec, iCivBabylonia, iCivBoers, iCivBrazil, iCivBurma, iCivByzantium, iCivCanada, iCivCarthage, iCivCelt, 
-iCivChad, iCivChina, iCivColombia, iCivEgypt, iCivEngland, iCivEthiopia, iCivFrance, iCivGermany, iCivGreece, iCivHarappa, iCivHolyRome, iCivHungary, 
+iCivChad, iCivChimu, iCivChina, iCivColombia, iCivEgypt, iCivEngland, iCivEthiopia, iCivFrance, iCivGermany, iCivGreece, iCivHarappa, iCivHolyRome, iCivHungary, 
 iCivInca, iCivIndia, iCivIndonesia, iCivIran, iCivIsrael, iCivItaly, iCivJapan, iCivKhazars, iCivKhitan, iCivKhmer, iCivKievanRus, iCivKongo, iCivKorea, iCivMali, iCivMamluks, iCivManchuria,
 iCivMaya, iCivMexico, iCivMongols, iCivMoors, iCivMughals, iCivNativeAmericans, iCivNetherlands, iCivNigeria, iCivNorteChico, iCivNubia, iCivOman, iCivOttomans, iCivPersia, iCivPhilippines, iCivPoland, 
 iCivPolynesia, iCivPortugal, iCivRome, iCivRussia, iCivSpain, iCivSumeria, iCivSwahili, iCivSweden, iCivTamils, iCivTeotihuacan, iCivThailand, iCivTibet, iCivTiwanaku, iCivTurks, iCivVietnam,
@@ -147,7 +147,7 @@ iTan = 90
 iLime = 100
 
 # independent cities
-iNumMinorCities = 59
+iNumMinorCities = 60
 
 # scripted conquerors
 iNumConquests = 20
@@ -504,6 +504,7 @@ iCivHolyRome : (1550, 1650, 1850),
 iCivKievanRus : (1327, -1, 1327),
 iCivHungary : (1301, 1867, -1),
 iCivPhilippines : (1400, 1500, 1600),
+iCivChimu : (1300, 1475, 1500),
 iCivSwahili : (1500, 1500, 1650),
 iCivMamluks : (1300, 1380, 1500),
 iCivMali : (1350, 1500, 1700),
@@ -538,12 +539,14 @@ iCivIsrael : (1980, 2000, -1),
 
 # Leoreth: date-triggered respawn for certain civs
 dRebirth = {
+iNorteChico : 900,		# Chimu
 iPersia : 1501,		# Iran
 iMaya : 1814,		# Colombia
 iAztecs : 1810,		# Mexico
 }
 
 dRebirthCiv = {
+iNorteChico : iCivChimu,
 iPersia : iCivIran,
 iMaya : iCivColombia,
 iAztecs : iCivMexico,
@@ -553,7 +556,7 @@ tResurrectionIntervals = (
 [(664, -343)], #Egypt
 [(-3000, -500)], #Babylonia
 [],		# Harappa
-[],		# Norte Chico
+[(900, 1365)],		# Norte Chico
 [(-785, 350), (350, 1365), (1504, 2020)], #Nubia
 [],		# Assyria
 [(-300, 2020)], #China
@@ -701,6 +704,7 @@ lEnemyCivsOnSpawn = [
 # Leoreth: date-triggered respawn for certain civs
 lEnemyCivsOnRespawn = {
 iPersia : [iOttomans, iRussia, iOman, iOman],		# Iran
+iNorteChico : [],		# Colombia
 iMaya : [],		# Colombia
 iAztecs : [iAmerica],		# Mexico
 }
@@ -939,16 +943,16 @@ tAIStopBirthThreshold = (
 
 #RiseAndFall
 tResurrectionProb = (
-95, #Egypt
+80, #Egypt
 95, #Babylonia
 0, #Harappa
-0, #Norte Chico
+100, #Norte Chico
 60, #Nubia
 0, #Assyria
 100, #China
 60, #Greece
 50, #India
-30, #Carthage
+50, #Carthage
 70, #Celtia
 40, #Polynesia
 80, #Persia
@@ -1154,7 +1158,7 @@ iTranshumanism) = range(iNumTechs)
 
 # initialise unit variables to unit indices from XML
 
-iNumUnits = 275
+iNumUnits = 276
 (iLion, iBear, iPanther, iWolf, iRabbit, iSettler, iCityBuilder, iPioneer, iKhagan, iWorker, iArtisan, iPunjabiWorker, iArchitect, iAyllu, iLabourer, 
 iMadeireiro, iScout, iExplorer, iCaravan, iBandeirante, iSpy, iSisqeno, iReligiousPersecutor, iJewishMissionary, iOrthodoxMissionary, iCatholicMissionary, iProtestantMissionary, 
 iIslamicMissionary, iHinduMissionary, iBuddhistMissionary, iConfucianMissionary, iTaoistMissionary, iZoroastrianMissionary, iWarrior, iMilitia, iCityGuard, iKoa, iAxeman, iLightSwordsman, 
@@ -1163,7 +1167,7 @@ iHuscarl, iGhazi, iPombos, iDoppelSoldner, iKallarani, iSpearman, iHoplite, iSac
 iLandsknecht, iTagmata, iAshigaru, iDobDob, iRozwiWarrior, iArquebusier, iFirelancer, iTercio, iStrelets, iJanissary, iOromoWarrior, iQizilbash, iMohawk, iMusketeer, iBandeirantes, 
 iRedcoat, iKarolin, iFusilier, iMinuteman, iIronHelmet, iRifleman, iMehalSefari, iMahardlek, iGrenadier, iRocketeer, iGrenzer, iAlbionLegion, iGardist, iNaffatun, iAntiTank, 
 iInfantry, iBersagliere, iPatricios, iEjercito, iSepoy, iDigger, iSamInfantry, iMobileSam, iMarine, iNavySeal, iGuardaNacional, iParatrooper, iMechanizedInfantry, iArcher, iAsharittuBowman, iMedjay, iPictaAucac,
-iSkirmisher, iHolkan, iKelebolo, iLongbowman, iPatiyodha, Ngolo, iSlinger, iRattanArcher, iCrossbowman, iChokonu, iBalestriere, iChariot, iWarChariot, 
+iSkirmisher, iHolkan, iKelebolo, iChimuSuchucChiquiAucac, iLongbowman, iPatiyodha, Ngolo, iSlinger, iRattanArcher, iCrossbowman, iChokonu, iBalestriere, iChariot, iWarChariot, 
 iHuluganni, iCidainh, iScythedChariot, iHorseman, iCompanion, iNumidianCavalry, iAsvaka, iCamelRider, iHorseArcher, iMangudai, iKhampa, 
 iOghuz, iBerber, iCamelArcher, iArabianCamelArcher, iLancer, iIronpagoda, iVaru, iSavaran, iMobileGuard, iKeshik, iCataphract, iChangSuek, iRoyalMamluk, iYanLifida, iHuszar, iFarari, iChevalier, iGhulamWarrior, 
 iPistolier, iMountedBrave, iSavannaHunter, iCamelGunner, iMoorsCamelGunner, iCuirassier, iEightBanner, iGendarme, iConquistador, iWingedHussar, iCondotierro, iHussar, iCossack, iLlanero, 
@@ -1207,13 +1211,13 @@ iGemsEmeralds, iSheepLlama, iSheepBlack, iCowBrown, iPigFurry, iIvoryAfrican, iC
 
 # Buildings
 
-iNumBuildings = 390
+iNumBuildings = 391
 (iPalace, iBarracks, iIkhanda, iCastra, iEkal, iGranary, iTerrace, iColcas, iSmokehouse, iKraal, iSaltovo, iPaganTemple, iMonument, iObelisk, iStele,
 iCandi, iEdict, iMalae, iTotemPole, iZiara, iStatue, iDeffufas, iShicra, iWalls, iIya, iDun, iKasbah, iStable, iGer, iEstancia, iBullring, iLibrary, iEdubba,
 iTaixue, iHoTrai, iSangam, iPaya, iHarbor, iCothon, iFishery, iPort, iMina, iAqueduct, iBaray, iNoria, iStepwell, iChinampa, iAbAnbar, iDam, iTheatre, iOdeon,
 iHippodrome, iOpera, iArena, iBallCourt, iCharreadaArena, iGarden, iBasilica, iLighthouse, iTradingPost, iZango, iWeaver, iMbwadi,
 iMarket, iForum, iGlassmaker, iAgora, iBazaar, iSouq, iJail, iSacrificialAltar, iDivan, iBath, iReservoir, iTemazcal, iHammam, iForge, 
-iMint, iArtStudio, iDutchMill, iStoneCutter, iCastle, iCitadel, iMountainFortress, iVegvar, iPharmacy, iApothecary, iAlchemist, iPostOffice, iTambo, iShreni, iYam, iCaravanserai,
+iMint, iArtStudio, iDutchMill, iStoneCutter, iCastle, iCitadel, iMountainFortress, iVegvar, iKancha, iPharmacy, iApothecary, iAlchemist, iPostOffice, iTambo, iShreni, iYam, iCaravanserai,
 iWharf, iCoffeehouse, iSalon, iPavilion, iPublicHouse, iTeahouse, iPagoda, iMeadhall, iBank, iRoyalExchange, iSaltMine, iRiksbank, iPiaohao, iConstabulary, iMountedPolice, iCustomsHouse, iFeitoria, iCollegantia, iTradeGuild, iImmigrationOffice, iUniversity,
 iSeowon, iGompa, iPublicUniversity, iNizamiyya, iCivicSquare, iRathaus, iSejmik, iSambadrome, iWene, iPendopo, iDinh, iKalasasaya, iSewer, iEarlySewer, iStarFort, iQila, iKremlin, iPlaas, iEstate, iMausoleum, iFazenda, 
 iHacienda, iChateau, iFolwark, iColonyAdministration, iDrydock, iLevee, iDike, iFLoatingMarket, iObservatory, iKushitePyramid, iKatun, iWarehouse, iCourthouse, iXeer, iSatrapCourt, iVeche, iFactory, iAssemblyPlant, iZaibatsu, 
@@ -1378,7 +1382,7 @@ iVictorySecularism = 11
 
 #leaders
 
-iNumLeaders = 168
+iNumLeaders = 169
 (iLeaderBarbarian, iNativeLeader, iIndependentLeader, iAlexanderTheGreat, iAsoka, iAugustus, iBismarck, iBoudica, iBrennus, iCatherine, 
 iCharlemagne, iChurchill, iCyrus, iDarius, iDeGaulle, iElizabeth, iFrederick, iGandhi, iGenghisKhan, iSargon, 
 iHammurabi, iHannibal, iCleopatra, iHuaynaCapac, iIsabella, iJoao, iJuliusCaesar, iJustinian, iKublaiKhan, iLincoln, 
@@ -1394,7 +1398,7 @@ iMussolini, iSejong, iBhutto, iPilsudski, iWalesa, iGerhardsen, iVargas, iMacDon
 iGeorge, iKhosrow, iBumin, iTamerlane, iEzana, iChristian, iGustavVasa, iKarl, iCurtin, iMenzies, iMustasim, iKangxi, iCixi, iOduduwa, iEwuare,
 iAminatu, iLapuLapu, iKruger, iMandela, iShirazi, iDawud, iBarghash, iTrung, iChieuHoang, iHoChiMinh, iRusvingo, iMutota,
 iAnawrahta, iShinSawbu, iBayinnuang, iBohdan, iYaroslav, iIstvan, iKossuth, iAtlatlCauac, iBenGurion, iSaif, iArwa, iBulan, iPiye, iDunama, 
-iRobert, iCollins, iWiracocha, iAbaoji, iMalkuHuyustus, iWariCapac, iAshur) = range(iNumLeaders)
+iRobert, iCollins, iWiracocha, iAbaoji, iMalkuHuyustus, iWariCapac, iAshur, iTacaynamo) = range(iNumLeaders)
 
 resurrectionLeaders = {
 	iChina : iHongwu,
@@ -1403,6 +1407,7 @@ resurrectionLeaders = {
 }
 
 rebirthLeaders = {
+	iNorteChico : iTacaynamo,
 	iMaya : iBolivar,
 	iPersia : iAbbas,
 	iAztecs : iJuarez,

@@ -33812,7 +33812,7 @@ BeginPlot
 	x=73,y=58
 	RiverNSDirection=2
 	isWOfRiver
-	TerrainType=TERRAIN_STEPPE
+	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
@@ -33820,7 +33820,7 @@ BeginPlot
 	RiverNSDirection=2
 	isWOfRiver
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
-	TerrainType=TERRAIN_STEPPE
+	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
@@ -34284,7 +34284,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=74,y=58
-	BonusType=BONUS_HORSE
+	BonusType=BONUS_HORSEBonusType=BONUS_PIG
 	TerrainType=TERRAIN_STEPPE
 	PlotType=2
 EndPlot
@@ -34773,6 +34773,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=75,y=59
+	BonusType=BONUS_HORSE
 	TerrainType=TERRAIN_STEPPE
 	PlotType=2
 EndPlot

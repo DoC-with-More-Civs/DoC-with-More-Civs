@@ -63,10 +63,11 @@ tMinorCities = (
 (830, (66, 65), iIndependent, 'Hamburg', 2, iCrossbowman, 1),	# Hamburg
 #(830, (67, 65), iIndependent, 'L&#252;beck', 2, iCrossbowman, 1),	# Lubeck
 (860, (82, 68), iIndependent, 'Novgorod', 3, iCrossbowman, 3),		# Novgorod
+(870, (27, 28), iIndependent, 'Chan Chan', 2, iArcher, 2),			# Chan Chan
 (899, (92, 41), iIndependent, 'Bahrein', 2, iArcher, 2),			# Qarmatians (Abu Sa'id al-Jannabi)
 (900, (28, 25), iNative, 'Pachakamaq', 1, iArcher, 2),			# Pachacamac
-(900, (27, 28), iNative, 'Chan Chan', 2, iArcher, 2),			# Chan Chan
 (900, (87, 30), iIndependent, 'Muqdisho', 3, iCrossbowman, 2),	# Mogadishu
+(920, (26, 32), iNative, 'Tucume', 2, iPictaAucac, 4),			# Tucume
 (944, (63, 48), iIndependent, "Dzayer", 3, iCrossbowman, 2),	# Algiers
 #(990, (130, 38), iIndependent, 'Maynila', 2, iArcher, 2),		# Manila
 (1000, (68, 75), iIndependent2, 'Nidaros', 1, iHuscarl, 1),		# Trondheim
@@ -351,10 +352,10 @@ class Barbs:
 		if utils.isYearIn(1300, 1600):
 			if iGameTurn % 18 == 0:
 				if not gc.getMap().plot(29, 34).isUnit():
-					utils.makeUnitAI(iDogSoldier, iNative, (29, 34), UnitAITypes.UNITAI_ATTACK, 2 + iHandicap)
+					utils.makeUnitAI(iChimuSuchucChiquiAucac, iNative, (29, 34), UnitAITypes.UNITAI_ATTACK, 2 + iHandicap)
 			elif iGameTurn % 18 == 9:
 				if not gc.getMap().plot(30, 13).isUnit():
-					utils.makeUnitAI(iDogSoldier, iNative, (33, 12), UnitAITypes.UNITAI_ATTACK, 2 + iHandicap)
+					utils.makeUnitAI(iChimuSuchucChiquiAucac, iNative, (33, 12), UnitAITypes.UNITAI_ATTACK, 2 + iHandicap)
 		
 		if self.includesActiveHuman([iAmerica, iEngland, iFrance]):
 			if utils.isYearIn(1700, 1900):
@@ -424,7 +425,8 @@ class Barbs:
 			if sName == 'Kilwa': lReligions = [iIslam]
 			if iPlayer == iCeltia and utils.getHumanID() == iCeltia: continue
 			if iPlayer == iCeltia: iPlayer = iIndependent
-			if sName == 'Muqdisho': lReligions = [iIslam]
+			if sName in ['Buda', 'Tucume', 'Chan Chan']: bForceSpawn = True
+			if sName in ['Muqdisho', 'Bahrein']: lReligions = [iIslam]
 			
 			if not self.isFreePlot(tPlot, bForceSpawn): continue
 			
@@ -456,9 +458,27 @@ class Barbs:
 			
 			city.setName(sName, False)
 			city.setPopulation(iPopulation)
-			
-			plot.changeCulture(iPlayer, 10 * (gc.getGame().getCurrentEra() + 1), True)
-			city.changeCulture(iPlayer, 10 * (gc.getGame().getCurrentEra() + 1), True)
+			if sName in ['Tucume'] : 
+				utils.makeUnit(iWorker, iPlayer, tPlot, 1)
+				plot.changeCulture(iPlayer, 20 * (gc.getGame().getCurrentEra() + 1), True)
+				city.changeCulture(iPlayer, 20 * (gc.getGame().getCurrentEra() + 1), True)
+
+			elif sName == 'Chan Chan':
+				city.setHasRealBuilding(iGranary, True)
+				city.setHasRealBuilding(iLighthouse, True)
+				city.setHasRealBuilding(iBarracks, True)
+				plot.changeCulture(iPlayer, 20 * (gc.getGame().getCurrentEra() + 1), True)
+				city.changeCulture(iPlayer, 20 * (gc.getGame().getCurrentEra() + 1), True)
+
+			elif sName == 'Bahrein':
+				city.setHasRealBuilding(iIslamicTemple, True)
+				city.setHasRealBuilding(iLighthouse, True)
+				city.setHasRealBuilding(iBarracks, True)
+				plot.changeCulture(iPlayer, 20 * (gc.getGame().getCurrentEra() + 1), True)
+				city.changeCulture(iPlayer, 20 * (gc.getGame().getCurrentEra() + 1), True)
+			else:
+			                plot.changeCulture(iPlayer, 10 * (gc.getGame().getCurrentEra() + 1), True)
+			                city.changeCulture(iPlayer, 10 * (gc.getGame().getCurrentEra() + 1), True)
 			
 			if iNumUnits > 0 and iUnitType > 0:
 				utils.makeUnit(iUnitType, iPlayer, tPlot, iNumUnits)

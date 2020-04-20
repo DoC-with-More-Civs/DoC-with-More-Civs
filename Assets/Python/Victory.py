@@ -422,7 +422,9 @@ def checkTurn(iGameTurn, iPlayer):
 			expire(iHarappa, 2)
 
 	elif iPlayer == iNorteChico:
-		# first goal: Have a capital with developing culture in 1800 BC
+		# NorteChico
+	 if not pNorteChico.isReborn():
+	 	# first goal: Have a capital with developing culture in 1800 BC
 		if iGameTurn == getTurnForYear(-1800):
 			if (pNorteChico.getCapitalCity().getCulture(iNorteChico) >= gc.getCultureLevelInfo(3).getSpeedThreshold(gc.getGame().getGameSpeedType())):
 				win(iNorteChico, 0)
@@ -437,6 +439,41 @@ def checkTurn(iGameTurn, iPlayer):
 				win(iNorteChico, 2)
 			else:
 				lose(iNorteChico, 2)
+					
+		# NorteChico			
+	 else:
+	 	
+		# first goal: Build two Kanchas by 1300 CE
+
+		if isPossible(iNorteChico, 0):
+			bKancha = getNumBuildings(iNorteChico, iKancha) >= 2
+
+			if bKancha:
+				win(iNorteChico, 0)
+
+		if iGameTurn == getTurnForYear(1300):
+			expire(iNorteChico, 0)
+
+		# second goal: Conquer or vassalize the Inca by 1475 CE
+		if isPossible(iNorteChico, 1):
+			bInca = iGameTurn >= getTurnForYear(tBirth[iInca]) and isControlledOrVassalized(iNorteChico, Areas.getCoreArea(iInca, True))
+
+			if bInca:
+				win(iNorteChico, 1)
+
+
+		if iGameTurn == getTurnForYear(1475):
+			expire(iNorteChico, 1)
+
+		# third goal: Settle three great artists in your capital by 1500 CE
+		if isPossible(iNorteChico, 2):
+			bArtist = countCitySpecialists(iNorteChico, Areas.getCapital(iNorteChico), iSpecialistGreatArtist) >= 3
+
+			if bArtist:
+				win(iNorteChico, 2)
+
+		if iGameTurn == getTurnForYear(1500):
+			expire(iNorteChico, 2)
 				
 	elif iPlayer == iNubia:
 		# first goal: Build the Pyramids in Kerma by 656 BC and Control Egypt for 1000 years
@@ -4682,24 +4719,6 @@ def getUHVHelp(iPlayer, iGoal):
 		elif iGoal == 2:
 			iNumPopulation = pHarappa.getTotalPopulation()
 			aHelp.append(getIcon(iNumPopulation >= 30) + localText.getText("TXT_KEY_VICTORY_TOTAL_POPULATION", (iNumPopulation, 30)))
-			
-	elif iPlayer == iNorteChico:
-		if iGoal == 0:
-			capital = pNorteChico.getCapitalCity()
-			iCulture = capital.getCulture(iNorteChico)
-			iRequiredCulture = gc.getCultureLevelInfo(3).getSpeedThreshold(gc.getGame().getGameSpeedType())
-			aHelp.append(getIcon(iCulture >= iRequiredCulture) + localText.getText("TXT_KEY_VICTORY_CAPITAL_CULTURE", (capital.getName(), iCulture, iRequiredCulture)))
-
-		if iGoal == 1:
-			bWriting = data.lFirstDiscovered[iWriting] == iNorteChico
-			bCalendar = data.lFirstDiscovered[iCalendar] == iNorteChico
-			aHelp.append(getIcon(bWriting) + localText.getText("TXT_KEY_TECH_WRITING", ()) + ' ' + getIcon(bCalendar) + localText.getText("TXT_KEY_TECH_CALENDAR", ()))
-
-		if iGoal == 2:
-			capital = pNorteChico.getCapitalCity()
-			iPop = capital.getPopulation()
-			iBuildings = capital.getNumBuildings()
-			aHelp.append(getIcon(iPop >= 5) + localText.getText("TXT_KEY_VICTORY_CAPITAL_POPULATION", (capital.getName(), iPop, 5)) + ' ' + getIcon(iBuildings >= 5) + localText.getText("TXT_KEY_VICTORY_CAPITAL_BUILDINGS", (capital.getName(), iBuildings + 1, 6)))
 
 	elif iPlayer == iBabylonia:
 		if iGoal == 0:
@@ -4718,7 +4737,39 @@ def getUHVHelp(iPlayer, iGoal):
 			pBestCity = getBestCity(iBabylonia, (89, 47), cityCulture)
 			bBestCity = isBestCity(iBabylonia, (89, 47), cityCulture)
 			aHelp.append(getIcon(bBestCity) + localText.getText("TXT_KEY_VICTORY_MOST_CULTURED_CITY", (pBestCity.getName(),)))
-			
+
+	elif iPlayer == iNorteChico:
+	 if not pNorteChico.isReborn():
+		if iGoal == 0:
+			capital = pNorteChico.getCapitalCity()
+			iCulture = capital.getCulture(iNorteChico)
+			iRequiredCulture = gc.getCultureLevelInfo(3).getSpeedThreshold(gc.getGame().getGameSpeedType())
+			aHelp.append(getIcon(iCulture >= iRequiredCulture) + localText.getText("TXT_KEY_VICTORY_CAPITAL_CULTURE", (capital.getName(), iCulture, iRequiredCulture)))
+
+		if iGoal == 1:
+			bWriting = data.lFirstDiscovered[iWriting] == iNorteChico
+			bCalendar = data.lFirstDiscovered[iCalendar] == iNorteChico
+			aHelp.append(getIcon(bWriting) + localText.getText("TXT_KEY_TECH_WRITING", ()) + ' ' + getIcon(bCalendar) + localText.getText("TXT_KEY_TECH_CALENDAR", ()))
+
+		if iGoal == 2:
+			capital = pNorteChico.getCapitalCity()
+			iPop = capital.getPopulation()
+			iBuildings = capital.getNumBuildings()
+			aHelp.append(getIcon(iPop >= 5) + localText.getText("TXT_KEY_VICTORY_CAPITAL_POPULATION", (capital.getName(), iPop, 5)) + ' ' + getIcon(iBuildings >= 5) + localText.getText("TXT_KEY_VICTORY_CAPITAL_BUILDINGS", (capital.getName(), iBuildings + 1, 6)))
+	 else:
+
+		if iGoal == 0:
+			iNumKancha = getNumBuildings(iNorteChico, iKancha)
+			aHelp.append(getIcon(iNumKancha >= 2) + localText.getText("TXT_KEY_VICTORY_NUM_STRING" , ("TXT_KEY_BUILDING_CHIMU_KANCHA", iNumKancha, 2)))
+
+		if iGoal == 1:
+			bInca = isControlledOrVassalized(iNorteChico, Areas.getCoreArea(iInca, True))
+			aHelp.append(getIcon(bInca) + localText.getText("TXT_KEY_CIV_INCA_SHORT_DESC", ()))
+
+		if iGoal == 2:
+			iArtist = countCitySpecialists(iNorteChico, Areas.getCapital(iNorteChico), iSpecialistGreatArtist)
+			aHelp.append(getIcon(iArtist >= 3) + localText.getText("TXT_KEY_VICTORY_NUM_STRING", ("TXT_KEY_SPECIALIST_GREAT_ARTIST", iArtist, 3)))
+		
 	elif iPlayer == iNubia:
 		if iGoal == 0:
 			bPyramids = isBuildingInCity((78, 37), iPyramids)

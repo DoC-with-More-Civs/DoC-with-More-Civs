@@ -179,7 +179,8 @@ iChina : (124, 56),	# Beijing
 iIndia : (105, 46),	# Delhi			
 iCarthage : (67, 48),	# Carthage			
 iPersia : (93, 48),	# Esfahan (Iran)			
-iMaya : (29, 34),	# Bogota (Colombia)			
+iNorteChico : (27, 28),	# Chimu			
+iMaya : (29, 34),	# Bogota (Colombia)		
 iTamils : (105, 36),	# Vijayanagara			
 iChad : (71, 34),     #N'Djamena				
 iKhmer : (121, 41),	# Hanoi			
@@ -402,7 +403,8 @@ tCoreArea = (
 ((83, 44), 	(84, 47)), 	# Israel		
 )				
 				
-dChangedCoreArea = {				
+dChangedCoreArea = {			
+iNorteChico :	((26, 26),	(27, 32)),	# Chimu				
 iChina : ((119, 47),	(129, 56)),			
 iGreece :	((75, 49),	(79, 52)),		
 iIndia :	((103, 37),	(106, 41)),		
@@ -552,7 +554,8 @@ tNormalArea = (
 ((83, 44), 	(84, 47)), 	# Israel		
 )				
 				
-dChangedNormalArea = {				
+dChangedNormalArea = {	
+iNorteChico : 	((26, 26),	(27, 32)),	# Chimu					
 iIndia : 	((96, 42),	(97, 42)),		
 iCarthage :	((63, 45),	(70, 48)),		
 iMaya : 	((26, 30),	(35, 38)),	# Colombia	
@@ -682,7 +685,8 @@ tBroaderArea = (
 ((83, 44), 	(84, 47)), 	# Israel		
 )				
 				
-dChangedBroaderArea = {				
+dChangedBroaderArea = {	
+iNorteChico : 	((26, 26),	(27, 32)),	# Chimu				
 iCarthage :	((57, 43),	(73, 54)), 	# Carthage	
 iMaya :		((26, 27),	(38, 38)),	# Colombia
 iByzantium :	((64, 38),	(74, 45)),		
@@ -712,13 +716,15 @@ iInca : [(33, 27), (33, 28), (33, 29), (34, 27), (34, 28), (34, 29), (35, 27), (
 				
 ### Rebirth area ###				
 				
-dRebirthPlot = {				
+dRebirthPlot = {			
+iNorteChico : (27, 28),	# Chimu					
 iPersia : (93, 48),	# Esfahan (Iran)			
 iMaya : (29, 34),	# Bogota (Colombia)			
 iAztecs : (17, 43),	# Mexico City (Mexico)			
 }				
 				
-dRebirthArea = {				
+dRebirthArea = {	
+iNorteChico : 	((26, 26),	(27, 32)),	# Chimu				
 iPersia :	((90, 43),	(98, 53)),	# Iran	
 iMaya : ((26, 30),	(36, 38)),	# Colombia		
 iAztecs : ((7, 41),	(23, 55)),	# Mexico		

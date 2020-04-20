@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Inca -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CHIMU_DESC</Tag>
+		<English>The Chimu</English>
+		<French>The Chimu</French>
+		<German>The Chimu</German>
+		<Italian>The Chimu</Italian>
+		<Spanish>The Chimu</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CHIMU_PEOPLES</Tag>
+		<English>Andean Peoples</English>
+		<French>
+			<Text>Peuplades andines</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</French>
+		<German>
+			<Text>Andenv&#246;lker:Andenv&#246;lker:Andenv&#246;lkern</Text>
+			<Gender>Female:Female:Female</Gender>
+			<Plural>1:1:1</Plural>
+		</German>
+		<Italian>
+			<Text>Popoli Andini</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Pueblos Andinos</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CHIMU_DEFAULT</Tag>
+		<English>Chimu Empire</English>
+		<French>Chimu Empire</French>
+		<German>Chimu Empire</German>
+		<Italian>Chimu Empire</Italian>
+		<Spanish>Chimu Empire</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CHIMU_ADJECTIVE</Tag>
+		<English>Chimu</English>
+		<French>Chimu</French>
+		<German>Chimu</German>
+		<Italian>Chimu</Italian>
+		<Spanish>Chimu</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CHIMU_SHORT_DESC</Tag>
+		<English>Chimu</English>
+		<French>Chimu</French>
+		<German>Chimu</German>
+		<Italian>Chimu</Italian>
+		<Spanish>Chimu</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CHIMU_KANCHA</Tag>
+		<English>Kancha</English>
+		<French>Kancha</French>
+		<German>Kancha</German>
+		<Italian>Kancha</Italian>
+		<Spanish>Kancha</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_TACAYNAMO</Tag>
+		<English>Tacaynamo</English>
+		<French>Tacaynamo</French>
+		<German>Tacaynamo</German>
+		<Italian>Tacaynamo</Italian>
+		<Spanish>Tacaynamo</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_AREA_95</Tag>
+		<English>Inca</English>
+		<French>Inca</French>
+		<German>Inca</German>
+		<Italian>Inca</Italian>
+		<Spanish>Inca</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_AREA_96</Tag>
+		<English>Northwestern South America</English>
+		<French>Northwestern South America</French>
+		<German>Northwestern South America</German>
+		<Italian>Northwestern South America</Italian>
+		<Spanish>Northwestern South America</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_CMU_TITLE</Tag>
+		<English>The Power of the Mochica Heritage:</English>
+		<French>Le pouvoir des mochica heritage:</French>
+		<German>Die Macht der Mochica Heritage:</German>
+		<Italian>Il potere delle mochica heritage:</Italian>
+		<Spanish>El poder de las mochica heritage:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_CMU</Tag>
+		<English>Recieves a Free specialist in the capital for every other improved resource in Northwestern South American.</English>
+		<French>Recieves a Free specialist in the capital for every other improved resource in Northwestern South American.</French>
+		<German>Recieves a Free specialist in the capital for every other improved resource in Northwestern South American.</German>
+		<Italian>Recieves a Free specialist in the capital for every other improved resource in Northwestern South American.</Italian>
+		<Spanish>Recieves a Free specialist in the capital for every other improved resource in Northwestern South American.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CHIMU_SC_AUCAC</Tag>
+		<English>Suchuc Chiqui Aucac</English>
+		<French>Suchuc Chiqui Aucac</French>
+		<German>Suchuc Chiqui Aucac</German>
+		<Italian>Suchuc Chiqui Aucac</Italian>
+		<Spanish>Suchuc Chiqui Aucac</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_CMU1_TITLE</Tag>
+		<English>The Mighty Paramonga</English>
+		<French>The Mighty Paramonga</French>
+		<German>The Mighty Paramonga</German>
+		<Italian>The Mighty Paramonga</Italian>
+		<Spanish>The Mighty Paramonga</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_CMU1</Tag>
+		<English>Build two Kanchas by 1300 CE</English>
+		<French>Build two Kanchas by 1300 CE</French>
+		<German>Build two Kanchas by 1300 CE</German>
+		<Italian>Build two Kanchas by 1300 CE</Italian>
+		<Spanish>Build two Kanchas by 1300 CE</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_CMU2_TITLE</Tag>
+		<English>Minchancaman Revenge</English>
+		<French>Minchancaman Revenge</French>
+		<German>Minchancaman Revenge</German>
+		<Italian>Minchancaman Revenge</Italian>
+		<Spanish>Minchancaman Revenge</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_CMU2</Tag>
+		<English>Conquer or vassalize the Inca by 1475 CE</English>
+		<French>Conquer or vassalize the Inca by 1475 CE</French>
+		<German>Conquer or vassalize the Inca by 1475 CE</German>
+		<Italian>Conquer or vassalize the Inca by 1475 CE</Italian>
+		<Spanish>Conquer or vassalize the Inca by 1475 CE</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_CMU3_TITLE</Tag>
+		<English>The Lambayeque-Sipan Conection</English>
+		<French>The Lambayeque-Sipan Conection</French>
+		<German>The Lambayeque-Sipan Conection</German>
+		<Italian>The Lambayeque-Sipan Conection</Italian>
+		<Spanish>The Lambayeque-Sipan Conection</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_CMU3</Tag>
+		<English>Settle three great artists in your capital by 1500 CE</English>
+		<French>Settle three great artists in your capital by 1500 CE</French>
+		<German>Settle three great artists in your capital by 1500 CE</German>
+		<Italian>Settle three great artists in your capital by 1500 CE</Italian>
+		<Spanish>Settle three great artists in your capital by 1500 CE</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_NUM_STRING</Tag>
+		<English>%s1: %d2 / %d3</English>
+		<French>%s1: %d2 / %d3</French>
+		<German>%s1: %d2 / %d3</German>
+		<Italian>%s1: %d2 / %d3</Italian>
+		<Spanish>%s1: %d2 / %d3</Spanish>
+	</TEXT>
+</Civ4GameText>

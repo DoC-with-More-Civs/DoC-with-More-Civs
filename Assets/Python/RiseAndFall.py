@@ -1060,7 +1060,11 @@ class RiseAndFall:
 		gc.getPlayer(iCiv).setLatestRebellionTurn(getTurnForYear(dRebirth[iCiv]))
 
 		# adjust gold, civics, religion and other special settings
-		if iCiv == iPersia:
+		if iCiv == iNorteChico:
+			pNorteChico.setGold(100)
+			pNorteChico.setCivics(iCivicsGovernment, iDespotism)
+			pNorteChico.setCivics(iCivicsReligion, iClergy)
+		elif iCiv == iPersia:
 			pPersia.setGold(600)
 			pPersia.setLastStateReligion(iIslam)
 			pPersia.setCivics(iCivicsGovernment, iMonarchy)
@@ -2067,7 +2071,10 @@ class RiseAndFall:
 							
 						if iNewWorldCiv == iInca:
 							utils.makeUnitAI(iAucac, iOldWorldCiv, tArrivalPlot, UnitAITypes.UNITAI_ATTACK_CITY, 3)
-						elif iNewWorldCiv == iAztecs or iNewWorldCiv == iTeotihuacan:
+						elif iNewWorldCiv == iAztecs:
+							utils.makeUnitAI(iJaguar, iOldWorldCiv, tArrivalPlot, UnitAITypes.UNITAI_ATTACK_CITY, 2)
+							utils.makeUnitAI(iHolkan, iOldWorldCiv, tArrivalPlot, UnitAITypes.UNITAI_ATTACK_CITY, 1)
+						elif iNewWorldCiv == iTeotihuacan:
 							utils.makeUnitAI(iJaguar, iOldWorldCiv, tArrivalPlot, UnitAITypes.UNITAI_ATTACK_CITY, 2)
 							utils.makeUnitAI(iHolkan, iOldWorldCiv, tArrivalPlot, UnitAITypes.UNITAI_ATTACK_CITY, 1)
 						elif iNewWorldCiv == iMaya:
@@ -3207,7 +3214,11 @@ class RiseAndFall:
 		self.startWarsOnSpawn(iCiv, false)
 
 	def createRespawnUnits(self, iCiv, tPlot):
-		if iCiv == iPersia:
+		if iCiv == iNorteChico:
+			utils.makeUnit(iChimuSuchucChiquiAucac, iCiv, tPlot, 2)
+			utils.makeUnit(iArcher, iCiv, tPlot, 1)
+			utils.makeUnit(iWorker, iCiv, tPlot, 1)
+		elif iCiv == iPersia:
 			utils.makeUnit(iQizilbash, iCiv, tPlot, 6)
 			utils.makeUnit(iBombard, iCiv, tPlot, 3)
 			utils.makeUnit(iWorker, iCiv, tPlot, 3)

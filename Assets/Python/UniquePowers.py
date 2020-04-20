@@ -45,6 +45,9 @@ PyPlayer = PyHelpers.PyPlayer
 tRussianTopLeft = (65, 49)
 tRussianBottomRight = (121, 65)
 
+tChimuBR = (30, 36)
+tChimuTL = (26, 21)
+
 iMongolianRadius = 4
 iMongolianTimer = 1
 
@@ -396,6 +399,7 @@ class UniquePowers:
 			lCities = []
 			bNewWorld = pPlayer.getCapitalCity().getRegionID() in lNewWorld
 			for city in utils.getCityList(iPlayer):
+				if not city.isHasReligion(iJudaism): continue
 				iFoodDifference = city.foodDifference(False)
 				iHappinessDifference = city.happyLevel() - city.unhappyLevel(0)
 				if city.getRegionID() in lNewWorld and bNewWorld:
