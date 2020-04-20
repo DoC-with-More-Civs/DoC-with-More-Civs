@@ -556,7 +556,7 @@ tResurrectionIntervals = (
 [(664, -343)], #Egypt
 [(-3000, -500)], #Babylonia
 [],		# Harappa
-[(900, 1365)],		# Norte Chico
+[],		# Norte Chico
 [(-785, 350), (350, 1365), (1504, 2020)], #Nubia
 [],		# Assyria
 [(-300, 2020)], #China
@@ -704,7 +704,7 @@ lEnemyCivsOnSpawn = [
 # Leoreth: date-triggered respawn for certain civs
 lEnemyCivsOnRespawn = {
 iPersia : [iOttomans, iRussia, iOman, iOman],		# Iran
-iNorteChico : [],		# Colombia
+iNorteChico : [iTiwanaku, iWari],		# Chimu
 iMaya : [],		# Colombia
 iAztecs : [iAmerica],		# Mexico
 }
@@ -946,7 +946,7 @@ tResurrectionProb = (
 80, #Egypt
 95, #Babylonia
 0, #Harappa
-100, #Norte Chico
+0, #Norte Chico
 60, #Nubia
 0, #Assyria
 100, #China
@@ -1167,7 +1167,7 @@ iHuscarl, iGhazi, iPombos, iDoppelSoldner, iKallarani, iSpearman, iHoplite, iSac
 iLandsknecht, iTagmata, iAshigaru, iDobDob, iRozwiWarrior, iArquebusier, iFirelancer, iTercio, iStrelets, iJanissary, iOromoWarrior, iQizilbash, iMohawk, iMusketeer, iBandeirantes, 
 iRedcoat, iKarolin, iFusilier, iMinuteman, iIronHelmet, iRifleman, iMehalSefari, iMahardlek, iGrenadier, iRocketeer, iGrenzer, iAlbionLegion, iGardist, iNaffatun, iAntiTank, 
 iInfantry, iBersagliere, iPatricios, iEjercito, iSepoy, iDigger, iSamInfantry, iMobileSam, iMarine, iNavySeal, iGuardaNacional, iParatrooper, iMechanizedInfantry, iArcher, iAsharittuBowman, iMedjay, iPictaAucac,
-iSkirmisher, iHolkan, iKelebolo, iChimuSuchucChiquiAucac, iLongbowman, iPatiyodha, Ngolo, iSlinger, iRattanArcher, iCrossbowman, iChokonu, iBalestriere, iChariot, iWarChariot, 
+iSkirmisher, iHolkan, iKelebolo, iChimuSuchucChiquiAucac, iLongbowman, iPatiyodha, iNgolo, iSlinger, iRattanArcher, iCrossbowman, iChokonu, iBalestriere, iChariot, iWarChariot, 
 iHuluganni, iCidainh, iScythedChariot, iHorseman, iCompanion, iNumidianCavalry, iAsvaka, iCamelRider, iHorseArcher, iMangudai, iKhampa, 
 iOghuz, iBerber, iCamelArcher, iArabianCamelArcher, iLancer, iIronpagoda, iVaru, iSavaran, iMobileGuard, iKeshik, iCataphract, iChangSuek, iRoyalMamluk, iYanLifida, iHuszar, iFarari, iChevalier, iGhulamWarrior, 
 iPistolier, iMountedBrave, iSavannaHunter, iCamelGunner, iMoorsCamelGunner, iCuirassier, iEightBanner, iGendarme, iConquistador, iWingedHussar, iCondotierro, iHussar, iCossack, iLlanero, 
