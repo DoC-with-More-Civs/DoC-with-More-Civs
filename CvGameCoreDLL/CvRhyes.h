@@ -16,7 +16,7 @@ typedef list<char*> LISTCHAR;
 
 #define NUM_MAJOR_PLAYERS		(71)
 #define NUM_MINORS				(4)	 // Independent, Independent2, Natives, #Celtia, Barbarians
-#define NUM_CIVS				(77)
+#define NUM_CIVS				(78)
 
 #define NUM_ERAS				(ERA_DIGITAL+1)
 

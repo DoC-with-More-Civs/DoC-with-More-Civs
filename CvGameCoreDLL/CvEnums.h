@@ -1285,6 +1285,7 @@ enum LeaderHeadTypes			// Exposed to Python
 	MALKU_HUYUSTUS,
 	WARI_CAPAC,
 	ASHUR,
+	TACAYNAMO,
 	NUM_LEADERHEADS
 };
 
