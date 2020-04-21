@@ -2,6 +2,44 @@
 <!-- Harappa -->
 <Civ4GameText xmlns="http://www.firaxis.com">
 	<TEXT>
+		<Tag>TXT_KEY_CIV_SCOTLAND_DESC</Tag>
+		<English>The Scottish</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SCOTTISH_SHIELING</Tag>
+		<English>Shieling</English>
+		<French>Shieling</French>
+		<German>Shieling</German>
+		<Italian>Shieling</Italian>
+		<Spanish>Shieling</Spanish>
+		<Portuguese>Shieling</Portuguese>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SCOTTISH_SHIELING_PEDIA</Tag>
+		<English>[TAB]A Shieling is a hut or collection of huts once common in a wild or lonely place in the hills and mountains of Scotland and northern England. The word also refers to a mountain pasture used for the grazing of cattle in summer.[PARAGRAPH:2]During summer, farmers along with their families lived in shieling to have their livestock graze common land. Shielings were therefore associated with the transhumance system of agriculture, that being the seasonal movement of people along their livestock between fixed summer and winter pastures. The mountain huts generally fell out of use by the end of the 17th century, although in remote areas this system continued into the 18th.</English>
+		<French>.</French>
+		<German></German>
+		<Italian>.</Italian>
+		<Spanish>.</Spanish>
+		<Portuguese>.</Portuguese>
+	</TEXT>
+                 <TEXT>
+		<Tag>TXT_KEY_UP_SCO</Tag>
+		<English>Cities start with extra Culture.</English>
+		<French>Cities start with extra Culture.</French>
+		<German>Cities start with extra Culture.</German>
+		<Italian>Cities start with extra Culture.</Italian>
+		<Spanish>Cities start with extra Culture.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_SCO_TITLE</Tag>
+		<English>The Power of Ceilidh:</English>
+		<French>The Power of Ceilidh:</French>
+		<German>The Power of Ceilidh:</German>
+		<Italian>The Power of Ceilidh:</Italian>
+		<Spanish>The Power of Ceilidh:</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_CIV_CELTIA_DESC</Tag>
 		<English>The Celts</English>
 		<French>The Celts</French>
@@ -139,7 +177,7 @@
 	</TEXT>
                  <TEXT>
 		<Tag>TXT_KEY_UP_CEL</Tag>
-		<English>Cities start with extra Culture..</English>
+		<English>Cities start with extra Culture.</English>
 		<French>Cities start with extra Culture.</French>
 		<German>Cities start with extra Culture.</German>
 		<Italian>Cities start with extra Culture.</Italian>

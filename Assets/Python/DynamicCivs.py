@@ -638,7 +638,6 @@ dStartingLeaders = [
 # 600 AD
 {
 	iChina : iTaizong,
-	iCeltia : iRobert,
 },
 # 1700 AD
 {
@@ -1980,6 +1979,10 @@ def specificTitle(iPlayer, lPreviousOwners=[]):
 		if bEmpire and iEra > iAncient:
 			return "TXT_KEY_CIV_BABYLONIA_NEO_EMPIRE"
 			
+	elif iPlayer == iNorteChico:
+		if bReborn:
+			return "TXT_KEY_CIV_CHIMU_EMPIRE"
+			
 	elif iPlayer == iGreece:
 		if bEmpire:
 			return "TXT_KEY_EMPIRE_ADJECTIVE"
@@ -2503,14 +2506,17 @@ def leader(iPlayer):
 		if iEra >= iMedieval: return iTaizong
 		
 	elif iPlayer == iCeltia:
-		if iGameTurn >= getTurnForYear(100): return iBoudica
-
-		if iGameTurn >= getTurnForYear(600): return iRobert
-
-		if iGameTurn >= getTurnForYear(1900): return iCollins
+		if bReborn:
+			if iEra >= iGlobal: return iCollins
+			
+			return iRobert
 		
 	elif iPlayer == iBabylonia:
 		if iGameTurn >= getTurnForYear(-1600): return iHammurabi
+	
+	elif iPlayer == iNorteChico:
+		if bReborn:
+			return iTacaynamo
 		
 	elif iPlayer == iGreece:
 		if iEra >= iIndustrial: return iGeorge

@@ -293,9 +293,6 @@ class RiseAndFall:
 			self.adjust600ADWonders()
 			self.adjust600ADGreatPeople()
 			
-
-			for iPlayer in [iCeltia]:
-				utils.setReborn(iPlayer, True)
 			
 
 		if utils.getScenario() == i1700AD:
@@ -861,7 +858,7 @@ class RiseAndFall:
 					gc.getMap().plot(71, 40).setRouteType(gc.getInfoTypeForString("ROUTE_ROAD"))
 					gc.getMap().plot(71, 40).setImprovementType(gc.getInfoTypeForString("IMPROVEMENT_MINE"))
 			
-		if iGameTurn == getTurnForYear(476):
+		if iGameTurn == getTurnForYear(1100):
 			if pItaly.isHuman() and pRome.isAlive():
 				sta.completeCollapse(iRome)
 				
@@ -972,6 +969,10 @@ class RiseAndFall:
 					self.rebirthFirstTurn(iCiv)
 				if iGameTurn == getTurnForYear(dRebirth[iCiv])+1 and gc.getPlayer(iCiv).isAlive() and utils.isReborn(iCiv):
 					self.rebirthSecondTurn(iCiv)
+		
+		# h0spitall3rz: for 600 AD scenario, force collapse Sassanid Persia
+		if iGameTurn == getTurnForYear(1120)  and pRome.isAlive() and not pRome.isHuman():
+			sta.completeCollapse(iRome)
 					
 	def endTurn(self, iPlayer):
 		for tTimedConquest in data.lTimedConquests:
@@ -1064,6 +1065,10 @@ class RiseAndFall:
 			pNorteChico.setGold(100)
 			pNorteChico.setCivics(iCivicsGovernment, iDespotism)
 			pNorteChico.setCivics(iCivicsReligion, iClergy)
+		elif iCiv == iCeltia:
+			pCeltia.setGold(200)
+			pCeltia.setCivics(iCivicsGovernment, iDespotism)
+			pCeltia.setCivics(iCivicsReligion, iClergy)
 		elif iCiv == iPersia:
 			pPersia.setGold(600)
 			pPersia.setLastStateReligion(iIslam)
@@ -3217,6 +3222,9 @@ class RiseAndFall:
 		if iCiv == iNorteChico:
 			utils.makeUnit(iChimuSuchucChiquiAucac, iCiv, tPlot, 2)
 			utils.makeUnit(iArcher, iCiv, tPlot, 1)
+			utils.makeUnit(iWorker, iCiv, tPlot, 1)
+		elif iCiv == iCeltia:
+			utils.makeUnit(iArcher, iCiv, tPlot, 2)
 			utils.makeUnit(iWorker, iCiv, tPlot, 1)
 		elif iCiv == iPersia:
 			utils.makeUnit(iQizilbash, iCiv, tPlot, 6)

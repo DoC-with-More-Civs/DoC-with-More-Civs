@@ -546,5 +546,11 @@
 			<ColorTypeSecondary>COLOR_PLAYER_DARK_RED</ColorTypeSecondary>
 			<TextColorType>COLOR_PLAYER_DARK_RED_TEXT</TextColorType>
 		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_SCOTLAND</Type>
+			<ColorTypePrimary>COLOR_PLAYER_MIDDLE_BLUE1</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_WHITE</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_MIDDLE_BLUE1_TEXT</TextColorType>
+		</PlayerColorInfo>
 	</PlayerColorInfos>
 </Civ4PlayerColorInfos>

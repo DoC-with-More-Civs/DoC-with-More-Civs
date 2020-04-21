@@ -47,8 +47,8 @@ tMinorCities = (
 (100, (88, 36), iIndependent, "Sana'a", 2, -1, -1),				# Sana'a
 (107, (117, 41), iIndependent2, 'Pugam', 2, -1, -1),			# Pagan
 (200, (87, 33), iIndependent2, 'Barbara', 2, iArcher, 2),	# Berbera
-(200, (54, 65), iIndependent, '&#193;th Cliath', 1, iArcher, 1),			# Dublin
-(200, (57, 69), iIndependent2, 'D&#249;n &#200;ideann', 1, iArcher, 1),			# Edinburgh
+(450, (54, 65), iIndependent, '&#193;th Cliath', 1, iArcher, 1),			# Dublin
+(450, (57, 69), iIndependent2, 'D&#249;n &#200;ideann', 1, iArcher, 1),			# Edinburgh
 (500, (123, 39), iIndependent, 'Indrapura', 2, iArcher, 1),		# Indrapura
 (500, (73, 54), iIndependent, "Ragusa", 3, iCrossbowman, 3), # Ragusa
 (500, (86, 39), iIndependent, 'Bakkah', 3, iArcher, 1),		# Mecca
@@ -64,13 +64,13 @@ tMinorCities = (
 #(830, (67, 65), iIndependent, 'L&#252;beck', 2, iCrossbowman, 1),	# Lubeck
 (860, (82, 68), iIndependent, 'Novgorod', 3, iCrossbowman, 3),		# Novgorod
 (870, (27, 28), iIndependent, 'Chan Chan', 2, iArcher, 2),			# Chan Chan
+(870, (26, 31), iNative, 'Tucume', 2, iPictaAucac, 3),			# Tucume
 (899, (92, 41), iIndependent, 'Bahrein', 2, iArcher, 2),			# Qarmatians (Abu Sa'id al-Jannabi)
 (900, (28, 25), iNative, 'Pachakamaq', 1, iArcher, 2),			# Pachacamac
 (900, (87, 30), iIndependent, 'Muqdisho', 3, iCrossbowman, 2),	# Mogadishu
-(920, (26, 32), iNative, 'Tucume', 2, iPictaAucac, 4),			# Tucume
 (944, (63, 48), iIndependent, "Dzayer", 3, iCrossbowman, 2),	# Algiers
 #(990, (130, 38), iIndependent, 'Maynila', 2, iArcher, 2),		# Manila
-(1000, (68, 75), iIndependent2, 'Nidaros', 1, iHuscarl, 1),		# Trondheim
+(1000, (68, 75), iIndependent2, 'Nidaros', 2, iHuscarl, 1),		# Trondheim
 (1000, (87, 30), iNative, 'Muqdisho', 1, iImpi, 1),				# Mogadishu
 (1115, (131, 61), iIndependent, "Huining", 3, iHorseArcher, 3),		# Huining
 (1154, (96, 40), iIndependent, "Masqat", 3, iCrossbowman, 3),	# Muscat
@@ -387,12 +387,7 @@ class Barbs:
 			self.foundMinorCities(iGameTurn)
 
 
-		if iGameTurn == getTurnForYear(410):
-			if utils.getHumanID() != iCeltia:
-				if gc.getMap().plot(54, 65).isCity() and gc.getMap().plot(57, 69).isCity():
-					sta.doResurrection(iCeltia, [gc.getMap().plot(54, 65).getPlotCity(), gc.getMap().plot(57, 69).getPlotCity()])
-
-
+		
 		if iGameTurn == getTurnForYear(-1200):	
 			pJerusalem = gc.getGame().getHolyCity(iJudaism)
 			if pJerusalem and pJerusalem.getOwner() >= iNumMajorPlayers:
@@ -459,7 +454,7 @@ class Barbs:
 			city.setName(sName, False)
 			city.setPopulation(iPopulation)
 			if sName in ['Tucume'] : 
-				utils.makeUnit(iWorker, iPlayer, tPlot, 1)
+				city.setHasRealBuilding(iGranary, True)
 				plot.changeCulture(iPlayer, 20 * (gc.getGame().getCurrentEra() + 1), True)
 				city.changeCulture(iPlayer, 20 * (gc.getGame().getCurrentEra() + 1), True)
 

@@ -37,4 +37,24 @@
 		<Tag>TXT_KEY_UP_ASS</Tag>
 		<English>Reduced unit keep cost.</English>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_LOMBARDIA_DESC</Tag>
+		<English>The Lombardia</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LOMBARDIA_ADJECTIVE</Tag>
+		<English>Lombard</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LOMBARDIA_SHORT_DESC</Tag>
+		<English>Lombard</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_LOMBARD_DEFAULT</Tag>
+		<English>Kingdom of Lombard</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_AISTULF</Tag>
+		<English>Aistulf</English>
+	</TEXT>
 </Civ4GameText>

@@ -334,7 +334,7 @@ BeginPlayer
 	CivShortDesc=TXT_KEY_CIV_CELTIA_SCOTLAND_SHORT_DESC
 	CivAdjective=TXT_KEY_CIV_CELTIA_SCOTLAND_ADJECTIVE
 	CivType=CIVILIZATION_CELT
-	PlayableCiv=1
+	PlayableCiv=0
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
@@ -353,9 +353,20 @@ BeginPlayer
 EndPlayer
 BeginPlayer
 	Team=13
-	LeaderType=LEADER_AUGUSTUS
+	LeaderType=LEADER_JULIUS_CAESAR
+	CivDesc=TXT_KEY_CIV_LOMBARDIA_DESC
+	CivShortDesc=TXT_KEY_LOMBARDIA_SHORT_DESC
+	CivAdjective=TXT_KEY_LOMBARDIA_ADJECTIVE
+	LeaderName=TXT_KEY_LEADER_AISTULF
+	StateReligion=RELIGION_CATHOLICISM
+	StartingGold=100
+	CivicOption=CIVICOPTION_GOVERNMENT, Civic=CIVIC_MONARCHY
+	CivicOption=CIVICOPTION_LEGITIMACY, Civic=CIVIC_CITIZENSHIP
+	CivicOption=CIVICOPTION_SOCIETY, Civic=CIVIC_SLAVERY
+	CivicOption=CIVICOPTION_ECONOMY, Civic=CIVIC_MERCHANT_TRADE
+	CivicOption=CIVICOPTION_RELIGION, Civic=CIVIC_CLERGY
 	CivType=CIVILIZATION_ROME
-	PlayableCiv=0
+	PlayableCiv=1
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
@@ -25562,17 +25573,18 @@ BeginPlot
 	x=54,y=65
 	TerrainType=TERRAIN_GRASS
                 BeginUnit
-		UnitType=UNIT_ARCHER, UnitOwner=10, (Celtia)
+		UnitType=UNIT_ARCHER, UnitOwner=72, (Independent2)
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_WORKER, UnitOwner=10, (Celtia)
+		UnitType=UNIT_WORKER, UnitOwner=72, (Independent2)
 	EndUnit
 	BeginCity
-		CityOwner=10, (Celtia)
+		CityOwner=72, (Independent2)
 		CityName=&#193;th Cliath
 		CityPopulation=3
 		BuildingType=BUILDING_MONUMENT
-		Player10Culture=20, (Celtia)
+		ReligionType=RELIGION_CATHOLICISM
+		Player72Culture=20, (Independent2)
 	EndCity
 	PlotType=2
 EndPlot
@@ -26899,19 +26911,19 @@ BeginPlot
 	RiverWEDirection=1
 	TerrainType=TERRAIN_GRASS
 	BeginUnit
-		UnitType=UNIT_ARCHER, UnitOwner=10, (Celtia)
+		UnitType=UNIT_ARCHER, UnitOwner=72, (Independent2)
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_WORKER, UnitOwner=10, (Celtia)
+		UnitType=UNIT_WORKER, UnitOwner=72, (Independent2)
 	EndUnit
 	BeginCity
-		CityOwner=10, (Celtia)
+		CityOwner=72, (Independent2)
 		CityName=D&#249;n &#200;ideann
 		CityPopulation=2
-		BuildingType=BUILDING_PALACE
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_MONUMENT
-		Player10Culture=20, (Celtia)
+		ReligionType=RELIGION_CATHOLICISM
+		Player72Culture=20, (Independent2)
 	EndCity
 	PlotType=2
 EndPlot
@@ -30980,22 +30992,22 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	BeginUnit
-		UnitType=UNIT_CROSSBOWMAN, UnitOwner=71, (Independent Leader)
-		Level=1, Experience=0
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_CROSSBOWMAN, UnitOwner=71, (Independent Leader)
-		Level=1, Experience=0
+		UnitType=UNIT_CROSSBOWMAN, UnitOwner=13, (Independent Leader2)
+		Level=3, Experience=5
+		PromotionType=PROMOTION_CITY_GARRISON1
+		PromotionType=PROMOTION_CITY_GARRISON2
 	EndUnit
 	BeginCity
-		CityOwner=71, (Independent Leader)
+		CityOwner=13, (Independent Leader)
 		CityName=Mediolanum
 		CityPopulation=3
+		BuildingType=BUILDING_WALLS
+		BuildingType=BUILDING_PALACE
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
 		BuildingType=BUILDING_CATHOLIC_TEMPLE
 		ReligionType=RELIGION_CATHOLICISM
-		Player71Culture=50, (Independent Leader)
+		Player13Culture=50, (Independent Leader)
 	EndCity
 EndPlot
 BeginPlot
@@ -31929,7 +31941,7 @@ BeginPlot
 		BuildingType=BUILDING_AQUA_APPIA
 		ReligionType=RELIGION_CATHOLICISM
 		HolyCityReligionType=RELIGION_CATHOLICISM
-		Player72Culture=400, (Independent Leader)
+		Player72Culture=200, (Independent Leader)
 	EndCity
 EndPlot
 BeginPlot
@@ -32483,23 +32495,22 @@ BeginPlot
 	TerrainType=TERRAIN_LAGOON
 	PlotType=2
 	BeginUnit
-		UnitType=UNIT_CROSSBOWMAN, UnitOwner=71, (Independent Leader)
-		Level=1, Experience=0
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_CROSSBOWMAN, UnitOwner=71, (Independent Leader)
-		Level=1, Experience=0
+		UnitType=UNIT_CROSSBOWMAN, UnitOwner=13, (Independent Leader2)
+		Level=3, Experience=5
+		PromotionType=PROMOTION_CITY_GARRISON1
+		PromotionType=PROMOTION_CITY_GARRISON2
 	EndUnit
 	BeginCity
-		CityOwner=71, (Independent Leader)
+		CityOwner=13, (Independent Leader)
 		CityName=Venetia
 		CityPopulation=2
+		BuildingType=BUILDING_WALLS
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
 		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_CATHOLIC_TEMPLE
 		ReligionType=RELIGION_CATHOLICISM
-		Player71Culture=50, (Independent Leader)
+		Player13Culture=50, (Independent Leader)
 	EndCity
 EndPlot
 BeginPlot
@@ -32964,7 +32975,7 @@ BeginPlot
 		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_CATHOLIC_TEMPLE
 		ReligionType=RELIGION_CATHOLICISM
-		Player21Culture=10, (Justinian I)
+		Player21Culture=100, (Justinian I)
 	EndCity
 EndPlot
 BeginPlot

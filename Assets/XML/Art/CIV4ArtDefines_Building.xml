@@ -4237,5 +4237,15 @@
 			<KFM/>
 			<Button>Art/Structures/Buildings/Calmecac/Calmecac_Button.dds</Button>
 		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_SCOTTISH_SHIELING</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>0.72</fScale>
+			<fInterfaceScale>0.69</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/scottish_shieling/NA_admiralty.nif</NIF>
+			<KFM/>
+			<Button>Art/Interface/Buttons/Buildings/scotland_shieling.dds</Button>
+		</BuildingArtInfo>
 	</BuildingArtInfos>
 </Civ4ArtDefines>

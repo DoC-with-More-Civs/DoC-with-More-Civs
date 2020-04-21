@@ -60,12 +60,12 @@ l0ArrayTotal =  [0 for i in range(iNumTotalPlayers)]
 lm1Array =      [-1 for i in range(iNumPlayers)]
 
 # civilizations, not players
-iNumCivilizations = 83
+iNumCivilizations = 84
 (iCivAmerica, iCivArabia, iCivArgentina, iCivAssyria, iCivAustralia, iCivAztec, iCivBabylonia, iCivBoers, iCivBrazil, iCivBurma, iCivByzantium, iCivCanada, iCivCarthage, iCivCelt, 
 iCivChad, iCivChimu, iCivChina, iCivColombia, iCivEgypt, iCivEngland, iCivEthiopia, iCivFrance, iCivGermany, iCivGreece, iCivHarappa, iCivHolyRome, iCivHungary, 
 iCivInca, iCivIndia, iCivIndonesia, iCivIran, iCivIsrael, iCivItaly, iCivJapan, iCivKhazars, iCivKhitan, iCivKhmer, iCivKievanRus, iCivKongo, iCivKorea, iCivMali, iCivMamluks, iCivManchuria,
 iCivMaya, iCivMexico, iCivMongols, iCivMoors, iCivMughals, iCivNativeAmericans, iCivNetherlands, iCivNigeria, iCivNorteChico, iCivNubia, iCivOman, iCivOttomans, iCivPersia, iCivPhilippines, iCivPoland, 
-iCivPolynesia, iCivPortugal, iCivRome, iCivRussia, iCivSpain, iCivSumeria, iCivSwahili, iCivSweden, iCivTamils, iCivTeotihuacan, iCivThailand, iCivTibet, iCivTiwanaku, iCivTurks, iCivVietnam,
+iCivPolynesia, iCivPortugal, iCivRome, iCivRussia, iCivScotland, iCivSpain, iCivSumeria, iCivSwahili, iCivSweden, iCivTamils, iCivTeotihuacan, iCivThailand, iCivTibet, iCivTiwanaku, iCivTurks, iCivVietnam,
 iCivVikings, iCivWari, iCivYemen, iCivZimbabwe, iCivZulu, iCivIndependent, iCivIndependent2, iCivNative, iCivMinor, iCivBarbarian) = range(iNumCivilizations)
 
 iCivCongo = iCivKongo
@@ -396,7 +396,7 @@ tFall = (
 -146,					# Greece
 600, # end of Gupta Empire		# India
 -146,					# Phoenicia
-200,					# Celtia
+100,					# Celtia
 1200,					# Polynesia
 651,					# Persia
 235, # crisis of the third century	# Rome
@@ -500,6 +500,7 @@ iCivKhitan : (-1, -1, -1),
 iCivKhmer : (1200, 1450, 1450),
 iCivYemen : (1229, 1265, -1),
 iCivEngland : (1730, 1800, -1),
+iCivScotland : (-1, -1, -1),
 iCivHolyRome : (1550, 1650, 1850),
 iCivKievanRus : (1327, -1, 1327),
 iCivHungary : (1301, 1867, -1),
@@ -540,6 +541,7 @@ iCivIsrael : (1980, 2000, -1),
 # Leoreth: date-triggered respawn for certain civs
 dRebirth = {
 iNorteChico : 900,		# Chimu
+iCeltia : 820,		# Scotland
 iPersia : 1501,		# Iran
 iMaya : 1814,		# Colombia
 iAztecs : 1810,		# Mexico
@@ -547,6 +549,7 @@ iAztecs : 1810,		# Mexico
 
 dRebirthCiv = {
 iNorteChico : iCivChimu,
+iCeltia : iCivScotland,
 iPersia : iCivIran,
 iMaya : iCivColombia,
 iAztecs : iCivMexico,
@@ -563,7 +566,7 @@ tResurrectionIntervals = (
 [(1800, 2020)], #Greece
 [(1600, 1800), (1900, 2020)], #India
 [(-1000, -150), (1956, 2020)], #Carthage
-[(200, 800), (1910, 2020)], #Celtia
+[(1910, 2020)], #Celtia
 [(700, 2020)],		# Polynesia
 [(220, 650), (1500, 2020)], #Persia
 [(-750, 450)], #Rome
@@ -667,7 +670,7 @@ lEnemyCivsOnSpawn = [
 [iChina, iChina, iChina, iKorea, iKorea],		# Khitan
 [], #Khmer
 [], #Yemen
-[iCeltia, iCeltia], #England
+[iCeltia, iCeltia, iCeltia], #England
 [iRome, iArabia, iArabia], #Holy Rome
 [iKhazars, iKhazars], #Kievan Rus
 [iKhazars],	#Hungary
@@ -678,7 +681,7 @@ lEnemyCivsOnSpawn = [
 [], #Poland
 [],	#Zimbabwe
 [], #Portugal
-[iTiwanaku, iTiwanaku, iTiwanaku, iWari, iWari, iWari], #Inca
+[iNorteChico, iNorteChico, iTiwanaku, iTiwanaku, iTiwanaku, iWari, iWari, iWari], #Inca
 [], #Italy
 [iChad],	#Nigeria
 [iChina, iChina, iChina, iKorea, iKorea, iTurks, iTurks, iTurks, iKhitan, iKhitan, iIndependent, iIndependent, iIndependent2, iIndependent2], #Mongolia
@@ -705,6 +708,7 @@ lEnemyCivsOnSpawn = [
 lEnemyCivsOnRespawn = {
 iPersia : [iOttomans, iRussia, iOman, iOman],		# Iran
 iNorteChico : [iTiwanaku, iWari],		# Chimu
+iCeltia : [],		# Scotland
 iMaya : [],		# Colombia
 iAztecs : [iAmerica],		# Mexico
 }
@@ -761,7 +765,7 @@ lTotalWarOnSpawn = [
 [], #Poland
 [],	#Zimbabwe
 [], #Portugal
-[], #Inca
+[iTiwanaku, iWari], #Inca
 [], #Italy
 [],	#Nigeria
 [iChina], #Mongolia
@@ -837,7 +841,7 @@ tAggressionLevel = (
 1, #Poland
 0, #Zimbabwe
 0, #Portugal
-1, #Inca
+3, #Inca
 0, #Italy
 0, #Nigeria
 2, #Mongolia
@@ -953,7 +957,7 @@ tResurrectionProb = (
 60, #Greece
 50, #India
 50, #Carthage
-70, #Celtia
+50, #Celtia
 40, #Polynesia
 80, #Persia
 75, #Rome
@@ -1211,8 +1215,8 @@ iGemsEmeralds, iSheepLlama, iSheepBlack, iCowBrown, iPigFurry, iIvoryAfrican, iC
 
 # Buildings
 
-iNumBuildings = 391
-(iPalace, iBarracks, iIkhanda, iCastra, iEkal, iGranary, iTerrace, iColcas, iSmokehouse, iKraal, iSaltovo, iPaganTemple, iMonument, iObelisk, iStele,
+iNumBuildings = 392
+(iPalace, iBarracks, iIkhanda, iCastra, iEkal, iGranary, iTerrace, iColcas, iSmokehouse, iShieling, iKraal, iSaltovo, iPaganTemple, iMonument, iObelisk, iStele,
 iCandi, iEdict, iMalae, iTotemPole, iZiara, iStatue, iDeffufas, iShicra, iWalls, iIya, iDun, iKasbah, iStable, iGer, iEstancia, iBullring, iLibrary, iEdubba,
 iTaixue, iHoTrai, iSangam, iPaya, iHarbor, iCothon, iFishery, iPort, iMina, iAqueduct, iBaray, iNoria, iStepwell, iChinampa, iAbAnbar, iDam, iTheatre, iOdeon,
 iHippodrome, iOpera, iArena, iBallCourt, iCharreadaArena, iGarden, iBasilica, iLighthouse, iTradingPost, iZango, iWeaver, iMbwadi,
@@ -1408,6 +1412,7 @@ resurrectionLeaders = {
 
 rebirthLeaders = {
 	iNorteChico : iTacaynamo,
+	iCeltia : iRobert,
 	iMaya : iBolivar,
 	iPersia : iAbbas,
 	iAztecs : iJuarez,
