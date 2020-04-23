@@ -106,7 +106,7 @@ tCapitals = (
 (28, 24), # Caral				
 (78, 37), # Kerma				
 (88, 50), # Assyria				
-(121, 52), # Chang'an				
+(124, 52), # Chang'an				
 (76, 51), # Athens				
 (110, 44), # Pataliputra				
 (84, 47), # Sur
@@ -231,7 +231,7 @@ tBirthArea = (
 ((119, 49),	(129, 56)),	# China		
 ((74, 48),	(80, 55)),	# Greece		
 ((101, 42),	(114, 48)),	# India		
-((83, 47),	(86, 49)),	# Carthage
+((83, 47),	(85, 49)),	# Carthage
 ((62, 58),	(67, 61)),	# Celtia		
 ((2, 19),	(6, 24)),	# Polynesia		
 ((91, 43),	(98, 52)),	# Persia		

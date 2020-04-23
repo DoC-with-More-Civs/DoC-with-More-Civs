@@ -18,10 +18,10 @@ PyPlayer = PyHelpers.PyPlayer	# LOQ
 tMinorCities = (
 (-3000, (84, 45), iIndependent, 'Yerushalayim', 2, iArcher, 3),	# Jerusalem
 (-3000, (124, 52), iIndependent2, 'Chengzhou', 2, iArcher, 1), 		# Luoyang
-(-2000, (92, 46), iIndependent, 'Shushan', 1, iArcher, 1), 		# Susa
+(-2000, (92, 46), iIndependent2, 'Shushan', 1, iArcher, 1), 		# Susa
 #(-2000, (88, 50), iIndependent2, 'Ashur', 2, iArcher, 2), 		# Assur
 (-2000, (100, 54), iIndependent, 'Afrasiyab', 1, iArcher, 1), 	# Samarkand
-(-2000, (108, 45), iIndependent, 'Varanasi', 1, iMilitia, 1), 	# Varanasi
+(-1600, (108, 45), iIndependent, 'Varanasi', 1, iMilitia, 1), 	# Varanasi
 (-1600, (105, 46), iIndependent, 'Indraprastha', 1, iMilitia, 1),	# Delhi
 (-1000, (124, 56), iIndependent2, 'Ji', 2, iSpearman, 1),	# Beijing
 (-1000, (82, 53), iIndependent, 'Ankuwash', 2, iArcher, 2),		# Ankara

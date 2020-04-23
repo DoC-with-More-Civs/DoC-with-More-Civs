@@ -1533,6 +1533,11 @@ def specificAdjective(iPlayer):
 			
 		if isCapital(iPlayer, ["Ninua", "Kalhu"]):
 			return "TXT_KEY_CIV_BABYLONIA_ASSYRIAN"
+
+	elif iPlayer == iNorteChico:
+		if bReborn:
+				if capital.getY() >= 26:
+					return "TXT_KEY_CIV_CHIMU_EMPIRE"
 			
 	elif iPlayer == iGreece:
 		if not bCityStates and bEmpire and iEra <= iClassical:
@@ -1566,7 +1571,7 @@ def specificAdjective(iPlayer):
 			if capital.getRegionID() == rBritain:
 				if capital.getX() <= 54:
 					return "TXT_KEY_CIV_CELTIA_IRELAND_ADJECTIVE"
-				elif capital.getY() >= 58:
+				elif capital.getY() >= 63:
 					return "TXT_KEY_CIV_CELTIA_SCOTLAND_ADJECTIVE"
 					
 		elif isCapital(iPlayer, ["Hallstat", "La Tene"]):
@@ -1581,6 +1586,9 @@ def specificAdjective(iPlayer):
 	elif iPlayer == iRome:
 		if pByzantium.isAlive():
 			return "TXT_KEY_CIV_ROME_WESTERN"
+
+		if capital.getY() >= 56:
+			return "TXT_KEY_CIV_LOMBARD"
 			
 	elif iPlayer == iTamils:
 		if iReligion == iIslam:
@@ -1978,10 +1986,6 @@ def specificTitle(iPlayer, lPreviousOwners=[]):
 			
 		if bEmpire and iEra > iAncient:
 			return "TXT_KEY_CIV_BABYLONIA_NEO_EMPIRE"
-			
-	elif iPlayer == iNorteChico:
-		if bReborn:
-			return "TXT_KEY_CIV_CHIMU_EMPIRE"
 			
 	elif iPlayer == iGreece:
 		if bEmpire:

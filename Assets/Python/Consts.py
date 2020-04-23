@@ -311,7 +311,7 @@ tBirth = (
 -3000,					# Norte Chico
 -2500,					# Nubia
 -2100,					# Assyria
--2070,					# China
+-2100,					# China
 -1600, # 50, #1600BC			# Greece
 -1500, # 0, #3000BC			# India
 -1200, # 66, #814BC # Leoreth: 1200 BC	# Carthage
