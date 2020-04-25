@@ -6830,6 +6830,16 @@ int CvPlayer::getProductionModifier(BuildingTypes eBuilding) const
 		}
 	}
 
+	// edead: start ARMENIA：UP: Piety
+	if (getID() == ARMENIA)
+	{
+		if (GC.getBuildingInfo(eBuilding).getSpecialBuildingType() != NO_SPECIALBUILDING && GC.getBuildingInfo(eBuilding).getPrereqReligion() == getStateReligion())
+		{
+			iMultiplier += 100;
+		}
+	}
+	// edead: end
+
 	// Leoreth: civics
 	iMultiplier += getBuildingProductionModifier(eBuilding);
 

@@ -1379,5 +1379,19 @@
 			<fBlue>0.700</fBlue>
 			<fAlpha>1.00</fAlpha>
 		</ColorVal>
+		<ColorVal>
+			<Type>COLOR_PLAYER_ARMENIA_PURPLE</Type>
+			<fRed>0.606</fRed>
+			<fGreen>0.020</fGreen>
+			<fBlue>0.735</fBlue>
+			<fAlpha>1.00</fAlpha>
+		</ColorVal>
+		<ColorVal>
+			<Type>COLOR_PLAYER_ARMENIA_PURPLE_TEXT</Type>
+			<fRed>0.733</fRed>
+			<fGreen>0.361</fGreen>
+			<fBlue>0.759</fBlue>
+			<fAlpha>1.00</fAlpha>
+		</ColorVal>
 	</ColorVals>
 </Civ4ColorVals>

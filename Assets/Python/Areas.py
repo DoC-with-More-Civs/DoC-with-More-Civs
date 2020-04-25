@@ -119,6 +119,7 @@ tCapitals = (
 (84, 35), # Aksum				
 (121, 42), # Co Loa (Hanoi)				
 (17, 43), # Tenotihuacan (Tollan)				
+(89, 53), # Armenia				
 (131, 54), # Seoul
 (34, 22), # Tiwanaku				
 (79, 55), # Constantinople
@@ -241,6 +242,7 @@ tBirthArea = (
 ((82, 32),	(86, 36)),	# Ethiopia		
 ((120, 40),	(122, 43)),	# Vietnam		
 ((16, 42),	(18, 47)), 	# Teotihuacan		
+((87, 53),	(91, 55)),	# Armenia		
 ((129, 52),	(133, 59)),	# Korea
 ((32, 17), (34, 22)),	# Tiwanaku		
 ((74, 44),	(86, 57)),	# Byzantium
@@ -350,6 +352,7 @@ tCoreArea = (
 ((82, 32),	(86, 36)),	# Ethiopia		
 ((120, 39),	(123, 43)),	# Vietnam		
 ((16, 42),	(18, 44)),	# Teotihuacan		
+((87, 53),	(91, 55)),	# Armenia			
 ((130, 52),	(133, 58)),	# Korea
 ((32, 17), (34, 22)),	# Tiwanaku		
 ((74, 49),	(84, 55)),	# Byzantium
@@ -501,6 +504,7 @@ tNormalArea = (
 ((81, 29),	(90, 36)),	# Ethiopia		
 ((120, 39), 	(123, 43)), 	# Vietnam		
 ((15, 42), 	(18, 45)), 	# Teotihuacan		
+((87, 53),	(91, 55)),	# Armenia			
 ((130, 53),	(132, 57)),	# Korea
 ((32, 17), (34, 22)),	# Tiwanaku		
 ((75, 49),	(84, 56)),	# Byzantium
@@ -635,6 +639,7 @@ tBroaderArea = (
 ((79, 24),	(90, 37)),	# Ethiopia	
 ((120, 39), 	(123, 43)), 	# Vietnam		
 ((15, 42), 	(18, 45)), 	# Teotihuacan		
+((87, 53),	(91, 55)),	# Armenia			
 ((128, 53),	(133, 61)),	# Korea
 ((32, 17), (34, 22)),	# Tiwanaku		
 ((67, 42),	(86, 56)),	# Byzantium

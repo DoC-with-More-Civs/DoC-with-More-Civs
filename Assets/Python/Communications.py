@@ -96,6 +96,7 @@ tPool3 = (iEgypt,
 	iKhitan,
 	iYemen,
 	iKhazars,
+	iArmenia,
 	iNubia,
 	iChad,
 	iCeltia)

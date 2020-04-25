@@ -11675,6 +11675,13 @@
 			<bIsCompressed>1</bIsCompressed>
 			<bInGeneric>1</bInGeneric>
 		</SoundData>
+		<SoundData>
+			<SoundID>DIPLO_ARMENIA_EARLY</SoundID>
+			<Filename>Sounds/Diplomacy/Armenia_Early</Filename>
+			<LoadType>DYNAMIC_RES</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
 	</SoundDatas>
 	<ContextTypes>
 		<ContextType>Generic</ContextType>

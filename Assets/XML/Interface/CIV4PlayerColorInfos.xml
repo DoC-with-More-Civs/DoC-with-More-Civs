@@ -552,5 +552,11 @@
 			<ColorTypeSecondary>COLOR_PLAYER_WHITE</ColorTypeSecondary>
 			<TextColorType>COLOR_PLAYER_MIDDLE_BLUE1_TEXT</TextColorType>
 		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_ARMENIA</Type>
+			<ColorTypePrimary>COLOR_PLAYER_ARMENIA_PURPLE</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_YELLOW</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_ARMENIA_PURPLE_TEXT</TextColorType>
+		</PlayerColorInfo>
 	</PlayerColorInfos>
 </Civ4PlayerColorInfos>

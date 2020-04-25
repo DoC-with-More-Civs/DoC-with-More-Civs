@@ -504,5 +504,11 @@
 			<Path>Art/Interface/TeamColor/FlagDECAL_Scotland.dds</Path>
 			<bWhiteFlag>0</bWhiteFlag>
 		</CivilizationArtInfo>
+		<CivilizationArtInfo>
+			<Type>ART_DEF_CIVILIZATION_ARMENIA</Type>
+			<Button>,Art/Interface/Buttons/Civilizations/Armenia.dds,Art/Interface/Buttons/mem_civilizations_atlas.dds,4,1</Button>
+			<Path>Art/Interface/TeamColor/FlagDECAL_Armenia.dds</Path>
+			<bWhiteFlag>1</bWhiteFlag>
+		</CivilizationArtInfo>
 	</CivilizationArtInfos>
 </Civ4ArtDefines>

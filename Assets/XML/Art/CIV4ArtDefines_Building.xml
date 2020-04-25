@@ -4247,5 +4247,15 @@
 			<KFM/>
 			<Button>Art/Interface/Buttons/Buildings/scotland_shieling.dds</Button>
 		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_ARMENIAN_KHACHKAR</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>3.0</fScale>
+			<fInterfaceScale>0.55</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Khachkar/khachkar.nif</NIF>
+			<KFM/>
+			<Button>,Art/Interface/Buttons/Buildings/khachkar.dds,Art/Interface/Buttons/mem_buildings_atlas.dds,4,5</Button>
+		</BuildingArtInfo>
 	</BuildingArtInfos>
 </Civ4ArtDefines>

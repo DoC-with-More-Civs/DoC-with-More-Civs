@@ -1374,5 +1374,13 @@
 			<NoShaderNIF>Art/Leaderheads/Jasaw/tachnechobrus.nif</NoShaderNIF>
 			<BackgroundKFM>Art/Leaderheads/Jasaw/tachnechobrus_background.kfm</BackgroundKFM>
 		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_ASHOT</Type>
+			<Button>,Art/Interface/Buttons/Leaderheads/Ashot.dds,Art/Interface/Buttons/mem_leaders_atlas.dds,5,1</Button>
+			<NIF>Art/Leaderheads/Ashot/Barbarossa.nif</NIF>
+			<KFM>Art/Leaderheads/Ashot/Barbarossa.kfm</KFM>
+			<NoShaderNIF>Art/Leaderheads/Ashot/Barbarossa.nif</NoShaderNIF>
+			<BackgroundKFM>art/Leaderheads/Ashot/Boudica_BG.kfm</BackgroundKFM>
+		</LeaderheadArtInfo>
 	</LeaderheadArtInfos>
 </Civ4ArtDefines>

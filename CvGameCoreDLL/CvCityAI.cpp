@@ -2464,6 +2464,8 @@ UnitTypes CvCityAI::AI_bestUnit(bool bAsync, AdvisorTypes eIgnoreAdvisor, UnitAI
 		aiUnitAIVal[UNITAI_COLLATERAL] *= 3;
 		aiUnitAIVal[UNITAI_COLLATERAL] /= 2;
 		break;
+	case ARMENIA:
+		break;
     case KOREA:
         aiUnitAIVal[UNITAI_EXPLORE] /= 2;
         aiUnitAIVal[UNITAI_EXPLORE_SEA] /= 3;
