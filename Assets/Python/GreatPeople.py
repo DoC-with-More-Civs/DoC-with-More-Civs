@@ -1206,6 +1206,12 @@ iCivVietnam : {
 		u"Pham Xuan An", # 20th
 	],
 },
+iCivTeotihuacan : {
+
+},
+iCivArmenia : {
+
+},
 iCivKorea : {
 	iGreatProphet : [
 		"Marananta", # 4th

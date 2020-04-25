@@ -583,6 +583,7 @@ dStartingLeaders = [
 	iEthiopia : iEzana,
 	iVietnam : iTrung,
 	iTeotihuacan : iAtlatlCauac,
+	iArmenia : iAshot,
 	iKorea : iWangKon,
 	iTiwanaku : iMalkuHuyustus,
 	iByzantium : iJustinian,
@@ -2082,6 +2083,13 @@ def specificTitle(iPlayer, lPreviousOwners=[]):
 			
 		if bCityStates:
 			return "TXT_KEY_CIV_TEOTIHUACAN_ALTEPETL"
+			
+	elif iPlayer == iArmenia:
+		if iReligion == iIslam:
+			return "TXT_KEY_SULTANATE_OF"
+			
+		if bEmpire:
+			return "TXT_KEY_EMPIRE_ADJECTIVE"
 				
 	elif iPlayer == iKorea:
 		if iEra >= iIndustrial:

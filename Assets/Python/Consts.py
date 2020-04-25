@@ -155,28 +155,28 @@ iNumConquests = 20
 #neighbours
 lNeighbours = [
 [iBabylonia, iNubia, iAssyria, iGreece, iPersia, iCarthage, iRome, iEthiopia, iByzantium, iArabia, iMoors, iOttomans, iMamluks, iOman, iYemen, iNubia, iChad], #Egypt
-[iEgypt, iAssyria, iGreece, iCarthage, iPersia, iTurks, iOttomans, iMongolia, iCarthage, iByzantium, iOman], #Babylonia
+[iEgypt, iAssyria, iGreece, iCarthage, iPersia, iArmenia, iTurks, iOttomans, iMongolia, iCarthage, iByzantium, iOman], #Babylonia
 [iIndia, iPersia, iTamils, iTibet, iMughals], #Harappa
 [iTiwanaku, iWari, iInca], #Norte Chico
 [iEgypt, iEthiopia, iArabia, iOman, iYemen, iMamluks, iMali, iZimbabwe, iNigeria, iCongo, iChad], #Nubia
-[iEgypt, iBabylonia, iGreece, iCarthage, iPersia], # Assyria
+[iEgypt, iBabylonia, iGreece, iCarthage, iPersia, iArmenia], # Assyria
 [iIndia, iJapan, iKorea, iTurks, iTibet, iKhmer, iMongolia, iThailand, iManchuria, iPhilippines, iKhitan, iBurma], #China
 [iAssyria, iPersia, iCarthage, iRome, iByzantium, iHolyRome, iRussia, iKievanRus, iOttomans, iItaly, iKhazars], #Greece
 [iChina, iHarappa, iPersia, iTamils, iTibet, iKhmer, iMongolia, iMughals, iThailand, iVietnam, iBurma], #India
 [iEgypt, iBabylonia, iAssyria, iGreece, iRome, iSpain, iMali, iPortugal, iBabylonia, iPersia, iArabia, iMoors, iOttomans, iItaly, iMamluks], #Carthage
 [iRome, iVikings, iFrance, iHolyRome, iNetherlands], #Celtia
 [], # Polynesia
-[iIndia, iBabylonia, iHarappa, iAssyria, iGreece, iTurks, iByzantium, iOttomans, iMongolia, iCarthage, iMughals, iMamluks, iOman, iYemen, iKhazars], #Persia
+[iIndia, iBabylonia, iHarappa, iAssyria, iGreece, iArmenia, iTurks, iByzantium, iOttomans, iMongolia, iCarthage, iMughals, iMamluks, iOman, iYemen, iKhazars], #Persia
 [iEgypt, iBabylonia, iGreece, iCarthage, iCeltia, iSpain, iFrance, iHolyRome, iPortugal, iItaly, iGermany, iHungary], #Rome
 [iSpain, iTeotihuacan, iInca, iAztecs, iAmerica], #Maya
 [iHarappa, iIndia, iKhmer, iIndonesia, iMughals, iThailand, iVietnam, iPhilippines], #Tamils
 [iEgypt, iNubia, iArabia, iMali, iCongo, iMamluks, iNigeria, iSwahili, iZimbabwe, iOman, iYemen, iNubia], #Ethiopia
 [iChina, iKhmer, iThailand, iTamils, iIndia, iIndonesia, iTibet, iPhilippines, iBurma], #Vietnam
 [iSpain, iMaya, iInca, iAztecs, iAmerica], #Teotihuacan
-[], # Armenia
+[iBabylonia, iAssyria, iPersia, iByzantium, iOttomans, iKhazars], # Armenia
 [iChina, iJapan, iKhitan, iMongolia, iManchuria], #Korea
 [iNorteChico, iWari, iInca], #Tiwanaku
-[iEgypt, iBabylonia, iGreece, iPersia, iArabia, iRussia, iKievanRus, iOttomans, iTurks, iMamluks, iHungary, iKhazars], #Byzantium
+[iEgypt, iBabylonia, iGreece, iPersia, iArmenia, iArabia, iRussia, iKievanRus, iOttomans, iTurks, iMamluks, iHungary, iKhazars], #Byzantium
 [iNorteChico, iTiwanaku, iInca], #Wari
 [iChina, iKorea, iKhmer, iMongolia, iThailand, iManchuria, iPhilippines], #Japan
 [iCeltia, iFrance, iEngland, iHolyRome, iRussia, iKievanRus, iPoland, iNetherlands, iGermany, iKhazars], #Vikings
@@ -185,7 +185,7 @@ lNeighbours = [
 [iChina, iHarappa, iIndia, iMongolia, iMughals, iTurks, iVietnam], #Tibet
 [iIndia, iJapan, iKhmer, iThailand, iTamils, iPhilippines, iVietnam, iBurma], #Indonesia
 [iChina, iKhmer, iThailand, iTamils, iIndia, iIndonesia, iTibet, iPhilippines, iVietnam], #Burma
-[iGreece, iPersia, iTurks, iKievanRus, iHungary, iByzantium, iMongolia, iArabia, iRussia, iOttomans, iVikings, iSweden], #Khazars
+[iGreece, iPersia, iArmenia, iTurks, iKievanRus, iHungary, iByzantium, iMongolia, iArabia, iRussia, iOttomans, iVikings, iSweden], #Khazars
 [iEgypt, iNubia, iNigeria, iArabia, iOttomans, iMamluks, iMali, iCongo], #Chad
 [iEgypt, iSpain, iPortugal, iMali, iMamluks], #Moors
 [iCarthage, iRome, iMoors, iFrance, iEngland, iPortugal], #Spain
@@ -211,7 +211,7 @@ lNeighbours = [
 [iIndia, iChina, iPersia, iJapan, iKorea, iTibet, iRussia, iKievanRus, iOttomans, iTurks, iKhitan, iManchuria, iHungary, iKhazars], #Mongolia
 [iSpain, iTeotihuacan, iInca, iAmerica], #Aztec
 [iHarappa, iIndia, iPersia, iTamils, iTibet, iTurks], #Mughals
-[iBabylonia, iGreece, iPersia, iByzantium, iRussia, iKievanRus, iMongolia, iCarthage, iTurks, iMamluks, iHungary, iIsrael, iOman, iYemen, iKhazars, iChad], #Ottomans
+[iBabylonia, iGreece, iPersia, iArmenia, iByzantium, iRussia, iKievanRus, iMongolia, iCarthage, iTurks, iMamluks, iHungary, iIsrael, iOman, iYemen, iKhazars, iChad], #Ottomans
 [iPersia, iByzantium, iVikings, iPoland, iOttomans, iMongolia, iSweden, iGermany, iKievanRus, iHungary, iKhazars], #Russia
 [iIndia, iChina, iJapan, iIndonesia, iKhmer, iTamils, iPhilippines, iVietnam], #Thailand
 [iEthiopia, iMali, iSwahili, iNigeria, iZimbabwe, iNubia, iChad], #Congo
@@ -248,7 +248,7 @@ lOlderNeighbours = [
 [iEgypt, iNubia], #Ethiopia
 [], #Vietnam
 [iMaya], #Teotihuacan
-[], # Armenia
+[iBabylonia, iAssyria, iGreece], # Armenia
 [iChina], #Korea
 [iNorteChico], #Tiwanaku
 [iGreece], #Byzantium
@@ -408,7 +408,7 @@ tFall = (
 960,					# Ethiopia
 602,					# Vietnam
 550, #fall of Teotihuacan # Teotihuacan
-2020,					# Armenia
+430,					# Armenia
 1255, #Mongol invasion			# Korea
 900,							# Tiwanaku
 1204, #fourth crusade			# Byzantium
@@ -580,7 +580,7 @@ tResurrectionIntervals = (
 [(1270, 1520), (1850, 2020)], #Ethiopia
 [(950, 1400), (1400, 1800), (1940, 2020)], #Vietnam
 [(-100, 1000)], #Teotihuacan
-[(-100, 350), (1000, 1600), (1900, 2020)],		# Armenia
+[(-100, 350), (870, 1400), (1900, 2020)],		# Armenia
 [(1380, 1522), (1700, 1800), (1940, 2020)], #Korea
 [], #Tiwanaku
 [(1100, 1280)], #Byzantium
