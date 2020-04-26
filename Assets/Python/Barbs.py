@@ -52,6 +52,7 @@ tMinorCities = (
 (500, (123, 39), iIndependent, 'Indrapura', 2, iArcher, 1),		# Indrapura
 (500, (73, 54), iIndependent, "Ragusa", 3, iCrossbowman, 3), # Ragusa
 (500, (86, 39), iIndependent, 'Bakkah', 3, iArcher, 1),		# Mecca
+(510, (104, 37), iIndependent, "Vatapi", 3, iCrossbowman, 2), # Vatapi
 #(633, (113, 48), iBarbarian, 'Lhasa', 2, iKhampa, 1),			# Lhasa
 (680, (57, 44), iIndependent, 'Murrakush', 3, iCrossbowman, 1),	# Marrakesh
 #(700, (34, 22), iNative, 'Tiwanaku', 1, -1, -1),				# Tiahuanaco
@@ -418,9 +419,10 @@ class Barbs:
 			
 			if sName == 'Kyiv': lReligions = [iOrthodoxy]
 			if sName == 'Kilwa': lReligions = [iIslam]
+			if sName == 'Vatapi': lReligions = [iIslam]
 			if iPlayer == iCeltia and utils.getHumanID() == iCeltia: continue
 			if iPlayer == iCeltia: iPlayer = iIndependent
-			if sName in ['Buda', 'Tucume', 'Chan Chan']: bForceSpawn = True
+			if sName in ['Vatapi', 'Buda', 'Tucume', 'Chan Chan']: bForceSpawn = True
 			if sName in ['Muqdisho', 'Bahrein']: lReligions = [iIslam]
 			
 			if not self.isFreePlot(tPlot, bForceSpawn): continue
@@ -455,6 +457,13 @@ class Barbs:
 			city.setPopulation(iPopulation)
 			if sName in ['Tucume'] : 
 				city.setHasRealBuilding(iGranary, True)
+				plot.changeCulture(iPlayer, 20 * (gc.getGame().getCurrentEra() + 1), True)
+				city.changeCulture(iPlayer, 20 * (gc.getGame().getCurrentEra() + 1), True)
+
+			elif sName == 'Vatapi':
+				city.setHasRealBuilding(iGranary, True)
+				city.setHasRealBuilding(iLighthouse, True)
+				city.setHasRealBuilding(iBarracks, True)
 				plot.changeCulture(iPlayer, 20 * (gc.getGame().getCurrentEra() + 1), True)
 				city.changeCulture(iPlayer, 20 * (gc.getGame().getCurrentEra() + 1), True)
 

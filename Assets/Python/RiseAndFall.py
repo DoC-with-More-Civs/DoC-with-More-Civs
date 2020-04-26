@@ -293,6 +293,9 @@ class RiseAndFall:
 			self.adjust600ADWonders()
 			self.adjust600ADGreatPeople()
 			
+			for iPlayer in [iHarappa]:
+				utils.setReborn(iPlayer, True)
+			
 			
 
 		if utils.getScenario() == i1700AD:
@@ -1063,11 +1066,21 @@ class RiseAndFall:
 		# adjust gold, civics, religion and other special settings
 		if iCiv == iNorteChico:
 			pNorteChico.setGold(100)
-			pNorteChico.setCivics(iCivicsGovernment, iDespotism)
-			pNorteChico.setCivics(iCivicsReligion, iClergy)
+			pNorteChico.setCivics(iCivicsGovernment, iMonarchy)
+			pNorteChico.setCivics(iCivicsSociety, iSlavery)
+		elif iCiv == iHarappa:
+			pHarappa.setGold(200)
+			pHarappa.setLastStateReligion(iHinduism)
+			pHarappa.setCivics(iCivicsGovernment, iMonarchy)
+			pHarappa.setCivics(iCivicsLegitimacy, iVassalage)
+			pHarappa.setCivics(iCivicsSociety, iSlavery)
+			pHarappa.setCivics(iCivicsReligion, iClergy)
 		elif iCiv == iCeltia:
 			pCeltia.setGold(200)
-			pCeltia.setCivics(iCivicsGovernment, iDespotism)
+			pCeltia.setLastStateReligion(iCatholicism)
+			pCeltia.setCivics(iCivicsGovernment, iMonarchy)
+			pCeltia.setCivics(iCivicsLegitimacy, iVassalage)
+			pCeltia.setCivics(iCivicsSociety, iSlavery)
 			pCeltia.setCivics(iCivicsReligion, iClergy)
 		elif iCiv == iPersia:
 			pPersia.setGold(600)
@@ -1345,7 +1358,7 @@ class RiseAndFall:
 		x, y = tCapital
 		bCapitalSettled = False
 		
-		if iCiv == iChina or iCiv == iBurma or iCiv == iYemen:
+		if iCiv == iHarappa or iCiv == iChina or iCiv == iBurma or iCiv == iYemen:
 			if gc.getMap().plot(x, y).isCity():
 				bCapitalSettled = True
 		
@@ -3233,6 +3246,13 @@ class RiseAndFall:
 			utils.makeUnit(iChimuSuchucChiquiAucac, iCiv, tPlot, 2)
 			utils.makeUnit(iArcher, iCiv, tPlot, 1)
 			utils.makeUnit(iWorker, iCiv, tPlot, 1)
+		elif iCiv == iHarappa:
+			utils.makeUnit(iArcher, iCiv, tPlot, 3)
+			utils.makeUnit(iMahout, iCiv, tPlot, 3)
+			utils.makeUnit(iWorker, iCiv, tPlot, 2)
+			if utils.getHumanID() != iCiv:
+				utils.makeUnit(iMahout, iCiv, tPlot, 1)
+				utils.makeUnit(iArcher, iCiv, tPlot, 1)
 		elif iCiv == iCeltia:
 			utils.makeUnit(iArcher, iCiv, tPlot, 2)
 			utils.makeUnit(iWorker, iCiv, tPlot, 1)

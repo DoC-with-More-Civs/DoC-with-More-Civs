@@ -254,9 +254,16 @@ BeginPlayer
 EndPlayer
 BeginPlayer
 	Team=2
-	LeaderType=LEADER_VATAVELLI
-	CivType=CIVILIZATION_HARAPPANS
-	PlayableCiv=0
+	LeaderType=LEADER_PULAKESI
+	CivType=CIVILIZATION_CHALUKYA
+	StartingGold=200
+	StateReligion=RELIGION_HINDUISM
+	CivicOption=CIVICOPTION_GOVERNMENT, Civic=CIVIC_MONARCHY
+	CivicOption=CIVICOPTION_LEGITIMACY, Civic=CIVIC_CITIZENSHIP
+	CivicOption=CIVICOPTION_SOCIETY, Civic=CIVIC_CASTE_SYSTEM
+	CivicOption=CIVICOPTION_ECONOMY, Civic=CIVIC_MERCHANT_TRADE
+	CivicOption=CIVICOPTION_RELIGION, Civic=CIVIC_MONASTICISM
+	PlayableCiv=1
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
@@ -49241,26 +49248,17 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	BeginUnit
-		UnitType=UNIT_INDIAN_PATIYODHA, UnitOwner=72, (Independent Leader)
-		Level=1, Experience=0
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_INDIAN_PATIYODHA, UnitOwner=72, (Independent Leader)
-		Level=1, Experience=0
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_INDIAN_PATIYODHA, UnitOwner=72, (Independent Leader)
+		UnitType=UNIT_INDIAN_PATIYODHA, UnitOwner=2, (Harappa)
 		Level=1, Experience=0
 	EndUnit
 	BeginCity
-		CityOwner=72, (Independent Leader)
+		CityOwner=2, (Harappa)
 		CityName=Mumbai
 		CityPopulation=2
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_HARBOR
-		BuildingType=BUILDING_HINDU_TEMPLE
 		ReligionType=RELIGION_HINDUISM
-		Player72Culture=20, (Independent Leader)
+		Player2Culture=20, (Harappa)
 	EndCity
 EndPlot
 BeginPlot
@@ -49765,7 +49763,42 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=1
 	BonusType=BONUS_INCENSE
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	BeginUnit
+		UnitType=UNIT_INDIAN_PATIYODHA, UnitOwner=2, (Harappa)
+		Level=1, Experience=0
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INDIAN_PATIYODHA, UnitOwner=2, (Harappa)
+		Level=1, Experience=0
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INDIAN_PATIYODHA, UnitOwner=2, (Harappa)
+		Level=1, Experience=0
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_SWORDSMAN, UnitOwner=2, (Harappa)
+		Level=1, Experience=0
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_SWORDSMAN, UnitOwner=2, (Harappa)
+		Level=1, Experience=0
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER, UnitOwner=2, (Harappa)
+		Level=1, Experience=0
+	EndUnit
+	BeginCity
+		CityOwner=2, (Harappa)
+		CityName=Vatapi
+		CityPopulation=5
+		BuildingType=BUILDING_PALACE
+		BuildingType=BUILDING_BARRACKS
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_FORGE
+		ReligionType=RELIGION_HINDUISM
+		Player2Culture=200, (Harappa)
+	EndCity
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
@@ -50869,6 +50902,16 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
+EndPlot
+BeginPlot
+	x=106,y=39
+	isNOfRiver
+	RiverWEDirection=1
+	TerrainType=TERRAIN_GRASS
+	PlotType=2
+EndPlot
+BeginPlot
+	x=106,y=40
 	BeginUnit
 		UnitType=UNIT_INDIAN_PATIYODHA, UnitOwner=72, (Independent Leader)
 		Level=1, Experience=0
@@ -50889,18 +50932,6 @@ BeginPlot
 		ReligionType=RELIGION_HINDUISM
 		Player72Culture=20, (Independent Leader)
 	EndCity
-EndPlot
-BeginPlot
-	x=106,y=39
-	isNOfRiver
-	RiverWEDirection=1
-	ImprovementType=IMPROVEMENT_HAMLET
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
-	PlotType=2
-EndPlot
-BeginPlot
-	x=106,y=40
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot

@@ -1132,6 +1132,11 @@ def specificName(iPlayer):
 			if bEmpire:
 				return "TXT_KEY_CIV_NUBIA_KUSH"
 			return capitalName(iPlayer)
+		
+	elif iPlayer == iHarappa:
+		if bReborn:
+			if capital.getX() <= 120:
+					return "TXT_KEY_CIV_CHALUKYA_SHORT_DESC"
 	
 	elif iPlayer == iChina:
 		if bEmpire:
@@ -2526,6 +2531,10 @@ def leader(iPlayer):
 	elif iPlayer == iBabylonia:
 		if iGameTurn >= getTurnForYear(-1600): return iHammurabi
 	
+	elif iPlayer == iHarappa:
+		if bReborn:
+			return iPulakesi
+	
 	elif iPlayer == iNorteChico:
 		if bReborn:
 			return iTacaynamo
@@ -2779,7 +2788,7 @@ def leaderName(iPlayer):
 	if iPlayer == iChina:
 		if iLeader == iHongwu:
 			if iGameTurn >= getTurnForYear(1700):
-				return "TXT_KEY_LEADER_KANGXI"
+				return "TXT_KEY_LEADER_CHONGZHEN"
 				
 	elif iPlayer == iTamils:
 		if iLeader == iKrishnaDevaRaya:

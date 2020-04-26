@@ -1298,6 +1298,7 @@ enum LeaderHeadTypes			// Exposed to Python
 	ASHUR,
 	TACAYNAMO,
 	ASHOT,
+	PULAKESI,
 	NUM_LEADERHEADS
 };
 

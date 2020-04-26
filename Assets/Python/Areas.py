@@ -182,7 +182,8 @@ iCarthage : (67, 48),	# Carthage
 iPersia : (93, 48),	# Esfahan (Iran)			
 iNorteChico : (27, 28),	# Chimu			
 iCeltia : (57, 69),	# Scottish			
-iMaya : (29, 34),	# Bogota (Colombia)		
+iMaya : (29, 34),	# Bogota (Colombia)				
+iHarappa : (104, 37),	# Chalukya	
 iTamils : (105, 36),	# Vijayanagara			
 iChad : (71, 34),     #N'Djamena				
 iKhmer : (121, 41),	# Hanoi			
@@ -408,7 +409,8 @@ tCoreArea = (
 )				
 				
 dChangedCoreArea = {			
-iNorteChico :	((26, 26),	(27, 32)),	# Chimu				
+iNorteChico :	((26, 26),	(27, 32)),	# Chimu			
+iHarappa :	((103, 35),	(105, 40)),	# Chalukya				
 iChina : ((119, 47),	(129, 56)),			
 iGreece :	((75, 49),	(79, 52)),		
 iIndia :	((103, 37),	(106, 41)),		
@@ -560,7 +562,8 @@ tNormalArea = (
 )				
 				
 dChangedNormalArea = {	
-iNorteChico : 	((26, 26),	(27, 32)),	# Chimu					
+iNorteChico : 	((26, 26),	(27, 32)),	# Chimu		
+iHarappa :	((103, 35),	(105, 40)),	# Chalukya					
 iIndia : 	((96, 42),	(97, 42)),		
 iCarthage :	((63, 45),	(70, 48)),		
 iMaya : 	((26, 30),	(35, 38)),	# Colombia		
@@ -695,7 +698,8 @@ tBroaderArea = (
 )				
 				
 dChangedBroaderArea = {	
-iNorteChico : 	((26, 26),	(27, 31)),	# Chimu				
+iNorteChico : 	((26, 26),	(27, 31)),	# Chimu		
+iHarappa :	((103, 35),	(105, 40)),	# Chalukya				
 iCarthage :	((57, 43),	(73, 54)), 	# Carthage	
 iMaya :		((26, 27),	(38, 38)),	# Colombia
 iByzantium :	((64, 38),	(74, 45)),		
@@ -726,7 +730,8 @@ iInca : [(33, 27), (33, 28), (33, 29), (34, 27), (34, 28), (34, 29), (35, 27), (
 ### Rebirth area ###				
 				
 dRebirthPlot = {			
-iNorteChico : (27, 28),	# Chimu					
+iNorteChico : (27, 28),	# Chimu			
+iHarappa : (104, 37),	# Chalukya					
 iPersia : (93, 48),	# Esfahan (Iran)					
 iCeltia : (57, 69),	# Scottish			
 iMaya : (29, 34),	# Bogota (Colombia)			
@@ -734,7 +739,8 @@ iAztecs : (17, 43),	# Mexico City (Mexico)
 }				
 				
 dRebirthArea = {	
-iNorteChico : 	((26, 26),	(28, 30)),	# Chimu		
+iNorteChico : 	((26, 26),	(28, 30)),	# Chimu	
+iHarappa :	((103, 35),	(105, 40)),	# Chalukya		
 iCeltia : 	((53, 65),	(57, 71)),	# Scottish				
 iPersia :	((90, 43),	(98, 53)),	# Iran	
 iMaya : ((26, 30),	(36, 38)),	# Colombia		

@@ -60,9 +60,9 @@ l0ArrayTotal =  [0 for i in range(iNumTotalPlayers)]
 lm1Array =      [-1 for i in range(iNumPlayers)]
 
 # civilizations, not players
-iNumCivilizations = 85
+iNumCivilizations = 86
 (iCivAmerica, iCivArabia, iCivArgentina, iCivArmenia, iCivAssyria, iCivAustralia, iCivAztec, iCivBabylonia, iCivBoers, iCivBrazil, iCivBurma, iCivByzantium, iCivCanada, iCivCarthage, iCivCelt, 
-iCivChad, iCivChimu, iCivChina, iCivColombia, iCivEgypt, iCivEngland, iCivEthiopia, iCivFrance, iCivGermany, iCivGreece, iCivHarappa, iCivHolyRome, iCivHungary, 
+iCivChad, iCivChalukya, iCivChimu, iCivChina, iCivColombia, iCivEgypt, iCivEngland, iCivEthiopia, iCivFrance, iCivGermany, iCivGreece, iCivHarappa, iCivHolyRome, iCivHungary, 
 iCivInca, iCivIndia, iCivIndonesia, iCivIran, iCivIsrael, iCivItaly, iCivJapan, iCivKhazars, iCivKhitan, iCivKhmer, iCivKievanRus, iCivKongo, iCivKorea, iCivMali, iCivMamluks, iCivManchuria,
 iCivMaya, iCivMexico, iCivMongols, iCivMoors, iCivMughals, iCivNativeAmericans, iCivNetherlands, iCivNigeria, iCivNorteChico, iCivNubia, iCivOman, iCivOttomans, iCivPersia, iCivPhilippines, iCivPoland, 
 iCivPolynesia, iCivPortugal, iCivRome, iCivRussia, iCivScotland, iCivSpain, iCivSumeria, iCivSwahili, iCivSweden, iCivTamils, iCivTeotihuacan, iCivThailand, iCivTibet, iCivTiwanaku, iCivTurks, iCivVietnam,
@@ -147,7 +147,7 @@ iTan = 90
 iLime = 100
 
 # independent cities
-iNumMinorCities = 60
+iNumMinorCities = 61
 
 # scripted conquerors
 iNumConquests = 20
@@ -489,6 +489,7 @@ iCivTiwanaku : (900, 1000, 1100),
 iCivByzantium : (1000, 1200, 1450),
 iCivWari : (900, 1000, 1100),
 iCivJapan : (1600, 1940, -1),
+iCivChalukya : (-1, -1, -1),
 iCivVikings : (1050, 1100, 1500),
 iCivTurks : (900, 1100, 1400),
 iCivArabia : (1300, 1300, -1),
@@ -545,6 +546,7 @@ iCivIsrael : (1980, 2000, -1),
 
 # Leoreth: date-triggered respawn for certain civs
 dRebirth = {
+iHarappa : 530,		# Chalukya
 iNorteChico : 900,		# Chimu
 iCeltia : 820,		# Scotland
 iPersia : 1501,		# Iran
@@ -553,6 +555,7 @@ iAztecs : 1810,		# Mexico
 }
 
 dRebirthCiv = {
+iHarappa : iCivChalukya,
 iNorteChico : iCivChimu,
 iCeltia : iCivScotland,
 iPersia : iCivIran,
@@ -1398,7 +1401,7 @@ iVictorySecularism = 11
 
 #leaders
 
-iNumLeaders = 170
+iNumLeaders = 171
 (iLeaderBarbarian, iNativeLeader, iIndependentLeader, iAlexanderTheGreat, iAsoka, iAugustus, iBismarck, iBoudica, iBrennus, iCatherine, 
 iCharlemagne, iChurchill, iCyrus, iDarius, iDeGaulle, iElizabeth, iFrederick, iGandhi, iGenghisKhan, iSargon, 
 iHammurabi, iHannibal, iCleopatra, iHuaynaCapac, iIsabella, iJoao, iJuliusCaesar, iJustinian, iKublaiKhan, iLincoln, 
@@ -1414,7 +1417,7 @@ iMussolini, iSejong, iBhutto, iPilsudski, iWalesa, iGerhardsen, iVargas, iMacDon
 iGeorge, iKhosrow, iBumin, iTamerlane, iEzana, iChristian, iGustavVasa, iKarl, iCurtin, iMenzies, iMustasim, iKangxi, iCixi, iOduduwa, iEwuare,
 iAminatu, iLapuLapu, iKruger, iMandela, iShirazi, iDawud, iBarghash, iTrung, iChieuHoang, iHoChiMinh, iRusvingo, iMutota,
 iAnawrahta, iShinSawbu, iBayinnuang, iBohdan, iYaroslav, iIstvan, iKossuth, iAtlatlCauac, iBenGurion, iSaif, iArwa, iBulan, iPiye, iDunama, 
-iRobert, iCollins, iWiracocha, iAbaoji, iMalkuHuyustus, iWariCapac, iAshur, iTacaynamo, iAshot) = range(iNumLeaders)
+iRobert, iCollins, iWiracocha, iAbaoji, iMalkuHuyustus, iWariCapac, iAshur, iTacaynamo, iAshot, iPulakesi) = range(iNumLeaders)
 
 resurrectionLeaders = {
 	iChina : iHongwu,
@@ -1423,6 +1426,7 @@ resurrectionLeaders = {
 }
 
 rebirthLeaders = {
+	iHarappa : iPulakesi,
 	iNorteChico : iTacaynamo,
 	iCeltia : iRobert,
 	iMaya : iBolivar,

@@ -37,4 +37,8 @@
 		<Italian>Nation of %s1</Italian>
 		<Spanish>Nation of %s1</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_CHONGZHEN</Tag>
+		<English>Chongzhen</English>
+	</TEXT>
 </Civ4GameText>

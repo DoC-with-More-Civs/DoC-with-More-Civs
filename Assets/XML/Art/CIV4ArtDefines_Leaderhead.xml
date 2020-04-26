@@ -1382,5 +1382,13 @@
 			<NoShaderNIF>Art/Leaderheads/Ashot/Barbarossa.nif</NoShaderNIF>
 			<BackgroundKFM>art/Leaderheads/Ashot/Boudica_BG.kfm</BackgroundKFM>
 		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_PULAKESI</Type>
+			<Button>,-,Art/Interface/Buttons/RFCA_Leaders_Atlas.dds,8,2</Button>
+			<NIF>art/LeaderHeads/Mangal Pandey/cyrus.nif</NIF>
+			<KFM>art/LeaderHeads/Mangal Pandey/cyrus.kfm</KFM>
+			<NoShaderNIF>art/LeaderHeads/Mangal Pandey/cyrus_bg.nif</NoShaderNIF>
+			<BackgroundKFM>art/LeaderHeads/Mangal Pandey/cyrus_bg.kfm</BackgroundKFM>
+		</LeaderheadArtInfo>
 	</LeaderheadArtInfos>
 </Civ4ArtDefines>

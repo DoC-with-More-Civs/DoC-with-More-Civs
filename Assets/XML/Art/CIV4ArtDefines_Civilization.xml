@@ -510,5 +510,11 @@
 			<Path>Art/Interface/TeamColor/FlagDECAL_Armenia.dds</Path>
 			<bWhiteFlag>1</bWhiteFlag>
 		</CivilizationArtInfo>
+		<CivilizationArtInfo>
+			<Type>ART_DEF_CIVILIZATION_CHALUKYA</Type>
+			<Button>,-,Art/Interface/Buttons/RFCA_Civilizations_Atlas.dds,2,2</Button>
+			<Path>Art/Interface/TeamColor/FlagDECAL_Chalukya.dds</Path>
+			<bWhiteFlag>0</bWhiteFlag>
+		</CivilizationArtInfo>
 	</CivilizationArtInfos>
 </Civ4ArtDefines>

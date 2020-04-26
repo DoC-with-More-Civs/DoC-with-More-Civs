@@ -1393,5 +1393,19 @@
 			<fBlue>0.759</fBlue>
 			<fAlpha>1.00</fAlpha>
 		</ColorVal>
+		<ColorVal>
+			<Type>COLOR_PLAYER_DARK_LEMON</Type>
+			<fRed>0.747</fRed>
+			<fGreen>0.792</fGreen>
+			<fBlue>0.139</fBlue>
+			<fAlpha>1.00</fAlpha>
+		</ColorVal>
+		<ColorVal>
+			<Type>COLOR_PLAYER_DARK_LEMON_TEXT</Type>
+			<fRed>0.806</fRed>
+			<fGreen>0.851</fGreen>
+			<fBlue>0.198</fBlue>
+			<fAlpha>1.00</fAlpha>
+		</ColorVal>
 	</ColorVals>
 </Civ4ColorVals>

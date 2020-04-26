@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- China -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CHALUKYA_DESC</Tag>
+		<English>The Chalukyas</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CHALUKYA_PEOPLES</Tag>
+		<English>Deccan Peoples</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CHALUKYA_DEFAULT</Tag>
+		<English>Empire of %s1</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CHALUKYA_ADJECTIVE</Tag>
+		<English>Chalukyan</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CHALUKYA_SHORT_DESC</Tag>
+		<English>Kingdom of Chalukya</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_KINGDOM_OF_CHALUKYA_DEFAULT</Tag>
+		<English>Kingdom of Chalukya</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_CAL_TITLE</Tag>
+		<English>The Power of Cave Temples:</English>
+		<French>Le Pouvoir de l'Honneur :</French>
+		<German>Die Macht der Dekkan Kunst:</German>
+		<Italian>Il potere dell'onore:</Italian>
+		<Spanish>El poder del honor:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_CAL</Tag>
+		<English>Free Specialist for every 2 Mines in capital's BFC</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_PULAKESI</Tag>
+		<English>Pulakesi</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DOM_CHALUKYA</Tag>
+		<English>It's the year 543 AD. With the decline of the Gupta to the north, small fragmented states rule over India, but there is no better time for a large empire to rise! Beginning in the Deccan, all of central India will foster a civilization rivaling those that once existed along the Ganges itself.</English>
+		<French>French</French>
+        <German>German</German>
+        <Italian>Italian</Italian>
+        <Spanish>Spanish</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_PULAKESI_PEDIA</Tag>
+		<English>[H1]Pulakeshi[\H1][NEWLINE][BOLD]King of the Badami Chalukya[\BOLD][NEWLINE][BOLD]Reigned:[\BOLD] 610 - 642 AD[NEWLINE][PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]Pulakesin II is the most famous ruler of the Chalukya dynasty. In his reign the Chalukyas of Badami saw their kingdom extend over most of the Deccan.[PARAGRAPH:2]Ereya, who assumed the name Pulakesin on his coronation, was born to the Chalukya king Kirtivarman I. When Kirtivarman died in 597, Ereya was still a young boy and Kirtivarman's brother Mangalesa governed the young kingdom as regent until Ereya came of age. Mangalesa was a capable ruler and continued expanding the kingdom. However, when Ereya came of age, desire for power perhaps made Mangalesa deny prince Ereya his rightful place on the Chalukya throne, and he sought to perpetuate his own line by making his son heir apparent.[PARAGRAPH:2]Ereya took shelter in the Bana territory (Kolar), organised an army with the help of his associates and declared war on his uncle. According to the Peddavadagur inscription Mangalesa was defeated and killed in the ensuing battle at Elapattu Simbige. Ereya ascended the Chalukya throne as Pulakesin II and assumed the title Chalukya Parameshwara. Pulakeshin built many temples such as Badami, Papanatha, durga, ladhkhan and virupakshirithvik and mathurakrishna[PARAGRAPH:2]Pulakesin had to face several obstacles soon after his coronation. The civil war had given fresh hope to feudatories and adventurers; some of them were emboldened to throw off their allegiance to the Chalukyas. The Aihole inscription of 634 found in an Aihole Jainlaya says, "the whole world was enveloped in the darkness that was enemies". Pulakesin had to face the challenge of Appayika and Govinda, perhaps loyal adherents of the defeated Mangalesa. It is even possible that at least one of them, if not both, was Mangalesa's son. Pulakesin confronted their army on the banks of the river Bhima. Appayika ran away from the battlefield, while Govinda surrendered. He built a temple that shows his supremacy called yugeshayshareddy[PARAGRAPH:2]After consolidating his position, Pulakesin II organized and enlarged his fighting forces. He then embarked upon a series of conquests to expand his dominions. The accounts of Pulakesin's campaigns are provided in the Aihole inscription dated 634. It was composed by his court poet Ravikirti. The inscription is one of the finest pieces of poetry. Written in Sanskrit language and Hale Kannada script, it is the most important source of information regarding the rule of Pulakesin II.[PARAGRAPH:2]He subjugated the Kadambas of Banavasi, the Gangas of Talakad and the Alupas of South Kanara. He defeated the Mauryas of the Konkan, and the port of Puri (modern Elephanta Island) was captured after a naval battle. It was followed by victory over the Latas, the Gurjaras and the Malawas, resulting in the annexation of the Gujarat area.[PARAGRAPH:2]The Ganga ruler Durvinita gave one of his daughters in marriage to Pulakesin, and she became the mother of Vikramaditya I.[PARAGRAPH:2]Pulakesi then overran Kosala, ruled by the Panduvamsis. It was followed by victory over the Eastern Gangas of Kalinga and the capture of the fort of Pishtapura (Pithapuram). He subjugated the Vishnukundins and captured the Kunala area in the Vengi region. He appointed his brother Kubja Vishnuvardhana (also called Bittarasa) as viceroy of his Eastern territories (631). Vishnuvardhana eventually founded the dynasty of Eastern Chalukyas.[PARAGRAPH:2]Moving further south, Pulakesin II routed the Pallava king Mahendravarman I in the battle of Pullalur, only 25 KM north of the Pallava capital. There a pitched battle was fought, and although Mahendravarman saved his capital, he lost the northern provinces to Pulakesi. The Chalukya king was aided by Durvinita of the Gangas dynasty from the West and the Pandyan king Jayantavarman from the South. The Chalukya army laid siege to the Pallava capital at Kanchipuram, but could not capture the kingdom, so had to return home.[PARAGRAPH:2]When Pulakesin II pushed forth up to the Narmada, he came face to face with Harshavardhana of Kanauj who already had the title Uttarapatheshvara (Lord of the North). In a decisive battle fought on the banks of the river Narmada, Harsha lost a major part of his elephant force and had to retreat. The Aihole inscription describes how the mighty Harsha lost his harsha (joy) when he suffered the ignominy of defeat. Pulakesin entered into a treaty with Harsha, with the Narmada River designated as the border between the Chalukya Empire and that of Harshavardhana.[PARAGRAPH:2]The Chinese traveller Hieun-tsang describes the event thus: "Siladityaraja (i.e., Harsha), filled with confidence, himself marched at the head of his troops to contend with this prince (i.e., Pulakesin); but he was unable to prevail upon or subjugate him".[NEWLINE]It was indeed a great victory for the Chalukya monarch, who assumed the proud titles of Parameswara (Paramount Overlord), Satyashraya, Prithvivallabha. With this conquest, Pulakesin's control extended completely over Southern India, including Maharashtra and parts of Madhya Pradesh and Gujarat. He received the title Dakshinapatheshvara (Lord of the South) at around the same time. These victories happened between 630 and 634. Since the Lohner plates of Pulakesin II (630) do not speak of his northern victory. Pulakesin II married a princess of the Alupas of South Canara.[PARAGRAPH:2]ReversalsThe last days of Pulakesin II witnessed several reversals to his earlier successes. Pulakesin's ambition prompted him to undertake another expedition against the Pallavas in the hope of achieving more decisive results. However, war had depleted the treasury sufficiently enough to prevent Pulakesin to mount an effective campaign.[PARAGRAPH:2]The Pallavas had overcome their defeat and Narasimhavarman I had succeeded Mahendravarman I. Pulakesin began his campaign by an attack on the Banas, vassals of the Pallavas. After overrunning them, Pulakesin invaded the Pallava kingdom proper and once more threatened the Pallava Capital. However the Pallava forces under Narasimhavarman defeated the Chalukyas in several battles including one at Manimangalam, east of Kanchipuram. In these battles the Pallava army was assisted by his important commander paranjothi(friend and commander of Narasimhavarman I and one of 63 nayanmars known as siruthondar)and also the Sinhalese prince Manavarma who was there to request help from the palava king to support him to regain his country which he lost to King Attathathan (Sri Lanka). Pulakesin's expedition ended in failure. The Pallavas, encouraged by their success, invaded deep into Chalukya territory. The Pallava ruler captured and sacked Vatapi (Badami). Narasimhavarman assumed the title of Vatapikonda (the conqueror of Vatapi). Vatapi remained in Pallava control for twelve years.[PARAGRAPH:2]It is possible that Pulakesin II lost his life in one of these encounters against the Pallavas and was possibly killed directly by Narasimhavarman I. The thirteen years that followed saw the eclipse of Chalukya power, while Badami remained in the hands of the Pallavas.[PARAGRAPH:2]Pulakesin exchanged ambassadors with the Shah of Persia Khosrau II. His reception of the Persian ambassador is depicted in one of the paintings in the Ajanta caves. The Chinese traveller Hsuan Tsang, who visited India in the 7th century, wrote admiringly of Pulakesin and his Empire.[PARAGRAPH:2]Pulakesin was the first ruler in South India to issue gold coinage. Broad and circular in shape, the punch-marked coins had various punches at the edge, and a central punch depicting a Varaha or Boar. The Boar was the royal emblem of the Chalukyas. Contemporary literature cites the gold coins of south India as Varahas.[PARAGRAPH:2]Pulakesin had five sons, Chandraditya, Adityavarma, Vikramaditya, Jayasimha and Ambera. They fought among themselves after his demise, trying to divide the kingdom into territories for each of themselves. Pulakesin's third son Vikramaditya I became the Chalukya king 642 and attempted to re-unite the kingdom after defeating his brothers.</English>
+		<French>French</French>
+		<German>German</German>
+		<Italian>Italian</Italian>
+		<Spanish>Spanish</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CHALUKYA_PEDIA</Tag>
+		<English>[TAB]During the 6th and the 8th century, the empire that ruled the Deccan region of India was the Chalukya dynasty. After fading away for some time, they came back to power during the 10th century and ruled till 12th century. The Chalukyas are essentially divided into three broad categories: The Eastern Chalukyas, ruled from the Vengi region, the Western Chalukyas who ruled from the Badami region and the Later Western Chalukyas, which ruled from Kalyani region.[NEWLINE][TAB]The most famous rulers in the empire of the Chalukyas were Pulakesin I and Pulakesin II. The ruler Pulakesin II is said to have defeated emperor Harshavardhana in a battle on the banks of the River Narmada. He also waged a battle against Mahendravarman, the Pallava ruler and conquered him and his kingdom. [PARAGRAPH:2]The Chalukya dynasty is famous for developing and encouraging art and architecture during its era. The rulers of the Chalukya dynasty were great enthusiasts of art. This is evident from the fact that they built many temples near the region of Badami. A famous example of their architecture is the Virupaksha Temple in Karnataka. The sculptures that adorn the temples are beautifully carved and sculpted and represent scenes from the famous epic Ramayana. Some of the paintings at Ajanta and Ellora cave temples are considered to belong to this period. [PARAGRAPH:2]Pulakesin II was an admirer of art and always encouraged any art form to flourish in his kingdom. He was also fond of literature and encouraged poetry to flourish in his kingdom. The three famous poets of Kannada literature Adikavi Pampa, Sri Ponna and Ranna were from this era. Pulakesin was an able administrator and his subjects were devoted to him. Though he was Hindu by religion Pulakesin was tolerant towards Buddhism as well as Jainism. He built many monasteries in his kingdom that provided shelter to almost 5000 monks. The Chalukya kingdom was truly flourishing till it declined after the 12th century.</English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+</Civ4GameText>
