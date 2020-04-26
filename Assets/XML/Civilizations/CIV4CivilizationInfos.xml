@@ -1679,10 +1679,10 @@
 			<PaganReligionName>TXT_KEY_RELIGION_VEDISM</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Vedism.dds</PaganReligionButton>
 			<Identifier>CAL</Identifier>
-			<StartingYear>-1500</StartingYear>
+			<StartingYear>530</StartingYear>
 			<LoadingTimes>
-				<LoadingTime>15</LoadingTime>
-				<LoadingTime>5</LoadingTime>
+				<LoadingTime>20</LoadingTime>
+				<LoadingTime>0</LoadingTime>
 				<LoadingTime>0</LoadingTime>
 			</LoadingTimes>
 			<Rating>

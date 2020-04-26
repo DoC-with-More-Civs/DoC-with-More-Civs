@@ -1358,7 +1358,7 @@ class RiseAndFall:
 		x, y = tCapital
 		bCapitalSettled = False
 		
-		if iCiv == iHarappa or iCiv == iChina or iCiv == iBurma or iCiv == iYemen:
+		if iCiv == iChina or iCiv == iBurma or iCiv == iYemen:
 			if gc.getMap().plot(x, y).isCity():
 				bCapitalSettled = True
 		
