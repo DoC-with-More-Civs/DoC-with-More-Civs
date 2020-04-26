@@ -10974,6 +10974,15 @@ int CvCity::getProductionToCommerceModifier(CommerceTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
 	FAssertMsg(eIndex < NUM_COMMERCE_TYPES, "eIndex expected to be < NUM_COMMERCE_TYPES");
+	// edead: start HARAPPA UP: Craftsmanship
+	if (getOwnerINLINE() == HARAPPA && GET_PLAYER((PlayerTypes)HARAPPA).isReborn()) 
+	{
+		if ((eIndex == COMMERCE_GOLD) || (eIndex == COMMERCE_CULTURE)) 
+		{
+			return (m_aiProductionToCommerceModifier[eIndex] * 150 / 100);
+		}
+	}
+	// edead: end
 	return m_aiProductionToCommerceModifier[eIndex];
 }
 
