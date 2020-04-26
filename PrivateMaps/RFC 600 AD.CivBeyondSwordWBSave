@@ -51371,8 +51371,12 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-                BeginUnit
-		UnitType=UNIT_ARCHER, UnitOwner=15, (Rajendra Chola)
+	BeginUnit
+		UnitType=UNIT_INDIAN_PATIYODHA, UnitOwner=15, (Rajendra Chola)
+		Level=1, Experience=0
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INDIAN_PATIYODHA, UnitOwner=15, (Rajendra Chola)
 		Level=1, Experience=0
 	EndUnit
 	BeginCity

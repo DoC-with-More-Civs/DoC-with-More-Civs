@@ -718,7 +718,7 @@ lEnemyCivsOnSpawn = [
 lEnemyCivsOnRespawn = {
 iPersia : [iOttomans, iRussia, iOman, iOman],		# Iran
 iNorteChico : [iTiwanaku, iWari],		# Chimu
-iHarappa : [],		# Chalukya
+iHarappa : [iIndia, iTamils],		# Chalukya
 iCeltia : [],		# Scotland
 iMaya : [],		# Colombia
 iAztecs : [iAmerica],		# Mexico

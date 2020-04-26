@@ -11,7 +11,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_CHALUKYA_DEFAULT</Tag>
-		<English>Empire of %s1</English>
+		<English>Kingdom of %s1</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_CHALUKYA_ADJECTIVE</Tag>
@@ -19,7 +19,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_CHALUKYA_SHORT_DESC</Tag>
-		<English>Kingdom of Chalukya</English>
+		<English>Chalukya</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_KINGDOM_OF_CHALUKYA_DEFAULT</Tag>
@@ -27,15 +27,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_CAL_TITLE</Tag>
-		<English>The Power of Cave Temples:</English>
-		<French>Le Pouvoir de l'Honneur :</French>
-		<German>Die Macht der Dekkan Kunst:</German>
-		<Italian>Il potere dell'onore:</Italian>
-		<Spanish>El poder del honor:</Spanish>
+		<English>The Power of Craftsmanship:</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_CAL</Tag>
-		<English>Free Specialist for every 2 Mines in capital's BFC</English>
+		<English>+50% Production Efficiency of Wealth and Culture</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_PULAKESI</Tag>
@@ -43,7 +39,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DOM_CHALUKYA</Tag>
-		<English>It's the year 543 AD. With the decline of the Gupta to the north, small fragmented states rule over India, but there is no better time for a large empire to rise! Beginning in the Deccan, all of central India will foster a civilization rivaling those that once existed along the Ganges itself.</English>
+		<English>It's the year 530 AD. With the decline of the Gupta to the north, small fragmented states rule over India, but there is no better time for a large empire to rise! Beginning in the Deccan, all of central India will foster a civilization rivaling those that once existed along the Ganges itself.</English>
 		<French>French</French>
         <German>German</German>
         <Italian>Italian</Italian>
@@ -65,4 +61,8 @@
 		<Italian></Italian>
 		<Spanish></Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DOM_CHALUKYA</Tag>
+		<English>It's the year 543 AD. With the decline of the Gupta to the north, small fragmented states rule over India, but there is no better time for a large empire to rise! Beginning in the Deccan, all of central India will foster a civilization rivaling those that once existed along the Ganges itself.</English>
+                </TEXT>
 </Civ4GameText>
