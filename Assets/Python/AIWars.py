@@ -122,18 +122,23 @@ tConquestTurksPersia = (16, iTurks, iArabia, tTurksPersiaTL, tTurksPersiaBR, 4, 
 tConquestTurksAnatolia = (17, iTurks, iByzantium, tTurksAnatoliaTL, tTurksAnatoliaBR, 5, iTurksAnatoliaYear, 20)
 
 
-iMongolsPersiaYear = 1210
-tMongolsPersiaTL = (87, 45)
-tMongolsPersiaBR = (98, 58)
+iMongolsTurksYear = 1210
+tMongolsTurksTL = (96, 52)
+tMongolsTurksBR = (109, 59)
 
-tConquestMongolsPersia = (18, iMongolia, iTurks, tMongolsPersiaTL, tMongolsPersiaBR, 10, iMongolsPersiaYear, 10)
+iMongolsPersiaYear = 1220
+tMongolsPersiaTL = (87, 45)
+tMongolsPersiaBR = (98, 50)
+
+tConquestMongolsTurks = (18, iMongolia, iTurks, tMongolsTurksTL, tMongolsTurksBR, 10, iMongolsTurksYear, 10)
+tConquestMongolsPersia = (19, iMongolia, iTurks, tMongolsPersiaTL, tMongolsPersiaBR, 10, iMongolsPersiaYear, 10)
 
 
 iConquestEnglandIrelandYear = 1150
 tConquestEnglandIrelandTL = (52, 64)
 tConquestEnglandIrelandBR = (59, 71)
 
-tConquestEnglandIreland = (19, iEngland, iCeltia, tConquestEnglandIrelandTL, tConquestEnglandIrelandBR, 2, iConquestEnglandIrelandYear, 10)
+tConquestEnglandIreland = (20, iEngland, iCeltia, tConquestEnglandIrelandTL, tConquestEnglandIrelandBR, 2, iConquestEnglandIrelandYear, 10)
 
 
 lConquests = [
@@ -149,14 +154,15 @@ tConquestCholaSumatra, #8
 tConquestChinaVietnam1, #9
 tConquestChinaVietnam2, #10
 tConquestSpainMoors, #11
-tConquestSpainMaya,  #15
-tConquestSpainInca, #16
-tConquestSpainTiwanaku, #17
-tConquestSpainAztecs, #18
+tConquestSpainMaya,  #16
+tConquestSpainInca, #17
+tConquestSpainTiwanaku, #18
+tConquestSpainAztecs, #19
 tConquestTurksPersia, #12
 tConquestTurksAnatolia, #13
-tConquestMongolsPersia, #14
-tConquestEnglandIreland #19
+tConquestMongolsTurks, #14
+tConquestMongolsPersia, #15
+tConquestEnglandIreland #20
 ]
 
 class AIWars:

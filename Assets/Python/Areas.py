@@ -305,7 +305,8 @@ iArabia :	((74, 35),	(90, 50)),	# Arabia
 iSpain : 	((54, 51), 	(61, 54)), 	# includes Catalonia	
 iItaly :	((65, 53),	(71, 58)),	# includes Rome
 iMongolia :   ((105, 53),(131, 65)),	# Mongolia			
-iInca :   ((27, 21),(35, 26)),	# Inca			
+iInca :   ((27, 21),(35, 26)),	# Inca
+iThailand :	((117, 34),	(120, 40)),	# Thailand			
 }				
 				
 dBirthAreaExceptions = {				
