@@ -62,7 +62,7 @@ tMinorCities = (
 (800, (70, 61), iIndependent2, 'Praha', 1, iCrossbowman, 1),	# Prague
 #(800, (85, 69), iIndependent2, 'Beloozero', 1, iCrossbowman, 1),	# Beloozero
 (830, (66, 65), iIndependent, 'Hamburg', 2, iCrossbowman, 1),	# Hamburg
-#(830, (67, 65), iIndependent, 'L&#252;beck', 2, iCrossbowman, 1),	# Lubeck
+(850, (67, 65), iIndependent, 'L&#252;beck', 2, iCrossbowman, 1),	# Lubeck
 (860, (82, 68), iIndependent, 'Novgorod', 3, iCrossbowman, 3),		# Novgorod
 (870, (27, 28), iIndependent, 'Chan Chan', 2, iArcher, 2),			# Chan Chan
 (870, (26, 31), iNative, 'Tucume', 2, iPictaAucac, 3),			# Tucume
@@ -73,6 +73,7 @@ tMinorCities = (
 #(990, (130, 38), iIndependent, 'Maynila', 2, iArcher, 2),		# Manila
 (1000, (68, 75), iIndependent2, 'Nidaros', 2, iHuscarl, 1),		# Trondheim
 (1000, (87, 30), iNative, 'Muqdisho', 1, iImpi, 1),				# Mogadishu
+(1050, (89, 54), iIndependent2, 'Dvin', 2, iCrossbowman, 1),		# Dvin
 (1115, (131, 61), iIndependent, "Huining", 3, iHorseArcher, 3),		# Huining
 (1154, (96, 40), iIndependent, "Masqat", 3, iCrossbowman, 3),	# Muscat
 (1157, (69, 64), iIndependent, 'Brandenburg', 3, iCrossbowman, 1),		# Brandenburg
@@ -394,10 +395,10 @@ class Barbs:
 			if pJerusalem and pJerusalem.getOwner() >= iNumMajorPlayers:
 				pJerusalem.setHasRealBuilding(iJewishShrine, True)
 
-		if iGameTurn == getTurnForYear(tBirth[iInca]):
-			if utils.getHumanID() == iInca:
-				utils.makeUnit(iAucac, iNative, (27, 28), 1)
-				utils.makeUnit(iAucac, iNative, (28, 25), 1)
+		#if iGameTurn == getTurnForYear(tBirth[iInca]):
+			#if utils.getHumanID() == iInca:
+				#utils.makeUnit(iAucac, iNative, (27, 28), 1)
+				#utils.makeUnit(iAucac, iNative, (28, 25), 1)
 				
 	def foundMinorCities(self, iGameTurn):
 		for i in range(len(tMinorCities)):
@@ -418,11 +419,12 @@ class Barbs:
 			bForceSpawn = True
 			
 			if sName == 'Kyiv': lReligions = [iOrthodoxy]
+			if sName == 'Dvin': lReligions = [iOrthodoxy]
 			if sName == 'Kilwa': lReligions = [iIslam]
 			if sName == 'Vatapi': lReligions = [iIslam]
 			if iPlayer == iCeltia and utils.getHumanID() == iCeltia: continue
 			if iPlayer == iCeltia: iPlayer = iIndependent
-			if sName in ['Vatapi', 'Buda', 'Tucume', 'Chan Chan']: bForceSpawn = True
+			if sName in ['Vatapi', 'Dvin', 'Buda', 'Tucume', 'Chan Chan']: bForceSpawn = True
 			if sName in ['Muqdisho', 'Bahrein']: lReligions = [iIslam]
 			
 			if not self.isFreePlot(tPlot, bForceSpawn): continue
@@ -463,6 +465,13 @@ class Barbs:
 			elif sName == 'Vatapi':
 				city.setHasRealBuilding(iGranary, True)
 				city.setHasRealBuilding(iLighthouse, True)
+				city.setHasRealBuilding(iBarracks, True)
+				plot.changeCulture(iPlayer, 20 * (gc.getGame().getCurrentEra() + 1), True)
+				city.changeCulture(iPlayer, 20 * (gc.getGame().getCurrentEra() + 1), True)
+
+			elif sName == 'Dvin':
+				city.setHasRealBuilding(iGranary, True)
+				city.setHasRealBuilding(iLibrary, True)
 				city.setHasRealBuilding(iBarracks, True)
 				plot.changeCulture(iPlayer, 20 * (gc.getGame().getCurrentEra() + 1), True)
 				city.changeCulture(iPlayer, 20 * (gc.getGame().getCurrentEra() + 1), True)

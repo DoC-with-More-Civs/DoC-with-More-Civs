@@ -133,7 +133,7 @@ iConquestEnglandIrelandYear = 1150
 tConquestEnglandIrelandTL = (52, 64)
 tConquestEnglandIrelandBR = (59, 71)
 
-tConquestEnglandIreland = (19, iEngland, iCeltia, tConquestEnglandIrelandTL, tConquestEnglandIrelandBR, 1, iConquestEnglandIrelandYear, 10)
+tConquestEnglandIreland = (19, iEngland, iCeltia, tConquestEnglandIrelandTL, tConquestEnglandIrelandBR, 2, iConquestEnglandIrelandYear, 10)
 
 
 lConquests = [
@@ -276,9 +276,6 @@ class AIWars:
 				iExtra += 1 #max(1, gc.getPlayer(iPlayer).getCurrentEra())
 				
 			if iPlayer == iMongolia and utils.getHumanID() != iPlayer:
-				iExtra += 1
-
-			if iPlayer == iEngland and utils.getHumanID() != iPlayer:
 				iExtra += 1
 			
 			tPlot = utils.findNearestLandPlot((city.getX(), city.getY()), iPlayer)

@@ -8417,7 +8417,7 @@
 			<ShortDescription>TXT_KEY_CIV_YEMEN_SHORT_DESC</ShortDescription>
 			<Adjective>TXT_KEY_CIV_YEMEN_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_YEMEN_PEDIA</Civilopedia>
-			<DefaultPlayerColor>PLAYERCOLOR_BLUE</DefaultPlayerColor>
+			<DefaultPlayerColor>PLAYERCOLOR_MAROON_AND_WHITE</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_YEMEN</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_MIDDLE_EAST</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_MIDDLE_EASTERN</UnitArtStyleType>

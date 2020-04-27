@@ -147,7 +147,7 @@ iTan = 90
 iLime = 100
 
 # independent cities
-iNumMinorCities = 61
+iNumMinorCities = 63
 
 # scripted conquerors
 iNumConquests = 20
@@ -666,8 +666,8 @@ lEnemyCivsOnSpawn = [
 [], #Wari
 [], #Japan
 [iCeltia, iCeltia, iEngland, iEngland, iFrance, iIndependent, iIndependent2], #Vikings
-[iChina, iChina, iPersia, iPersia, iIndependent, iIndependent, iIndependent2, iIndependent2, iOman, iOman], # Turks
-[iEgypt, iEgypt, iEgypt, iBabylonia, iBabylonia, iGreece, iPersia, iCarthage, iRome, iByzantium, iByzantium, iSpain, iFrance, iCeltia, iCeltia, iIndependent, iIndependent2], #Arabia
+[iChina, iChina, iPersia, iPersia, iArmenia, iIndependent, iIndependent, iIndependent2, iIndependent2, iOman, iOman], # Turks
+[iEgypt, iEgypt, iEgypt, iBabylonia, iBabylonia, iGreece, iPersia, iCarthage, iRome, iByzantium, iByzantium, iArmenia, iSpain, iFrance, iCeltia, iCeltia, iIndependent, iIndependent2], #Arabia
 [], #Tibet
 [iKhmer, iKhmer], #Indonesia
 [iKhmer, iKhmer], #Burma
@@ -763,7 +763,7 @@ lTotalWarOnSpawn = [
 [iMoors], #Spain
 [], #France
 [iTurks, iTurks], #Oman
-[],		# Khitan
+[iChina],		# Khitan
 [], #Khmer
 [], #Yemen
 [], #England
@@ -777,7 +777,7 @@ lTotalWarOnSpawn = [
 [], #Poland
 [],	#Zimbabwe
 [], #Portugal
-[iTiwanaku, iWari], #Inca
+[iNorteChico, iTiwanaku, iWari], #Inca
 [], #Italy
 [],	#Nigeria
 [iChina], #Mongolia
@@ -789,7 +789,7 @@ lTotalWarOnSpawn = [
 [], #Congo
 [], #Sweden
 [], #Netherlands
-[],	#Manchuria
+[iChina, iMongolia],	#Manchuria
 [], #Germany
 [], #America
 [], #Argentina

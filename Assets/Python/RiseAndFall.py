@@ -1358,7 +1358,7 @@ class RiseAndFall:
 		x, y = tCapital
 		bCapitalSettled = False
 		
-		if iCiv == iChina or iCiv == iBurma or iCiv == iYemen:
+		if iCiv == iChina or iCiv == iBurma or iCiv == iYemen or iCiv == iInca:
 			if gc.getMap().plot(x, y).isCity():
 				bCapitalSettled = True
 		
@@ -1748,7 +1748,7 @@ class RiseAndFall:
 				# notify dynamic names
 				dc.onCityAcquired(iCiv, iOwner)
 				
-				if iCiv not in [iChina, iBurma, iYemen]:
+				if iCiv not in [iChina, iBurma, iYemen, iInca]:
 					self.createStartingWorkers(iCiv, tCapital)
 
 		else: # starting units have already been placed, now to the second part

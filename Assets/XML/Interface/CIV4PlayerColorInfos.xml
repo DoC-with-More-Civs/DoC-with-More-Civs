@@ -506,9 +506,9 @@
 		</PlayerColorInfo>
 		<PlayerColorInfo>
 			<Type>PLAYERCOLOR_MAROON_AND_WHITE</Type> <!-- Yemen -->
-			<ColorTypePrimary>COLOR_PLAYER_MAROON</ColorTypePrimary>
+			<ColorTypePrimary>COLOR_PLAYER_GREEN_MAROON</ColorTypePrimary>
 			<ColorTypeSecondary>COLOR_PLAYER_WHITE</ColorTypeSecondary>
-			<TextColorType>COLOR_PLAYER_MAROON_TEXT</TextColorType>
+			<TextColorType>COLOR_PLAYER_GREEN_MAROON_TEXT</TextColorType>
 		</PlayerColorInfo>
 		<PlayerColorInfo>
 			<Type>PLAYERCOLOR_BLUISH_WHITE</Type> <!-- Khazar -->
@@ -560,9 +560,9 @@
 		</PlayerColorInfo>
 		<PlayerColorInfo>
 			<Type>PLAYERCOLOR_CHALUKYA</Type>
-			<ColorTypePrimary>COLOR_PLAYER_DARK_LEMON</ColorTypePrimary>
+			<ColorTypePrimary>COLOR_PLAYER_GREEN_LEMON</ColorTypePrimary>
 			<ColorTypeSecondary>COLOR_PLAYER_WHITE</ColorTypeSecondary>
-			<TextColorType>COLOR_PLAYER_DARK_LEMON_TEXT</TextColorType>
+			<TextColorType>COLOR_PLAYER_GREEN_LEMON_TEXT</TextColorType>
 		</PlayerColorInfo>
 	</PlayerColorInfos>
 </Civ4PlayerColorInfos>
