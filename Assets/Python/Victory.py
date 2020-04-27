@@ -275,6 +275,7 @@ tGermaniaBR = (71, 65)
 ### GOAL CONSTANTS ###
 
 dTechGoals = {
+	iNorteChico: (1, [iWriting, iCalendar]),
 	iChina: (1, [iCompass, iPaper, iGunpowder, iPrinting]),
 	iBabylonia: (0, [iConstruction, iArithmetics, iWriting, iCalendar, iContract]),
 	iGreece: (0, [iMathematics, iLiterature, iAesthetics, iPhilosophy, iMedicine]),

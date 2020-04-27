@@ -700,7 +700,7 @@ def onCivRespawn(iPlayer, tOriginalOwners):
 	
 	if iPlayer in lRespawnNameChanges:
 		if iPlayer == iCarthage:
-			if gc.getGame().getGameTurnYear() >= 1956:
+			if gc.getGame().getGameTurnYear() >= 1200:
 				setShort(iPlayer, text("TXT_KEY_CIV_TUNISIA_SHORT_DESC"))
 				setAdjective(iPlayer, text("TXT_KEY_CIV_TUNISIA_ADJECTIVE"))
 		nameChange(iPlayer)
@@ -2808,7 +2808,7 @@ def leaderName(iPlayer):
 			return "TXT_KEY_ABLAI_KHAN"
 			
 	elif iPlayer == iCarthage:
-		if gc.getGame().getGameTurnYear() >= 1956:
+		if gc.getGame().getGameTurnYear() >= 1200:
 			return "TXT_KEY_LEADER_BEJI"
 				
 	return None

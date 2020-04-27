@@ -573,7 +573,7 @@ tResurrectionIntervals = (
 [(-300, 2020)], #China
 [(1800, 2020)], #Greece
 [(1600, 1800), (1900, 2020)], #India
-[(-1000, -150), (1956, 2020)], #Carthage
+[(-1000, -150), (1200, 1400), (1956, 2020)], #Carthage
 [(1910, 2020)], #Celtia
 [(700, 2020)],		# Polynesia
 [(220, 650), (1500, 2020)], #Persia
@@ -970,7 +970,7 @@ tResurrectionProb = (
 100, #China
 60, #Greece
 50, #India
-50, #Carthage
+70, #Carthage
 50, #Celtia
 40, #Polynesia
 80, #Persia

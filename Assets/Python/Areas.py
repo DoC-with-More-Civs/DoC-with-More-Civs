@@ -206,6 +206,7 @@ iEgypt : (79, 43),	# Cairo
 iNubia : (81, 35),	# Dongola			
 iChina :  (124, 56),	# Beijing			
 iIndia : (105, 46),	# Delhi			
+iCarthage : (67, 48),	# Carthage			
 iPersia : (93, 48),	# Esfahan			
 iEthiopia : (83, 32),	# Addis Ababa # (84, 32)?			
 iKazakh : (105, 58), # Almaty				
@@ -714,7 +715,8 @@ iMughals :	((84, 37),	(94, 43)),
 dRespawnArea = {				
 iEgypt :	((75, 37), 	(82, 45)),		
 iChina :	((117, 46),	(129, 56)),		
-iIndia :	((103, 37),	(113, 47)),		
+iIndia :	((103, 37),	(113, 47)),			
+iPhoenicia : ((62, 45),	(69, 48)),	
 iByzantium :	((75, 49),	(81, 57)),	
 iKazakh :	((99, 58),	(107, 62)),
 iMoors :	((56, 42),	(68, 48)),
