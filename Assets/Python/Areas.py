@@ -303,7 +303,8 @@ dChangedBirthArea = {
 #iCarthage : ((63, 45), (69, 48)),				
 iPersia :	((80, 43), 	(98, 55)), 	# includes Assyria and Anatolia	
 iArabia :	((74, 35),	(90, 50)),	# Arabia	
-iSpain : 	((54, 51), 	(61, 54)), 	# includes Catalonia	
+iSpain : 	((54, 51), 	(61, 54)), 	# includes Catalonia
+iHungary :	((73, 56),	(77, 59)),	# includes Serbia	
 iItaly :	((65, 53),	(71, 58)),	# includes Rome
 iMongolia :   ((105, 53),(131, 65)),	# Mongolia			
 iInca :   ((27, 21),(35, 26)),	# Inca

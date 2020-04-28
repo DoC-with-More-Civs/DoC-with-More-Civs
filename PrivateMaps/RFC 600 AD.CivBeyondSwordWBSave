@@ -1098,7 +1098,7 @@ BeginPlayer
 	Team=68
 	LeaderType=LEADER_MENZIES
 	CivType=CIVILIZATION_AUSTRALIA
-	PlayableCiv=0
+	PlayableCiv=1
 	StartingGold=1200
 	CivicOption=CIVICOPTION_GOVERNMENT, Civic=CIVIC_DESPOTISM
 	CivicOption=CIVICOPTION_LEGITIMACY, Civic=CIVIC_CONSTITUTION
@@ -1112,7 +1112,7 @@ BeginPlayer
 	Team=69
 	LeaderType=LEADER_KRUGER
 	CivType=CIVILIZATION_BOER
-	PlayableCiv=0
+	PlayableCiv=1
 	StartingGold=1000
 	CivicOption=CIVICOPTION_GOVERNMENT, Civic=CIVIC_DEMOCRACY
 	CivicOption=CIVICOPTION_LEGITIMACY, Civic=CIVIC_CONSTITUTION
@@ -1126,7 +1126,7 @@ BeginPlayer
 	Team=70
 	LeaderType=LEADER_TRUDEAU
 	CivType=CIVILIZATION_CANADA
-	PlayableCiv=0
+	PlayableCiv=1
 	StartingGold=1000
 	StateReligion=RELIGION_ORTHODOXY
 	CivicOption=CIVICOPTION_GOVERNMENT, Civic=CIVIC_DEMOCRACY
@@ -1141,7 +1141,7 @@ BeginPlayer
 	Team=71
 	LeaderType=LEADER_BEN_GURION
 	CivType=CIVILIZATION_ISRAEL
-	PlayableCiv=0
+	PlayableCiv=1
 	StartingGold=1500
 	StateReligion=RELIGION_JUDAISM
 	CivicOption=CIVICOPTION_GOVERNMENT, Civic=CIVIC_DEMOCRACY
@@ -61350,7 +61350,7 @@ BeginPlot
 	EndUnit
 	BeginCity
 		CityOwner=6, (Tang Taizong)
-		CityName=Jinling
+		CityName=Jin'ling
 		CityPopulation=4
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_HARBOR
@@ -61836,7 +61836,7 @@ BeginPlot
 	EndUnit
 	BeginCity
 		CityOwner=6, (Tang Taizong)
-		CityName=Hangzhou
+		CityName=Lin'an
 		CityPopulation=4
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_LIGHTHOUSE
