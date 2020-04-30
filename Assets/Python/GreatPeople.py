@@ -1212,6 +1212,9 @@ iCivTeotihuacan : {
 iCivArmenia : {
 
 },
+iCivMississippi : {
+
+},
 iCivKorea : {
 	iGreatProphet : [
 		"Marananta", # 4th

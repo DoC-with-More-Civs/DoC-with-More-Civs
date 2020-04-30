@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Inca -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MISSISSIPPI_DESC</Tag>
+		<English>The Hopewell</English>
+		<French>The Hopewell</French>
+		<German>The Hopewell</German>
+		<Italian>The Hopewell</Italian>
+		<Spanish>The Hopewell</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_HOPEWELL_DESC</Tag>
+		<English>The Mississippi</English>
+		<French>The Mississippi</French>
+		<German>The Mississippi</German>
+		<Italian>The Mississippi</Italian>
+		<Spanish>The Mississippi</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_HOPEWELL_PEOPLES</Tag>
+		<English>%s1 Peoples</English>
+		<French>%s1 Peoples</French>
+		<German>%s1 Peoples</German>
+		<Italian>%s1 Peoples</Italian>
+		<Spanish>%s1 Peoples</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MISSISSIPPI_PEOPLES</Tag>
+		<English>%s1 Peoples</English>
+		<French>%s1 Peoples</French>
+		<German>%s1 Peoples</German>
+		<Italian>%s1 Peoples</Italian>
+		<Spanish>%s1 Peoples</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MISSISSIPPI_DEFAULT</Tag>
+		<English>%s1 City States</English>
+		<French>%s1 City States</French>
+		<German>%s1 City States</German>
+		<Italian>%s1 City States</Italian>
+		<Spanish>%s1 City States</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_HOPEWELL_DEFAULT</Tag>
+		<English>%s1 City States</English>
+		<French>%s1 City States</French>
+		<German>%s1 City States</German>
+		<Italian>%s1 City States</Italian>
+		<Spanish>%s1 City States</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_HOPEWELL_ADJECTIVE</Tag>
+		<English>Mississippian</English>
+		<French>Mississippian</French>
+		<German>Mississippian</German>
+		<Italian>Mississippian</Italian>
+		<Spanish>Mississippian</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MISSISSIPPI_ADJECTIVE</Tag>
+		<English>Hopewell</English>
+		<French>Hopewell</French>
+		<German>Hopewell</German>
+		<Italian>Hopewell</Italian>
+		<Spanish>Hopewell</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MISSISSIPPI_SHORT_DESC</Tag>
+		<English>Hopewell</English>
+		<French>Hopewell</French>
+		<German>Hopewell</German>
+		<Italian>Hopewell</Italian>
+		<Spanish>Hopewell</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_HOPEWELL_SHORT_DESC</Tag>
+		<English>Mississippi</English>
+		<French>Mississippi</French>
+		<German>Mississippi</German>
+		<Italian>Mississippi</Italian>
+		<Spanish>Mississippi</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MISSISSIPPI_EFFIGY_MOUND</Tag>
+		<English>Effigy Mound</English>
+		<French>Effigy Mound</French>
+		<German>Effigy Mound</German>
+		<Italian>Effigy Mound</Italian>
+		<Spanish>Effigy Mound</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MIDEWIWIN_MIDEWIGAAN</Tag>
+		<English>Midewigaan</English>
+		<French>Midewigaan</French>
+		<German>Midewigaan</German>
+		<Italian>Midewigaan</Italian>
+		<Spanish>Midewigaan</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DOM_HOPEWELL</Tag>
+		<English>It is the year 100 BC. The consolidation of the Ohio Hopewell tradition marks the first major step towards the development of complex civilization north of the Mexican Altiplano...</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_MIS_TITLE</Tag>
+		<English>The Power of Mshi-Ziibi:</English>
+		<French>Le pouvoir de mshi-ziibi:</French>
+		<German>Die Macht des Mshi-Ziibi:</German>
+		<Italian>Il potere della mshi-ziibi:</Italian>
+		<Spanish>El poder de la mshi-ziibi:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_MIS</Tag>
+		<English>Extra Commerce along Rivers.</English>
+		<French>Extra Commerce along Rivers.</French>
+		<German>Extra Commerce along Rivers.</German>
+		<Italian>Extra Commerce along Rivers.</Italian>
+		<Spanish>Extra Commerce along Rivers.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_RED_HORN</Tag>
+		<English>Red Horn</English>
+		<French>Red Horn</French>
+		<German>Red Horn</German>
+		<Italian>Red Horn</Italian>
+		<Spanish>Red Horn</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MISSISSIPPI_FALCON_DANCER</Tag>
+		<English>Falcon Dancer</English>
+		<French>Falcon Dancer</French>
+		<German>Falcon Dancer</German>
+		<Italian>Falcon Dancer</Italian>
+		<Spanish>Falcon Dancer</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_MIS1_TITLE</Tag>
+		<English>Hopewell Exchange</English>
+		<French>Hopewell Exchange</French>
+		<German>Hopewell Exchange</German>
+		<Italian>Hopewell Exchange</Italian>
+		<Spanish>Hopewell Exchange</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_MIS1</Tag>
+		<English>Control all tiles along the Mississippi River, Ohio River, and Great Lakes by 500 AD</English>
+		<French>Control all tiles along the Mississippi River, Ohio River, and Great Lakes by 500 AD</French>
+		<German>Control all tiles along the Mississippi River, Ohio River, and Great Lakes by 500 AD</German>
+		<Italian>Control all tiles along the Mississippi River, Ohio River, and Great Lakes by 500 AD</Italian>
+		<Spanish>Control all tiles along the Mississippi River, Ohio River, and Great Lakes by 500 AD</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_MIS2_TITLE</Tag>
+		<English>Fort Ancient Culture</English>
+		<French>Fort Ancient Culture</French>
+		<German>Fort Ancient Culture</German>
+		<Italian>Fort Ancient Culture</Italian>
+		<Spanish>Fort Ancient Culture</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_MIS2</Tag>
+		<English>Build the Serpent Mound and 7 Effigy Mounds by 1070 AD</English>
+		<French>Build the Serpent Mound and 7 Effigy Mounds by 1070 AD</French>
+		<German>Build the Serpent Mound and 7 Effigy Mounds by 1070 AD</German>
+		<Italian>Build the Serpent Mound and 7 Effigy Mounds by 1070 AD</Italian>
+		<Spanish>Build the Serpent Mound and 7 Effigy Mounds by 1070 AD</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_MIS3_TITLE</Tag>
+		<English>Northern Metropolis</English>
+		<French>Northern Metropolis</French>
+		<German>Northern Metropolis</German>
+		<Italian>Northern Metropolis</Italian>
+		<Spanish>Northern Metropolis</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_MIS3</Tag>
+		<English>Build a palace and settle 2 great merchants in Cahokia by 1400 AD</English>
+		<French>Build a palace and settle 2 great merchants in Cahokia by 1400 AD</French>
+		<German>Build a palace and settle 2 great merchants in Cahokia by 1400 AD</German>
+		<Italian>Build a palace and settle 2 great merchants in Cahokia by 1400 AD</Italian>
+		<Spanish>Build a palace and settle 2 great merchants in Cahokia by 1400 AD</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_MISSISSIPPI_RIVER</Tag>
+		<English>Mississippi River</English>
+		<French>Mississippi River</French>
+		<German>Mississippi River</German>
+		<Italian>Mississippi River</Italian>
+		<Spanish>Mississippi River</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_OHIO_RIVER</Tag>
+		<English>Ohio River</English>
+		<French>Ohio River</French>
+		<German>Ohio River</German>
+		<Italian>Ohio River</Italian>
+		<Spanish>Ohio River</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_GREAT_LAKES</Tag>
+		<English>Great Lakes</English>
+		<French>Great Lakes</French>
+		<German>Great Lakes</German>
+		<Italian>Great Lakes</Italian>
+		<Spanish>Great Lakes</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SERPENT_MOUND</Tag>
+		<English>Serpent Mound</English>
+		<French>Serpent Mound</French>
+		<German>Serpent Mound</German>
+		<Italian>Serpent Mound</Italian>
+		<Spanish>Serpent Mound</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SERPENT_MOUND_HELP</Tag>
+		<English>[ICON_BULLET]+1 [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] slot from Parks</English>
+		<French>[ICON_BULLET+1 [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] slot from Parks</French>
+		<German>[ICON_BULLET]+1 [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] slot from Parks</German>
+		<Italian>[ICON_BULLET]+1 [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] slot from Parks</Italian>
+		<Spanish>[ICON_BULLET]+1 [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] slot from Parks</Spanish>
+	</TEXT>
+</Civ4GameText>

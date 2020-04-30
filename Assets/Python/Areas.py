@@ -119,7 +119,8 @@ tCapitals = (
 (84, 35), # Aksum				
 (121, 42), # Co Loa (Hanoi)				
 (17, 43), # Tenotihuacan (Tollan)				
-(89, 53), # Armenia				
+(89, 53), # Armenia
+(26, 55), # Erie				
 (131, 54), # Seoul
 (34, 22), # Tiwanaku				
 (79, 55), # Constantinople
@@ -184,7 +185,8 @@ iNorteChico : (27, 28),	# Chimu
 iCeltia : (57, 69),	# Scottish			
 iMaya : (29, 34),	# Bogota (Colombia)				
 iHarappa : (104, 37),	# Chalukya	
-iTamils : (105, 36),	# Vijayanagara			
+iTamils : (105, 36),	# Vijayanagara
+iMississippi : (22, 54), # Cahokia			
 iChad : (71, 34),     #N'Djamena				
 iKhmer : (121, 41),	# Hanoi			
 iHolyRome : (71, 59),	# Vienna			
@@ -244,7 +246,8 @@ tBirthArea = (
 ((82, 32),	(86, 36)),	# Ethiopia		
 ((120, 40),	(122, 43)),	# Vietnam		
 ((16, 42),	(18, 47)), 	# Teotihuacan		
-((87, 53),	(91, 55)),	# Armenia		
+((87, 53),	(91, 55)),	# Armenia	
+((23, 54),	(28, 56)), 	# Mississippi	
 ((129, 52),	(133, 59)),	# Korea
 ((32, 17), (34, 22)),	# Tiwanaku		
 ((74, 44),	(86, 57)),	# Byzantium
@@ -357,7 +360,8 @@ tCoreArea = (
 ((82, 32),	(86, 36)),	# Ethiopia		
 ((120, 39),	(123, 43)),	# Vietnam		
 ((16, 42),	(18, 44)),	# Teotihuacan		
-((87, 53),	(91, 55)),	# Armenia			
+((87, 53),	(91, 55)),	# Armenia	
+((23, 54),	(28, 56)), 	# Mississippi		
 ((130, 52),	(133, 58)),	# Korea
 ((32, 17), (34, 22)),	# Tiwanaku		
 ((74, 49),	(84, 55)),	# Byzantium
@@ -421,7 +425,8 @@ iIndia :	((103, 37),	(106, 41)),
 iPhoenicia : ((62, 45),	(69, 48)),	
 iCeltia:	((52, 60), (57, 71)), # Ireland, Scotland, Wales and Bretagne
 iPersia : ((89, 43),	(97, 54)),			
-iMaya :	((26, 30),	(35, 38)),	# Colombia	
+iMaya :	((26, 30),	(35, 38)),	# Colombia
+iMississippi :	((21, 49), (24, 55)),	
 iByzantium :	((79, 54),	(81, 56)),		
 iJapan : ((134, 49),	(140, 59)),			
 iTurks : ((91, 43),	(97, 52)),			
@@ -510,7 +515,8 @@ tNormalArea = (
 ((81, 29),	(90, 36)),	# Ethiopia		
 ((120, 39), 	(123, 43)), 	# Vietnam		
 ((15, 42), 	(18, 45)), 	# Teotihuacan		
-((87, 53),	(91, 55)),	# Armenia			
+((87, 53),	(91, 55)),	# Armenia
+((23, 54),	(28, 56)), 	# Mississippi			
 ((130, 53),	(132, 57)),	# Korea
 ((32, 17), (34, 22)),	# Tiwanaku		
 ((75, 49),	(84, 56)),	# Byzantium
@@ -572,7 +578,7 @@ iIndia : 	((96, 42),	(97, 42)),
 iCarthage :	((63, 45),	(70, 48)),		
 iMaya : 	((26, 30),	(35, 38)),	# Colombia		
 iCeltia : 	((53, 65),	(57, 71)),	# Scottish	
-iNorteChico : 	((26, 26),	(27, 32)),	# Chimu	
+iMississippi :	((21, 49), (24, 55)),	
 iArabia : 	((84, 35),	(91, 48)),		
 iKhmer : 	((121, 35),	(124, 43)),		
 iHolyRome : ((69, 56),	(78, 62)),			
@@ -646,7 +652,8 @@ tBroaderArea = (
 ((79, 24),	(90, 37)),	# Ethiopia	
 ((120, 39), 	(123, 43)), 	# Vietnam		
 ((15, 42), 	(18, 45)), 	# Teotihuacan		
-((87, 53),	(91, 55)),	# Armenia			
+((87, 53),	(91, 55)),	# Armenia	
+((23, 54),	(28, 56)), 	# Mississippi		
 ((128, 53),	(133, 61)),	# Korea
 ((32, 17), (34, 22)),	# Tiwanaku		
 ((67, 42),	(86, 56)),	# Byzantium
@@ -706,6 +713,7 @@ iNorteChico : 	((26, 26),	(27, 31)),	# Chimu
 iHarappa :	((103, 35),	(105, 40)),	# Chalukya				
 iCarthage :	((57, 43),	(73, 54)), 	# Carthage	
 iMaya :		((26, 27),	(38, 38)),	# Colombia
+iMississippi :	((21, 49), (24, 55)),
 iByzantium :	((64, 38),	(74, 45)),		
 iHolyRome :	((66, 54),	(79, 62)),		
 iMughals :	((84, 37),	(94, 43)),		

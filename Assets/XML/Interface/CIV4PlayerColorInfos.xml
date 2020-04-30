@@ -544,7 +544,7 @@
 			<Type>PLAYERCOLOR_DARK_RED_AND_BLACK</Type> <!-- Chimu -->
 			<ColorTypePrimary>COLOR_PLAYER_BLACK</ColorTypePrimary>
 			<ColorTypeSecondary>COLOR_PLAYER_DARK_RED</ColorTypeSecondary>
-			<TextColorType>COLOR_PLAYER_DARK_RED_TEXT</TextColorType>
+			<TextColorType>COLOR_PLAYER_BLACK_TEXT</TextColorType>
 		</PlayerColorInfo>
 		<PlayerColorInfo>
 			<Type>PLAYERCOLOR_SCOTLAND</Type>
@@ -563,6 +563,12 @@
 			<ColorTypePrimary>COLOR_PLAYER_GREEN_LEMON</ColorTypePrimary>
 			<ColorTypeSecondary>COLOR_PLAYER_WHITE</ColorTypeSecondary>
 			<TextColorType>COLOR_PLAYER_GREEN_LEMON_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_MISSISSIPPI</Type>
+			<ColorTypePrimary>COLOR_CIVILIZATION_LEMON</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_CIVILIZATION_KHAKI</ColorTypeSecondary>
+			<TextColorType>COLOR_CIVILIZATION_LEMON_TEXT</TextColorType>
 		</PlayerColorInfo>
 	</PlayerColorInfos>
 </Civ4PlayerColorInfos>

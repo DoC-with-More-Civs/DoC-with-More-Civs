@@ -1351,6 +1351,17 @@ void CvPlayerAI::AI_conquerCity(CvCity* pCity, PlayerTypes ePreviousOwner, Playe
                                 iRazeValue /= 100;
 							}
 						}
+			// Qarmatians don't raze Bahrein
+			if (getID() == BARBARIAN && pCity->getX() == 92 && pCity->getY() == 41)
+			{
+				iRazeValue = 0;
+			}
+
+			// Minor Players always Raze Mississippian Cities
+			if (getID() >= NUM_MAJOR_PLAYERS && pCity->getPreviousOwner() == MISSISSIPPI)
+			{
+				iRazeValue = 100;
+			}
 
                         if (GC.getGameINLINE().getSorenRandNum(100, "AI Raze City") < iRazeValue)
 						{

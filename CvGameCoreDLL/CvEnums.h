@@ -1299,6 +1299,7 @@ enum LeaderHeadTypes			// Exposed to Python
 	TACAYNAMO,
 	ASHOT,
 	PULAKESI,
+                RED_HORN,
 	NUM_LEADERHEADS
 };
 
@@ -1393,6 +1394,7 @@ enum PlayerTypes				// Exposed to Python
 	VIETNAM,
 	TEOTIHUACAN,
 	ARMENIA,
+	MISSISSIPPI,
 	KOREA,
 	TIWANAKU,
 	BYZANTIUM,

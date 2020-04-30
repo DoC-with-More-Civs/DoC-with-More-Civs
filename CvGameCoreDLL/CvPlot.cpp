@@ -7367,6 +7367,17 @@ int CvPlot::calculateYield(YieldTypes eYield, bool bDisplay) const
 		}
 		//Rhye - end UP
 
+
+
+		// Mississippi UP: Power of Mshi-Ziibi - Extra Commerce along Rivers
+		if (ePlayer == MISSISSIPPI)
+		{
+			if (!isPeak() && !isWater() && eYield == YIELD_COMMERCE && isRiver())
+			{
+				iYield += 1;
+			}
+		}
+
 		// Leoreth: Tamil UP
 		if (ePlayer == TAMILS)
 		{

@@ -12,7 +12,7 @@ from StoredData import data
 gc = CyGlobalContext()
 PyPlayer = PyHelpers.PyPlayer
 
-iNumLanguages = 51
+iNumLanguages = 52
 (iLangEgyptian, iLangEgyptianArabic, iLangIndian, iLangChinese, iLangTibetan, 
 iLangBabylonian, iLangPersian, iLangGreek, iLangPhoenician, iLangLatin, iLangAssyria, 
  iLangMayan,iLangJapanese, iLangEthiopian, iLangTeotihuacan, iLangKorean, iLangByzantine, 
@@ -22,7 +22,7 @@ iLangMalian, iLangPolish, iLangPortuguese, iLangQuechua, iLangItalian,
 iLangMongolian, iLangAztec, iLangTurkish, iLangThai, iLangCongolese, 
 iLangPrussian, iLangAmerican, iLangCeltic, iLangMexican, iLangPolynesian,
 iLangHarappan, iLangNigerian, iLangPhilippine, iLangSwahili, iLangVietnamese,
-iLangZimbabwean, iLangHebrew, iLangNubian, iLangNubianArabic) = range(iNumLanguages)
+iLangZimbabwean, iLangHebrew, iLangNubian, iLangNubianArabic, iLangMississippi) = range(iNumLanguages)
 
 # methods
 
@@ -60,6 +60,7 @@ def getLanguages(iCiv):
 	elif iCiv == iVietnam: return (iLangVietnamese, iLangKhmer,)
 	elif iCiv == iTeotihuacan: return (iLangTeotihuacan, iLangAztec, iLangMayan)
 	elif iCiv == iArmenia: return (iLangByzantine, iLangLatin)
+	elif iCiv == iMississippi: return (iLangMississippi,)
 	elif iCiv == iKorea: return (iLangKorean, iLangChinese)
 	elif iCiv == iTiwanaku: return (iLangQuechua,)
 	elif iCiv == iByzantium: return (iLangByzantine, iLangLatin)

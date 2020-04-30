@@ -584,6 +584,7 @@ dStartingLeaders = [
 	iVietnam : iTrung,
 	iTeotihuacan : iAtlatlCauac,
 	iArmenia : iAshot,
+	iMississippi : iRedHorn,
 	iKorea : iWangKon,
 	iTiwanaku : iMalkuHuyustus,
 	iByzantium : iJustinian,
