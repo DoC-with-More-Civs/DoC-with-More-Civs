@@ -364,7 +364,12 @@ BeginPlayer
 	Team=12
 	LeaderType=LEADER_KHOSROW
 	CivType=CIVILIZATION_PERSIA
-	PlayableCiv=0
+	PlayableCiv=1
+	StateReligion=RELIGION_ZOROASTRIANISM
+	CivicOption=CIVICOPTION_GOVERNMENT, Civic=CIVIC_MONARCHY
+	CivicOption=CIVICOPTION_SOCIETY, Civic=CIVIC_MANORIALISM
+	CivicOption=CIVICOPTION_ECONOMY, Civic=CIVIC_MERCHANT_TRADE
+	CivicOption=CIVICOPTION_RELIGION, Civic=CIVIC_CLERGY
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
@@ -2003,6 +2008,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=1,y=68
+	BonusType=BONUS_CLAM
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -2018,6 +2024,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=1,y=71
+	BonusType=BONUS_DEER
 	FeatureType=FEATURE_TAIGA, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
@@ -3346,6 +3353,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=4,y=74
+	BonusType=BONUS_DEER
 	isNOfRiver
 	RiverWEDirection=3
 	FeatureType=FEATURE_TAIGA, FeatureVariety=0
@@ -43209,21 +43217,21 @@ BeginPlot
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	BeginUnit
-		UnitType=UNIT_ARCHER, UnitOwner=74, (Independent Leader)
+		UnitType=UNIT_ARCHER, UnitOwner=12, (Persia)
 		Level=1, Experience=0
 	EndUnit
                 BeginUnit
-		UnitType=UNIT_ARCHER, UnitOwner=74, (Independent Leader)
+		UnitType=UNIT_ARCHER, UnitOwner=12, (Persia)
 		Level=1, Experience=0
 	EndUnit
 	BeginCity
-		CityOwner=74, (Independent Leader)
+		CityOwner=12, (Persia)
 		CityName=Tabriz
 		CityPopulation=3
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_FORGE
 		BuildingType=BUILDING_MONUMENT
-		Player74Culture=30, (Independent Leader)
+		Player12Culture=30, (Independent Leader)
 	EndCity
 EndPlot
 BeginPlot
@@ -44568,31 +44576,29 @@ BeginPlot
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	BeginUnit
-		UnitType=UNIT_PERSIAN_IMMORTAL, UnitOwner=75, (Independent Leader2)
+		UnitType=UNIT_PERSIAN_IMMORTAL, UnitOwner=12, (Persia)
 		Level=1, Experience=0
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_ARCHER, UnitOwner=75, (Independent Leader2)
+		UnitType=UNIT_ARCHER, UnitOwner=12, (Persia)
 		Level=1, Experience=0
 	EndUnit
                 BeginUnit
-		UnitType=UNIT_ARCHER, UnitOwner=75, (Independent Leader2)
+		UnitType=UNIT_ARCHER, UnitOwner=12, (Persia)
 		Level=1, Experience=0
 	EndUnit
 	BeginCity
-		CityOwner=75, (Independent Leader2)
+		CityOwner=12, (Persia)
 		CityName=Spah&#226;n
 		CityPopulation=4
-		BuildingType=BUILDING_BARRACKS
 		BuildingType=BUILDING_GRANARY
-		BuildingType=BUILDING_FORGE
 		BuildingType=BUILDING_MONUMENT
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_WEAVER
 		BuildingType=BUILDING_JAIL
 		BuildingType=BUILDING_GONDESHAPUR
 		ReligionType=RELIGION_ZOROASTRIANISM
-		Player75Culture=100, (Independent Leader)
+		Player12Culture=100, (Independent Leader)
 	EndCity
 EndPlot
 BeginPlot
@@ -44612,23 +44618,23 @@ BeginPlot
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	BeginUnit
-		UnitType=UNIT_PERSIAN_IMMORTAL, UnitOwner=75, (Independent Leader2)
+		UnitType=UNIT_PERSIAN_IMMORTAL, UnitOwner=12, (Persia)
 		Level=1, Experience=0
 	EndUnit
                 BeginUnit
-		UnitType=UNIT_ARCHER, UnitOwner=75, (Independent Leader2)
+		UnitType=UNIT_ARCHER, UnitOwner=12, (Persia)
 		Level=1, Experience=0
 	EndUnit
 	BeginCity
-		CityOwner=75, (Independent Leader2)
+		CityOwner=12, (Persia)
 		CityName=Rayy
 		CityPopulation=3
-		BuildingType=BUILDING_BARRACKS
 		BuildingType=BUILDING_GRANARY
-		BuildingType=BUILDING_FORGE
+		BuildingType=BUILDING_MARKET
+		BuildingType=BUILDING_PHARMACY
 		BuildingType=BUILDING_MONUMENT
 		CorporationType=CORPORATION_SILK_ROUTE
-		Player75Culture=50, (Independent Leader)
+		Player12Culture=50, (Independent Leader)
 	EndCity
 EndPlot
 BeginPlot
@@ -45045,19 +45051,18 @@ BeginPlot
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	BeginUnit
-		UnitType=UNIT_PERSIAN_IMMORTAL, UnitOwner=75, (Independent Leader2)
+		UnitType=UNIT_PERSIAN_IMMORTAL, UnitOwner=12, (Persia)
 		Level=1, Experience=0
 	EndUnit
                 BeginUnit
-		UnitType=UNIT_ARCHER, UnitOwner=75, (Independent Leader2)
+		UnitType=UNIT_ARCHER, UnitOwner=12, (Persia)
 		Level=1, Experience=0
 	EndUnit
 	BeginCity
-		CityOwner=75, (Independent Leader2)
+		CityOwner=12, (Persia)
 		CityName=Sirajis
 		CityPopulation=4
-		BuildingType=BUILDING_WALLS
-		BuildingType=BUILDING_BARRACKS
+		BuildingType=BUILDING_PALACE
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_FORGE
 		BuildingType=BUILDING_LIBRARY
@@ -45067,7 +45072,7 @@ BeginPlot
 		BuildingType=BUILDING_APADANA_PALACE
 		ReligionType=RELIGION_ZOROASTRIANISM
 		HolyCityReligionType=RELIGION_ZOROASTRIANISM
-		Player75Culture=200, (Independent Leader)
+		Player12Culture=200, (Independent Leader)
 	EndCity
 EndPlot
 BeginPlot
@@ -46406,22 +46411,23 @@ BeginPlot
                 RouteType=ROUTE_ROAD
 	PlotType=1
                 BeginUnit
-		UnitType=UNIT_PERSIAN_IMMORTAL, UnitOwner=74, (Independent Leader)
+		UnitType=UNIT_PERSIAN_IMMORTAL, UnitOwner=12, (Persia)
 		Level=1, Experience=0
 	EndUnit
                 BeginUnit
-		UnitType=UNIT_ARCHER, UnitOwner=74, (Independent Leader)
+		UnitType=UNIT_ARCHER, UnitOwner=12, (Persia)
 		Level=1, Experience=0
 	EndUnit
 	BeginCity
-		CityOwner=74, (Independent Leader)
+		CityOwner=12, (Persia)
 		CityName=Ch&#226;bah&#226;r
 		CityPopulation=3
-		BuildingType=BUILDING_BARRACKS
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_FORGE
+		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
-		Player74Culture=50, (Independent Leader)
+		ReligionType=RELIGION_ZOROASTRIANISM
+		Player12Culture=50, (Independent Leader)
 	EndCity
 EndPlot
 BeginPlot
@@ -46466,23 +46472,22 @@ BeginPlot
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	BeginUnit
-		UnitType=UNIT_PERSIAN_IMMORTAL, UnitOwner=74, (Independent Leader)
+		UnitType=UNIT_PERSIAN_IMMORTAL, UnitOwner=12, (Persia)
 		Level=1, Experience=0
 	EndUnit
                 BeginUnit
-		UnitType=UNIT_ARCHER, UnitOwner=74, (Independent Leader)
+		UnitType=UNIT_ARCHER, UnitOwner=12, (Persia)
 		Level=1, Experience=0
 	EndUnit
 	BeginCity
-		CityOwner=74, (Independent Leader)
+		CityOwner=12, (Persia)
 		CityName=Artacoana
 		CityPopulation=3
-		BuildingType=BUILDING_BARRACKS
 		BuildingType=BUILDING_GRANARY
-		BuildingType=BUILDING_FORGE
+		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_MONUMENT
 		BuildingType=BUILDING_LIBRARY
-		Player74Culture=50, (Independent Leader)
+		Player12Culture=50, (Independent Leader)
 	EndCity
 EndPlot
 BeginPlot
@@ -46923,22 +46928,22 @@ BeginPlot
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
                 BeginUnit
-		UnitType=UNIT_ARCHER, UnitOwner=75, (Independent Leader2)
+		UnitType=UNIT_ARCHER, UnitOwner=12, (Persia)
 		Level=1, Experience=0
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_ARCHER, UnitOwner=75, (Independent Leader2)
+		UnitType=UNIT_ARCHER, UnitOwner=12, (Persia)
 		Level=1, Experience=0
 	EndUnit
 	BeginCity
-		CityOwner=75, (Independent Leader2)
+		CityOwner=12, (Persia)
 		CityName=Kandah&#226;r
 		CityPopulation=3
-		BuildingType=BUILDING_BARRACKS
 		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_WEAVER
 		ReligionType=RELIGION_BUDDHISM
-		Player75Culture=20, (Independent Leader2)
+		Player12Culture=20, (Independent Leader2)
 	EndCity
 EndPlot
 BeginPlot
@@ -50952,24 +50957,24 @@ EndPlot
 BeginPlot
 	x=106,y=40
 	BeginUnit
-		UnitType=UNIT_INDIAN_PATIYODHA, UnitOwner=74, (Independent Leader)
+		UnitType=UNIT_INDIAN_PATIYODHA, UnitOwner=75, (Independent Leader2)
 		Level=1, Experience=0
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_INDIAN_PATIYODHA, UnitOwner=74, (Independent Leader)
+		UnitType=UNIT_INDIAN_PATIYODHA, UnitOwner=75, (Independent Leader2)
 		Level=1, Experience=0
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_INDIAN_PATIYODHA, UnitOwner=74, (Independent Leader)
+		UnitType=UNIT_INDIAN_PATIYODHA, UnitOwner=75, (Independent Leader2)
 		Level=1, Experience=0
 	EndUnit
 	BeginCity
-		CityOwner=74, (Independent Leader)
+		CityOwner=75, (Independent Leader2)
 		CityName=Bhagyanagar
 		CityPopulation=2
 		BuildingType=BUILDING_GRANARY
 		ReligionType=RELIGION_HINDUISM
-		Player74Culture=20, (Independent Leader)
+		Player75Culture=20, (Independent Leader2)
 	EndCity
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -61389,7 +61394,7 @@ BeginPlot
 	EndUnit
 	BeginCity
 		CityOwner=6, (Tang Taizong)
-		CityName=Jin'ling
+		CityName=Jinling
 		CityPopulation=4
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_HARBOR
@@ -70500,6 +70505,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=147,y=71
+	BonusType=BONUS_FISH
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -71328,6 +71334,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=149,y=69
+	BonusType=BONUS_FISH
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot

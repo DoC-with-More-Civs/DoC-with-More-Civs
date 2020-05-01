@@ -365,7 +365,7 @@ def checkStability(iPlayer, bPositive = False, iMaster = -1):
 		
 def getPossibleMinors(iPlayer):
 
-	if gc.getGame().countKnownTechNumTeams(iNationalism) == 0 and iPlayer in [iMaya, iAztecs, iInca, iMali, iEthiopia, iCongo]:
+	if gc.getGame().countKnownTechNumTeams(iNationalism) == 0 and iPlayer in [iMaya, iAztecs, iInca, iMali, iEthiopia, iCongo, iInuit]:
 		return [iNative]
 		
 	if gc.getGame().getCurrentEra() <= iMedieval:
@@ -660,6 +660,7 @@ def downgradeCottages(iPlayer):
 		plot = gc.getMap().plot(x, y)
 		if plot.getOwner() == iPlayer:
 			iImprovement = plot.getImprovementType()
+			iRoute = plot.getRouteType()
 			
 			if iImprovement == iTown: plot.setImprovementType(iHamlet)
 			elif iImprovement == iVillage: plot.setImprovementType(iCottage)
@@ -670,6 +671,11 @@ def downgradeCottages(iPlayer):
 			if iPlayer in [iCeltia, iHarappa, iNorteChico, iMississippi] and utils.getHumanID() != iPlayer:
 				if iImprovement >= 0:
 					plot.setImprovementType(-1)
+
+			# Destroy all Norte Chico routes
+			if iPlayer in [iCeltia, iHarappa, iNorteChico, iMississippi] and utils.getHumanID() != iPlayer:
+				if iRoute >= 0:
+					plot.setRouteType(-1)
 				
 	if utils.getHumanID() == iPlayer:
 		sText = localText.getText("TXT_KEY_STABILITY_DOWNGRADE_COTTAGES", ())

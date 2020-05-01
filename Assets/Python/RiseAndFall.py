@@ -293,7 +293,7 @@ class RiseAndFall:
 			self.adjust600ADWonders()
 			self.adjust600ADGreatPeople()
 			
-			for iPlayer in [iHarappa]:
+			for iPlayer in [iHarappa, iCarthage]:
 				utils.setReborn(iPlayer, True)
 			
 			
@@ -306,7 +306,7 @@ class RiseAndFall:
 			self.adjust1700ADWonders()
 			self.adjust1700ADGreatPeople()
 			
-			for iPlayer in [iIndia, iPersia, iSpain, iHolyRome, iOttomans, iManchuria, iKhmer, iKhazars]:
+			for iPlayer in [iIndia, iPersia, iSpain, iHolyRome, iOttomans, iManchuria, iKhmer, iKhazars, iCarthage]:
 				utils.setReborn(iPlayer, True)
 			
 			pManchuria.updateTradeRoutes()
@@ -792,6 +792,25 @@ class RiseAndFall:
 			
 	def checkTurn(self, iGameTurn):
 	
+		if pInuit.isAlive() and iInuit != utils.getHumanID():
+			if gc.getGame().getGameTurn() in [getTurnForYear(1), getTurnForYear(500)]:
+				utils.makeUnit(iArcher, iInuit, (4, 59), 1)
+				utils.makeUnit(iDogSled, iInuit, (4, 59), 1)
+
+			if pInuit.isAlive() and gc.getGame().getGameTurn() == getTurnForYear(900):
+				utils.makeUnit(iArcher, iInuit, (27, 61), 1)
+				utils.makeUnit(iDogSled, iInuit, (27, 61), 1)
+				utils.makeUnit(iArcher, iInuit, (31, 58), 1)
+				utils.makeUnit(iDogSled, iInuit, (31, 58), 1)
+
+			if gc.getGame().getGameTurn() == getTurnForYear(1300):
+				utils.makeUnit(iArcher, iInuit, (32, 63), 1)
+				utils.makeUnit(iDogSled, iInuit, (32, 63), 1)
+
+			if gc.getGame().getGameTurn() == getTurnForYear(1500):
+				utils.makeUnit(iArcher, iInuit, (39, 61), 1)
+				utils.makeUnit(iDogSled, iInuit, (39, 61), 1)
+
 		# Leoreth: randomly place goody huts
 		if iGameTurn == utils.getScenarioStartTurn()+3:
 			self.placeGoodyHuts()
@@ -2162,6 +2181,8 @@ class RiseAndFall:
 			if iCiv == iAmerica:
 				iCount = 0
 				lWestCoast = [(8, 59), (8, 58), (8, 57), (8, 56), (8, 55), (8, 54), (9, 53), (9, 52), (9, 51)]
+				lAlaska = [(0, 70), (0, 71), (0, 73), (0, 75), (1, 70), (1, 72), (1, 73), (1, 76), (3, 69), (3, 70)]
+				lEnemyCivs = []
 				lEnemyCivs = []
 				lFreePlots = []
 				for tPlot in lWestCoast:
@@ -2176,6 +2197,23 @@ class RiseAndFall:
 								plot = gc.getMap().plot(i, j)
 								if not (plot.isCity() or plot.isPeak() or plot.isWater()):
 									lFreePlots.append((i, j))
+
+				for tPlot in lAlaska:
+					x, y = tPlot
+					pPlot = gc.getMap().plot(x, y)
+					if pPlot.isCity():
+						if pPlot.getPlotCity().getOwner() != iAmerica:
+							iCount += 1
+							lAlaska.remove((x, y))
+							lEnemyCivs.append(pPlot.getPlotCity().getOwner())
+							for (i, j) in utils.surroundingPlots(tPlot):
+								plot = gc.getMap().plot(i, j)
+								if not (plot.isCity() or plot.isPeak() or plot.isWater()):
+									lFreePlots.append((i, j))
+							if bAlaska:
+								break
+							else:
+								bAlaska = True
 									
 				for iEnemy in lEnemyCivs:
 					gc.getTeam(iCiv).declareWar(iEnemy, True, WarPlanTypes.WARPLAN_LIMITED)

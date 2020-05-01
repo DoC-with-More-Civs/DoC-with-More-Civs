@@ -1991,6 +1991,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=1,y=68
+	BonusType=BONUS_CLAM
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -2006,6 +2007,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=1,y=71
+	BonusType=BONUS_DEER
 	FeatureType=FEATURE_TAIGA, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
@@ -3276,6 +3278,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=4,y=74
+	BonusType=BONUS_DEER
 	isNOfRiver
 	RiverWEDirection=3
 	FeatureType=FEATURE_TAIGA, FeatureVariety=0
@@ -67554,6 +67557,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=147,y=71
+	BonusType=BONUS_FISH
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -68382,6 +68386,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=149,y=69
+	BonusType=BONUS_FISH
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
