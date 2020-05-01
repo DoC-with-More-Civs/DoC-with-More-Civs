@@ -132,8 +132,9 @@ class CvRFCEventHandler:
 		if bConquest:
 			sta.onCityAcquired(city, iOwner, iPlayer)
 	
-		if utils.getScenario() == i600AD and iOwner == iPersia and not utils.isReborn(iOwner):
-			sta.completeCollapse(iOwner)
+		#if utils.getScenario() == i600AD and iOwner == iPersia and not utils.isReborn(iOwner) and not data.bPersianCollapse:
+				#data.bPersianCollapse = True
+				#sta.completeCollapse(iOwner)
 			
 		if iPlayer == iArabia:
 			self.up.arabianUP(city)
@@ -633,6 +634,8 @@ class CvRFCEventHandler:
 			if iOwner == iCarthage and tCity == (58, 39):
 				utils.setReborn(iCarthage, True)
 
+
+			
 		# Leoreth: update trade routes when Porcelain Tower is built to start its effect
 		if iBuildingType == iPorcelainTower:
 			gc.getPlayer(iOwner).updateTradeRoutes()

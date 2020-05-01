@@ -849,6 +849,8 @@ class RiseAndFall:
 				utils.makeUnit(iArcher, iCeltia, (57, 69), 1)
 				utils.makeUnit(iCidainh, iCeltia, (57, 69), 1)
 
+		
+
 		#Leoreth: give Phoenicia a settler in Qart-Hadasht in 820BC
 		if not pCarthage.isHuman() and iGameTurn == getTurnForYear(-820) - (data.iSeed % 10):
 			utils.makeUnit(iSettler, iCarthage, (67, 48), 1)
@@ -1975,7 +1977,10 @@ class RiseAndFall:
 	def onFirstContact(self, iTeamX, iHasMetTeamY):
 	
 		iGameTurn = gc.getGame().getGameTurn()
-		
+
+		# inuit don't trigger mississippi collapse
+		if iTeamX in [iInuit]: return
+
 		# no conquerors for minor civs
 		if iHasMetTeamY >= iNumPlayers: return
 		
@@ -1983,7 +1988,10 @@ class RiseAndFall:
 			if iTeamX in lCivBioNewWorld and iHasMetTeamY in lCivBioOldWorld:
 				iNewWorldCiv = iTeamX
 				iOldWorldCiv = iHasMetTeamY
-				
+
+				if pMississippi.isAlive() and not pMississippi.isHuman() and not data.bMississippiCollapse:
+					data.bMississippiCollapse = True
+					sta.completeCollapse(iMississippi)
 				iIndex = lCivBioNewWorld.index(iNewWorldCiv)
 				
 				bAlreadyContacted = data.lFirstContactConquerors[iIndex]
@@ -2000,22 +2008,12 @@ class RiseAndFall:
 					elif iNewWorldCiv == iTeotihuacan:
 						tContactZoneTL = (9, 36)
 						tContactZoneBR = (38, 50)
-					elif iNewWorldCiv == iAztecs:
-						tContactZoneTL = (9, 36)
-						tContactZoneBR = (38, 50)
-					elif iNewWorldCiv == iInca:
-						tContactZoneTL = (21, 11)
-						tContactZoneBR = (42, 46)
-					elif iNewWorldCiv == iTiwanaku:
-						tContactZoneTL = (21, 11)
-						tContactZoneBR = (42, 46)
-					elif iNewWorldCiv == iWari:
-						tContactZoneTL = (21, 11)
-						tContactZoneBR = (42, 46)
 					elif iNewWorldCiv == iNorteChico:
 						tContactZoneTL = (21, 11)
 						tContactZoneBR = (42, 46)
-						
+
+					lArrivalExceptions = [(25, 32), (26, 40)]
+
 					data.lFirstContactConquerors[iIndex] = True
 					
 					# change some terrain to end isolation
@@ -2032,16 +2030,17 @@ class RiseAndFall:
 						
 					lContactPlots = []
 					lArrivalPlots = []
-					for (x, y) in utils.getPlotList(tContactZoneTL, tContactZoneBR, lArrivalExceptions):
-						plot = gc.getMap().plot(x, y)
-						if plot.isVisible(iNewWorldCiv, False) and plot.isVisible(iOldWorldCiv, False):
-							lContactPlots.append((x,y))
-						if plot.getOwner() == iNewWorldCiv and not plot.isCity():
-							if plot.isFlatlands() or plot.isHills():
-								if not plot.getFeatureType() in [iJungle, iRainforest] and not plot.getTerrainType() == iMarsh:
-									if gc.getMap().getArea(plot.getArea()).getNumTiles() > 3:
-										lArrivalPlots.append((x,y))
-								
+					if not iNewWorldCiv in [iMississippi]:
+						for (x, y) in utils.getPlotList(tContactZoneTL, tContactZoneBR, lArrivalExceptions):
+							plot = gc.getMap().plot(x, y)
+							if plot.isVisible(iNewWorldCiv, False) and plot.isVisible(iOldWorldCiv, False):
+								lContactPlots.append((x,y))
+							if plot.getOwner() == iNewWorldCiv and not plot.isCity():
+								if plot.isFlatlands() or plot.isHills():
+									if not plot.getFeatureType() in [iJungle, iRainforest] and not plot.getTerrainType() == iMarsh:
+										if gc.getMap().getArea(plot.getArea()).getNumTiles() > 3:
+											lArrivalPlots.append((x,y))
+
 					if lContactPlots and lArrivalPlots:
 						tContactPlot = utils.getRandomEntry(lContactPlots)
 						lDistancePlots = [(tuple, utils.calculateDistance(tuple[0], tuple[1], tContactPlot[0], tContactPlot[1])) for tuple in lArrivalPlots]
@@ -2087,23 +2086,14 @@ class RiseAndFall:
 						if iStateReligion >= 0:
 							utils.makeUnit(iMissionary + iStateReligion, iOldWorldCiv, tArrivalPlot, 1)
 							
-						if iNewWorldCiv == iInca:
+						if iNewWorldCiv == iNorteChico:
 							utils.makeUnitAI(iAucac, iOldWorldCiv, tArrivalPlot, UnitAITypes.UNITAI_ATTACK_CITY, 3)
-						elif iNewWorldCiv == iAztecs:
-							utils.makeUnitAI(iJaguar, iOldWorldCiv, tArrivalPlot, UnitAITypes.UNITAI_ATTACK_CITY, 2)
-							utils.makeUnitAI(iHolkan, iOldWorldCiv, tArrivalPlot, UnitAITypes.UNITAI_ATTACK_CITY, 1)
 						elif iNewWorldCiv == iTeotihuacan:
 							utils.makeUnitAI(iJaguar, iOldWorldCiv, tArrivalPlot, UnitAITypes.UNITAI_ATTACK_CITY, 2)
 							utils.makeUnitAI(iHolkan, iOldWorldCiv, tArrivalPlot, UnitAITypes.UNITAI_ATTACK_CITY, 1)
 						elif iNewWorldCiv == iMaya:
 							utils.makeUnitAI(iHolkan, iOldWorldCiv, tArrivalPlot, UnitAITypes.UNITAI_ATTACK_CITY, 2)
 							utils.makeUnitAI(iJaguar, iOldWorldCiv, tArrivalPlot, UnitAITypes.UNITAI_ATTACK_CITY, 1)
-						elif iNewWorldCiv == iNorteChico:
-							utils.makeUnitAI(iAucac, iOldWorldCiv, tArrivalPlot, UnitAITypes.UNITAI_ATTACK_CITY, 3)
-						elif iNewWorldCiv == iTiwanaku:
-							utils.makeUnitAI(iAucac, iOldWorldCiv, tArrivalPlot, UnitAITypes.UNITAI_ATTACK_CITY, 3)
-						elif iNewWorldCiv == iWari:
-							utils.makeUnitAI(iAucac, iOldWorldCiv, tArrivalPlot, UnitAITypes.UNITAI_ATTACK_CITY, 3)
 						
 						if utils.getHumanID() == iNewWorldCiv:
 							CyInterface().addMessage(iNewWorldCiv, True, iDuration, CyTranslator().getText("TXT_KEY_FIRST_CONTACT_NEWWORLD", ()), "", 0, "", ColorTypes(iWhite), -1, -1, True, True)

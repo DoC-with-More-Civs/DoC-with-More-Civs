@@ -1215,8 +1215,8 @@ def specificName(iPlayer):
 	elif iPlayer == iInuit:
 		bCanada = False
 		for city in utils.getCityList(iPlayer):
-			if (city.getRegionID() == rScandinavia and city.getY() <= 63 and city.getX() <= 42):
-				return "TXT_KEY_INUIT_THULE"
+			if (city.getRegionID() == rScandinavia and city.getY() <= 73 and city.getX() <= 42):
+				return "TXT_KEY_CIV_INUIT_THULE"
 
 			if (city.getRegionID() == rCanada):
 				bCanada = True

@@ -410,7 +410,7 @@ def secedeCities(iPlayer, lCities, bRazeMinorCities = False):
 							continue
 							
 			# always raze Harappan cities
-			if iPlayer in [iHarappa, iNorteChico] and utils.getHumanID() != iPlayer:
+			if iPlayer in [iHarappa, iNorteChico, iMississippi] and utils.getHumanID() != iPlayer:
 				lRemovedCities.append(city)
 				continue
 						
@@ -420,6 +420,19 @@ def secedeCities(iPlayer, lCities, bRazeMinorCities = False):
 		plot = city.plot()
 		gc.getPlayer(iBarbarian).disband(city)
 		plot.setCulture(iPlayer, 0, True)
+		if iPlayer in [iMississippi, iNorteChico]:
+			if iPlayer in [iMississippi]:
+				if plot.getImprovementType() >= iCityRuins and not (plot.isPeak() and plot.isWater() and plot.getTerrainType() in [iDesert, iSnow, iMarsh]):
+					if plot.getFeatureType() == -1:
+						plot.setFeatureType(iForest, 0)
+				if not plot.getImprovementType() in [iCityRuins, iHut]:
+					plot.setImprovementType(-1)
+				if plot.getImprovementType() in [iCityRuins]:
+					plot.setImprovementType(iHut)
+			else:
+				plot.setImprovementType(-1)
+
+			plot.setRouteType(-1)
 	
 	for city in lCededCities:
 		tCityPlot = (city.getX(), city.getY())
@@ -654,7 +667,7 @@ def downgradeCottages(iPlayer):
 			elif iImprovement == iCottage: plot.setImprovementType(-1)
 			
 			# Destroy all Harappan improvements
-			if iPlayer in [iCeltia, iHarappa, iNorteChico] and utils.getHumanID() != iPlayer:
+			if iPlayer in [iCeltia, iHarappa, iNorteChico, iMississippi] and utils.getHumanID() != iPlayer:
 				if iImprovement >= 0:
 					plot.setImprovementType(-1)
 				

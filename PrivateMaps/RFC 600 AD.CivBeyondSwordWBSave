@@ -459,7 +459,7 @@ BeginPlayer
 	Team=21
 	LeaderType=LEADER_RED_HORN
 	CivType=CIVILIZATION_MISSISSIPPI
-	PlayableCiv=0
+	PlayableCiv=1
 	StartingGold=700
 	CivicOption=CIVICOPTION_RELIGION, Civic=CIVIC_DEIFICATION
 	Handicap=HANDICAP_REGENT
@@ -13086,6 +13086,22 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=26,y=55
+	BeginUnit
+		UnitType=UNIT_ARCHER, UnitOwner=21, (Mississippi)
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_ARCHER, UnitOwner=21, (Mississippi)
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_ARCHER, UnitOwner=21, (Mississippi)
+	EndUnit
+	BeginCity
+		CityOwner=21, (Mississippi)
+		CityName=Erie
+		CityPopulation=4
+		BuildingType=BUILDING_PALACE
+		Player21Culture=100, (Mississippi)
+	EndCity
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
