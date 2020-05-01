@@ -709,6 +709,13 @@ enum TerrainTypes						// Exposed to Python
 	TERRAIN_PEAK,
 	TERRAIN_HILL,
 	TERRAIN_MARSH,
+	TERRAIN_LAGOON,
+	TERRAIN_ARCTIC_COAST,
+	TERRAIN_SEMIDESERT,
+	TERRAIN_STEPPE,
+	TERRAIN_MOORLAND,
+	TERRAIN_SALTFLAT,
+	TERRAIN_SALTLAKE,
 };
 
 enum PlotTypes							// Exposed to Python
@@ -1300,6 +1307,7 @@ enum LeaderHeadTypes			// Exposed to Python
 	ASHOT,
 	PULAKESI,
                 RED_HORN,
+	AUA,
 	NUM_LEADERHEADS
 };
 
@@ -1394,6 +1402,7 @@ enum PlayerTypes				// Exposed to Python
 	VIETNAM,
 	TEOTIHUACAN,
 	ARMENIA,
+	INUIT,
 	MISSISSIPPI,
 	KOREA,
 	TIWANAKU,

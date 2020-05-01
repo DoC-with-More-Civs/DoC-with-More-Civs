@@ -136,6 +136,14 @@ class Barbs:
 						iUnit = utils.getRandomEntry(lUnitList)
 						utils.makeUnit(iUnit, iOwner, tPlot, 1)
 
+		if utils.isYearIn(-100, 1600):
+			# Siberian Bears
+			self.checkLimitedSpawn(iBarbarian, iBear, 1, 5, (140, 65), (148, 76), self.spawnNatives, iGameTurn, 10, 4)
+			# Alaskan and Eastern Canadian Bears
+			self.checkLimitedSpawn(iBarbarian, iBear, 1, 5,  (0, 67), (24, 77), self.spawnNatives, iGameTurn, 5, 2)
+			# Greenland and Western Canadian Bears
+			self.checkLimitedSpawn(iBarbarian, iBear, 1, 5, (25, 63), (44, 77), self.spawnNatives, iGameTurn, 5, 2)
+
 		if utils.isYearIn(-3000, -850):
 			if iHandicap >= 0:
 				self.checkSpawn(iBarbarian, iWarrior, 1, (92, 53), (116, 62), self.spawnMinors, iGameTurn, 5, 0)
@@ -341,9 +349,9 @@ class Barbs:
                               
 		#American natives
 		if utils.isYearIn(-100, 400):
-			self.checkSpawn(iNative, iDogSoldier, 2 + iHandicap, (15, 38), (24, 47), self.spawnNatives, iGameTurn, 20, 0)
+			self.checkSpawn(iNative, iDogSoldier, 2 + iHandicap, (13, 46), (24, 56), self.spawnNatives, iGameTurn, 20, 0)
 		if utils.isYearIn(400, 1100):
-			self.checkSpawn(iNative, iDogSoldier, 1 + iHandicap, (15, 38), (24, 47), self.spawnNatives, iGameTurn, 20, 0)
+			self.checkSpawn(iNative, iDogSoldier, 1 + iHandicap, (13, 46), (24, 56), self.spawnNatives, iGameTurn, 20, 0)
 			if utils.getScenario() == i3000BC:  #late start condition
 				self.checkSpawn(iNative, iJaguar, 3, (12, 45), (24, 55), self.spawnNatives, iGameTurn, 16 - 2*iHandicap, 10)
 			else:  #late start condition
@@ -355,13 +363,13 @@ class Barbs:
 			self.checkSpawn(iNative, iDogSoldier, 1 + iHandicap, (8, 50), (34, 60), self.spawnUprising, iGameTurn, 12, 6)
 		if utils.isYearIn(1300, 1600):
 			if iGameTurn % 18 == 0:
-				if not gc.getMap().plot(29, 34).isUnit():
-					utils.makeUnitAI(iChimuSuchucChiquiAucac, iNative, (29, 34), UnitAITypes.UNITAI_ATTACK, 2 + iHandicap)
+				if not gc.getMap().plot(28, 31).isUnit():
+					utils.makeUnitAI(iChimuSuchucChiquiAucac, iNative, (28, 31), UnitAITypes.UNITAI_ATTACK, 2 + iHandicap)
 			elif iGameTurn % 18 == 9:
-				if not gc.getMap().plot(30, 13).isUnit():
-					utils.makeUnitAI(iChimuSuchucChiquiAucac, iNative, (33, 12), UnitAITypes.UNITAI_ATTACK, 2 + iHandicap)
+				if not gc.getMap().plot(34, 20).isUnit():
+					utils.makeUnitAI(iChimuSuchucChiquiAucac, iNative, (34, 20), UnitAITypes.UNITAI_ATTACK, 2 + iHandicap)
 		
-		if self.includesActiveHuman([iAmerica, iEngland, iFrance]):
+		if self.includesActiveHuman([iAmerica, iEngland, iFrance, iMississippi]):
 			if utils.isYearIn(1700, 1900):
 				self.checkSpawn(iNative, iMountedBrave, 1 + iHandicap, (14, 52), (23, 62), self.spawnNomads, iGameTurn, 12 - iHandicap, 2)
 			

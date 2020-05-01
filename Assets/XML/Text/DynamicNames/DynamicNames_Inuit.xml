@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Inca -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_INUIT_DESC</Tag>
+		<English>The Inuit</English>
+		<French>The Inuit</French>
+		<German>The Inuit</German>
+		<Italian>The Inuit</Italian>
+		<Spanish>The Inuit</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_INUIT_PEOPLES</Tag>
+		<English>The Inuit</English>
+		<French>The Inuit</French>
+		<German>The Inuit</German>
+		<Italian>The Inuit</Italian>
+		<Spanish>The Inuit</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_INUIT_DEFAULT</Tag>
+		<English>%s1 %s2</English>
+		<French>%s1 %s2</French>
+		<German>%s1 %s2</German>
+		<Italian>%s1 %s2</Italian>
+		<Spanish>%s1 %s2</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_INUIT_ADJECTIVE</Tag>
+		<English>Inuit</English>
+		<French>Inuit</French>
+		<German>Inuit</German>
+		<Italian>Inuit</Italian>
+		<Spanish>Inuit</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_INUIT_BERING_SEA</Tag>
+		<English>Bering Sea</English>
+		<French>Bering Sea</French>
+		<German>Bering Sea</German>
+		<Italian>Bering Sea</Italian>
+		<Spanish>Bering Sea</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_INUIT_DORSET</Tag>
+		<English>Dorset</English>
+		<French>Dorset</French>
+		<German>Dorset</German>
+		<Italian>Dorset</Italian>
+		<Spanish>Dorset</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_INUIT_THULE</Tag>
+		<English>Thule</English>
+		<French>Thule</French>
+		<German>Thule</German>
+		<Italian>Thule</Italian>
+		<Spanish>Thule</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_INUIT_COUNCIL</Tag>
+		<English>%s2 Circumpolar Council</English>
+		<French>%s2 Circumpolar Council</French>
+		<German>%s2 Circumpolar Council</German>
+		<Italian>%s2 Circumpolar Council</Italian>
+		<Spanish>%s2 Circumpolar Council</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_INUIT_SHORT_DESC</Tag>
+		<English>Inuit</English>
+		<French>Inuit</French>
+		<German>Inuit</German>
+		<Italian>Inuit</Italian>
+		<Spanish>Inuit</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_INUIT_IGLOO</Tag>
+		<English>Igloo</English>
+		<French>Igloo</French>
+		<German>Igloo</German>
+		<Italian>Igloo</Italian>
+		<Spanish>Igloo</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_INUIT_IGLOO_HELP</Tag>
+		<English>[ICON_BULLET]+1 Food and Production from Ice and Tundra</English>
+		<French>[ICON_BULLET]+1 Food and Production from Ice and Tundra</French>
+		<German>[ICON_BULLET]+1 Food and Production from Ice and Tundra</German>
+		<Italian>[ICON_BULLET]+1 Food and Production from Ice and Tundra</Italian>
+		<Spanish>[ICON_BULLET]+1 Food and Production from Ice and Tundra</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ANGAKKUQ_QARGI</Tag>
+		<English>Qargi</English>
+		<French>Qargi</French>
+		<German>Qargi</German>
+		<Italian>Qargi</Italian>
+		<Spanish>Qargi</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DOM_INUIT</Tag>
+		<English>It is the year 200 BC. The Inuit's arrival to the Bering Strait marks the beginning of what will become one of the longest lasting cultures of the arctic.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_AUA</Tag>
+		<English>Aua</English>
+		<French>Aua</French>
+		<German>Aua</German>
+		<Italian>Aua</Italian>
+		<Spanish>Aua</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_INU_TITLE</Tag>
+		<English>The Power of Inuksuk:</English>
+		<French>Le pouvoir de inuksuk:</French>
+		<German>Die Macht des Inuksuk:</German>
+		<Italian>Il potere della inuksuk:</Italian>
+		<Spanish>El poder de la inuksuk:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_INU</Tag>
+		<English>Trade routes do not require roads. Extra Commerce on coastal city tiles.</English>
+		<French>Trade routes do not require roads. Extra Commerce on coastal city tiles.</French>
+		<German>Trade routes do not require roads. Extra Commerce on coastal city tiles.</German>
+		<Italian>Trade routes do not require roads. Extra Commerce on coastal city tiles.</Italian>
+		<Spanish>Trade routes do not require roads. Extra Commerce on coastal city tiles.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_INUIT_DOG_SLED</Tag>
+		<English>Inuit Dog Sled</English>
+		<French>Inuit Dog Sled</French>
+		<German>Inuit Dog Sled</German>
+		<Italian>Inuit Dog Sled</Italian>
+		<Spanish>Inuit Dog Sled</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_INUIT_DOG_SLED_HELP</Tag>
+		<English>[ICON_BULLET]Can settle on Ice (along Coast)</English>
+		<French>[ICON_BULLET]Can settle on Ice (along Coast)</French>
+		<German>[ICON_BULLET]Can settle on Ice (along Coast)</German>
+		<Italian>[ICON_BULLET]Can settle on Ice (along Coast)</Italian>
+		<Spanish>[ICON_BULLET]Can settle on Ice (along Coast)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_URV_POL2_ANGAKKUQ</Tag>
+		<English>Acquire and work 3 Crab, Whale, and Fish Resources</English>
+		<French>Acquire and work 3 Crab, Whale, and Fish Resources</French>
+		<German>Acquire and work 3 Crab, Whale, and Fish Resources</German>
+		<Italian>Acquire and work 3 Crab, Whale, and Fish Resources</Italian>
+		<Spanish>Acquire and work 3 Crab, Whale, and Fish Resources</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_INU1_TITLE</Tag>
+		<English>The Dorset</English>
+		<French>The Dorset</French>
+		<German>The Dorset</German>
+		<Italian>The Dorset</Italian>
+		<Spanish>The Dorset</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_INU1</Tag>
+		<English>Settle Kivalliq, Kalaallit Nunaat, Qikiqtaaluk, and Nunavik by 900 AD</English>
+		<French>Settle Kivalliq, Kalaallit Nunaat, Qikiqtaaluk, and Nunavik by 900 AD</French>
+		<German>Settle Kivalliq, Kalaallit Nunaat, Qikiqtaaluk, and Nunavik by 900 AD</German>
+		<Italian>Settle Kivalliq, Kalaallit Nunaat, Qikiqtaaluk, and Nunavik by 900 AD</Italian>
+		<Spanish>Settle Kivalliq, Kalaallit Nunaat, Qikiqtaaluk, and Nunavik by 900 AD</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_INU2_TITLE</Tag>
+		<English>Bounty of the North</English>
+		<French>Bounty of the North</French>
+		<German>Bounty of the North</German>
+		<Italian>Bounty of the North</Italian>
+		<Spanish>Bounty of the North</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_INU2</Tag>
+		<English>Acquire 25 Resources</English>
+		<French>Acquire 25 Resources</French>
+		<German>Acquire 25 Resources</German>
+		<Italian>Acquire 25 Resources</Italian>
+		<Spanish>Acquire 25 Resources</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_INU3_TITLE</Tag>
+		<English>Bladder Festival</English>
+		<French>Bladder Festival</French>
+		<German>Bladder Festival</German>
+		<Italian>Bladder Festival</Italian>
+		<Spanish>Bladder Festival</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_INU3</Tag>
+		<English>Control and work more Ocean, Coast, and Lake tiles than any other civilization</English>
+		<French>Control and work more Ocean, Coast, and Lake tiles than any other civilization</French>
+		<German>Control and work more Ocean, Coast, and Lake tiles than any other civilization</German>
+		<Italian>Control and work more Ocean, Coast, and Lake tiles than any other civilization</Italian>
+		<Spanish>Control and work more Ocean, Coast, and Lake tiles than any other civilization</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_KIVALLIQ</Tag>
+		<English>Kivalliq</English>
+		<French>Kivalliq</French>
+		<German>Kivalliq</German>
+		<Italian>Kivalliq</Italian>
+		<Spanish>Kivalliq</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_NUNAVIK</Tag>
+		<English>Nunavik</English>
+		<French>Nunavik</French>
+		<German>Nunavik</German>
+		<Italian>Nunavik</Italian>
+		<Spanish>Nunavik</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_KALAALLIT_NUNAAT</Tag>
+		<English>Kalaallit Nunaat</English>
+		<French>Kalaallit Nunaat</French>
+		<German>Kalaallit Nunaat</German>
+		<Italian>Kalaallit Nunaat</Italian>
+		<Spanish>Kalaallit Nunaat</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_QIKIQTAALUK</Tag>
+		<English>Qikiqtaaluk</English>
+		<French>Qikiqtaaluk</French>
+		<German>Qikiqtaaluk</German>
+		<Italian>Qikiqtaaluk</Italian>
+		<Spanish>Qikiqtaaluk</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_RESOURCES</Tag>
+		<English>Resources</English>
+		<French>Resources</French>
+		<German>Resources</German>
+		<Italian>Resources</Italian>
+		<Spanish>Resources</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_MOST_WATER_OWN_CIV</Tag>
+		<English>Civilization with the most Coast, Ocean, and Lakes: %s1</English>
+		<French>Civilization with the most Coast, Ocean, and Lakes: %s1</French>
+		<German>Civilization with the most Coast, Ocean, and Lakes: %s1</German>
+		<Italian>Civilization with the most Coast, Ocean, and Lakes: %s1</Italian>
+		<Spanish>Civilization with the most Coast, Ocean, and Lakes: %s1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_MOST_WATER_WORK_CIV</Tag>
+		<English>Civilization working the most Coast, Ocean, and Lakes: %s1</English>
+		<French>Civilization working the most Coast, Ocean, and Lakes: %s1</French>
+		<German>Civilization working the most Coast, Ocean, and Lakes: %s1</German>
+		<Italian>Civilization working the most Coast, Ocean, and Lakes: %s1</Italian>
+		<Spanish>Civilization working the most Coast, Ocean, and Lakes: %s1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_WORKED_RESOURCES</Tag>
+		<English>Worked %s1 resources: %d2 / %d3d</English>
+		<French>Worked %s1 resources: %d2 / %d3d</French>
+		<German>Worked %s1 resources: %d2 / %d3d</German>
+		<Italian>Worked %s1 resources: %d2 / %d3d</Italian>
+		<Spanish>Worked %s1 resources: %d2 / %d3d</Spanish>
+	</TEXT>
+</Civ4GameText>

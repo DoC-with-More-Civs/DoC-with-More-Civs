@@ -60,6 +60,7 @@ def getLanguages(iCiv):
 	elif iCiv == iVietnam: return (iLangVietnamese, iLangKhmer,)
 	elif iCiv == iTeotihuacan: return (iLangTeotihuacan, iLangAztec, iLangMayan)
 	elif iCiv == iArmenia: return (iLangByzantine, iLangLatin)
+	elif iCiv == iInuit: return (iLangMississippi,)
 	elif iCiv == iMississippi: return (iLangMississippi,)
 	elif iCiv == iKorea: return (iLangKorean, iLangChinese)
 	elif iCiv == iTiwanaku: return (iLangQuechua,)

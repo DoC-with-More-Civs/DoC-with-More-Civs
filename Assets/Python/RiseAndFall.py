@@ -1284,7 +1284,7 @@ class RiseAndFall:
 						iRndNum = gc.getGame().getSorenRandNum(2, 'random independent')
 						if iRndNum == 1:
 							iNewCiv = iIndependent2
-						if iPlayer in [iAztecs, iInca, iMaya, iEthiopia, iMali]:
+						if iPlayer in [iAztecs, iInca, iMaya, iEthiopia, iMali, iInuit]:
 							if data.iCivsWithNationalism <= 0:
 								iNewCiv = iNative
 						splittingCity = utils.getRandomEntry(cityList)
@@ -2473,6 +2473,8 @@ class RiseAndFall:
 		elif iCiv == iArmenia:
 			utils.makeUnit(iArcher, iCiv, tPlot, 2)
 			utils.makeUnit(iSwordsman, iCiv, tPlot, 2)
+		elif iCiv == iInuit:
+			utils.makeUnit(iMilitia, iCiv, tPlot, 4)
 		elif iCiv == iMississippi:
 			utils.makeUnit(iFalconDancer, iCiv, tPlot, 4)
 		elif iCiv == iKorea:
@@ -2757,6 +2759,9 @@ class RiseAndFall:
 			if utils.getHumanID() != iArmenia:
 				utils.makeUnit(iSpearman, iCiv, tPlot, 2)
 				utils.makeUnit(iCrossbowman, iCiv, tPlot, 2)
+		elif iCiv == iInuit:
+			utils.createSettlers(iCiv, 1)
+			utils.makeUnit(iMilitia, iCiv, tPlot, 1)
 		elif iCiv == iMississippi:
 			utils.createSettlers(iCiv, 1)
 			utils.makeUnit(iFalconDancer, iCiv, tPlot, 2)
@@ -3346,6 +3351,8 @@ class RiseAndFall:
 		elif iCiv == iTeotihuacan:
 			utils.makeUnit(iArtisan, iCiv, tPlot, 2)
 		elif iCiv == iArmenia:
+			utils.makeUnit(iWorker, iCiv, tPlot, 1)
+		elif iCiv == iInuit:
 			utils.makeUnit(iWorker, iCiv, tPlot, 1)
 		elif iCiv == iMississippi:
 			utils.makeUnit(iWorker, iCiv, tPlot, 2)

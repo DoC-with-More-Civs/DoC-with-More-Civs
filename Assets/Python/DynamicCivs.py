@@ -584,6 +584,7 @@ dStartingLeaders = [
 	iVietnam : iTrung,
 	iTeotihuacan : iAtlatlCauac,
 	iArmenia : iAshot,
+	iInuit : iAua,
 	iMississippi : iRedHorn,
 	iKorea : iWangKon,
 	iTiwanaku : iMalkuHuyustus,
@@ -1210,6 +1211,19 @@ def specificName(iPlayer):
 			
 		if iGameTurn >= getTurnForYear(800):
 			return "TXT_KEY_CIV_TEOTIHUACAN_TULA"
+
+	elif iPlayer == iInuit:
+		bCanada = False
+		for city in utils.getCityList(iPlayer):
+			if (city.getRegionID() == rScandinavia and city.getY() <= 63 and city.getX() <= 42):
+				return "TXT_KEY_INUIT_THULE"
+
+			if (city.getRegionID() == rCanada):
+				bCanada = True
+
+		if bCanada: return "TXT_KEY_CIV_INUIT_DORSET"
+
+		return "TXT_KEY_CIV_INUIT_BERING_SEA"
 		
 	elif iPlayer == iByzantium:
 		if iReligion == iIslam:
@@ -2089,6 +2103,10 @@ def specificTitle(iPlayer, lPreviousOwners=[]):
 			
 		if bCityStates:
 			return "TXT_KEY_CIV_TEOTIHUACAN_ALTEPETL"
+
+	elif iPlayer == iInuit:
+		if iEra >= iGlobal:
+			return "TXT_KEY_CIV_INUIT_COUNCIL"
 			
 	elif iPlayer == iArmenia:
 		if iReligion == iIslam:

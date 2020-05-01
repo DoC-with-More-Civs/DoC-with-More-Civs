@@ -1529,6 +1529,12 @@ void CvPlot::updatePlotGroupBonus(bool bAdd)
 					if ((pPlotGroup != NULL) && isBonusNetwork(getTeam()))
 					{
 						pPlotGroup->changeNumBonuses(eNonObsoleteBonus, ((bAdd) ? 1 : -1));
+
+						// Chimu UP: Recieves a Free specialist in the capital for every other improved resource in Northwestern South American.
+						if (getOwnerINLINE() == NORTECHICO && GET_PLAYER((PlayerTypes)NORTECHICO).isReborn() && getX_INLINE() >= 26 && getX_INLINE() <= 30 && getY_INLINE() >= 21 && getY_INLINE() <= 36)
+						{
+							GET_PLAYER(getOwnerINLINE()).changeUniqueValue(((bAdd) ? 1 : -1));
+						}
 					}
 				}
 			}
@@ -2702,7 +2708,22 @@ bool CvPlot::canHaveImprovement(ImprovementTypes eImprovement, TeamTypes eTeam, 
 
 	for (iI = 0; iI < NUM_YIELD_TYPES; ++iI)
 	{
-		if (calculateNatureYield(((YieldTypes)iI), eTeam) < GC.getImprovementInfo(eImprovement).getPrereqNatureYield(iI) && !bMexico && !bOman) // Mexican UP Omani UP
+		// Prevent the Inuit UB from allowing Farms on Tundra and Ice
+		int iPenalty = 0;
+		if (!isCity() && getWorkingCity() != NULL && getWorkingCity()->isHasBuildingEffect((BuildingTypes)GC.getInfoTypeForString("BUILDING_INUIT_IGLOO")))
+		{
+			if (getTerrainType() == GC.getInfoTypeForString("TERRAIN_SNOW") ||
+				getTerrainType() == GC.getInfoTypeForString("TERRAIN_TUNDRA") ||
+				getFeatureType() == GC.getInfoTypeForString("FEATURE_ICE"))
+			{
+
+				if ((YieldTypes)iI == YIELD_FOOD && !isHills())
+				{
+					iPenalty = -1;
+				}
+			}
+		}
+		if (calculateNatureYield(((YieldTypes)iI), eTeam) + iPenalty < GC.getImprovementInfo(eImprovement).getPrereqNatureYield(iI) && !bMexico && !bOman) // Mexican UP Omani UP
 		{
 			return false;
 		}
@@ -4244,7 +4265,8 @@ bool CvPlot::isNetworkTerrain(TeamTypes eTeam) const
 
 bool CvPlot::isBonusNetwork(TeamTypes eTeam) const
 {
-	if (isRoute())
+	// Inuit UP: Trade routes do not require roads. Extra Commerce on coastal city tiles.
+	if ((eTeam == INUIT && !isWater()) || isRoute())
 	{
 		return true;
 	}
@@ -4316,9 +4338,10 @@ bool CvPlot::isTradeNetworkConnected(const CvPlot* pPlot, TeamTypes eTeam) const
 		}
 	}
 
-	if (isRoute())
+	// Inuit UP: Trade routes do not require roads. Extra Commerce on coastal city tiles.
+	if ((eTeam == INUIT && !isWater()) || isRoute())
 	{
-		if (pPlot->isRoute())
+		if ((eTeam && !pPlot->isWater()) || pPlot->isRoute())
 		{
 			return true;
 		}
@@ -6909,6 +6932,20 @@ int CvPlot::calculateNatureYield(YieldTypes eYield, TeamTypes eTeam, bool bIgnor
 		iYield += ((bIgnoreFeature || (getFeatureType() == NO_FEATURE)) ? GC.getTerrainInfo(getTerrainType()).getHillsYieldChange(eYield) : GC.getFeatureInfo(getFeatureType()).getHillsYieldChange(eYield));
 	}
 
+	// Inuit UB: +1 Food, Production, and Commerce from Ice, Sea Ice, and Tundra
+	if (!isCity() && getWorkingCity() != NULL && getWorkingCity()->isHasBuildingEffect((BuildingTypes)GC.getInfoTypeForString("BUILDING_INUIT_IGLOO")))
+	{
+		if (getTerrainType() == GC.getInfoTypeForString("TERRAIN_SNOW") ||
+			getTerrainType() == GC.getInfoTypeForString("TERRAIN_TUNDRA") ||
+			getFeatureType() == GC.getInfoTypeForString("FEATURE_ICE"))
+		{
+			if (eYield == YIELD_FOOD || eYield == YIELD_PRODUCTION)
+			{
+				iYield += 1;
+			}
+		}
+	}
+
 	// Omani UP +1 Production, Commerce on Desert Tiles
 	if (getOwnerINLINE() == OMAN)
 	{
@@ -6926,6 +6963,20 @@ int CvPlot::calculateNatureYield(YieldTypes eYield, TeamTypes eTeam, bool bIgnor
 		if (getFeatureType() != NO_FEATURE)
 		{
 			iYield += GC.getFeatureInfo(getFeatureType()).getYieldChange(eYield);
+
+			// Celtic UP: Cities start with extra Culture. Extra Food from Forests with Chiefdom.
+			if (getOwnerINLINE() == CELTIA)
+			{
+				if (getFeatureType()== GC.getInfoTypeForString("FEATURE_FOREST") && 
+					GET_PLAYER(getOwnerINLINE()).getCivics((CivicOptionTypes)GC.getInfoTypeForString("CIVICOPTION_GOVERNMENT")) 
+					== (CivicTypes)GC.getInfoTypeForString("CIVIC_CHIEFDOM"))
+				{
+					if (eYield == YIELD_FOOD)
+					{
+						iYield += 1;
+					}
+				}
+			}
 
 			//Leoreth: Congo UP: +1 food, +1 production on jungle, rainforest and marsh tiles
 			if (getOwnerINLINE() == CONGO)
@@ -7288,6 +7339,18 @@ int CvPlot::calculateYield(YieldTypes eYield, bool bDisplay) const
 			if (eYield == YIELD_PRODUCTION || eYield == YIELD_COMMERCE)
 			{
 				iYield += 2;
+			}
+		}
+
+		// Inuit UP: Trade routes do not require roads. Extra Commerce on coastal city tiles.
+		if (ePlayer == INUIT)
+		{
+			if (eYield == YIELD_COMMERCE)
+			{
+				if (pCity->isCoastal(20))
+				{
+					iYield += 1;
+				}
 			}
 		}
 

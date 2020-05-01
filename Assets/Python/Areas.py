@@ -120,6 +120,7 @@ tCapitals = (
 (121, 42), # Co Loa (Hanoi)				
 (17, 43), # Tenotihuacan (Tollan)				
 (89, 53), # Armenia
+(0, 70), # Naparyaarmiut
 (26, 55), # Erie				
 (131, 54), # Seoul
 (34, 22), # Tiwanaku				
@@ -246,7 +247,8 @@ tBirthArea = (
 ((82, 32),	(86, 36)),	# Ethiopia		
 ((120, 40),	(122, 43)),	# Vietnam		
 ((16, 42),	(18, 47)), 	# Teotihuacan		
-((87, 53),	(91, 55)),	# Armenia	
+((87, 53),	(91, 55)),	# Armenia
+((0, 68), (7, 77)), # Inuit	
 ((23, 54),	(28, 56)), 	# Mississippi	
 ((129, 52),	(133, 59)),	# Korea
 ((32, 17), (34, 22)),	# Tiwanaku		
@@ -361,6 +363,7 @@ tCoreArea = (
 ((120, 39),	(123, 43)),	# Vietnam		
 ((16, 42),	(18, 44)),	# Teotihuacan		
 ((87, 53),	(91, 55)),	# Armenia	
+((0, 68), (7, 77)), # Inuit
 ((23, 54),	(28, 56)), 	# Mississippi		
 ((130, 52),	(133, 58)),	# Korea
 ((32, 17), (34, 22)),	# Tiwanaku		
@@ -516,6 +519,7 @@ tNormalArea = (
 ((120, 39), 	(123, 43)), 	# Vietnam		
 ((15, 42), 	(18, 45)), 	# Teotihuacan		
 ((87, 53),	(91, 55)),	# Armenia
+((0, 68), (7, 77)), # Inuit
 ((23, 54),	(28, 56)), 	# Mississippi			
 ((130, 53),	(132, 57)),	# Korea
 ((32, 17), (34, 22)),	# Tiwanaku		
@@ -653,6 +657,7 @@ tBroaderArea = (
 ((120, 39), 	(123, 43)), 	# Vietnam		
 ((15, 42), 	(18, 45)), 	# Teotihuacan		
 ((87, 53),	(91, 55)),	# Armenia	
+((0, 58), (17, 77)), # Inuit
 ((23, 54),	(28, 56)), 	# Mississippi		
 ((128, 53),	(133, 61)),	# Korea
 ((32, 17), (34, 22)),	# Tiwanaku		
