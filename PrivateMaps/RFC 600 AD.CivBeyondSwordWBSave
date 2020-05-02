@@ -357,6 +357,7 @@ BeginPlayer
 	Team=11
 	LeaderType=LEADER_AHOEITU
 	CivType=CIVILIZATION_POLYNESIA
+	StartingGold=100
 	PlayableCiv=1
 	Handicap=HANDICAP_REGENT
 EndPlayer
@@ -366,6 +367,7 @@ BeginPlayer
 	CivType=CIVILIZATION_PERSIA
 	PlayableCiv=1
 	StateReligion=RELIGION_ZOROASTRIANISM
+	StartingGold=100
 	CivicOption=CIVICOPTION_GOVERNMENT, Civic=CIVIC_MONARCHY
 	CivicOption=CIVICOPTION_SOCIETY, Civic=CIVIC_MANORIALISM
 	CivicOption=CIVICOPTION_ECONOMY, Civic=CIVIC_MERCHANT_TRADE
@@ -456,7 +458,7 @@ BeginPlayer
 	Team=20
 	LeaderType=LEADER_AUA
 	CivType=CIVILIZATION_INUIT
-	PlayableCiv=0
+	PlayableCiv=1
 	StartingGold=200
 	Handicap=HANDICAP_REGENT
 EndPlayer
@@ -1083,7 +1085,7 @@ BeginPlayer
 	Team=67
 	LeaderType=LEADER_FRANKLIN_ROOSEVELT
 	CivType=CIVILIZATION_AMERICA
-	PlayableCiv=0
+	PlayableCiv=1
 	StartingGold=1500
 	CivicOption=CIVICOPTION_GOVERNMENT, Civic=CIVIC_DEMOCRACY
 	CivicOption=CIVICOPTION_LEGITIMACY, Civic=CIVIC_CONSTITUTION
@@ -1097,7 +1099,7 @@ BeginPlayer
 	Team=68
 	LeaderType=LEADER_SAN_MARTIN
 	CivType=CIVILIZATION_ARGENTINA
-	PlayableCiv=0
+	PlayableCiv=1
 	StartingGold=1200
 	CivicOption=CIVICOPTION_GOVERNMENT, Civic=CIVIC_DEMOCRACY
 	CivicOption=CIVICOPTION_LEGITIMACY, Civic=CIVIC_CONSTITUTION
@@ -1111,7 +1113,7 @@ BeginPlayer
 	Team=69
 	LeaderType=LEADER_DOM_PEDRO
 	CivType=CIVILIZATION_BRAZIL
-	PlayableCiv=0
+	PlayableCiv=1
 	StartingGold=1600
 	StateReligion=RELIGION_ORTHODOXY
 	CivicOption=CIVICOPTION_GOVERNMENT, Civic=CIVIC_MONARCHY
@@ -1126,7 +1128,7 @@ BeginPlayer
 	Team=70
 	LeaderType=LEADER_MENZIES
 	CivType=CIVILIZATION_AUSTRALIA
-	PlayableCiv=0
+	PlayableCiv=1
 	StartingGold=1200
 	CivicOption=CIVICOPTION_GOVERNMENT, Civic=CIVIC_DESPOTISM
 	CivicOption=CIVICOPTION_LEGITIMACY, Civic=CIVIC_CONSTITUTION
@@ -1140,7 +1142,7 @@ BeginPlayer
 	Team=71
 	LeaderType=LEADER_KRUGER
 	CivType=CIVILIZATION_BOER
-	PlayableCiv=0
+	PlayableCiv=1
 	StartingGold=1000
 	CivicOption=CIVICOPTION_GOVERNMENT, Civic=CIVIC_DEMOCRACY
 	CivicOption=CIVICOPTION_LEGITIMACY, Civic=CIVIC_CONSTITUTION
@@ -1154,7 +1156,7 @@ BeginPlayer
 	Team=72
 	LeaderType=LEADER_TRUDEAU
 	CivType=CIVILIZATION_CANADA
-	PlayableCiv=0
+	PlayableCiv=1
 	StartingGold=1000
 	StateReligion=RELIGION_ORTHODOXY
 	CivicOption=CIVICOPTION_GOVERNMENT, Civic=CIVIC_DEMOCRACY
@@ -1169,7 +1171,7 @@ BeginPlayer
 	Team=73
 	LeaderType=LEADER_BEN_GURION
 	CivType=CIVILIZATION_ISRAEL
-	PlayableCiv=0
+	PlayableCiv=1
 	StartingGold=1500
 	StateReligion=RELIGION_JUDAISM
 	CivicOption=CIVICOPTION_GOVERNMENT, Civic=CIVIC_DEMOCRACY
@@ -1591,6 +1593,19 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=0,y=70
+	BeginUnit
+		UnitType=UNIT_ARCHER, UnitOwner=20, (Inuit)
+	EndUnit
+	BeginCity
+		CityOwner=20, (Inuit)
+		CityName=Naparyaarmiut
+		CityPopulation=3
+		BuildingType=BUILDING_PALACE
+		BuildingType=BUILDING_INUIT_IGLOO
+		BuildingType=BUILDING_ANGAKKUQ_QARGI
+		BuildingType=BUILDING_HARBOR
+		Player20Culture=150, (Inuit)
+	EndCity
 	TerrainType=TERRAIN_SNOW
 	PlotType=1
 EndPlot
@@ -2009,6 +2024,7 @@ EndPlot
 BeginPlot
 	x=1,y=68
 	BonusType=BONUS_CLAM
+	ImprovementType=IMPROVEMENT_FISHING_BOATS
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -2451,7 +2467,19 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=2,y=72
-	FeatureType=FEATURE_TAIGA, FeatureVariety=0
+	BeginUnit
+		UnitType=UNIT_ARCHER, UnitOwner=20, (Inuit)
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER, UnitOwner=20, (Inuit)
+	EndUnit
+	BeginCity
+		CityOwner=20, (Inuit)
+		CityName=Siqnazuaq
+		CityPopulation=1
+		BuildingType=BUILDING_INUIT_IGLOO
+		Player20Culture=50, (Inuit)
+	EndCity
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 EndPlot
@@ -2881,12 +2909,23 @@ EndPlot
 BeginPlot
 	x=3,y=68
 	BonusType=BONUS_CRAB
+	ImprovementType=IMPROVEMENT_FISHING_BOATS
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=3,y=69
-	FeatureType=FEATURE_TAIGA, FeatureVariety=1
+	BeginUnit
+		UnitType=UNIT_ARCHER, UnitOwner=20, (Inuit)
+	EndUnit
+	BeginCity
+		CityOwner=20, (Inuit)
+		CityName=Dzanti K'iheeni
+		CityPopulation=2
+		BuildingType=BUILDING_ANGAKKUQ_QARGI
+		BuildingType=BUILDING_HARBOR
+		Player20Culture=100, (Inuit)
+	EndCity
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 EndPlot
@@ -3367,6 +3406,16 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=4,y=76
+	BeginUnit
+		UnitType=UNIT_ARCHER, UnitOwner=20, (Inuit)
+	EndUnit
+	BeginCity
+		CityOwner=20, (Inuit)
+		CityName=Ulguniq
+		CityPopulation=1
+		BuildingType=BUILDING_ANGAKKUQ_QARGI
+		Player20Culture=50, (Inuit)
+	EndCity
 	BonusType=BONUS_OIL
 	TerrainType=TERRAIN_SNOW
 	PlotType=2
@@ -3776,6 +3825,7 @@ BeginPlot
 	x=5,y=72
 	RiverNSDirection=0
 	isWOfRiver
+	BonusType=BONUS_DEER
 	FeatureType=FEATURE_TAIGA, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
@@ -3800,6 +3850,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=5,y=75
+	BonusType=BONUS_DEER
 	FeatureType=FEATURE_TAIGA, FeatureVariety=0
 	TerrainType=TERRAIN_SNOW
 	PlotType=1
@@ -11307,8 +11358,23 @@ BeginPlot
 	x=22,y=54
 	RiverNSDirection=2
 	isWOfRiver
-	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
+	BeginUnit
+		UnitType=UNIT_MISSISSIPPI_FALCON_DANCER, UnitOwner=21, (Mississippi)
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER, UnitOwner=21, (Mississippi)
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER, UnitOwner=21, (Mississippi)
+	EndUnit
+	BeginCity
+		CityOwner=21, (Mississippi)
+		CityName=Cahokia
+		CityPopulation=2
+		BuildingType=BUILDING_MIDEWIWIN_MIDEWIGAAN
+		Player21Culture=25, (Mississippi)
+	EndCity
 	PlotType=2
 EndPlot
 BeginPlot
@@ -13108,7 +13174,7 @@ BeginPlot
 		CityName=Erie
 		CityPopulation=4
 		BuildingType=BUILDING_PALACE
-		Player21Culture=100, (Mississippi)
+		Player21Culture=25, (Mississippi)
 	EndCity
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -24712,12 +24778,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=52,y=48
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=52,y=49
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -24728,27 +24794,28 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=52,y=51
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=52,y=52
+	BonusType=BONUS_CRAB
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=52,y=53
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=52,y=54
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=52,y=55
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -25131,34 +25198,39 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=53,y=49
-	TerrainType=TERRAIN_COAST
-	PlotType=3
+	FeatureType=FEATURE_FOREST, FeatureVariety=5
+	TerrainType=TERRAIN_PLAINS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=53,y=50
-	TerrainType=TERRAIN_COAST
-	PlotType=3
+	isNOfRiver
+	RiverWEDirection=3
+	TerrainType=TERRAIN_GRASS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=53,y=51
-	BonusType=BONUS_CRAB
-	TerrainType=TERRAIN_COAST
-	PlotType=3
+	BonusType=BONUS_WINE
+	TerrainType=TERRAIN_GRASS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=53,y=52
-	TerrainType=TERRAIN_COAST
-	PlotType=3
+	isNOfRiver
+	RiverWEDirection=3
+	TerrainType=TERRAIN_GRASS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=53,y=53
-	TerrainType=TERRAIN_COAST
-	PlotType=3
+	TerrainType=TERRAIN_GRASS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=53,y=54
-	TerrainType=TERRAIN_COAST
-	PlotType=3
+	TerrainType=TERRAIN_GRASS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=53,y=55
@@ -42201,16 +42273,16 @@ BeginPlot
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
                 BeginUnit
-		UnitType=UNIT_ARCHER, UnitOwner=74, (Independent Leader)
+		UnitType=UNIT_ARCHER, UnitOwner=12, (Persia)
 		Level=1, Experience=0
 	EndUnit
 	BeginCity
-		CityOwner=74,  (Independent Leader)
+		CityOwner=12,  (Persia)
 		CityName=Mepsila
 		CityPopulation=2
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_MONUMENT
-		Player74Culture=20, (Independent Leader)
+		Player12Culture=20, (Persia)
 	EndCity
 EndPlot
 BeginPlot
@@ -42662,19 +42734,20 @@ BeginPlot
 	PlotType=2
 	
 	BeginUnit
-		UnitType=UNIT_ARCHER, UnitOwner=74, (Independent Leader)
+		UnitType=UNIT_ARCHER, UnitOwner=12, (Persia)
 		Level=1, Experience=0
 	EndUnit
 	BeginCity
-		CityOwner=74, (Independent Leader)
+		CityOwner=12, (Persia)
 		CityName=Tisfun
 		CityPopulation=6
+		BuildingType=BUILDING_PALACE
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_FORGE
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_WEAVER
 		CorporationType=CORPORATION_SILK_ROUTE
-		Player74Culture=300, (Independent Leader)
+		Player12Culture=300, (Persia)
 	EndCity
 EndPlot
 BeginPlot
@@ -45062,7 +45135,6 @@ BeginPlot
 		CityOwner=12, (Persia)
 		CityName=Sirajis
 		CityPopulation=4
-		BuildingType=BUILDING_PALACE
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_FORGE
 		BuildingType=BUILDING_LIBRARY
@@ -65660,7 +65732,6 @@ EndPlot
 BeginPlot
 	x=136,y=54
 	BonusType=BONUS_FISH
-	ImprovementType=IMPROVEMENT_FISHING_BOATS
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -70098,6 +70169,17 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=146,y=72
+	BeginUnit
+		UnitType=UNIT_ARCHER, UnitOwner=20, (Inuit)
+	EndUnit
+	BeginCity
+		CityOwner=20, (Inuit)
+		CityName=Olyk
+		CityPopulation=1
+		BuildingType=BUILDING_ANGAKKUQ_QARGI
+		BuildingType=BUILDING_HARBOR
+		Player20Culture=100, (Inuit)
+	EndCity
 	TerrainType=TERRAIN_SNOW
 	PlotType=1
 EndPlot
@@ -70506,6 +70588,7 @@ EndPlot
 BeginPlot
 	x=147,y=71
 	BonusType=BONUS_FISH
+	ImprovementType=IMPROVEMENT_FISHING_BOATS
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -71335,6 +71418,7 @@ EndPlot
 BeginPlot
 	x=149,y=69
 	BonusType=BONUS_FISH
+	ImprovementType=IMPROVEMENT_FISHING_BOATS
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot

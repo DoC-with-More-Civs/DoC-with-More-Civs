@@ -793,23 +793,23 @@ class RiseAndFall:
 	def checkTurn(self, iGameTurn):
 	
 		if pInuit.isAlive() and iInuit != utils.getHumanID():
-			if gc.getGame().getGameTurn() in [getTurnForYear(1), getTurnForYear(500)]:
-				utils.makeUnit(iArcher, iInuit, (4, 59), 1)
-				utils.makeUnit(iDogSled, iInuit, (4, 59), 1)
+			if gc.getGame().getGameTurn() in [getTurnForYear(1), getTurnForYear(100)]:
+				utils.makeUnit(iArcher, iInuit, (146, 72), 1)
+				utils.makeUnit(iDogSled, iInuit, (146, 72), 1)
 
 			if pInuit.isAlive() and gc.getGame().getGameTurn() == getTurnForYear(900):
-				utils.makeUnit(iArcher, iInuit, (27, 61), 1)
-				utils.makeUnit(iDogSled, iInuit, (27, 61), 1)
-				utils.makeUnit(iArcher, iInuit, (31, 58), 1)
-				utils.makeUnit(iDogSled, iInuit, (31, 58), 1)
+				utils.makeUnit(iArcher, iInuit, (28, 71), 1)
+				utils.makeUnit(iDogSled, iInuit, (28, 71), 1)
+				utils.makeUnit(iArcher, iInuit, (32, 70), 1)
+				utils.makeUnit(iDogSled, iInuit, (32, 70), 1)
 
 			if gc.getGame().getGameTurn() == getTurnForYear(1300):
-				utils.makeUnit(iArcher, iInuit, (32, 63), 1)
-				utils.makeUnit(iDogSled, iInuit, (32, 63), 1)
+				utils.makeUnit(iArcher, iInuit, (34, 73), 1)
+				utils.makeUnit(iDogSled, iInuit, (34, 73), 1)
 
 			if gc.getGame().getGameTurn() == getTurnForYear(1500):
-				utils.makeUnit(iArcher, iInuit, (39, 61), 1)
-				utils.makeUnit(iDogSled, iInuit, (39, 61), 1)
+				utils.makeUnit(iArcher, iInuit, (42, 71), 1)
+				utils.makeUnit(iDogSled, iInuit, (42, 71), 1)
 
 		# Leoreth: randomly place goody huts
 		if iGameTurn == utils.getScenarioStartTurn()+3:
@@ -2786,7 +2786,7 @@ class RiseAndFall:
 			utils.makeUnit(iHorseman, iCiv, tPlot, 1)
 			if utils.getHumanID() != iArmenia:
 				utils.makeUnit(iSpearman, iCiv, tPlot, 2)
-				utils.makeUnit(iCrossbowman, iCiv, tPlot, 2)
+				utils.makeUnit(iArcher, iCiv, tPlot, 2)
 		elif iCiv == iInuit:
 			utils.createSettlers(iCiv, 1)
 			utils.makeUnit(iMilitia, iCiv, tPlot, 1)
