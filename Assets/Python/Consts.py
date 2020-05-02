@@ -994,7 +994,7 @@ tResurrectionProb = (
 70, #Carthage
 50, #Celtia
 40, #Polynesia
-80, #Persia
+90, #Persia
 75, #Rome
 30, #Maya
 50, #Tamils

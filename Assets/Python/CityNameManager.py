@@ -14,7 +14,7 @@ PyPlayer = PyHelpers.PyPlayer
 
 iNumLanguages = 52
 (iLangEgyptian, iLangEgyptianArabic, iLangIndian, iLangChinese, iLangTibetan, 
-iLangBabylonian, iLangPersian, iLangGreek, iLangPhoenician, iLangLatin, iLangAssyria, 
+iLangBabylonian, iLangPersian, iLangGreek, iLangPhoenician, iLangLatin,
  iLangMayan,iLangJapanese, iLangEthiopian, iLangTeotihuacan, iLangKorean, iLangByzantine, 
 iLangViking, iLangArabian, iLangKhmer, iLangIndonesian, iLangSpanish, 
 iLangFrench, iLangEnglish, iLangGerman, iLangRussian, iLangDutch, 
@@ -22,7 +22,7 @@ iLangMalian, iLangPolish, iLangPortuguese, iLangQuechua, iLangItalian,
 iLangMongolian, iLangAztec, iLangTurkish, iLangThai, iLangCongolese, 
 iLangPrussian, iLangAmerican, iLangCeltic, iLangMexican, iLangPolynesian,
 iLangHarappan, iLangNigerian, iLangPhilippine, iLangSwahili, iLangVietnamese,
-iLangZimbabwean, iLangHebrew, iLangNubian, iLangNubianArabic, iLangMississippi) = range(iNumLanguages)
+iLangZimbabwean, iLangHebrew, iLangNubian, iLangNubianArabic, iLangMississippi, iLangAssyria) = range(iNumLanguages)
 
 # methods
 
@@ -4694,10 +4694,6 @@ tRenames = (
 #Language: Hebrew
 {
 },
-#Language: Assyria
-{
-	"Ashur"			:	"Nineveh",
-},
 #Language: Nubian
 {
 	"Elephantine"		:	"Napata",
@@ -4724,5 +4720,9 @@ tRenames = (
 	"Al-Hartum"		:	"Khartoum",
 	"El-Hartum"		:	"Khartoum",
 	"Khartoum"		:	"Khartoum",
+},
+#Language: Assyria
+{
+	"Ashur"			:	"Nineveh",
 },
 )

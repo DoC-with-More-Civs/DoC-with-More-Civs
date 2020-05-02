@@ -186,8 +186,7 @@ iNorteChico : (27, 28),	# Chimu
 iCeltia : (57, 69),	# Scottish			
 iMaya : (29, 34),	# Bogota (Colombia)				
 iHarappa : (104, 37),	# Chalukya	
-iTamils : (105, 36),	# Vijayanagara
-iMississippi : (22, 54), # Cahokia			
+iTamils : (105, 36),	# Vijayanagara		
 iChad : (71, 34),     #N'Djamena				
 iKhmer : (121, 41),	# Hanoi			
 iHolyRome : (71, 59),	# Vienna			
@@ -211,7 +210,8 @@ iChina :  (124, 56),	# Beijing
 iIndia : (105, 46),	# Delhi			
 iCarthage : (67, 48),	# Carthage			
 iPersia : (93, 48),	# Esfahan			
-iEthiopia : (83, 32),	# Addis Ababa # (84, 32)?			
+iEthiopia : (83, 32),	# Addis Ababa # (84, 32)?
+iMississippi : (22, 54), # Cahokia				
 iKazakh : (105, 58), # Almaty				
 iJapan : (140, 54),	# Tokyo			
 iTurks : (100, 54), # Samarkand				
