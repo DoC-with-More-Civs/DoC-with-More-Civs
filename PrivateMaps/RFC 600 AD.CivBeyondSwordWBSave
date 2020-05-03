@@ -11422,7 +11422,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=22,y=62
-	BonusType=BONUS_COPPER
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
@@ -11857,7 +11856,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=23,y=57
-	BonusType=BONUS_IRON
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -12307,7 +12305,6 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=3
 	isWOfRiver
-	BonusType=BONUS_COPPER
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
@@ -13214,7 +13211,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=26,y=61
-	BonusType=BONUS_COPPER
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -14091,7 +14087,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=28,y=56
-	BonusType=BONUS_IRON
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
@@ -15513,7 +15508,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=31,y=63
-	BonusType=BONUS_IRON
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
@@ -25211,7 +25205,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=53,y=51
-	BonusType=BONUS_WINE
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -25229,6 +25222,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=53,y=54
+	BonusType=BONUS_WINE
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot

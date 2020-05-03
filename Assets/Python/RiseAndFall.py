@@ -2024,9 +2024,21 @@ class RiseAndFall:
 					if iNewWorldCiv == iMaya:
 						tContactZoneTL = (12, 35)
 						tContactZoneBR = (39, 49)
+					elif iNewWorldCiv == iAztecs:
+						tContactZoneTL = (9, 36)
+						tContactZoneBR = (38, 50)
+					elif iNewWorldCiv == iInca:
+						tContactZoneTL = (21, 11)
+						tContactZoneBR = (42, 46)
 					elif iNewWorldCiv == iTeotihuacan:
 						tContactZoneTL = (9, 36)
 						tContactZoneBR = (38, 50)
+					elif iNewWorldCiv == iTiwanaku:
+						tContactZoneTL = (21, 11)
+						tContactZoneBR = (42, 46)
+					elif iNewWorldCiv == iWari:
+						tContactZoneTL = (21, 11)
+						tContactZoneBR = (42, 46)
 					elif iNewWorldCiv == iNorteChico:
 						tContactZoneTL = (21, 11)
 						tContactZoneBR = (42, 46)
@@ -2105,9 +2117,9 @@ class RiseAndFall:
 						if iStateReligion >= 0:
 							utils.makeUnit(iMissionary + iStateReligion, iOldWorldCiv, tArrivalPlot, 1)
 							
-						if iNewWorldCiv == iNorteChico:
+						if iNewWorldCiv == iInca:
 							utils.makeUnitAI(iAucac, iOldWorldCiv, tArrivalPlot, UnitAITypes.UNITAI_ATTACK_CITY, 3)
-						elif iNewWorldCiv == iTeotihuacan:
+						elif iNewWorldCiv == iAztecs:
 							utils.makeUnitAI(iJaguar, iOldWorldCiv, tArrivalPlot, UnitAITypes.UNITAI_ATTACK_CITY, 2)
 							utils.makeUnitAI(iHolkan, iOldWorldCiv, tArrivalPlot, UnitAITypes.UNITAI_ATTACK_CITY, 1)
 						elif iNewWorldCiv == iMaya:
@@ -2121,7 +2133,7 @@ class RiseAndFall:
 							
 		# Leoreth: Mongol horde event against Mughals, Persia, Arabia, Byzantium, Kievan Rus
 		if iHasMetTeamY == iMongolia and not utils.getHumanID() == iMongolia:
-			if iTeamX in [iPersia, iByzantium, iKievanRus]:
+			if iTeamX in lMongolCivs:
 				if gc.getGame().getGameTurn() < getTurnForYear(1500) and data.isFirstContactMongols(iTeamX):
 
 					data.setFirstContactMongols(iTeamX, False)
@@ -2140,9 +2152,17 @@ class RiseAndFall:
 						tTL = (79, 51)
 						tBR = (88, 55)
 						iDirection = DirectionTypes.DIRECTION_EAST
+					elif iTeamX == iArmenia:
+						tTL = (87, 53)
+						tBR = (91, 55)
+						iDirection = DirectionTypes.DIRECTION_EAST
 					elif iTeamX == iKievanRus:
 						tTL = (78, 58)
 						tBR = (94, 70)
+						iDirection = DirectionTypes.DIRECTION_EAST
+					elif iTeamX == iKhazars:
+						tTL = (86, 58)
+						tBR = (92, 62)
 						iDirection = DirectionTypes.DIRECTION_EAST
 
 					lTargetList = utils.getBorderPlots(iTeamX, tTL, tBR, iDirection, 3)

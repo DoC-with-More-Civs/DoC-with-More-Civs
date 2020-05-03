@@ -207,6 +207,13 @@ class Resources:
 			#self.createResource(58, 52, iCow) # Amsterdam
 			
 		elif (iGameTurn == getTurnForYear(1600)):
+			self.createResource(23, 57, iIron) # Indianapolis
+			self.createResource(28, 56, iIron) # Quebec
+			self.createResource(31, 63, iIron) # Quebec
+			self.createResource(22, 62, iCopper) # Kenora
+			self.createResource(24, 60, iCopper) # Williams Lake
+			self.createResource(26, 61, iCopper) # Williams Lake
+
 			self.createResource(30, 61, iCow) # Montreal
 			self.createResource(15, 62, iCow) # Alberta
 			self.createResource(10, 62, iCow) # British Columbia

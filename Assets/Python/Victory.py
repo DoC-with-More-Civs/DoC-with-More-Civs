@@ -119,7 +119,7 @@ tKalaallitNunaatBR = (45, 67)
 tKalaallitNunaatExceptions = ((44, 64), (45, 63), (45, 62))
 
 # first Moorish goal: control three cities in Iberia, the Maghreb and West Africa in 1200 AD
-tIberiaTL = (54, 48)
+tIberiaTL = (53, 48)
 tIberiaBR = (61, 54)
 tMaghrebTL = (54, 39)
 tMaghrebBR = (69, 48)
