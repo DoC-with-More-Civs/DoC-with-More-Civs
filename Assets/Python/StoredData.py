@@ -182,6 +182,7 @@ class GameData:
 		self.bUnlimitedSwitching = False
 		self.bCheatMode = False
 
+		self.iRomanPigs = -1
 		self.bMississippiCollapse = False
 		
 		# Religions

@@ -28919,7 +28919,6 @@ BeginPlot
 	x=62,y=60
 	isNOfRiver
 	RiverWEDirection=3
-	BonusType=BONUS_PIG
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -29804,7 +29803,6 @@ BeginPlot
 	x=64,y=61
 	RiverNSDirection=0
 	isWOfRiver
-	BonusType=BONUS_PIG
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -32505,7 +32503,6 @@ BeginPlot
 	x=70,y=65
 	RiverNSDirection=0
 	isWOfRiver
-	BonusType=BONUS_PIG
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -32913,7 +32910,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=71,y=58
-	BonusType=BONUS_PIG
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot

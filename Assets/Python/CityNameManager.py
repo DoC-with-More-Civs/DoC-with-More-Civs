@@ -12,7 +12,7 @@ from StoredData import data
 gc = CyGlobalContext()
 PyPlayer = PyHelpers.PyPlayer
 
-iNumLanguages = 52
+iNumLanguages = 51
 (iLangEgyptian, iLangEgyptianArabic, iLangIndian, iLangChinese, iLangTibetan, 
 iLangBabylonian, iLangPersian, iLangGreek, iLangPhoenician, iLangLatin,
  iLangMayan,iLangJapanese, iLangEthiopian, iLangTeotihuacan, iLangKorean, iLangByzantine, 
@@ -22,7 +22,7 @@ iLangMalian, iLangPolish, iLangPortuguese, iLangQuechua, iLangItalian,
 iLangMongolian, iLangAztec, iLangTurkish, iLangThai, iLangCongolese, 
 iLangPrussian, iLangAmerican, iLangCeltic, iLangMexican, iLangPolynesian,
 iLangHarappan, iLangNigerian, iLangPhilippine, iLangSwahili, iLangVietnamese,
-iLangZimbabwean, iLangHebrew, iLangNubian, iLangNubianArabic, iLangMississippi, iLangAssyria) = range(iNumLanguages)
+iLangZimbabwean, iLangHebrew, iLangNubian, iLangNubianArabic, iLangMississippi) = range(iNumLanguages)
 
 # methods
 
@@ -42,7 +42,7 @@ def getLanguages(iCiv):
 		elif data.lReligionFounder[iIslam] != -1:
 			return (iLangArabian, iLangNubian, iLangEgyptian)
 		return (iLangNubian, iLangEgyptian,)
-	elif iCiv == iAssyria: return (iLangAssyria,iLangBabylonian)
+	elif iCiv == iAssyria: return (iLangBabylonian,)
 	elif iCiv == iChina: return (iLangChinese,)
 	elif iCiv == iGreece: return (iLangGreek,)
 	elif iCiv == iIndia: return (iLangIndian,)
@@ -2740,7 +2740,7 @@ tRenames = (
 {
 	"Akkad"			:	"Akkad",
 	"Kirkuk"		:	"Arrap'ha",
-	"Ashur"			:	"Ashur",
+	"Ashur"			:	"Nineveh",
 	"Babil&#251;"		:	"Babil&#251;",
 	"Elath"			:	"Elath",
 	"Kish"			:	"Kish",
@@ -3169,18 +3169,90 @@ tRenames = (
 	"Illizi"		:	"Illizi",
 	"Muqdisho"		:	"Muqdisho",
 },
+#Language: Teotihuacan
+{
+	"Teotihuacan"		:	"Tollan",
+},
 #Language: Korean
 {
 	"Beijing"		:	"Bukgyeong",
 	"Zhongdu"		:	"Bukgyeong",
-	"Ch'ongjin"		:	"Ch'ongjin",
 	"Chunju"		:	"Chunju",
-	"Guangzhou"		:	"Gwangju",
+	"Guangzhou"		:	"Guangju",
 	"Hanseong"		:	"Hanseong",
-	"Busan"			:	"Busan",
-	"P'yongyang"		:	"P'yongyang",
-	"Shenyang"		:	"Seonyang",
+	"Pusan"			:	"Pusan",
+	"Pyongyang"		:	"Pyongyang",
+	"Shenyang"		:	"Shimyang",
 	"Seoul"			:	"Seoul",
+	"Akita"			:	"Chujeon",
+	"Anyang"		:	"Anyang",
+	"Anshan"		:	"Ansan",
+	"Aomori"		:	"Cheongsam",
+	"Mudanjiang"		:	"Mokdangang",
+	"Wuhan"			:	"Muhan",
+	"Qiqihaer"		:	"Chichihar",
+	"Haerbin"		:	"Harbin",
+	"Zhangjiakou"		:	"Janggagu",
+	"Changsha"		:	"Jangsa",
+	"Sanshan"		:	"Daeryeon",
+	"Edo"			:	"Gangho",
+	"Fukuoka"		:	"Bugang",
+	"Fushun"		:	"Musun",
+	"Fuzhou"		:	"Bokju",
+	"Hakata"		:	"Bakda",
+	"Hakodate"		:	"Hamgwan",
+	"Hegang"		:	"Hakgang",
+	"Haojing"		:	"Hogyeong",
+	"Pingfang"		:	"Pyungbang",
+	"Hiroshima"		:	"Gwangdo",
+	"Hong Kong"		:	"Hyanghang",
+	"Kagoshima"		:	"Nokado",
+	"Kanazawa"		:	"Geumtaek",
+	"Khabarovsk"		:	"Baekryeok",
+	"Kaifeng"		:	"Kaebong",
+	"Jinzhou"		:	"Geumju",
+	"Kunming"		:	"Gonmyeong",
+	"Hangzhou"		:	"Hangju",
+	"Kushiro"		:	"Cheonro",
+	"Qufu"			:	"Gokbu",
+	"Guiyang"		:	"Gwiyang",
+	"Kyouto"		:	"Gyeongdo",
+	"Matsuyama"		:	"Songsan",
+	"Nagano"		:	"Jangya",
+	"Nagasaki"		:	"Janggi",
+	"Nagoya"		:	"Myeonggo'ok",
+	"Naha"			:	"Napae",
+	"Nanjing"		:	"Namgyeong",
+	"Nanning"		:	"Namnyeong",
+	"Nanchang"		:	"Namchang",
+	"Nara"			:	"Naryang",
+	"Jehol"			:	"Yeolha",
+	"Jilin"			:	"Gilim",
+	"Niigata"		:	"Sinseok",
+	"Oosaka"		:	"Daepan",
+	"Ooita"			:	"Daebun",
+	"Otomari"		:	"Daebaek",
+	"Luoyang"		:	"Nakyang",
+	"Lanzhou"		:	"Ryangju",
+	"Sapporo"		:	"Chalhwang",
+	"Chang'an"		:	"Jang'an",
+	"Xi'an"			:	"Seo'an",
+	"Chongjin"		:	"Chongjin",
+	"Chengdu"		:	"Seongdo",
+	"Chongqing"		:	"Junggyung",
+	"Qingdao"		:	"Cheongdo",
+	"Sendai"		:	"Seondae",
+	"Shanghai"		:	"Sanghae",
+	"Changchun"		:	"Jangchun",
+	"Taibei"		:	"Daebuk",
+	"Dagou"			:	"Tagu",
+	"Gaoxiong"		:	"Go'woong",
+	"Toukyou"		:	"Donggyeong",
+	"Toyohara"		:	"Pungwon",
+	"Vladivostok"		:	"Haesamwi",
+	"Wuzhou"		:	"Oju",
+	"Yokohama"		:	"Hoengbin",
+	"Sanggyeong"		:	"Sanggyeong",
 },
 #Language: Byzantine
 {
@@ -4720,9 +4792,5 @@ tRenames = (
 	"Al-Hartum"		:	"Khartoum",
 	"El-Hartum"		:	"Khartoum",
 	"Khartoum"		:	"Khartoum",
-},
-#Language: Assyria
-{
-	"Ashur"			:	"Nineveh",
 },
 )

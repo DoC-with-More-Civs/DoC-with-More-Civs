@@ -1379,7 +1379,7 @@ class RiseAndFall:
 		x, y = tCapital
 		bCapitalSettled = False
 		
-		if iCiv == iChina or iCiv == iBurma or iCiv == iYemen or iCiv == iInca:
+		if iCiv in lCapitalStart:
 			if gc.getMap().plot(x, y).isCity():
 				bCapitalSettled = True
 		
@@ -1769,7 +1769,7 @@ class RiseAndFall:
 				# notify dynamic names
 				dc.onCityAcquired(iCiv, iOwner)
 				
-				if iCiv not in [iChina, iBurma, iYemen, iInca]:
+				if iCiv not in lCapitalStart:
 					self.createStartingWorkers(iCiv, tCapital)
 
 		else: # starting units have already been placed, now to the second part
@@ -2557,7 +2557,7 @@ class RiseAndFall:
 			utils.makeUnit(iIronpagoda, iCiv, tPlot, 3)
 		elif iCiv == iYemen:
 			utils.makeUnit(iArcher, iCiv, tPlot, 2)
-			utils.makeUnit(iSkirmisher, iCiv, tPlot, 2)
+			utils.makeUnit(iLongbowman, iCiv, tPlot, 2)
 			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
 			if tSeaPlot:
 				utils.makeUnit(iHeavyGalley, iCiv, tPlot, 2)
@@ -2953,7 +2953,7 @@ class RiseAndFall:
 		elif iCiv == iYemen:
 			utils.createSettlers(iCiv, 2)
 			utils.makeUnitAI(iArcher, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
-			utils.makeUnit(iSkirmisher, iCiv, tPlot, 2)
+			utils.makeUnit(iLongbowman, iCiv, tPlot, 3)
 			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
 			if tSeaPlot:
 				utils.makeUnit(iHeavyGalley, iCiv, tPlot, 1)

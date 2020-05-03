@@ -70,7 +70,18 @@ class Resources:
 		if gc.getMap().plot(iX, iY).getBonusType(-1) == -1: return
 		self.createResource(iX, iY, -1)
        	
+	
+	def doRomanPigs(self):
+		self.createResource(62, 60, iPig)
+		self.createResource(64, 61, iPig)
+		self.createResource(70, 65, iPig)
+		self.createResource(71, 58, iPig)
+
 	def checkTurn(self, iGameTurn):
+
+		if data.iRomanPigs == 1:
+			self.doRomanPigs()
+			data.iRomanPigs = 0
 		
 
 		# Gujarati horses appear later so Harappa cannot benefit too early

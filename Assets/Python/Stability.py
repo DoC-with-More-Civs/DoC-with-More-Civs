@@ -107,6 +107,10 @@ def triggerCollapse(iPlayer):
 			if len(utils.getOwnedCoreCities(iPlayer)) < len(utils.getCityList(iPlayer)):
 				collapseToCore(iPlayer)
 				return
+
+	# Spread Roman pigs on Celtia's complete collapse
+	if data.iRomanPigs < 0 and iPlayer == iCeltia:
+		data.iRomanPigs = 1
 				
 	scheduleCollapse(iPlayer)
 
@@ -625,6 +629,10 @@ def collapseToCore(iPlayer):
 	lAhistoricalCities = []
 	lNonCoreCities = []
 	vic.onCollapse(iPlayer, False)
+
+	# Spread Roman pigs on Celtia's complete collapse
+	if data.iRomanPigs < 0 and iPlayer == iCeltia:
+		data.iRomanPigs = 1
 	
 	for city in utils.getCityList(iPlayer):
 		plot = gc.getMap().plot(city.getX(), city.getY())

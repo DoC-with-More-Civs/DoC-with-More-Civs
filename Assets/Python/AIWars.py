@@ -7,6 +7,7 @@ import Popup
 #import cPickle as pickle
 from Consts import *
 import Areas
+import Resources
 from RFCUtils import utils
 import UniquePowers
 from StoredData import data # edead
@@ -166,7 +167,11 @@ tConquestEnglandIreland #20
 ]
 
 class AIWars:
-		
+
+
+	def __init__(self, resources):
+		self.res = resources
+
 	def setup(self):
 		iTurn = getTurnForYear(-600)
 		if utils.getScenario() == i600AD:  #late start condition
@@ -249,6 +254,10 @@ class AIWars:
 			for iTech in sta.getResurrectionTechs(iPlayer):
 				gc.getTeam(gc.getPlayer(iPlayer).getTeam()).setHasTech(iTech, True, iPlayer, False, False)
 	
+		if iPlayer == iRome and iPreferredTarget == iCeltia:
+			self.res.doRomanPigs()
+			data.iRomanPigs = 0
+		
 		lCities = []
 		for city in utils.getAreaCities(utils.getPlotList(tTL, tBR)):
 			if city.getOwner() != iPlayer and not gc.getTeam(city.getOwner()).isVassal(iPlayer):
