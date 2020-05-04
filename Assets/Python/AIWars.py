@@ -97,14 +97,14 @@ iSpainTiwanakuYear = 1520
 tSpainTiwanakuTL = (31, 19)
 tSpainTiwanakuBR = (35, 22)
 
-iSpainAztecsYear = 1520
-tSpainAztecsTL = (16, 42)
-tSpainAztecsBR = (18, 44)
+iSpainMayaYear = 1520
+tSpainMayaTL = (16, 42)
+tSpainMayaBR = (18, 44)
 
 tConquestSpainMoors = (11, iSpain, iMoors, tSpainMoorsTL, tSpainMoorsBR, 1, iSpainMoorsYear, 10)
 tConquestSpainInca = (12, iSpain, iInca, tSpainIncaTL, tSpainIncaBR, 1, iSpainIncaYear, 10)
 tConquestSpainTiwanaku = (13, iSpain, iTiwanaku, tSpainTiwanakuTL, tSpainTiwanakuBR, 1, iSpainTiwanakuYear, 10)
-tConquestSpainAztecs = (14, iSpain, iAztecs, tSpainAztecsTL, tSpainAztecsBR, 1, iSpainAztecsYear, 10)
+tConquestSpainMaya = (14, iSpain, iMaya, tSpainMayaTL, tSpainMayaBR, 1, iSpainMayaYear, 10)
 
 iTurksPersiaYear = 1000
 tTurksPersiaTL = (91, 43)
@@ -152,7 +152,7 @@ tConquestChinaVietnam2, #10
 tConquestSpainMoors, #11
 tConquestSpainInca, #16
 tConquestSpainTiwanaku, #17
-tConquestSpainAztecs, #18
+tConquestSpainMaya, #18
 tConquestTurksPersia, #12
 tConquestTurksAnatolia, #13
 tConquestMongolsTurks, #14

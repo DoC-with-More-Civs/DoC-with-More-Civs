@@ -576,7 +576,7 @@ iAztecs : iCivMexico,
 
 tResurrectionIntervals = (
 [(664, -343)], #Egypt
-[(-3000, -500)], #Babylonia
+[(-3000, -900)], #Babylonia
 [],		# Harappa
 [],		# Norte Chico
 [(-785, 350), (350, 1365), (1504, 2020)], #Nubia

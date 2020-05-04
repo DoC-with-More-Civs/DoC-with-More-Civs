@@ -206,6 +206,14 @@
 		<Spanish>Great Lakes</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_URV_POL2_MIDEWIWIN</Tag>
+		<English>Acquire 4 Corn Resources and construct 20 Farms</English>
+		<French>Acquire 4 Corn Resources and construct 20 Farms</French>
+		<German>Acquire 4 Corn Resources and construct 20 Farms</German>
+		<Italian>Acquire 4 Corn Resources and construct 20 Farms</Italian>
+		<Spanish>Acquire 4 Corn Resources and construct 20 Farms</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BUILDING_SERPENT_MOUND</Tag>
 		<English>Serpent Mound</English>
 		<French>Serpent Mound</French>
@@ -220,13 +228,5 @@
 		<German>[ICON_BULLET]+1 [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] slot from Parks</German>
 		<Italian>[ICON_BULLET]+1 [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] slot from Parks</Italian>
 		<Spanish>[ICON_BULLET]+1 [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] slot from Parks</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_URV_POL2_MIDEWIWIN</Tag>
-		<English>Acquire 4 Corn Resources and construct 20 Farms</English>
-		<French>Acquire 4 Corn Resources and construct 20 Farms</French>
-		<German>Acquire 4 Corn Resources and construct 20 Farms</German>
-		<Italian>Acquire 4 Corn Resources and construct 20 Farms</Italian>
-		<Spanish>Acquire 4 Corn Resources and construct 20 Farms</Spanish>
 	</TEXT>
 </Civ4GameText>

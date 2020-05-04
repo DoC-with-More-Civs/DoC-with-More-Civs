@@ -142,6 +142,8 @@ class CvRFCEventHandler:
 			
 		if iPlayer == iArabia:
 			self.up.arabianUP(city)
+
+		self.up.onCityAcquired(iPlayer, city)
 			
 		if iPlayer == iMongolia and bConquest and utils.getHumanID() != iPlayer:
 			self.up.mongolUP(city)
@@ -372,7 +374,9 @@ class CvRFCEventHandler:
 			gc.getPlayer(iItaly).AI_updateFoundValues(False)
 
 		vic.onCityBuilt(iOwner, city)
-			
+
+		self.up.onCityBuilt(iOwner, city)
+
 		if iOwner < iNumPlayers:
 			dc.onCityBuilt(iOwner)
 
