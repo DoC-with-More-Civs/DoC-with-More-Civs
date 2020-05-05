@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Inca -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MUISCA_DESC</Tag>
+		<English>The Muisca</English>
+		<French>The Muisca</French>
+		<German>The Muisca</German>
+		<Italian>The Muisca</Italian>
+		<Spanish>The Muisca</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MUISCA_PEOPLES</Tag>
+		<English>Andean Peoples</English>
+		<French>
+			<Text>Peuplades andines</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</French>
+		<German>
+			<Text>Andenv&#246;lker:Andenv&#246;lker:Andenv&#246;lkern</Text>
+			<Gender>Female:Female:Female</Gender>
+			<Plural>1:1:1</Plural>
+		</German>
+		<Italian>
+			<Text>Popoli Andini</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Pueblos Andinos</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MUISCA_DEFAULT</Tag>
+		<English>Muisca Confederation</English>
+		<French>Muisca Confederation</French>
+		<German>Muisca Confederation</German>
+		<Italian>Muisca Confederation</Italian>
+		<Spanish>Muisca Confederation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MUISCA_ADJECTIVE</Tag>
+		<English>Muisca</English>
+		<French>Muisca</French>
+		<German>Muisca</German>
+		<Italian>Muisca</Italian>
+		<Spanish>Muisca</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MUISCA_SHORT_DESC</Tag>
+		<English>Muisca</English>
+		<French>Muisca</French>
+		<German>Muisca</German>
+		<Italian>Muisca</Italian>
+		<Spanish>Muisca</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MUISCA_GOLDSMITH</Tag>
+		<English>Goldsmith</English>
+		<French>Goldsmith</French>
+		<German>Goldsmith</German>
+		<Italian>Goldsmith</Italian>
+		<Spanish>Goldsmith</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MUISCA_GOLDSMITH_HELP</Tag>
+		<English>[ICON_BULLET]+1 Gold per Gold Resource</English>
+		<French>[ICON_BULLET]+1 Gold per Gold Resource</French>
+		<German>[ICON_BULLET]+1 Gold per Gold Resource</German>
+		<Italian>[ICON_BULLET]+1 Gold per Gold Resource</Italian>
+		<Spanish>[ICON_BULLET]+1 Gold per Gold Resource</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DOM_MUISCA</Tag>
+		<English>It is the year 800 AD. The formation end of the Hererra period heralds in a new age for the peopel of the Altiplano Cundiboyacense. The rise of the Muisca Confederation marks the start in a new golden age of American trade.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_SAGUAMANCHICA</Tag>
+		<English>Saguamanchica</English>
+		<French>Saguamanchica</French>
+		<German>Saguamanchica</German>
+		<Italian>Saguamanchica</Italian>
+		<Spanish>Saguamanchica</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_MUI_TITLE</Tag>
+		<English>The Power of Salt:</English>
+		<French>Le pouvoir de sel:</French>
+		<German>Die Macht des Salz-:</German>
+		<Italian>Il potere della sale:</Italian>
+		<Spanish>El poder de la sal:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_MUI</Tag>
+		<English>+1 Food from Mines.</English>
+		<French>+1 Food from Mines.</French>
+		<German>+1 Food from Mines.</German>
+		<Italian>+1 Food from Mines.</Italian>
+		<Spanish>+1 Food from Mines.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_MUI_TITLE</Tag>
+		<English>The Power of Salt:</English>
+		<French>Le pouvoir de sel:</French>
+		<German>Die Macht des Salz-:</German>
+		<Italian>Il potere della sale:</Italian>
+		<Spanish>El poder de la sal:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_MUI</Tag>
+		<English>+1 Food from Mines.</English>
+		<French>+1 Food from Mines.</French>
+		<German>+1 Food from Mines.</German>
+		<Italian>+1 Food from Mines.</Italian>
+		<Spanish>+1 Food from Mines.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_NUM_STRING_SINGLE</Tag>
+		<English>%s1: %d2</English>
+		<French>%s1: %d2</French>
+		<German>%s1: %d2</German>
+		<Italian>%s1: %d2</Italian>
+		<Spanish>%s1: %d2</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_PERCENT_STRING</Tag>
+		<English>%s1: %s2 / %s3</English>
+		<French>%s1: %s2 / %s3</French>
+		<German>%s1: %s2 / %s3</German>
+		<Italian>%s1: %s2 / %s3</Italian>
+		<Spanish>%s1: %s2 / %s3</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_MUI2_TITLE</Tag>
+		<English>Tejuelo Gold Coins</English>
+		<French>Tejuelo Gold Coins</French>
+		<German>Tejuelo Gold Coins</German>
+		<Italian>Tejuelo Gold Coins</Italian>
+		<Spanish>Tejuelo Gold Coins</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_MUI2</Tag>
+		<English>Spend 2000 Gold in diplomacy by 1540 AD</English>
+		<French>Spend 2000 Gold in diplomacy by 1540 AD</French>
+		<German>Spend 2000 Gold in diplomacy by 1540 AD</German>
+		<Italian>Spend 2000 Gold in diplomacy by 1540 AD</Italian>
+		<Spanish>Spend 2000 Gold in diplomacy by 1540 AD</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_MUI2_EPIC</Tag>
+		<English>Spend 3000 Gold in diplomacy by 1540 AD</English>
+		<French>Spend 3000 Gold in diplomacy by 1540 AD</French>
+		<German>Spend 3000 Gold in diplomacy by 1540 AD</German>
+		<Italian>Spend 3000 Gold in diplomacy by 1540 AD</Italian>
+		<Spanish>Spend 3000 Gold in diplomacy by 1540 AD</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_MUI2_MARATHON</Tag>
+		<English>Spend 6000 Gold in diplomacy by 1540 AD</English>
+		<French>Spend 6000 Gold in diplomacy by 1540 AD</French>
+		<German>Spend 6000 Gold in diplomacy by 1540 AD</German>
+		<Italian>Spend 6000 Gold in diplomacy by 1540 AD</Italian>
+		<Spanish>Spend 6000 Gold in diplomacy by 1540 AD</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_MUI1_TITLE</Tag>
+		<English>The Altiplano Cundiboyacense</English>
+		<French>The Altiplano Cundiboyacense</French>
+		<German>The Altiplano Cundiboyacense</German>
+		<Italian>The Altiplano Cundiboyacense</Italian>
+		<Spanish>The Altiplano Cundiboyacense</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_MUI1</Tag>
+		<English>Have the highest average population in the New World at the time of Old World contact</English>
+		<French>Have the highest average population in the New World at the time of Old World contact</French>
+		<German>Have the highest average population in the New World at the time of Old World contact</German>
+		<Italian>Have the highest average population in the New World at the time of Old World contact</Italian>
+		<Spanish>Have the highest average population in the New World at the time of Old World contact</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_MUI3_TITLE</Tag>
+		<English>El Dorado</English>
+		<French>El Dorado</French>
+		<German>El Dorado</German>
+		<Italian>El Dorado</Italian>
+		<Spanish>El Dorado</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_MUI3</Tag>
+		<English>Ensure no Old World civilization controls a silver or gold resource in South or Central America in 1600 AD</English>
+		<French>Ensure no Old World civilization controls a silver or gold resource in South or Central America in 1600 AD</French>
+		<German>Ensure no Old World civilization controls a silver or gold resource in South or Central America in 1600 AD</German>
+		<Italian>Ensure no Old World civilization controls a silver or gold resource in South or Central America in 1600 AD</Italian>
+		<Spanish>Ensure no Old World civilization controls a silver or gold resource in South or Central America in 1600 AD</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TRADE_GOLD_SPENT</Tag>
+		<English>Gold spent</English>
+		<French>Gold spent</French>
+		<German>Gold spent</German>
+		<Italian>Gold spent</Italian>
+		<Spanish>Gold spent</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_PERCENT_NEW_WORLD_POPULATION</Tag>
+		<English>Percentage of new world population</English>
+		<French>Percentage of new world population</French>
+		<German>Percentage of new world population</German>
+		<Italian>Percentage of new world population</Italian>
+		<Spanish>Percentage of new world population</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_HIGHEST_AVERAGE_POPULATION_NEW_WORLD</Tag>
+		<English>New world civilization with the highest average population: %s1_city</English>
+		<French>New world civilization with the highest average population: %s1_city</French>
+		<German>New world civilization with the highest average population: %s1_city</German>
+		<Italian>New world civilization with the highest average population: %s1_city</Italian>
+		<Spanish>New world civilization with the highest average population: %s1_city</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MUISCA_GUECHA_WARRIOR</Tag>
+		<English>Guecha Warrior</English>
+		<French>Guecha Warrior</French>
+		<German>Guecha Warrior</German>
+		<Italian>Guecha Warrior</Italian>
+		<Spanish>Guecha Warrior</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_HYENA</Tag>
+		<English>Hyena</English>
+		<French>Hyena</French>
+		<German>Hyena</German>
+		<Italian>Hyena</Italian>
+		<Spanish>Hyena</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_TIGER</Tag>
+		<English>Tiger</English>
+		<French>Tiger</French>
+		<German>Tiger</German>
+		<Italian>Tiger</Italian>
+		<Spanish>Tiger</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_JAGUAR</Tag>
+		<English>Jaguar</English>
+		<French>Jaguar</French>
+		<German>Jaguar</German>
+		<Italian>Jaguar</Italian>
+		<Spanish>Jaguar</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_POLAR_BEAR</Tag>
+		<English>Polar Bear</English>
+		<French>Polar Bear</French>
+		<German>Polar Bear</German>
+		<Italian>Polar Bear</Italian>
+		<Spanish>Polar Bear</Spanish>
+	</TEXT>
+</Civ4GameText>

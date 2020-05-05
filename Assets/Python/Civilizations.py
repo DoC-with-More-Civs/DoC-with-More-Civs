@@ -186,6 +186,7 @@ iCivFrance :	Techs([iFeudalism, iTheology], column=6),
 iCivOman :		Techs([iDoctrine, iTheology, iFeudalism], column=6, exceptions=[iArchitecture, iArtisanry]),
 iCivKhitan :		Techs([iDoctrine, iTheology, iFeudalism], column=6, exceptions=[iArchitecture, iArtisanry]),
 iCivKhmer :	Techs([iNobility, iArchitecture, iArtisanry, iScholarship, iEthics], column=5),
+iCivMuisca : Techs([iMining, iPottery, iMasonry]),
 iCivYemen :		Techs([iGuilds, iTheology, iFeudalism, iFortification, iCommune], column=6),
 iCivEngland :	Techs([iFeudalism, iTheology, iFortification], column=6),
 iCivScotland :	Techs([iFeudalism, iTheology], column=6, exceptions=[iArtisanry, iArchitecture]),
@@ -234,7 +235,7 @@ iCivChina :	Techs([iMachinery, iAlchemy, iCivilService], column=6, exceptions=[i
 iCivIndia :		Techs([iMachinery], column=6, exceptions=[iPolitics]),
 iCivRome:	                Techs([iMachinery, iNobility], column=5),
 iCivPolynesia :	Techs([iConstruction, iCalendar, iShipbuilding], column=2),
-iCivMaya :		Techs([iCement, iMathematics, iContract, iLiterature, iPriesthood, iLaw], column=3),
+iCivMaya : Techs([iAesthetics, iMathematics, iPriesthood], column=3, exceptions=[iAlloys, iRiding]),
 iCivTamils :	Techs([iArtisanry, iArchitecture], column=5, exceptions=[iGeneralship, iPhilosophy]),
 iCivEthiopia :	Techs([iFortification], column=6, exceptions=[iArtisanry]),
 iCivInuit : Techs([iSmelting, iAlloys, iSeafaring, iShipbuilding], column=1, exceptions=[iPastoralism, iAgriculture]),
@@ -593,6 +594,10 @@ dTechPreferences = {
 		iCurrency: -30,
 		iExploration: -30,
 	},
+	iCivMuisca : {
+		iSmelting : 20,
+		iProperty : 20,
+	},
 	iCivYemen : {
 		iGeography : 20,
 		iCartography : 20,
@@ -845,6 +850,7 @@ dDefaultWonderPreferences = {
 	iCivFrance: -12,
 	iCivOman: -20,
 	iCivKhmer: -15,
+	iCivMuisca : -10,
 	iCivEngland: -12,
 	iCivRussia: -12,
 	iCivThailand: -15,
@@ -1100,6 +1106,9 @@ dBuildingPreferences = {
 		iBorobudur: 20,
 		iPrambanan: 20,
 		iNalanda: 20,
+	},
+	iCivMuisca : {
+
 	},
 	iCivEngland : {
 		iTradingCompanyBuilding: 50,

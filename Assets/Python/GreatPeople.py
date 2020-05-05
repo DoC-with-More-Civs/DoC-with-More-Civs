@@ -2529,6 +2529,13 @@ iCivKhmer : {
 		"fYun Yat", # 20th
 	]
 },
+iCivMuisca : {
+	iGreatProphet: [
+		"Goranchacha",
+		"Bochica",
+		u"Idacansás",
+	],
+},
 iCivEngland : {
 	iGreatProphet : [
 		"Bede the Venerable", # 8th

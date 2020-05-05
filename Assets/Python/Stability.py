@@ -369,7 +369,7 @@ def checkStability(iPlayer, bPositive = False, iMaster = -1):
 		
 def getPossibleMinors(iPlayer):
 
-	if gc.getGame().countKnownTechNumTeams(iNationalism) == 0 and iPlayer in [iMaya, iAztecs, iInca, iMali, iEthiopia, iCongo, iInuit]:
+	if gc.getGame().countKnownTechNumTeams(iNationalism) == 0 and (iPlayer in [iMali, iEthiopia, iCongo] or iPlayer in lCivBioNewWorld):
 		return [iNative]
 		
 	if gc.getGame().getCurrentEra() <= iMedieval:

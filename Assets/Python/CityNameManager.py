@@ -71,7 +71,6 @@ def getLanguages(iCiv):
 	elif iCiv == iTurks: return (iLangTurkish, iLangArabian, iLangPersian)
 	elif iCiv == iArabia: return (iLangArabian,)
 	elif iCiv == iTibet: return (iLangTibetan, iLangChinese,)
-	elif iCiv == iKhmer: return (iLangKhmer, iLangIndonesian)
 	elif iCiv == iIndonesia: return (iLangIndonesian, iLangKhmer)
 	elif iCiv == iChad: return (iLangArabian, iLangNigerian,)
 	elif iCiv == iMoors: return (iLangArabian,)
@@ -79,6 +78,8 @@ def getLanguages(iCiv):
 	elif iCiv == iFrance: return (iLangFrench,)
 	elif iCiv == iOman: return (iLangArabian, iLangSwahili, iLangPortuguese)
 	elif iCiv == iKhitan: return (iLangMongolian,  iLangChinese)
+	elif iCiv == iKhmer: return (iLangKhmer, iLangIndonesian)
+	elif iCiv == iMuisca: return (iLangQuechua,)
 	elif iCiv == iYemen: return (iLangArabian, iLangEgyptianArabic, iLangTurkish)
 	elif iCiv == iEngland: return (iLangEnglish,)
 	elif iCiv == iHolyRome: return (iLangGerman,)
@@ -480,6 +481,10 @@ tFoundMap = (
 )
 
 dIdentifiers = {
+	"Bogot&#225"		:	"Bogot&#225",
+	"Bacat&#225"		:	"Bogot&#225",
+	"Ciudad Perdida"		:	"Cartagena de Indias",
+	"Cartagena de Indias"		:	"Cartagena de Indias",
 	"Aachen"		:	"Aachen",
 	"Aix-la-Chapelle"	:	"Aachen",
 	"Aken"			:	"Aachen",
@@ -3673,6 +3678,12 @@ tRenames = (
 	"Ad-Dakhla"		:	"Villa Cisneros",
 	"Lle Cul"		:	"Villa La Angostura",
 	"Zaragoza"		:	"Zaragoza",
+	"Tiwanaku"		:	"La Paz",
+	"La Paz"		:	"La Paz",
+	"Bogot&#225"		:	"Bogot&#225",
+	"Bacat&#225"		:	"Bogot&#225",
+	"Ciudad Perdida"		:	"Cartagena de Indias",
+	"Cartagena de Indias"		:	"Cartagena de Indias",
 },
 #Language: French
 {

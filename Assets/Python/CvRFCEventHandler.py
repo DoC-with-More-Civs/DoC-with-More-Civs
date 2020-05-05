@@ -524,8 +524,8 @@ class CvRFCEventHandler:
 			
 		utils.checkSlaves(iPlayer)
 			
-		if iPlayer in [iEgypt, iNubia]:
-			cnm.onRevolution(iPlayer)
+		cnm.onRevolution(iPlayer)
+			
 			
 	def onCityGrowth(self, argsList):
 		'City Population Growth'
@@ -565,8 +565,8 @@ class CvRFCEventHandler:
 	def onPlayerGoldTrade(self, argsList):
 		iFromPlayer, iToPlayer, iGold = argsList
 		
-		if iToPlayer in [iTamils, iSwahili, iOman]:
-			vic.onPlayerGoldTrade(iToPlayer, iGold)
+		if iToPlayer in [iTamils, iSwahili, iOman] or iFromPlayer in [iMuisca]:
+			vic.onPlayerGoldTrade(iToPlayer, iFromPlayer, iGold)
 			
 	def onTradeMission(self, argsList):
 		iUnitType, iPlayer, iX, iY, iGold = argsList

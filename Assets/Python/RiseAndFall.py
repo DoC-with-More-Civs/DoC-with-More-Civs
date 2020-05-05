@@ -1352,6 +1352,10 @@ class RiseAndFall:
 						return
 						
 
+			elif iCiv == iMaya and pMuisca.isAlive():
+				return
+
+
 			elif iCiv == iThailand:
 				if utils.getHumanID() != iKhmer:
 					if data.getStabilityLevel(iKhmer) > iStabilityShaky:
@@ -1998,10 +2002,12 @@ class RiseAndFall:
 		iGameTurn = gc.getGame().getGameTurn()
 
 		# inuit don't trigger mississippi collapse
-		if iTeamX in [iInuit]: return
+		if iTeamX in [iInuit] or iHasMetTeamY in [iPolynesia]: return
 
 		# no conquerors for minor civs
 		if iHasMetTeamY >= iNumPlayers: return
+
+		if iTeamX >= iNumPlayers or iHasMetTeamY >= iNumPlayers: return
 		
 		if iGameTurn > getTurnForYear(600) and iGameTurn < getTurnForYear(1800):
 			if iTeamX in lCivBioNewWorld and iHasMetTeamY in lCivBioOldWorld:
@@ -2040,6 +2046,9 @@ class RiseAndFall:
 						tContactZoneTL = (21, 11)
 						tContactZoneBR = (42, 46)
 					elif iNewWorldCiv == iNorteChico:
+						tContactZoneTL = (21, 11)
+						tContactZoneBR = (42, 46)
+					elif iNewWorldCiv == iMuisca:
 						tContactZoneTL = (21, 11)
 						tContactZoneBR = (42, 46)
 
@@ -2545,9 +2554,6 @@ class RiseAndFall:
 			utils.makeUnit(iMobileGuard, iCiv, tPlot, 4)
 		elif iCiv == iTibet:
 			utils.makeUnit(iKhampa, iCiv, tPlot, 2)
-		elif iCiv == iKhmer:
-			utils.makeUnit(iSwordsman, iCiv, tPlot, 3)
-			utils.makeUnit(iBallistaElephant, iCiv, tPlot, 2)
 		elif iCiv == iIndonesia:
 			utils.makeUnit(iSwordsman, iCiv, tPlot, 2)
 			utils.makeUnit(iWarElephant, iCiv, tPlot, 1)
@@ -2575,9 +2581,15 @@ class RiseAndFall:
 		elif iCiv == iKhitan:
 			utils.makeUnit(iArcher, iCiv, tPlot, 3)
 			utils.makeUnit(iIronpagoda, iCiv, tPlot, 3)
+		elif iCiv == iKhmer:
+			utils.makeUnit(iSwordsman, iCiv, tPlot, 3)
+			utils.makeUnit(iBallistaElephant, iCiv, tPlot, 2)
+		elif iCiv == iMuisca:
+			utils.makeUnit(iArcher, iCiv, tPlot, 1)
 		elif iCiv == iYemen:
 			utils.makeUnit(iArcher, iCiv, tPlot, 2)
 			utils.makeUnit(iLongbowman, iCiv, tPlot, 2)
+			utils.makeUnit(iTrebuchet, iCiv, tPlot, 1)
 			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
 			if tSeaPlot:
 				utils.makeUnit(iHeavyGalley, iCiv, tPlot, 2)
@@ -2876,12 +2888,6 @@ class RiseAndFall:
 			utils.makeUnitAI(iArcher, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 2)
 			utils.makeUnit(iKhampa, iCiv, tPlot, 2)
 			utils.createMissionaries(iCiv, 1)
-		elif iCiv == iKhmer:
-			utils.createSettlers(iCiv, 2)
-			utils.makeUnitAI(iArcher, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 3)
-			utils.makeUnitAI(iBallistaElephant, iCiv, tPlot, UnitAITypes.UNITAI_ATTACK_CITY, 3)
-			utils.createMissionaries(iCiv, 1)
-			utils.createMissionaries(iCiv, 1, iBuddhism)
 		elif iCiv == iIndonesia:
 			utils.createSettlers(iCiv, 2)
 			utils.makeUnitAI(iArcher, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
@@ -2970,14 +2976,24 @@ class RiseAndFall:
 			utils.makeUnit(iIronpagoda, iCiv, tPlot, 2)
 			if utils.getHumanID() != iKhitan:
 			                utils.makeUnit(iIronpagoda, iCiv, tPlot, 3)
+		elif iCiv == iKhmer:
+			utils.createSettlers(iCiv, 2)
+			utils.makeUnitAI(iArcher, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 3)
+			utils.makeUnitAI(iBallistaElephant, iCiv, tPlot, UnitAITypes.UNITAI_ATTACK_CITY, 3)
+			utils.createMissionaries(iCiv, 1)
+			utils.createMissionaries(iCiv, 1, iBuddhism)
+		elif iCiv == iMuisca:
+			utils.createSettlers(iCiv, 1)
+			utils.makeUnitAI(iArcher, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
 		elif iCiv == iYemen:
 			utils.createSettlers(iCiv, 2)
 			utils.makeUnitAI(iArcher, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
 			utils.makeUnit(iLongbowman, iCiv, tPlot, 3)
+			utils.makeUnit(iTrebuchet, iCiv, tPlot, 2)
 			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
 			if tSeaPlot:
-				utils.makeUnit(iHeavyGalley, iCiv, tPlot, 1)
-				utils.makeUnit(iCog, iCiv, tPlot, 1)
+				utils.makeUnit(iHeavyGalley, iCiv, tPlot, 2)
+				utils.makeUnit(iCog, iCiv, tPlot, 2)
 		elif iCiv == iEngland:
 			utils.createSettlers(iCiv, 3)
 			utils.makeUnitAI(iCrossbowman, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 2)
@@ -3421,8 +3437,6 @@ class RiseAndFall:
 			utils.makeUnit(iWorker, iCiv, tPlot, 3)
 		elif iCiv == iTibet:
 			utils.makeUnit(iWorker, iCiv, tPlot, 2)
-		elif iCiv == iKhmer:
-			utils.makeUnit(iWorker, iCiv, tPlot, 3)
 		elif iCiv == iIndonesia:
 			utils.makeUnit(iWorker, iCiv, tPlot, 3)
 		elif iCiv == iBurma:
@@ -3441,6 +3455,10 @@ class RiseAndFall:
 			utils.makeUnit(iWorker, iCiv, tPlot, 2)
 		elif iCiv == iKhitan:
 			utils.makeUnit(iWorker, iCiv, tPlot, 2)
+		elif iCiv == iKhmer:
+			utils.makeUnit(iWorker, iCiv, tPlot, 3)
+		elif iCiv == iMuisca:
+			utils.makeUnit(iWorker, iCiv, tPlot, 1)
 		elif iCiv == iYemen:
 			utils.makeUnit(iArchitect, iCiv, tPlot, 1)
 		elif iCiv == iEngland:
