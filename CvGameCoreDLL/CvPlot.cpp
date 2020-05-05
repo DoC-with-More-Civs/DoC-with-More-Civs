@@ -7105,7 +7105,16 @@ int CvPlot::calculateImprovementYieldChange(ImprovementTypes eImprovement, Yield
 			iYield += 1;
 		}
 	}
-	
+
+	// 1SDAN: Muisca UP: +1 Food on Mines.
+	if (ePlayer == MUISCA)
+	{
+		if (eYield == YIELD_FOOD && eImprovement == GC.getInfoTypeForString("IMPROVEMENT_MINE"))
+		{
+			iYield += 1;
+		}
+	}
+
 	// Merijn: Manchurian UP: Improved resources adjacent to cities provide additional food and production
 	if (ePlayer == MANCHURIA)
 	{

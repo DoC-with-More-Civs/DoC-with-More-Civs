@@ -958,6 +958,7 @@ enum FeatureTypes					// Exposed to Python
 	FEATURE_ISLANDS,
 	FEATURE_RAINFOREST,
 	FEATURE_FALLOUT,
+	FEATURE_TAIGA,
 	NUM_FEATURES
 };
 
@@ -1308,6 +1309,7 @@ enum LeaderHeadTypes			// Exposed to Python
 	PULAKESI,
                 RED_HORN,
 	AUA,
+	SAGUAMANCHICA,
 	NUM_LEADERHEADS
 };
 
@@ -1423,6 +1425,7 @@ enum PlayerTypes				// Exposed to Python
 	OMAN,
 	KHITAN,
 	KHMER,
+	MUISCA,
 	YEMEN,
 	ENGLAND,
 	HOLY_ROME,

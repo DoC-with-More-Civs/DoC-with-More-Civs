@@ -141,7 +141,7 @@ tCapitals = (
 (96, 40), # Muscat				
 (128, 61), # ChangchunKhitay				
 (122, 36), # Angkor
-(29, 34), # Bacata				
+(29, 35), # Bacata				
 (88, 35), # Sana'a				
 (58, 64), # London				
 (65, 62), # Koln				
@@ -185,7 +185,7 @@ iCarthage : (67, 48),	# Carthage
 iPersia : (93, 48),	# Esfahan (Iran)			
 iNorteChico : (27, 28),	# Chimu			
 iCeltia : (57, 69),	# Scottish			
-iMaya : (29, 34),	# Bogota (Colombia)				
+iMaya : (29, 35),	# Bogota (Colombia)				
 iHarappa : (104, 37),	# Chalukya	
 iTamils : (105, 36),	# Vijayanagara		
 iChad : (71, 34),     #N'Djamena				
@@ -270,7 +270,7 @@ tBirthArea = (
 ((125, 58),	(132, 65)),	# Khitan		
 ((118, 34),	(123, 38)),	# Khmer
 ((29, 34),	(29, 34)),	# Muisca		
-((88, 35),	(90, 36)),	# Yemen		
+((88, 35),	(92, 37)),	# Yemen		
 ((55, 61),	(59, 68)),	# England		
 ((64, 59),	(71, 66)),	# Holy Rome		
 ((79, 59),	(83, 62)),	# Kievan Rus		
@@ -373,7 +373,7 @@ tCoreArea = (
 ((135, 52),	(140, 55)),	# Japan		
 ((66, 67),	(72, 73)),	# Vikings		
 ((96, 52),	(113, 61)),	# Turks		
-((84, 39),	(87, 48)),	# Arabia		
+((84, 39),	(89, 47)),	# Arabia		
 ((107, 47),	(115, 52)),	# Tibet		
 ((115, 24),	(128, 31)),	# Indonesia		
 ((115, 38),	(118, 43)),	# Burma		
@@ -385,7 +385,7 @@ tCoreArea = (
 ((93, 37),	(96, 41)),	# Oman		
 ((125, 56),	(129, 63)),	# Khitan		
 ((120, 33),	(124, 37)),	# Khmer
-((29, 34),	(29, 34)),	# Muisca		
+((29, 34),	(29, 35)),	# Muisca		
 ((87, 34),	(92, 37)),	# Yemen		
 ((55, 62),	(59, 71)),	# England		
 ((64, 58),	(72, 62)),	# Holy Rome		
@@ -756,7 +756,7 @@ iNorteChico : (27, 28),	# Chimu
 iHarappa : (104, 37),	# Chalukya					
 iPersia : (93, 48),	# Esfahan (Iran)					
 iCeltia : (57, 69),	# Scottish			
-iMaya : (29, 34),	# Bogota (Colombia)			
+iMaya : (29, 35),	# Bogota (Colombia)			
 iAztecs : (17, 43),	# Mexico City (Mexico)			
 }				
 				

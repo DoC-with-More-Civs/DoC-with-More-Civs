@@ -11054,7 +11054,7 @@ void CvGameTextMgr::setBuildingHelpActual(CvWStringBuffer &szBuffer, BuildingTyp
 
 		}
 
-		if (GET_PLAYER(ePlayer).isHasBuildingEffect((BuildingTypes)SERPENT_MOUND) && (SpecialistTypes)iI == SPECIALIST_MERCHANT && kBuilding.getBuildingClassType() == GC.getBuildingInfo((BuildingTypes)GC.getInfoTypeForString("BUILDING_PARK")).getBuildingClassType())
+		if (bActual && GET_PLAYER(ePlayer).isHasBuildingEffect((BuildingTypes)SERPENT_MOUND) && (SpecialistTypes)iI == SPECIALIST_MERCHANT && kBuilding.getBuildingClassType() == GC.getBuildingInfo((BuildingTypes)GC.getInfoTypeForString("BUILDING_PARK")).getBuildingClassType())
 		{
 			if (kBuilding.getSpecialistCount(iI) > 0)
 			{
