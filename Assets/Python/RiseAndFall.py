@@ -2602,6 +2602,10 @@ class RiseAndFall:
 		elif iCiv == iRussia:
 			utils.makeUnit(iCrossbowman, iCiv, tPlot, 2)
 			utils.makeUnit(iHeavySpearman, iCiv, tPlot, 2)
+			utils.makeUnit(iLancer, iCiv, tPlot, 2)
+		elif iCiv == iNovgorod:
+			utils.makeUnit(iCrossbowman, iCiv, tPlot, 2)
+			utils.makeUnit(iSwordsman, iCiv, tPlot, 2)
 			utils.makeUnit(iHorseArcher, iCiv, tPlot, 2)
 		elif iCiv == iKievanRus:
 			utils.makeUnit(iCrossbowman, iCiv, tPlot, 2)
@@ -3020,13 +3024,18 @@ class RiseAndFall:
 			                utils.makeUnit(iLancer, iCiv, tPlot, 1)
 			                utils.createMissionaries(iCiv, 3)
 		elif iCiv == iRussia:
-			utils.createSettlers(iCiv, 4)
+			utils.createSettlers(iCiv, 6)
 			utils.makeUnitAI(iCrossbowman, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 2)
-			utils.makeUnit(iLancer, iCiv, tPlot, 4)
+			utils.makeUnit(iLancer, iCiv, tPlot, 5)
 			if utils.getHumanID() != iRussia:
 				utils.makeUnit(iSettler, iCiv, tPlot, 1)
 				utils.makeUnit(iCrossbowman, iCiv, tPlot, 4)
 				utils.makeUnit(iLancer, iCiv, tPlot, 4)
+		elif iCiv == iNovgorod:
+			utils.createSettlers(iCiv, 2)
+			utils.createMissionaries(iCiv, 1)
+			utils.makeUnitAI(iCrossbowman, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 2)
+			utils.makeUnit(iDruzhina, iCiv, tPlot, 4)
 		elif iCiv == iKievanRus:
 			utils.createSettlers(iCiv, 2)
 			utils.createMissionaries(iCiv, 1)
@@ -3466,6 +3475,8 @@ class RiseAndFall:
 		elif iCiv == iHolyRome:
 			utils.makeUnit(iWorker, iCiv, tPlot, 4)
 		elif iCiv == iRussia:
+			utils.makeUnit(iWorker, iCiv, tPlot, 3)
+		elif iCiv == iNovgorod:
 			utils.makeUnit(iWorker, iCiv, tPlot, 3)
 		elif iCiv == iKievanRus:
 			utils.makeUnit(iWorker, iCiv, tPlot, 3)

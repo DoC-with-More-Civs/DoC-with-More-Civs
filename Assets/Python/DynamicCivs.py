@@ -609,6 +609,7 @@ dStartingLeaders = [
 	iYemen : iArwa,
 	iEngland : iAlfred,
 	iHolyRome : iBarbarossa,
+	iNovgorod : iRurik,
 	iKievanRus : iYaroslav,
 	iHungary : iIstvan,
 	iRussia : iIvan,

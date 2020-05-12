@@ -145,6 +145,7 @@ tCapitals = (
 (88, 35), # Sana'a				
 (58, 64), # London				
 (65, 62), # Koln				
+(82, 68), # Novgorod				
 (81, 62), # Kiev				
 (74, 59), # Buda				
 (130, 38), # Tondo (Manila)				
@@ -273,6 +274,7 @@ tBirthArea = (
 ((88, 35),	(92, 37)),	# Yemen		
 ((55, 61),	(59, 68)),	# England		
 ((64, 59),	(71, 66)),	# Holy Rome		
+((79, 66),	(85, 70)),	# Novgorod		
 ((79, 59),	(83, 62)),	# Kievan Rus		
 ((73, 57),	(77, 59)),	# Hungary		
 ((129, 36),	(131, 40)),	# Philippines		
@@ -389,6 +391,7 @@ tCoreArea = (
 ((87, 34),	(92, 37)),	# Yemen		
 ((55, 62),	(59, 71)),	# England		
 ((64, 58),	(72, 62)),	# Holy Rome		
+((79, 66),	(85, 70)),	# Novgorod		
 ((79, 60),	(83, 62)),	# Kievan Rus		
 ((71, 56),	(76, 59)),	# Hungary		
 ((128, 35),	(133, 40)),	# Philippines		
@@ -546,6 +549,7 @@ tNormalArea = (
 ((87, 34),	(92, 37)),	# Yemen		
 ((56, 62),	(60, 70)),	# England		
 ((65, 58),	(73, 62)),	# HolyRome		
+((79, 66),	(85, 70)),	# Novgorod		
 ((79, 59),	(83, 62)),	# Kievan Rus		
 ((73, 57),	(77, 59)),	# Hungary		
 ((128, 35),	(133, 40)),	# Philippines		
@@ -685,6 +689,7 @@ tBroaderArea = (
 ((87, 34),	(92, 37)),	# Yemen		
 ((53, 62),	(60, 70)),	# England		
 ((63, 54),	(73, 65)),	# Holy Rome		
+((79, 66),	(85, 70)),	# Novgorod		
 ((79, 59),	(83, 62)),	# Kievan Rus		
 ((73, 57),	(77, 59)),	# Hungary		
 ((128, 35),	(133, 40)),	# Philippines		

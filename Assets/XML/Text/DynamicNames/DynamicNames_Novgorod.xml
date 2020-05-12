@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Inca -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NOVGOROD_DESC</Tag>
+		<English>The Novgorodians</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NOVGOROD_PEOPLES</Tag>
+		<English>Novgorodians People</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NOVGOROD_DEFAULT</Tag>
+		<English>Republic of Novgorod</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NOVGOROD_ADJECTIVE</Tag>
+		<English>Novgorodian</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NOVGOROD_SHORT_DESC</Tag>
+		<English>Novgorod</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_RURIK</Tag>
+		<English>Rurik</English>
+		<French>Rurik</French>
+		<German>Rurik</German>
+		<Italian>Rurik</Italian>
+		<Spanish>Rurik</Spanish>
+		<Portuguese>Rurik</Portuguese>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_RURIK_PEDIA</Tag>
+		<English>[H1]Rurik[\H1][NEWLINE][BOLD]Prince of Novgorod[\BOLD][NEWLINE][BOLD]Lived:[\BOLD] c. 830 - c. 879[NEWLINE][PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]Rurik or Riurik was a legendary Varangian chieftain who gained control of Ladoga in 862, built the Holmgard settlement near Novgorod, and founded the Rurik Dynasty, which ruled Kievan Rus (and later Grand Duchy of Moscow and Tsardom of Russia) until the 17th century.</English>
+		<French>.</French>
+		<German></German>
+		<Italian>.</Italian>
+		<Spanish>.</Spanish>
+		<Portuguese>.</Portuguese>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NOVGOROD_PEDIA</Tag>
+		<English>[TAB]Slightly predating the chronology of the legend of Rurik (which dates the first Norse arrival in the region around 858-860), an earlier record for the Scandinavian settlement of the region is found in the Annales Bertiniani (written up until 882) where a Rus' delegation is mentioned as having visited Constantinople in 838 and, intending to return to the Rus' Khaganate via the Baltic Sea, were questioned by Frankish Emperor Louis the Pious at Ingelheim am Rhein, where they said that although their origin was Swedish, they had settled in Northern Rus' under a leader who they designated as chacanus (the Latin form of Khagan, a title they had likely borrowed from contact with the Avars).[PARAGRAPH:2]In 882, Rurik's successor, Oleg of Novgorod, conquered Kiev and founded the state of Kievan Rus'. Novgorod's size as well as its political, economic, and cultural influence made it the second most important city in Kievan Rus'. According to a custom, the elder son and heir of the ruling Kievan monarch was sent to rule Novgorod even as a minor. When the ruling monarch had no such son, Novgorod was governed by posadniks, such as the legendary Gostomysl, Dobrynya, Konstantin, and Ostromir.[PARAGRAPH:2]Of all their princes, Novgorodians most cherished the memory of Yaroslav the Wise, who sat as Prince of Novgorod from 1010 to 1019, while his father, Vladimir the Great, was a prince in Kiev. Yaroslav promulgated the first written code of laws (later incorporated into Russkaya Pravda) among the Eastern Slavs and is said to have granted the city a number of freedoms or privileges, which they often referred to in later centuries as precedents in their relations with other princes. His son, Vladimir, sponsored construction of the great St. Sophia Cathedral, more accurately translated as the Cathedral of Holy Wisdom, which stands to this day.[PARAGRAPH:2]In Norse sagas the city is mentioned as the capital of Gardariki. Four Viking kings-Olaf I of Norway, Olaf II of Norway, Magnus I of Norway, and Harald Hardrada-sought refuge in Novgorod from enemies at home. No more than a few decades after the 1030 death and subsequent canonization of Olaf II of Norway, the city's community had erected in his memory Saint Olaf's Church in Novgorod.[PARAGRAPH:2]The town of Visby in Gotland functioned as the leading trading center in the Baltic before the Hansa League. At Novgorod in 1080, Visby merchants established a trading post which they named Gutagard (also known as Gotenhof). Later, in the first half of the 13th century, merchants from northern Germany also established their own trading station in Novgorod, known as Peterhof. At about the same time, in 1229, German merchants at Novgorod were granted certain privileges, which made their position more secure.[PARAGRAPH:2]In 1136, the Novgorodians dismissed their prince Vsevolod Mstislavich. The year is seen as the traditional beginning of the Novgorod Republic. The city was able to invite and dismiss a number of princes over the next two centuries, but the princely office was never abolished and powerful princes, such as Alexander Nevsky, could assert their will in the city regardless of what Novgorodians' said. The city state controlled most of Europe's northeast, from lands east of today's Estonia to the Ural Mountains, making it one of the largest states in medieval Europe, although much of the territory north and east of Lakes Ladoga and Onega was sparsely populated and never organized politically.[PARAGRAPH:2]One of the most important local figures in Novgorod was the posadnik, or mayor, an official elected by the public assembly (called the Veche) from among the city's boyarstvo, or aristocracy. The tysyatsky, or "thousandman", originally the head of the town militia but later a commercial and judicial official, was also elected by the Veche. Another important local official was the Archbishop of Novgorod who shared power with the boyars. Archbishops were elected by the Veche or by the drawing of lots, and after their election, were sent to the metropolitan for consecration.[PARAGRAPH:2]While a basic outline of the various officials and the Veche can be drawn up, the city-state's exact political constitution remains unknown. The boyars and the archbishop ruled the city together, although where one official's power ended and another's began is uncertain. The prince, although his power was reduced from around the middle of the 12th century, was represented by his namestnik, or lieutenant, and still played important roles as a military commander, legislator and jurist. The exact composition of the Veche, too, is uncertain, with some historians, such as Vasily Klyuchevsky, claiming it was democratic in nature, while later scholars, such as Marxists Valentin Ianin and Aleksandr Khoroshev, see it as a "sham democracy" controlled by the ruling elite.[PARAGRAPH:2]In the 13th century, Novgorod, while not a member of the Hanseatic League, was the easternmost kontor, or entrepot, of the league, being the source of enormous quantities of luxury (sable, ermine, fox, marmot) and non-luxury furs (squirrel pelts).[PARAGRAPH:2]Throughout the Middle Ages, the city thrived culturally. A large number of birch bark letters have been unearthed in excavations, perhaps suggesting widespread literacy, although this is uncertain (some scholars suggest that a clerical or scribal elite wrote them on behalf of a largely illiterate populace). It was in Novgorod that the Novgorod Codex, the oldest Slavic book written north of Macedonia, and the oldest inscription in a Finnic language (Birch bark letter no. 292) were unearthed. Some of the most ancient Russian chronicles (Novgorod First Chronicle) were written in the scriptorium of the archbishops who also promoted iconography and patronized church construction. The Novgorod merchant Sadko became a popular hero of Russian folklore.[PARAGRAPH:2]Novgorod was never conquered by the Mongols during the Mongol invasion of Rus. The Mongol army turned back about 200 kilometers (120 mi) from the city, not because of the city's strength, but probably because the Mongol commanders did not want to get bogged down in the marshlands surrounding the city. However, the grand princes of Moscow, who acted as tax collectors for the khans of the Golden Horde, did collect tribute in Novgorod, most notably Yury Danilovich and his brother, Ivan Kalita.[PARAGRAPH:2]In 1259, Hordes tax-collectors and census-takers arrived in the city, leading to political disturbances and forcing Alexander Nevsky to punish a number of town officials (he cut off their noses) for defying him as Grand Prince of Vladimir (soon to be the khan's tax-collector in Russia) and his Mongol overlords. In the 14th century, raids by Novgorod pirates, or ushkuiniki, sowed fear as far as Kazan and Astrakhan, assisting Novgorod in wars with the Grand Duchy of Moscow.[PARAGRAPH:2]During the era of Old Rus' State, Novgorod was a trade hub at the northern end of both the Volga trade route and the "route from the Varangians to the Greeks" along the Dnieper river system. A vast array of goods were transported along these routes and exchanged with local Novgorod merchants and other traders. The farmers of Gotland retained the Saint Olof trading house well into the 12th century. Later German merchantmen also established tradinghouses in Novgorod. Scandinavian royalty would intermarry with Russian princes and princesses.[PARAGRAPH:2]After the great schism, Novgorod struggled from the beginning of the 13th century against Swedish, Danish, and German crusaders. During the Swedish-Novgorodian Wars, the Swedes invaded lands where some of the population had earlier paid tribute to Novgorod. The Germans had been trying to conquer the Baltic region since the late 12th century. Novgorod went to war 26 times with Sweden and 11 times with the Livonian Brothers of the Sword. The German knights, along with Danish and Swedish feudal lords, launched a series of uncoordinated attacks in 1240-1242. Novgorodian sources mention that a Swedish army was defeated in the Battle of the Neva in 1240. The Baltic German campaigns ended in failure after the Battle on the Ice in 1242. After the foundation of the castle of Viborg in 1293 the Swedes gained a foothold in Karelia. On August 12, 1323, Sweden and Novgorod signed the Treaty of N鰐eborg, regulating their border for the first time.[PARAGRAPH:2]The city's downfall occurred partially as a result of its inability to feed its large population, making it dependent on the Vladimir-Suzdal region for grain. The main cities in the area, Moscow and Tver, used this dependence to gain control over Novgorod. Eventually Ivan III forcibly annexed the city to the Grand Duchy of Moscow in 1478. The Veche was dissolved and a significant part of Novgorod's population was either killed or deported. The Hanseatic League kontor was closed in 1494 and the goods stored there were seized by Muscovite forces.</English>
+		<French>.</French>
+		<German>.</German>
+		<Italian>.</Italian>
+		<Spanish>.</Spanish>
+		<Portuguese>.</Portuguese>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_NOVGOROD_KONETS</Tag>
+		<English>Konets</English>
+		<French>Konets</French>
+		<German>Konets</German>
+		<Italian>Konets</Italian>
+		<Spanish>Konets</Spanish>
+		<Portuguese>Konets</Portuguese>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_NOVGOROD_KONETS_PEDIA</Tag>
+		<English>[TAB]Kontsy literally means "ends", with Konets being it's singular form. Originally the Kontsy were the five boroughs into which medieval Novgorod the Great was divided. They were based on the three original settlements that combined to form the city toward the end of the tenth century, and two later additions. Many of these boroughs were highly specialized, even called like "Potters' End" or "Carpenters' End".[PARAGRAPH:2]Ingame the Konets building represents a specialized Guild, which dominates production and trade in the entire city.</English>
+		<French>.</French>
+		<German></German>
+		<Italian>.</Italian>
+		<Spanish>.</Spanish>
+		<Portuguese>.</Portuguese>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_NOVGOROD_USHKUINIK</Tag>
+		<English>Ushkuinik</English>
+		<French>Ushkuinik</French>
+		<German>Ushkuinik</German>
+		<Italian>Ushkuinik</Italian>
+		<Spanish>Ushkuinik</Spanish>
+		<Portuguese>Ushkuinik</Portuguese>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_NOVGOROD_USHKUINIK_PEDIA</Tag>
+		<English>[TAB]The ushkuiniks were medieval Novgorodian pirates who led the Viking-like life of fighting, killing, and robbery. Their name derives from "ushkui", a type of flat-bottom medieval Finnic ship uisk (literally a 'snake'), which could be easily transported over portages between the rivers.[PARAGRAPH:2]Although the Novgorodians took part in the Tsargrad expeditions of the 10th century and mounted pillaging raids to Finland in the 12th century, the ushkuiniks first appear as an organized force in the 1320s. Arranged in squadrons which could number several thousand, the ushkuiniks enjoyed the patronage of influential boyar families of Novgorod, who used them to demonstrate Novgorod's military clout to its neighbours and to advance its trade interests in the Volga region.[PARAGRAPH:2]During the famous campaign of 1360, the ushkuiniks sailed from Novgorod by the portages to the Volga river. Under command of boyar Anfal Nikitin, they gained possession of Zhukotin, a trade emporium in Volga Bulgaria. A ruler of the Golden Horde, which controlled Zhukotin, was furious and ordered Grand Prince Dmitry Konstantinovich to capture the ushkuiniks and to bring them to the Horde for trial, but Dmitry's punitive expedition failed.[PARAGRAPH:2]In 1363 the pirates launched the first Novgorodian raid along the Ob River in western Siberia. Three years later, without consulting their superiors in Novgorod, they approached Nizhny Novgorod and, wishing to punish Dmitry for his hostile action, massacred Armenian and Tatar merchants trading there. This led to a diplomatic row, when Dmitry demanded apologies from Novgorod Republic.[PARAGRAPH:2]In 1371, the ushkuiniks sacked Yaroslavl, Kostroma and other Upper Volga cities. Three years later, they sailed with upwards of ninety ships to pillage the Vyatka region. In 1375, they defeated the militia of Kostroma and burnt the city to the ground. The destruction was so severe that Kostroma had to be rebuilt elsewhere. After that, they looted Nizhny Novgorod and sailed down the Volga to Astrakhan, where they were annihilated by a Tatar general.[PARAGRAPH:2]By 1391, the ushkuiniks had recovered from this reverse and felt strong enough to resume their activities. At that period their patrons included Narimantas and Patrikas, the overlords of the Korela district that later became known as Ingria. In 1391 the pirates sacked both Zhukotin and Kazan. With Muscovy's power on the ascendant, however, Novgorod Republic was pressed into putting down their filibustering activities in the first decades of the 15th century.</English>
+		<French>.</French>
+		<German></German>
+		<Italian>.</Italian>
+		<Spanish>.</Spanish>
+		<Portuguese>.</Portuguese>
+	</TEXT>
+	<TEXT> <!-- Novgorod -->
+		<Tag>TXT_KEY_DOM_NOVGOROD</Tag>
+		<English>It is the year 864 AD. You, Rurik, have been invited by the warring local tribes to reestablish order; to rule over them. Novgorod the Great has the potential to grow into a fabulously wealthy city, the envy of both West and East.[NEWLINE]But can you hold the fledgling principality together when both West and East come for you?</English>
+		<French>.</French>
+		<German>.</German>
+		<Italian>.</Italian>
+		<Spanish>.</Spanish>
+		<Portuguese>.</Portuguese>
+	</TEXT>
+</Civ4GameText>

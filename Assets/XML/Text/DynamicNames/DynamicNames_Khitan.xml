@@ -3,7 +3,7 @@
 <Civ4GameText xmlns="http://www.firaxis.com">
 	<TEXT>
 		<Tag>TXT_KEY_CIV_KHITAN_DESC</Tag>
-		<English>The Khitan</English>
+		<English>The Kitanyes</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_KHITAN_PEOPLES</Tag>
@@ -23,7 +23,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_KHITAN_ADJECTIVE</Tag>
-		<English>Khitan</English>
+		<English>Kitanyes</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_KHITAN_SHORT_DESC</Tag>

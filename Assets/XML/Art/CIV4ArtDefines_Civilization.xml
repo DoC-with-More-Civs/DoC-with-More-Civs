@@ -534,5 +534,11 @@
 			<Path>Art/Interface/TeamColor/FlagDECAL_Muisca.dds</Path>
 			<bWhiteFlag>0</bWhiteFlag>
 		</CivilizationArtInfo>
+		<CivilizationArtInfo>
+			<Type>ART_DEF_CIVILIZATION_NOVGOROD</Type>
+			<Button>Art/Interface/Buttons/Civilizations/Novgorod.dds</Button>
+			<Path>Art/Interface/TeamColor/flagDECAL_Novgorod.dds</Path>
+			<bWhiteFlag>0</bWhiteFlag>
+		</CivilizationArtInfo>
 	</CivilizationArtInfos>
 </Civ4ArtDefines>

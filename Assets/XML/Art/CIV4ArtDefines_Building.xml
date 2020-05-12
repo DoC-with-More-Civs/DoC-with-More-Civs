@@ -4317,5 +4317,15 @@
 			<KFM/>
 			<Button>Art/Structures/Buildings/blacksmith/Goldsmith.dds</Button>
 		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_NOVGOROD_KONETS</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>19.2</fScale>
+			<fInterfaceScale>0.66</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/novgorod_konets/HumanWoodExport.NIF</NIF>
+			<KFM/>
+			<Button>Art/Interface/Buttons/Buildings/novgorod_konets.dds</Button>
+		</BuildingArtInfo>
 	</BuildingArtInfos>
 </Civ4ArtDefines>

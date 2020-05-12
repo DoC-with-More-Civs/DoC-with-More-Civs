@@ -63,7 +63,7 @@ tMinorCities = (
 #(800, (85, 69), iIndependent2, 'Beloozero', 1, iCrossbowman, 1),	# Beloozero
 (830, (66, 65), iIndependent, 'Hamburg', 2, iCrossbowman, 1),	# Hamburg
 (850, (66, 65), iIndependent, 'L&#252;beck', 2, iCrossbowman, 1),	# Lubeck
-(860, (82, 68), iIndependent, 'Novgorod', 3, iCrossbowman, 3),		# Novgorod
+#(860, (82, 68), iIndependent, 'Novgorod', 3, iCrossbowman, 3),		# Novgorod
 (870, (27, 28), iIndependent, 'Chan Chan', 2, iArcher, 2),			# Chan Chan
 (870, (26, 31), iNative, 'Tucume', 2, iPictaAucac, 1),			# Tucume
 (899, (92, 41), iIndependent, 'Bahrein', 2, iArcher, 2),			# Qarmatians (Abu Sa'id al-Jannabi)

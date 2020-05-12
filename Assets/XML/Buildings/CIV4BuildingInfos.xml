@@ -7293,6 +7293,43 @@
 			</Flavors>
 		</BuildingInfo>
 		<BuildingInfo>
+			<BuildingClass>BUILDINGCLASS_WAREHOUSE</BuildingClass>
+			<Type>BUILDING_NOVGOROD_KONETS</Type>
+			<Description>TXT_KEY_BUILDING_NOVGOROD_KONETS</Description>
+			<Civilopedia>TXT_KEY_BUILDING_NOVGOROD_KONETS_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_NOVGOROD_KONETS_STRATEGY</Strategy>
+			<Advisor>ADVISOR_ECONOMY</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_NOVGOROD_KONETS</ArtDefineTag>
+			<PrereqTech>TECH_MACHINERY</PrereqTech>
+			<iCost>150</iCost>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iMinAreaSize>-1</iMinAreaSize>
+			<iConquestProb>60</iConquestProb>
+			<iMaxLatitude>90</iMaxLatitude>
+			<iAsset>4</iAsset>
+			<fVisibilityPriority>1.0</fVisibilityPriority>
+			<CommerceModifiers>
+				<iCommerce>25</iCommerce>
+			</CommerceModifiers>
+			<YieldModifiers>
+				<iYield>0</iYield>
+				<iYield>25</iYield>
+			</YieldModifiers>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+					<iSpecialistCount>1</iSpecialistCount>
+				</SpecialistCount>
+			</SpecialistCounts>
+			<ConstructSound>AS2D_BUILD_DRYDOCK</ConstructSound>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_GOLD</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+			</Flavors>
+		</BuildingInfo>
+		<BuildingInfo>
 			<BuildingClass>BUILDINGCLASS_COURTHOUSE</BuildingClass>
 			<Type>BUILDING_COURTHOUSE</Type>
 			<Description>TXT_KEY_BUILDING_COURTHOUSE</Description>

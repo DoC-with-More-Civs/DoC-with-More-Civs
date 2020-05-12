@@ -191,6 +191,7 @@ iCivYemen :		Techs([iGuilds, iTheology, iFeudalism, iFortification, iCommune], c
 iCivEngland :	Techs([iFeudalism, iTheology, iFortification], column=6),
 iCivScotland :	Techs([iFeudalism, iTheology], column=6, exceptions=[iArtisanry, iArchitecture]),
 iCivHolyRome :	Techs([iFeudalism, iTheology], column=6),
+iCivNovgorod :	Techs([iFeudalism, iTheology, iDoctrine], column=6, exceptions=[iArtisanry, iArchitecture]),
 iCivKievanRus :	Techs([iFeudalism, iTheology, iDoctrine], column=6, exceptions=[iArtisanry, iArchitecture]),
 iCivHungary :	Techs([iFeudalism, iFortification, iMachinery], column=6, exceptions=[iPolitics, iScholarship]),
 iCivPhilippines : 	Techs(column=6),
