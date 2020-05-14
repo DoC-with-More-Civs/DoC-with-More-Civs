@@ -540,5 +540,11 @@
 			<Path>Art/Interface/TeamColor/flagDECAL_Novgorod.dds</Path>
 			<bWhiteFlag>0</bWhiteFlag>
 		</CivilizationArtInfo>
+		<CivilizationArtInfo>
+			<Type>ART_DEF_CIVILIZATION_TATAR</Type>
+			<Button>Art/Interface/Buttons/Civilizations/Tatar.dds</Button>
+			<Path>Art/Interface/TeamColor/FlagDECAL_GoldenHorde.dds</Path>
+			<bWhiteFlag>0</bWhiteFlag>
+		</CivilizationArtInfo>
 	</CivilizationArtInfos>
 </Civ4ArtDefines>

@@ -1463,5 +1463,12 @@
 			<fBlue>0.100</fBlue>
 			<fAlpha>1.00</fAlpha>
 		</ColorVal>
+		<ColorVal>
+			<Type>COLOR_PLAYER_TATAR_RED</Type>
+			<fRed>1.00</fRed>
+			<fGreen>0.03</fGreen>
+			<fBlue>0.03</fBlue>
+			<fAlpha>1.00</fAlpha>
+		</ColorVal>
 	</ColorVals>
 </Civ4ColorVals>

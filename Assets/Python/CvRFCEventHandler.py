@@ -428,6 +428,7 @@ class CvRFCEventHandler:
 	def onCombatResult(self, argsList):
 		self.rnf.immuneMode(argsList)
 		self.up.vikingUP(argsList) # includes Moorish Corsairs
+		self.up.tatarUP(argsList) # includes Moorish Corsairs
 		
 		pWinningUnit, pLosingUnit = argsList
 		iWinningPlayer = pWinningUnit.getOwner()

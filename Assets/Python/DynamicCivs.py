@@ -206,6 +206,7 @@ dSpecificVassalTitles = {
 	iRussia : {
 		iTurks : "TXT_KEY_ADJECTIVE_TITLE",
 		iPoland : "TXT_KEY_CIV_RUSSIAN_POLAND",
+		iTatar : "TXT_KEY_CIV_TATAR_RUSSIAN_VASSAL",
 		iAmerica : "TXT_KEY_ADJECTIVE_TITLE",
 	},
 	iNetherlands : {
@@ -236,6 +237,7 @@ dSpecificVassalTitles = {
 		iOttomans : "TXT_KEY_CIV_MONGOL_OTTOMANS",
 		iMughals : "TXT_KEY_CIV_MONGOL_MUGHALS",
 		iMamluks : "TXT_KEY_CIV_MONGOL_ILKHANATE",
+		iTatar : "TXT_KEY_CIV_TATAR_MONGOL_VASSAL",
 	},
 	iMughals : {
 		iIndia : "TXT_KEY_CIV_MUGHAL_INDIA",
@@ -253,7 +255,12 @@ dSpecificVassalTitles = {
 		iRussia : "TXT_KEY_CIV_OTTOMAN_RUSSIA",
 		iKievanRus : "TXT_KEY_CIV_OTTOMAN_RUS'",
 		iHungary : "TXT_KEY_CIV_OTTOMAN_HUNGARY",
+		iTatar : "TXT_KEY_CIV_TATAR_TURKISH_VASSAL",
 		iIsrael : "TXT_KEY_CIV_OTTOMAN_ISRAEL",
+	},
+	iTatar : {
+		iRussia : "TXT_KEY_CIV_RUSSIA_TATAR_VASSAL",
+		iMongolia : "TXT_KEY_CIV_MONGOLIA_TATAR_VASSAL",
 	},
 	iGermany : {
 		iHolyRome : "TXT_KEY_CIV_GERMAN_HOLY_ROME",
@@ -481,10 +488,10 @@ lIslamicRepublicOf = [iIndia, iPersia, iMali, iMughals]
 lCityStatesStart = [iRome, iCarthage, iGreece, iIndia, iMaya, iAztecs]
 
 dEmpireThreshold = {
-	iNubia: 3,
+	iNubia: 4,
 	iCarthage : 4,
 	iIndonesia : 4,
-	iBurma : 2,
+	iBurma : 4,
 	iKhazars : 6,
 	iTeotihuacan : 3,
 	iKorea : 4,
@@ -493,14 +500,14 @@ dEmpireThreshold = {
 	iGermany : 4,
 	iItaly : 4,
 	iInca : 3,
-	iMongolia : 6,
+	iMongolia : 8,
 	iPoland : 3,
-	iChad : 2,
-	iMoors : 3,
+	iChad : 4,
+	iMoors : 4,
 	iOman : 4,
-	iTibet : 2,
+	iTibet : 3,
 	iPolynesia : 3,
-	iTamils : 3,
+	iTamils : 5,
 	iNigeria : 3,
 	iSwahili : 4,
 }
@@ -541,6 +548,7 @@ dCapitals = {
 	iPolynesia : ["Kaua'i", "O'ahu", "Maui", "Manu'a", "Niue"],
 	iBabylonia : ["Ninua", "Kalhu"],
 	iCeltia : ["Hallstat", "La Tene", "&#193;th Cliath", "D&#249;n &#200;ideann", "Dublin", "Edinburgh"],
+	iRome : ["Mediolanum"],
 	iTeotihuacan : ["Tollan"],
 	iByzantium : ["Dyrrachion", "Athena", "Konstantinoupolis"],
 	iVikings : ["Oslo", "Nidaros", "Roskilde"],
@@ -554,6 +562,7 @@ dCapitals = {
 	iPhilippines : ["Tondo", "Butuan"],
 	iPoland : ["Kowno", "Medvegalis", "Wilno", "Ryga"],
 	iNigeria : ["Oyo", "Ife", "Njimi", "Igbo-Ukwu", "Wukari"],
+	iTatar : ["Astrakhan"],
 	iNetherlands : ["Brussels", "Antwerpen"],
 	iBoers : ["Pretoria", "Johannesburg", "Pietermaritzburg", "Durban"],
 	iNubia : ["Kerma"]
@@ -627,6 +636,7 @@ dStartingLeaders = [
 	iMongolia : iGenghisKhan,
 	iAztecs : iMontezuma,
 	iMughals : iTughluq,
+	iTatar : iUzbeg,
 	iOttomans : iMehmed,
 	iThailand : iNaresuan,
 	iCongo : iMbemba,
@@ -1141,7 +1151,7 @@ def specificName(iPlayer):
 	elif iPlayer == iHarappa:
 		if bReborn:
 			if capital.getX() <= 120:
-					return "TXT_KEY_CIV_CHALUKYA_SHORT_DESC"
+				return "TXT_KEY_CIV_CHALUKYA_SHORT_DESC"
 	
 	elif iPlayer == iChina:
 		if bEmpire:
@@ -1174,6 +1184,10 @@ def specificName(iPlayer):
 					return "TXT_KEY_CIV_CELTIA_IRELAND_SHORT_DESC"
 				elif capital.getY() >= 58:
 					return "TXT_KEY_CIV_CELTIA_SCOTLAND_SHORT_DESC"
+			
+	elif iPlayer == iRome:
+		if isCapital(iPlayer, ["Mediolanum"]):
+			return "TXT_KEY_CIV_LOMBARD"
 		
 	elif iPlayer == iTamils:
 		if iEra >= iRenaissance:
@@ -1419,6 +1433,12 @@ def specificName(iPlayer):
 			
 		return "TXT_KEY_CIV_NIGERIA_BENIN"
 			
+	elif iPlayer == iTatar:
+		if isCapital(iPlayer, ["Astrakhan"]):
+			return "TXT_KEY_CIV_TATAR_ASTRAKHAN"
+			
+		return "TXT_KEY_CIV_TATAR_DESC_DEFAULT"
+			
 	elif iPlayer == iThailand:
 		if iEra <= iRenaissance:
 			return "TXT_KEY_CIV_THAILAND_AYUTTHAYA"
@@ -1560,8 +1580,8 @@ def specificAdjective(iPlayer):
 
 	elif iPlayer == iNorteChico:
 		if bReborn:
-				if capital.getY() >= 26:
-					return "TXT_KEY_CIV_CHIMU_EMPIRE"
+			if capital.getY() >= 26:
+				return "TXT_KEY_CIV_CHIMU_EMPIRE"
 			
 	elif iPlayer == iGreece:
 		if not bCityStates and bEmpire and iEra <= iClassical:
@@ -1610,9 +1630,6 @@ def specificAdjective(iPlayer):
 	elif iPlayer == iRome:
 		if pByzantium.isAlive():
 			return "TXT_KEY_CIV_ROME_WESTERN"
-
-		if capital.getY() >= 56:
-			return "TXT_KEY_CIV_LOMBARD"
 			
 	elif iPlayer == iTamils:
 		if iReligion == iIslam:

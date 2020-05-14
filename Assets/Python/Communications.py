@@ -102,6 +102,7 @@ tPool3 = (iEgypt,
 	iChad,
 	iCeltia,
 	iNovgorod,
+	iTatar,
 	iMuisca)
 
 

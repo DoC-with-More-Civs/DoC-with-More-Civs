@@ -76,11 +76,11 @@ tMinorCities = (
 (1050, (89, 54), iIndependent2, 'Dvin', 2, iCrossbowman, 1),		# Dvin
 (1115, (131, 61), iIndependent, "Huining", 3, iHorseArcher, 3),		# Huining
 (1154, (96, 40), iIndependent, "Masqat", 3, iCrossbowman, 3),	# Muscat
-(1157, (69, 64), iIndependent, 'Brandenburg', 3, iCrossbowman, 1),		# Brandenburg
-(1157, (67, 60), iIndependent, 'Ansach', 3, iCrossbowman, 1),		# Ansach
+(1157, (69, 64), iIndependent, 'Brandenburg', 3, iCrossbowman, 2),		# Brandenburg
+(1157, (67, 60), iIndependent, 'Ansach', 3, iCrossbowman, 2),		# Ansach
 (1200, (92, 65), iBarbarian, 'Qazan', 2, iHorseArcher, 1),		# Kazan
 (1200, (78, 68), iIndependent, 'Riga', 3, iCrossbowman, 2),		# Riga
-(1200, (89, 61), iBarbarian, 'Tsaritsyn', 3, iHorseArcher, 1),		# Tsaritsyn
+#(1200, (89, 61), iBarbarian, 'Tsaritsyn', 3, iHorseArcher, 1),		# Tsaritsyn
 #(1200, (131, 36), iIndependent2, 'Sugbo', 2, iArcher, 2),		# Cebu
 (1252, (72, 71), iIndependent2, 'Stockholm', 3, iCrossbowman, 3),		# Stockholm
 (1255, (75, 65), iIndependent, 'K&#246;nigsberg', 3, iCrossbowman, 3),		# Konigsberg

@@ -6991,6 +6991,18 @@ int CvPlot::calculateNatureYield(YieldTypes eYield, TeamTypes eTeam, bool bIgnor
 					}
 				}
 			}
+
+			//Leoreth: NOVGOROD UP: +1 on food FOREST
+			if (getOwnerINLINE() == NOVGOROD)
+			{
+				if (getFeatureType() == GC.getInfoTypeForString("FEATURE_FOREST"))
+				{
+					if (eYield == YIELD_FOOD)
+					{
+						iYield += 1;
+					}
+				}
+			}
 		}
 	}
 

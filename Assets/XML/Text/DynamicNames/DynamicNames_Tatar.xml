@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by lcollins (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- -->
+<!-- Game Text - Unit Upgrades for Civilopedia -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TATAR_DESC</Tag>
+		<English>The Tatars</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TATAR_PEOPLES</Tag>
+		<English>Turco-Mongol People</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TATAR_DEFAULT</Tag>
+		<English>Golden Horde</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TATAR_DEMOCRATIC</Tag>
+		<English>Republic of Tatarstan</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TATAR_COMMUNIST</Tag>
+		<English>Tatar Union of the Godless</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TATAR_FASCIST</Tag>
+		<English>Idel-Ural State</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TATAR_EMPIRE</Tag>
+		<English>Tatar Empire</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TATAR_SOVIET_VASSAL</Tag>
+		<English>Tatar ASSR</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TATAR_NAZI_VASSAL</Tag>
+		<English>Popular Revolutionary Government of Tatarstan</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TATAR_RUSSIAN_VASSAL</Tag>
+		<English>Kazan Governorate</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TATAR_MONGOL_VASSAL</Tag>
+		<English>Kipchak Khanate</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TATAR_TURKISH_VASSAL</Tag>
+		<English>Crimean Khanate</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TATAR_SIBIR</Tag>
+		<English>Khanate of Sibir</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TATAR_ASTRAKHAN</Tag>
+		<English>Khanate of Astrakhan</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TATAR_KAZAN</Tag>
+		<English>Khanate of Kazan</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_RUSSIA_TATAR_VASSAL</Tag>
+		<English>Russian principalities</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MONGOLIA_TATAR_VASSAL</Tag>
+		<English>Khanate of Borjigin</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TATAR_ORDA</Tag>
+		<English>Orda</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TATAR_ORDA_STRATEGY</Tag>
+		<English>Orda</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TATAR_ORDA_PEDIA</Tag>
+		<English>[TAB]An orda (also orda, ordu, ordo, ordon) or horde was an historical sociopolitical and military structure found on the Eurasian Steppe, usually associated with the Turkic raiders and Mongols. This entity can be seen as regional equivalent of a clan or a tribe. Some successful ordas gave rise to khanates. Ordu or Ordo also means the Mongolian court. In Mongolian language, the Government Palace (Mongolia) is literally called Zasgiin gazriin ordon.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DOM_TATAR</Tag>
+		<English>It is the year 1210AD. Batu, the eldest grandson of Genghis Khan, and his army has just conqued Volga Bulgaria. Moving on to southern steppes of the Ukraine and Crimean Peninsula, the conquered Kipchaks, Cumans, Volga Bulgars, Khwarezmians along with the Mongolian elites will form a new nation. </English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_UZBEG</Tag>
+		<English>Uzbeg Khan</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_UZBEG_PEDIA</Tag>
+		<English>[H1]Uzbeg Khan[\H1][NEWLINE][BOLD]Sultan of the Golden Horde[\BOLD][NEWLINE][BOLD]Lived: [\BOLD]1282?341[NEWLINE][PARAGRAPH:2]Sultan Mohammed 謟 Beg, better known as Uzbeg or 謟beg was the longest-reigning khan of the Golden Horde, under whose rule the state reached its zenith. He urged the Mongol elite to convert to Islam, but at the same time, he preserved the lives of Christians and pagans such as Russians, Circassians, Alans, Finno-Ugric people, and Crimean Greeks as long as they continued to pay the jizyah in subjection to Islamic rule. From 謟 Beg onwards, the khans of the Golden Horde were all Muslim.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_TATAR_NOYAN</Tag>
+		<English>Noyan</English>
+	</TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_TATAR_NOYAN_PEDIA</Tag>
+		<English>Noyan, noyonwas a title of authority in the Mongol Empire and later periods. The Golden Horde's elites were descended from four Mongol clans, Qiyat, Manghut, Sicivut and Qonqirat. Initially, it was a term for a military commander in the army of Genghis Khan: the term noyon applied to commanders of tumens and mingghans, military units of 10,000 soldiers and 1000 soldiers respectively. During conquests, noyons used to receive territories for administration and they effectively became Mongolian aristocracy, which existed until the 20th century. Noyans were above the ordinary Mongols in social rank but below the descendants of Genghis and his brothers. They were sometimes called emir or bey in the Ulus of Jochi, the Ilkhanate and the Chagatai Khanate while the Yuan records gave the equivalent as guanren since their main task was waging warfare.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_TATAR_NOYAN_STRATEGY</Tag>
+		<English>Early cuirassier, can ignore terrain cost.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TATAR_DESC</Tag>
+		<English>The Tatars</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TATAR_SHORT_DESC</Tag>
+		<English>Tatar</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TATAR_ADJECTIVE</Tag>
+		<English>Tatar</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TATAR_PEDIA</Tag>
+		<English>The Tatars is an umbrella term for Turkic peoplesin the territory of the former Russian Empire (and as such generally includes all Northwestern Turkic speaking peoples). The Tatars were the Turkic-speaking population of Tartary, the lands ruled by Turco-Mongol elites from the 14th century until the conquests of the Russian Empire in the 18th to 19th centuries. During the early modern period, a distinction was made between the European and Asian Tatar territories, by referring to Lesser Tartary and Greater Tartary, respectively. The largest group by far that has been called "Tatars" by the Russians are the Volga Tatars, native to the Volga region (Tatarstan and Bashkortostan), who for this reason are often also simply known as "Tatars", and their language as the Tatar language. Their number is estimated as close to 6 million (as of 2002). Besides the Volga Tatars, there are smaller groups of Turkic-speaking Muslims also still referred to as "Tatars", the largest group of these being the Crimean Tatars, numbering close to half a million, whose Crimean Tatar language is no longer intelligible to the Volga Tatars.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_TAT_TITLE</Tag>
+		<English>The Power of the Yoke:</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_TAT</Tag>
+		<English>Victorious Tatars and Mongols horseman can demand tribute</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TATAR_YOKE_UP</Tag>
+		<English>You have received %d1 [ICON_GOLD] from %s2 yoke.</English>
+	</TEXT>	
+</Civ4GameText>

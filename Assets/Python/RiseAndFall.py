@@ -810,6 +810,13 @@ class RiseAndFall:
 			if gc.getGame().getGameTurn() == getTurnForYear(1500):
 				utils.makeUnit(iArcher, iInuit, (42, 71), 1)
 				utils.makeUnit(iDogSled, iInuit, (42, 71), 1)
+	
+		if pOman.isAlive() and iOman != utils.getHumanID():
+			if gc.getGame().getGameTurn() in [getTurnForYear(1), getTurnForYear(1600)]:
+				utils.makeUnit(iLongbowman, iOman, (85, 28), 1)
+				utils.makeUnit(iLongbowman, iOman, (85, 28), 1)
+				utils.makeUnit(iLongbowman, iOman, (85, 28), 1)
+				utils.makeUnit(iCityBuilder, iOman, (85, 28), 1)
 
 		# Leoreth: randomly place goody huts
 		if iGameTurn == utils.getScenarioStartTurn()+3:
@@ -994,9 +1001,10 @@ class RiseAndFall:
 				if iGameTurn == getTurnForYear(dRebirth[iCiv])+1 and gc.getPlayer(iCiv).isAlive() and utils.isReborn(iCiv):
 					self.rebirthSecondTurn(iCiv)
 		
-		# h0spitall3rz: for 600 AD scenario, force collapse Sassanid Persia
-		if iGameTurn == getTurnForYear(1120)  and pRome.isAlive() and not pRome.isHuman():
+		# h0spitall3rz: for 600 AD scenario, force collapse Rome
+		if iGameTurn == getTurnForYear(1120) and utils.getScenario() == i600AD and pRome.isAlive() and not pRome.isHuman():
 			sta.completeCollapse(iRome)
+		
 					
 	def endTurn(self, iPlayer):
 		for tTimedConquest in data.lTimedConquests:
@@ -1334,7 +1342,7 @@ class RiseAndFall:
 			# if iHuman != iCiv and not data.isPlayerEnabled(iCiv):
 				# return
 		
-		lConditionalCivs = [iMamluks, iThailand,  iItaly]
+		lConditionalCivs = [iMamluks,  iItaly]
 		
 		if iSpawnType == iConditionalSpawn and iCiv in lConditionalCivs:
 			# Leoreth: extra checks for conditional civs
@@ -1356,15 +1364,6 @@ class RiseAndFall:
 				return
 
 
-			elif iCiv == iThailand:
-				if utils.getHumanID() != iKhmer:
-					if data.getStabilityLevel(iKhmer) > iStabilityShaky:
-						return
-				else:
-					if data.getStabilityLevel(iKhmer) > iStabilityUnstable:
-						return
-						
-						
 			elif iCiv == iItaly:
 				if pRome.isAlive():
 					return
@@ -2165,14 +2164,6 @@ class RiseAndFall:
 						tTL = (87, 53)
 						tBR = (91, 55)
 						iDirection = DirectionTypes.DIRECTION_EAST
-					elif iTeamX == iKievanRus:
-						tTL = (78, 58)
-						tBR = (94, 70)
-						iDirection = DirectionTypes.DIRECTION_EAST
-					elif iTeamX == iKhazars:
-						tTL = (86, 58)
-						tBR = (92, 62)
-						iDirection = DirectionTypes.DIRECTION_EAST
 
 					lTargetList = utils.getBorderPlots(iTeamX, tTL, tBR, iDirection, 3)
 					
@@ -2658,6 +2649,10 @@ class RiseAndFall:
 		elif iCiv == iMughals:
 			utils.makeUnit(iSiegeElephant, iCiv, tPlot, 2)
 			utils.makeUnit(iHorseArcher, iCiv, tPlot, 4)
+		elif iCiv == iTatar:
+			utils.makeUnit(iCrossbowman, iCiv, tPlot, 2)
+			utils.makeUnit(iMangudai, iCiv, tPlot, 2) 
+			utils.makeUnit(iKeshik, iCiv, tPlot, 2)
 		elif iCiv == iThailand:
 			utils.makeUnit(iPikeman, iCiv, tPlot, 2)
 			utils.makeUnit(iChangSuek, iCiv, tPlot, 2)
@@ -3014,8 +3009,8 @@ class RiseAndFall:
 			                utils.makeUnit(iLancer, iCiv, tPlot, 1)
 			                utils.createMissionaries(iCiv, 3)
 		elif iCiv == iHolyRome:
-			utils.createSettlers(iCiv, 3)
-			utils.makeUnitAI(iCrossbowman, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 3)
+			utils.createSettlers(iCiv, 4)
+			utils.makeUnitAI(iCrossbowman, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 4)
 			utils.makeUnitAI(iSwordsman, iCiv, tPlot, UnitAITypes.UNITAI_ATTACK_CITY, 3)
 			utils.makeUnitAI(iLancer, iCiv, tPlot, UnitAITypes.UNITAI_ATTACK_CITY, 3)
 			utils.makeUnitAI(iCatapult, iCiv, tPlot, UnitAITypes.UNITAI_ATTACK_CITY, 4)
@@ -3184,6 +3179,19 @@ class RiseAndFall:
 				utils.makeUnit(iIslamicMissionary, iCiv, tPlot, 3)
 				utils.makeUnit(iHeavySwordsman, iCiv, tPlot, 3)
 				utils.makeUnit(iArquebusier, iCiv, tPlot, 3)
+		elif iCiv == iTatar:
+			utils.createSettlers(iCiv, 2)
+			utils.makeUnit(iCrossbowman, iCiv, tPlot, 2)
+			utils.makeUnit(iHeavySwordsman, iCiv, tPlot, 2)
+			utils.makeUnit(iMangudai, iCiv, tPlot, 2)
+			utils.makeUnitAI(iKeshik, iCiv, tPlot, UnitAITypes.UNITAI_ATTACK_CITY, 3)
+			utils.makeUnit(iBombard, iCiv, tPlot, 2)
+			utils.createMissionaries(iCiv, 3)
+			if utils.getHumanID() != iTatar:
+				utils.makeUnitAI(iKeshik, iCiv, tPlot, UnitAITypes.UNITAI_ATTACK_CITY, 3)
+				utils.makeUnitAI(iBombard, iCiv, tPlot, UnitAITypes.UNITAI_ATTACK_CITY, 2)
+				utils.makeUnitAI(iScout, iCiv, tPlot, UnitAITypes.UNITAI_EXPLORE, 2)
+				utils.makeUnitAI(iLongbowman, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 2)
 		elif iCiv == iThailand:
 			utils.createSettlers(iCiv, 1)
 			utils.createMissionaries(iCiv, 1)
@@ -3517,6 +3525,8 @@ class RiseAndFall:
 		elif iCiv == iAztecs:
 			utils.makeUnit(iWorker, iCiv, tPlot, 3)
 		elif iCiv == iMughals:
+			utils.makeUnit(iWorker, iCiv, tPlot, 3)
+		elif iCiv == iTatar:
 			utils.makeUnit(iWorker, iCiv, tPlot, 3)
 		elif iCiv == iThailand:
 			utils.makeUnit(iWorker, iCiv, tPlot, 2)

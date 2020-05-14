@@ -130,11 +130,30 @@ tConquestMongolsTurks = (17, iMongolia, iTurks, tMongolsTurksTL, tMongolsTurksBR
 tConquestMongolsPersia = (18, iMongolia, iTurks, tMongolsPersiaTL, tMongolsPersiaBR, 10, iMongolsPersiaYear, 10)
 
 
+iRussiaNovgorodYear = 1480
+tRussiaNovgorodTL = (80, 66)
+tRussiaNovgorodBR = (84, 70)
+
+iRussiaTatarYear = 1500
+tRussiaTatarTL = (79, 59)
+tRussiaTatarBR = (95, 70)
+
+tConquestRussiaNovgorod = (19, iRussia, iNovgorod, tRussiaNovgorodTL, tRussiaNovgorodBR, 1, iRussiaNovgorodYear, 10)
+tConquestRussiaTatar = (20, iRussia, iTatar, tRussiaTatarTL, tRussiaTatarBR, 5, iRussiaTatarYear, 10)
+
+iTatarKievanRusYear = 1220
+tTatarKievanRusTL = (79, 59)
+tTatarKievanRusBR = (83, 62)
+
+tConquestTatarKievanRus = (21, iTatar, iKievanRus, tTatarKievanRusTL, tTatarKievanRusBR, 1, iTatarKievanRusYear, 10)
+
 iConquestEnglandIrelandYear = 1150
 tConquestEnglandIrelandTL = (52, 64)
 tConquestEnglandIrelandBR = (59, 71)
 
-tConquestEnglandIreland = (19, iEngland, iCeltia, tConquestEnglandIrelandTL, tConquestEnglandIrelandBR, 2, iConquestEnglandIrelandYear, 10)
+tConquestEnglandIreland = (22, iEngland, iCeltia, tConquestEnglandIrelandTL, tConquestEnglandIrelandBR, 2, iConquestEnglandIrelandYear, 10)
+
+
 
 
 lConquests = [
@@ -157,7 +176,10 @@ tConquestTurksPersia, #12
 tConquestTurksAnatolia, #13
 tConquestMongolsTurks, #14
 tConquestMongolsPersia, #15
-tConquestEnglandIreland #19
+tConquestRussiaNovgorod, #19
+tConquestRussiaTatar, #20
+tConquestTatarKievanRus, #21
+tConquestEnglandIreland #22
 ]
 
 class AIWars:
@@ -316,6 +338,12 @@ class AIWars:
 				utils.makeUnitAI(utils.getBestCavalry(iPlayer), iPlayer, tPlot, UnitAITypes.UNITAI_ATTACK_CITY, 2 + iExtra)
 
 			if iPlayer == iEngland:
+				utils.makeUnitAI(utils.getBestCavalry(iPlayer), iPlayer, tPlot, UnitAITypes.UNITAI_ATTACK_CITY, 2 * iExtra)
+
+			if iPlayer == iRussia:
+				utils.makeUnitAI(utils.getBestCavalry(iPlayer), iPlayer, tPlot, UnitAITypes.UNITAI_ATTACK_CITY, 2 * iExtra)
+
+			if iPlayer == iTatar:
 				utils.makeUnitAI(utils.getBestCavalry(iPlayer), iPlayer, tPlot, UnitAITypes.UNITAI_ATTACK_CITY, 2 * iExtra)
 				
 	def forgetMemory(self, iTech, iPlayer):

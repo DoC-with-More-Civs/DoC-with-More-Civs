@@ -1311,6 +1311,7 @@ enum LeaderHeadTypes			// Exposed to Python
 	AUA,
 	SAGUAMANCHICA,
 	RURIK,
+	UZBEG,
 	NUM_LEADERHEADS
 };
 
@@ -1446,6 +1447,7 @@ enum PlayerTypes				// Exposed to Python
 	MONGOLIA,
 	AZTECS,
 	MUGHALS,
+	TATAR,
 	TURKEY,
 	RUSSIA,
 	THAILAND,

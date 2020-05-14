@@ -118,9 +118,23 @@ class UniquePowers:
 					data.iVikingGold += iGold
 				elif iOwner == iMoors:
 					data.iMoorishGold += iGold
-				
-			
 
+	def tatarUP(self, argsList):
+	
+		pWinningUnit, pLosingUnit = argsList
+		cLosingUnit = PyHelpers.PyInfo.UnitInfo(pLosingUnit.getUnitType())
+		
+		iOwner = pWinningUnit.getOwner()
+
+		if (iOwner == iTatar) and (pWinningUnit.getUnitType() == iLancer or pWinningUnit.getUnitType() == iMangudai or pWinningUnit.getUnitType() == iTatarNoyan or pWinningUnit.getUnitType() == iKeshik):
+			if cLosingUnit.getDomainType() == DomainTypes.DOMAIN_LAND:
+				iGold = cLosingUnit.getProductionCost() / 2
+				gc.getPlayer(iOwner).changeGold(iGold)
+				sAdjective = gc.getPlayer(pLosingUnit.getOwner()).getCivilizationAdjectiveKey()
+				CyInterface().addMessage(iOwner, False, iDuration, CyTranslator().getText("TXT_KEY_TATAR_YOKE_UP", (iGold, sAdjective, pLosingUnit.getNameKey())), "", 0, "", ColorTypes(iWhite), -1, -1, True, True)
+
+
+		
 #------------------ROMAN UP-----------------------
 
 	def doRomanWar(self, iCiv): # Unused

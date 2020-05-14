@@ -563,6 +563,10 @@ The soldiers had got into the habit of collecting their supplies carelessly and 
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PHOENICIAN_BIREME</Tag>
+		<English>Bireme</English>
+	</TEXT>
+                <TEXT>
+		<Tag>TXT_KEY_UNIT_PHOENICIAN_BIREME_STRATEGY</Tag>
 		<English>The [COLOR_UNIT_TEXT]Bireme[COLOR_REVERT], the Phoenician replacement for the [COLOR_UNIT_TEXT]Galley[COLOR_REVERT], has one more cargo space and has a defense bonus against [COLOR_UNIT_TEXT]War Galleys[COLOR_REVERT].</English>
 	</TEXT>
 	<TEXT>

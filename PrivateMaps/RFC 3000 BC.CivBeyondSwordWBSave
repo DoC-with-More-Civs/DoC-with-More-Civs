@@ -193,61 +193,64 @@ BeginTeam
 	TeamID=60, (Mughals)
 EndTeam
 BeginTeam
-	TeamID=61, (Turkey)
+	TeamID=61, (Tatar)
 EndTeam
 BeginTeam
-	TeamID=62, (Russia)
+	TeamID=62, (Turkey)
 EndTeam
 BeginTeam
-	TeamID=63, (Thailand)
+	TeamID=63, (Russia)
 EndTeam
 BeginTeam
-	TeamID=64, (Congo)
+	TeamID=64, (Thailand)
 EndTeam
 BeginTeam
-	TeamID=65, (Sweden)
+	TeamID=65, (Congo)
 EndTeam
 BeginTeam
-	TeamID=66 (Netherlands)
+	TeamID=66, (Sweden)
 EndTeam
 BeginTeam
-	TeamID=67, (Manchuria)
+	TeamID=67 (Netherlands)
 EndTeam
 BeginTeam
-	TeamID=68, (Germany)
+	TeamID=68, (Manchuria)
 EndTeam
 BeginTeam
-	TeamID=69, (America)
+	TeamID=69, (Germany)
 EndTeam
 BeginTeam
-	TeamID=70, (Argentina)
+	TeamID=70, (America)
 EndTeam
 BeginTeam
-	TeamID=71, (Brazil)
+	TeamID=71, (Argentina)
 EndTeam
 BeginTeam
-	TeamID=72, (Australia)
+	TeamID=72, (Brazil)
 EndTeam
 BeginTeam
-	TeamID=73, (Boers)
+	TeamID=73, (Australia)
 EndTeam
 BeginTeam
-	TeamID=74, (Canada)
+	TeamID=74, (Boers)
 EndTeam
 BeginTeam
-	TeamID=75, (Israel)
+	TeamID=75, (Canada)
 EndTeam
 BeginTeam
-	TeamID=76, (Independent)
+	TeamID=76, (Israel)
 EndTeam
 BeginTeam
-	TeamID=77, (Independent2)
+	TeamID=77, (Independent)
 EndTeam
 BeginTeam
-	TeamID=78, (Native)
+	TeamID=78, (Independent2)
 EndTeam
 BeginTeam
-	TeamID=79, (Barbarian)
+	TeamID=79, (Native)
+EndTeam
+BeginTeam
+	TeamID=80, (Barbarian)
 EndTeam
 BeginPlayer
 	Team=0
@@ -985,6 +988,21 @@ BeginPlayer
 EndPlayer
 BeginPlayer
 	Team=61
+	LeaderType=LEADER_UZBEG
+	CivType=CIVILIZATION_TATAR
+	PlayableCiv=1
+	StartingGold=400
+	StateReligion=RELIGION_ISLAM
+	CivicOption=CIVICOPTION_GOVERNMENT, Civic=CIVIC_DESPOTISM
+	CivicOption=CIVICOPTION_LEGITIMACY, Civic=CIVIC_VASSALAGE
+	CivicOption=CIVICOPTION_SOCIETY, Civic=CIVIC_SLAVERY
+	CivicOption=CIVICOPTION_ECONOMY, Civic=CIVIC_REGULATED_TRADE
+	CivicOption=CIVICOPTION_RELIGION, Civic=CIVIC_THEOCRACY
+	CivicOption=CIVICOPTION_TERRITORY, Civic=CIVIC_CONQUEST
+	Handicap=HANDICAP_REGENT
+EndPlayer
+BeginPlayer
+	Team=62
 	LeaderType=LEADER_MEHMED
 	CivType=CIVILIZATION_OTTOMAN
 	PlayableCiv=1
@@ -999,7 +1017,7 @@ BeginPlayer
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
-	Team=62
+	Team=63
 	LeaderType=LEADER_PETER
 	CivType=CIVILIZATION_RUSSIA
 	PlayableCiv=1
@@ -1011,7 +1029,7 @@ BeginPlayer
 	CivicOption=CIVICOPTION_ECONOMY, Civic=CIVIC_MERCHANT_TRADE
 EndPlayer
 BeginPlayer
-	Team=63
+	Team=64
 	LeaderType=LEADER_NARESUAN
 	CivType=CIVILIZATION_THAILAND
 	PlayableCiv=1
@@ -1025,7 +1043,7 @@ BeginPlayer
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
-	Team=64
+	Team=65
 	LeaderType=LEADER_MBEMBA
 	CivType=CIVILIZATION_CONGO
 	PlayableCiv=1
@@ -1037,7 +1055,7 @@ BeginPlayer
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
-	Team=65
+	Team=66
 	LeaderType=LEADER_GUSTAV
 	CivType=CIVILIZATION_SWEDEN
 	PlayableCiv=1
@@ -1051,10 +1069,10 @@ BeginPlayer
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
-	Team=66
+	Team=67
 	LeaderType=LEADER_WILLEM_VAN_ORANJE
 	CivType=CIVILIZATION_NETHERLANDS
-	PlayableCiv=1
+	PlayableCiv=0
 	StartingGold=600
 	StateReligion=RELIGION_ORTHODOXY
 	CivicOption=CIVICOPTION_GOVERNMENT, Civic=CIVIC_REPUBLIC
@@ -1065,7 +1083,7 @@ BeginPlayer
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
-	Team=67
+	Team=68
 	LeaderType=LEADER_KANGXI
 	CivType=CIVILIZATION_MANCHURIA
 	PlayableCiv=0
@@ -1079,7 +1097,7 @@ BeginPlayer
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
-	Team=68
+	Team=69
 	LeaderType=LEADER_FREDERICK
 	CivType=CIVILIZATION_GERMANY
 	PlayableCiv=0
@@ -1094,7 +1112,7 @@ BeginPlayer
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
-	Team=69
+	Team=70
 	LeaderType=LEADER_FRANKLIN_ROOSEVELT
 	CivType=CIVILIZATION_AMERICA
 	PlayableCiv=0
@@ -1108,7 +1126,7 @@ BeginPlayer
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
-	Team=70
+	Team=71
 	LeaderType=LEADER_SAN_MARTIN
 	CivType=CIVILIZATION_ARGENTINA
 	PlayableCiv=0
@@ -1122,7 +1140,7 @@ BeginPlayer
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
-	Team=71
+	Team=72
 	LeaderType=LEADER_DOM_PEDRO
 	CivType=CIVILIZATION_BRAZIL
 	PlayableCiv=0
@@ -1137,7 +1155,7 @@ BeginPlayer
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
-	Team=72
+	Team=73
 	LeaderType=LEADER_MENZIES
 	CivType=CIVILIZATION_AUSTRALIA
 	PlayableCiv=0
@@ -1151,7 +1169,7 @@ BeginPlayer
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
-	Team=73
+	Team=74
 	LeaderType=LEADER_KRUGER
 	CivType=CIVILIZATION_BOER
 	PlayableCiv=0
@@ -1165,7 +1183,7 @@ BeginPlayer
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
-	Team=74
+	Team=75
 	LeaderType=LEADER_TRUDEAU
 	CivType=CIVILIZATION_CANADA
 	PlayableCiv=0
@@ -1180,7 +1198,7 @@ BeginPlayer
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
-	Team=75
+	Team=76
 	LeaderType=LEADER_BEN_GURION
 	CivType=CIVILIZATION_ISRAEL
 	PlayableCiv=0
@@ -1195,7 +1213,7 @@ BeginPlayer
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
-	Team=76
+	Team=77
 	LeaderType=LEADER_INDEPENDENT
 	CivType=CIVILIZATION_INDEPENDENT
 	PlayableCiv=0
@@ -1204,7 +1222,7 @@ BeginPlayer
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
-	Team=77
+	Team=78
 	LeaderType=LEADER_INDEPENDENT
 	CivType=CIVILIZATION_INDEPENDENT2
 	PlayableCiv=0
@@ -1213,7 +1231,7 @@ BeginPlayer
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
-	Team=78
+	Team=79
 	LeaderType=LEADER_NATIVE
 	CivType=CIVILIZATION_NATIVE
 	PlayableCiv=0
@@ -1222,7 +1240,7 @@ BeginPlayer
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
-	Team=79
+	Team=80
 	LeaderType=LEADER_BARBARIAN
 	CivType=CIVILIZATION_BARBARIAN
 	PlayableCiv=0
@@ -25384,6 +25402,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=54,y=55
+	BonusType=BONUS_CLAM
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -25811,7 +25830,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=55,y=55
-	BonusType=BONUS_CLAM
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -42376,6 +42394,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=91,y=63
+	BonusType=BONUS_SHEEP
 	TerrainType=TERRAIN_STEPPE
 	PlotType=2
 EndPlot
@@ -42809,6 +42828,7 @@ BeginPlot
 	x=92,y=61
 	RiverNSDirection=2
 	isWOfRiver
+	BonusType=BONUS_SALT
 	TerrainType=TERRAIN_STEPPE
 	PlotType=2
 EndPlot
@@ -43686,7 +43706,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=94,y=61
-	BonusType=BONUS_SALT
 	TerrainType=TERRAIN_STEPPE
 	PlotType=2
 EndPlot
