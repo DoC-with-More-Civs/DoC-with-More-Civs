@@ -14486,6 +14486,7 @@ m_bNoCity(false),
 m_bNoImprovement(false),
 m_bVisibleAlways(false),
 m_bNukeImmune(false),
+m_bMakesPassable(false), // Leoreth
 m_iWorldSoundscapeScriptId(0),
 m_iEffectProbability(0),
 m_piYieldChange(NULL),
@@ -14606,6 +14607,12 @@ bool CvFeatureInfo::isImpassable() const
 	return m_bImpassable;
 }
 
+// Leoreth
+bool CvFeatureInfo::isMakesPassable() const
+{
+	return m_bMakesPassable;
+}
+
 bool CvFeatureInfo::isNoCity() const
 {
 	return m_bNoCity;
@@ -14654,6 +14661,15 @@ const TCHAR* CvFeatureInfo::getEffectType() const
 int CvFeatureInfo::getEffectProbability() const
 {
 	return m_iEffectProbability;
+}
+
+const TCHAR* CvFeatureInfo::getVarietyButton(int variety) const
+{
+	if (getArtInfo()->getVariety(variety).getVarietyButton().empty())
+	{
+		return NULL;
+	}
+	return getArtInfo()->getVariety(variety).getVarietyButton();
 }
 
 // Arrays
@@ -14784,6 +14800,7 @@ bool CvFeatureInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_bNoImprovement, "bNoImprovement");
 	pXML->GetChildXmlValByName(&m_bVisibleAlways, "bVisibleAlways");
 	pXML->GetChildXmlValByName(&m_bNukeImmune, "bNukeImmune");
+	pXML->GetChildXmlValByName(&m_bMakesPassable, "bMakesPassable");
 	pXML->GetChildXmlValByName(m_szOnUnitChangeTo, "OnUnitChangeTo");
 
 	pXML->SetVariableListTagPairForAudioScripts(&m_pi3DAudioScriptFootstepIndex, "FootstepSounds", GC.getFootstepAudioTypes(), GC.getNumFootstepAudioTypes());
@@ -15148,6 +15165,12 @@ bool CvTerrainInfo::isImpassable() const
 	return m_bImpassable;
 }
 
+// Leoreth
+bool CvTerrainInfo::isSaline() const
+{
+	return m_bSaline;
+}
+
 bool CvTerrainInfo::isFound() const
 {
 	return m_bFound;
@@ -15251,6 +15274,7 @@ bool CvTerrainInfo::read(CvXMLLoadUtility* pXML)
 
 	pXML->GetChildXmlValByName(&m_bWater, "bWater");
 	pXML->GetChildXmlValByName(&m_bImpassable, "bImpassable");
+	pXML->GetChildXmlValByName(&m_bSaline, "bSaline");
 	pXML->GetChildXmlValByName(&m_bFound, "bFound");
 	pXML->GetChildXmlValByName(&m_bFoundCoast, "bFoundCoast");
 	pXML->GetChildXmlValByName(&m_bFoundFreshWater, "bFoundFreshWater");

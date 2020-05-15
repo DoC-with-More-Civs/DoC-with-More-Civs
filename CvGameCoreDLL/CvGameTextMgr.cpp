@@ -4759,7 +4759,7 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 			szString.append(gDLL->getText("TXT_KEY_PLOT_FRESH_WATER"));
 		}
 
-		if (pPlot->isLake())
+		if (pPlot->isLake() && !GC.getTerrainInfo(pPlot->getTerrainType()).isSaline())
 		{
 			szString.append(NEWLINE);
 			szString.append(gDLL->getText("TXT_KEY_PLOT_FRESH_WATER_LAKE"));
@@ -8852,6 +8852,11 @@ void CvGameTextMgr::setBasicUnitHelpWithCity(CvWStringBuffer &szBuffer, UnitType
 
 	for (iI = 0; iI < GC.getNumTerrainInfos(); ++iI)
 	{
+		if (iI == TERRAIN_DESERT || iI == TERRAIN_TUNDRA || iI == TERRAIN_SNOW)
+		{
+			continue;
+		}
+
 		if (GC.getUnitInfo(eUnit).getTerrainImpassable(iI))
 		{
 			CvWString szTerrain;
@@ -8871,6 +8876,11 @@ void CvGameTextMgr::setBasicUnitHelpWithCity(CvWStringBuffer &szBuffer, UnitType
 
 	for (iI = 0; iI < GC.getNumFeatureInfos(); ++iI)
 	{
+		if (iI == FEATURE_JUNGLE || iI == FEATURE_RAINFOREST || iI == FEATURE_MARSH)
+		{
+			continue;
+		}
+
 		if (GC.getUnitInfo(eUnit).getFeatureImpassable(iI))
 		{
 			CvWString szFeature;
@@ -8885,6 +8895,38 @@ void CvGameTextMgr::setBasicUnitHelpWithCity(CvWStringBuffer &szBuffer, UnitType
 			}
 			setListHelp(szBuffer, szTempBuffer, szFeature, L", ", bFirst);
 			bFirst = false;
+		}
+	}
+
+	szTempBuffer.Format(L"%s%s ", NEWLINE, gDLL->getText("TXT_KEY_UNIT_CAN_ENTER").GetCString());
+
+	bFirst = true;
+
+	for (iI = 0; iI < GC.getNumTerrainInfos(); iI++)
+	{
+		if (iI == TERRAIN_DESERT || iI == TERRAIN_TUNDRA || iI == TERRAIN_SNOW)
+		{
+			if (!GC.getUnitInfo(eUnit).getTerrainImpassable(iI))
+			{
+				CvWString szTerrain;
+				szTerrain.Format(L"<link=literal>%s</link>", GC.getTerrainInfo((TerrainTypes)iI).getDescription());
+				setListHelp(szBuffer, szTempBuffer, szTerrain, L", ", bFirst);
+				bFirst = false;
+			}
+		}
+	}
+
+	for (iI = 0; iI < GC.getNumFeatureInfos(); iI++)
+	{
+		if (iI == FEATURE_JUNGLE || iI == FEATURE_RAINFOREST || iI == FEATURE_MARSH)
+		{
+			if (!GC.getUnitInfo(eUnit).getFeatureImpassable(iI))
+			{
+				CvWString szFeature;
+				szFeature.Format(L"<link=literal>%s</link>", GC.getFeatureInfo((FeatureTypes)iI).getDescription());
+				setListHelp(szBuffer, szTempBuffer, szFeature, L", ", bFirst);
+				bFirst = false;
+			}
 		}
 	}
 
@@ -16120,6 +16162,11 @@ void CvGameTextMgr::setFeatureHelp(CvWStringBuffer &szBuffer, FeatureTypes eFeat
 		szBuffer.append(gDLL->getText("TXT_KEY_TERRAIN_IMPASSABLE"));
 	}
 
+	if (eFeature == FEATURE_JUNGLE || eFeature == FEATURE_RAINFOREST || eFeature == FEATURE_MARSH)
+	{
+		szBuffer.append(gDLL->getText("TXT_KEY_TERRAIN_IMPASSABLE_MOST_UNITS"));
+	}
+
 	if (feature.isNoCity())
 	{
 		szBuffer.append(gDLL->getText("TXT_KEY_TERRAIN_NO_CITIES"));
@@ -16183,6 +16230,12 @@ void CvGameTextMgr::setTerrainHelp(CvWStringBuffer &szBuffer, TerrainTypes eTerr
 	{
 		szBuffer.append(gDLL->getText("TXT_KEY_TERRAIN_IMPASSABLE"));
 	}
+
+	if (eTerrain == TERRAIN_DESERT || eTerrain == TERRAIN_TUNDRA || eTerrain == TERRAIN_SNOW)
+	{
+		szBuffer.append(gDLL->getText("TXT_KEY_TERRAIN_IMPASSABLE_MOST_UNITS"));
+	}
+
 	if (!terrain.isFound())
 	{
 		szBuffer.append(gDLL->getText("TXT_KEY_TERRAIN_NO_CITIES"));

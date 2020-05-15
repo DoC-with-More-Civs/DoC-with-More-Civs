@@ -1002,7 +1002,7 @@ class RiseAndFall:
 					self.rebirthSecondTurn(iCiv)
 		
 		# h0spitall3rz: for 600 AD scenario, force collapse Rome
-		if iGameTurn == getTurnForYear(1120) and utils.getScenario() == i600AD and pRome.isAlive() and not pRome.isHuman():
+		if iGameTurn == getTurnForYear(1120)  and pRome.isAlive() and not pRome.isHuman():
 			sta.completeCollapse(iRome)
 		
 					
@@ -2987,7 +2987,7 @@ class RiseAndFall:
 		elif iCiv == iYemen:
 			utils.createSettlers(iCiv, 2)
 			utils.makeUnitAI(iArcher, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
-			utils.makeUnit(iLongbowman, iCiv, tPlot, 3)
+			utils.makeUnit(iLongbowman, iCiv, tPlot, 2)
 			utils.makeUnit(iTrebuchet, iCiv, tPlot, 2)
 			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
 			if tSeaPlot:
@@ -3010,7 +3010,7 @@ class RiseAndFall:
 			                utils.createMissionaries(iCiv, 3)
 		elif iCiv == iHolyRome:
 			utils.createSettlers(iCiv, 4)
-			utils.makeUnitAI(iCrossbowman, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 4)
+			utils.makeUnitAI(iCrossbowman, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 3)
 			utils.makeUnitAI(iSwordsman, iCiv, tPlot, UnitAITypes.UNITAI_ATTACK_CITY, 3)
 			utils.makeUnitAI(iLancer, iCiv, tPlot, UnitAITypes.UNITAI_ATTACK_CITY, 3)
 			utils.makeUnitAI(iCatapult, iCiv, tPlot, UnitAITypes.UNITAI_ATTACK_CITY, 4)

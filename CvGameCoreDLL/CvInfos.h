@@ -3373,6 +3373,7 @@ public:
 	bool isRequiresRiver() const;			// Exposed to Python
 	bool isAddsFreshWater() const;		// Exposed to Python
 	bool isImpassable() const;				// Exposed to Python
+	bool isMakesPassable() const; // Leoreth
 	bool isNoCity() const;						// Exposed to Python
 	bool isNoImprovement() const;			// Exposed to Python
 	bool isVisibleAlways() const;			// Exposed to Python
@@ -3401,6 +3402,8 @@ public:
 
 	DllExport const CvArtInfoFeature* getArtInfo() const;
 	const TCHAR* getButton() const;
+
+	const TCHAR* getVarietyButton(int variety) const; // Exposed to Python
 
 	bool read(CvXMLLoadUtility* pXML);
 
@@ -3434,6 +3437,7 @@ protected:
 	bool m_bNoImprovement;
 	bool m_bVisibleAlways;
 	bool m_bNukeImmune;
+	bool m_bMakesPassable; // Leoreth
 	CvString m_szOnUnitChangeTo;
 
 	int m_iWorldSoundscapeScriptId;
@@ -3580,6 +3584,7 @@ public:
 
 	bool isWater() const;								// Exposed to Python
 	bool isImpassable() const;					// Exposed to Python
+	bool isSaline() const; // Leoreth
 	bool isFound() const;								// Exposed to Python
 	bool isFoundCoast() const;					// Exposed to Python
 	bool isFoundFreshWater() const;			// Exposed to Python
@@ -3615,6 +3620,7 @@ protected:
 
 	bool m_bWater;
 	bool m_bImpassable;
+	bool m_bSaline; // Leoreth
 	bool m_bFound;
 	bool m_bFoundCoast;
 	bool m_bFoundFreshWater;

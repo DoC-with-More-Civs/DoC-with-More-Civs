@@ -48505,7 +48505,7 @@ BeginPlot
 		BuildingType=BUILDING_FORGE
 		BuildingType=BUILDING_HINDU_TEMPLE
 		ReligionType=RELIGION_HINDUISM
-		Player78Culture=30, (Independent Leader)
+		Player77Culture=50, (Independent Leader)
 	EndCity
 
 EndPlot

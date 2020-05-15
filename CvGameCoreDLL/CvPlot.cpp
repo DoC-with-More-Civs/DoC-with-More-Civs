@@ -1752,6 +1752,12 @@ bool CvPlot::isFreshWater() const
 	CvPlot* pLoopPlot;
 	int iDX, iDY;
 
+	// Leoreth: salt lakes
+	if (GC.getTerrainInfo(getTerrainType()).isSaline())
+	{
+		return false;
+	}
+
 	if (isWater())
 	{
 		return false;
@@ -1785,7 +1791,8 @@ bool CvPlot::isFreshWater() const
 
 			if (pLoopPlot != NULL)
 			{
-				if (pLoopPlot->isLake())
+				// Leoreth: salt lakes
+				if (pLoopPlot->isLake() && !GC.getTerrainInfo(pLoopPlot->getTerrainType()).isSaline())
 				{
 					return true;
 				}
@@ -4458,7 +4465,20 @@ bool CvPlot::isImpassable() const
 		return false;
 	}
 
-	return ((getFeatureType() == NO_FEATURE) ? GC.getTerrainInfo(getTerrainType()).isImpassable() : GC.getFeatureInfo(getFeatureType()).isImpassable());
+	if (GC.getTerrainInfo(getTerrainType()).isImpassable())
+	{
+		if (getFeatureType() == NO_FEATURE || !GC.getFeatureInfo(getFeatureType()).isMakesPassable())
+		{
+			return true;
+		}
+	}
+
+	if (getFeatureType() != NO_FEATURE && GC.getFeatureInfo(getFeatureType()).isImpassable())
+	{
+		return true;
+	}
+
+	return false;
 }
 
 
@@ -6289,6 +6309,11 @@ BonusTypes CvPlot::getBonusVarietyType(TeamTypes eTeam) const
 void CvPlot::setBonusVarietyType(BonusTypes eNewValue)
 {
 	if (eNewValue != NO_BONUS && !GC.getBonusInfo(eNewValue).isGraphicalOnly())
+	{
+		return;
+	}
+
+	if (getBonusType() == NO_BONUS && eNewValue != NO_BONUS)
 	{
 		return;
 	}
@@ -10741,6 +10766,7 @@ void CvPlot::getVisibleBonusState(BonusTypes& eType, bool& bImproved, bool& bWor
 	eType = NO_BONUS;
 	bImproved = false;
 	bWorked = false;
+	BonusTypes eVarietyType;
 
 	if (GC.getGameINLINE().getActiveTeam() == NO_TEAM)
 	{
@@ -10749,19 +10775,13 @@ void CvPlot::getVisibleBonusState(BonusTypes& eType, bool& bImproved, bool& bWor
 
 	if (GC.getGameINLINE().isDebugMode())
 	{
-		eType = getBonusVarietyType();
-		if (eType == NO_BONUS)
-		{
-			eType = getBonusType();
-		}
+		eVarietyType = getBonusVarietyType();
+		eType = getBonusType();
 	}
 	else if (isRevealed(GC.getGameINLINE().getActiveTeam(), false))
 	{
-		eType = getBonusVarietyType(GC.getGameINLINE().getActiveTeam());
-		if (eType == NO_BONUS)
-		{
-			eType = getBonusType(GC.getGameINLINE().getActiveTeam());
-		}
+		eVarietyType = getBonusVarietyType(GC.getGameINLINE().getActiveTeam());
+		eType = getBonusType(GC.getGameINLINE().getActiveTeam());
 	}
 
 	// improved and worked states ...
@@ -10774,6 +10794,10 @@ void CvPlot::getVisibleBonusState(BonusTypes& eType, bool& bImproved, bool& bWor
 			bImproved = true;
 			bWorked = isBeingWorked();
 		}
+	}
+	if (eVarietyType != NO_BONUS)
+	{
+		eType = eVarietyType;
 	}
 }
 
