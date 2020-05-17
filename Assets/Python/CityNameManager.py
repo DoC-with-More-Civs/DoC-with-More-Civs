@@ -12,7 +12,7 @@ from StoredData import data
 gc = CyGlobalContext()
 PyPlayer = PyHelpers.PyPlayer
 
-iNumLanguages = 51
+iNumLanguages = 52
 (iLangEgyptian, iLangEgyptianArabic, iLangIndian, iLangChinese, iLangTibetan, 
 iLangBabylonian, iLangPersian, iLangGreek, iLangPhoenician, iLangLatin,
  iLangMayan,iLangJapanese, iLangEthiopian, iLangTeotihuacan, iLangKorean, iLangByzantine, 
@@ -22,7 +22,8 @@ iLangMalian, iLangPolish, iLangPortuguese, iLangQuechua, iLangItalian,
 iLangMongolian, iLangAztec, iLangTurkish, iLangThai, iLangCongolese, 
 iLangPrussian, iLangAmerican, iLangCeltic, iLangMexican, iLangPolynesian,
 iLangHarappan, iLangNigerian, iLangPhilippine, iLangSwahili, iLangVietnamese,
-iLangZimbabwean, iLangHebrew, iLangNubian, iLangNubianArabic, iLangMississippi) = range(iNumLanguages)
+iLangZimbabwean, iLangHebrew, iLangNubian, iLangNubianArabic, iLangMississippi,
+iLangOlmec) = range(iNumLanguages)
 
 # methods
 
@@ -45,6 +46,7 @@ def getLanguages(iCiv):
 	elif iCiv == iAssyria: return (iLangBabylonian,)
 	elif iCiv == iChina: return (iLangChinese,)
 	elif iCiv == iGreece: return (iLangGreek,)
+	elif iCiv == iOlmecs: return (iLangOlmec, iLangMayan, iLangTeotihuacan, iLangAztec)
 	elif iCiv == iIndia: return (iLangIndian,)
 	elif iCiv == iCarthage: return (iLangPhoenician,)
 	elif iCiv == iPolynesia: return (iLangPolynesian,)
@@ -4812,5 +4814,10 @@ tRenames = (
 #Language: Mississippi
 {
 
+},
+#Language: Olmec
+{
+    "La Venta"		:	"Je Taa'c",
+    "Tres Zapotes"	:	"Toojc Yuctsoo'c",
 },
 )

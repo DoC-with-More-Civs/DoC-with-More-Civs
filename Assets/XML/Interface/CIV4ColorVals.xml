@@ -1470,5 +1470,19 @@
 			<fBlue>0.03</fBlue>
 			<fAlpha>1.00</fAlpha>
 		</ColorVal>
+		<ColorVal>
+			<Type>COLOR_PLAYER_YELLOWISH_JADE_GREEN</Type>
+			<fRed>0.55</fRed>
+			<fGreen>0.63</fGreen>
+			<fBlue>0.16</fBlue>
+			<fAlpha>1.00</fAlpha>
+		</ColorVal>
+		<ColorVal>
+			<Type>COLOR_X_ORANGERED</Type>
+			<fRed>0.70</fRed>
+			<fGreen>0.25</fGreen>
+			<fBlue>0.10</fBlue>
+			<fAlpha>1.00</fAlpha>
+		</ColorVal>
 	</ColorVals>
 </Civ4ColorVals>

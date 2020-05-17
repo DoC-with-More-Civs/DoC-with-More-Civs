@@ -2050,6 +2050,9 @@ class RiseAndFall:
 					elif iNewWorldCiv == iMuisca:
 						tContactZoneTL = (21, 11)
 						tContactZoneBR = (42, 46)
+					elif iNewWorldCiv == iOlmecs:
+						tContactZoneTL = (12, 35)
+						tContactZoneBR = (39, 49)
 
 					lArrivalExceptions = [(25, 32), (26, 40)]
 
@@ -2719,6 +2722,9 @@ class RiseAndFall:
 				pGreece.initUnit(iGalley, tSeaPlot[0], tSeaPlot[1], UnitAITypes.UNITAI_SETTLER_SEA, DirectionTypes.DIRECTION_SOUTH)
 				utils.makeUnit(iSettler, iCiv, tSeaPlot, 1)
 				utils.makeUnit(iMilitia, iCiv, tSeaPlot, 1)
+		elif iCiv == iOlmecs:
+			utils.createSettlers(iCiv, 1)
+			utils.makeUnit(iMilitia, iCiv, tPlot, 1)
 		elif iCiv == iPersia:
 			utils.createSettlers(iCiv, 3)
 			utils.makeUnitAI(iArcher, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 3)
@@ -2762,6 +2768,8 @@ class RiseAndFall:
 		elif iCiv == iMaya:
 			utils.createSettlers(iCiv, 1)
 			utils.makeUnit(iHolkan, iCiv, tPlot, 2)
+			if utils.getHumanID() == iMaya:
+				utils.makeUnit(iArcher, iCiv, tPlot, 1)
 		elif iCiv == iJapan:
 			utils.createSettlers(iCiv, 3)
 			utils.createMissionaries(iCiv, 1)
@@ -2810,6 +2818,8 @@ class RiseAndFall:
 		elif iCiv == iTeotihuacan:
 			utils.createSettlers(iCiv, 1)
 			utils.makeUnit(iArcher, iCiv, tPlot, 2)
+			if utils.getHumanID() == iTeotihuacan:
+				utils.makeUnit(iArcher, iCiv, tPlot, 1)
 		elif iCiv == iArmenia:
 			utils.createSettlers(iCiv, 2)
 			utils.makeUnitAI(iArcher, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 3)
@@ -3404,8 +3414,8 @@ class RiseAndFall:
 			utils.makeUnit(iWorker, iCiv, tPlot, 1)
 		if iCiv == iAssyria:
 			utils.makeUnit(iWorker, iCiv, tPlot, 1)
-		if iCiv == iChina:
-			utils.makeUnit(iWorker, iCiv, tPlot, 1)
+		elif iCiv == iChina:
+			utils.makeUnit(iWorker, iCiv, tPlot, 2)
 		elif iCiv == iIndia:
 			#utils.makeUnit(iPunjabiWorker, iCiv, tPlot, 2)
 			utils.makeUnit(iWorker, iCiv, tPlot, 2)

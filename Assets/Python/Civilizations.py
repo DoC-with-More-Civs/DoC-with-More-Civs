@@ -153,6 +153,7 @@ iCivAssyria : 	Techs([iTanning, iMining, iAgriculture, iPastoralism, iPottery, i
 iCivChina :	Techs([iTanning, iMining, iAgriculture, iPastoralism, iPottery, iMythology, iSmelting, iLeverage]),
 iCivIndia :	Techs([iAlloys, iWriting, iCalendar], column=2, exceptions=[iSeafaring]),
 iCivGreece :	Techs([iAlloys, iArithmetics, iWriting], column=2),
+iCivOlmecs : Techs([iTanning, iMining, iAgriculture]),
 iCivCeltia : 	Techs([iAlloys, iBloomery, iCalendar, iConstruction], column=2, exceptions=[iSeafaring, iProperty]),
 iCivPersia :	Techs([iBloomery, iPriesthood], column=3, exceptions=[iSeafaring, iShipbuilding]),
 iCivCarthage :	Techs([iAlloys, iWriting, iShipbuilding], column=2),
@@ -383,6 +384,11 @@ dTechPreferences = {
 		iPaper: -20,
 		iPrinting: -20,
 		iTheology: -15,
+	},
+	iCivOlmecs : {
+		iWriting: 30,
+		iCalendar: 30,
+		iArithmetics: 30,
 	},
 	iCivIndia : {
 		iCeremony: 200,

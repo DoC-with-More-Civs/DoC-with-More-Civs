@@ -594,5 +594,11 @@
 			<ColorTypeSecondary>COLOR_PLAYER_WHITE</ColorTypeSecondary>
 			<TextColorType>COLOR_PLAYER_TATAR_RED</TextColorType>
 		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_YELLOWISH_JADE_GREEN</Type> <!-- Olmecs -->
+			<ColorTypePrimary>COLOR_PLAYER_YELLOWISH_JADE_GREEN</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_X_ORANGERED</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_YELLOWISH_JADE_GREEN</TextColorType>
+		</PlayerColorInfo>
 	</PlayerColorInfos>
 </Civ4PlayerColorInfos>

@@ -93,7 +93,7 @@
 		<Spanish>.</Spanish>
 		<Portuguese>.</Portuguese>
 	</TEXT>
-                <TEXT>
+	<TEXT> <!-- Novgorod -->
 		<Tag>TXT_KEY_UP_NOV</Tag>
 		<English>Forests yield extra food</English>
 	</TEXT>

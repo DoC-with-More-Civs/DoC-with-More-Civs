@@ -1312,6 +1312,7 @@ enum LeaderHeadTypes			// Exposed to Python
 	SAGUAMANCHICA,
 	RURIK,
 	UZBEG,
+	TEZCATLIPOCA,
 	NUM_LEADERHEADS
 };
 
@@ -1394,6 +1395,7 @@ enum PlayerTypes				// Exposed to Python
 	ASSYRIA,
 	CHINA,
 	GREECE,
+	OLMECS,
 	INDIA,
 	PHOENICIA,
 	CELTIA,

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Inca -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_OLMECS_DESC</Tag>
+		<English>The Olmecs</English>
+		<French>Les Olm&#232;ques</French>
+		<German>The Olmecs</German>
+		<Italian>The Olmecs</Italian>
+		<Spanish>The Olmecs</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_OLMECS_PEOPLES</Tag>
+		<English>Peoples of the Gulf lowlands</English>
+		<French>
+			<Text>Peuplades des basses-terres du golfe</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</French>
+		<German>
+			<Text>Peoples of the Gulf lowlands:Peoples of the Gulf lowlands:Peoples of the Gulf lowlands</Text>
+			<Gender>Female:Female:Female</Gender>
+			<Plural>1:1:1</Plural>
+		</German>
+		<Italian>
+			<Text>Peoples of the Gulf lowlands</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Peoples of the Gulf lowlands</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_OLMECS_DEFAULT</Tag>
+		<English>%s2 City-States</English>
+		<French>
+			<Text>Cit&#233;s-&#201;tats %s2</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</French>
+		<German>
+			<Text>%s2-Stadtstaaten:%s2-Stadtstaaten:%s2-Stadtstaaten</Text>
+			<Gender>Neuter:Neuter:Neuter</Gender>
+			<Plural>1:1:1</Plural>
+		</German>
+		<Italian>
+			<Text>Citt&#224;-Stato %s2</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Ciudades-Estados %s2</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_OLMECS_ADJECTIVE</Tag>
+		<English>Olmec</English>
+		<French>
+			<Text>olm&#232;que:olm&#232;que:olm&#232;ques:olm&#232;ques</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</French>
+		<German>Olmec</German>
+		<Italian>Olmec</Italian>
+		<Spanish>Olmec</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_OLMECS_SHORT_DESC</Tag>
+		<English>Olmecs</English>
+		<French>
+			<Text>Olm&#232;ques</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</French>
+		<German>Olmecs</German>
+		<Italian>Olmecs</Italian>
+		<Spanish>Olmecs</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_OLMEC_COLOSSAL_HEAD</Tag>
+		<English>Colossal Head</English>
+		<French>
+			<Text>T&#234;te colossale:T&#234;tes colossales</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Colossal Head</German>
+		<Italian>Colossal Head</Italian>
+		<Spanish>Colossal Head</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DOM_OLMECS</Tag>
+		<English>It is the year 1600 BC. In the tropical lowlands near the Gulf of Mexico, population reaches the critical threshold for the formation of complex societies. This sixth cradle of civilization will see the rise of the Olmecs, forerunners to all Mesoamerican cultures.</English>
+		<French>Nous sommes en l'an 1600 av. J.-C. Dans les basses-terres tropicales pr&#232;s du golfe du Mexique, la population atteint le seuil n&#233;cessaire &#224; la formation de soci&#233;t&#233;s complexes. Ce sixi&#232;me berceau de la civilisation verra l'&#233;mergence des Olm&#232;ques, pr&#233;curseurs de toutes les cultures m&#233;soam&#233;ricaines.</French>
+		<German>It is the year 1600 BC. In the tropical lowlands near the Gulf of Mexico, population reaches the critical threshold for the formation of complex societies. This sixth cradle of civilization will see the rise of the Olmecs, forerunners to all Mesoamerican cultures.</German>
+		<Italian>It is the year 1600 BC. In the tropical lowlands near the Gulf of Mexico, population reaches the critical threshold for the formation of complex societies. This sixth cradle of civilization will see the rise of the Olmecs, forerunners to all Mesoamerican cultures.</Italian>
+		<Spanish>It is the year 1600 BC. In the tropical lowlands near the Gulf of Mexico, population reaches the critical threshold for the formation of complex societies. This sixth cradle of civilization will see the rise of the Olmecs, forerunners to all Mesoamerican cultures.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_OLMEC_COLOSSAL_HEAD_PEDIA</Tag>
+		<English>[TAB]The best-recognized aspect of the Olmec civilzation are the enormous helmeted heads. As no known pre-Columbian text explains these, these impressive monuments have been the subject of much speculation. Once theorized to be ballplayers, it is now generally accepted that these heads are portraits of rulers. According to archaeologist David Grove, the unique elements in the headgear can also be recognized in headdresses of human figures on other Gulf Coast monuments, suggesting that these are personal or group symbols. The heads range in size from the Rancho La Cobata head, at 3.4 m high, to the pair at Tres Zapotes, at 1.47 m. It has been calculated that the largest heads weigh more than 20 tons.</English>
+		<French>[TAB]The best-recognized aspect of the Olmec civilzation are the enormous helmeted heads. As no known pre-Columbian text explains these, these impressive monuments have been the subject of much speculation. Once theorized to be ballplayers, it is now generally accepted that these heads are portraits of rulers. According to archaeologist David Grove, the unique elements in the headgear can also be recognized in headdresses of human figures on other Gulf Coast monuments, suggesting that these are personal or group symbols. The heads range in size from the Rancho La Cobata head, at 3.4 m high, to the pair at Tres Zapotes, at 1.47 m. It has been calculated that the largest heads weigh more than 20 tons.</French>
+		<German>[TAB]The best-recognized aspect of the Olmec civilzation are the enormous helmeted heads. As no known pre-Columbian text explains these, these impressive monuments have been the subject of much speculation. Once theorized to be ballplayers, it is now generally accepted that these heads are portraits of rulers. According to archaeologist David Grove, the unique elements in the headgear can also be recognized in headdresses of human figures on other Gulf Coast monuments, suggesting that these are personal or group symbols. The heads range in size from the Rancho La Cobata head, at 3.4 m high, to the pair at Tres Zapotes, at 1.47 m. It has been calculated that the largest heads weigh more than 20 tons.</German>
+		<Italian>[TAB]The best-recognized aspect of the Olmec civilzation are the enormous helmeted heads. As no known pre-Columbian text explains these, these impressive monuments have been the subject of much speculation. Once theorized to be ballplayers, it is now generally accepted that these heads are portraits of rulers. According to archaeologist David Grove, the unique elements in the headgear can also be recognized in headdresses of human figures on other Gulf Coast monuments, suggesting that these are personal or group symbols. The heads range in size from the Rancho La Cobata head, at 3.4 m high, to the pair at Tres Zapotes, at 1.47 m. It has been calculated that the largest heads weigh more than 20 tons.</Italian>
+		<Spanish>[TAB]The best-recognized aspect of the Olmec civilzation are the enormous helmeted heads. As no known pre-Columbian text explains these, these impressive monuments have been the subject of much speculation. Once theorized to be ballplayers, it is now generally accepted that these heads are portraits of rulers. According to archaeologist David Grove, the unique elements in the headgear can also be recognized in headdresses of human figures on other Gulf Coast monuments, suggesting that these are personal or group symbols. The heads range in size from the Rancho La Cobata head, at 3.4 m high, to the pair at Tres Zapotes, at 1.47 m. It has been calculated that the largest heads weigh more than 20 tons.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_OLMECS_PEDIA</Tag>
+		<English>[TAB]The Olmec were an ancient Pre-Columbian people living in the tropical lowlands of south-central Mexico, roughly in what are the modern-day states of Veracruz and Tabasco on the Isthmus of Tehuantepec. Their immediate cultural influence, however, extends far beyond this region. The Olmec flourished during the Formative (or Preclassic) period, dating from 1200 BC to about 400 BC, and are believed to have been the progenitor civilization of later Mesoamerican civilizations.[PARAGRAPH:2]Olmec history originated at its base within San Lorenzo Tenochtitl�n, where distinctively Olmec features begin to emerge before 1200 BC. The rise of civilization here was probably assisted by the local ecology of well-watered rich alluvial soil, encouraging high maize production. This ecology may be compared to that of other ancient centers of civilization: the Nile, Indus, and Yellow River valleys, and Mesopotamia. It is thought that the dense population concentration at San Lorenzo encouraged the rise of an elite class that eventually ensured Olmec dominance and provided the social basis for the production of the symbolic and sophisticated luxury artifacts that define Olmec culture. Many of these luxury artifacts, such as jade, obsidian and magnetite, came from distant locations and suggest that early Olmec elites had access to an extensive trading network in Mesoamerica. The source of the most valued jade, for example, is found in the Motagua River valley in eastern Guatemala, and their obsidian is mainly from sources also in the Guatemala highlands, such as El Chayal and San Mart�n Jilotepeque.[PARAGRAPH:2]The first Olmec center, San Lorenzo, was all but abandoned around 900 BC at about the same time that La Venta rose to prominence. Environmental changes may have been responsible for this move, with certain important rivers changing course. A wholesale destruction of many San Lorenzo monuments also occurred around this time, circa 950 BC, which may point to an internal uprising or, less likely, an invasion. Following the decline of San Lorenzo, La Venta became the most prominent Olmec center, lasting from 900 BC until its abandonment around 400 BC. During this period, the Great Pyramid and various other ceremonial complexes were built at La Venta.[PARAGRAPH:2]It is not known with any clarity what caused the eventual extinction of the Olmec culture. It is known that between 400 and 350 BC, population in the eastern half of the Olmec heartland dropped precipitously, and the area would remain sparsely inhabited until the 19th century. This depopulation was likely the result of environmental changes: perhaps the result of important rivers changing course or silting up due to agricultural practices. What ever the cause, within a few hundred years of the abandonment of the last Olmec cities, successor cultures had become firmly established. The Tres Zapotes site, on the western edge of the Olmec heartland, continued to be occupied well past 400 BC, but without the hallmarks of the Olmec culture. This post-Olmec culture, often labeled Epi-Olmec, has features similar to those found at Izapa, some 330 miles (550 km) to the southeast.</English>
+		<French>[TAB]The Olmec were an ancient Pre-Columbian people living in the tropical lowlands of south-central Mexico, roughly in what are the modern-day states of Veracruz and Tabasco on the Isthmus of Tehuantepec. Their immediate cultural influence, however, extends far beyond this region. The Olmec flourished during the Formative (or Preclassic) period, dating from 1200 BC to about 400 BC, and are believed to have been the progenitor civilization of later Mesoamerican civilizations.[PARAGRAPH:2]Olmec history originated at its base within San Lorenzo Tenochtitl�n, where distinctively Olmec features begin to emerge before 1200 BC. The rise of civilization here was probably assisted by the local ecology of well-watered rich alluvial soil, encouraging high maize production. This ecology may be compared to that of other ancient centers of civilization: the Nile, Indus, and Yellow River valleys, and Mesopotamia. It is thought that the dense population concentration at San Lorenzo encouraged the rise of an elite class that eventually ensured Olmec dominance and provided the social basis for the production of the symbolic and sophisticated luxury artifacts that define Olmec culture. Many of these luxury artifacts, such as jade, obsidian and magnetite, came from distant locations and suggest that early Olmec elites had access to an extensive trading network in Mesoamerica. The source of the most valued jade, for example, is found in the Motagua River valley in eastern Guatemala, and their obsidian is mainly from sources also in the Guatemala highlands, such as El Chayal and San Mart�n Jilotepeque.[PARAGRAPH:2]The first Olmec center, San Lorenzo, was all but abandoned around 900 BC at about the same time that La Venta rose to prominence. Environmental changes may have been responsible for this move, with certain important rivers changing course. A wholesale destruction of many San Lorenzo monuments also occurred around this time, circa 950 BC, which may point to an internal uprising or, less likely, an invasion. Following the decline of San Lorenzo, La Venta became the most prominent Olmec center, lasting from 900 BC until its abandonment around 400 BC. During this period, the Great Pyramid and various other ceremonial complexes were built at La Venta.[PARAGRAPH:2]It is not known with any clarity what caused the eventual extinction of the Olmec culture. It is known that between 400 and 350 BC, population in the eastern half of the Olmec heartland dropped precipitously, and the area would remain sparsely inhabited until the 19th century. This depopulation was likely the result of environmental changes: perhaps the result of important rivers changing course or silting up due to agricultural practices. What ever the cause, within a few hundred years of the abandonment of the last Olmec cities, successor cultures had become firmly established. The Tres Zapotes site, on the western edge of the Olmec heartland, continued to be occupied well past 400 BC, but without the hallmarks of the Olmec culture. This post-Olmec culture, often labeled Epi-Olmec, has features similar to those found at Izapa, some 330 miles (550 km) to the southeast.</French>
+		<German>[TAB]The Olmec were an ancient Pre-Columbian people living in the tropical lowlands of south-central Mexico, roughly in what are the modern-day states of Veracruz and Tabasco on the Isthmus of Tehuantepec. Their immediate cultural influence, however, extends far beyond this region. The Olmec flourished during the Formative (or Preclassic) period, dating from 1200 BC to about 400 BC, and are believed to have been the progenitor civilization of later Mesoamerican civilizations.[PARAGRAPH:2]Olmec history originated at its base within San Lorenzo Tenochtitl�n, where distinctively Olmec features begin to emerge before 1200 BC. The rise of civilization here was probably assisted by the local ecology of well-watered rich alluvial soil, encouraging high maize production. This ecology may be compared to that of other ancient centers of civilization: the Nile, Indus, and Yellow River valleys, and Mesopotamia. It is thought that the dense population concentration at San Lorenzo encouraged the rise of an elite class that eventually ensured Olmec dominance and provided the social basis for the production of the symbolic and sophisticated luxury artifacts that define Olmec culture. Many of these luxury artifacts, such as jade, obsidian and magnetite, came from distant locations and suggest that early Olmec elites had access to an extensive trading network in Mesoamerica. The source of the most valued jade, for example, is found in the Motagua River valley in eastern Guatemala, and their obsidian is mainly from sources also in the Guatemala highlands, such as El Chayal and San Mart�n Jilotepeque.[PARAGRAPH:2]The first Olmec center, San Lorenzo, was all but abandoned around 900 BC at about the same time that La Venta rose to prominence. Environmental changes may have been responsible for this move, with certain important rivers changing course. A wholesale destruction of many San Lorenzo monuments also occurred around this time, circa 950 BC, which may point to an internal uprising or, less likely, an invasion. Following the decline of San Lorenzo, La Venta became the most prominent Olmec center, lasting from 900 BC until its abandonment around 400 BC. During this period, the Great Pyramid and various other ceremonial complexes were built at La Venta.[PARAGRAPH:2]It is not known with any clarity what caused the eventual extinction of the Olmec culture. It is known that between 400 and 350 BC, population in the eastern half of the Olmec heartland dropped precipitously, and the area would remain sparsely inhabited until the 19th century. This depopulation was likely the result of environmental changes: perhaps the result of important rivers changing course or silting up due to agricultural practices. What ever the cause, within a few hundred years of the abandonment of the last Olmec cities, successor cultures had become firmly established. The Tres Zapotes site, on the western edge of the Olmec heartland, continued to be occupied well past 400 BC, but without the hallmarks of the Olmec culture. This post-Olmec culture, often labeled Epi-Olmec, has features similar to those found at Izapa, some 330 miles (550 km) to the southeast.</German>
+		<Italian>[TAB]The Olmec were an ancient Pre-Columbian people living in the tropical lowlands of south-central Mexico, roughly in what are the modern-day states of Veracruz and Tabasco on the Isthmus of Tehuantepec. Their immediate cultural influence, however, extends far beyond this region. The Olmec flourished during the Formative (or Preclassic) period, dating from 1200 BC to about 400 BC, and are believed to have been the progenitor civilization of later Mesoamerican civilizations.[PARAGRAPH:2]Olmec history originated at its base within San Lorenzo Tenochtitl�n, where distinctively Olmec features begin to emerge before 1200 BC. The rise of civilization here was probably assisted by the local ecology of well-watered rich alluvial soil, encouraging high maize production. This ecology may be compared to that of other ancient centers of civilization: the Nile, Indus, and Yellow River valleys, and Mesopotamia. It is thought that the dense population concentration at San Lorenzo encouraged the rise of an elite class that eventually ensured Olmec dominance and provided the social basis for the production of the symbolic and sophisticated luxury artifacts that define Olmec culture. Many of these luxury artifacts, such as jade, obsidian and magnetite, came from distant locations and suggest that early Olmec elites had access to an extensive trading network in Mesoamerica. The source of the most valued jade, for example, is found in the Motagua River valley in eastern Guatemala, and their obsidian is mainly from sources also in the Guatemala highlands, such as El Chayal and San Mart�n Jilotepeque.[PARAGRAPH:2]The first Olmec center, San Lorenzo, was all but abandoned around 900 BC at about the same time that La Venta rose to prominence. Environmental changes may have been responsible for this move, with certain important rivers changing course. A wholesale destruction of many San Lorenzo monuments also occurred around this time, circa 950 BC, which may point to an internal uprising or, less likely, an invasion. Following the decline of San Lorenzo, La Venta became the most prominent Olmec center, lasting from 900 BC until its abandonment around 400 BC. During this period, the Great Pyramid and various other ceremonial complexes were built at La Venta.[PARAGRAPH:2]It is not known with any clarity what caused the eventual extinction of the Olmec culture. It is known that between 400 and 350 BC, population in the eastern half of the Olmec heartland dropped precipitously, and the area would remain sparsely inhabited until the 19th century. This depopulation was likely the result of environmental changes: perhaps the result of important rivers changing course or silting up due to agricultural practices. What ever the cause, within a few hundred years of the abandonment of the last Olmec cities, successor cultures had become firmly established. The Tres Zapotes site, on the western edge of the Olmec heartland, continued to be occupied well past 400 BC, but without the hallmarks of the Olmec culture. This post-Olmec culture, often labeled Epi-Olmec, has features similar to those found at Izapa, some 330 miles (550 km) to the southeast.</Italian>
+		<Spanish>[TAB]The Olmec were an ancient Pre-Columbian people living in the tropical lowlands of south-central Mexico, roughly in what are the modern-day states of Veracruz and Tabasco on the Isthmus of Tehuantepec. Their immediate cultural influence, however, extends far beyond this region. The Olmec flourished during the Formative (or Preclassic) period, dating from 1200 BC to about 400 BC, and are believed to have been the progenitor civilization of later Mesoamerican civilizations.[PARAGRAPH:2]Olmec history originated at its base within San Lorenzo Tenochtitl�n, where distinctively Olmec features begin to emerge before 1200 BC. The rise of civilization here was probably assisted by the local ecology of well-watered rich alluvial soil, encouraging high maize production. This ecology may be compared to that of other ancient centers of civilization: the Nile, Indus, and Yellow River valleys, and Mesopotamia. It is thought that the dense population concentration at San Lorenzo encouraged the rise of an elite class that eventually ensured Olmec dominance and provided the social basis for the production of the symbolic and sophisticated luxury artifacts that define Olmec culture. Many of these luxury artifacts, such as jade, obsidian and magnetite, came from distant locations and suggest that early Olmec elites had access to an extensive trading network in Mesoamerica. The source of the most valued jade, for example, is found in the Motagua River valley in eastern Guatemala, and their obsidian is mainly from sources also in the Guatemala highlands, such as El Chayal and San Mart�n Jilotepeque.[PARAGRAPH:2]The first Olmec center, San Lorenzo, was all but abandoned around 900 BC at about the same time that La Venta rose to prominence. Environmental changes may have been responsible for this move, with certain important rivers changing course. A wholesale destruction of many San Lorenzo monuments also occurred around this time, circa 950 BC, which may point to an internal uprising or, less likely, an invasion. Following the decline of San Lorenzo, La Venta became the most prominent Olmec center, lasting from 900 BC until its abandonment around 400 BC. During this period, the Great Pyramid and various other ceremonial complexes were built at La Venta.[PARAGRAPH:2]It is not known with any clarity what caused the eventual extinction of the Olmec culture. It is known that between 400 and 350 BC, population in the eastern half of the Olmec heartland dropped precipitously, and the area would remain sparsely inhabited until the 19th century. This depopulation was likely the result of environmental changes: perhaps the result of important rivers changing course or silting up due to agricultural practices. What ever the cause, within a few hundred years of the abandonment of the last Olmec cities, successor cultures had become firmly established. The Tres Zapotes site, on the western edge of the Olmec heartland, continued to be occupied well past 400 BC, but without the hallmarks of the Olmec culture. This post-Olmec culture, often labeled Epi-Olmec, has features similar to those found at Izapa, some 330 miles (550 km) to the southeast.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_TEZCATLIPOCA_1</Tag>
+		<English>Welcome to the Olmec heartland, [CT_NAME]. I am Tezcatlipoca, god-ruler of these lands. Shall I order my men to carve your likeness in stone?</English>
+		<French>Bienvenue dans la patrie des Olm&#232;ques, [CT_NAME]. Moi, Tezcatlipoca, r&#232;gne sur ces terres. Dois-je ordonner à mes hommes de sculpter votre portrait dans la pierre ?</French>
+		<German>Welcome to the Olmec heartland, [CT_NAME]. I am Tezcatlipoca, god-ruler of these lands. Shall I order my men to carve your likeness in stone?</German>
+		<Italian>Welcome to the Olmec heartland, [CT_NAME]. I am Tezcatlipoca, god-ruler of these lands. Shall I order my men to carve your likeness in stone?</Italian>
+		<Spanish>Welcome to the Olmec heartland, [CT_NAME]. I am Tezcatlipoca, god-ruler of these lands. Shall I order my men to carve your likeness in stone?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_TEZCATLIPOCA</Tag>
+		<English>Tezcatlipoca</English>
+		<French>Tezcatlipoca</French>
+		<German>Tezcatlipoca</German>
+		<Italian>Tezcatlipoca</Italian>
+		<Spanish>Tezcatlipoca</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_OLM_TITLE</Tag>
+		<English>The Power of Nixtamal:</English>
+		<French>Le pouvoir du nixtamal :</French>
+		<German>Die Macht des Nixtamal-:</German>
+		<Italian>Il potere del Nixtamal:</Italian>
+		<Spanish>El poder del Nixtamal:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_OLM</Tag>
+		<English>Excess Food provides extra Commerce.</English>
+		<French>La nourriture en exc&#232;s fournit du commerce additionnel.</French>
+		<German>Excess Food provides extra Commerce.</German>
+		<Italian>Excess Food provides extra Commerce.</Italian>
+		<Spanish>Excess Food provides extra Commerce.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_URV_POL2_TEOTL_OLMECS</Tag>
+		<English>Settle three Great Artists in your capital</English>
+		<French>Faire rejoindre trois artistes illustres dans votre capitale</French>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_CAPITAL_GREAT_ARTISTS</Tag>
+		<English>Great Artists in capital: %d1 / %d2</English>
+		<French>Artistes illustres dans la capitale : %d1 / %d2</French>
+		<German>Great Artists in capital: %d1 / %d2</German>
+		<Italian>Great Artists in capital: %d1 / %d2</Italian>
+		<Spanish>Great Artists in capital: %d1 / %d2</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_OLM1_TITLE</Tag>
+		<English>Mother Culture of Mesoamerica</English>
+		<French>Culture m&#232;re de la M&#233;soam&#233;rique </French>
+		<German>Mother Culture of Mesoamerica</German>
+		<Italian>Mother Culture of Mesoamerica</Italian>
+		<Spanish>Mother Culture of Mesoamerica</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_OLM1</Tag>
+		<English>Build 4 culture-producing buildings by 400 BC</English>
+		<French>Construire 4 b&#226;timents produisant de la culture avant 400 av. J.-C.</French>
+		<German>Build 4 culture-producing buildings by 400 BC</German>
+		<Italian>Build 4 culture-producing buildings by 400 BC</Italian>
+		<Spanish>Build 4 culture-producing buildings by 400 BC</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_CULTURE_BUILDINGS_BUILT</Tag>
+		<English>Culture buildings built: %d1 / %d2</English>
+		<French>B&#226;timents construits : %d1 / %d2</French>
+		<German>Culture buildings built</German>
+		<Italian>Culture buildings built</Italian>
+		<Spanish>Culture buildings built</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_OLM2_TITLE</Tag>
+		<English>The Long Count Begins</English>
+		<French>Que commence le compte long </French>
+		<German>The Long Count Begins</German>
+		<Italian>The Long Count Begins</Italian>
+		<Spanish>The Long Count Begins</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_OLM2</Tag>
+		<English>Discover two of Arithmetics, Writing and Calendar by 400 BC</English>
+		<French>D&#233;couvrir deux technologies parmi l'arithm&#233;tique, l'&#233;criture et le calendrier avant 400 av. J.-C.</French>
+		<German>Discover two of Arithmetics, Writing and Calendar by 400 BC</German>
+		<Italian>Discover two of Arithmetics, Writing and Calendar by 400 BC</Italian>
+		<Spanish>Discover two of Arithmetics, Writing and Calendar by 400 BC</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_OLM3_TITLE</Tag>
+		<English>A Magnetite Artifact</English>
+		<French>Un art&#233;fact en magn&#233;tite </French>
+		<German>A Magnetite Artifact</German>
+		<Italian>A Magnetite Artifact</Italian>
+		<Spanish>A Magnetite Artifact</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_OLM3</Tag>
+		<English>Be the first to discover Compass</English>
+		<French>&#202;tre le premier &#224; d&#233;couvrir la boussole</French>
+		<German>Be the first to discover Compass</German>
+		<Italian>Be the first to discover Compass</Italian>
+		<Spanish>Be the first to discover Compass</Spanish>
+	</TEXT>
+</Civ4GameText>
