@@ -43,6 +43,7 @@ tMinorCities = (
 (-100, (109, 56), iBarbarian, 'Kuqa', 2, iArcher, 1),			# Kuqa
 (-75, (105, 55), iBarbarian, 'Kashgar', 2, iArcher, 1),			# Kashgar
 #(-50, (61, 60), iCeltia, 'Lutetia', 2, -1, -1),					# Paris
+(-75, (100, 50), iIndependent2, 'Bagram', 2, iArcher, 1),			# Bagram
 (100, (17, 43), iBarbarian, 'Tolan', 2, iJaguar, 2),		# Teotihuacan
 (100, (88, 36), iIndependent, "Sana'a", 2, -1, -1),				# Sana'a
 (107, (117, 41), iIndependent2, 'Pugam', 2, -1, -1),			# Pagan
@@ -229,7 +230,7 @@ class Barbs:
 
 		#Kushana
 		if utils.isYearIn(30, 220):
-			self.checkSpawn(iBarbarian, iAsvaka, 3+iHandicap, (97, 47), (104, 51), self.spawnInvaders, iGameTurn, 8, 3, ["TXT_KEY_ADJECTIVE_KUSHANA"])
+			self.checkSpawn(iBarbarian, iHorseman, 3+iHandicap, (97, 47), (104, 51), self.spawnInvaders, iGameTurn, 8, 3, ["TXT_KEY_ADJECTIVE_KUSHANA"])
 
 		#Hephtalites
 		if utils.isYearIn(400, 550):

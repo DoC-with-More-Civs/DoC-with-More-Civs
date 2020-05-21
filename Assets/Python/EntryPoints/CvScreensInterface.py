@@ -1312,6 +1312,10 @@ def getUHVTileInfo(argsList):
 		if utils.isPlotInArea((x, y), vic.tKalaallitNunaatTL, vic.tKalaallitNunaatBR, vic.tKalaallitNunaatExceptions):
 			return 108
 
+	elif iPlayer == iYuezhi:
+		if (x, y) in Areas.getCoreArea(iYuezhi, True) and y <= 43:
+			return 109
+
 		# continue with 109
 	return -1
 		

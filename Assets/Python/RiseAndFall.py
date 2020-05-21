@@ -1360,9 +1360,6 @@ class RiseAndFall:
 						return
 						
 
-			elif iCiv == iMaya and pMuisca.isAlive():
-				return
-
 
 			elif iCiv == iItaly:
 				if pRome.isAlive():
@@ -2506,6 +2503,9 @@ class RiseAndFall:
 			utils.makeUnit(iMilitia, iCiv, tPlot, 2)
 		elif iCiv == iRome:
 			utils.makeUnit(iLegion, iCiv, tPlot, 4)
+		elif iCiv == iYuezhi:
+			utils.makeUnit(iArcher, iCiv, tPlot, 2)
+			utils.makeUnit(iAsvaka, iCiv, tPlot, 2)
 		elif iCiv == iMaya:
 			utils.makeUnit(iArcher, iCiv, tPlot, 2)
 			utils.makeUnit(iHolkan, iCiv, tPlot, 2)
@@ -2753,7 +2753,7 @@ class RiseAndFall:
 		elif iCiv == iPolynesia:
 			tSeaPlot = (2, 21)
 			utils.makeUnit(iSettler, iCiv, tPlot, 1)
-			utils.makeUnit(iWaka, iCiv, tSeaPlot, 1)
+			utils.makeUnitAI(iWaka, iCiv, tSeaPlot, UnitAITypes.UNITAI_SETTLER_SEA, 1)
 			utils.makeUnit(iSettler, iCiv, tSeaPlot, 1)
 			utils.makeUnit(iWorkboat, iCiv, tSeaPlot, 1)
 		elif iCiv == iRome:
@@ -2765,6 +2765,10 @@ class RiseAndFall:
 				utils.makeUnit(iWorkboat, iCiv, tSeaPlot, 1)
 				pRome.initUnit(iGalley, tSeaPlot[0], tSeaPlot[1], UnitAITypes.UNITAI_ASSAULT_SEA, DirectionTypes.DIRECTION_SOUTH)
 				pRome.initUnit(iGalley, tSeaPlot[0], tSeaPlot[1], UnitAITypes.UNITAI_ASSAULT_SEA, DirectionTypes.DIRECTION_SOUTH)
+		elif iCiv == iYuezhi:
+			utils.createSettlers(iCiv, 1)
+			utils.makeUnit(iArcher, iCiv, tPlot, 2)
+			utils.makeUnit(iHorseman, iCiv, tPlot, 2)
 		elif iCiv == iMaya:
 			utils.createSettlers(iCiv, 1)
 			utils.makeUnit(iHolkan, iCiv, tPlot, 2)
@@ -3428,6 +3432,8 @@ class RiseAndFall:
 		elif iCiv == iCeltia:
 			utils.makeUnit(iWorker, iCiv, tPlot, 2)
 		elif iCiv == iRome:
+			utils.makeUnit(iWorker, iCiv, tPlot, 2)
+		elif iCiv == iYuezhi:
 			utils.makeUnit(iWorker, iCiv, tPlot, 2)
 		elif iCiv == iMaya:
 			utils.makeUnit(iWorker, iCiv, tPlot, 1)

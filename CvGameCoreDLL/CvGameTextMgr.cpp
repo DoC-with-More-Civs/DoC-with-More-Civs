@@ -17922,6 +17922,12 @@ void CvGameTextMgr::setCommerceHelp(CvWStringBuffer &szBuffer, CvCity& city, Com
 // BUG - Base Commerce - end
 	}
 
+	// 1SDAN: Yuezhi UP: +1 Culture, Gold, and Happiness from Religions.
+	if (owner.getID() == YUEZHI && (eCommerceType == COMMERCE_CULTURE || eCommerceType == COMMERCE_GOLD))
+	{
+		iBaseCommerceRate += 100 * city.getReligionCount();
+	}
+
 	int iCorporationCommerce = city.getCorporationCommerce(eCommerceType);
 	if (0 != iCorporationCommerce)
 	{

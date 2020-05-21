@@ -147,11 +147,18 @@ tTatarKievanRusBR = (83, 62)
 
 tConquestTatarKievanRus = (21, iTatar, iKievanRus, tTatarKievanRusTL, tTatarKievanRusBR, 1, iTatarKievanRusYear, 10)
 
+
+iYuezhiTurkestanYear = 30
+tYuezhiTurkestanTL = (98, 49)
+tYuezhiTurkestanBR = (103, 56)
+
+tConquestYuezhiTurkestan = (22, iYuezhi, iPersia, tYuezhiTurkestanTL, tYuezhiTurkestanBR, 4, iYuezhiTurkestanYear, 10)
+
 iConquestEnglandIrelandYear = 1150
 tConquestEnglandIrelandTL = (52, 64)
 tConquestEnglandIrelandBR = (59, 71)
 
-tConquestEnglandIreland = (22, iEngland, iCeltia, tConquestEnglandIrelandTL, tConquestEnglandIrelandBR, 2, iConquestEnglandIrelandYear, 10)
+tConquestEnglandIreland = (23, iEngland, iCeltia, tConquestEnglandIrelandTL, tConquestEnglandIrelandBR, 2, iConquestEnglandIrelandYear, 10)
 
 
 
@@ -179,7 +186,8 @@ tConquestMongolsPersia, #15
 tConquestRussiaNovgorod, #19
 tConquestRussiaTatar, #20
 tConquestTatarKievanRus, #21
-tConquestEnglandIreland #22
+tConquestYuezhiTurkestan, #22
+tConquestEnglandIreland #23
 ]
 
 class AIWars:
@@ -345,6 +353,9 @@ class AIWars:
 
 			if iPlayer == iTatar:
 				utils.makeUnitAI(utils.getBestCavalry(iPlayer), iPlayer, tPlot, UnitAITypes.UNITAI_ATTACK_CITY, 2 * iExtra)
+
+			if iPlayer == iYuezhi:
+				utils.makeUnitAI(utils.getBestCavalry(iPlayer), iPlayer, tPlot, UnitAITypes.UNITAI_ATTACK_CITY, 2 + iExtra)
 				
 	def forgetMemory(self, iTech, iPlayer):
 		if iTech in [iPsychology, iTelevision]:

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Inca -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_YUEZHI_DESC</Tag>
+		<English>The Yuezhi</English>
+		<French>The Yuezhi</French>
+		<German>The Yuezhi</German>
+		<Italian>The Yuezhi</Italian>
+		<Spanish>The Yuezhi</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_YUEZHI_PEOPLES</Tag>
+		<English>Yuezhi Peoples</English>
+		<French>
+			<Text>Peuplades Yuezhi</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</French>
+		<German>
+			<Text>Yuezhi Peoples</Text>
+			<Gender>Female:Female:Female</Gender>
+			<Plural>1:1:1</Plural>
+		</German>
+		<Italian>
+			<Text>Popoli Yuezhi</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Pueblos Yuezhi</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_YUEZHI_DEFAULT</Tag>
+		<English>%s1 Nomads</English>
+		<French>%s1 Nomads</French>
+		<German>%s1 Nomads</German>
+		<Italian>%s1 Nomads</Italian>
+		<Spanish>%s1 Nomads</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_YUEZHI_KUSHAN</Tag>
+		<English>Kushan</English>
+		<French>Kushan</French>
+		<German>Kushan</German>
+		<Italian>Kushan</Italian>
+		<Spanish>Kushan</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_YUEZHI_ADJECTIVE</Tag>
+		<English>Yuezhi</English>
+		<French>Yuezhi</French>
+		<German>Yuezhi</German>
+		<Italian>Yuezhi</Italian>
+		<Spanish>Yuezhi</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_YUEZHI_SHORT_DESC</Tag>
+		<English>Yuezhi</English>
+		<French>Yuezhi</French>
+		<German>Yuezhi</German>
+		<Italian>Yuezhi</Italian>
+		<Spanish>Yuezhi</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_YUEZHI_FASCIST</Tag>
+		<English>Indo-Greek Empire</English>
+		<French>Indo-Greek Empire</French>
+		<German>Indo-Greek Empire</German>
+		<Italian>Indo-Greek Empire</Italian>
+		<Spanish>Indo-Greek Empire</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_KUSHAN_DEFAULT</Tag>
+		<English>%s1 Empire</English>
+		<French>%s1 Empire</French>
+		<German>%s1 Empire</German>
+		<Italian>%s1 Empire</Italian>
+		<Spanish>%s1 Empire</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_KUSHAN_ADJECTIVE</Tag>
+		<English>Kuashana</English>
+		<French>Kuashana</French>
+		<German>Kuashana</German>
+		<Italian>Kuashana</Italian>
+		<Spanish>Kuashana</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_KUSHAN_SHORT_DESC</Tag>
+		<English>Kushan</English>
+		<French>Kushan</French>
+		<German>Kushan</German>
+		<Italian>Kushan</Italian>
+		<Spanish>Kushan</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_KUSHAN_FASCIST</Tag>
+		<English>Indo-Greek Empire</English>
+		<French>Indo-Greek Empire</French>
+		<German>Indo-Greek Empire</German>
+		<Italian>Indo-Greek Empire</Italian>
+		<Spanish>Indo-Greek Empire</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_YUEZHI_GANDHARA_SCHOOL</Tag>
+		<English>Gandhara School</English>
+		<French>Gandhara School</French>
+		<German>Gandhara School</German>
+		<Italian>Gandhara School</Italian>
+		<Spanish>Gandhara School</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_YUEZHI_GANDHARA_SCHOOL_HELP</Tag>
+		<English>[ICON_BULLET]+25% Production of religious buildings</English>
+		<French>[ICON_BULLET]+25% Production of religious buildings</French>
+		<German>[ICON_BULLET]+25% Production of religious buildings</German>
+		<Italian>[ICON_BULLET]+25% Production of religious buildings</Italian>
+		<Spanish>[ICON_BULLET]+25% Production of religious buildings</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DOM_YUEZHI</Tag>
+		<English>It is the year 400 BC. As the interchange between Indian and Greek cultures grows, the nomadic Yuezhi begin gathering power from within their homelands of the arid Gansu Grasslands. Syncretizing faiths both near and far, the Yuezhi culture seems set to spread unlike that of any nomads' before it.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_KANISHKA</Tag>
+		<English>Kanishka</English>
+		<French>Kanishka</French>
+		<German>Kanishka</German>
+		<Italian>Kanishka</Italian>
+		<Spanish>Kanishka</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_YUE_TITLE</Tag>
+		<English>The Power of Syncretism:</English>
+		<French>Le pouvoir de syncretisme:</French>
+		<German>Die Macht des Synkretismus:</German>
+		<Italian>Il potere della sincretismo:</Italian>
+		<Spanish>El poder de la sincretismo:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_YUE</Tag>
+		<English>+1 Culture, Gold, and Happiness from Religions.</English>
+		<French>+1 Culture, Gold, and Happiness from Religions.</French>
+		<German>+1 Culture, Gold, and Happiness from Religions.</German>
+		<Italian>+1 Culture, Gold, and Happiness from Religions.</Italian>
+		<Spanish>+1 Culture, Gold, and Happiness from Religions.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_YUE1_TITLE</Tag>
+		<English>The Kushan Empire</English>
+		<French>The Kushan Empire</French>
+		<German>The Kushan Empire</German>
+		<Italian>The Kushan Empire</Italian>
+		<Spanish>The Kushan Empire</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_YUE1</Tag>
+		<English>Have a capital in the Hindu Kush region with a developing culture in 30 CE</English>
+		<French>Have a capital in the Hindu Kush region with a developing culture in 30 CE</French>
+		<German>Have a capital in the Hindu Kush region with a developing culture in 30 CE</German>
+		<Italian>Have a capital in the Hindu Kush region with a developing culture in 30 CE</Italian>
+		<Spanish>Have a capital in the Hindu Kush region with a developing culture in 30 CE</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_YUE2_TITLE</Tag>
+		<English>The Centerpoint of Civilization</English>
+		<French>The Centerpoint of Civilization</French>
+		<German>The Centerpoint of Civilization</German>
+		<Italian>The Centerpoint of Civilization</Italian>
+		<Spanish>The Centerpoint of Civilization</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_YUE2</Tag>
+		<English>Have trade routes with four different civilizations by 200 CE</English>
+		<French>Have trade routes with four different civilizations by 200 CE</French>
+		<German>Have trade routes with four different civilizations by 200 CE</German>
+		<Italian>Have trade routes with four different civilizations by 200 CE</Italian>
+		<Spanish>Have trade routes with four different civilizations by 200 CE</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_YUE3_TITLE</Tag>
+		<English>Greco-Buddhist tradition</English>
+		<French>Greco-Buddhist tradition</French>
+		<German>Greco-Buddhist tradition</German>
+		<Italian>Greco-Buddhist tradition</Italian>
+		<Spanish>Greco-Buddhist tradition</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_YUE3</Tag>
+		<English>Build the Salsal Buddha and eight temples by 400 CE</English>
+		<French>Build the Salsal Buddha and eight temples by 400 CE</French>
+		<German>Build the Salsal Buddha and eight temples by 400 CE</German>
+		<Italian>Build the Salsal Buddha and eight temples by 400 CE</Italian>
+		<Spanish>Build the Salsal Buddha and eight temples by 400 CE</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TEMPLES</Tag>
+		<English>Temples</English>
+		<French>Temples</French>
+		<German>Temples</German>
+		<Italian>Temples</Italian>
+		<Spanish>Temples</Spanish>
+	</TEXT>
+</Civ4GameText>

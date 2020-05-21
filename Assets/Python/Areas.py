@@ -114,7 +114,8 @@ tCapitals = (
 (67, 60), # Hallstatt				
 (3, 20), # Tonga				
 (94, 45), # Persepolis				
-(68, 53), # Rome				
+(68, 53), # Rome
+(115, 56), # Dunhuang				
 (22, 41), # Tikal				
 (106, 33), # Thanjavur				
 (84, 35), # Aksum				
@@ -185,7 +186,8 @@ iNubia : (81, 35),	# Sennar
 iChina : (124, 56),	# Beijing			
 iIndia : (105, 46),	# Delhi			
 iCarthage : (67, 48),	# Carthage			
-iPersia : (93, 48),	# Esfahan (Iran)			
+iPersia : (93, 48),	# Esfahan (Iran)
+iYuezhi : (100, 50),	# Bagram (Kabul)			
 iNorteChico : (27, 28),	# Chimu			
 iCeltia : (57, 69),	# Scottish			
 iMaya : (29, 35),	# Bogota (Colombia)				
@@ -245,7 +247,8 @@ tBirthArea = (
 ((62, 58),	(67, 61)),	# Celtia		
 ((2, 19),	(6, 24)),	# Polynesia		
 ((91, 43),	(98, 52)),	# Persia		
-((64, 50),	(72, 57)),	# Rome		
+((64, 50),	(72, 57)),	# Rome
+((105, 53),	(116, 57)),	# Yuezhi		
 ((20, 41),	(23, 44)),	# Maya		
 ((105, 29),	(109, 36)),	# Tamils		
 ((82, 32),	(86, 36)),	# Ethiopia		
@@ -260,7 +263,7 @@ tBirthArea = (
 ((28, 22),	(32, 25)),	# Wari		
 ((134, 49),	(140, 59)),	# Japan		
 ((65, 66),	(70, 76)),	# Vikings		
-((95, 52),	(113, 60)),	# Turkestan		
+((96, 54),	(113, 60)),	# Turkestan		
 ((77, 35),	(90, 50)),	# Arabia		
 ((107, 47),	(115, 52)),	# Tibet		
 ((115, 24),	(128, 33)),	# Indonesia		
@@ -364,7 +367,8 @@ tCoreArea = (
 ((65, 58),	(71, 61)),	# Celtia		
 ((3, 20),	(5, 23)),	# Polynesia		
 ((91, 43),	(97, 52)),	# Persia		
-((64, 48),	(73, 57)),	# Rome		
+((64, 48),	(73, 57)),	# Rome
+((105, 53),	(116, 57)),	# Yuezhi		
 ((20, 41),	(23, 44)),	# Maya		
 ((105, 29),	(109, 36)),	# Tamils		
 ((82, 32),	(86, 36)),	# Ethiopia		
@@ -379,7 +383,7 @@ tCoreArea = (
 ((28, 22),	(32, 25)),	# Wari		
 ((135, 52),	(140, 55)),	# Japan		
 ((66, 67),	(72, 73)),	# Vikings		
-((96, 52),	(113, 61)),	# Turks		
+((96, 52),	(108, 61)),	# Turks		
 ((84, 39),	(89, 47)),	# Arabia		
 ((107, 47),	(115, 52)),	# Tibet		
 ((115, 24),	(128, 31)),	# Indonesia		
@@ -440,6 +444,7 @@ iPhoenicia : ((62, 45),	(69, 48)),
 iCeltia:	((52, 60), (57, 71)), # Ireland, Scotland, Wales and Bretagne
 iPersia : ((89, 43),	(97, 54)),			
 iMaya :	((26, 30),	(35, 38)),	# Colombia
+iYuezhi :	((98, 49),	(102, 56)),	# Kushan
 iMississippi :	((21, 49), (24, 55)),	
 iByzantium :	((79, 54),	(81, 56)),		
 iJapan : ((134, 49),	(140, 59)),			
@@ -524,7 +529,8 @@ tNormalArea = (
 ((52, 64),	(58, 71)), # Ireland			
 ((3, 20),	(11, 24)),	# Polynesia		
 ((91, 43),	(100, 54)),	# Persia		
-((64, 49),	(74, 59)),	# Rome		
+((64, 49),	(74, 59)),	# Rome
+((105, 53),	(116, 57)),	# Yuezhi		
 ((20, 37),	(25, 44)),	# Maya		
 ((105, 30),	(109, 38)),	# Tamils		
 ((81, 29),	(90, 36)),	# Ethiopia		
@@ -594,7 +600,8 @@ dChangedNormalArea = {
 iNorteChico : 	((26, 26),	(27, 32)),	# Chimu		
 iHarappa :	((103, 35),	(105, 40)),	# Chalukya					
 iIndia : 	((96, 42),	(97, 42)),		
-iCarthage :	((63, 45),	(70, 48)),		
+iCarthage :	((63, 45),	(70, 48)),
+iYuezhi :	((98, 49),	(102, 56)),	# Kushan		
 iMaya : 	((26, 30),	(35, 38)),	# Colombia		
 iCeltia : 	((53, 65),	(57, 71)),	# Scottish	
 iMississippi :	((21, 49), (24, 55)),	
@@ -665,7 +672,8 @@ tBroaderArea = (
 ((65, 58),	(71, 61)),	# Celtia		
 ((0, 17),	(20, 35)),	# Polynesia		
 ((82, 43),	(106, 59)),	# Persia		
-((55, 43),	(85, 59)),	# Rome		
+((55, 43),	(85, 59)),	# Rome
+((105, 53),	(116, 57)),	# Yuezhi		
 ((19, 36),	(27, 44)),	# Maya		
 ((104, 26),	(121, 38)), # Tamils			
 ((79, 24),	(90, 37)),	# Ethiopia	
@@ -746,7 +754,7 @@ iMughals :	((84, 37),	(94, 43)),
 				
 dRespawnArea = {				
 iEgypt :	((75, 37), 	(82, 45)),		
-iChina :	((117, 46),	(129, 56)),		
+iChina :	((117, 46),	(129, 57)),		
 iIndia :	((103, 37),	(113, 47)),			
 iPhoenicia : ((62, 45),	(69, 48)),	
 iByzantium :	((75, 49),	(81, 57)),	

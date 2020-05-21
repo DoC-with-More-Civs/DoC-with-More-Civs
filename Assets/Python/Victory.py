@@ -323,6 +323,7 @@ dWonderGoals = {
 	iCarthage: (0, [iGreatCothon], False),
 	iPolynesia: (2, [iMoaiStatues], True),
 	iMaya: (1, [iTempleOfKukulkan], True),
+	iYuezhi: (2, [iSalsalBuddha], False),
 	iMississippi: (0, [iSerpentMound], False),
 	iBurma: (0, [iShwedagonPaya], False),
 	iMoors: (1, [iMezquita], False),
@@ -827,6 +828,35 @@ def checkTurn(iGameTurn, iPlayer):
 					
 			if iGameTurn == getTurnForYear(1950):
 				expire(iMaya, 2)
+				
+	elif iPlayer == iYuezhi:
+	
+		# first goal: Have a capital in the Hindu Kush region with a developing culture in 30 CE
+		if iGameTurn == getTurnForYear(30):
+			if (pYuezhi.getCapitalCity().getX(), pYuezhi.getCapitalCity().getY()) in Areas.getCoreArea(iYuezhi, True) and pYuezhi.getCapitalCity().getY() <= 43:
+				win(iYuezhi, 0)
+				
+		# second goal: Have trade routes with four different civilizations by 200 CE
+		if isPossible(iYuezhi, 1):
+			if numTradeConnections(iPlayer) >= 4:
+				win(iYuezhi, 1)
+				
+			if iGameTurn == getTurnForYear(200):
+				expire(iYuezhi, 1)
+				
+		# third goal: Build the Salsal Buddha and eight temples by 400 CE
+		if isPossible(iYuezhi, 2):
+			iTemples = 0
+			
+			for iReligion in range(iNumReligions):
+				iTemple = iJewishTemple + 4*iReligion
+				iTemples += getNumBuildings(iPlayer, iTemple)
+				
+			if data.getWonderBuilder(iSalsalBuddha) == iPlayer and iTemples >= 8:
+				win(iYuezhi, 2)
+				
+			if iGameTurn == getTurnForYear(400):
+				expire(iYuezhi, 2)
 				
 	elif iPlayer == iOman:
 			# third goal: acquire 2000 gold from trade deals
@@ -4471,7 +4501,16 @@ def isTradeConnected(iPlayer):
 			return True
 			
 	return False
-	
+
+def numTradeConnections(iPlayer):
+	iNumConnections = 0
+
+	for iOtherPlayer in range(iNumPlayers):
+		if iPlayer != iOtherPlayer and gc.getPlayer(iPlayer).canContact(iOtherPlayer) and gc.getPlayer(iPlayer).canTradeNetworkWith(iOtherPlayer):
+			iNumConnections += 1
+
+	return iNumConnections
+
 def countUnitsOfLevel(iPlayer, iLevel):
 	pPlayer = gc.getPlayer(iPlayer)
 	iCount = 0
@@ -5304,6 +5343,24 @@ def getUHVHelp(iPlayer, iGoal):
 			elif iGoal == 2:
 				iTradeGold = data.iColombianTradeGold
 				aHelp.append(getIcon(iTradeGold >= utils.getTurns(3000)) + localText.getText("TXT_KEY_VICTORY_TRADE_GOLD_RESOURCES", (iTradeGold, utils.getTurns(3000))))
+
+	elif iPlayer == iYuezhi:
+		if iGoal == 0:
+			bCapital = (pYuezhi.getCapitalCity().getX(), pYuezhi.getCapitalCity().getY()) in Areas.getCoreArea(iYuezhi, True) and pYuezhi.getCapitalCity().getY() <= 43
+			aHelp.append(getIcon(bCapital) + localText.getText("TXT_KEY_UHV_AREA_109", ()))
+		if iGoal == 1:
+			iNumConnections = numTradeConnections(iPlayer)
+			aHelp.append(getIcon(iNumConnections >= 4) + localText.getText("TXT_KEY_VICTORY_NUM_STRING", ("TXT_KEY_HEADING_TRADEROUTE_LIST", iNumConnections, 4)))
+		if iGoal == 2:
+			iTemples = 0
+
+			for iReligion in range(iNumReligions):
+				iTemple = iJewishTemple + 4*iReligion
+				iTemples += getNumBuildings(iPlayer, iTemple)
+
+			bSalsalBuddha = data.getWonderBuilder(iSalsalBuddha) == iPlayer
+
+			aHelp.append(getIcon(bSalsalBuddha) + localText.getText("TXT_KEY_BUILDING_SALSAL_BUDDHA", ()) + ' ' + getIcon(iTemples >= 8) + localText.getText("TXT_KEY_VICTORY_NUM_STRING", ("TXT_KEY_VICTORY_TEMPLES", iTemples, 8)))
 
 	elif iPlayer == iTamils:
 		if iGoal == 0:

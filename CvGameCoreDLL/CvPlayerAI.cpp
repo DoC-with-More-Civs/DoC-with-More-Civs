@@ -18226,6 +18226,12 @@ void CvPlayerAI::AI_recalculateFoundValues(int iX, int iY, int iInnerRadius, int
 
 int CvPlayerAI::AI_getMinFoundValue() const
 {
+	// Polynesia isn't picky
+	if (getID() == POLYNESIA)
+	{
+		return 0;
+	}
+
 	int iValue = 600;
 	int iNetCommerce = 1 + getCommerceRate(COMMERCE_GOLD) + getCommerceRate(COMMERCE_RESEARCH) + std::max(0, getGoldPerTurn());
 /************************************************************************************************/

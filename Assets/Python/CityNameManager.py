@@ -12,7 +12,7 @@ from StoredData import data
 gc = CyGlobalContext()
 PyPlayer = PyHelpers.PyPlayer
 
-iNumLanguages = 52
+iNumLanguages = 53
 (iLangEgyptian, iLangEgyptianArabic, iLangIndian, iLangChinese, iLangTibetan, 
 iLangBabylonian, iLangPersian, iLangGreek, iLangPhoenician, iLangLatin,
  iLangMayan,iLangJapanese, iLangEthiopian, iLangTeotihuacan, iLangKorean, iLangByzantine, 
@@ -23,7 +23,7 @@ iLangMongolian, iLangAztec, iLangTurkish, iLangThai, iLangCongolese,
 iLangPrussian, iLangAmerican, iLangCeltic, iLangMexican, iLangPolynesian,
 iLangHarappan, iLangNigerian, iLangPhilippine, iLangSwahili, iLangVietnamese,
 iLangZimbabwean, iLangHebrew, iLangNubian, iLangNubianArabic, iLangMississippi,
-iLangOlmec) = range(iNumLanguages)
+iLangOlmec, iLangYuezhi) = range(iNumLanguages)
 
 # methods
 
@@ -54,6 +54,7 @@ def getLanguages(iCiv):
 		if utils.isReborn(iCiv): return (iLangArabian, iLangPersian)
 		return (iLangPersian,)
 	elif iCiv == iRome: return (iLangLatin,)
+	elif iCiv == iYuezhi: return (iLangYuezhi, iLangIndian, iLangChinese)
 	elif iCiv == iMaya: 
 		if utils.isReborn(iCiv): return (iLangSpanish,)
 		return (iLangMayan, iLangAztec)
@@ -4819,5 +4820,9 @@ tRenames = (
 {
     "La Venta"		:	"Je Taa'c",
     "Tres Zapotes"	:	"Toojc Yuctsoo'c",
+},
+#Language: Yuezhi
+{
+
 },
 )

@@ -1062,6 +1062,8 @@ iCivMaya : {
 		"Tecun Uman", # 16th
 	],
 },
+iCivYuezhi : {
+},
 iCivEthiopia : {
 	iGreatProphet : [
 		"Gabra Manfas Qeddus", # legendary

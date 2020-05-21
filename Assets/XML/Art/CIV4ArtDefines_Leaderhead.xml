@@ -1438,5 +1438,13 @@
 			<NoShaderNIF>Art/Leaderheads/Tezcatlipoca/Arawak.nif</NoShaderNIF>
 			<BackgroundKFM>Art/Leaderheads/Tezcatlipoca/Arawak_BG.kfm</BackgroundKFM>
 		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_KANISHKA</Type>
+			<Button>Art/Leaderheads/kanishka/Kanishka_BUTTON_1.dds</Button>
+			<NIF>Art/Leaderheads/kanishka/Kanishka.nif</NIF>
+			<KFM>Art/Leaderheads/kanishka/Kanishka.kfm</KFM>
+			<NoShaderNIF>Art/Leaderheads/kanishka/Kanishka_noshader.nif</NoShaderNIF>
+			<BackgroundKFM>Art/Leaderheads/kanishka/Kanishka_bg.kfm</BackgroundKFM>
+		</LeaderheadArtInfo>
 	</LeaderheadArtInfos>
 </Civ4ArtDefines>

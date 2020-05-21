@@ -159,6 +159,7 @@ iCivPersia :	Techs([iBloomery, iPriesthood], column=3, exceptions=[iSeafaring, i
 iCivCarthage :	Techs([iAlloys, iWriting, iShipbuilding], column=2),
 iCivPolynesia :	Techs([iTanning, iMythology, iSailing, iSeafaring]),
 iCivRome : 	Techs([iBloomery, iCement, iMathematics, iLiterature], column=3, exceptions=[iRiding, iCalendar, iShipbuilding]),
+iCivYuezhi :	Techs([iMathematics], column=3, exceptions=[iWriting, iShipbuilding, iSeafaring, iAlloys]),
 iCivMaya :	Techs([iProperty, iMasonry, iSmelting, iCeremony], column=1, exceptions=[iSailing]),
 iCivTamils :	Techs([iBloomery, iMathematics, iContract, iPriesthood], column=3),
 iCivEthiopia :	Techs([iAlloys, iWriting, iCalendar, iPriesthood], column=2),
@@ -390,6 +391,11 @@ dTechPreferences = {
 		iCalendar: 30,
 		iArithmetics: 30,
 	},
+	iCivOlmecs : {
+		iWriting: 30,
+		iCalendar: 30,
+		iArithmetics: 30,
+	},
 	iCivIndia : {
 		iCeremony: 200,
 		iPriesthood: 200,
@@ -430,6 +436,8 @@ dTechPreferences = {
 		iEngineering: 15,
 		
 		iCalendar: -20,
+	},
+	iCivYuezhi : {
 	},
 	iCivMaya : {
 		iCalendar: 40,
@@ -850,6 +858,7 @@ dDefaultWonderPreferences = {
 	iCivIndia: -15,
 	iCivCeltia: -40,
 	iCivRome: -20,
+	iCivYuezhi: -20,
 	iCivInuit: -40,
 	iCivArabia: -15,
 	iCivIndonesia: -15,
@@ -974,6 +983,9 @@ dBuildingPreferences = {
 		iAlKhazneh: 20,
 		
 		iGreatWall: -100,
+	},
+	iCivYuezhi : {
+		iSalsalBuddha: 40,
 	},
 	iCivMaya : {
 		iTempleOfKukulkan: 40,

@@ -552,5 +552,11 @@
 			<Path>Art/Interface/TeamColor/flagdecal_olmec.dds</Path>
 			<bWhiteFlag>0</bWhiteFlag>
 		</CivilizationArtInfo>
+		<CivilizationArtInfo>
+			<Type>ART_DEF_CIVILIZATION_YUEZHI</Type>
+			<Button>Art/Interface/Buttons/Civilizations/Yuezhi.dds</Button>
+			<Path>Art/Interface/TeamColor/FlagDECAL_Yuezhi.dds</Path>
+			<bWhiteFlag>0</bWhiteFlag>
+		</CivilizationArtInfo>
 	</CivilizationArtInfos>
 </Civ4ArtDefines>

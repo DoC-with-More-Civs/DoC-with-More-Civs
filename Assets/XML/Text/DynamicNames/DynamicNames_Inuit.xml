@@ -261,4 +261,28 @@
 		<Italian>Worked %s1 resources: %d2 / %d3d</Italian>
 		<Spanish>Worked %s1 resources: %d2 / %d3d</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_INUIT_REPUBLIC</Tag>
+		<English>%s2 Circumpolar Council</English>
+		<French>%s2 Circumpolar Council</French>
+		<German>%s2 Circumpolar Council</German>
+		<Italian>%s2 Circumpolar Council</Italian>
+		<Spanish>%s2 Circumpolar Council</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_INUIT_FASCIST</Tag>
+		<English>%s2 Empire</English>
+		<French>%s2 Empire</French>
+		<German>%s2 Empire</German>
+		<Italian>%s2 Empire</Italian>
+		<Spanish>%s2 Empire</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_INUIT_COMMUNIST</Tag>
+		<English>Inuit's Circumpolar Republic</English>
+		<French>Inuit's Circumpolar Republic</French>
+		<German>Inuit's Circumpolar Republic</German>
+		<Italian>Inuit's Circumpolar Republic</Italian>
+		<Spanish>Inuit's Circumpolar Republic</Spanish>
+	</TEXT>
 </Civ4GameText>
