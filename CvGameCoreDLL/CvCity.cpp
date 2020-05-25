@@ -3801,8 +3801,8 @@ int CvCity::getProductionModifier(BuildingTypes eBuilding) const
 		}
 	}
 
-	// Leoreth: Yuezhi UP: +25% production of religious buildings
-	if (getOwnerINLINE() == YUEZHI)
+	// 1SDAN: Yuezhi UB: +25% production of religious buildings
+	if (getOwnerINLINE() == YUEZHI && isHasBuildingEffect((BuildingTypes)GC.getInfoTypeForString("BUILDING_YUEZHI_GANDHARA_SCHOOL")))
 	{
 		if (GC.getBuildingInfo(eBuilding).getPrereqReligion() != NO_RELIGION && GC.getBuildingClassInfo((BuildingClassTypes)GC.getBuildingInfo(eBuilding).getBuildingClassType()).getMaxGlobalInstances() != 1)
 		{
@@ -5901,12 +5901,6 @@ int CvCity::happyLevel(bool bSpecial) const
 	if (bSpecial && isHasBuildingEffect((BuildingTypes)SHALIMAR_GARDENS))
 	{
 		iHappiness += std::max(0, goodHealth(false) - badHealth());
-	}
-
-	// 1SDAN: Yuezhi UP: +1 Culture, Gold, and Happiness from Religions.
-	if (getOwnerINLINE() == YUEZHI)
-	{
-		iHappiness += getReligionCount();
 	}
 	return std::max(0, iHappiness);
 }
@@ -8603,6 +8597,12 @@ void CvCity::updateReligionHappiness()
 		}
 	}
 
+	// 1SDAN: Yuezhi UP: +1 Culture, Gold, Food, and Happiness from Religions.
+	if (getOwnerINLINE() == YUEZHI)
+	{
+		iNewReligionGoodHappiness += getReligionCount();
+	}
+
 	if (getReligionGoodHappiness() != iNewReligionGoodHappiness)
 	{
 		m_iReligionGoodHappiness = iNewReligionGoodHappiness;
@@ -10919,13 +10919,6 @@ int CvCity::getBaseCommerceRateTimes100(CommerceTypes eIndex) const
 			}
 		}
 	}
-
-	// 1SDAN: Yuezhi UP: +1 Culture, Gold, and Happiness from Religions.
-	if (getOwnerINLINE() == YUEZHI && (eIndex == COMMERCE_CULTURE || eIndex == COMMERCE_GOLD))
-	{
-		iBaseCommerceRate += 100 * getReligionCount();
-	}
-
 	return iBaseCommerceRate;
 }
 
@@ -11513,6 +11506,12 @@ void CvCity::updateReligionCommerce(CommerceTypes eIndex)
 	for (iI = 0; iI < GC.getNumReligionInfos(); iI++)
 	{
 		iNewReligionCommerce += getReligionCommerceByReligion(eIndex, ((ReligionTypes)iI));
+	}
+
+	// 1SDAN: Yuezhi UP: +1 Culture, Gold, Food, and Happiness from Religions.
+	if (getOwnerINLINE() == YUEZHI && (eIndex == COMMERCE_CULTURE || eIndex == COMMERCE_GOLD))
+	{
+		iNewReligionCommerce += getReligionCount();
 	}
 
 	if (getReligionCommerce(eIndex) != iNewReligionCommerce)

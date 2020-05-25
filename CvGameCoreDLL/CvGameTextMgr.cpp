@@ -13273,6 +13273,13 @@ void CvGameTextMgr::setHappyHelp(CvWStringBuffer &szBuffer, CvCity& city)
 		}
 
 		iHappy = city.getReligionGoodHappiness();
+
+		// 1SDAN: Yuezhi UP: +1 Culture, Gold, Food, and Happiness from Religions.
+		if (city.getOwnerINLINE() == YUEZHI)
+		{
+			iHappy += 1 * city.getReligionCount();
+		}
+
 		if (iHappy > 0)
 		{
 			iTotalHappy += iHappy;
@@ -17462,6 +17469,20 @@ void CvGameTextMgr::setProductionHelp(CvWStringBuffer &szBuffer, CvCity& city)
 			}
 		}
 
+		// 1SDAN: display Yuezhi UB
+		if (city.getOwnerINLINE() == YUEZHI)
+		{
+			if (GC.getBuildingInfo(eBuilding).getPrereqReligion() != NO_RELIGION && GC.getBuildingClassInfo((BuildingClassTypes)GC.getBuildingInfo(eBuilding).getBuildingClassType()).getMaxGlobalInstances() != 1)
+			{
+				if (city.isHasBuildingEffect((BuildingTypes)GC.getInfoTypeForString("BUILDING_YUEZHI_GANDHARA_SCHOOL")))
+				{
+					szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_PROD_YUEZHI", 25));
+					szBuffer.append(NEWLINE);
+					iBaseModifier += 25;
+				}
+			}
+		}
+
 		// 1SDAN: display Nubian UP
 		if (city.getOwnerINLINE() == NUBIA)
 		{
@@ -17912,6 +17933,13 @@ void CvGameTextMgr::setCommerceHelp(CvWStringBuffer &szBuffer, CvCity& city, Com
 	}
 
 	int iReligionCommerce = city.getReligionCommerce(eCommerceType);
+
+	// 1SDAN: Yuezhi UP: +1 Culture, Gold, Food, and Happiness from Religions.
+	if (owner.getID() == YUEZHI && (eCommerceType == COMMERCE_CULTURE || eCommerceType == COMMERCE_GOLD))
+	{
+		iReligionCommerce += 1 * city.getReligionCount();
+	}
+
 	if (0 != iReligionCommerce)
 	{
 		szBuffer.append(NEWLINE);
@@ -17920,12 +17948,6 @@ void CvGameTextMgr::setCommerceHelp(CvWStringBuffer &szBuffer, CvCity& city, Com
 // BUG - Base Commerce - start
 		bNeedSubtotal = true;
 // BUG - Base Commerce - end
-	}
-
-	// 1SDAN: Yuezhi UP: +1 Culture, Gold, and Happiness from Religions.
-	if (owner.getID() == YUEZHI && (eCommerceType == COMMERCE_CULTURE || eCommerceType == COMMERCE_GOLD))
-	{
-		iBaseCommerceRate += 100 * city.getReligionCount();
 	}
 
 	int iCorporationCommerce = city.getCorporationCommerce(eCommerceType);

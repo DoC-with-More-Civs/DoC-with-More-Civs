@@ -123,7 +123,15 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DOM_YUEZHI</Tag>
-		<English>It is the year 400 BC. As the interchange between Indian and Greek cultures grows, the nomadic Yuezhi begin gathering power from within their homelands of the arid Gansu Grasslands. Syncretizing faiths both near and far, the Yuezhi culture seems set to spread unlike that of any nomads' before it.</English>
+		<English>It is the year 650 BC. As the interchange between Indian and Greek cultures grows, the nomadic Yuezhi begin gathering power from within their homelands of the arid Gansu Grasslands. Syncretizing faiths both near and far, the Yuezhi culture seems set to spread unlike that of any nomads' before it.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_YUEZHI_PEDIA</Tag>
+		<English>[TAB]The term Tocharian or Tokharian has a complex history. It is based on the ethnonym Tokharoi used by Greek historians. The first Greek mention of the Tocharians appeared in the 1st century BC, when Strabo presented them as a Scythian tribe, and explained that the Tocharians together with the Assianis, Passianis and Sakaraulis took part in the destruction of the Greco-Bactrian kingdom in the second half of the 2nd century BC. These Tocharians have frequently been identified with the Yuezhi and the later (and probably related) Kushan peoples. Many scholars believe the Yuezhi originally spoke a Tocharian language. However, the debate about the origins and original language(s) of the Yuezhi and the Kushan continues, and there is no general consensus. Regardless, it is generally accepted that the Tocharians were inhabitants of the Tarim Basin who spoke Tocharian, an Indo-European language, making them the easternmost speakers of Indo-European languages in antiquity.[PARAGRAPH:2]The Tarim mummies suggest that precursors of these easternmost speakers of an Indo-European language may have lived in the region of the Tarim Basin from around 1800 BC until finally being assimilated by Uyghur Turks in the 9th century AD. This is evidenced by both the mummies and Chinese writings.[PARAGRAPH:2]The Tocharians, living along the Silk Road, had contacts with the Chinese, Persians, Indian and Turkic tribes.[PARAGRAPH:2]The Tocharians who remained in the Tarim Basin adopted Buddhism, which, like their alphabet, came from northern India in the first century of the 1st millennium, through the proselytism of Kushan monks. The Kushans and the Tocharians seem to have played a part in the Silk Road transmission of Buddhism to China. Many apparently also practised some variant of Manichaeanism.[PARAGRAPH:2]Protected by the Taklamakan Desert from steppe nomads, the Tocharian culture survived past the 7th century. It was then, during the rise of the Islamic and Turkic Empires, that the Tocharians finally vanished from history and were assimilated into various other Central Asian peoples.</English>
+		<French></French>
+		<German>Der Begriff tocharisch hat eine eher komplizierte Geschichte. Er kommt von Tocharoi, den griechische Historiker benutzten. Die Griechen erw&#228;hnten die Tocharer zum ersten Mal im 1. Jahrhundert v.Chr., als Strabo sie als skytischen Stamm beschrieb, die zusammen mit anderen, kleinen St&#228;mmen das griechisch-baktrische K&#246;nigreich im 2. Jahrhundert v.Chr. eroberte. Das Volk, dass sich selbst Arshi oder Arshoi nannte, wird immer mit den Yuezhi und den sp&#228;ter auftretenden Kuschana in Verbindung gebracht. Inwzischen ist man sich einig, dass die Yuezhi tats&#228;chlich tocharisch, ein eigentst&#228;ndiges Glied der indogermanischen Sprachfamilie, gesprochen haben, bei den Kuschanen hingegen wei&#223; man es nicht mit Sicherheit. Man wei&#223; auch, dass die Tocharer im Tarimbecken, im heutigen Uiguristan im Westen Chinas angesiedelt waren. Damit war das Tocharische die indogermanische Sprache, die in der Antike am weitesten nach Osten verbreitet war. [PARAGRAPH:2]Im Tarimbecken wurden Mumien entdeckt, die darauf schlie&#223;en lassen, dass die Tocharer von etwa 1800 v.Chr. bis ins 9. Jahrhundert n.Chr. dort siedelten, bis sie mehr und mehr von den eingefallenen Uighuren assimiliert wurden. 膆nliches behaupten chinesische Quellen.[PARAGRAPH:2]Da die Tocharer entlang der Seidenstra&#223;e gelebt haben, hatten im Lauf der Zeit Kontakte mit Chinesen, Persern, Indern und t&#252;rkischen St&#228;mmen. Wie ihr Alphabet, eine Silbenschrift, kam wie der Buddhismus aus Indien nach Tocharistan. Es gibt auch Theorien, dass sich nur durch die Handelsbeziehungen der Tocharer nach Indien und China, der Buddhismus in Letzterem ausgebreitet hat. Manche haben wohl auch eine Form des Manich&#228;imus praktiziert.[PARAGRAPH:2]Gesch&#252;tzt durch die Taklamakan, hat es die tocharische Kultur geschafft, bis zum Aufstieg der t&#252;rkischen und islamischen Reiche zu &#252;berleben, bis sie schlie&#223;lich im Laufe der Zeit von zentralasiatischen V&#246;lkern assimiliert wurde.</German>
+		<Italian></Italian>
+		<Spanish></Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_KANISHKA</Tag>
@@ -132,6 +140,14 @@
 		<German>Kanishka</German>
 		<Italian>Kanishka</Italian>
 		<Spanish>Kanishka</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_KANISHKA_PEDIA</Tag>
+		<English>[H1]Kanishka I[\H1][NEWLINE][BOLD]Emperor of the Kushan Empire[\BOLD][NEWLINE][BOLD]Lived: [\BOLD]100s AD[NEWLINE][PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]Most of what is known about Kaniska derives from Chinese sources, particularly Buddhist writings. When Kaniska came to the throne is uncertain. His accession has been estimated as occurring between 78 and 144 CE; his reign is believed to have lasted 23 years. The year 78 marks the beginning of the Shaka era, a system of dating that Kaniska might have initiated.[PARAGRAPH:2]Through inheritance and conquest, Kaniska's kingdom covered an area extending from Bukhara (now in Uzbekistan) in the west to Patna in the Ganges (Ganga) River valley in the east and from the Pamirs (now in Tajikistan) in the north to central India in the south. His capital probably was Purusapura (Peshawar, now in Pakistan). He may have crossed the Pamirs and subjugated the kings of the city-states of Khotan (Hotan), Kashgar, and Yarkand (now in the Xinjiang region of China), who had previously been tributaries of the Han emperors of China. Contact between Kaniska and the Chinese in Central Asia may have inspired the transmission of Indian ideas, particularly Buddhism, to China. Buddhism first appeared in China in the 2nd century CE.[PARAGRAPH:2]As a patron of Buddhism, Kaniska is chiefly noted for having convened the fourth great Buddhist council in Kashmir, which marked the beginnings of Mahayana Buddhism. At the council, according to Chinese sources, authorized commentaries on the Buddhist canon were prepared and engraved on copper plates. These texts have survived only in Chinese translations and adaptations.[PARAGRAPH:2]Kaniska was a tolerant king, and his coins show that he honoured the Zoroastrian, Greek, and Brahmanic deities as well as the Buddha. During his reign, contacts with the Roman Empire via the Silk Road led to a significant increase in trade and the exchange of ideas; perhaps the most remarkable example of the fusion of Eastern and Western influences in his reign was the Gandhara school of art, in which Classical Greco-Roman lines are seen in images of the Buddha.</English>
+		<French>in French</French>
+		<German>in German</German>
+		<Italian>in Italian</Italian>
+		<Spanish>in Spanish</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_YUE_TITLE</Tag>
@@ -143,7 +159,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_YUE</Tag>
-		<English>+1 Culture, Gold, and Happiness from Religions.</English>
+		<English>Extra Culture, Gold, and Happiness from Religions. Halved instability from Religious Disunity.</English>
 		<French>+1 Culture, Gold, and Happiness from Religions.</French>
 		<German>+1 Culture, Gold, and Happiness from Religions.</German>
 		<Italian>+1 Culture, Gold, and Happiness from Religions.</Italian>
@@ -159,7 +175,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_YUE1</Tag>
-		<English>Have a capital in the Hindu Kush region with a developing culture in 30 CE</English>
+		<English>Control a city in the Hindu Kush region with a developing culture in 100 CE</English>
 		<French>Have a capital in the Hindu Kush region with a developing culture in 30 CE</French>
 		<German>Have a capital in the Hindu Kush region with a developing culture in 30 CE</German>
 		<Italian>Have a capital in the Hindu Kush region with a developing culture in 30 CE</Italian>

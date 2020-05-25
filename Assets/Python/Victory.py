@@ -832,9 +832,16 @@ def checkTurn(iGameTurn, iPlayer):
 	elif iPlayer == iYuezhi:
 	
 		# first goal: Have a capital in the Hindu Kush region with a developing culture in 30 CE
-		if iGameTurn == getTurnForYear(30):
-			if (pYuezhi.getCapitalCity().getX(), pYuezhi.getCapitalCity().getY()) in Areas.getCoreArea(iYuezhi, True) and pYuezhi.getCapitalCity().getY() <= 43:
+		if iGameTurn == getTurnForYear(100):
+			bHinduKush = False
+			for city in utils.getCityList(iYuezhi):
+				if (city.getX(), city.getY()) in Areas.getCoreArea(iYuezhi, True) and city.getY() <= 43:
+					bHinduKush = True
+					break
+			if bHinduKush:
 				win(iYuezhi, 0)
+			else:
+				lose(iYuezhi, 0)
 				
 		# second goal: Have trade routes with four different civilizations by 200 CE
 		if isPossible(iYuezhi, 1):
@@ -5346,8 +5353,12 @@ def getUHVHelp(iPlayer, iGoal):
 
 	elif iPlayer == iYuezhi:
 		if iGoal == 0:
-			bCapital = (pYuezhi.getCapitalCity().getX(), pYuezhi.getCapitalCity().getY()) in Areas.getCoreArea(iYuezhi, True) and pYuezhi.getCapitalCity().getY() <= 43
-			aHelp.append(getIcon(bCapital) + localText.getText("TXT_KEY_UHV_AREA_109", ()))
+			bHinduKush = False
+			for city in utils.getCityList(iYuezhi):
+				if (city.getX(), city.getY()) in Areas.getCoreArea(iYuezhi, True) and city.getY() <= 43:
+					bHinduKush = True
+					break
+			aHelp.append(getIcon(bHinduKush) + localText.getText("TXT_KEY_UHV_AREA_109", ()))
 		if iGoal == 1:
 			iNumConnections = numTradeConnections(iPlayer)
 			aHelp.append(getIcon(iNumConnections >= 4) + localText.getText("TXT_KEY_VICTORY_NUM_STRING", ("TXT_KEY_HEADING_TRADEROUTE_LIST", iNumConnections, 4)))

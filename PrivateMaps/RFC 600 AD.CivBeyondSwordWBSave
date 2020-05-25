@@ -9,7 +9,51 @@ BeginGame
 	Description=TXT_KEY_RHYES_WB_DESC
 	ModPath=Mods\RFC Dawn of Civilization
 EndGame
-
+BeginTeam
+	TeamID=0, (Egypt)
+EndTeam
+BeginTeam
+	TeamID=1, (Babylonia)
+EndTeam
+BeginTeam
+	TeamID=2, (Harappa)
+EndTeam
+BeginTeam
+	TeamID=3, (Norte Chico)
+EndTeam
+BeginTeam
+	TeamID=4, (Nubia)
+EndTeam
+BeginTeam
+	TeamID=5, (Assyria)
+EndTeam
+BeginTeam
+	TeamID=6, (China)
+EndTeam
+BeginTeam
+	TeamID=7, (Greece)
+EndTeam
+BeginTeam
+	TeamID=8, (Olmecs)
+EndTeam
+BeginTeam
+	TeamID=9, (India)
+EndTeam
+BeginTeam
+	TeamID=10, (Phoenicia)
+EndTeam
+BeginTeam
+	TeamID=11, (Celtia)
+EndTeam
+BeginTeam
+	TeamID=12, (Polynesia)
+EndTeam
+BeginTeam
+	TeamID=13, (Persia)
+EndTeam
+BeginTeam
+	TeamID=14, (Rome)
+EndTeam
 BeginTeam
 	TeamID=15, (Yuezhi)
 EndTeam
