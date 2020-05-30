@@ -1934,7 +1934,7 @@
 			<Identifier>CHI</Identifier>
 			<StartingYear>-2100</StartingYear>
 			<LoadingTimes>
-				<LoadingTime>2</LoadingTime>
+				<LoadingTime>1</LoadingTime>
 				<LoadingTime>0</LoadingTime>
 				<LoadingTime>0</LoadingTime>
 			</LoadingTimes>

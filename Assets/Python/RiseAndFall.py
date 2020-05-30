@@ -384,22 +384,22 @@ class RiseAndFall:
 				plot.changeCulture(plot.getOwner(), 100, True)
 				utils.convertPlotCulture(plot, plot.getOwner(), 100, True)
 					
-		for x, y in [(48, 45), (50, 44), (50, 43), (50, 42), (49, 40)]:
+		for x, y in [(0, 45), (0, 44), (0, 43), (0, 42), (0, 40)]:
 			utils.convertPlotCulture(gc.getMap().plot(x, y), iPortugal, 100, True)
 			
-		for x, y in [(58, 49), (59, 49), (60, 49)]:
+		for x, y in [(0, 49), (0, 49), (0, 49)]:
 			utils.convertPlotCulture(gc.getMap().plot(x, y), iGermany, 100, True)
 			
-		for x, y in [(62, 51)]:
+		for x, y in [(0, 51)]:
 			utils.convertPlotCulture(gc.getMap().plot(x, y), iHolyRome, 100, True)
 			
-		for x, y in [(58, 52), (58, 53)]:
+		for x, y in [(0, 52), (0, 53)]:
 			utils.convertPlotCulture(gc.getMap().plot(x, y), iNetherlands, 100, True)
 			
-		for x, y in [(64, 53), (66, 55)]:
+		for x, y in [(0, 53), (0, 55)]:
 			utils.convertPlotCulture(gc.getMap().plot(x, y), iPoland, 100, True)
 			
-		for x, y in [(67, 58), (68, 59), (69, 56), (69, 54)]:
+		for x, y in [(0, 58), (0, 59), (0, 56)]:
 			utils.convertPlotCulture(gc.getMap().plot(x, y), iRussia, 100, True)
 			
 	def prepareColonists(self):

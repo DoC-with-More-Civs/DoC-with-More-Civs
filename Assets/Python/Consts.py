@@ -147,7 +147,7 @@ iTan = 90
 iLime = 100
 
 # independent cities
-iNumMinorCities = 62
+iNumMinorCities = 63
 
 # scripted conquerors
 iNumConquests = 24
@@ -1531,7 +1531,7 @@ tTradingCompanyPlotLists = (
 
 lSecondaryCivs = [iHarappa, iPolynesia, iTamils, iTibet, iMoors, iPoland, iCongo, iArgentina, iBrazil]
 
-lMongolCivs = [iPersia, iByzantium, iArabia, iKievanRus, iMughals, iKhazars]
+lMongolCivs = [iPersia, iByzantium, iArabia, iArmenia]
 
 (i3000BC, i600AD, i1700AD) = range(3)
 
@@ -1551,7 +1551,7 @@ lNetworkEvents = {
 	"CHANGE_COMMERCE_PERCENT" :	1200,
 }
 
-lCapitalStart = [iChina, iYemen, iBurma, iOttomans]
+lCapitalStart = [iAssyria, iChina, iYemen, iBurma, iOttomans]
 
 iNumSpawnTypes = 3
 (iForcedSpawn, iNoSpawn, iConditionalSpawn) = range(iNumSpawnTypes)
