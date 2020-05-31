@@ -14,7 +14,7 @@
 			<Civilopedia>TXT_KEY_CIV_AMERICA_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_VERYDARK_BLUE</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_AMERICA</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_ANGLO_AMERICA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_DRUIDISM</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Druidism.dds</PaganReligionButton>
@@ -126,7 +126,7 @@
 			<Civilopedia>TXT_KEY_CIV_ARABIA_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_DARK_GREEN</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_ARABIA</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_MIDDLE_EAST</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_ARABIA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_MIDDLE_EASTERN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_ANUNNAKI</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Anunnaki.dds</PaganReligionButton>
@@ -171,10 +171,6 @@
 					<BuildingClassType>BUILDINGCLASS_UNIVERSITY</BuildingClassType>
 					<BuildingType>BUILDING_ARABIA_NIZAMIYYA</BuildingType>
 				</Building>
-				<Unit>
-					<UnitClassType>UNITCLASS_CAMEL_GUNNER</UnitClassType>
-					<UnitType>UNIT_MOORISH_CAMEL_GUNNER</UnitType>
-				</Unit>
 			</Buildings>
 			<Units>
 				<Unit>
@@ -188,6 +184,10 @@
                                                                 <Unit>
 					<UnitClassType>UNITCLASS_CAMEL_ARCHER</UnitClassType>
 					<UnitType>UNIT_ARABIAN_CAMEL_ARCHER</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_CAMEL_GUNNER</UnitClassType>
+					<UnitType>UNIT_MOORISH_CAMEL_GUNNER</UnitType>
 				</Unit>
 			</Units>
 			<FreeUnitClasses>
@@ -234,7 +234,7 @@
 			<Civilopedia>TXT_KEY_CIV_ARGENTINA_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_VERY_LIGHT_BLUE</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_ARGENTINA</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_IBERIA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_INTI</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Inti.dds</PaganReligionButton>
@@ -341,7 +341,7 @@
 			<DefaultPlayerColor>PLAYERCOLOR_ARMENIA</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_ARMENIA</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_GRECO_ROMAN</ArtStyleType>
-			<UnitArtStyleType>UNIT_ARTSTYLE_GRECO_ROMAN</UnitArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_MIDDLE_EASTERN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_OLYMPIANISM</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Olympianism.dds</PaganReligionButton>
 			<Identifier>ARM</Identifier>
@@ -429,7 +429,7 @@
 			<Civilopedia>TXT_KEY_CIV_ASSYRIA_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_ASSYRIA</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_ASSYRIA</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_MIDDLE_EAST</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_CRESCENT</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_MIDDLE_EASTERN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_ANUNNAKI</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Anunnaki.dds</PaganReligionButton>
@@ -523,7 +523,7 @@
 			<Civilopedia>TXT_KEY_CIV_AUSTRALIA_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_AUSTRALIA</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_AUSTRALIA</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_ANGLO_AMERICA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_ATUA</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Atua.dds</PaganReligionButton>
@@ -629,7 +629,7 @@
 			<Civilopedia>TXT_KEY_CIV_AZTEC_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_GREEN</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_AZTEC</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_SOUTH_AMERICA</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_MESO_AMERICA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_TEOTL</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Teotl.dds</PaganReligionButton>
@@ -650,10 +650,13 @@
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
+				<City>Teotihuacan</City>
 				<City>Tlatelolco</City>
 				<City>Texcoco</City>
 				<City>Calixtlahuaca</City>
+				<City>Tlacopan</City>
 				<City>Atzcapotzalco</City>
+				<City>Tzintzuntzen</City>
 				<City>Malinalco</City>
 				<City>Tula</City>
 				<City>Tamuin</City>
@@ -752,7 +755,7 @@
 			<Civilopedia>TXT_KEY_CIV_BABYLONIA_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_MIDDLE_PURPLE</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_BABYLON</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_MIDDLE_EAST</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_CRESCENT</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_MIDDLE_EASTERN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_ANUNNAKI</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Anunnaki.dds</PaganReligionButton>
@@ -802,6 +805,10 @@
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
 					<BuildingType>BUILDING_BABYLONIAN_ZIGGURAT</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_ARENA</BuildingClassType>
+					<BuildingType>BUILDING_BABYLONIAN_GARDEN</BuildingType>
 				</Building>
 			</Buildings>
 			<Units>
@@ -854,7 +861,7 @@
 			<Civilopedia>TXT_KEY_CIV_BOER_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_GOLDEN_BROWN</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_BOER</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_ANGLO_AMERICA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_DRUIDISM</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Druidism.dds</PaganReligionButton>
@@ -946,7 +953,7 @@
 			<Civilopedia>TXT_KEY_CIV_BRAZIL_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_MIDDLE_GREEN</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_BRAZIL</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_IBERIA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_INTI</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Inti.dds</PaganReligionButton>
@@ -1048,7 +1055,7 @@
 			<Civilopedia>TXT_KEY_CIV_BURMA_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_PEACH_AND_DARK_BLUE</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_BURMA</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_ASIAN</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_SOUTH_EAST_ASIA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_ASIAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_VEDISM</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Vedism.dds</PaganReligionButton>
@@ -1296,7 +1303,7 @@
 			<Civilopedia>TXT_KEY_CIV_CANADA_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_CANADA_RED</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_CANADA</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_ANGLO_AMERICA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_DRUIDISM</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Druidism.dds</PaganReligionButton>
@@ -1536,7 +1543,7 @@
 			<Civilopedia>TXT_KEY_CIV_CELT_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_DARK_GRAY_GREEN</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_CELT</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_EUROPE</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_DRUIDISM</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Druidism.dds</PaganReligionButton>
@@ -1647,7 +1654,7 @@
 			<Civilopedia>TXT_KEY_CIV_CHAD_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_THISTLE</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_CHAD</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_AFRICAN</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_AFRICA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_AFRICAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_YORUBA</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Yoruba.dds</PaganReligionButton>
@@ -1750,7 +1757,7 @@
 			<Civilopedia>TXT_KEY_CIV_CHALUKYA_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_CHALUKYA</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_CHALUKYA</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_MIDDLE_EAST</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_INDIA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_MIDDLE_EASTERN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_VEDISM</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Vedism.dds</PaganReligionButton>
@@ -1927,7 +1934,7 @@
 			<Civilopedia>TXT_KEY_CIV_CHINA_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_LIGHT_YELLOW</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_CHINA</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_ASIAN</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_ASIA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_ASIAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_SHENDAO</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Shendao.dds</PaganReligionButton>
@@ -2057,7 +2064,7 @@
 			<Civilopedia>TXT_KEY_CIV_COLOMBIA_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_MIDDLE_INDIGO</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_COLOMBIA</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_IBERIA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_INTI</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Inti.dds</PaganReligionButton>
@@ -2151,7 +2158,7 @@
 			<Civilopedia>TXT_KEY_CIV_EGYPT_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_YELLOW</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_EGYPT</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_MIDDLE_EAST</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_EGYPT</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_MIDDLE_EASTERN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_PESEDJET</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Pesedjet.dds</PaganReligionButton>
@@ -2279,7 +2286,7 @@
 			<Civilopedia>TXT_KEY_CIV_ENGLAND_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_RED</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_ENGLAND</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_ANGLO_AMERICA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_DRUIDISM</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Druidism.dds</PaganReligionButton>
@@ -2397,7 +2404,7 @@
 			<Civilopedia>TXT_KEY_CIV_ETHIOPIA_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_LIME</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_ETHIOPIA</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_AFRICAN</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_AFRICA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_AFRICAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_ANUNNAKI</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Anunnaki.dds</PaganReligionButton>
@@ -2527,7 +2534,7 @@
 			<Civilopedia>TXT_KEY_CIV_FRANCE_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_DARK_BLUE</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_FRANCE</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_EUROPE</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_DRUIDISM</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Druidism.dds</PaganReligionButton>
@@ -2650,7 +2657,7 @@
 			<Civilopedia>TXT_KEY_CIV_GERMANY_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_GRAY</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_GERMANY</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_EUROPE</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_ASATRU</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Asatru.dds</PaganReligionButton>
@@ -2924,7 +2931,7 @@
 			<Civilopedia>TXT_KEY_CIV_HARAPPANS_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_PURPLE</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_HARAPPANS</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_MIDDLE_EAST</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_INDIA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_MIDDLE_EASTERN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_VEDISM</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Vedism.dds</PaganReligionButton>
@@ -3035,7 +3042,7 @@
 			<Civilopedia>TXT_KEY_CIV_HOLY_ROMAN_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_DARK_LEMON</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_HOLY_ROMAN</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_EUROPE</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_ASATRU</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Asatru.dds</PaganReligionButton>
@@ -3153,7 +3160,7 @@
 			<Civilopedia>TXT_KEY_CIV_HUNGARY_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_SIENNA_AND_WHITE</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_HUNGARY</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_EUROPE</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_TENGRI</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Tengri.dds</PaganReligionButton>
@@ -3377,7 +3384,7 @@
 			<Civilopedia>TXT_KEY_CIV_INDIA_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_PALE_ORANGE</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_INDIA</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_MIDDLE_EAST</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_INDIA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_MIDDLE_EASTERN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_VEDISM</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Vedism.dds</PaganReligionButton>
@@ -3500,7 +3507,7 @@
 			<Civilopedia>TXT_KEY_CIV_INDONESIA_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_TEAL</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_INDONESIA</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_ASIAN</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_SOUTH_EAST_ASIA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_ASIAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_VEDISM</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Vedism.dds</PaganReligionButton>
@@ -3715,7 +3722,7 @@
 			<Civilopedia>TXT_KEY_CIV_IRAN_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_LIGHT_ORANGE</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_IRAN</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_MIDDLE_EAST</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_CRESCENT</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_MIDDLE_EASTERN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_MAZDAISM</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Mazdaism.dds</PaganReligionButton>
@@ -3828,7 +3835,7 @@
 			<Civilopedia>TXT_KEY_CIV_ISRAEL_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_ISRAEL</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_ISRAEL</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_MIDDLE_EAST</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_ARABIA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_MIDDLE_EASTERN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_BAALISM</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Baalism.dds</PaganReligionButton>
@@ -3916,7 +3923,7 @@
 			<Civilopedia>TXT_KEY_CIV_ITALY_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_ITALY</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_ITALY</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_GRECO_ROMAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_OLYMPIANISM</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Olympianism.dds</PaganReligionButton>
@@ -4035,7 +4042,7 @@
 			<Civilopedia>TXT_KEY_CIV_JAPAN_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_WHITE</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_JAPAN</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_ASIAN</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_JAPAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_ASIAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_SHINTO</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Shinto.dds</PaganReligionButton>
@@ -4156,7 +4163,7 @@
 			<Civilopedia>TXT_KEY_CIV_KHAZARS_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_BLUISH_WHITE</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_KHAZARS</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_MONGOLIA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_MIDDLE_EASTERN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_TENGRI</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Tengri.dds</PaganReligionButton>
@@ -4261,7 +4268,7 @@
 			<Civilopedia>TXT_KEY_CIV_KHITAN_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_PINK</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_JURCHEN</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_ASIAN</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_ASIA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_ASIAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_SHENDAO</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Shendao.dds</PaganReligionButton>
@@ -4367,7 +4374,7 @@
 			<Civilopedia>TXT_KEY_CIV_KHMER_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_BROWNISH_RED</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_KHMER</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_ASIAN</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_SOUTH_EAST_ASIA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_ASIAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_VEDISM</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Vedism.dds</PaganReligionButton>
@@ -4483,7 +4490,7 @@
 			<Civilopedia>TXT_KEY_CIV_RUS'_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_DARK_YELLOW_AND_LIGHT_SKY_BLUE</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_KIEVAN_RUS</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_RUSSIA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_RODNOVERY</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Rodnovery.dds</PaganReligionButton>
@@ -4588,7 +4595,7 @@
 			<Civilopedia>TXT_KEY_CIV_CONGO_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_KHAKI</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_CONGO</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_AFRICAN</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_AFRICA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_AFRICAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_YORUBA</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Yoruba.dds</PaganReligionButton>
@@ -4700,7 +4707,7 @@
 			<Civilopedia>TXT_KEY_CIV_KOREA_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_KOREA</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_KOREA</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_ASIAN</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_JAPAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_ASIAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_SHENDAO</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Shendao.dds</PaganReligionButton>
@@ -4810,7 +4817,7 @@
 			<Civilopedia>TXT_KEY_CIV_MALI_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_PEACH</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_MALI</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_AFRICAN</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_AFRICA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_AFRICAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_YORUBA</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Yoruba.dds</PaganReligionButton>
@@ -4932,7 +4939,7 @@
 			<Civilopedia>TXT_KEY_CIV_MAMLUKS_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_MEDIUM_YELLOW</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_MAMLUKS</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_MIDDLE_EAST</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_ARABIA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_MIDDLE_EASTERN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_ANUNNAKI</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Anunnaki.dds</PaganReligionButton>
@@ -5028,7 +5035,7 @@
 			<Civilopedia>TXT_KEY_CIV_MANCHURIA_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_GOLD_AND_BLACK</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_MANCHURIA</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_ASIAN</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_ASIA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_ASIAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_SHENDAO</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Shendao.dds</PaganReligionButton>
@@ -5138,7 +5145,7 @@
 			<Civilopedia>TXT_KEY_CIV_MAYA_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_GREYISH_CYAN</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_MAYA</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_SOUTH_AMERICA</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_MESO_AMERICA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_TEOTL</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Teotl.dds</PaganReligionButton>
@@ -5262,7 +5269,7 @@
 			<Civilopedia>TXT_KEY_CIV_MEXICO_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_GREEN</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_MEXICO</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_IBERIA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_TEOTL</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Teotl.dds</PaganReligionButton>
@@ -5489,7 +5496,7 @@
 			<Civilopedia>TXT_KEY_CIV_MONGOL_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_BROWN</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_MONGOL</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_ASIAN</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_MONGOLIA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_ASIAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_TENGRI</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Tengri.dds</PaganReligionButton>
@@ -5600,7 +5607,7 @@
 			<Civilopedia>TXT_KEY_CIV_MOORS_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_LIGHT_BROWN</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_MOORS</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_MIDDLE_EAST</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_ARABIA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_MIDDLE_EASTERN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_ANUNNAKI</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Anunnaki.dds</PaganReligionButton>
@@ -5729,7 +5736,7 @@
 			<Civilopedia>TXT_KEY_CIV_MUGHALS_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_DARK_ROT_GREEN</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_MUGHALS</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_MIDDLE_EAST</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_CRESCENT</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_MIDDLE_EASTERN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_TENGRI</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Tengri.dds</PaganReligionButton>
@@ -5937,7 +5944,7 @@
 			<Civilopedia>TXT_KEY_CIV_NATIVE_AMERICA_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_LIGHT_BROWN</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_NATIVE_AMERICA</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_SOUTH_AMERICA</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_NATIVE_AMERICA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
 			<Identifier>NAT</Identifier>
 			<StartingYear>0</StartingYear>
@@ -6049,7 +6056,7 @@
 			<Civilopedia>TXT_KEY_CIV_NETHERLANDS_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_ORANGE</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_NETHERLANDS</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_EUROPE</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_ASATRU</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Asatru.dds</PaganReligionButton>
@@ -6176,7 +6183,7 @@
 			<Civilopedia>TXT_KEY_CIV_NIGERIA_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_LIGHT_GREEN</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_NIGERIA</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_AFRICAN</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_AFRICA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_AFRICAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_YORUBA</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Yoruba.dds</PaganReligionButton>
@@ -6412,7 +6419,7 @@
 			<Civilopedia>TXT_KEY_CIV_NOVGOROD_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_NOVGOROD</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_NOVGOROD</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_RUSSIA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_RODNOVERY</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Rodnovery.dds</PaganReligionButton>
@@ -6495,7 +6502,7 @@
 			<Civilopedia>TXT_KEY_CIV_NUBIA_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_ASPARAGUS</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_NUBIA</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_MIDDLE_EAST</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_EGYPT</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_MIDDLE_EASTERN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_PESEDJET</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Pesedjet.dds</PaganReligionButton>
@@ -6605,7 +6612,7 @@
 			<Civilopedia>TXT_KEY_CIV_OLMECS_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_YELLOWISH_JADE_GREEN</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_OLMECS</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_SOUTH_AMERICA</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_MESO_AMERICA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_TEOTL</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Teotl.dds</PaganReligionButton>
@@ -6721,7 +6728,7 @@
 			<Civilopedia>TXT_KEY_CIV_OMAN_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_AMANITA_MUSCARIA</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_OMAN</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_MIDDLE_EAST</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_ARABIA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_MIDDLE_EASTERN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_ANUNNAKI</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Anunnaki.dds</PaganReligionButton>
@@ -6809,7 +6816,7 @@
 			<Civilopedia>TXT_KEY_CIV_OTTOMAN_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_DARK_ORANGE</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_OTTOMAN</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_MIDDLE_EAST</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_CRESCENT</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_MIDDLE_EASTERN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_TENGRI</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Tengri.dds</PaganReligionButton>
@@ -6920,7 +6927,7 @@
 			<Civilopedia>TXT_KEY_CIV_PERSIA_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_LIGHT_ORANGE</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_PERSIA</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_MIDDLE_EAST</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_CRESCENT</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_MIDDLE_EASTERN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_MAZDAISM</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Mazdaism.dds</PaganReligionButton>
@@ -7055,7 +7062,7 @@
 			<Civilopedia>TXT_KEY_CIV_PHILIPPINES_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_DARK_ROSE</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_PHILIPPINES</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_ASIAN</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_SOUTH_EAST_ASIA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_ASIAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_VEDISM</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Vedism.dds</PaganReligionButton>
@@ -7140,7 +7147,7 @@
 			<Civilopedia>TXT_KEY_CIV_POLAND_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_MIDDLE_PINK</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_POLAND</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_EUROPE</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_RODNOVERY</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Rodnovery.dds</PaganReligionButton>
@@ -7262,7 +7269,7 @@
 					<bLeaderAvailability>1</bLeaderAvailability>
 				</Leader>
 			</Leaders>
-			<DerivativeCiv>CIVILIZATION_KIEVAN_RUS</DerivativeCiv>
+			<DerivativeCiv>CIVILIZATION_RUSSIA</DerivativeCiv>
 			<CivilizationSelectionSound>AS3D_POLAND_SELECT</CivilizationSelectionSound>
 			<CivilizationActionSound>AS3D_POLAND_ORDER</CivilizationActionSound>
 		</CivilizationInfo>
@@ -7274,7 +7281,7 @@
 			<Civilopedia>TXT_KEY_CIV_POLYNESIA_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_POLYNESIA</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_POLYNESIA</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_BARBARIAN</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_SOUTH_PACIFIC</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_ATUA</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Atua.dds</PaganReligionButton>
@@ -7397,7 +7404,7 @@
 			<Civilopedia>TXT_KEY_CIV_PORTUGAL_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_DARK_DARK_GREEN</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_PORTUGAL</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_IBERIA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_DRUIDISM</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Druidism.dds</PaganReligionButton>
@@ -7656,14 +7663,14 @@
 			<Civilopedia>TXT_KEY_CIV_RUSSIA_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_VERYDARK_RED</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_RUSSIA</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_RUSSIA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_RODNOVERY</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Rodnovery.dds</PaganReligionButton>
 			<Identifier>RUS</Identifier>
 			<StartingYear>1283</StartingYear>
 			<LoadingTimes>
-				<LoadingTime>35</LoadingTime>
+				<LoadingTime>30</LoadingTime>
 				<LoadingTime>15</LoadingTime>
 				<LoadingTime>0</LoadingTime>
 			</LoadingTimes>
@@ -7751,7 +7758,7 @@
 					<bLeaderAvailability>1</bLeaderAvailability>
 				</Leader>
 			</Leaders>
-			<DerivativeCiv>CIVILIZATION_KIEVAN_RUS</DerivativeCiv>
+			<DerivativeCiv>CIVILIZATION_POLAND</DerivativeCiv>
 			<CivilizationSelectionSound>AS3D_RUSSIA_SELECT</CivilizationSelectionSound>
 			<CivilizationActionSound>AS3D_RUSSIA_ORDER</CivilizationActionSound>
 		</CivilizationInfo>
@@ -7763,7 +7770,7 @@
 			<Civilopedia>TXT_KEY_CIV_SCOTLAND_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_SCOTLAND</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_SCOTLAND</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_EUROPE</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_DRUIDISM</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Druidism.dds</PaganReligionButton>
@@ -7874,7 +7881,7 @@
 			<Civilopedia>TXT_KEY_CIV_SPAIN_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_DARK_YELLOW</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_SPAIN</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_IBERIA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_DRUIDISM</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Druidism.dds</PaganReligionButton>
@@ -7986,7 +7993,7 @@
 			<Civilopedia>TXT_KEY_CIV_SUMERIA_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_DARK_INDIGO</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_SUMERIA</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_MIDDLE_EAST</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_CRESCENT</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_MIDDLE_EASTERN</UnitArtStyleType>
 			<Identifier>SUM</Identifier>
 			<StartingYear>0</StartingYear>
@@ -8074,7 +8081,7 @@
 			<Civilopedia>TXT_KEY_CIV_SWAHILI_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_SWAHILI</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_SWAHILI</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_AFRICAN</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_AFRICA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_MIDDLE_EASTERN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_YORUBA</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Yoruba.dds</PaganReligionButton>
@@ -8186,7 +8193,7 @@
 			<Civilopedia>TXT_KEY_CIV_SWEDEN_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_SWEDISH_BLUE_AND_YELLOW</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_SWEDEN</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_NORSE</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_ASATRU</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Asatru.dds</PaganReligionButton>
@@ -8277,7 +8284,7 @@
 			<Civilopedia>TXT_KEY_CIV_TAMILS_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_LIGHT_BLUE</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_TAMILS</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_MIDDLE_EAST</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_INDIA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_MIDDLE_EASTERN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_VEDISM</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Vedism.dds</PaganReligionButton>
@@ -8399,7 +8406,7 @@
 			<Civilopedia>TXT_KEY_CIV_TATAR_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_TATAR</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_TATAR</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_ASIAN</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_MONGOLIA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_ASIAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_TENGRI</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Tengri.dds</PaganReligionButton>
@@ -8494,7 +8501,7 @@
 			<Civilopedia>TXT_KEY_CIV_TEOTIHUACAN_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_TEOTIHUACAN</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_TEOTIHUACAN</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_SOUTH_AMERICA</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_MESO_AMERICA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_TEOTL</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Teotl.dds</PaganReligionButton>
@@ -8605,7 +8612,7 @@
 			<Civilopedia>TXT_KEY_CIV_THAILAND_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_MIDDLE_BLUE</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_THAILAND</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_ASIAN</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_SOUTH_EAST_ASIA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_ASIAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_VEDISM</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Vedism.dds</PaganReligionButton>
@@ -8725,7 +8732,7 @@
 			<Civilopedia>TXT_KEY_CIV_TIBET_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_MAROON</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_TIBET</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_ASIAN</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_ASIA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_ASIAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_SHENDAO</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Shendao.dds</PaganReligionButton>
@@ -8955,7 +8962,7 @@
 			<Civilopedia>TXT_KEY_CIV_TURKS_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_GREYISH_BLUE</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_TURKS</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_MIDDLE_EAST</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_CRESCENT</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_MIDDLE_EASTERN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_TENGRI</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Tengri.dds</PaganReligionButton>
@@ -9057,7 +9064,7 @@
 			<Civilopedia>TXT_KEY_CIV_VIETNAM_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_ORANGE_GREEN</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_VIETNAM</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_ASIAN</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_SOUTH_EAST_ASIA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_ASIAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_VEDISM</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Vedism.dds</PaganReligionButton>
@@ -9174,7 +9181,7 @@
 			<Civilopedia>TXT_KEY_CIV_VIKING_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_LIGHT_PURPLE</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_VIKING</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_NORSE</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_ASATRU</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Asatru.dds</PaganReligionButton>
@@ -9195,9 +9202,13 @@
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
+				<City>Birka</City>
+				<City>Sigtuna</City>
 				<City>Odense</City>
 				<City>Ribe</City>
 				<City>Lindholm</City>
+				<City>V&#228;ster&#229;s</City>
+				<City>Lund</City>
 				<City>Kaupang</City>
 				<City>Thingvellir</City>
 				<City>Stamford</City>
@@ -9212,6 +9223,7 @@
 				<City>Bj&#248;rgvin</City>
 				<City>T&#248;nsberg</City>
 				<City>Kirkjub&#248;ur</City>
+				<City>L&#246;d&#246;se</City>
 			</Cities>
 			<Buildings>
 				<Building>
@@ -9264,7 +9276,7 @@
 					<LeaderName>LEADER_RAGNAR</LeaderName>
 					<bLeaderAvailability>1</bLeaderAvailability>
 				</Leader>
-				<Leader>
+                                                                <Leader>
 					<LeaderName>LEADER_CHRISTIAN_IV</LeaderName>
 					<bLeaderAvailability>1</bLeaderAvailability>
 				</Leader>
@@ -9389,7 +9401,7 @@
 			<Civilopedia>TXT_KEY_CIV_YEMEN_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_MAROON_AND_WHITE</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_YEMEN</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_MIDDLE_EAST</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_ARABIA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_MIDDLE_EASTERN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_ANUNNAKI</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Anunnaki.dds</PaganReligionButton>
@@ -9477,7 +9489,7 @@
 			<Civilopedia>TXT_KEY_CIV_YUEZHI_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_BROWN_AND_MAROON</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_YUEZHI</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_MIDDLE_EAST</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_CRESCENT</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_MIDDLE_EASTERN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_TENGRI</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Tengri.dds</PaganReligionButton>
@@ -9581,7 +9593,7 @@
 			<Civilopedia>TXT_KEY_CIV_ZIMBABWE_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_MIDDLE_RED_INDIGO</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_ZIMBABWE</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_AFRICAN</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_AFRICA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_AFRICAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_YORUBA</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Yoruba.dds</PaganReligionButton>
@@ -9674,7 +9686,7 @@
 			<Civilopedia>TXT_KEY_CIV_ZULU_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_LIGHT_YELLOW</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_ZULU</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_AFRICAN</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_AFRICA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_AFRICAN</UnitArtStyleType>
 			<Identifier>ZUL</Identifier>
 			<StartingYear>0</StartingYear>
@@ -9792,6 +9804,7 @@
 			<Cities>
 				<City>Cherokee</City>
 				<City>Anasazi</City>
+				<City>Teoihuacan</City>
 				<City>Olmec</City>
 				<City>Chinook</City>
 				<City>Apache</City>
@@ -10019,6 +10032,7 @@
 			<Cities>
 				<City>Cherokee</City>
 				<City>Anasazi</City>
+				<City>Teoihuacan</City>
 				<City>Olmec</City>
 				<City>Zapotec</City>
 				<City>Chinook</City>
@@ -10227,7 +10241,7 @@
 			<Civilopedia>TXT_KEY_CIV_NATIVE_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_DARK_GRAY_YELLOW</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_NATIVE</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_AFRICAN</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_AFRICA</ArtStyleType>
 			<Identifier>NAT</Identifier>
 			<StartingYear>0</StartingYear>
 			<LoadingTimes>
@@ -10444,6 +10458,7 @@
 			<Cities>
 				<City>Cherokee</City>
 				<City>Anasazi</City>
+				<City>Teoihuacan</City>
 				<City>Olmec</City>
 				<City>Zapotec</City>
 				<City>Chinook</City>
@@ -10516,7 +10531,8 @@
 					<bFreeBuildingClass>1</bFreeBuildingClass>
 				</FreeBuildingClass>
 			</FreeBuildingClasses>
-			<FreeTechs/>
+			<FreeTechs>
+			</FreeTechs>
 			<DisableTechs/>
 			<InitialCivics>
 				<CivicType>CIVIC_CHIEFDOM</CivicType>
@@ -10564,6 +10580,7 @@
 			<Cities>
 				<City>Cherokee</City>
 				<City>Anasazi</City>
+				<City>Teoihuacan</City>
 				<City>Olmec</City>
 				<City>Zapotec</City>
 				<City>Chinook</City>
