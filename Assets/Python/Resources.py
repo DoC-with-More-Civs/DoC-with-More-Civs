@@ -125,8 +125,8 @@ class Resources:
 			
 		# Leoreth: prepare Tibet, 630 AD
 		elif iGameTurn == getTurnForYear(tBirth[iTibet])-1 and data.isPlayerEnabled(iTibet):
-			self.createResource(114, 59, iWheat)
-			self.createResource(112, 59, iHorse)
+			self.createResource(114, 51, iWheat)
+			self.createResource(113, 49, iHorse)
 			
 		# Leoreth: obstacles for colonization
 		elif iGameTurn == getTurnForYear(700):

@@ -74,7 +74,7 @@
 		<Spanish>Tiwanaku</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_INCA_COMMUNIST</Tag>
+		<Tag>TXT_KEY_CIV_TIWANAKU_COMMUNIST</Tag>
 		<English>%s2 Revolutionary Movement</English>
 		<French>
 			<Text>Mouvement r&#233;volutionnaire %s2</Text>
@@ -98,7 +98,7 @@
 		</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_INCA_FASCIST</Tag>
+		<Tag>TXT_KEY_CIV_TIWANAKU_FASCIST</Tag>
 		<English>Revolutionary Union of %s1</English>
 		<French>
 			<Text>Union r&#233;volutionnaire %s2</Text>

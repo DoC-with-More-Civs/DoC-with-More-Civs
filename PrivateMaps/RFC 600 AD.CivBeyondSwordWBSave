@@ -53251,6 +53251,7 @@ BeginPlot
 	x=110,y=56
 	isNOfRiver
 	RiverWEDirection=1
+	BonusType=BONUS_HORSE
                 RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_DESERT
 	PlotType=2

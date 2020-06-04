@@ -139,11 +139,11 @@ class Barbs:
 
 		if utils.isYearIn(-100, 1600):
 			# Brown Bear in Chukchi
-			self.checkLimitedSpawn(iBarbarian, iBear, 1, 5, (140, 65), (148, 76), self.spawnBears, iGameTurn, 10, 1)
+			self.checkLimitedSpawn(iBarbarian, iPolarBear, 1, 5, (140, 65), (148, 76), self.spawnBears, iGameTurn, 10, 1)
 			# Brown Bear and American Black Bear in Alaska and Western Canada
-			self.checkLimitedSpawn(iBarbarian, iBear, 1, 5,  (0, 67), (24, 77), self.spawnBears, iGameTurn, 5, 3)
+			self.checkLimitedSpawn(iBarbarian, iPolarBear, 1, 5,  (0, 67), (24, 77), self.spawnBears, iGameTurn, 5, 3)
 			# Polar Bear in Greenland and Eastern Canada
-			self.checkLimitedSpawn(iBarbarian, iBear, 1, 5, (25, 63), (44, 77), self.spawnBears, iGameTurn, 5, 5)
+			self.checkLimitedSpawn(iBarbarian, iPolarBear, 1, 5, (25, 63), (44, 77), self.spawnBears, iGameTurn, 5, 5)
 
 		if utils.isYearIn(-3000, -850):
 			if iHandicap >= 0:

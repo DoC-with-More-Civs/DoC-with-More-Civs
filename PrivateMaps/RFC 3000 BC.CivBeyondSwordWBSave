@@ -50906,6 +50906,7 @@ BeginPlot
 	x=110,y=56
 	isNOfRiver
 	RiverWEDirection=1
+	BonusType=BONUS_HORSE
 	TerrainType=TERRAIN_DESERT
 	PlotType=2
 EndPlot

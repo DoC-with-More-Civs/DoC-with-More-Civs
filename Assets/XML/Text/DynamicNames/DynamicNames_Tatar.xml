@@ -135,5 +135,38 @@
 	<TEXT>
 		<Tag>TXT_KEY_TATAR_YOKE_UP</Tag>
 		<English>You have received %d1 [ICON_GOLD] from %s2 yoke.</English>
-	</TEXT>	
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_TAT1_TITLE</Tag>
+		<English>Fine Food</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_TAT2_TITLE</Tag>
+		<English>Endless Wealth</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_TAT3_TITLE</Tag>
+		<English>Turkification</English>
+	</TEXT>
+	
+	<TEXT>
+		<Tag>TXT_KEY_UHV_TAT1</Tag>
+		<English>Acquire 15 Tatar cuisine materials in 1455AD</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_TAT2</Tag>
+		<English>Have 5000 gold by 1550AD</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_TAT2_EPIC</Tag>
+		<English>Have 7500 gold by 1550AD</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_TAT2_MARATHON</Tag>
+		<English>Have 15000 gold by 1550AD</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_TAT3</Tag> 
+		<English>Make sure at least 30% of world territory is controlled by Islamic civilizations</English>
+	</TEXT>
 </Civ4GameText>
