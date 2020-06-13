@@ -558,5 +558,11 @@
 			<Path>Art/Interface/TeamColor/FlagDECAL_Yuezhi.dds</Path>
 			<bWhiteFlag>0</bWhiteFlag>
 		</CivilizationArtInfo>
+		<CivilizationArtInfo>
+			<Type>ART_DEF_CIVILIZATION_XIONGNU</Type>
+			<Button>Art/Interface/Buttons/Civilizations/Xiongnu.dds</Button>
+			<Path>Art/Interface/TeamColor/FlagDECAL_WolfTotem.dds</Path>
+			<bWhiteFlag>0</bWhiteFlag>
+		</CivilizationArtInfo>
 	</CivilizationArtInfos>
 </Civ4ArtDefines>

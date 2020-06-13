@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Inca -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_XIONGNU_DESC</Tag>
+		<English>The Xiongnu</English>
+		<French>The Xiongnu</French>
+		<German>The Xiongnu</German>
+		<Italian>The Xiongnu</Italian>
+		<Spanish>The Xiongnu</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_XIONGNU_PEOPLES</Tag>
+		<English>Xiongnu Peoples</English>
+		<French>
+			<Text>Peuplades xiongnu</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</French>
+		<German>Xiongnu Peoples</German>
+		<Italian>
+			<Text>Popoli xiongnu</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Pueblos Xiongnu</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_XIONGNU_DEFAULT</Tag>
+		<English>Xiongnu Confederation</English>
+		<French>Xiongnu Confederation</French>
+		<German>Xiongnu Confederation</German>
+		<Italian>Xiongnu Confederation</Italian>
+		<Spanish>Xiongnu Confederation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_XIONGNU_ADJECTIVE</Tag>
+		<English>Xiongnu</English>
+		<French>Xiongnu</French>
+		<German>Xiongnu</German>
+		<Italian>Xiongnu</Italian>
+		<Spanish>Xiongnu</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_XIONGNU_SHORT_DESC</Tag>
+		<English>Xiongnu</English>
+		<French>Xiongnu</French>
+		<German>Xiongnu</German>
+		<Italian>Xiongnu</Italian>
+		<Spanish>Xiongnu</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_XIONGNU_FASCIST</Tag>
+		<English>%s2 Empire</English>
+		<French>
+			<Text>Empire %s2</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>%s2 Reich:%s2 Reich:%s2 Reich</Text>
+			<Gender>Neuter:Neuter:Neuter</Gender>
+			<Plural>0:0:0</Plural>
+		</German>
+		<Italian>
+			<Text>Impero %s2</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Imperio %s2</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_XIONGNU_GER_TEREG</Tag>
+		<English>Ger-Tereg</English>
+		<French>Ger-Tereg</French>
+		<German>Ger-Tereg</German>
+		<Italian>Ger-Tereg</Italian>
+		<Spanish>Ger-Tereg</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DOM_XIONGNU</Tag>
+		<English>It is the year 300 BC. The unification of the dispirate tribes of the Mongolian-Manchurian grasslands under Modu Chanyu affords the Xiongnu Confederation a great enough manpower to extend its influence into the neighboring regions and beyond.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_HELP_PROD_XIONGNU</Tag>
+		<English>[ICON_BULLET]%D1%%[ICON_PRODUCTION] for Light Cavalry</English>
+		<French>[ICON_BULLET]%D1%%[ICON_PRODUCTION] for Light Cavalry</French>
+		<German>[ICON_BULLET]%D1%%[ICON_PRODUCTION] for Light Cavalry</German>
+		<Italian>[ICON_BULLET]%D1%%[ICON_PRODUCTION] for Light Cavalry</Italian>
+		<Spanish>[ICON_BULLET]%D1%%[ICON_PRODUCTION] for Light Cavalry</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_MODU_CHANYU</Tag>
+		<English>Modu Chanyu</English>
+		<French>Modu Chanyu</French>
+		<German>Modu Chanyu</German>
+		<Italian>Modu Chanyu</Italian>
+		<Spanish>Modu Chanyu</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_AREA_110</Tag>
+		<English>India</English>
+		<French>
+			<Text>Inde</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>India</German>
+		<Italian>India</Italian>
+		<Spanish>India</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_XGU_TITLE</Tag>
+		<English>The Power of Nomads:</English>
+		<French>Le pouvoir des nomades :</French>
+		<German>Die Macht des Nomaden:</German>
+		<Italian>Il potere del nomadi:</Italian>
+		<Spanish>El poder del nomadas:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_XGU</Tag>
+		<English>Cavalry units starts with the Mobility promotion, + 25% production for Light Cavalry units.</English>
+		<French>Cavalry units starts with the Mobility promotion, + 25% production for Light Cavalry units.</French>
+		<German>Cavalry units starts with the Mobility promotion, + 25% production for Light Cavalry units.</German>
+		<Italian>Cavalry units starts with the Mobility promotion, + 25% production for Light Cavalry units.</Italian>
+		<Spanish>Cavalry units starts with the Mobility promotion, + 25% production for Light Cavalry units.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_XIONGNU_GULI</Tag>
+		<English>Guli</English>
+		<French>Guli</French>
+		<German>Guli</German>
+		<Italian>Guli</Italian>
+		<Spanish>Guli</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_XGU1_TITLE</Tag>
+		<English>Heqin</English>
+		<French>Heqin</French>
+		<German>Heqin</German>
+		<Italian>Heqin</Italian>
+		<Spanish>Heqin</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_XGU1</Tag>
+		<English>Succesfully demand tribute from 5 different civilizations by 210 CE</English>
+		<French>Succesfully demand tribute from 5 different civilizations by 210 CE</French>
+		<German>Succesfully demand tribute from 5 different civilizations by 210 CE</German>
+		<Italian>Succesfully demand tribute from 5 different civilizations by 210 CE</Italian>
+		<Spanish>Succesfully demand tribute from 5 different civilizations by 210 CE</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_XGU2_TITLE</Tag>
+		<English>The Great Nomadic Empire</English>
+		<French>The Great Nomadic Empire</French>
+		<German>The Great Nomadic Empire</German>
+		<Italian>The Great Nomadic Empire</Italian>
+		<Spanish>The Great Nomadic Empire</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_XGU2</Tag>
+		<English>Be the largest civilization in the world in 210 CE</English>
+		<French>Be the largest civilization in the world in 210 CE</French>
+		<German>Be the largest civilization in the world in 210 CE</German>
+		<Italian>Be the largest civilization in the world in 210 CE</Italian>
+		<Spanish>Be the largest civilization in the world in 210 CE</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_XGU3_TITLE</Tag>
+		<English>Lost Hunnic Connection</English>
+		<French>Lost Hunnic Connection</French>
+		<German>Lost Hunnic Connection</German>
+		<Italian>Lost Hunnic Connection</Italian>
+		<Spanish>Lost Hunnic Connection</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_XGU3</Tag>
+		<English>Conquer a city in Europe and India by 560 CE</English>
+		<French>Conquer a city in Europe and India by 560 CE</French>
+		<German>Conquer a city in Europe and India by 560 CE</German>
+		<Italian>Conquer a city in Europe and India by 560 CE</Italian>
+		<Spanish>Conquer a city in Europe and India by 560 CE</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_DEMANDS</Tag>
+		<English>Demands</English>
+		<French>Demands</French>
+		<German>Demands</German>
+		<Italian>Demands</Italian>
+		<Spanish>Demands</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_LARGEST_CIV</Tag>
+		<English>Largest Civilization: %s1</English>
+		<French>Largest Civilization: %s1</French>
+		<German>Largest Civilization: %s1</German>
+		<Italian>Largest Civilization: %s1</Italian>
+		<Spanish>Largest Civilization: %s1</Spanish>
+	</TEXT>
+</Civ4GameText>

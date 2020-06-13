@@ -105,7 +105,8 @@ tPool3 = (iEgypt,
 	iNovgorod,
 	iTatar,
 	iMuisca,
-	iYuezhi)
+	iYuezhi,
+	iXiongnu)
 
 
 class Communications:

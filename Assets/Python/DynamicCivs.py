@@ -474,14 +474,14 @@ dForeignNames = {
 	},
 }
 
-lRepublicOf = [iEgypt, iIndia, iChina, iPersia, iJapan, iEthiopia, iKorea, iVikings, iTurks, iKhazars, iTibet, iIndonesia, iKhmer, iHolyRome, iMali, iPoland, iMughals, iOttomans, iThailand, iMamluks, iPhilippines, iBoers, iVietnam, iZimbabwe, iSwahili, iSweden, iNigeria, iOman, iChad, iCeltia, iMississippi, iMuisca]
-lRepublicAdj = [iBabylonia, iRome, iMoors, iSpain, iFrance, iPortugal, iInca, iNorteChico, iTiwanaku, iWari, iItaly, iAztecs, iArgentina, iAustralia, iManchuria, iHungary, iInuit]
+lRepublicOf = [iEgypt, iIndia, iChina, iPersia, iJapan, iEthiopia, iKorea, iVikings, iTurks, iKhazars, iTibet, iIndonesia, iKhmer, iHolyRome, iMali, iPoland, iMughals, iOttomans, iThailand, iMamluks, iPhilippines, iBoers, iVietnam, iZimbabwe, iSwahili, iSweden, iNigeria, iOman, iChad, iCeltia, iMississippi]
+lRepublicAdj = [iBabylonia, iRome, iMoors, iSpain, iFrance, iPortugal, iInca, iNorteChico, iTiwanaku, iWari, iItaly, iAztecs, iArgentina, iAustralia, iManchuria, iHungary, iInuit, iXiongnu, iYuezhi, iMuisca]
 
-lSocialistRepublicOf = [iMoors, iHolyRome, iBrazil, iVikings, iMamluks, iPhilippines, iBoers, iVietnam, iZimbabwe, iSwahili, iSweden, iNigeria, iMuisca]
-lSocialistRepublicAdj = [iPersia, iTurks, iKhazars, iItaly, iAztecs, iArgentina, iAustralia]
+lSocialistRepublicOf = [iMoors, iHolyRome, iBrazil, iVikings, iMamluks, iPhilippines, iBoers, iVietnam, iZimbabwe, iSwahili, iSweden, iNigeria]
+lSocialistRepublicAdj = [iPersia, iTurks, iKhazars, iItaly, iAztecs, iArgentina, iAustralia, iMuisca]
 
 lPeoplesRepublicOf = [iIndia, iChina, iPolynesia, iJapan, iTibet, iIndonesia, iMali, iPoland, iMughals, iThailand, iCongo, iMamluks, iPhilippines, iBoers, iVietnam, iZimbabwe, iSwahili, iSweden, iNigeria, iOman, iChad, iMississippi]
-lPeoplesRepublicAdj = [iTamils, iByzantium, iMongolia, iAustralia, iManchuria, iKievanRus, iHungary]
+lPeoplesRepublicAdj = [iTamils, iByzantium, iMongolia, iAustralia, iManchuria, iKievanRus, iHungary, iYuezhi, iXiongnu]
 
 lIslamicRepublicOf = [iIndia, iPersia, iMali, iMughals]
 
@@ -596,6 +596,7 @@ dStartingLeaders = [
 	iMaya : iPacal,
 	iJapan : iKammu,
 	iTamils : iRajendra,
+	iXiongnu : iModuChanyu,
 	iEthiopia : iEzana,
 	iVietnam : iTrung,
 	iTeotihuacan : iAtlatlCauac,
@@ -2107,6 +2108,10 @@ def specificTitle(iPlayer, lPreviousOwners=[]):
 		if iEra >= iMedieval:
 			return "TXT_KEY_KINGDOM_OF"
 		
+		if bEmpire:
+			return "TXT_KEY_EMPIRE_ADJECTIVE"
+
+	elif iPlayer == iXiongnu:
 		if bEmpire:
 			return "TXT_KEY_EMPIRE_ADJECTIVE"
 			

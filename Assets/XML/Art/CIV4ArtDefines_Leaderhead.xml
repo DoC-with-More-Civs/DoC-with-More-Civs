@@ -1446,5 +1446,13 @@
 			<NoShaderNIF>Art/Leaderheads/kanishka/Kanishka_noshader.nif</NoShaderNIF>
 			<BackgroundKFM>Art/Leaderheads/kanishka/Kanishka_bg.kfm</BackgroundKFM>
 		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_MODU_CHANYU</Type>
+			<Button>Art/Leaderheads/Bleda/Btn_LH_Bleda.dds</Button>
+			<NIF>Art/Leaderheads/Bleda/hannibal.nif</NIF>
+			<KFM>Art/Leaderheads/Bleda/hannibal.kfm</KFM>
+			<NoShaderNIF>Art/Leaderheads/Bleda/hannibal_noshader.nif</NoShaderNIF>
+			<BackgroundKFM>Art/Leaderheads/Bleda/hannibal_bg.kfm</BackgroundKFM>
+		</LeaderheadArtInfo>
 	</LeaderheadArtInfos>
 </Civ4ArtDefines>

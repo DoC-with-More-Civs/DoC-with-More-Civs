@@ -174,6 +174,10 @@ void CvUnit::init(int iID, UnitTypes eUnit, UnitAITypes eUnitAI, PlayerTypes eOw
 
 	for (iI = 0; iI < GC.getNumPromotionInfos(); iI++)
 	{
+		if (getOwnerINLINE() == XIONGNU && isMounted() && iI == GC.getInfoTypeForString("PROMOTION_MOBILITY"))
+		{
+			setHasPromotion(((PromotionTypes)iI), true);
+		}
 		if (m_pUnitInfo->getFreePromotions(iI))
 		{
 			setHasPromotion(((PromotionTypes)iI), true);

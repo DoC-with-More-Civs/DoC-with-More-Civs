@@ -17335,6 +17335,17 @@ void CvGameTextMgr::setProductionHelp(CvWStringBuffer &szBuffer, CvCity& city)
 				}
 			}
 		}
+		// 1SDAN: Xiongnu UP: +25% production of light cavalry units
+		if (city.getOwnerINLINE() == HOLY_ROME)
+		{
+			if (GC.getUnitInfo((UnitTypes)eUnit).getUnitCombatType() == (UnitCombatTypes)GC.getInfoTypeForString("UNITCOMBAT_LIGHT_CAVALRY"))
+			{
+
+				szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_PROD_XIONGNU", 25));
+				szBuffer.append(NEWLINE);
+				iBaseModifier += 25;
+			}
+		}
 		// Leoreth: Statue of Zeus effect
 		/*if (GET_PLAYER(city.getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)STATUE_OF_ZEUS) && city.isHasRealBuilding(getUniqueBuilding(city.getCivilizationType(), (BuildingTypes)PAGAN_TEMPLE)))
 		{

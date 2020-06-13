@@ -184,7 +184,11 @@ class Barbs:
 			
 		#mongolia
 		if utils.isYearIn(-210, 400):
-			self.checkSpawn(iBarbarian, iHorseArcher, 3 + iHandicap, (110, 58), (129, 65), self.spawnNomads, iGameTurn, 7-iHandicap, 0, ["TXT_KEY_ADJECTIVE_XIONGNU"])
+			self.checkSpawn(iBarbarian, iHorseArcher, 3 + iHandicap, (118, 55), (129, 58), self.spawnNomads, iGameTurn, 7-iHandicap, 0, ["TXT_KEY_ADJECTIVE_XIONGNU"])
+		elif utils.isYearIn(-210, 400):
+			self.checkSpawn(iBarbarian, iHorseArcher, 1 + iHandicap, (106, 54), (114, 59), self.spawnNomads, iGameTurn, 7-iHandicap, 0, ["TXT_KEY_ADJECTIVE_XIONGNU"])
+		elif utils.isYearIn(-210, 400):
+			self.checkSpawn(iBarbarian, iHorseArcher, 1 + iHandicap, (114, 60), (125, 65), self.spawnNomads, iGameTurn, 7-iHandicap, 0, ["TXT_KEY_ADJECTIVE_XIONGNU"])
 		elif utils.isYearIn(400, 900):
 			iNumUnits = 3 + iHandicap
 			self.checkSpawn(iBarbarian, iHorseArcher, iNumUnits, (110, 58), (129, 65), self.spawnNomads, iGameTurn, 6-iHandicap, 0, ["TXT_KEY_ADJECTIVE_GOKTURK", "TXT_KEY_ADJECTIVE_UIGHUR"])

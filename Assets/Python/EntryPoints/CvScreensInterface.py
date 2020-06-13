@@ -1316,7 +1316,13 @@ def getUHVTileInfo(argsList):
 		if (x, y) in Areas.getCoreArea(iYuezhi, True) and y <= 43:
 			return 109
 
-		# continue with 109
+	elif iPlayer == iXiongnu:
+		if (x, y) in utils.getRegionPlots(lEurope):
+			return 29
+		if (x, y) in utils.getRegionPlots(lIndia):
+			return 110
+
+		# continue with 111
 	return -1
 		
 def getCityName(argsList):

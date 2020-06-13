@@ -919,6 +919,22 @@ def checkTurn(iGameTurn, iPlayer):
 		if iGameTurn == getTurnForYear(1200):
 			expire(iTamils, 2)
 					
+	elif iPlayer == iXiongnu:
+
+		# first goal: Succesfully demand tribute from 5 different civilizations by 100 CE
+		# second goal: Be the largest civilization in the world in 210 CE
+		if iGameTurn == getTurnForYear(210):
+			expire(iXiongnu, 0)
+
+			if iXiongnu == getBestPlayer(iPlayer, getLandPercent):
+				win(iXiongnu, 1)
+			else:
+				lose(iXiongnu, 1)
+
+		# third goal: Conquer a city in Europe and India by 560 CE
+		if iGameTurn == getTurnForYear(560):
+			expire(iXiongnu)
+
 	elif iPlayer == iEthiopia:
 		
 		# first goal: acquire three incense resources by 400 AD
@@ -2628,6 +2644,24 @@ def onCityAcquired(iPlayer, iOwner, city, bConquest, bCapital):
 	if (city.getX(), city.getY()) in data.lCeltiaConqueredCapitals:
 		data.lCeltiaConqueredCapitals.remove((city.getX(), city.getY()))
 
+	# third xiongnu goal: Conquer a city in Europe and India by 560 CE
+
+	if isPossible(iXiongnu, 2):
+		if iPlayer == iXiongnu: # 0 = None, 1 = Europe, 2 = India
+			if city.getRegionID() in lEurope:
+				if data.iXiongnuCityTernary == 0:
+					data.iXiongnuCityTernary = 1
+				elif data.iXiongnuCityTernary == 2:
+					win(iXiongnu, 2)
+			elif city.getRegionID() in lIndia:
+				if data.iXiongnuCityTernary == 0:
+					data.iXiongnuCityTernary = 2
+				elif data.iXiongnuCityTernary == 1:
+					win(iXiongnu, 2)
+
+
+	# first celtic goal: Raze 2 Capitals by 200 BC
+
 	if isPossible(iCeltia, 0):
 		if iPlayer == iCeltia:
 			if bConquest and bCapital:
@@ -3095,6 +3129,17 @@ def onCityCaptureGold(iPlayer, iGold):
 		if isPossible(iVikings, 2):
 			data.iVikingGold += iGold
 		
+def onPlayerDemandAccepted(iAcceptingPlayer, iDemandingPlayer):
+
+	# first Xiongnu Goal: Succesfully demand tribute from 5 different civilizations by 100 CE
+	if iDemandingPlayer == iXiongnu:
+		if isPossible(iXiongnu, 0):
+			if not iAcceptingPlayer in data.lXiongnuCivs:
+				data.lXiongnuCivs.append(iAcceptingPlayer)
+				data.iXiongnuDemands += 1
+				if data.iXiongnuDemands >= 5:
+					win(iXiongnu, 0)
+
 def onPlayerGoldTrade(iPlayer, iBuyer, iGold):
 
 	# third Tamil goal: acquire 4000 gold by trade by 1200 AD
@@ -5386,6 +5431,16 @@ def getUHVHelp(iPlayer, iGoal):
 		elif iGoal == 2:
 			iTradeGold = data.iTamilTradeGold / 100
 			aHelp.append(getIcon(iTradeGold >= utils.getTurns(4000)) + localText.getText("TXT_KEY_VICTORY_TRADE_GOLD", (iTradeGold, utils.getTurns(4000))))
+
+	elif iPlayer == iXiongnu:
+		if iGoal == 0:
+			aHelp.append(getIcon(data.iXiongnuDemands >= 5) + localText.getText("TXT_KEY_VICTORY_NUM_STRING", ("TXT_KEY_VICTORY_DEMANDS", data.iXiongnuDemands, 5)))
+		if iGoal == 1:
+			iLeadingCiv = getBestPlayer(iPlayer, getLandPercent)
+			iLeaderScore = getLandPercent(iLeadingCiv)
+			aHelp.append(getIcon(iLeadingCiv == iXiongnu) + localText.getText("TXT_KEY_VICTORY_LARGEST_CIV", (gc.getPlayer(iLeadingCiv).getCivilizationShortDescription(0),)) + " (" + str(int(iLeaderScore)) + ")")
+		if iGoal == 2:
+			aHelp.append(getIcon(data.iXiongnuCityTernary == 1 or isWon(iXiongnu, 2)) + localText.getText("TXT_KEY_UHV_AREA_29", ()) + ' ' + getIcon(data.iXiongnuCityTernary == 2 or isWon(iXiongnu, 2)) + localText.getText("TXT_KEY_UHV_AREA_110", ()))
 
 	elif iPlayer == iEthiopia:
 		if iGoal == 0:

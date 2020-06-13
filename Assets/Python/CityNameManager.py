@@ -59,6 +59,7 @@ def getLanguages(iCiv):
 		if utils.isReborn(iCiv): return (iLangSpanish,)
 		return (iLangMayan, iLangAztec)
 	elif iCiv == iTamils: return (iLangIndian,)
+	elif iCiv == iXiongnu: return (iLangYuezhi, iLangChinese, iLangMongolian)
 	elif iCiv == iEthiopia: return (iLangEthiopian,)
 	elif iCiv == iVietnam: return (iLangVietnamese, iLangKhmer,)
 	elif iCiv == iTeotihuacan: return (iLangTeotihuacan, iLangAztec, iLangMayan)

@@ -277,6 +277,9 @@ class GameData:
 		self.lCeltiaConqueredCapitals = []
 		self.iTiwanakuGoldenAgeTurns = 0
 		self.iMuiscaTradeGold = 0
+		self.iXiongnuDemands = 0
+		self.iXiongnuCityTernary = 0 # 0 = None, 1 = Europe, 2 = India
+		self.lXiongnuCivs = []
 		
 		self.tFirstTurkicCapital = None
 		self.tSecondTurkicCapital = None

@@ -3745,6 +3745,15 @@ int CvCity::getProductionModifier(UnitTypes eUnit) const
 		}
 	}
 
+	// 1SDAN: Xiongnu UP: +25% production of light cavalry units
+	if (getOwnerINLINE() == XIONGNU)
+	{
+		if (GC.getUnitInfo((UnitTypes)eUnit).getUnitCombatType() == (UnitCombatTypes)GC.getInfoTypeForString("UNITCOMBAT_LIGHT_CAVALRY"))
+		{
+			iMultiplier += 25;
+		}
+	}
+
 	// Leoreth: Statue of Zeus effect: +25% military production speed in cities with pagan temples
 	/*if (GET_PLAYER(getOwnerINLINE()).isHasBuilding((BuildingTypes)STATUE_OF_ZEUS) && !GET_TEAM((TeamTypes)getOwnerINLINE()).isHasTech((TechTypes)THEOLOGY))
 	{
