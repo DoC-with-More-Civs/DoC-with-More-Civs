@@ -186,10 +186,24 @@ class Scoreboard:
 		self._activePlayer = gc.getGame().getActivePlayer()
 		self._teamScores = []
 		self._playerScores = []
+		self._playerScoresSorted = []
 		self._teamScoresByID = {}
 		self._anyHas = [ False ] * NUM_PARTS
 		self._currTeamScores = None
 		self._currPlayerScore = None
+		self._deals = DealUtil.findDealsByPlayerAndType(self._activePlayer, TRADE_TYPES)
+		self._iSelect = -1
+		self._iPlayerRank = -1
+		
+	def reset(self):
+		self._teamScores = []
+		self._playerScores = []
+		self._playerScoresSorted = []
+		self._teamScoresByID = {}
+		self._anyHas = [ False ] * NUM_PARTS
+		self._currTeamScores = None
+		self._currPlayerScore = None
+		self._iPlayerRank = -1
 		self._deals = DealUtil.findDealsByPlayerAndType(self._activePlayer, TRADE_TYPES)
 		
 	def addTeam(self, team, rank):
@@ -205,9 +219,11 @@ class Scoreboard:
 		if self._currTeamScores:
 			self._currPlayerScore = self._currTeamScores.addPlayer(player, rank)
 			self._playerScores.append(self._currPlayerScore)
+		if player.isHuman():
+			self._iPlayerRank = len(self._playerScores)
 		
 	def size(self):
-		return len(self._playerScores)
+		return len(self._playerScoresSorted)
 		
 		
 	def setAlive(self):
@@ -304,6 +320,17 @@ class Scoreboard:
 	def setOOS(self, value):
 		self._set(OOS, smallText(value))
 		
+	def changeSelect(self, iValue):
+		self._iSelect = max(0, min(self._iSelect + iValue, len(self._playerScores)-ScoreOpt.getMaxPlayers()))
+		
+	def updateSelect(self):
+		maxPlayers = ScoreOpt.getMaxPlayers()
+		if maxPlayers > 0 and len(self._playerScores) > maxPlayers:
+			if self._iSelect == -1:
+				self._iSelect = self._iPlayerRank - maxPlayers/2 -1
+			self._iSelect = max(0, min(self._iSelect, len(self._playerScores)-ScoreOpt.getMaxPlayers()))
+		else:
+			self._iSelect = -1
 		
 	def _getContactWidget(self):
 		return (WidgetTypes.WIDGET_CONTACT_CIV, self._currPlayerScore.getID(), -1)
@@ -343,12 +370,18 @@ class Scoreboard:
 		
 	def sort(self):
 		"""Sorts the list by pulling any vassals up below their masters."""
+		self._playerScoresSorted = self._playerScores
 		if ScoreOpt.isGroupVassals():
-			self._playerScores.sort(lambda x, y: cmp(x.sortKey(), y.sortKey()))
-			self._playerScores.reverse()
+			self._playerScoresSorted.sort(lambda x, y: cmp(x.sortKey(), y.sortKey()))
+			self._playerScoresSorted.reverse()
 		maxPlayers = ScoreOpt.getMaxPlayers()
-		if maxPlayers > 0 and len(self._playerScores) > maxPlayers:
-			self._playerScores = self._playerScores[len(self._playerScores) - maxPlayers:]
+		if maxPlayers > 0 and len(self._playerScoresSorted) > maxPlayers:
+			self._playerScoresSorted = self._playerScoresSorted[self._iSelect:self._iSelect+maxPlayers]
+			# always show the human player
+			if self._iPlayerRank < self._iSelect+1:
+				self._playerScoresSorted[0] = self._playerScores[self._iPlayerRank-1]
+			elif self._iPlayerRank > self._iSelect + maxPlayers:
+				self._playerScoresSorted[-1] = self._playerScores[self._iPlayerRank-1]
 		
 	def hide(self, screen):
 		"""Hides the text from the screen before building the scoreboard."""
@@ -366,6 +399,7 @@ class Scoreboard:
 		self.hide(screen)
 		self.assignRanks()
 		self.gatherVassals()
+		self.updateSelect()
 		self.sort()
 		interface = CyInterface()
 		xResolution = screen.getXResolution()
@@ -412,7 +446,7 @@ class Scoreboard:
 				width = column.width
 				value = column.text
 				x -= spacing
-				for p, playerScore in enumerate(self._playerScores):
+				for p, playerScore in enumerate(self._playerScoresSorted):
 					if (playerScore.has(c) and playerScore.value(c)):
 						name = "ScoreText%d-%d" %( p, c )
 						widget = playerScore.widget(c)
@@ -431,7 +465,7 @@ class Scoreboard:
 			
 			elif (type == DYNAMIC):
 				width = 0
-				for playerScore in self._playerScores:
+				for playerScore in self._playerScoresSorted:
 					if (playerScore.has(c)):
 						value = playerScore.value(c)
 						if (c == NAME and playerScore.isVassal() and ScoreOpt.isGroupVassals()):
@@ -446,7 +480,7 @@ class Scoreboard:
 					spacing = defaultSpacing
 					continue
 				x -= spacing
-				for p, playerScore in enumerate(self._playerScores):
+				for p, playerScore in enumerate(self._playerScoresSorted):
 					if (playerScore.has(c)):
 						name = "ScoreText%d-%d" %( p, c )
 						value = playerScore.value(c)
@@ -479,7 +513,7 @@ class Scoreboard:
 			else: # SPECIAL
 				if (c == RESEARCH):
 					x -= spacing
-					for p, playerScore in enumerate(self._playerScores):
+					for p, playerScore in enumerate(self._playerScoresSorted):
 						if (playerScore.has(c)):
 							tech = playerScore.value(c)
 							name = "ScoreTech%d" % p
@@ -490,17 +524,28 @@ class Scoreboard:
 					totalWidth += techIconSize + spacing
 					spacing = defaultSpacing
 		
-		for playerScore in self._playerScores:
+		for playerScore in self._playerScoresSorted:
 			interface.checkFlashReset( playerScore.getID() )
 		
 		if ( interface.getShowInterface() == InterfaceVisibility.INTERFACE_SHOW or interface.isInAdvancedStart()):
 			y = yResolution - 186
 		else:
 			y = yResolution - 68
-		screen.setPanelSize( "ScoreBackground", xResolution - 21 - totalWidth, y - (height * self.size()) - 4, 
+		screen.setPanelSize( "ScoreBackground", xResolution - 21 - totalWidth, y - (height * self.size()) - 8, 
 							 totalWidth + 12, (height * self.size()) + 8 )
 		screen.show( "ScoreBackground" )
 		timer.log()
+		
+		# scroll buttons
+		screen.hide("ScoreBoardScrollUp")
+		screen.hide("ScoreBoardScrollDown")
+		
+		maxPlayers = ScoreOpt.getMaxPlayers()
+		if maxPlayers > 0 and len(self._playerScores) > maxPlayers:
+			if self._iSelect < len(self._playerScores) - maxPlayers:
+				screen.setImageButton("ScoreBoardScrollUp", "Art/Interface/Buttons/up_arrow.dds", xResolution - 21 - 24, y - (height * self.size()) - 24-2, 24, 24, WidgetTypes.WIDGET_GENERAL, -1, -1)
+			if self._iSelect > 0:
+				screen.setImageButton("ScoreBoardScrollDown", "Art/Interface/Buttons/down_arrow.dds", xResolution - 21 - 24, y-2, 24, 24, WidgetTypes.WIDGET_GENERAL, -1, -1)
 
 
 class TeamScores:

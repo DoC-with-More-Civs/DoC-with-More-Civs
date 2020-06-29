@@ -321,6 +321,8 @@ class CvMainInterface:
 		WidgetUtil.createWidget("WIDGET_ESPIONAGE_SELECT_MISSION")
 		WidgetUtil.createWidget("WIDGET_GO_TO_CITY")
 
+		# scoreboard
+		self.scores = Scoreboard.Scoreboard()
 		
 		
 
@@ -1056,6 +1058,8 @@ class CvMainInterface:
 		
 		screen.addPanel( "ScoreBackground", u"", u"", True, False, 0, 0, 0, 0, PanelStyles.PANEL_STYLE_HUD_HELP )
 		screen.hide( "ScoreBackground" )
+		screen.hide("ScoreBoardScrollUp")
+		screen.hide("ScoreBoardScrollDown")
 
 		for i in range( gc.getMAX_PLAYERS() ):
 			szName = "ScoreText" + str(i)
@@ -4995,6 +4999,8 @@ class CvMainInterface:
 		yResolution = screen.getYResolution()
 		
 		screen.hide( "ScoreBackground" )
+		screen.hide("ScoreBoardScrollUp")
+		screen.hide("ScoreBoardScrollDown")
 		
 # BUG - Align Icons - start
 		for i in range( gc.getMAX_PLAYERS() ):
@@ -5017,7 +5023,8 @@ class CvMainInterface:
 # BUG - Align Icons - start
 				bAlignIcons = ScoreOpt.isAlignIcons()
 				if (bAlignIcons):
-					scores = Scoreboard.Scoreboard()
+					scores = self.scores
+					scores.reset()
 # BUG - Align Icons - end
 
 # BUG - 3.17 No Espionage - start
@@ -5459,6 +5466,8 @@ class CvMainInterface:
 			else:
 				bHasOptions = False
 				screen.hide( "ScoreBackground" )
+				screen.hide("ScoreBoardScrollUp")
+				screen.hide("ScoreBoardScrollDown")
 
 			# set up toggle button
 			screen.setState("GlobeToggle", True)
@@ -5701,6 +5710,14 @@ class CvMainInterface:
 				self.setFieldofView_Text(screen)
 				MainOpt.setFieldOfView(self.iField_View)
 # BUG - field of view slider - end
+
+		if inputClass.getNotifyCode() == NotifyCode.NOTIFY_CLICKED:
+			if inputClass.getFunctionName() == "ScoreBoardScrollUp":
+				self.scores.changeSelect(1)
+				self.updateScoreStrings()
+			elif inputClass.getFunctionName() == "ScoreBoardScrollDown":
+				self.scores.changeSelect(-1)
+				self.updateScoreStrings()
 			
 		# Leoreth: sacrifice Aztec slaves
 		if (inputClass.getNotifyCode() == 11 and inputClass.getData1() == 10000 and inputClass.getData2() == 10000):
