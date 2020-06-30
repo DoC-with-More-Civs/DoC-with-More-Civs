@@ -1484,5 +1484,26 @@
 			<fBlue>0.10</fBlue>
 			<fAlpha>1.00</fAlpha>
 		</ColorVal>
+		<ColorVal>
+			<Type>COLOR_PLAYER_AZURE</Type>
+			<fRed>0.00</fRed>
+			<fGreen>0.50</fGreen>
+			<fBlue>1.00</fBlue>
+			<fAlpha>1.00</fAlpha>
+		</ColorVal>
+		<ColorVal>
+			<Type>COLOR_PLAYER_AZURE_TEXT</Type>
+			<fRed>0.15</fRed>
+			<fGreen>0.50</fGreen>
+			<fBlue>1.00</fBlue>
+			<fAlpha>1.00</fAlpha>
+		</ColorVal>
+		<ColorVal>
+			<Type>COLOR_PLAYER_VERMILION</Type>
+			<fRed>0.89</fRed>
+			<fGreen>0.26</fGreen>
+			<fBlue>0.20</fBlue>
+			<fAlpha>1.00</fAlpha>
+		</ColorVal>
 	</ColorVals>
 </Civ4ColorVals>

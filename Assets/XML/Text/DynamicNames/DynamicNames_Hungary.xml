@@ -49,4 +49,16 @@
 		<Italian>Hungary</Italian>
 		<Spanish>Hungary</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_HUNGARU_AUSTRO_HUNGARIAN</Tag>
+		<English>Austro-Hungarian</English>
+		<French>
+			<Text>austro-hongrois:austro-hongroise:austro-hongrois:austro-hongroises</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</French>
+		<German>Austro-Hungarian</German>
+		<Italian>Austro-Hungarian</Italian>
+		<Spanish>Austro-Hungarian</Spanish>
+	</TEXT>
 </Civ4GameText>

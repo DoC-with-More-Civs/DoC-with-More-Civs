@@ -740,11 +740,45 @@ def calculateStability(iPlayer):
 	bColonialism = iCivicTerritory == iColonialism
 	bNationhood = iCivicTerritory == iNationhood
 	bMultilateralism = iCivicTerritory == iMultilateralism
-	
+
+	bUnion = False
+
+	if iPlayer == iLithuania and pPoland.isAlive() and (teamPoland.isDefensivePact(iLithuania) or teamPoland.isVassal(iLithuania)):
+		bSingleCoreCity = False
+		bUnion = True
+
+	if iPlayer == iPoland and pLithuania.isAlive() and (teamLithuania.isDefensivePact(iPoland) or teamLithuania.isVassal(iPoland)):
+		bSingleCoreCity = False
+		bUnion = True
+
+	if iPlayer == iHolyRome and pHolyRome.isReborn() and pHungary.isAlive() and (teamHungary.isDefensivePact(iHolyRome) or teamHungary.isVassal(iHolyRome)):
+		bSingleCoreCity = False
+		bUnion = True
+
+	if iPlayer == iHungary and pHolyRome.isAlive() and (teamHolyRome.isDefensivePact(iHungary) or teamHolyRome.isVassal(iHungary)):
+		bSingleCoreCity = False
+		bUnion = True
+
 	bSingleCoreCity = (len(utils.getOwnedCoreCities(iPlayer)) == 1)
 	
 	iCorePopulationModifier = getCorePopulationModifier(iCurrentEra)
-	
+
+	if bUnion:
+		if iPlayer == iLithuania: iCorePopulation += getUnionPop(iPoland, iCorePopulationModifier)
+		if iPlayer == iPoland: iCorePopulation += getUnionPop(iLithuania, iCorePopulationModifier)
+		if iPlayer == iHolyRome: iCorePopulation += getUnionPop(iHungary, iCorePopulationModifier)
+		if iPlayer == iHungary: iCorePopulation += getUnionPop(iHolyRome, iCorePopulationModifier)
+
+
+	iMostPopularReligion = -1
+	iMostPopularReligionPopulation = 0
+	for iReligion in range(iNumReligions):
+		if pPlayer.getReligionPopulation(iReligion) > iMostPopularReligionPopulation:
+			iMostPopularReligion = iNumReligions
+			iMostPopularReligionPopulation = pPlayer.getReligionPopulation(iReligion)
+
+	bLithuanianUP = (iPlayer == iLithuania and pLithuania.isStateReligion() and pLithuania.getStateReligion == -1)
+
 	for city in utils.getCityList(iPlayer):
 		iPopulation = city.getPopulation()
 		iModifier = 0
@@ -827,7 +861,7 @@ def calculateStability(iPlayer):
 			bNonStateReligion = False
 			for iReligion in range(iNumReligions):
 				if iReligion != iStateReligion and city.isHasReligion(iReligion):
-					if not isTolerated(iPlayer, iReligion) and not gc.getReligionInfo(iReligion).isLocal():
+					if not (iMostPopularReligion == iReligion and bLithuanianUP) and not isTolerated(iPlayer, iReligion) and not gc.getReligionInfo(iReligion).isLocal():
 						bNonStateReligion = True
 						break
 
@@ -1965,7 +1999,15 @@ def sign(x):
 	
 def getCorePopulationModifier(iEra):
 	return tEraCorePopulationModifiers[iEra]
-	
+
+def getUnionPop(iPlayer, iCorePopulationModifier):
+	iUnionPop = 0
+	for city in utils.getCityList(iPlayer):
+		if plot.isCore(iPlayer):
+			iUnionPop += iCorePopulationModifier * city.getPopulation() / 100
+
+	return iUnionPop
+
 def balanceStability(iPlayer, iNewStabilityLevel):
 	utils.debugTextPopup("Balance stability: %s" % gc.getPlayer(iPlayer).getCivilizationShortDescription(0))
 

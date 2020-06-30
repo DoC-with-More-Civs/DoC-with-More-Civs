@@ -148,6 +148,23 @@ class CvRFCEventHandler:
 		if iPlayer == iMongolia and bConquest and utils.getHumanID() != iPlayer:
 			self.up.mongolUP(city)
 
+		# Poland and Lithuania's Cores expand upon conquering the other
+		if pPoland.isReborn():
+			if not vic.checkOwnedCiv(iPoland, iLithuania):
+				utils.setReborn(iPoland, False)
+				
+		if not pPoland.isReborn():
+			if vic.checkOwnedCiv(iPoland, iLithuania):
+				utils.setReborn(iPoland, True)
+				
+		if pLithuania.isReborn():
+			if not vic.checkOwnedCiv(iLithuania, iPoland):
+				utils.setReborn(iLithuania, False)
+				
+		if not pLithuania.isReborn():
+			if vic.checkOwnedCiv(iLithuania, iPoland):
+				utils.setReborn(iLithuania, True)
+
 		if iPlayer == iYuezhi and utils.getOwnedCoreCities(iYuezhi) > 0:
 			if tCity in Areas.getCoreArea(iYuezhi, True):
 				if not pYuezhi.isReborn():

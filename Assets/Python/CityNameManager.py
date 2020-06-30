@@ -12,7 +12,7 @@ from StoredData import data
 gc = CyGlobalContext()
 PyPlayer = PyHelpers.PyPlayer
 
-iNumLanguages = 53
+iNumLanguages = 54
 (iLangEgyptian, iLangEgyptianArabic, iLangIndian, iLangChinese, iLangTibetan, 
 iLangBabylonian, iLangPersian, iLangGreek, iLangPhoenician, iLangLatin,
  iLangMayan,iLangJapanese, iLangEthiopian, iLangTeotihuacan, iLangKorean, iLangByzantine, 
@@ -23,7 +23,7 @@ iLangMongolian, iLangAztec, iLangTurkish, iLangThai, iLangCongolese,
 iLangPrussian, iLangAmerican, iLangCeltic, iLangMexican, iLangPolynesian,
 iLangHarappan, iLangNigerian, iLangPhilippine, iLangSwahili, iLangVietnamese,
 iLangZimbabwean, iLangHebrew, iLangNubian, iLangNubianArabic, iLangMississippi,
-iLangOlmec, iLangYuezhi) = range(iNumLanguages)
+iLangYuezhi, iLangOlmec, iLangLithuanian) = range(iNumLanguages)
 
 # methods
 
@@ -107,6 +107,7 @@ def getLanguages(iCiv):
 		return (iLangQuechua,)
 	elif iCiv == iItaly: return (iLangItalian,)
 	elif iCiv == iNigeria: return (iLangNigerian, iLangCongolese)
+	elif iCiv == iLithuania: return (iLangLithuanian, iLangPolish, iLangRussian)
 	elif iCiv == iMongolia: return (iLangMongolian, iLangTurkish, iLangChinese)
 	elif iCiv == iAztecs: 
 		if utils.isReborn(iCiv): return (iLangMexican, iLangSpanish)
@@ -1416,6 +1417,7 @@ dIdentifiers = {
 	"Korinthos"		:	"Korinthos",
 	"Kauen"			:	"Kowno",
 	"Kovno"			:	"Kowno",
+	"Kaunas"			:	"Kowno",
 	"Kowno"			:	"Kowno",
 	"Cracovia"		:	"Krak&#243;w",
 	"Krak&#243;w"		:	"Krak&#243;w",
@@ -4817,13 +4819,30 @@ tRenames = (
 {
 
 },
+#Language: Yuezhi
+{
+
+},
 #Language: Olmec
 {
     "La Venta"		:	"Je Taa'c",
     "Tres Zapotes"	:	"Toojc Yuctsoo'c",
 },
-#Language: Yuezhi
+#Language: Lithuanian
 {
-
+	"Vil'na"		:	"Vilnius",
+	"Wilna"			:	"Vilnius",
+	"Wilno"			:	"Vilnius",
+	"Vilnius"		:	"Vilnius",
+	"Ryga"			:	"Riga",
+	"Riga"			:	"Riga",
+	"Klajpeda"		:	"Klaipeda",
+	"Medvegalis"		:	"Klaipeda",
+	"Klaipeda"		:	"Klaipeda",
+	"Memel"			:	"Klaipeda",
+	"Kauen"			:	"Kaunas",
+	"Kovno"			:	"Kaunas",
+	"Kowno"			:	"Kaunas",
+	"Kaunas"			:	"Kaunas",
 },
 )

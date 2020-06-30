@@ -564,5 +564,11 @@
 			<Path>Art/Interface/TeamColor/FlagDECAL_WolfTotem.dds</Path>
 			<bWhiteFlag>0</bWhiteFlag>
 		</CivilizationArtInfo>
+		<CivilizationArtInfo>
+			<Type>ART_DEF_CIVILIZATION_LITHUANIA</Type>
+			<Button>Art/Interface/Buttons/Civilizations/Lithuania.dds</Button>
+			<Path>Art/Interface/TeamColor/FlagDECAL_Lithuania.dds</Path>
+			<bWhiteFlag>0</bWhiteFlag>
+		</CivilizationArtInfo>
 	</CivilizationArtInfos>
 </Civ4ArtDefines>

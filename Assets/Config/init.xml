@@ -60,6 +60,7 @@
 	<symbol id="tengri"/>
 	<symbol id="midewiwin"/>
 	<symbol id="angakkuq"/>
+	<symbol id="romuva" from="POWER" offset="22"/>
 	<symbol id="citizen" from="POWER" offset="1"/>
 	<symbol id="greatgeneral" name="GREAT_GENERAL"/>
 	

@@ -1454,5 +1454,13 @@
 			<NoShaderNIF>Art/Leaderheads/Bleda/hannibal_noshader.nif</NoShaderNIF>
 			<BackgroundKFM>Art/Leaderheads/Bleda/hannibal_bg.kfm</BackgroundKFM>
 		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_MINDAUGAS</Type>
+			<Button>Art/Leaderheads/Mindaugas/Mindaugas.dds</Button>
+			<NIF>Art/Leaderheads/Mindaugas/alexander.nif</NIF>
+			<KFM>Art/Leaderheads/Mindaugas/alexander.kfm</KFM>
+			<NoShaderNIF>Art/Leaderheads/Mindaugas/alexander_noshader.nif</NoShaderNIF>
+			<BackgroundKFM>Art/Leaderheads/Mindaugas/alexander_bg.kfm</BackgroundKFM>
+		</LeaderheadArtInfo>
 	</LeaderheadArtInfos>
 </Civ4ArtDefines>

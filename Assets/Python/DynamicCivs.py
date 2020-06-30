@@ -350,6 +350,7 @@ dFascistVassalTitles = {
 		iMamluks : "TXT_KEY_CIV_GERMANY_REICHSPROTEKTORAT",
 		iMali : "TXT_KEY_CIV_GERMANY_NAZI_MALI",
 		iPoland : "TXT_KEY_CIV_GERMANY_NAZI_POLAND",
+		iLithuania : "TXT_KEY_CIV_GERMANY_NAZI_LITHUANIA",
 		iPortugal : "TXT_KEY_CIV_GERMANY_REICHSKOMMISSARIAT",
 		iMughals : "TXT_KEY_CIV_GERMANY_NAZI_MUGHALS",
 		iOttomans : "TXT_KEY_CIV_GERMANY_REICHSKOMMISSARIAT",
@@ -474,7 +475,7 @@ dForeignNames = {
 	},
 }
 
-lRepublicOf = [iEgypt, iIndia, iChina, iPersia, iJapan, iEthiopia, iKorea, iVikings, iTurks, iKhazars, iTibet, iIndonesia, iKhmer, iHolyRome, iMali, iPoland, iMughals, iOttomans, iThailand, iMamluks, iPhilippines, iBoers, iVietnam, iZimbabwe, iSwahili, iSweden, iNigeria, iOman, iChad, iCeltia, iMississippi]
+lRepublicOf = [iEgypt, iIndia, iChina, iPersia, iJapan, iEthiopia, iKorea, iVikings, iTurks, iKhazars, iTibet, iIndonesia, iKhmer, iHolyRome, iMali, iPoland, iLithuania, iMughals, iOttomans, iThailand, iMamluks, iPhilippines, iBoers, iVietnam, iZimbabwe, iSwahili, iSweden, iNigeria, iOman, iChad, iCeltia, iMississippi]
 lRepublicAdj = [iBabylonia, iRome, iMoors, iSpain, iFrance, iPortugal, iInca, iNorteChico, iTiwanaku, iWari, iItaly, iAztecs, iArgentina, iAustralia, iManchuria, iHungary, iInuit, iXiongnu, iYuezhi, iMuisca]
 
 lSocialistRepublicOf = [iMoors, iHolyRome, iBrazil, iVikings, iMamluks, iPhilippines, iBoers, iVietnam, iZimbabwe, iSwahili, iSweden, iNigeria]
@@ -640,6 +641,7 @@ dStartingLeaders = [
 	iInca : iHuaynaCapac,
 	iItaly : iLorenzo,
 	iNigeria : iOduduwa,
+	iLithuania : iMindaugas,
 	iMongolia : iGenghisKhan,
 	iAztecs : iMontezuma,
 	iMughals : iTughluq,
@@ -1761,12 +1763,16 @@ def specificAdjective(iPlayer):
 	elif iPlayer == iEngland:
 		if getColumn(iEngland) >= 11 and countPlayerAreaCities(iPlayer, utils.getPlotList(tBritainTL, tBritainBR)) >= 3:
 			return "TXT_KEY_CIV_ENGLAND_BRITISH"
+
+	elif iPlayer == iHungary:
+		if teamHolyRome.isVassal(iHungary) or vic.isControlled(iHungary, Areas.getCoreArea(iHolyRome, False)):
+			return "TXT_KEY_CIV_HUNGARY_AUSTRO_HUNGARIAN"
 			
 	elif iPlayer == iHolyRome:
 		if isCapital(iPlayer, ["Buda"]):
 			return "TXT_KEY_CIV_HOLY_ROME_HUNGARIAN"
 	
-		if pGermany.isAlive() and iCivicLegitimacy == iConstitution:
+		if teamHungary.isVassal(iHolyRome) or vic.isControlled(iHolyRome, Areas.getCoreArea(iHungary, False)):
 			return "TXT_KEY_CIV_HOLY_ROME_AUSTRO_HUNGARIAN"
 			
 		iVassals = 0
@@ -2374,11 +2380,18 @@ def specificTitle(iPlayer, lPreviousOwners=[]):
 	# Nothing for Mali
 	
 	elif iPlayer == iPoland:
-		if iEra >= iRenaissance and bEmpire:
+		if teamLithuania.isVassal(iPoland) or pPoland.isReborn():
 			return "TXT_KEY_CIV_POLAND_COMMONWEALTH"
 			
 		if isCapital(iPlayer, ["Kowno", "Medvegalis", "Wilno", "Ryga"]):
 			return "TXT_KEY_CIV_POLAND_GRAND_DUCHY_OF"
+
+	elif iPlayer == iLithuania:
+		if teamPoland.isVassal(iLithuania) or pLithuania.isReborn():
+			return "TXT_KEY_CIV_LITHUANIA_COMMONWEALTH"
+
+		elif bEmpire:
+			return "TXT_KEY_CIVV_LITHUANIA_GRAND_DUCHY_OF"
 			
 	elif iPlayer == iZimbabwe:
 		if iEra >= iRenaissance:

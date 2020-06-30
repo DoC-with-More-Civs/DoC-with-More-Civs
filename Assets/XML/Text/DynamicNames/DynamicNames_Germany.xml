@@ -446,6 +446,14 @@
 		<Spanish>General Government</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_CIV_GERMANY_NAZI_LITHUANIA</Tag>
+		<English>Reichskommissariat Ostland</English>
+		<French>Reichskommissariat Ostland</French>
+		<German>Reichskommissariat Ostland</German>
+		<Italian>Reichskommissariat Ostland</Italian>
+		<Spanish>Reichskommissariat Ostland</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_CIV_GERMANY_NAZI_ITALY</Tag>
 		<English>%s2 Social Republic</English>
 		<French>

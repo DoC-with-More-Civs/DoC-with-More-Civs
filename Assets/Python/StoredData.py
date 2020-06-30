@@ -280,6 +280,7 @@ class GameData:
 		self.iXiongnuDemands = 0
 		self.iXiongnuCityTernary = 0 # 0 = None, 1 = Europe, 2 = India
 		self.lXiongnuCivs = []
+		self.iLithuaniaGifts = 0
 		
 		self.tFirstTurkicCapital = None
 		self.tSecondTurkicCapital = None

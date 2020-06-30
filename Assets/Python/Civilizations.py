@@ -206,7 +206,8 @@ iCivPoland : 	Techs([iFeudalism, iFortification, iCivilService, iTheology], colu
 iCivZimbabwe : 	Techs([iFeudalism, iFortification], column=6),
 iCivPortugal :	Techs([iPatronage], column=7),
 iCivInca : 	Techs([iMathematics, iContract, iLiterature, iPriesthood], column=3, exceptions=[iSeafaring, iAlloys, iRiding, iShipbuilding]),
-iCivNigeria :	Techs([iPaper, iCompass], column=7, exceptions=[iTheology]),
+iCivNigeria :	Techs([iCommune, iCompass], column=7, exceptions=[iTheology]),
+iCivLithuania :	Techs([iPaper, iCompass], column=7),
 iCivMongols :	Techs([iPaper, iCompass], column=7, exceptions=[iTheology]),
 iCivAztecs :	Techs([iMathematics, iContract, iLiterature, iPriesthood, iGeneralship, iAesthetics, iCurrency, iLaw], column=3, exceptions=[iSeafaring, iAlloys, iRiding, iShipbuilding]),
 iCivItaly : 	Techs([iCommune, iPaper, iCompass, iDoctrine], column=7),
@@ -729,6 +730,12 @@ dTechPreferences = {
 	},
 	iCivNigeria : {
 	},
+	iCivLithuania : {
+		iCombinedArms: 30,
+		iCivilLiberties: 30,
+		iSocialContract: 20,
+		iOptics: 20,
+	},
 	iCivMongols : {
 		iPaper: 15,
 		
@@ -1219,6 +1226,10 @@ dBuildingPreferences = {
 		iMoleAntonelliana: 30,
 	},
 	iCivNigeria: {
+	},
+	iCivLithuania : {
+		iSaltCathedral: 30,
+		iOldSynagogue: 30,
 	},
 	iCivMongols : {
 		iSilverTreeFountain: 40,

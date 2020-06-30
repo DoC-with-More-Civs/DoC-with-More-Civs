@@ -2063,7 +2063,36 @@ def checkTurn(iGameTurn, iPlayer):
 		
 		if iGameTurn == getTurnForYear(1950):
 			expire(iNigeria, 2)
-			
+
+	elif iPlayer == iLithuania:
+
+		# first goal: Control more territory than any European civ in 1500 AD
+		if iGameTurn == getTurnForYear(1500):
+			if iLithuania == getBestPlayer(iPlayer, getLandPercent, lCivGroups[0]):
+				win(iLithuania, 0)
+			else:
+				lose(iLithuania, 0)
+
+		# second goal: Gift 7 units to Poland and have friendly relations with them in 1600 AD
+		if iGameTurn == getTurnForYear(1600):
+			bGifts = data.iLithuaniaGifts >= 7
+			bContact = pLithuania.canContact(iPoland)
+			bFriendly = pPoland.AI_getAttitude(iLithuania) == AttitudeTypes.ATTITUDE_CAUTIOUS
+			if bGifts and bContact and bFriendly:
+				win(iLithuania, 1)
+			else:
+				lose(iLithuania, 1)
+
+		# third goal: Control or Vassalize Austria, Prussia, and Russia in 1918 AD
+		if iGameTurn == getTurnForYear(1918):
+			bAustria = isControlledOrVassalized(iLithuania, Areas.getCoreArea(iHolyRome))
+			bPrussia = isControlledOrVassalized(iLithuania, Areas.getCoreArea(iPrussia))
+			bRussia = isControlledOrVassalized(iLithuania, Areas.getCoreArea(iRussia))
+			if bAustria and bPrussia and bRussia:
+				win(iLithuania, 2)
+			else:
+				lose(iLithuania, 2)
+
 	elif iPlayer == iMongolia:
 	
 		# first goal: control China by 1300 AD
@@ -3282,6 +3311,11 @@ def getTopCivsInGroup(iGroup, lExclude):
 
 def onUnitGifted(unit, iOwner, plot):
 
+	# second Lithuanian goal: Gift 7 units to Poland and have frienship relations with them in 1600 AD
+	if iOwner == iLithuania:
+		if isPossible(iLithuania, 1):
+			data.iLithuaniaGifts += 1
+
 	# second Australian goal: Gift 10 Digger, Marines or Mechanized Infantry to three different civilizations by 1950 AD
 	if iOwner == iAustralia:
 		if isPossible(iAustralia, 1):
@@ -3679,6 +3713,11 @@ def checkReligiousGoal(iPlayer, iGoal):
 				bWhale = countResources(iPlayer, iWhales) >= 3
 
 				if bCrab and bFish and bWhale:
+					return 1
+
+			# Romuva: Control Saint Peter's Church
+			elif paganReligion == "Romuva":
+				if getNumBuildings(iPlayer, iCatholicShrine) > 0:
 					return 1
 
 		# third Pagan goal: don't allow more than half of your cities to have a religion
@@ -5107,6 +5146,11 @@ def getPaganGoalHelp(iPlayer):
 
 		return getIcon(iNumCrabs >= 3) + localText.getText("TXT_KEY_VICTORY_AVAILABLE_RESOURCES", (gc.getBonusInfo(iCrab).getText().lower(), iNumCrabs, 3)) + ' ' + getIcon(iNumFish >= 3) + localText.getText("TXT_KEY_VICTORY_AVAILABLE_RESOURCES", (gc.getBonusInfo(iFish).getText().lower(), iNumFish, 3)) + ' ' + getIcon(iNumWhales >= 3) + localText.getText("TXT_KEY_VICTORY_AVAILABLE_RESOURCES", (gc.getBonusInfo(iWhales).getText().lower(), iNumWhales, 3))
 
+	elif paganReligion == "Romuva":
+		bSaintPeters = getNumBuildings(iPlayer, iCatholicShrine) > 0
+
+		return getIcon(bSaintPeters) + localText.getText("TXT_KEY_BUILDING_CATHOLIC_SHRINE", ())
+
 
 def getUHVHelp(iPlayer, iGoal):
 	"Returns an array of help strings used by the Victory Screen table"
@@ -6082,6 +6126,22 @@ def getUHVHelp(iPlayer, iGoal):
 			bMovies = pNigeria.getNumAvailableBonuses(iMovies) >= 1
 			bOilIndustry = pNigeria.countCorporations(iOilIndustry) >= 1
 			aHelp.append(getIcon(bMovies) + gc.getBonusInfo(iMovies).getDescription() + ' ' + getIcon(bOilIndustry) + gc.getCorporationInfo(iOilIndustry).getDescription())
+
+	elif iPlayer == iLithuania:
+		if iGoal == 0:
+			iLeadingCiv = getBestPlayer(iPlayer, getLandPercent)
+			iLeaderScore = getLandPercent(iLeadingCiv)
+			aHelp.append(getIcon(iLeadingCiv == iLithuania) + localText.getText("TXT_KEY_VICTORY_LARGEST_CIV", (gc.getPlayer(iLeadingCiv).getCivilizationShortDescription(0),)) + " (" + str(int(iLeaderScore)) + ")")
+		if iGoal == 1:
+			iGifts = data.iLithuaniaGifts
+			bContact = pLithuania.canContact(iPoland)
+			bFriendly = pPoland.AI_getAttitude(iLithuania) == AttitudeTypes.ATTITUDE_CAUTIOUS
+			aHelp.append(getIcon(iGifts >= 7) + localText.getText("TXT_KEY_VICTORY_GIVEN_UNITS", (iGifts, 7)) + ' ' + getIcon(bContact and bFriendly) + localText.getText("TXT_KEY_CIV_POLAND_SHORT_DESC", ()))
+		if iGoal == 2:
+			bAustria = isControlledOrVassalized(iLithuania, Areas.getCoreArea(iHolyRome))
+			bPrussia = isControlledOrVassalized(iLithuania, Areas.getCoreArea(iPrussia))
+			bRussia = isControlledOrVassalized(iLithuania, Areas.getCoreArea(iRussia))
+			aHelp.append(getIcon(bAustria) + localText.getText("TXT_KEY_CIV_AUSTRIA_SHORT_DESC", ()) + ' ' + getIcon(bPrussia) + localText.getText("TXT_KEY_CIV_GERMANY_PRUSSIA", ()) + ' ' + getIcon(bRussia) + localText.getText("TXT_KEY_CIV_RUSSIA_SHORT_DESC", ()))
 
 	elif iPlayer == iMongolia:
 		if iGoal == 1:

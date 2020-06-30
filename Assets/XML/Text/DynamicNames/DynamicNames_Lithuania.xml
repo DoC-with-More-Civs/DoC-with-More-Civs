@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Poland -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_LITHUANIA_DESC</Tag>
+		<English>The Lithuanians</English>
+		<French>The Lithuanians</French>
+		<German>The Lithuanians</German>
+		<Italian>The Lithuanians</Italian>
+		<Spanish>The Lithuanians</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_LITHUANIA_PEOPLES</Tag>
+		<English>Lithuanian Peoples</English>
+		<French>Lithuanian Peoples</French>
+		<German>Lithuanian Peoples</German>
+		<Italian>Lithuanian Peoples</Italian>
+		<Spanish>Lithuanian Peoples</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_LITHUANIA_DEFAULT</Tag>
+		<English>Kingdom of %s1</English>
+		<French>Kingdom of %s1</French>
+		<German>Kingdom of %s1</German>
+		<Italian>Kingdom of %s1</Italian>
+		<Spanish>Kingdom of %s1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_LITHUANIA_COMMONWEALTH</Tag>
+		<English>Polish-Lithuanian Commonwealth</English>
+		<French>
+			<Text>R&#233;publique des Deux Nations</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>Polish-Lithuanian Commonwealth</German>
+		<Italian>Polish-Lithuanian Commonwealth</Italian>
+		<Spanish>Polish-Lithuanian Commonwealth</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_LITHUANIA_FASCIST</Tag>
+		<English>Iron Wolf %s1</English>
+		<French>Iron Wolf %s1</French>
+		<German>Iron Wolf %s1</German>
+		<Italian>Iron Wolf %s1</Italian>
+		<Spanish>Iron Wolf %s1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_LITHUANIA_COMMUNIST</Tag>
+		<English>Grand Duchy of %s1</English>
+		<French>
+			<Text>Grand-duch&#233; de %s1</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>Grand Duchy of %s1</German>
+		<Italian>Grand Duchy of %s1</Italian>
+		<Spanish>Grand Duchy of %s1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVV_LITHUANIA_GRAND_DUCHY_OF</Tag>
+		<English>Grand Duchy of %s1</English>
+		<French>
+			<Text>Grand-duch&#233; de %s1</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>Grand Duchy of %s1</German>
+		<Italian>Grand Duchy of %s1</Italian>
+		<Spanish>Grand Duchy of %s1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_LITHUANIA_ADJECTIVE</Tag>
+		<English>Lithuanian</English>
+		<French>Lithuanian</French>
+		<German>Lithuanian</German>
+		<Italian>Lithuanian</Italian>
+		<Spanish>Lithuanian</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_LITHUANIA_SHORT_DESC</Tag>
+		<English>Lithuania</English>
+		<French>Lithuania</French>
+		<German>Lithuania</German>
+		<Italian>Lithuania</Italian>
+		<Spanish>Lithuania</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_LITHUANIA_ESTONIA</Tag>
+		<English>Estonia</English>
+		<French>Estonia</French>
+		<German>Estonia</German>
+		<Italian>Estonia</Italian>
+		<Spanish>Estonia</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_LITHUANIA_LATVIA</Tag>
+		<English>Latvia</English>
+		<French>Latvia</French>
+		<German>Latvia</German>
+		<Italian>Latvia</Italian>
+		<Spanish>Latvia</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_LITHUANIAN_SEIMELIS</Tag>
+		<English>Seimelis</English>
+		<French>Seimelis</French>
+		<German>Seimelis</German>
+		<Italian>Seimelis</Italian>
+		<Spanish>Seimelis</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_LITHUANIAN_SEIMELIS_PEDIA</Tag>
+		<English>[TAB]A voivodeship, also spelled voivodship, voivodina or vojvodina, is the area administrated by a voivode or governor in several countries of central and east Europe. Voivodeships have existed since medieval times in Poland, Hungary, Lithuania, Latvia, Ukraine, Russia, Wallachia and Serbia. The administrative level of a voivodeship resembles a western duchy, much as the title of voivode was equivalent to that of a duke. The voivode (literally, "leader of warriors") was originally the military commander next to the ruler.[PARAGRAPH:2]Contemporary, the term is used for the "provinces" (wojew骴ztwa) of Poland, of which there are currently 16. There is also an autonomous province of Vojvodina in Serbia (historic part of Medieval Hungary up to the end of WW1, today with a mixed Hungarian-Serbian population)[PARAGRAPH:2]Also, the word "voivodeship" appears in some of the larger English dictionaries, such as the OED and Webster's Third New International Dictionary, though it is not in common usage. Depending on the context, historic voivodeships may also be referred to as "duchies," "provinces," "palatinates," "administrative districts" or "regions".</English>
+		<French>.</French>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ROMUVA_SACRED_GROVE</Tag>
+		<English>Sacred Grove</English>
+		<French>Sacred Grove</French>
+		<German>Sacred Grove</German>
+		<Italian>Sacred Grove</Italian>
+		<Spanish>Sacred Grove</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DOM_LITHUANIA</Tag>
+		<English>It is the year 1180 AD. As the Lithuan raids on their neighboring Slavic provinces begin to increase in frequency and success, the region begins to see a level of wealth and organization it has never seen before. The imminent formation of a Lithuanian State will surely and radically change the political landscape of Eastern Europe for centuries to come.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_MINDAUGAS_1</Tag>
+		<English>I, [OUR_NAME], offer the [CT_EMPIRE] friendship. A person who gives is a person who has. Will you receive this gift, [CT_NAME]?</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_COMBAT_LITHUANIA_MOD</Tag>
+		<English>[ICON_BULLET]%D1_Bonus%% from different State Religion</English>
+		<French>[ICON_BULLET]%D1_Bonus%% from different State Religion</French>
+		<German>[ICON_BULLET]%D1_Bonus%% from different State Religion</German>
+		<Italian>[ICON_BULLET]%D1_Bonus%% from different State Religion</Italian>
+		<Spanish>[ICON_BULLET]%D1_Bonus%% from different State Religion</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_MINDAUGAS</Tag>
+		<English>Mindaugas</English>
+		<French>Mindaugas</French>
+		<German>Mindaugas</German>
+		<Italian>Mindaugas</Italian>
+		<Spanish>Mindaugas</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_AREA_111</Tag>
+		<English>Prussia</English>
+		<French>Prussia</French>
+		<German>Prussia</German>
+		<Italian>Prussia</Italian>
+		<Spanish>Prussia</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_AREA_112</Tag>
+		<English>Austria</English>
+		<French>Austria</French>
+		<German>Austria</German>
+		<Italian>Austria</Italian>
+		<Spanish>Austria</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_RELIGION_ROMUVA</Tag>
+		<English>Romuva</English>
+		<French>Romuva</French>
+		<German>Romuva</German>
+		<Italian>Romuva</Italian>
+		<Spanish>Romuva</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_LIT_TITLE</Tag>
+		<English>The Power of the Pagans:</English>
+		<French>Le pouvoir des paiens:</French>
+		<German>Die Macht der Heiden:</German>
+		<Italian>Il potere dei pagani:</Italian>
+		<Spanish>El poder los paganos:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_LIT</Tag>
+		<English>All cities are pagan and no religious disunity from the most popular religion while running a Pagan State Religion.</English>
+		<French>All cities are pagan and no religious disunity from the most popular religion while running a Pagan State Religion.</French>
+		<German>All cities are pagan and no religious disunity from the most popular religion while running a Pagan State Religion.</German>
+		<Italian>All cities are pagan and no religious disunity from the most popular religion while running a Pagan State Religion.</Italian>
+		<Spanish>All cities are pagan and no religious disunity from the most popular religion while running a Pagan State Religion.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_LITHUANIAN_VYTIS</Tag>
+		<English>Vytis</English>
+		<French>Vytis</French>
+		<German>Vytis</German>
+		<Italian>Vytis</Italian>
+		<Spanish>Vytis</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_LITHUANIAN_VYTIS_HELP</Tag>
+		<English>[ICON_BULLET]+25% vs Civilizations of other faiths until the end of the Middle Ages</English>
+		<French>[ICON_BULLET]+25% vs Civilizations of other faiths until the end of the Middle Ages</French>
+		<German>[ICON_BULLET]+25% vs Civilizations of other faiths until the end of the Middle Ages</German>
+		<Italian>[ICON_BULLET]+25% vs Civilizations of other faiths until the end of the Middle Ages</Italian>
+		<Spanish>[ICON_BULLET]+25% vs Civilizations of other faiths until the end of the Middle Ages</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_URV_POL2_ROMUVA</Tag>
+		<English>Control Saint Peter's Basilica</English>
+		<French>Control Saint Peter's Basilica</French>
+		<German>Control Saint Peter's Basilica</German>
+		<Italian>Control Saint Peter's Basilica</Italian>
+		<Spanish>Control Saint Peter's Basilica</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_LIT1_TITLE</Tag>
+		<English>Yagaylo's Legacy</English>
+		<French>Yagaylo's Legacy</French>
+		<German>Yagaylo's Legacy</German>
+		<Italian>Yagaylo's Legacy</Italian>
+		<Spanish>Yagaylo's Legacy</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_LIT1</Tag>
+		<English>Control more territory than any European civ in 1500 AD</English>
+		<French>Control more territory than any European civ in 1500 AD</French>
+		<German>Control more territory than any European civ in 1500 AD</German>
+		<Italian>Control more territory than any European civ in 1500 AD</Italian>
+		<Spanish>Control more territory than any European civ in 1500 AD</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_LIT2_TITLE</Tag>
+		<English>Act of Kreva</English>
+		<French>Act of Kreva</French>
+		<German>Act of Kreva</German>
+		<Italian>Act of Kreva</Italian>
+		<Spanish>Act of Kreva</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_LIT2</Tag>
+		<English>Gift 7 units to Poland and have friendly relations with them in 1600 AD</English>
+		<French>Gift 7 units to Poland and have friendly relations with them in 1600 AD</French>
+		<German>Gift 7 units to Poland and have friendly relations with them in 1600 AD</German>
+		<Italian>Gift 7 units to Poland and have friendly relations with them in 1600 AD</Italian>
+		<Spanish>Gift 7 units to Poland and have friendly relations with them in 1600 AD</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_LIT3_TITLE</Tag>
+		<English>Defiance of the Three</English>
+		<French>Defiance of the Three</French>
+		<German>Defiance of the Three</German>
+		<Italian>Defiance of the Three</Italian>
+		<Spanish>Defiance of the Three</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_LIT3</Tag>
+		<English>Control or Vassalize Austria, Prussia, and Russia in 1918 AD</English>
+		<French>Control or Vassalize Austria, Prussia, and Russia in 1918 AD</French>
+		<German>Control or Vassalize Austria, Prussia, and Russia in 1918 AD</German>
+		<Italian>Control or Vassalize Austria, Prussia, and Russia in 1918 AD</Italian>
+		<Spanish>Control or Vassalize Austria, Prussia, and Russia in 1918 AD</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_LITHUANIA_PEDIA</Tag>
+		<English>[TAB]The history of Lithuania between 1219 and 1295 deals with the establishment and early history of the first Lithuanian state, the Grand Duchy of Lithuania. The beginning of the 13th century marks the end of the prehistory of Lithuania. From this point on the history of Lithuania is recorded in chronicles, treaties, and other written documents. In 1219, twenty-one Lithuanian dukes signed a peace treaty with Halych-Volhynia. This event is widely accepted as the first proof that the Baltic tribes were uniting and consolidating.[PARAGRAPH:2]Mindaugas, the duke who governed southern Lithuania between the Neman and Neris Rivers, eventually became the founder of the state. Mindaugas is referred to as the ruler of all Lithuania in the Livonian Rhymed Chronicle in 1236. The means by which he managed to acquire this title are not well-known. In 1251, Mindaugas agreed to receive baptism and relinquish control over some lands in western Lithuania, for which he was to receive a crown in return. As promised, Mindaugas was crowned at some time during the summer of 1253 (The exact date and location of the coronation is not known), and the Kingdom of Lithuania, proclaimed by the pope in 1251, was soundly established. Pope Innocent IV supported Mindaugas, hoping that a new Christian state could stem the inroads being made by the Golden Horde, a state of Mongol Empire. On July 17, 1251, the pope signed two crucial papal bulls. One of them ordered the Bishop of Chelm to crown Mindaugas as King of Lithuania, appoint a bishop for Lithuania, and to build a cathedral.[PARAGRAPH:2]Immediately after his coronation, Mindaugas transferred some western lands to the Livonian Order - portions of Samogitia, Nadruva, and Dainava. There is some discussion as to whether in later years Mindaugas gave even more lands to the Order. Relative peace and stability was established for about eight more years. Mindaugas used this opportunity to concentrate on expansion to the east. The Livonian Order used this period to consolidate their control over Samogitian lands. The Samogitians responded by electing Algminas as their war leader. In 1259, the Livonian Order lost the Battle of Skuodas, and in 1260, it lost the Battle of Durbe. The first loss encouraged a rebellion by the Semigalians, and the later loss spurred the Prussians into an uprising against the Order. Encouraged by Treniota, his nephew, Mindaugas broke peace with the Order. Some chronicles hint that he also relapsed into his former pagan beliefs. All the diplomatic achievements made since his coronation were lost. As a result of the war, Mindaugas was assassinated by the Order and Lithuania lapsed into political chaos.[PARAGRAPH:2]In 1295, a new dynasty rose: the Gediminids. The Gediminids were to rule Lithuania for the next several centuries. Vytenis, the first Gediminid ruler, was able to recapture lands lost after the death of Mindaugus, and established a defensive network along his border with the Teutonic Order. Lithuanian expansion reached its height under Gediminas, who annexed or vassalized most of Kieven Rus, and parts of the Golden Horde. Lithuania reached its peak under Vytautas the Great, who backed economic development of his state and introduced many reforms. Under his rule the Grand Duchy of Lithuania slowly became more centralized, as the governors loyal to Vytautas replaced local princes with dynastic ties to the throne. Under Vytautas, Lithuanian and Polish forces defeated the Teutonic Order.[PARAGRAPH:2]However, in the 16th century, Moscow began making aggressive expansion west, and Lithuania developed closer ties with Poland, eventually unifying under the Treaty of Lublin. However, after the partitions of Poland, Lithuania was annexed by Russia. During the Napoleonic Wars, French forces proclaimed a new Grand Duchy, which never materialized, as shorty afterwards Napoleon's forces were pushed west by the Russians, who again annexed Lithuania. Lithuania remained part of Russia until after World War I, where it was formed as a new Republic. During World War II, however, Soviet forces annexed Lithuania. Following a brief occupation by Nazi forces shortly afterwards, Lithuania was absorbed into the USSR. In the early 1990s, Lithuania restored its sovereignty and now continues to grow into an economically strong country.</English>
+		<French>.</French>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_MINDAUGAS_PEDIA</Tag>
+		<English>[H1]Mindaugas[\H1][NEWLINE][BOLD]First Grand Duke of Lithuania, Only King of Lithuania[\BOLD][NEWLINE][BOLD]Lived:[\BOLD] c. 1200 - September 12, 1263 AD[NEWLINE][PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB]Mindaugas was the first known Grand Duke of Lithuania and the only King of Lithuania. Little is known of his origins, early life, or rise to power; he is mentioned in a 1219 treaty as an elder duke, and in 1236 as the leader of all the Lithuanians. The contemporary and modern sources discussing his ascent mention strategic marriages along with banishment or murder of his rivals.[PARAGRAPH:2]He extended his domain into regions southeast of Lithuania proper during the 1230s and 1240s. In 1250 or 1251, during the course of internal power struggles, he was baptised as a Roman Catholic; this action enabled him to establish an alliance with the Livonian Order, a long-standing antagonist of the Lithuanians. During the summer of 1253 he was crowned King of Lithuania, ruling between 300,000 and 400,000 subjects.[PARAGRAPH:2]While his ten-year reign was marked by various state-building accomplishments, his conflicts with relatives and other dukes continued, and western Lithuania strongly resisted the alliance's rule. His gains in the southeast were challenged by the Tatars.[PARAGRAPH:2]He broke with the Livonian Order in 1261, possibly renouncing Christianity, and was assassinated in 1263 by his nephew Treniota and another rival, Duke Daumantas. His three immediate successors were assassinated as well. The disorder was not resolved until Traidenis gained the title of Grand Duke ca. 1270.[PARAGRAPH:2]Although his reputation was unsettled during the following centuries and his descendants were not notable, he gained standing during the 19th and 20th centuries. Mindaugas was the only King of Lithuania; while most of the Lithuanian Grand Dukes from Jogaila onward also reigned as Kings of Poland, the titles remained separate.[PARAGRAPH:2]In modern Lithuania Mindaugas is generally considered to be the founder of the Lithuanian state. He is also now credited with stopping the advance of the Tatars towards the Baltic Sea, establishing international recognition of Lithuania, and turning it towards Western civilization. In the 1990s the historian Edvardas Gudavicius published research supporting an exact coronation date - July 6, 1253. This day is now an official national holiday, Statehood Day.</English>
+		<French>.</French>
+		<German>[H1]Mindaugas I.[\H1][NEWLINE][BOLD]Erster Gro&#223;f&#252;rst von Litauen, Einziger K&#246;nig von Litauen[\BOLD][NEWLINE][BOLD]Lebte:[\BOLD] ca. 1203 -12. September 1263[NEWLINE][PARAGRAPH:2][BOLD]Hintergrund:[\BOLD][NEWLINE][TAB]Mindaugas regierte zwischen 1238 und 1263 als litauischer F&#252;rst bzw. sp&#228;ter Gro&#223;f&#252;rst. Im Sommer 1253 erhielt er auf Veranlassung des Papstes Innozenz IV. sogar die K&#246;nigskrone. Der Kr&#246;nungstag ist heute ein offizieller Feiertag in Litauen. Um dies zu erm&#246;glichen, wurde dieser auf den 6. Juli 1253 festgelegt.[PARAGRAPH:2]Mindaugas wird die Einigung der f&#252;nf F&#252;rstent&#252;mer Litauens zu einem Staatswesen angerechnet, auch wenn seine Machtposition nicht unumstritten war. Voraussetzung war die Bildung milit&#228;rischer Gefolgschaften, zum Teil aus der b&#228;uerlichen Bev&#246;lkerung abgesondert, zum Teil aus geflohenen Russen rekrutiert, welche die Machtposition des F&#252;rsten im Land st&#228;rkten.[PARAGRAPH:2]Erstmals wird sein Name in einem Vertrag von 1219 erw&#228;hnt, in dem er und andere litauische F&#252;rsten (seine Verwandten, sowie sein Bruder Dausprungas) ein B&#252;ndnis mit dem russischen F&#252;rsten Daniel von Galizien eingingen. Auch in der Folge leistete er S&#246;ldnerdienste f&#252;r Konrad von Masowien (1237) und Daniel von Galizien (1245).[PARAGRAPH:2]Bald trugen ihm die Bojaren die Herrschaft Litauens an, so dass er 1238 als Herrscher des Landes erw&#228;hnt wurde. 1249 verjagte er seine Neffen Tautvilas und Gedivydas, sowie deren Onkel m&#252;tterlicherseits, den Schemaiten-F&#252;rst Vykintas nach Galizien, als sie bei einem Feldzug gegen Wladimir-Susdal erfolglos blieben. In den n&#228;chsten zwei Jahren wies er ihre R&#252;ckkehrversuche ab. Somit erlangte er auch die tats&#228;chliche Herrschaft. Einer der Neffen, Dausprungas Sohn Tautvilas, lie&#223; sich in Riga taufen und erlangte so die Unterst&#252;tzung des Deutschen Ordens. Mindaugas musste nachziehen. Auch er lie&#223; sich 1251 taufen und empfing daraufhin 1253 vom Papst die K&#246;nigskrone. Sp&#228;ter s&#246;hnte er sich mit Tautvilas aus.[PARAGRAPH:2]Mindaugas verb&#252;ndete sich auch mit Daniel von Galizien (? 1264), der sich damals gegen die Goldene Horde auflehnte. Eine Heirat zwischen Mindaugas' Tochter und Daniels Sohn Svarno verband zudem beide H&#228;user (1255). Das B&#252;ndnis blieb fruchtlos, die Tataren zwangen 1258/59 beide zur Flucht. Das schw&#228;chte Mindaugas' Position gegen&#252;ber den Schemaiten, die am 13. Juli 1260 in der Schlacht an der Durbe dem Deutschen Orden eine schwere Niederlage beibringen konnten - und zwar ohne Mindaugas.[PARAGRAPH:2]Mindaugas wandte sich wieder vom Christentum ab (wobei diese Tatsache umstritten bleibt) und verb&#252;ndete sich nun mit den heidnisch gebliebenen Schemaiten seines Neffen Treniota gegen den Orden. Aber der Feldzug 1261 blieb erfolglos und Mindaugas war unglaubw&#252;rdig geworden, sodass ihn sein Schwager Daumantas und Treniota im Herbst 1263 samt zweier S&#246;hne ermorden konnten.[PARAGRAPH:2]Mindaugas Sohn Vaisalga &#252;bernahm 1264 die Regierung, trat aber wieder zur&#252;ck und wurde bald ebenfalls ermordet. Bis zum Ende des Jahrhunderts herrschte dann weitgehende Unordnung in Litauen, so dass selbst &#252;ber die Lebensdaten der Gro&#223;f&#252;rsten Unklarheiten bestehen.</German>
+		<Italian>.</Italian>
+		<Spanish>.</Spanish>
+		<Portuguese>.</Portuguese>
+	</TEXT>
+</Civ4GameText>
