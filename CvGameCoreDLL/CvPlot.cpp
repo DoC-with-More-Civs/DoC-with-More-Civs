@@ -3541,7 +3541,8 @@ PlayerTypes CvPlot::calculateCulturalOwner(bool bActual) const
 				// All major civilizations have easier control over their own core (80% rule)
 				if (iI < NUM_MAJOR_PLAYERS) 
 				{
-					if (isCore((PlayerTypes)iI)) 
+					//Lithuania has easier control over the horse 1SW of Vilnius
+					if (isCore((PlayerTypes)iI) || (iI == LITHUANIA && getX() == 77 && getY() == 64)) 
 					{
 						iCulture *= 4;
 					}

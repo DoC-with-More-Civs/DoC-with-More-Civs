@@ -369,7 +369,7 @@ bool CvCityAI::AI_avoidGrowth()
 		return true;
 	}
 
-	if (isFoodProduction() && !GET_PLAYER(getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)GREAT_SPHINX))
+	if (isFoodProduction() && !GET_PLAYER(getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)GREAT_SPHINX) && getOwnerINLINE() == KIEVAN_RUS)
 	{
 		return true;
 	}
@@ -3420,7 +3420,7 @@ int CvCityAI::AI_buildingValueThreshold(BuildingTypes eBuilding, int iFocusFlags
 	}
 
 	// Leoreth: do not build pagan wonders if you prefer having a state religion
-	if (kBuilding.isPagan() && GC.getLeaderHeadInfo(kOwner.getLeader()).getFavoriteReligion() != NO_RELIGION)
+	if (getOwnerINLINE() != LITHUANIA && kBuilding.isPagan() && GC.getLeaderHeadInfo(kOwner.getLeader()).getFavoriteReligion() != NO_RELIGION)
 	{
 		return 0;
 	}

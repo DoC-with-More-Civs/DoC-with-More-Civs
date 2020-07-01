@@ -3335,7 +3335,42 @@ It is fine for a human player mouse-over (which is what it is used for).
                             szString.append(NEWLINE);
                             szString.append(gDLL->getText("TXT_KEY_COMBAT_PLOT_CITY_MOD", -iModifier));
                         }
-                    }
+                     }
+
+					// 1SDAN
+					if (
+							pAttacker->getOwnerINLINE() == LITHUANIA && 
+							pAttacker->getUnitType() == (UnitTypes) GC.getInfoTypeForString("UNIT_LITHUANIAN_VYTIS") &&
+							GET_PLAYER(pAttacker->getOwnerINLINE()).getCurrentEra() <= ERA_MEDIEVAL && 
+							GET_PLAYER(pAttacker->getOwnerINLINE()).isStateReligion() && 
+							pDefender->getOwnerINLINE() != NO_PLAYER && 
+							(
+								!GET_PLAYER(pDefender->getOwnerINLINE()).isStateReligion() || 
+								GET_PLAYER(pDefender->getOwnerINLINE()).getStateReligion() == NO_RELIGION || 
+								(GET_PLAYER(pDefender->getOwnerINLINE()).getStateReligion() != GET_PLAYER(pAttacker->getOwnerINLINE()).getStateReligion())
+							)
+						)
+					{
+						szString.append(NEWLINE);
+						szString.append(gDLL->getText("TXT_KEY_COMBAT_LITHUANIA_MOD", 25));
+					}
+
+					else if (
+							pDefender->getOwnerINLINE() == LITHUANIA && 
+							pDefender->getUnitType() == (UnitTypes) GC.getInfoTypeForString("UNIT_LITHUANIAN_VYTIS") &&
+							GET_PLAYER(pDefender->getOwnerINLINE()).getCurrentEra() <= ERA_MEDIEVAL && 
+							GET_PLAYER(pDefender->getOwnerINLINE()).isStateReligion() && 
+							pAttacker->getOwnerINLINE() != NO_PLAYER && 
+							(
+								!GET_PLAYER(pAttacker->getOwnerINLINE()).isStateReligion() || 
+								GET_PLAYER(pAttacker->getOwnerINLINE()).getStateReligion() == NO_RELIGION || 
+								(GET_PLAYER(pAttacker->getOwnerINLINE()).getStateReligion() != GET_PLAYER(pAttacker->getOwnerINLINE()).getStateReligion())
+							)
+						)
+					{
+						szString.append(NEWLINE);
+						szString.append(gDLL->getText("TXT_KEY_COMBAT_LITHUANIA_MOD", -25));
+					}
 
                     if (pPlot->isHills())
                     {
@@ -3506,6 +3541,39 @@ It is fine for a human player mouse-over (which is what it is used for).
 					szString.append(NEWLINE);
 					szString.append(gDLL->getText("TXT_KEY_COMBAT_PLOT_CITY_MOD", iModifier));
 				}
+			}
+
+			// 1SDAN
+			if (
+					pAttacker->getOwnerINLINE() == LITHUANIA && 
+					GET_PLAYER(pAttacker->getOwnerINLINE()).getCurrentEra() <= ERA_MEDIEVAL && 
+					GET_PLAYER(pAttacker->getOwnerINLINE()).isStateReligion() && 
+					pDefender->getOwnerINLINE() != NO_PLAYER && 
+					(
+						!GET_PLAYER(pDefender->getOwnerINLINE()).isStateReligion() || 
+						GET_PLAYER(pDefender->getOwnerINLINE()).getStateReligion() == NO_RELIGION || 
+						(GET_PLAYER(pDefender->getOwnerINLINE()).getStateReligion() != GET_PLAYER(pAttacker->getOwnerINLINE()).getStateReligion())
+					)
+				)
+			{
+				szString.append(NEWLINE);
+				szString.append(gDLL->getText("TXT_KEY_COMBAT_LITHUANIA_MOD", 25));
+			}
+
+			else if (
+					pDefender->getOwnerINLINE() == LITHUANIA && 
+					GET_PLAYER(pDefender->getOwnerINLINE()).getCurrentEra() <= ERA_MEDIEVAL && 
+					GET_PLAYER(pDefender->getOwnerINLINE()).isStateReligion() && 
+					pAttacker->getOwnerINLINE() != NO_PLAYER && 
+					(
+						!GET_PLAYER(pAttacker->getOwnerINLINE()).isStateReligion() || 
+						GET_PLAYER(pAttacker->getOwnerINLINE()).getStateReligion() == NO_RELIGION || 
+						(GET_PLAYER(pAttacker->getOwnerINLINE()).getStateReligion() != GET_PLAYER(pAttacker->getOwnerINLINE()).getStateReligion())
+					)
+				)
+			{
+				szString.append(NEWLINE);
+				szString.append(gDLL->getText("TXT_KEY_COMBAT_LITHUANIA_MOD", -25));
 			}
 
 			if (pPlot->isHills())
@@ -11890,7 +11958,7 @@ void CvGameTextMgr::buildBuildingRequiresString(CvWStringBuffer& szBuffer, Build
 
 		if (kBuilding.isPagan())
 		{
-			if (NULL == pCity || NO_PLAYER == ePlayer || NO_RELIGION != GET_PLAYER(ePlayer).getStateReligion() || pCity->getReligionCount() > 0)
+			if (NULL == pCity || NO_PLAYER == ePlayer || ((NO_RELIGION != GET_PLAYER(ePlayer).getStateReligion() || pCity->getReligionCount() > 0) && ePlayer != LITHUANIA))
 			{
 				CvWString szPaganReligionName = gDLL->getText("TXT_KEY_RELIGION_PAGANISM");
 				

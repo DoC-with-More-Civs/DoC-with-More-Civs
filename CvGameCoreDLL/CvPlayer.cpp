@@ -10200,8 +10200,7 @@ int CvPlayer::getBuildingFoodProductionCount() const
 // 1SDAN
 bool CvPlayer::isBuildingFoodProduction() const
 {
-	// Kievan Rus UP: Cities produce buildings with food
-	return getID() == KIEVAN_RUS ? true : (getBuildingFoodProductionCount() > 0);
+	return getBuildingFoodProductionCount() > 0;
 }
 
 // 1SDAN
@@ -25968,6 +25967,11 @@ bool CvPlayer::canFoundReligion(ReligionTypes eReligion, TechTypes eTechDiscover
 	CvCity* pCity;
 	for (pCity = firstCity(&iLoop); pCity != NULL; pCity = nextCity(&iLoop))
 	{
+		if (eReligion != PROTESTANTISM && pCity->getRegionID() >= REGION_CANADA && pCity->getRegionID() <= REGION_COLOMBIA)
+		{
+			continue;
+		}
+
 		if (pCity->plot()->getSpreadFactor(eReligion) >= REGION_SPREAD_HISTORICAL)
 		{
 			return true;

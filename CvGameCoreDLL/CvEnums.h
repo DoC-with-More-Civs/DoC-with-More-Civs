@@ -1315,6 +1315,7 @@ enum LeaderHeadTypes			// Exposed to Python
 	TEZCATLIPOCA,
 	KANISHKA,
 	MODU_CHANYU,
+	MINDAUGAS,
 	NUM_LEADERHEADS
 };
 
@@ -1450,6 +1451,7 @@ enum PlayerTypes				// Exposed to Python
 	INCA,
 	ITALY,
 	NIGERIA,
+	LITHUANIA,
 	MONGOLIA,
 	AZTECS,
 	MUGHALS,

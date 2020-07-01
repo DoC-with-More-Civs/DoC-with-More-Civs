@@ -2324,7 +2324,7 @@ bool CvCity::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestVis
 	// Leoreth: pagan buildings require no religion in the city
 	if (GC.getBuildingInfo(eBuilding).isPagan())
 	{
-		if ((getReligionCount() > 0 && (!isHasReligion(JUDAISM) || GET_PLAYER(getOwnerINLINE()).getStateReligion() == JUDAISM)) || getReligionCount() > 1)
+		if (!(getOwnerINLINE() == LITHUANIA && GET_PLAYER(getOwnerINLINE()).isStateReligion() && GET_PLAYER(getOwnerINLINE()).getStateReligion() == NO_RELIGION) && ((getReligionCount() > 0 && (!isHasReligion(JUDAISM) || GET_PLAYER(getOwnerINLINE()).getStateReligion() == JUDAISM)) || getReligionCount() > 1))
 		{
 			return false;
 		}
@@ -6198,7 +6198,15 @@ int CvCity::foodDifference(bool bBottom) const
 
 	if (isFoodProduction() && !GET_PLAYER(getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)GREAT_SPHINX))
 	{
-		iDifference = std::min(0, (getYieldRate(YIELD_FOOD) - foodConsumption()));
+		// Kievan Rus UP: Cities partially continue to grow when using Food for Production
+		if (getOwnerINLINE() == KIEVAN_RUS)
+		{
+			iDifference = (getYieldRate(YIELD_FOOD) - foodConsumption()) / 2;
+		}
+		else
+		{
+			iDifference = std::min(0, (getYieldRate(YIELD_FOOD) - foodConsumption()));
+		}
 	}
 	else
 	{

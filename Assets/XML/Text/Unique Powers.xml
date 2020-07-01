@@ -1131,11 +1131,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_KRS</Tag>
-		<English>Cities produce buildings with [ICON_FOOD]</English>
-		<French>Cities produce buildings with [ICON_FOOD]</French>
-		<German>Cities produce buildings with [ICON_FOOD]</German>
-		<Italian>Cities produce buildings with [ICON_FOOD]</Italian>
-		<Spanish>Cities produce buildings with [ICON_FOOD]</Spanish>
+		<English>Cities partially continue to grow when using Food for Production</English>
+		<French>Cities partially continue to grow when using Food for Production</French>
+		<German>Cities partially continue to grow when using Food for Production</German>
+		<Italian>Cities partially continue to grow when using Food for Production</Italian>
+		<Spanish>Cities partially continue to grow when using Food for Production</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_HUN_TITLE</Tag>

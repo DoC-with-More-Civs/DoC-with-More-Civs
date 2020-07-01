@@ -6188,12 +6188,12 @@
 		<Spanish>Largest army in Africa: %s1</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_VICTORY_MONOPOLY</Tag>
-		<English>Monopolized %s1</English>
-		<French>Monopolized %s1</French>
-		<German>Monopolized %s1</German>
-		<Italian>Monopolized %s1</Italian>
-		<Spanish>Monopolized %s1</Spanish>
+		<Tag>TXT_KEY_VICTORY_MONOPOLY_OWN</Tag>
+		<English>Control %s1</English>
+		<French>Control %s1</French>
+		<German>Control %s1</German>
+		<Italian>Control %s1</Italian>
+		<Spanish>Control %s1</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_NUM_CASTLES</Tag>
@@ -6210,6 +6210,14 @@
 		<German>Kraals: %d1 / %d2</German>
 		<Italian>Kraals: %d1 / %d2</Italian>
 		<Spanish>Kraals: %d1 / %d2</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_MONOPOLY_OTHERS_NOT_OWN</Tag>
+		<English>No other civ controlling improved %s1</English>
+		<French>No other civ controlling improved %s1</French>
+		<German>No other civ controlling improved %s1</German>
+		<Italian>No other civ controlling improved %s1</Italian>
+		<Spanish>No other civ controlling improved %s1</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_NO_AFRICAN_COLONIES_CURRENT_ZIMBABWE</Tag>
@@ -6717,11 +6725,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_CHA1</Tag>
-		<English>Conduct one Diplomatic Mission in Egypt and 3 Trade Missions in your state religion's Holy City by 1259</English>
-		<French>Conduct one Diplomatic Mission in Egypt and 3 Trade Missions in your state religion's Holy City by 1259</French>
-		<German>Conduct one Diplomatic Mission in Egypt and 3 Trade Missions in your state religion's Holy City by 1259</German>
-		<Italian>Conduct one Diplomatic Mission in Egypt and 3 Trade Missions in your state religion's Holy City by 1259</Italian>
-		<Spanish>Conduct one Diplomatic Mission in Egypt and 3 Trade Missions in your state religion's Holy City by 1259</Spanish>
+		<English>Conduct one Diplomatic Mission with the owner of an Egyptian city and 3 Trade Missions in your state religion's Holy City by 1259</English>
+		<French>Conduct one Diplomatic Mission with the owner of an Egyptian city and 3 Trade Missions in your state religion's Holy City by 1259</French>
+		<German>Conduct one Diplomatic Mission with the owner of an Egyptian city and 3 Trade Missions in your state religion's Holy City by 1259</German>
+		<Italian>Conduct one Diplomatic Mission with the owner of an Egyptian city and 3 Trade Missions in your state religion's Holy City by 1259</Italian>
+		<Spanish>Conduct one Diplomatic Mission with the owner of an Egyptian city and 3 Trade Missions in your state religion's Holy City by 1259</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_CHA2_TITLE</Tag>
@@ -6733,11 +6741,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_CHA2</Tag>
-		<English>Sell 5 Slaves and buy 10 Strategic Resources by 1380</English>
-		<French>Sell 5 Slaves and buy 10 Strategic Resources by 1380</French>
-		<German>Sell 5 Slaves and buy 10 Strategic Resources by 1380</German>
-		<Italian>Sell 5 Slaves and buy 10 Strategic Resources by 1380</Italian>
-		<Spanish>Sell 5 Slaves and buy 10 Strategic Resources by 1380</Spanish>
+		<English>Sell 5 Slaves and buy 5 Strategic Resources by 1380</English>
+		<French>Sell 5 Slaves and buy 5 Strategic Resources by 1380</French>
+		<German>Sell 5 Slaves and buy 5 Strategic Resources by 1380</German>
+		<Italian>Sell 5 Slaves and buy 5 Strategic Resources by 1380</Italian>
+		<Spanish>Sell 5 Slaves and buy 5 Strategic Resources by 1380</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_CHA3_TITLE</Tag>

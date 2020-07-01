@@ -1935,11 +1935,11 @@ def checkTurn(iGameTurn, iPlayer):
 		if iGameTurn == getTurnForYear(1500):
 			if isPossible(iZimbabwe, 1):
 				lSubSaharanAfrica = utils.getPlotList(tSubSaharaTL, tSubSaharaBR, tSubSaharaExceptions)
-				bGoldMonopoly = isMonopoly(iZimbabwe, iGold, lSubSaharanAfrica)
-				bSilverMonopoly = isMonopoly(iZimbabwe, iSilver, lSubSaharanAfrica)
-				bGemsMonopoly = isMonopoly(iZimbabwe, iGems, lSubSaharanAfrica)
-				bIvoryMonopoly = isMonopoly(iZimbabwe, iIvory, lSubSaharanAfrica)
-				if bGoldMonopoly and bSilverMonopoly and bGemsMonopoly and bIvoryMonopoly:
+				bOwnGold, bNotOthersGold = isMonopoly(iZimbabwe, iGold, lSubSaharanAfrica)
+				bOwnSilver, bNotOthersSilver = isMonopoly(iZimbabwe, iSilver, lSubSaharanAfrica)
+				bOwnGems, bNotOthersGems = isMonopoly(iZimbabwe, iGems, lSubSaharanAfrica)
+				bOwnIvory, bNotOthersIvory = isMonopoly(iZimbabwe, iIvory, lSubSaharanAfrica)
+				if bOwnGold and bNotOthersGold and bOwnSilver and bNotOthersSilver and bOwnGems and bNotOthersGems and bOwnIvory and bNotOthersIvory:
 					win(iZimbabwe, 1)
 				else:
 					lose(iZimbabwe, 1)
@@ -3207,7 +3207,7 @@ def onPlayerSlaveTrade(iPlayer, iSlaves, iGold):
 			if iGold > 0:
 				data.iChadSlaves += iSlaves
 				
-			if data.iChadSlaves >= 5 and data.iChadStrategicBonuses >= 10:
+			if data.iChadSlaves >= 5 and data.iChadStrategicBonuses >= 5:
 				win(iChad, 1)
 		
 def onPlayerBonusTrade(iPlayer, iStrategicBonuses, iGold):
@@ -3217,7 +3217,7 @@ def onPlayerBonusTrade(iPlayer, iStrategicBonuses, iGold):
 			if iGold > 0:
 				data.iChadStrategicBonuses += iStrategicBonuses
 				
-			if data.iChadSlaves >= 5 and data.iChadStrategicBonuses >= 10:
+			if data.iChadSlaves >= 5 and data.iChadStrategicBonuses >= 5:
 				win(iChad, 1)
 				
 def onTradeMission(iPlayer, iX, iY, iGold):
@@ -3281,6 +3281,13 @@ def onDiplomaticMission(iPlayer, iX, iY, bMadePeace):
 		if isPossible(iChad, 0):
 			if (iX, iY) in Areas.getCoreArea(iMamluks, False):
 				data.iChadDiplomacyMissions += 1
+
+			elif gc.getMap().plot(iX, iY).isPlotCity():
+				iOwner = c.getMap().plot(iX, iY).isPlotCity().getOwner()
+				for city in utils.getCityList(iOwner):
+					if (city.getX(), city.getY()) in Areas.getCoreArea(iMamluks, False):
+						data.iChadDiplomacyMissions += 1
+						break
 					
 			if data.iChadTradeMissions >= 3 and data.iChadDiplomacyMissions >= 1:
 				win(iChad, 0)
@@ -4732,8 +4739,7 @@ def countPopulationInArea(iPlayer, lArea):
 	return iCount
 
 def isMonopoly(iPlayer, iBonus, lPlots, bIncludeVassals = True):
-	if gc.getPlayer(iPlayer).getNumAvailableBonuses(iBonus) <= 0:
-		return False
+	bOwnSelf = gc.getPlayer(iPlayer).getNumAvailableBonuses(iBonus) > 0
 		
 	lAllowedOwners = [iPlayer, -1]
 	if bIncludeVassals:
@@ -4741,15 +4747,17 @@ def isMonopoly(iPlayer, iBonus, lPlots, bIncludeVassals = True):
 			if gc.getTeam(gc.getPlayer(iLoopPlayer).getTeam()).isVassal(iPlayer):
 				lAllowedOwners.append(iLoopPlayer)
 		
+	bNotOthers = True
 	for x, y in lPlots:
 		plot = gc.getMap().plot(x, y)
 		if plot.getBonusType(-1) == iBonus and plot.getImprovementType() >= 0:
 			iOwner = plot.getOwner()
 			if iOwner < iNumPlayers and iOwner not in lAllowedOwners:
 				if gc.getImprovementInfo(plot.getImprovementType()).isImprovementBonusMakesValid(iBonus):
-					return False
+					bNotOthers = False
+					break
 		
-	return True
+	return bOwnSelf, bNotOthers
 	
 def getCapitalCultureBuildingsLeader(bIncludeWonders = True, bIncludeObsolete = False):
 	iLeader = -1
@@ -4881,7 +4889,7 @@ def getURVHelp(iPlayer, iGoal):
 	elif iVictoryType == iOrthodoxy:
 		if iGoal == 0:
 			iOrthodoxCathedrals = getNumBuildings(iPlayer, iOrthodoxCathedral)
-			aHelp.append(getIcon(iOrthodoxCathedrals >= 4) + localText.getText("TXT_KEY_VICTORY_ORTHODOX_CATHEDRALS", (iOrthodoxCathedrals, 4)))
+			aHelp.append(getIcon(iOrthodoxCathedrals >= 4) + localText.getText("TXT_KEY_VICTORY_NUM_STRING", ("TXT_KEY_BUILDING_ORTHODOX_CATHEDRAL", iOrthodoxCathedrals, 4)))
 		elif iGoal == 1:
 			lCultureCities = getBestCities(cityCulture)[:5]
 			iCultureCities = countBestCitiesReligion(iOrthodoxy, cityCulture, 5)
@@ -5795,7 +5803,7 @@ def getUHVHelp(iPlayer, iGoal):
 		if iGoal == 0:
 			aHelp.append(getIcon(data.iChadDiplomacyMissions >= 1) + localText.getText("TXT_KEY_VICTORY_DIPLOMATIC_MISSIONS", (data.iChadDiplomacyMissions, 1)) + ' ' + getIcon(data.iChadTradeMissions >= 3) + localText.getText("TXT_KEY_VICTORY_TRADE_MISSIONS", (data.iChadTradeMissions, 3)))
 		if iGoal == 1:
-			aHelp.append(getIcon(data.iChadSlaves >= 5) + localText.getText("TXT_KEY_VICTORY_SLAVES_SOLD", (data.iChadSlaves, 5)) + ' ' + getIcon(data.iChadStrategicBonuses >= 10) + localText.getText("TXT_KEY_VICTORY_STRATEGIC_BONUSES_BOUGHT", (data.iChadStrategicBonuses, 10)))
+			aHelp.append(getIcon(data.iChadSlaves >= 5) + localText.getText("TXT_KEY_VICTORY_SLAVES_SOLD", (data.iChadSlaves, 5)) + ' ' + getIcon(data.iChadStrategicBonuses >= 5) + localText.getText("TXT_KEY_VICTORY_STRATEGIC_BONUSES_BOUGHT", (data.iChadStrategicBonuses, 5)))
 		if iGoal == 2:
 			lAfricaCivs = getCivsWithHoldingsInRegion(lAfrica)
 			iBestAfricanHoldingArmy = getBestPlayer(iChad, playerArmyPower, lAfricaCivs)
@@ -6066,11 +6074,14 @@ def getUHVHelp(iPlayer, iGoal):
 			aHelp.append(getIcon(iNumCastles >= 4) + localText.getText("TXT_KEY_VICTORY_NUM_CASTLES", (iNumCastles, 4)) + ' ' + getIcon(iNumKraals >= 4) + localText.getText("TXT_KEY_VICTORY_NUM_KRAALS", (iNumKraals, 4)) + ' ' + getIcon(bGreatZimbabwe) + localText.getText("TXT_KEY_BUILDING_GREAT_ZIMBABWE", ()))
 		elif iGoal == 1:
 			lSubSaharanAfrica = utils.getPlotList(tSubSaharaTL, tSubSaharaBR, tSubSaharaExceptions)
-			bGoldMonopoly = isMonopoly(iZimbabwe, iGold, lSubSaharanAfrica)
-			bSilverMonopoly = isMonopoly(iZimbabwe, iSilver, lSubSaharanAfrica)
-			bGemsMonopoly = isMonopoly(iZimbabwe, iGems, lSubSaharanAfrica)
-			bIvoryMonopoly = isMonopoly(iZimbabwe, iIvory, lSubSaharanAfrica)
-			aHelp.append(getIcon(bGoldMonopoly) + localText.getText("TXT_KEY_VICTORY_MONOPOLY", (gc.getBonusInfo(iGold).getDescription(),)) + ' ' + getIcon(bSilverMonopoly) + localText.getText("TXT_KEY_VICTORY_MONOPOLY", (gc.getBonusInfo(iSilver).getDescription(),)) + ' ' + getIcon(bGemsMonopoly) + localText.getText("TXT_KEY_VICTORY_MONOPOLY", (gc.getBonusInfo(iGems).getDescription(),)) + ' ' + getIcon(bIvoryMonopoly) + localText.getText("TXT_KEY_VICTORY_MONOPOLY", (gc.getBonusInfo(iIvory).getDescription(),)))
+			bOwnGold, bNotOthersGold = isMonopoly(iZimbabwe, iGold, lSubSaharanAfrica)
+			bOwnSilver, bNotOthersSilver = isMonopoly(iZimbabwe, iSilver, lSubSaharanAfrica)
+			bOwnGems, bNotOthersGems = isMonopoly(iZimbabwe, iGems, lSubSaharanAfrica)
+			bOwnIvory, bNotOthersIvory = isMonopoly(iZimbabwe, iIvory, lSubSaharanAfrica)
+			aHelp.append(getIcon(bOwnGold) + localText.getText("TXT_KEY_VICTORY_MONOPOLY_OWN", (gc.getBonusInfo(iGold).getDescription(),)) + ' ' + getIcon(bNotOthersGold) + localText.getText("TXT_KEY_VICTORY_MONOPOLY_OTHERS_NOT_OWN", (gc.getBonusInfo(iGold).getDescription(),)) + ' ' + \
+				getIcon(bOwnSilver) + localText.getText("TXT_KEY_VICTORY_MONOPOLY_OWN", (gc.getBonusInfo(iSilver).getDescription(),)) + ' ' + getIcon(bNotOthersSilver) + localText.getText("TXT_KEY_VICTORY_MONOPOLY_OTHERS_NOT_OWN", (gc.getBonusInfo(iSilver).getDescription(),)))
+			aHelp.append(getIcon(bOwnGems) + localText.getText("TXT_KEY_VICTORY_MONOPOLY_OWN", (gc.getBonusInfo(iGems).getDescription(),)) + ' ' + getIcon(bNotOthersGems) + localText.getText("TXT_KEY_VICTORY_MONOPOLY_OTHERS_NOT_OWN", (gc.getBonusInfo(iGems).getDescription(),)) + ' ' + \
+				getIcon(bOwnIvory) + localText.getText("TXT_KEY_VICTORY_MONOPOLY_OWN", (gc.getBonusInfo(iIvory).getDescription(),)) + ' ' + getIcon(bNotOthersIvory) + localText.getText("TXT_KEY_VICTORY_MONOPOLY_OTHERS_NOT_OWN", (gc.getBonusInfo(iIvory).getDescription(),)))
 		elif iGoal == 2:
 			bAfrica = isAreaFreeOfCivs(utils.getPlotList(tSubeqAfricaTL, tSubeqAfricaBR), lCivGroups[0])
 			aHelp.append(getIcon(bAfrica) + localText.getText("TXT_KEY_VICTORY_NO_AFRICAN_COLONIES_CURRENT_ZIMBABWE", ()))

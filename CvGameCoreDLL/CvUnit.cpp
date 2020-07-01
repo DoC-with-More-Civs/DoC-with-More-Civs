@@ -8604,6 +8604,7 @@ int CvUnit::maxCombatStr(const CvPlot* pPlot, const CvUnit* pAttacker, CombatDet
 		pCombatDetails->iCurrHitPoints = 0;
 		pCombatDetails->iMaxHitPoints = 0;
 		pCombatDetails->iCurrCombatStr = 0;
+		pCombatDetails->iUniqueModifier = 0; // 1SDAN
 		pCombatDetails->eOwner = getOwnerINLINE();
 		pCombatDetails->eVisualOwner = getVisualOwner();
 		pCombatDetails->sUnitName = getName().GetCString();
@@ -8848,6 +8849,27 @@ int CvUnit::maxCombatStr(const CvPlot* pPlot, const CvUnit* pAttacker, CombatDet
 			if (pCombatDetails != NULL)
 			{
 				pCombatDetails->iPlainsAttackModifier = iExtraModifier;
+			}
+		}
+
+		// 1SDAN
+		if (
+				pAttacker->getOwnerINLINE() == LITHUANIA && 
+				pAttacker->getUnitType() == (UnitTypes) GC.getInfoTypeForString("UNIT_LITHUANIAN_VYTIS") &&
+				GET_PLAYER(pAttacker->getOwnerINLINE()).getCurrentEra() <= ERA_MEDIEVAL && 
+				GET_PLAYER(pAttacker->getOwnerINLINE()).isStateReligion() && 
+				getOwnerINLINE() != NO_PLAYER && 
+				(
+					!GET_PLAYER(getOwnerINLINE()).isStateReligion() || 
+					GET_PLAYER(getOwnerINLINE()).getStateReligion() == NO_RELIGION || 
+					(GET_PLAYER(getOwnerINLINE()).getStateReligion() != GET_PLAYER(pAttacker->getOwnerINLINE()).getStateReligion())
+				)
+			)
+		{
+			iModifier -= 25;
+			if (pCombatDetails != NULL)
+			{
+				pCombatDetails->iUniqueModifier = iExtraModifier;
 			}
 		}
 
