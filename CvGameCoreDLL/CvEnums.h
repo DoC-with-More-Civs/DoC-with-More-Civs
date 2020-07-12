@@ -1316,6 +1316,7 @@ enum LeaderHeadTypes			// Exposed to Python
 	KANISHKA,
 	MODU_CHANYU,
 	MINDAUGAS,
+	SUPPI,
 	NUM_LEADERHEADS
 };
 
@@ -1397,6 +1398,7 @@ enum PlayerTypes				// Exposed to Python
 	NUBIA,
 	ASSYRIA,
 	CHINA,
+	HITTITES,
 	GREECE,
 	OLMECS,
 	INDIA,

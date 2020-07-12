@@ -107,6 +107,7 @@ tCapitals = (
 (78, 37), # Kerma				
 (88, 50), # Assyria				
 (124, 52), # Chang'an				
+(84, 53), # Hittites				
 (76, 51), # Athens
 (19, 41), # La Venta				
 (110, 44), # Pataliputra				
@@ -242,6 +243,7 @@ tBirthArea = (
 ((77, 36), 	(80, 38)), 	# Nubia		
 ((87, 49),	(89, 52)),	# Assyria		
 ((119, 49),	(129, 56)),	# China		
+((82, 51),	(86, 54)),	# Hittites		
 ((74, 48),	(80, 55)),	# Greece
 ((19, 35), 	(19, 41)), 	# Olmecs		
 ((101, 42),	(114, 48)),	# India		
@@ -320,7 +322,7 @@ tBirthArea = (
 				
 dChangedBirthArea = {				
 #iCarthage : ((63, 45), (69, 48)),				
-iPersia :	((80, 43), 	(98, 55)), 	# includes Assyria and Anatolia	
+iPersia :	((84, 43), 	(98, 55)), 	# includes Assyria and Anatolia	
 iArabia :	((74, 35),	(90, 50)),	# Arabia	
 iSpain : 	((54, 51), 	(61, 54)), 	# includes Catalonia
 iHungary :	((73, 56),	(77, 59)),	# includes Serbia	
@@ -364,6 +366,7 @@ tCoreArea = (
 ((77, 35),	(81, 37)),	# Nubia		
 ((86, 48),	(89, 52)),	# Assyria		
 ((120, 49),	(129, 56)),	# China		
+((82, 51),	(86, 54)),	# Hittites		
 ((74, 48),	(80, 55)),	# Greece
 ((17, 41), 	(19, 41)), 	# Olmecs		
 ((105, 42),	(113, 47)),	# India		
@@ -530,6 +533,7 @@ tNormalArea = (
 ((76, 31), 	(79, 37)), 	# Nubia		
 ((86, 48),	(89, 52)),	# Assyria		
 ((117, 43),	(130, 59)),	# China		
+((82, 53),	(86, 55)),	# Hittites		
 ((75, 49),	(79, 54)),	# Greece
 ((17, 41), 	(19, 41)), 	# Olmecs		
 ((104, 42),	(114, 48)),	# India		
@@ -675,6 +679,7 @@ tBroaderArea = (
 ((66, 27), 	(71, 31)), 	# Nubia		
 ((86, 48),	(89, 52)),	# Assyria		
 ((111, 41),	(130, 59)),	# China		
+((80, 50),	(88, 55)),	# Hittites		
 ((71, 46),	(90, 55)),	# Greece
 ((19, 35), 	(21, 35)), 	# Olmecs		
 ((99, 30),	(114, 51)),	# India		

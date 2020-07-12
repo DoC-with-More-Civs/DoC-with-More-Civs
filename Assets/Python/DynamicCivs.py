@@ -586,6 +586,7 @@ dStartingLeaders = [
 	iNubia : iPiye,
 	iAssyria : iAshur,
 	iChina : iQinShiHuang,
+	iHittites : iSuppi,
 	iGreece : iPericles,
 	iOlmecs : iTezcatlipoca,
 	iPersia : iCyrus,
@@ -1194,9 +1195,9 @@ def specificName(iPlayer):
 				elif capital.getY() >= 58:
 					return "TXT_KEY_CIV_CELTIA_SCOTLAND_SHORT_DESC"
 			
-	elif iPlayer == iRome:
-		if isCapital(iPlayer, ["Mediolanum"]):
-			return "TXT_KEY_CIV_LOMBARD"
+	#elif iPlayer == iRome:
+		#if isCapital(iPlayer, ["Mediolanum"]):
+			#return "TXT_KEY_CIV_LOMBARD"
 		
 	elif iPlayer == iTamils:
 		if iEra >= iRenaissance:
@@ -1579,6 +1580,22 @@ def specificAdjective(iPlayer):
 				return "TXT_KEY_CIV_CHINA_QIN"
 			
 			return "TXT_KEY_CIV_CHINA_ZHOU"
+			
+	elif iPlayer == iXiongnu:
+		if bMonarchy:
+			if iEra >= iMedieval:
+				if iGameTurn >= getTurnForYear(600):
+					return "TXT_KEY_CIV_CHINA_HUIHU"
+				
+				return "TXT_KEY_CIV_XIONGNU_FASCIST"
+			
+			if iEra == iClassical:
+				if iGameTurn >= getTurnForYear(400):
+					return "TXT_KEY_CIV_CHINA_ROURAN"
+				
+				return "TXT_KEY_CIV_CHINA_XIANBEI"
+			
+			return "TXT_KEY_CIV_XIONGNU_DEFAULT"
 			
 	elif iPlayer == iBabylonia:
 		if bCityStates and not bEmpire:
@@ -2034,6 +2051,10 @@ def specificTitle(iPlayer, lPreviousOwners=[]):
 				
 			return "TXT_KEY_EMPIRE_ADJECTIVE"
 			
+	elif iPlayer == iHittites:
+		if bReborn:
+			return "TXT_KEY_KINGDOM_OF_PONTUS"
+			
 	elif iPlayer == iBabylonia:
 		if bCityStates and not bEmpire:
 			return "TXT_KEY_CITY_STATES_ADJECTIVE"
@@ -2089,6 +2110,13 @@ def specificTitle(iPlayer, lPreviousOwners=[]):
 		if bCityStates:
 			return "TXT_KEY_REPUBLIC_ADJECTIVE"
 			
+	elif iPlayer == iYuezhi:
+		if capital.getRegionID() == rPersia:
+			return "TXT_KEY_CIV_KUSHAN_YUEZHI"
+
+		if capital.getRegionID() == rIndia:
+			return "TXT_KEY_CIV_KUSHAN_HEPHT"
+			
 	elif iPlayer == iMaya:
 		if bReborn:
 			if bEmpire:
@@ -2114,10 +2142,6 @@ def specificTitle(iPlayer, lPreviousOwners=[]):
 		if iEra >= iMedieval:
 			return "TXT_KEY_KINGDOM_OF"
 		
-		if bEmpire:
-			return "TXT_KEY_EMPIRE_ADJECTIVE"
-
-	elif iPlayer == iXiongnu:
 		if bEmpire:
 			return "TXT_KEY_EMPIRE_ADJECTIVE"
 			
@@ -2873,5 +2897,9 @@ def leaderName(iPlayer):
 	elif iPlayer == iCarthage:
 		if gc.getGame().getGameTurnYear() >= 1200:
 			return "TXT_KEY_LEADER_BEJI"
+			
+	elif iPlayer == iKhitan:
+		if gc.getGame().getGameTurnYear() >= 1100:
+			return "TXT_KEY_LEADER_AKUTA"
 				
 	return None

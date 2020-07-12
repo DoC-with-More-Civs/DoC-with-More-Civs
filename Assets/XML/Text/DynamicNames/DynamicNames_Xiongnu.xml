@@ -38,6 +38,30 @@
 		<Spanish>Xiongnu Confederation</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_CIV_CHINA_XIANBEI</Tag>
+		<English>Xianbei  Confederation</English>
+		<French>Xiongnu Confederation</French>
+		<German>Xiongnu Confederation</German>
+		<Italian>Xiongnu Confederation</Italian>
+		<Spanish>Xiongnu Confederation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CHINA_ROURAN</Tag>
+		<English>Rouran Confederation</English>
+		<French>Xiongnu Confederation</French>
+		<German>Xiongnu Confederation</German>
+		<Italian>Xiongnu Confederation</Italian>
+		<Spanish>Xiongnu Confederation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CHINA_HUIHU</Tag>
+		<English>Huihu Confederation</English>
+		<French>Xiongnu Confederation</French>
+		<German>Xiongnu Confederation</German>
+		<Italian>Xiongnu Confederation</Italian>
+		<Spanish>Xiongnu Confederation</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_CIV_XIONGNU_ADJECTIVE</Tag>
 		<English>Xiongnu</English>
 		<French>Xiongnu</French>

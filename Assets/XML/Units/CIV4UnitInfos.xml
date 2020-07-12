@@ -11534,7 +11534,7 @@
 			</UnitAIs>
 			<PrereqTech>TECH_LEVERAGE</PrereqTech>
 			<BonusType>BONUS_HORSE</BonusType>
-			<iCost>30</iCost>
+			<iCost>25</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>3</iMoves>

@@ -570,5 +570,17 @@
 			<Path>Art/Interface/TeamColor/FlagDECAL_Lithuania.dds</Path>
 			<bWhiteFlag>0</bWhiteFlag>
 		</CivilizationArtInfo>
+		<CivilizationArtInfo>
+			<Type>ART_DEF_CIVILIZATION_IROQUOIS</Type>
+			<Button>,Art/Interface/Buttons/Empty.dds,Art/Interface/Buttons/Atlases/AND_misc_buttons.dds,3,4</Button>
+			<Path>Art/Interface/TeamColor/FlagDECAL_Iroquois.dds</Path>
+			<bWhiteFlag>0</bWhiteFlag>		
+		</CivilizationArtInfo>
+		<CivilizationArtInfo>
+			<Type>ART_DEF_CIVILIZATION_HITTITES</Type>
+			<Button>,Art/Interface/Buttons/Empty.dds,Art/Interface/Buttons/Atlases/AND_misc_buttons.dds,2,4</Button>
+			<Path>Art/Interface/TeamColor/FlagDECAL_Hittites2.dds</Path>
+			<bWhiteFlag>0</bWhiteFlag>
+		</CivilizationArtInfo>
 	</CivilizationArtInfos>
 </Civ4ArtDefines>

@@ -6,6 +6,14 @@
 		<English>The Scottish</English>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_CIV_SCOTLAND_ADJECTIVE</Tag>
+		<English>Scottish</English>
+		<French>Scottish</French>
+		<German>Scottish</German>
+		<Italian>Scottish</Italian>
+		<Spanish>Scottish</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BUILDING_SCOTTISH_SHIELING</Tag>
 		<English>Shieling</English>
 		<French>Shieling</French>

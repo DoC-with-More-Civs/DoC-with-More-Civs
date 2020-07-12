@@ -1505,5 +1505,33 @@
 			<fBlue>0.20</fBlue>
 			<fAlpha>1.00</fAlpha>
 		</ColorVal>
+		<ColorVal>
+			<Type>COLOR_X_CADETBLUE</Type>
+			<fRed>0.37</fRed>
+			<fGreen>0.62</fGreen>
+			<fBlue>0.63</fBlue>
+			<fAlpha>1.00</fAlpha>
+		</ColorVal>
+		<ColorVal>
+			<Type>COLOR_X_MOCCASIN</Type>
+			<fRed>1.00</fRed>
+			<fGreen>0.89</fGreen>
+			<fBlue>0.71</fBlue>
+			<fAlpha>1.00</fAlpha>
+		</ColorVal>
+		<ColorVal>
+			<Type>COLOR_X_DARKSLATEBLUE</Type>
+			<fRed>0.28</fRed>
+			<fGreen>0.24</fGreen>
+			<fBlue>0.55</fBlue>
+			<fAlpha>1.00</fAlpha>
+		</ColorVal>
+		<ColorVal>
+			<Type>COLOR_X_MINTCREAM</Type>
+			<fRed>0.96</fRed>
+			<fGreen>1.00</fGreen>
+			<fBlue>0.98</fBlue>
+			<fAlpha>1.00</fAlpha>
+		</ColorVal>
 	</ColorVals>
 </Civ4ColorVals>

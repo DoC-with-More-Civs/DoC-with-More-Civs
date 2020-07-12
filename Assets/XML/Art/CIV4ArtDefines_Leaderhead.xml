@@ -1462,5 +1462,21 @@
 			<NoShaderNIF>Art/Leaderheads/Mindaugas/alexander_noshader.nif</NoShaderNIF>
 			<BackgroundKFM>Art/Leaderheads/Mindaugas/alexander_bg.kfm</BackgroundKFM>
 		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_SUPPI</Type>
+			<Button>,Art/Interface/Buttons/Empty.dds,Art/Interface/Buttons/Atlases/AND_misc_buttons.dds,5,4</Button>
+			<NIF>art/LeaderHeads/Suppiluliuma/kublai_khan.nif</NIF>
+			<KFM>art/LeaderHeads/Suppiluliuma/kublai_khan.kfm</KFM>
+			<NoShaderNIF>art/LeaderHeads/Suppiluliuma/kublai_khan_noshader.nif</NoShaderNIF>
+			<BackgroundKFM>art/LeaderHeads/Suppiluliuma/Kublai_Khan_BG.kfm</BackgroundKFM>
+		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_DEGANAWIDA</Type>
+			<Button>,Art/Interface/Buttons/Empty.dds,Art/Interface/Buttons/Atlases/AND_misc_buttons.dds,8,4</Button>
+			<NIF>Art/Leaderheads/Deganawida/Julius_Caesar.nif</NIF>
+			<KFM>Art/Leaderheads/Deganawida/Julius_Caesar.kfm</KFM>
+			<NoShaderNIF>Art/Leaderheads/Deganawida/julius_caesar_noshader.nif</NoShaderNIF>
+			<BackgroundKFM>Art/Leaderheads/Deganawida/Julius_Caesar_BG.kfm</BackgroundKFM>
+		</LeaderheadArtInfo>
 	</LeaderheadArtInfos>
 </Civ4ArtDefines>

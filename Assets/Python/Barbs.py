@@ -54,6 +54,7 @@ tMinorCities = (
 (500, (73, 54), iIndependent, "Ragusa", 3, iCrossbowman, 3), # Ragusa
 (500, (86, 39), iIndependent, 'Bakkah', 3, iArcher, 1),		# Mecca
 (510, (104, 37), iIndependent, "Vatapi", 3, iCrossbowman, 2), # Vatapi
+(520, (68, 72), iIndependent, 'Oslo', 2, iArcher, 1),		# Oslo
 #(633, (113, 48), iBarbarian, 'Lhasa', 2, iKhampa, 1),			# Lhasa
 (680, (57, 44), iIndependent, 'Murrakush', 3, iCrossbowman, 1),	# Marrakesh
 #(700, (34, 22), iNative, 'Tiwanaku', 1, -1, -1),				# Tiahuanaco
@@ -61,6 +62,7 @@ tMinorCities = (
 (738, (118, 45), iIndependent2, 'Darllit', 2, iArcher, 1),		# Dali
 (800, (71, 59), iIndependent, 'Vindobona', 1, iCrossbowman, 1),	# Wien
 (800, (70, 61), iIndependent2, 'Praha', 1, iCrossbowman, 1),	# Prague
+(800, (58, 67), iIndependent, 'York', 1, iCrossbowman, 1),	# York
 #(800, (85, 69), iIndependent2, 'Beloozero', 1, iCrossbowman, 1),	# Beloozero
 (830, (66, 65), iIndependent, 'Hamburg', 2, iCrossbowman, 1),	# Hamburg
 (850, (66, 65), iIndependent, 'L&#252;beck', 2, iCrossbowman, 1),	# Lubeck
@@ -275,8 +277,10 @@ class Barbs:
 			self.checkSpawn(iBarbarian, iHeavyGalley, 1, (84, 24), (106, 42), self.spawnPirates, iGameTurn, 10, 0)
 
 		# Leoreth: Barbarians in Anatolia (Hittites), replace Hattusas spawn
+		#if utils.isYearIn(-2000, -800):
+			#self.checkSpawn(iBarbarian, iHuluganni, 1 + iHandicap, (81, 51), (86, 55), self.spawnInvaders, iGameTurn, 16, 0, ["TXT_KEY_ADJECTIVE_HITTITE"])
 		if utils.isYearIn(-2000, -800):
-			self.checkSpawn(iBarbarian, iHuluganni, 1 + iHandicap, (81, 51), (86, 55), self.spawnInvaders, iGameTurn, 16, 0, ["TXT_KEY_ADJECTIVE_HITTITE"])
+			self.checkSpawn(iBarbarian, iChariot, 1 + iHandicap, (81, 51), (86, 55), self.spawnInvaders, iGameTurn, 16, 0)
 
 		#barbarians in europe
 		if utils.isYearIn(-210, 470):

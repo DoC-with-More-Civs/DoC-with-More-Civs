@@ -4387,5 +4387,25 @@
 			<KFM/>
 			<Button>Art/Structures/Buildings/Lithuanian_Vaivadija/Seimelis.dds</Button>
 		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_IROQUOIS_LONGHOUSE</Type>
+			<LSystem>LSYSTEM_4x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>0.4</fScale>
+			<fInterfaceScale>0.9</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Unique/Iroquois/Longhouse/pow_camp.nif</NIF>
+			<KFM/>
+			<Button>,Art/Structures/Buildings/Unique/Iroquois/Longhouse/Longhouse.dds,Art/Interface/Buttons/Atlases/RoM_building_atlas.dds,7,14</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_IRON_FORGE</Type>
+			<LSystem>LSYSTEM_2x1</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>1.00</fScale>
+			<fInterfaceScale>0.7</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Unique/Hittite/Iron_Forge/Forge.nif</NIF>
+			<KFM/>
+			<Button>,Art/Interface/Buttons/Buildings/Iron_Forge.dds,Art/Interface/Buttons/Atlases/RoM_building_atlas.dds,5,4</Button>
+		</BuildingArtInfo>
 	</BuildingArtInfos>
 </Civ4ArtDefines>

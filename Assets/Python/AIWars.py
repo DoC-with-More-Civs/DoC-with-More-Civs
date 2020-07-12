@@ -149,10 +149,10 @@ tConquestTatarKievanRus = (21, iTatar, iKievanRus, tTatarKievanRusTL, tTatarKiev
 
 
 iYuezhiTurkestanYear = 30
-tYuezhiTurkestanTL = (98, 49)
-tYuezhiTurkestanBR = (103, 56)
+tYuezhiTurkestanTL = (99, 48)
+tYuezhiTurkestanBR = (102, 55)
 
-tConquestYuezhiTurkestan = (22, iYuezhi, iPersia, tYuezhiTurkestanTL, tYuezhiTurkestanBR, 4, iYuezhiTurkestanYear, 10)
+tConquestYuezhiTurkestan = (22, iYuezhi, iPersia, tYuezhiTurkestanTL, tYuezhiTurkestanBR, 3, iYuezhiTurkestanYear, 10)
 
 iConquestEnglandIrelandYear = 1150
 tConquestEnglandIrelandTL = (52, 64)

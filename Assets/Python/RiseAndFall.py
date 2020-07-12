@@ -2490,6 +2490,8 @@ class RiseAndFall:
 		if iCiv == iIndia:
 			utils.makeUnit(iArcher, iCiv, tPlot, 2)
 			utils.makeUnit(iLightSwordsman, iCiv, tPlot, 1)
+		elif iCiv == iHittites:
+			utils.makeUnit(iArcher, iCiv, tPlot, 3)
 		elif iCiv == iGreece:
 			utils.makeUnit(iHoplite, iCiv, tPlot, 4)
 		elif iCiv == iPersia:
@@ -2711,6 +2713,11 @@ class RiseAndFall:
 			utils.createSettlers(iCiv, 1)
 			utils.makeUnit(iArcher, iCiv, tPlot, 1)
 			utils.makeUnit(iMilitia, iCiv, tPlot, 1)
+		elif iCiv == iHittites:
+			utils.createSettlers(iCiv, 1)
+			utils.makeUnit(iSpearman, iCiv, tPlot, 1)
+			utils.makeUnit(iArcher, iCiv, tPlot, 1)
+			utils.makeUnit(iHuluganni, iCiv, tPlot, 1)
 		elif iCiv == iIndia:
 			utils.createSettlers(iCiv, 1)
 			utils.makeUnit(iSpearman, iCiv, tPlot, 1)
@@ -3447,6 +3454,8 @@ class RiseAndFall:
 		if iCiv == iAssyria:
 			utils.makeUnit(iWorker, iCiv, tPlot, 1)
 		elif iCiv == iChina:
+			utils.makeUnit(iWorker, iCiv, tPlot, 2)
+		elif iCiv == iHittites:
 			utils.makeUnit(iWorker, iCiv, tPlot, 2)
 		elif iCiv == iIndia:
 			#utils.makeUnit(iPunjabiWorker, iCiv, tPlot, 2)

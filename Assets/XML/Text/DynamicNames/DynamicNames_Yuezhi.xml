@@ -90,6 +90,22 @@
 		<Spanish>Kuashana</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_CIV_KUSHAN_YUEZHI</Tag>
+		<English>Kushan Empire</English>
+		<French>Kuashana</French>
+		<German>Kuashana</German>
+		<Italian>Kuashana</Italian>
+		<Spanish>Kuashana</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_KUSHAN_HEPHT</Tag>
+		<English>Hephthalite Empire</English>
+		<French>Kuashana</French>
+		<German>Kuashana</German>
+		<Italian>Kuashana</Italian>
+		<Spanish>Kuashana</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_CIV_KUSHAN_SHORT_DESC</Tag>
 		<English>Kushan</English>
 		<French>Kushan</French>

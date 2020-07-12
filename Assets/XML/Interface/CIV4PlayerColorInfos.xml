@@ -618,5 +618,17 @@
 			<ColorTypeSecondary>COLOR_PLAYER_VERMILION</ColorTypeSecondary>
 			<TextColorType>COLOR_PLAYER_AZURE_TEXT</TextColorType>
 		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_HITTITES</Type>
+			<ColorTypePrimary>COLOR_X_CADETBLUE</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_X_MOCCASIN</ColorTypeSecondary>
+			<TextColorType>COLOR_X_CADETBLUE</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_IROQUOIS</Type>
+			<ColorTypePrimary>COLOR_X_DARKSLATEBLUE</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_X_MINTCREAM</ColorTypeSecondary>
+			<TextColorType>COLOR_X_DARKSLATEBLUE</TextColorType>
+		</PlayerColorInfo>
 	</PlayerColorInfos>
 </Civ4PlayerColorInfos>
