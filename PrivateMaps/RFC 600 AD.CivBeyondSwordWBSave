@@ -520,8 +520,8 @@ BeginPlayer
 	Team=25
 	LeaderType=LEADER_RED_HORN
 	CivType=CIVILIZATION_MISSISSIPPI
-	PlayableCiv=1
-	StartingGold=700
+	PlayableCiv=0
+	StartingGold=0
 	CivicOption=CIVICOPTION_RELIGION, Civic=CIVIC_DEIFICATION
 	Handicap=HANDICAP_REGENT
 EndPlayer
@@ -10451,7 +10451,7 @@ BeginPlot
 	x=20,y=42
 	RiverNSDirection=0
 	isWOfRiver
-	ImprovementType=IMPROVEMENT_TOWN
+	ImprovementType=IMPROVEMENT_HAMLET
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -11370,7 +11370,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=22,y=42
-	ImprovementType=IMPROVEMENT_TOWN
+	ImprovementType=IMPROVEMENT_HAMLET
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -11464,23 +11464,6 @@ BeginPlot
 	x=22,y=54
 	RiverNSDirection=2
 	isWOfRiver
-	TerrainType=TERRAIN_GRASS
-	BeginUnit
-		UnitType=UNIT_MISSISSIPPI_FALCON_DANCER, UnitOwner=25, (Mississippi)
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_WORKER, UnitOwner=25, (Mississippi)
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_WORKER, UnitOwner=25, (Mississippi)
-	EndUnit
-	BeginCity
-		CityOwner=25, (Mississippi)
-		CityName=Cahokia
-		CityPopulation=2
-		BuildingType=BUILDING_MIDEWIWIN_MIDEWIGAAN
-		Player25Culture=25, (Mississippi)
-	EndCity
 	PlotType=2
 EndPlot
 BeginPlot
@@ -13263,22 +13246,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=26,y=55
-	BeginUnit
-		UnitType=UNIT_ARCHER, UnitOwner=25, (Mississippi)
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_ARCHER, UnitOwner=25, (Mississippi)
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_ARCHER, UnitOwner=25, (Mississippi)
-	EndUnit
-	BeginCity
-		CityOwner=25, (Mississippi)
-		CityName=Erie
-		CityPopulation=4
-		BuildingType=BUILDING_PALACE
-		Player25Culture=25, (Mississippi)
-	EndCity
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot

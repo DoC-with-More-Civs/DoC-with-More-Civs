@@ -5700,6 +5700,10 @@
 					<LeaderName>LEADER_RED_HORN</LeaderName>
 					<bLeaderAvailability>1</bLeaderAvailability>
 				</Leader>
+				<Leader>
+					<LeaderName>LEADER_DEGANAWIDA</LeaderName>
+					<bLeaderAvailability>1</bLeaderAvailability>
+				</Leader>
 			</Leaders>
 			<DerivativeCiv>CIVILIZATION_AMERICA</DerivativeCiv>
 			<CivilizationSelectionSound>AS3D_NATIVE_AMERICA_SELECT</CivilizationSelectionSound>

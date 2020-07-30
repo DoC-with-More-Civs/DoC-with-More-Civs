@@ -215,7 +215,8 @@ iManchuria : (125, 56),	# Beijing
 dRespawnCapitals = {				
 iEgypt : (79, 43),	# Cairo			
 iNubia : (81, 35),	# Dongola			
-iChina :  (124, 56),	# Beijing			
+iChina :  (124, 56),	# Beijing		
+iHittites : (84, 55),	# Hittites			
 iIndia : (105, 46),	# Delhi			
 iCarthage : (67, 48),	# Carthage			
 iPersia : (93, 48),	# Esfahan			
@@ -446,7 +447,8 @@ tCoreArea = (
 dChangedCoreArea = {			
 iNorteChico :	((26, 26),	(27, 32)),	# Chimu			
 iHarappa :	((103, 35),	(105, 40)),	# Chalukya				
-iChina : ((119, 47),	(129, 56)),			
+iChina : ((119, 47),	(129, 56)),				
+iHittites : ((82, 52),	(86, 55)),			
 iGreece :	((75, 49),	(79, 52)),		
 iIndia :	((103, 37),	(106, 41)),		
 iPhoenicia : ((62, 45),	(69, 48)),	
@@ -612,7 +614,8 @@ tNormalArea = (
 				
 dChangedNormalArea = {	
 iNorteChico : 	((26, 26),	(27, 32)),	# Chimu		
-iHarappa :	((103, 35),	(105, 40)),	# Chalukya					
+iHarappa :	((103, 35),	(105, 40)),	# Chalukya			
+iHittites : ((82, 52),	(86, 55)),					
 iIndia : 	((96, 42),	(97, 42)),		
 iCarthage :	((63, 45),	(70, 48)),
 iYuezhi :	((98, 49),	(102, 56)),	# Kushan		
@@ -771,7 +774,8 @@ iMughals :	((84, 37),	(94, 43)),
 				
 dRespawnArea = {				
 iEgypt :	((75, 37), 	(82, 45)),		
-iChina :	((117, 46),	(129, 57)),		
+iChina :	((117, 46),	(129, 57)),			
+iHittites : ((82, 52),	(86, 55)),		
 iIndia :	((103, 37),	(113, 47)),			
 iPhoenicia : ((62, 45),	(69, 48)),	
 iByzantium :	((75, 49),	(81, 57)),	

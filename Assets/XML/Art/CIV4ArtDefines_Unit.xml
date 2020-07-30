@@ -11105,13 +11105,13 @@
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_VISHAP_INFANTRY</Type>
 			<Button>,Art/Interface/Buttons/Units/Vishap.dds,Art/Interface/Buttons/mem_units_atlas.dds,5,5</Button>
-			<fScale>0.46</fScale>
+			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/Abbasid Heavy Footman/AbbasidHeavyfootman.nif</NIF>
-			<KFM>Art/Units/Charlemagne_HeavySwordsman/HeavySwordsman.kfm</KFM>
-			<SHADERNIF>Art/Units/Abbasid Heavy Footman/AbbasidHeavyfootman.nif</SHADERNIF>
+			<NIF>Art/Units/Vishap Infantry/Javelin.nif</NIF>
+			<KFM>Art/Units/Turkish Javelinman/MaliSkirmisher.kfm</KFM>
+			<SHADERNIF>Art/Units/Vishap Infantry/Javelin.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -11119,7 +11119,7 @@
 			</ShadowDef>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
+			<bActAsRanged>1</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds/>
 		</UnitArtInfo>
@@ -11910,9 +11910,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/Unique/Iroquois/Mohawk Longbowman/Archer.nif</NIF>
-			<KFM>Art/Units/Archer/Archer.kfm</KFM>
-			<SHADERNIF>Art/Units/Unique/Iroquois/Mohawk Longbowman/Archer_FX.nif</SHADERNIF>
+			<NIF>Art/Units/Iroquois Longbowman/iroquois_longbowman.nif</NIF>
+			<KFM>Art/Units/Longbowman/Longbowman.kfm</KFM>
+			<SHADERNIF>Art/Units/Iroquois longbowman/iroquois_longbowman.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
