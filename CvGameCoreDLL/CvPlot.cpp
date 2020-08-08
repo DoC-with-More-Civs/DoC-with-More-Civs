@@ -10767,7 +10767,7 @@ void CvPlot::getVisibleBonusState(BonusTypes& eType, bool& bImproved, bool& bWor
 	eType = NO_BONUS;
 	bImproved = false;
 	bWorked = false;
-	BonusTypes eVarietyType = NO_BONUS; # wunshare: fiexed
+	BonusTypes eVarietyType;
 
 	if (GC.getGameINLINE().getActiveTeam() == NO_TEAM)
 	{
