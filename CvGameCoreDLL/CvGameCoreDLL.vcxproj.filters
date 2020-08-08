@@ -312,23 +312,11 @@
     <ClCompile Include="FDialogTemplate.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="AdvancedCombatOdds.h">
-      <Filter>Header Files</Filter>
-    </ClCompile>
-    <ClCompile Include="AI_Defines.h">
-      <Filter>Header Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Buffy.h">
-      <Filter>Header Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Bugmod.h">
-      <Filter>Header Files</Filter>
-    </ClCompile>
-    <ClCompile Include="CyCityInterface2.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AI_Defines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="CvArea.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -354,6 +342,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="CvDLLDataStreamIFaceBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CvDLLEngineIFaceBase.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="CvDLLEntity.h">
@@ -610,18 +601,6 @@
     </ClInclude>
     <ClInclude Include="resource.h">
       <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="CvBugMod.cpp">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="CvBugMod.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="CvRhyes.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="CvDLLEngineIFaceBase.h">
-      <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
