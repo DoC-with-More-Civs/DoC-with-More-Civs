@@ -13460,7 +13460,7 @@ bool CvImprovementInfo::isImprovementBonusMakesValid(int i) const
 	return m_paImprovementBonus[i].m_bBonusMakesValid;
 }
 
-bool CvImprovementInfo::isImprovementBonusTrade(int i) const
+bool CvImprovementInfo::isImprovementBonusTrade(int i) const // 资源index越界
 {
 	FAssertMsg(i < GC.getNumBonusInfos(), "Index out of bounds");
 	FAssertMsg(i > -1, "Index out of bounds");

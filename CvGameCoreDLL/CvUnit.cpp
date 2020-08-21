@@ -9851,7 +9851,7 @@ int CvUnit::unitClassDefenseModifier(UnitClassTypes eUnitClass) const
 }
 
 
-int CvUnit::unitCombatModifier(UnitCombatTypes eUnitCombat) const
+int CvUnit::unitCombatModifier(UnitCombatTypes eUnitCombat) const // 蛮族单位计算出bug
 {
 	FAssertMsg(eUnitCombat >= 0, "eUnitCombat is expected to be non-negative (invalid Index)");
 	FAssertMsg(eUnitCombat < GC.getNumUnitCombatInfos(), "eUnitCombat is expected to be within maximum bounds (invalid Index)");

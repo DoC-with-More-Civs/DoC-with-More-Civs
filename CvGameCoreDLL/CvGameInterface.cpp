@@ -2568,7 +2568,7 @@ VictoryTypes CvGame::getSpaceVictory() const
 	return eVictory;
 }
 
-void CvGame::nextActivePlayer(bool bForward)
+void CvGame::nextActivePlayer(bool bForward) // 下一个玩家，不知道什么时候被调用
 {
 	int iNewPlayer = getActivePlayer();
 	for (int i = 1; i < MAX_PLAYERS; ++i)

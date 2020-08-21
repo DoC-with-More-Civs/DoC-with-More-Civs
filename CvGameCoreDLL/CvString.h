@@ -33,6 +33,11 @@ public:
 #endif
 	~CvWString() {}
 
+/************************************************************************** 
+ *
+ *                            Origin BTS Code 
+ *
+ **************************************************************************/
 	void Copy(const char* s)
 	{ 
 		if (s)
@@ -47,6 +52,53 @@ public:
 			}
 		}
 	}
+ /************************************************************************** 
+ *
+ *                            Origin BTS Code 
+ *
+ **************************************************************************/
+/**************************************************************************
+ *
+ *  wunshare new code for convert utf-8 string to wstring -s start
+ *
+ **************************************************************************/
+//	void Copy(const char* s) 
+//	{ 
+//		if (s)
+//		{
+//			/* 保存原来的环境变量 */
+//			char* old_locale = strdup(setlocale(LC_CTYPE, NULL));
+//			/* 设置新的环境变量 */
+//#ifdef _WIN32
+//			setlocale(LC_CTYPE, "zh_CN.GBK");
+//#else
+//			setlocale(LC_CTYPE, "zh_CN.UTF-8");
+//#endif // _WIN32
+//			/* 新字符串需要的长度 */
+//			size_t size = mbstowcs(NULL, s, 0);
+//			if (size > 0)
+//			{
+//				wchar *w = new wchar[size+1];
+//				/* 转换完成后的长度 */
+//				size_t len = mbstowcs(w, s, size);
+//				FAssert(size == len);
+//				assign(w);
+//				delete [] w;
+//			}
+//			else
+//			{
+//				assign(L""); /* 转换失败，返回空字符串 */
+//			}
+//			/* 恢复原来的环境变量 */
+//			setlocale(LC_CTYPE, old_locale);
+//			free(old_locale);
+//		}
+//	}
+/**************************************************************************
+ *
+ *  wunshare new code for convert utf-8 string to wstring - end
+ *
+ **************************************************************************/
 
 	// FString compatibility
 	const wchar* GetCString() const 	{ return c_str(); }	
@@ -209,6 +261,12 @@ public:
 	~CvString() {}
 
 	void Convert(const std::wstring& w) { Copy(w.c_str());	}
+
+/************************************************************************** 
+ *
+ *                            Origin BTS Code 
+ *
+ **************************************************************************/
 	void Copy(const wchar* w)
 	{
 		if (w)
@@ -223,7 +281,53 @@ public:
 			}
 		}
 	}
-
+/************************************************************************** 
+ *
+ *                            Origin BTS Code 
+ *
+ **************************************************************************/
+/**************************************************************************
+ *
+ *  wunshare new code for convert wstring to utf-8 string - start
+ *
+ **************************************************************************/
+//	void Copy(const wchar* w)
+//	{
+//		if (w)
+//		{
+//			/* 保存原来的环境变量 */
+//			char* old_locale = strdup(setlocale(LC_CTYPE, NULL));
+//			/* 设置新的环境变量 */
+//#ifdef _WIN32
+//			setlocale(LC_CTYPE, "zh_CN.GBK");
+//#else
+//			setlocale(LC_CTYPE, "zh_CN.UTF-8");
+//#endif // _WIN32
+//			/* 新字符串需要的长度 */
+//			size_t size = wcstombs(NULL, w, 0);
+//			if (size > 0)
+//			{
+//				char *s = new char[size+1];
+//				/* 转换完成后的长度 */
+//				size_t len = wcstombs(s, w, size);
+//				FAssert(size == len);
+//				assign(s);
+//				delete [] s;
+//			}
+//			else
+//			{
+//				assign(""); /* 转换失败，返回空字符串 */
+//			}
+//			/* 恢复原来的环境变量 */
+//			setlocale(LC_CTYPE, old_locale);
+//			free(old_locale);
+//		}
+//	}
+/**************************************************************************
+ *
+ *  wunshare new code for convert wstring to utf-8 string - end
+ *
+ **************************************************************************/
 	// implicit conversion
 	operator const char*() const 	{ return c_str(); }							
 	//	operator const CvWString() const 	{ return CvWString(c_str()); }							

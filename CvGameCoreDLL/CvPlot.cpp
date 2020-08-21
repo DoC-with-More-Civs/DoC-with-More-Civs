@@ -735,7 +735,7 @@ TeamTypes CvPlot::getTeam() const
 }
 
 
-void CvPlot::doTurn()
+void CvPlot::doTurn() // 被CvMap::doTurn()调用
 {
 	PROFILE_FUNC();
 
@@ -754,13 +754,13 @@ void CvPlot::doTurn()
 		changeImprovementDuration(1);
 	}
 
-	doFeature();
+	doFeature(); // 更新地貌
 
-	doCulture();
+	doCulture(); // 计算文化
 
-	verifyUnitValidPlot();
+	verifyUnitValidPlot(); // 
 
-	// Leoreth: Great Wall effect
+	// Leoreth: Great Wall effect 设置万里长城效果
 	if (isWithinGreatWall() && isOwned())
 	{
 		if (GET_PLAYER(getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)GREAT_WALL))
@@ -769,7 +769,7 @@ void CvPlot::doTurn()
 			{
 				if (getUnitByIndex(iI)->getOwnerINLINE() == BARBARIAN)
 				{
-					getUnitByIndex(iI)->changeDamage(10, getOwnerINLINE());
+					getUnitByIndex(iI)->changeDamage(10, getOwnerINLINE()); // 什么原理？
 				}
 			}
 		}
@@ -9757,7 +9757,7 @@ void CvPlot::setScriptData(const char* szNewValue)
 
 // Protected Functions...
 
-void CvPlot::doFeature()
+void CvPlot::doFeature() // 被CvPlot::doTurn()调用，更新地块地貌
 {
 	PROFILE("CvPlot::doFeature()")
 
@@ -9767,7 +9767,7 @@ void CvPlot::doFeature()
 	int iProbability;
 	int iI, iJ;
 
-	if (getFeatureType() != NO_FEATURE)
+	if (getFeatureType() != NO_FEATURE) // 有地貌
 	{
 		iProbability = GC.getFeatureInfo(getFeatureType()).getDisappearanceProbability();
 
@@ -9873,7 +9873,7 @@ void CvPlot::doFeature()
 }
 
 
-void CvPlot::doCulture()
+void CvPlot::doCulture() // 计算地块文化
 {
 	PROFILE("CvPlot::doCulture()")
 

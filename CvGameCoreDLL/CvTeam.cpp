@@ -1202,7 +1202,7 @@ void CvTeam::declareWar(TeamTypes eTeam, bool bNewDiplo, WarPlanTypes eWarPlan)
 	int iI, iJ;
 
 	FAssertMsg(eTeam != NO_TEAM, "eTeam is not assigned a valid value");
-	FAssertMsg(eTeam != getID(), "eTeam is not expected to be equal with getID()");
+	FAssertMsg(eTeam != getID(), "eTeam is not expected to be equal with getID()"); // 哪里的调用出错的 eTeam == getID()
 
 	if (eTeam == getID()) return; //Rhye
 

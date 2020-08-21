@@ -11779,12 +11779,12 @@ bool CvPlayer::isEverAlive() const
 }
 
 
-void CvPlayer::setAlive(bool bNewValue)
+void CvPlayer::setAlive(bool bNewValue) // 玩家出生或崩溃时要做的事情
 {
 	CvWString szBuffer;
 	int iI;
 
-	if (isAlive() != bNewValue)
+	if (isAlive() != bNewValue) // 当状态发生改变
 	{
 		m_bAlive = bNewValue;
 
@@ -11795,9 +11795,9 @@ void CvPlayer::setAlive(bool bNewValue)
 		// Sanguo Mod Performance, end
 
 		// Report event to Python
-		CvEventReporter::getInstance().setPlayerAlive(getID(), bNewValue);
+		CvEventReporter::getInstance().setPlayerAlive(getID(), bNewValue); // 调用Python::setPlayerAlive()
 
-		if (isAlive())
+		if (isAlive())  // 文明出生时
 		{
 			if (!isEverAlive())
 			{
@@ -11815,38 +11815,38 @@ void CvPlayer::setAlive(bool bNewValue)
 
 			if (GC.getGameINLINE().isMPOption(MPOPTION_SIMULTANEOUS_TURNS) || (GC.getGameINLINE().getNumGameTurnActive() == 0) || (GC.getGameINLINE().isSimultaneousTeamTurns() && GET_TEAM(getTeam()).isTurnActive()))
 			{
-				setTurnActive(true);
+				setTurnActive(true); // 跳过，多人游戏玩家更新
 			}
 
-			gDLL->openSlot(getID());
+			gDLL->openSlot(getID()); // 增加栏位
 		}
-		else
+		else // 文明死亡时
 		{
-			clearResearchQueue();
-			killUnits();
-			killCities();
-			killAllDeals();
+			clearResearchQueue(); // 清理科研
+			killUnits();		// 清理单位
+			killCities();		// 清理城市
+			killAllDeals();		// 清理交易
 
-			setTurnActive(false);
+			setTurnActive(false);  // 进入更新
 
-			gDLL->endMPDiplomacy();
-			gDLL->endDiplomacy();
+			gDLL->endMPDiplomacy(); // 清理多人游戏外交
+			gDLL->endDiplomacy(); // 清理外交
 
 			if (!isHuman())
 			{
-				gDLL->closeSlot(getID());
+				gDLL->closeSlot(getID());  // 关闭栏位
 			}
 
 			if (GC.getGameINLINE().getElapsedGameTurns() > 0)
 			{
 				//if (!isBarbarian()) //Rhye
-				if (!isBarbarian() && !isMinorCiv()) //Rhye
+				if (!isBarbarian() && !isMinorCiv()) //Rhye  // 如果是主要文明
 				{
 					szBuffer = gDLL->getText("TXT_KEY_MISC_CIV_DESTROYED", getCivilizationAdjectiveKey());
 
 					for (iI = 0; iI < MAX_PLAYERS; iI++)
 					{
-						if (GET_PLAYER((PlayerTypes)iI).isAlive())
+						if (GET_PLAYER((PlayerTypes)iI).isAlive()) // 在所有玩家界面打印文明崩溃信息
 						{
 							gDLL->getInterfaceIFace()->addMessage(((PlayerTypes)iI), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CIVDESTROYED", MESSAGE_TYPE_MAJOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_WARNING_TEXT"));
 						}
@@ -11857,7 +11857,7 @@ void CvPlayer::setAlive(bool bNewValue)
 			}
 		}
 
-		GC.getGameINLINE().setScoreDirty(true);
+		GC.getGameINLINE().setScoreDirty(true); // 强制更新得分
 	}
 }
 
@@ -11928,7 +11928,7 @@ void CvPlayer::setTurnActiveForPbem(bool bActive)
 	if (isTurnActive() != bActive)
 	{
 		m_bTurnActive = bActive;
-		GC.getGameINLINE().changeNumGameTurnActive(isTurnActive() ? 1 : -1);
+		GC.getGameINLINE().changeNumGameTurnActive(isTurnActive() ? 1 : -1); // 电邮对战使用
 	}
 }
 
@@ -11937,11 +11937,11 @@ void CvPlayer::setTurnActive(bool bNewValue, bool bDoTurn)
 {
 	int iI;
 
-	if (isTurnActive() != bNewValue)
+	if (isTurnActive() != bNewValue) // 状态被改变
 	{
 		m_bTurnActive = bNewValue;
 
-		if (isTurnActive())
+		if (isTurnActive()) // 存活
 		{
 			if (GC.getLogging())
 			{
@@ -11968,7 +11968,7 @@ void CvPlayer::setTurnActive(bool bNewValue, bool bDoTurn)
 				}
 			}
 
-			if ((GC.getGameINLINE().isHotSeat() || GC.getGameINLINE().isPbem()) && isHuman() && bDoTurn)
+			if ((GC.getGameINLINE().isHotSeat() || GC.getGameINLINE().isPbem()) && isHuman() && bDoTurn) // 多人游戏，跳过
 			{
 				gDLL->getInterfaceIFace()->clearEventMessages();
 				gDLL->getEngineIFace()->setResourceLayer(false);
@@ -11976,9 +11976,9 @@ void CvPlayer::setTurnActive(bool bNewValue, bool bDoTurn)
 				GC.getGameINLINE().setActivePlayer(getID());
 			}
 
-			GC.getGameINLINE().changeNumGameTurnActive(1);
+			GC.getGameINLINE().changeNumGameTurnActive(1); // 计数器+1
 
-			if (bDoTurn)
+			if (bDoTurn) // 进入回合逻辑
 			{
 				//Rhye - start comment
 				//Not sure if this is the best place for this.
@@ -11988,20 +11988,20 @@ void CvPlayer::setTurnActive(bool bNewValue, bool bDoTurn)
 				}*/
 				//Rhye - end comment
 
-				if (GC.getGameINLINE().getElapsedGameTurns() > 0)
+				if (GC.getGameINLINE().getElapsedGameTurns() > 0) // 不是游戏首回合
 				{
 					if (isAlive())
 					{
-						if (GC.getGameINLINE().isMPOption(MPOPTION_SIMULTANEOUS_TURNS))
+						if (GC.getGameINLINE().isMPOption(MPOPTION_SIMULTANEOUS_TURNS)) // 跳过，多人游戏更新
 						{
 							doTurn();
 						}
 
-						doTurnUnits();
+						doTurnUnits(); // 单位更新
 					}
 				}
 
-				if ((getID() == GC.getGameINLINE().getActivePlayer()) && (GC.getGameINLINE().getElapsedGameTurns() > 0))
+				if ((getID() == GC.getGameINLINE().getActivePlayer()) && (GC.getGameINLINE().getElapsedGameTurns() > 0)) // 人类玩家进入逻辑
 				{
 					if (GC.getGameINLINE().isNetworkMultiPlayer())
 					{
@@ -12020,13 +12020,13 @@ void CvPlayer::setTurnActive(bool bNewValue, bool bDoTurn)
 			{
 				if (gDLL->getInterfaceIFace()->getLengthSelectionList() == 0)
 				{
-					gDLL->getInterfaceIFace()->setCycleSelectionCounter(1);
+					gDLL->getInterfaceIFace()->setCycleSelectionCounter(1);  // 进入人类玩家循环
 				}
 
-				gDLL->getInterfaceIFace()->setDirty(SelectionCamera_DIRTY_BIT, true);
+				gDLL->getInterfaceIFace()->setDirty(SelectionCamera_DIRTY_BIT, true);  // 强制更新摄像机
 			}
 		}
-		else
+		else // !isTurnActive()
 		{
 			if (GC.getLogging())
 			{
@@ -12051,15 +12051,15 @@ void CvPlayer::setTurnActive(bool bNewValue, bool bDoTurn)
 				startProfilingDLL();
 			}
 
-			GC.getGameINLINE().changeNumGameTurnActive(-1);
+			GC.getGameINLINE().changeNumGameTurnActive(-1); // 计数器-1
 
-			if (bDoTurn)
+			if (bDoTurn) // 进入回合逻辑
 			{
-				if (!GC.getGameINLINE().isMPOption(MPOPTION_SIMULTANEOUS_TURNS))
+				if (!GC.getGameINLINE().isMPOption(MPOPTION_SIMULTANEOUS_TURNS)) // 单人游戏进入这里更新
 				{
 					if (isAlive())
 					{
-						doTurn();
+						doTurn();  //执行CvPlayer::doTurn()
 					}
 
 					if ((GC.getGameINLINE().isPbem() || GC.getGameINLINE().isHotSeat()) && isHuman() && GC.getGameINLINE().countHumanPlayersAlive() > 1)
@@ -12081,34 +12081,34 @@ void CvPlayer::setTurnActive(bool bNewValue, bool bDoTurn)
 							}
 						}
 					}
-					else
+					else // !isSimultaneousTeamTurns()
 					{
-						for (iI = (getID() + 1); iI < MAX_PLAYERS; iI++)
+						for (iI = (getID() + 1); iI < MAX_PLAYERS; iI++) // 从下一个文明开始遍历
 						{
-							if (GET_PLAYER((PlayerTypes)iI).isAlive())
+							if (GET_PLAYER((PlayerTypes)iI).isAlive()) // 文明存活
 							{
-								if (GC.getGameINLINE().isPbem() && GET_PLAYER((PlayerTypes)iI).isHuman())
+								if (GC.getGameINLINE().isPbem() && GET_PLAYER((PlayerTypes)iI).isHuman()) // 跳过多人游戏更新
 								{
 									if (!GC.getGameINLINE().getPbemTurnSent())
 									{
 										gDLL->sendPbemTurn((PlayerTypes)iI);
 									}
 								}
-								else
+								else  // 下一个存活文明更新
 								{
-									GET_PLAYER((PlayerTypes)iI).setTurnActive(true);
+									GET_PLAYER((PlayerTypes)iI).setTurnActive(true); // 递归更新下一个文明
 								}
-								break;
+								break; // 跳出当前玩家
 							}
 						}
-					}
-				}
-			}
-		}
+					} // isSimultaneousTeamTurns()
+				} // !GC.getGameINLINE().isMPOption(MPOPTION_SIMULTANEOUS_TURNS)
+			} // bDoTurn
+		} // isTurnActive()
 
-		gDLL->getInterfaceIFace()->updateCursorType();
+		gDLL->getInterfaceIFace()->updateCursorType(); // 更新指针
 
-		gDLL->getInterfaceIFace()->setDirty(Score_DIRTY_BIT, true);
+		gDLL->getInterfaceIFace()->setDirty(Score_DIRTY_BIT, true); // 强制更新得分
 	}
 }
 
@@ -12121,17 +12121,17 @@ bool CvPlayer::isAutoMoves() const
 
 void CvPlayer::setAutoMoves(bool bNewValue)
 {
-	if (isAutoMoves() != bNewValue)
+	if (isAutoMoves() != bNewValue) // 状态改变
 	{
 		m_bAutoMoves = bNewValue;
 
-		if (!isAutoMoves())
+		if (!isAutoMoves()) // !isAutoMoves
 		{
-			if (isEndTurn() || !isHuman())
+			if (isEndTurn() || !isHuman()) // AI或isEndTurn()
 			{
 				setTurnActive(false);
 			}
-			else
+			else // 进入人类玩家
 			{
 				if (getID() == GC.getGameINLINE().getActivePlayer())
 				{

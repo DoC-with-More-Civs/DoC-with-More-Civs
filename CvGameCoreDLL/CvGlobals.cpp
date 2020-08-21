@@ -106,7 +106,7 @@ CvGlobals gGlobals;
 //
 CvGlobals::CvGlobals() :
 m_bGraphicsInitialized(false),
-m_bLogging(false),
+m_bLogging(false), // 日志开关在这里
 m_bRandLogging(false),
 m_bOverwriteLogs(false),
 m_bSynchLogging(false),

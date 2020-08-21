@@ -2187,10 +2187,11 @@ int CvGame::getTeamClosenessScore(int** aaiDistances, int* aiStartingLocs)
 }
 
 
-void CvGame::update()
+void CvGame::update() // 核心函数：游戏帧循环
 {
 	PROFILE("CvGame::update");
 
+	// 调整摄像机镜头
 	CvPlot* lookatPlot = gDLL->getInterfaceIFace()->getLookAtPlot();
 	if ( lookatPlot != NULL )
 	{
@@ -2269,7 +2270,7 @@ void CvGame::update()
 			//gDLL->getEngineIFace()->AutoSave(true);
 		}
 
-		if (getNumGameTurnActive() == 0)
+		if (getNumGameTurnActive() == 0) // 是否进入回合逻辑更新 -- 人类玩家回合时为1
 		{
 			if (!isPbem() || !getPbemTurnSent())
 			{
@@ -3854,7 +3855,7 @@ void CvGame::setTargetScore(int iNewValue)
 
 int CvGame::getNumGameTurnActive()
 {
-	return m_iNumGameTurnActive;
+	return m_iNumGameTurnActive;   //这个变量要加锁
 }
 
 
@@ -3882,7 +3883,7 @@ int CvGame::countNumHumanGameTurnActive() const
 
 void CvGame::changeNumGameTurnActive(int iChange)
 {
-	m_iNumGameTurnActive = (m_iNumGameTurnActive + iChange);
+	m_iNumGameTurnActive = (m_iNumGameTurnActive + iChange); //这个变量要加锁
 	FAssert(getNumGameTurnActive() >= 0);
 }
 
@@ -6194,7 +6195,7 @@ void CvGame::doTurn()
 	incrementGameTurn();
 	incrementElapsedGameTurns();
 
-	if (isMPOption(MPOPTION_SIMULTANEOUS_TURNS))
+	if (isMPOption(MPOPTION_SIMULTANEOUS_TURNS)) // 跳过
 	{
 		shuffleArray(aiShuffle, MAX_PLAYERS, getSorenRand());
 
@@ -6204,18 +6205,18 @@ void CvGame::doTurn()
 
 			if (GET_PLAYER((PlayerTypes)iLoopPlayer).isAlive())
 			{
-				GET_PLAYER((PlayerTypes)iLoopPlayer).setTurnActive(true);
+				GET_PLAYER((PlayerTypes)iLoopPlayer).setTurnActive(true); // 跳过，多人游戏玩家更新
 			}
 		}
 	}
-	else if (isSimultaneousTeamTurns())
+	else if (isSimultaneousTeamTurns()) // 跳过
 	{
 		for (iI = 0; iI < MAX_TEAMS; iI++)
 		{
 			CvTeam& kTeam = GET_TEAM((TeamTypes)iI);
 			if (kTeam.isAlive())
 			{
-				kTeam.setTurnActive(true);
+				kTeam.setTurnActive(true); // 跳过
 				FAssert(getNumGameTurnActive() == kTeam.getAliveCount());
 			}
 
@@ -6224,7 +6225,7 @@ void CvGame::doTurn()
 	}
 	else
 	{
-		for (iI = 0; iI < MAX_PLAYERS; iI++)
+		for (iI = 0; iI < MAX_PLAYERS; iI++) // 更新Player.setTurnActive(true，true)
 		{
 			if (GET_PLAYER((PlayerTypes)iI).isAlive())
 			{
@@ -6234,7 +6235,7 @@ void CvGame::doTurn()
 					{
 						// Nobody else left alive
 						GC.getInitCore().setType(GAME_HOTSEAT_NEW);
-						GET_PLAYER((PlayerTypes)iI).setTurnActive(true);
+						GET_PLAYER((PlayerTypes)iI).setTurnActive(true); // 跳过，电邮对战
 					}
 					else if (!getPbemTurnSent())
 					{
@@ -6243,8 +6244,8 @@ void CvGame::doTurn()
 				}
 				else
 				{
-					GET_PLAYER((PlayerTypes)iI).setTurnActive(true);
-					FAssert(getNumGameTurnActive() == 1);
+					GET_PLAYER((PlayerTypes)iI).setTurnActive(true); // 进入玩家回合逻辑
+					FAssert(getNumGameTurnActive() == 1); // 巴比伦文明诞生？的时候报错
 				}
 
 				break;

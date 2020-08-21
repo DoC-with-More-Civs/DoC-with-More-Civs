@@ -336,7 +336,7 @@ void CvMap::setAllPlotTypes(PlotTypes ePlotType)
 
 
 // XXX generalize these funcs? (macro?)
-void CvMap::doTurn()
+void CvMap::doTurn() // 被CvGame::doTurn()调用
 {
 	PROFILE("CvMap::doTurn()")
 
@@ -350,7 +350,7 @@ void CvMap::doTurn()
 	{
 		pPlot = plotByIndexINLINE(iI);
 
-		pPlot->doTurn();
+		pPlot->doTurn(); // 更新每个地块
 
 		if (iGameTurn % iInterval == 0)
 		{

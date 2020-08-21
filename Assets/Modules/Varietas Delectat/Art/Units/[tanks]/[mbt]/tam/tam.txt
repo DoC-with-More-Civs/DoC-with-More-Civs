@@ -1,9 +1,0 @@
-My 2nd versionfor this argentinian tank.
-Now I've found the BluePrints, and I've used my 2nd Tam Vctp to upgrade
-the tam too.
-
-Uses modernarmor nif and animations (not included)
-
-Flag from Asioasioasio's Rosomak
-
-KrugerPritz
