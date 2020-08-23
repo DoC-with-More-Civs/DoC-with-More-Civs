@@ -11,18 +11,21 @@
 #include "FProfiler.h"
 #include "CvRhyes.h"
 
+#include "MTCore.h" // wunshare: 线程相关
+
 // Public Functions...
 
 CvPlotGroup::CvPlotGroup()
 {
 	m_paiNumBonuses = NULL;
-
 	reset(0, NO_PLAYER, true);
 }
 
 
 CvPlotGroup::~CvPlotGroup()
 {
+//	while (MTCore::getInstance().WaitMapLogoc()) // wunhsare:防止锁被析构，600AD依然有Bug
+//		Sleep(10);
 	uninit();
 }
 
@@ -112,7 +115,9 @@ void CvPlotGroup::removePlot(CvPlot* pPlot)
 
 void CvPlotGroup::recalculatePlots()
 {
-	PROFILE_FUNC();
+	// PROFILE_FUNC();
+
+	static CMutexLock local_lock; // wunshare: 线程相关
 
 	CLLNode<XYCoords>* pPlotNode;
 	CvPlot* pPlot;
@@ -130,10 +135,17 @@ void CvPlotGroup::recalculatePlots()
 		pPlot = GC.getMapINLINE().plotSorenINLINE(pPlotNode->m_data.iX, pPlotNode->m_data.iY);
 
 		iCount = 0;
+		// wunshare: 线程相关 - start
+		FAStar* plotGroupFinder = gDLL->getFAStarIFace()->create();
+		gDLL->getFAStarIFace()->Initialize(plotGroupFinder, GC.getMap().getGridWidthINLINE(), GC.getMap().getGridHeightINLINE(),
+			GC.getMap().isWrapXINLINE(), GC.getMap().isWrapYINLINE(), NULL, NULL, NULL, plotGroupValid, NULL, countPlotGroup, NULL);
 
-		gDLL->getFAStarIFace()->SetData(&GC.getPlotGroupFinder(), &iCount);
-		gDLL->getFAStarIFace()->GeneratePath(&GC.getPlotGroupFinder(), pPlot->getX_INLINE(), pPlot->getY_INLINE(), -1, -1, false, eOwner);
-
+		//gDLL->getFAStarIFace()->SetData(&GC.getPlotGroupFinder(), &iCount);
+		//gDLL->getFAStarIFace()->GeneratePath(&GC.getPlotGroupFinder(), pPlot->getX_INLINE(), pPlot->getY_INLINE(), -1, -1, false, eOwner);
+		gDLL->getFAStarIFace()->SetData(plotGroupFinder, &iCount);
+		gDLL->getFAStarIFace()->GeneratePath(plotGroupFinder, pPlot->getX_INLINE(), pPlot->getY_INLINE(), -1, -1, false, eOwner);
+		gDLL->getFAStarIFace()->destroy(plotGroupFinder);
+		// wunshare: 线程相关 - end
 		if (iCount == getLengthPlots())
 		{
 			return;
@@ -155,9 +167,11 @@ void CvPlotGroup::recalculatePlots()
 
 		oldPlotGroup.insertAtEnd(xy);
 
+		local_lock.Lock(); // wunshare: 线程相关
 		pPlot->setPlotGroup(eOwner, NULL);
 
 		pPlotNode = deletePlotsNode(pPlotNode); // will delete this PlotGroup...
+		local_lock.Unlock(); // wunshare: 线程相关
 	}
 
 	pPlotNode = oldPlotGroup.head();
@@ -168,9 +182,11 @@ void CvPlotGroup::recalculatePlots()
 
 		FAssertMsg(pPlot != NULL, "Plot is not assigned a valid value");
 
+		local_lock.Lock(); // wunshare: 线程相关
 		pPlot->updatePlotGroup(eOwner, true);
 
 		pPlotNode = oldPlotGroup.deleteNode(pPlotNode);
+		local_lock.Unlock(); // wunshare: 线程相关
 	}
 }
 

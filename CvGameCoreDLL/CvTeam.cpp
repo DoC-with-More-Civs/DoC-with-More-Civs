@@ -1201,10 +1201,10 @@ void CvTeam::declareWar(TeamTypes eTeam, bool bNewDiplo, WarPlanTypes eWarPlan)
 	int iLoop;
 	int iI, iJ;
 
-	FAssertMsg(eTeam != NO_TEAM, "eTeam is not assigned a valid value");
-	FAssertMsg(eTeam != getID(), "eTeam is not expected to be equal with getID()"); // 哪里的调用出错的 eTeam == getID()
-
 	if (eTeam == getID()) return; //Rhye
+
+	FAssertMsg(eTeam != NO_TEAM, "eTeam is not assigned a valid value");
+	FAssertMsg(eTeam != getID(), "eTeam is not expected to be equal with getID()");
 
 	if (!isAtWar(eTeam))
 	{

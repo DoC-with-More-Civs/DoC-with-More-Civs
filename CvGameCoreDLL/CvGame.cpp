@@ -38,6 +38,10 @@
 #include "CvRhyes.h" //Rhye
 #include <algorithm>
 
+
+#include "MTCore.h" // wunshare: çº¿ç¨‹ç›¸å…³
+#include "CvGameCoreDLLDefNew.h" // wunshare: çº¿ç¨‹ç›¸å…³ï¼Œæ¢å¤ç¯å¢ƒ
+
 // Public Functions...
 
 CvGame::CvGame()
@@ -76,6 +80,9 @@ CvGame::CvGame()
 	m_aiShrineBuilding = NULL;
 	m_aiShrineReligion = NULL;
 
+	// wunhare: çº¿ç¨‹ç›¸å…³
+	MTCore::getInstance().Start();
+
 	reset(NO_HANDICAP, true);
 }
 
@@ -93,6 +100,8 @@ CvGame::~CvGame()
 
 	// Leoreth
 	SAFE_DELETE_ARRAY(m_aiTechRankTeam);
+	// wunhare: çº¿ç¨‹ç›¸å…³
+	MTCore::getInstance().Stop();
 }
 
 
@@ -2187,11 +2196,11 @@ int CvGame::getTeamClosenessScore(int** aaiDistances, int* aiStartingLocs)
 }
 
 
-void CvGame::update() // ºËĞÄº¯Êı£ºÓÎÏ·Ö¡Ñ­»·
+void CvGame::update() // æ ¸å¿ƒå‡½æ•°ï¼šæ¸¸æˆå¸§å¾ªç¯
 {
 	PROFILE("CvGame::update");
 
-	// µ÷ÕûÉãÏñ»ú¾µÍ·
+	// è°ƒæ•´æ‘„åƒæœºé•œå¤´
 	CvPlot* lookatPlot = gDLL->getInterfaceIFace()->getLookAtPlot();
 	if ( lookatPlot != NULL )
 	{
@@ -2270,7 +2279,7 @@ void CvGame::update() // ºËĞÄº¯Êı£ºÓÎÏ·Ö¡Ñ­»·
 			//gDLL->getEngineIFace()->AutoSave(true);
 		}
 
-		if (getNumGameTurnActive() == 0) // ÊÇ·ñ½øÈë»ØºÏÂß¼­¸üĞÂ -- ÈËÀàÍæ¼Ò»ØºÏÊ±Îª1
+		if (getNumGameTurnActive() == 0) // æ˜¯å¦è¿›å…¥å›åˆé€»è¾‘æ›´æ–° -- äººç±»ç©å®¶å›åˆæ—¶ä¸º1
 		{
 			if (!isPbem() || !getPbemTurnSent())
 			{
@@ -3855,7 +3864,7 @@ void CvGame::setTargetScore(int iNewValue)
 
 int CvGame::getNumGameTurnActive()
 {
-	return m_iNumGameTurnActive;   //Õâ¸ö±äÁ¿Òª¼ÓËø
+	return m_iNumGameTurnActive;   //è¿™ä¸ªå˜é‡è¦åŠ é”
 }
 
 
@@ -3883,7 +3892,7 @@ int CvGame::countNumHumanGameTurnActive() const
 
 void CvGame::changeNumGameTurnActive(int iChange)
 {
-	m_iNumGameTurnActive = (m_iNumGameTurnActive + iChange); //Õâ¸ö±äÁ¿Òª¼ÓËø
+	m_iNumGameTurnActive = (m_iNumGameTurnActive + iChange); //è¿™ä¸ªå˜é‡è¦åŠ é”
 	FAssert(getNumGameTurnActive() >= 0);
 }
 
@@ -5487,7 +5496,13 @@ bool CvGame::isBuildingClassMaxedOut(BuildingClassTypes eIndex, int iExtra)
 	{
 		return false;
 	}
-
+	//if (getBuildingClassCreatedCount(eIndex) > GC.getBuildingClassInfo(eIndex).getMaxGlobalInstances())
+	//{
+	//	CvWString str = GC.getBuildingClassInfo(eIndex).getTextKeyWide();
+	//	int now = getBuildingClassCreatedCount(eIndex);
+	//	int max = GC.getBuildingClassInfo(eIndex).getMaxGlobalInstances();
+	//	FAssert(false);
+	//}
 	FAssertMsg(getBuildingClassCreatedCount(eIndex) <= GC.getBuildingClassInfo(eIndex).getMaxGlobalInstances(), "Index is expected to be within maximum bounds (invalid Index)");
 
 	return ((getBuildingClassCreatedCount(eIndex) + iExtra) >= GC.getBuildingClassInfo(eIndex).getMaxGlobalInstances());
@@ -6161,7 +6176,13 @@ void CvGame::doTurn()
 		}
 	}
 
+	// wunshare : çº¿ç¨‹ç›¸å…³ - start
 	GC.getMapINLINE().doTurn();
+	//MTCore::getInstance().StartMapLogic();
+	//while (MTCore::getInstance().WaitMapLogoc())
+	//	Sleep(5);
+
+	// wunshare : çº¿ç¨‹ç›¸å…³ - end
 
 	//Rhye
 	//createBarbarianCities();
@@ -6180,7 +6201,7 @@ void CvGame::doTurn()
 	gDLL->getInterfaceIFace()->setEndTurnMessage(false);
 	gDLL->getInterfaceIFace()->setHasMovedUnit(false);
 
-	if (getAIAutoPlay() > 0)
+	if (getAIAutoPlay() > 0) // AIè‡ªåŠ¨æ¸¸æˆå›åˆ
 	{
 		changeAIAutoPlay(-1);
 
@@ -6195,7 +6216,7 @@ void CvGame::doTurn()
 	incrementGameTurn();
 	incrementElapsedGameTurns();
 
-	if (isMPOption(MPOPTION_SIMULTANEOUS_TURNS)) // Ìø¹ı
+	if (isMPOption(MPOPTION_SIMULTANEOUS_TURNS)) // è·³è¿‡
 	{
 		shuffleArray(aiShuffle, MAX_PLAYERS, getSorenRand());
 
@@ -6205,18 +6226,18 @@ void CvGame::doTurn()
 
 			if (GET_PLAYER((PlayerTypes)iLoopPlayer).isAlive())
 			{
-				GET_PLAYER((PlayerTypes)iLoopPlayer).setTurnActive(true); // Ìø¹ı£¬¶àÈËÓÎÏ·Íæ¼Ò¸üĞÂ
+				GET_PLAYER((PlayerTypes)iLoopPlayer).setTurnActive(true); // è·³è¿‡ï¼Œå¤šäººæ¸¸æˆç©å®¶æ›´æ–°
 			}
 		}
 	}
-	else if (isSimultaneousTeamTurns()) // Ìø¹ı
+	else if (isSimultaneousTeamTurns()) // è·³è¿‡
 	{
 		for (iI = 0; iI < MAX_TEAMS; iI++)
 		{
 			CvTeam& kTeam = GET_TEAM((TeamTypes)iI);
 			if (kTeam.isAlive())
 			{
-				kTeam.setTurnActive(true); // Ìø¹ı
+				kTeam.setTurnActive(true); // è·³è¿‡
 				FAssert(getNumGameTurnActive() == kTeam.getAliveCount());
 			}
 
@@ -6225,7 +6246,7 @@ void CvGame::doTurn()
 	}
 	else
 	{
-		for (iI = 0; iI < MAX_PLAYERS; iI++) // ¸üĞÂPlayer.setTurnActive(true£¬true)
+		for (iI = 0; iI < MAX_PLAYERS; iI++) // æ›´æ–°Player.setTurnActive(trueï¼Œtrue)
 		{
 			if (GET_PLAYER((PlayerTypes)iI).isAlive())
 			{
@@ -6235,7 +6256,7 @@ void CvGame::doTurn()
 					{
 						// Nobody else left alive
 						GC.getInitCore().setType(GAME_HOTSEAT_NEW);
-						GET_PLAYER((PlayerTypes)iI).setTurnActive(true); // Ìø¹ı£¬µçÓÊ¶ÔÕ½
+						GET_PLAYER((PlayerTypes)iI).setTurnActive(true); // è·³è¿‡ï¼Œç”µé‚®å¯¹æˆ˜
 					}
 					else if (!getPbemTurnSent())
 					{
@@ -6244,8 +6265,8 @@ void CvGame::doTurn()
 				}
 				else
 				{
-					GET_PLAYER((PlayerTypes)iI).setTurnActive(true); // ½øÈëÍæ¼Ò»ØºÏÂß¼­
-					FAssert(getNumGameTurnActive() == 1); // °Í±ÈÂ×ÎÄÃ÷µ®Éú£¿µÄÊ±ºò±¨´í
+					GET_PLAYER((PlayerTypes)iI).setTurnActive(true); // è¿›å…¥ç©å®¶å›åˆé€»è¾‘
+					FAssert(getNumGameTurnActive() == 1); // å·´æ¯”ä¼¦ï¼ŒåŠªæ¯”äºšæ–‡æ˜è¯ç”Ÿï¼Ÿçš„æ—¶å€™æŠ¥é”™ m_iNumGameTurnActive = 2
 				}
 
 				break;

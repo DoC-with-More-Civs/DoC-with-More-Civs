@@ -1352,8 +1352,8 @@ iGemsEmeralds, iSheepLlama, iSheepBlack, iCowBrown, iPigFurry, iIvoryAfrican, iC
 
 # Buildings
 
-iNumBuildings = 404
-(iPalace, iBarracks, iIkhanda, iCastra, iEkal, iGranary, iTerrace, iColcas, iIgloo, iSmokehouse, iShieling, iKraal, iSaltovo, iPaganTemple, iMonument, iKhachkar, iObelisk, iStele,
+iNumBuildings = 404 # 数目跟CIV4BuildingInfos.xml对不上，实际有426
+(iPalace, iBarracks, iEkal, iIkhanda, iCastra, iGranary, iTerrace, iColcas, iIgloo, iSmokehouse, iShieling, iKraal, iSaltovo, iPaganTemple, iMonument, iKhachkar, iObelisk, iStele,
 iCandi, iEdict, iMalae, iTotemPole, iZiara, iStatue, iDeffufas, iShicra, iColossalHead, iWalls, iIya, iDun, iKasbah, iStable, iGer, iEstancia, iBullring, iGerTereg, iLibrary, iEdubba,
 iTaixue, iHoTrai, iSangam, iPaya, iGandharaSchool, iHarbor, iCothon, iFishery, iPort, iMina, iAqueduct, iBaray, iNoria, iStepwell, iChinampa, iAbAnbar, iDam, iTheatre, iOdeon,
 iHippodrome, iOpera, iArena, iBallCourt, iCharreadaArena, iGarden, iBasilica, iLighthouse, iTradingPost, iZango, iWeaver, iMbwadi,

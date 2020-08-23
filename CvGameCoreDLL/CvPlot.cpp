@@ -735,9 +735,9 @@ TeamTypes CvPlot::getTeam() const
 }
 
 
-void CvPlot::doTurn() // ±»CvMap::doTurn()µ÷ÓÃ
+void CvPlot::doTurn() // è¢«CvMap::doTurn()è°ƒç”¨
 {
-	PROFILE_FUNC();
+	// PROFILE_FUNC();
 
 	if (getForceUnownedTimer() > 0)
 	{
@@ -754,13 +754,13 @@ void CvPlot::doTurn() // ±»CvMap::doTurn()µ÷ÓÃ
 		changeImprovementDuration(1);
 	}
 
-	doFeature(); // ¸üĞÂµØÃ²
+	doFeature(); // æ›´æ–°åœ°è²Œ
 
-	doCulture(); // ¼ÆËãÎÄ»¯
+	doCulture(); // è®¡ç®—æ–‡åŒ–
 
 	verifyUnitValidPlot(); // 
 
-	// Leoreth: Great Wall effect ÉèÖÃÍòÀï³¤³ÇĞ§¹û
+	// Leoreth: Great Wall effect è®¾ç½®ä¸‡é‡Œé•¿åŸæ•ˆæœ
 	if (isWithinGreatWall() && isOwned())
 	{
 		if (GET_PLAYER(getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)GREAT_WALL))
@@ -769,7 +769,7 @@ void CvPlot::doTurn() // ±»CvMap::doTurn()µ÷ÓÃ
 			{
 				if (getUnitByIndex(iI)->getOwnerINLINE() == BARBARIAN)
 				{
-					getUnitByIndex(iI)->changeDamage(10, getOwnerINLINE()); // Ê²Ã´Ô­Àí£¿
+					getUnitByIndex(iI)->changeDamage(10, getOwnerINLINE()); // ä»€ä¹ˆåŸç†ï¼Ÿ
 				}
 			}
 		}
@@ -1184,7 +1184,7 @@ void CvPlot::updateCenterUnit()
 
 void CvPlot::verifyUnitValidPlot()
 {
-	PROFILE_FUNC();
+	// PROFILE_FUNC();
 
 	std::vector<CvUnit*> aUnits;
 	CLLNode<IDInfo>* pUnitNode = headUnitNode();
@@ -3509,7 +3509,7 @@ int CvPlot::getNumCultureRangeCities(PlayerTypes ePlayer) const
 
 PlayerTypes CvPlot::calculateCulturalOwner(bool bActual) const
 {
-	PROFILE("CvPlot::calculateCulturalOwner()")
+	// PROFILE("CvPlot::calculateCulturalOwner()")
 
 	CvCity* pLoopCity;
 	CvCity* pBestCity;
@@ -5410,7 +5410,7 @@ PlayerTypes CvPlot::getOwner() const
 
 void CvPlot::setOwner(PlayerTypes eNewValue, bool bCheckUnits, bool bUpdatePlotGroup)
 {
-	PROFILE_FUNC();
+	// PROFILE_FUNC();
 
 	CLLNode<IDInfo>* pUnitNode;
 	CvCity* pOldCity;
@@ -8160,6 +8160,7 @@ void CvPlot::updatePlotGroup(PlayerTypes ePlayer, bool bRecalculate)
 							GC.getMapINLINE().combinePlotGroups(ePlayer, pPlotGroup, pAdjacentPlotGroup);
 							pPlotGroup = getPlotGroup(ePlayer);
 							FAssertMsg(pPlotGroup != NULL, "PlotGroup is not assigned a valid value");
+							// double locked when pPlotGroup = NULL ?
 						}
 					}
 				}
@@ -9757,9 +9758,9 @@ void CvPlot::setScriptData(const char* szNewValue)
 
 // Protected Functions...
 
-void CvPlot::doFeature() // ±»CvPlot::doTurn()µ÷ÓÃ£¬¸üĞÂµØ¿éµØÃ²
+void CvPlot::doFeature() // è¢«CvPlot::doTurn()è°ƒç”¨ï¼Œæ›´æ–°åœ°å—åœ°è²Œ
 {
-	PROFILE("CvPlot::doFeature()")
+	// PROFILE("CvPlot::doFeature()")
 
 	CvCity* pCity;
 	CvPlot* pLoopPlot;
@@ -9767,7 +9768,7 @@ void CvPlot::doFeature() // ±»CvPlot::doTurn()µ÷ÓÃ£¬¸üĞÂµØ¿éµØÃ²
 	int iProbability;
 	int iI, iJ;
 
-	if (getFeatureType() != NO_FEATURE) // ÓĞµØÃ²
+	if (getFeatureType() != NO_FEATURE) // æœ‰åœ°è²Œ
 	{
 		iProbability = GC.getFeatureInfo(getFeatureType()).getDisappearanceProbability();
 
@@ -9873,9 +9874,9 @@ void CvPlot::doFeature() // ±»CvPlot::doTurn()µ÷ÓÃ£¬¸üĞÂµØ¿éµØÃ²
 }
 
 
-void CvPlot::doCulture() // ¼ÆËãµØ¿éÎÄ»¯
+void CvPlot::doCulture() // è®¡ç®—åœ°å—æ–‡åŒ–
 {
-	PROFILE("CvPlot::doCulture()")
+	// PROFILE("CvPlot::doCulture()")
 
 	CLLNode<IDInfo>* pUnitNode;
 	CvCity* pCity;

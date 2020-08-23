@@ -1422,7 +1422,7 @@
 				</Flavor>
 			</Flavors>
 		</BuildingInfo>
-                                <BuildingInfo>
+        <BuildingInfo>
 			<BuildingClass>BUILDINGCLASS_STABLE</BuildingClass>
 			<Type>BUILDING_ARGENTINA_ESTANCIA</Type>
 			<Description>TXT_KEY_BUILDING_ARGENTINA_ESTANCIA</Description>

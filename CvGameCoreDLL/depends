@@ -43,6 +43,8 @@ Debug\CvGameCoreDLL.pch: CvGameCoreDLL.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvGameCoreDLLUndefNew.h \
 	CvDLLInterfaceIFaceBase.h
 Debug\CvArea.obj: CvArea.cpp \
@@ -90,6 +92,8 @@ Debug\CvArea.obj: CvArea.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvDLLInterfaceIFaceBase.h \
 	CvRhyes.h
 Debug\CvArtFileMgr.obj: CvArtFileMgr.cpp \
@@ -137,6 +141,8 @@ Debug\CvArtFileMgr.obj: CvArtFileMgr.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvXMLLoadUtility.h
 Debug\CvBugOptions.obj: CvBugOptions.cpp \
 	CvGameCoreDLL.h \
@@ -183,6 +189,8 @@ Debug\CvBugOptions.obj: CvBugOptions.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyArgsList.h \
 	FVariableSystem.h \
 	CvBugOptions.h
@@ -231,6 +239,8 @@ Debug\CvCity.obj: CvCity.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvPopupInfo.h \
 	CyArgsList.h \
 	CvGameTextMgr.h \
@@ -285,6 +295,8 @@ Debug\CvCityAI.obj: CvCityAI.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyArgsList.h \
 	CvDLLInterfaceIFaceBase.h \
 	CvDLLFAStarIFaceBase.h \
@@ -334,6 +346,8 @@ Debug\CvDeal.obj: CvDeal.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvGameTextMgr.h \
 	CvDLLInterfaceIFaceBase.h \
 	CvEventReporter.h \
@@ -384,6 +398,8 @@ Debug\CvDiploParameters.obj: CvDiploParameters.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvDiploParameters.h \
 	FVariableSystem.h
 Debug\CvDLLButtonPopup.obj: CvDLLButtonPopup.cpp \
@@ -431,6 +447,8 @@ Debug\CvDLLButtonPopup.obj: CvDLLButtonPopup.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvDLLButtonPopup.h \
 	CvPopupInfo.h \
 	CvPopupReturn.h \
@@ -490,7 +508,9 @@ Debug\CvDLLEntity.obj: CvDLLEntity.cpp \
 	CvDllEntity.h \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
-	CvArtFileMgr.h
+	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h
 Debug\CvDLLPython.obj: CvDLLPython.cpp \
 	CvGameCoreDLL.h \
 	FAssert.h \
@@ -536,6 +556,8 @@ Debug\CvDLLPython.obj: CvDLLPython.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyMap.h \
 	CyPlayer.h \
 	CyPlot.h \
@@ -586,6 +608,8 @@ Debug\CvDllPythonEvents.obj: CvDllPythonEvents.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvDllPythonEvents.h \
 	CvDLLEngineIFaceBase.h \
 	CvDLLInterfaceIFaceBase.h \
@@ -637,6 +661,8 @@ Debug\CvDllTranslator.obj: CvDllTranslator.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvDllTranslator.h
 Debug\CvDLLWidgetData.obj: CvDLLWidgetData.cpp \
 	CvGameCoreDLL.h \
@@ -683,6 +709,8 @@ Debug\CvDLLWidgetData.obj: CvDLLWidgetData.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyArgsList.h \
 	CvGameTextMgr.h \
 	CvDLLInterfaceIFaceBase.h \
@@ -741,6 +769,8 @@ Debug\CvEventReporter.obj: CvEventReporter.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvEventReporter.h \
 	CvStatistics.h \
 	CvDllPythonEvents.h \
@@ -790,6 +820,8 @@ Debug\CvFractal.obj: CvFractal.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvFractal.h
 Debug\CvGame.obj: CvGame.cpp \
 	CvGameCoreDLL.h \
@@ -836,6 +868,8 @@ Debug\CvGame.obj: CvGame.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvInitCore.h \
 	CvMapGenerator.h \
 	CvDiploParameters.h \
@@ -898,7 +932,9 @@ Debug\CvGameAI.obj: CvGameAI.cpp \
 	CvDllEntity.h \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
-	CvArtFileMgr.h
+	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h
 Debug\CvGameCoreDLL.obj: CvGameCoreDLL.cpp \
 	CvGameCoreDLL.h \
 	FAssert.h \
@@ -944,6 +980,8 @@ Debug\CvGameCoreDLL.obj: CvGameCoreDLL.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvGameCoreDLLUndefNew.h \
 	CvDLLInterfaceIFaceBase.h
 Debug\CvGameCoreUtils.obj: CvGameCoreUtils.cpp \
@@ -991,6 +1029,8 @@ Debug\CvGameCoreUtils.obj: CvGameCoreUtils.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	FAStarNode.h \
 	CvDLLInterfaceIFaceBase.h \
 	CvDLLFAStarIFaceBase.h \
@@ -1041,6 +1081,8 @@ Debug\CvGameInterface.obj: CvGameInterface.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvInitCore.h \
 	CyPlot.h \
 	CyArgsList.h \
@@ -1098,6 +1140,8 @@ Debug\CvGameTextMgr.obj: CvGameTextMgr.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvGameTextMgr.h \
 	CvDLLInterfaceIFaceBase.h \
 	CvDLLSymbolIFaceBase.h \
@@ -1152,6 +1196,8 @@ Debug\CvGlobals.obj: CvGlobals.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvDLLInterfaceIFaceBase.h \
 	CvDLLXMLIFaceBase.h \
 	CvInfoWater.h \
@@ -1205,6 +1251,8 @@ Debug\CvHallOfFameInfo.obj: CvHallOfFameInfo.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvHallOfFameInfo.h \
 	CvReplayInfo.h
 Debug\CvInfos.obj: CvInfos.cpp \
@@ -1252,6 +1300,8 @@ Debug\CvInfos.obj: CvInfos.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvXMLLoadUtility.h \
 	CvDLLXMLIFaceBase.h \
 	CvGameTextMgr.h \
@@ -1301,6 +1351,8 @@ Debug\CvInfoWater.obj: CvInfoWater.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvInfoWater.h \
 	CvXMLLoadUtility.h \
 	CvDLLXMLIFaceBase.h
@@ -1349,6 +1401,8 @@ Debug\CvInitCore.obj: CvInitCore.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvInitCore.h \
 	CyArgsList.h \
 	BugMod.h \
@@ -1398,6 +1452,8 @@ Debug\CvMap.obj: CvMap.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvFractal.h \
 	CvMapGenerator.h \
 	FAStarNode.h \
@@ -1452,6 +1508,8 @@ Debug\CvMapGenerator.obj: CvMapGenerator.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvMapGenerator.h \
 	CvFractal.h \
 	CyPlot.h \
@@ -1501,6 +1559,8 @@ Debug\CvMessageControl.obj: CvMessageControl.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvMessageControl.h \
 	CvMessageData.h
 Debug\CvMessageData.obj: CvMessageData.cpp \
@@ -1548,6 +1608,8 @@ Debug\CvMessageData.obj: CvMessageData.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvMessageData.h \
 	CvDLLInterfaceIFaceBase.h \
 	CvEventReporter.h \
@@ -1599,6 +1661,8 @@ Debug\CvPlayer.obj: CvPlayer.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvDiploParameters.h \
 	FVariableSystem.h \
 	CvInitCore.h \
@@ -1661,6 +1725,8 @@ Debug\CvPlayerAI.obj: CvPlayerAI.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvDiploParameters.h \
 	FVariableSystem.h \
 	CvInitCore.h \
@@ -1719,6 +1785,8 @@ Debug\CvPlot.obj: CvPlot.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvDLLInterfaceIFaceBase.h \
 	CvDLLSymbolIFaceBase.h \
 	CvDLLPlotBuilderIFaceBase.h \
@@ -1775,6 +1843,8 @@ Debug\CvPlotGroup.obj: CvPlotGroup.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvDLLFAStarIFaceBase.h \
 	CvRhyes.h
 Debug\CvPopupInfo.obj: CvPopupInfo.cpp \
@@ -1822,6 +1892,8 @@ Debug\CvPopupInfo.obj: CvPopupInfo.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	cvpopupinfo.h
 Debug\CvPopupReturn.obj: CvPopupReturn.cpp \
 	CvGameCoreDLL.h \
@@ -1868,6 +1940,8 @@ Debug\CvPopupReturn.obj: CvPopupReturn.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvPopupReturn.h
 Debug\CvRandom.obj: CvRandom.cpp \
 	CvGameCoreDLL.h \
@@ -1914,6 +1988,8 @@ Debug\CvRandom.obj: CvRandom.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyArgsList.h
 Debug\CvReplayInfo.obj: CvReplayInfo.cpp \
 	CvGameCoreDLL.h \
@@ -1960,6 +2036,8 @@ Debug\CvReplayInfo.obj: CvReplayInfo.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvReplayInfo.h \
 	CvReplayMessage.h \
 	CvGameTextMgr.h \
@@ -2010,6 +2088,8 @@ Debug\CvReplayMessage.obj: CvReplayMessage.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	cvreplaymessage.h
 Debug\CvSelectionGroup.obj: CvSelectionGroup.cpp \
 	CvGameCoreDLL.h \
@@ -2056,6 +2136,8 @@ Debug\CvSelectionGroup.obj: CvSelectionGroup.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvDLLInterfaceIFaceBase.h \
 	CvDLLFAStarIFaceBase.h \
 	FAStarNode.h \
@@ -2111,6 +2193,8 @@ Debug\CvSelectionGroupAI.obj: CvSelectionGroupAI.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CVInfos.h
 Debug\CvStatistics.obj: CvStatistics.cpp \
 	CvGameCoreDLL.h \
@@ -2157,6 +2241,8 @@ Debug\CvStatistics.obj: CvStatistics.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvStatistics.h
 Debug\CvStructs.obj: CvStructs.cpp \
 	CvGameCoreDLL.h \
@@ -2202,7 +2288,9 @@ Debug\CvStructs.obj: CvStructs.cpp \
 	CvDllEntity.h \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
-	CvArtFileMgr.h
+	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h
 Debug\CvTalkingHeadMessage.obj: CvTalkingHeadMessage.cpp \
 	CvGameCoreDLL.h \
 	FAssert.h \
@@ -2247,7 +2335,9 @@ Debug\CvTalkingHeadMessage.obj: CvTalkingHeadMessage.cpp \
 	CvDllEntity.h \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
-	CvArtFileMgr.h
+	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h
 Debug\CvTeam.obj: CvTeam.cpp \
 	CvGameCoreDLL.h \
 	FAssert.h \
@@ -2293,6 +2383,8 @@ Debug\CvTeam.obj: CvTeam.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvDLLInterfaceIFaceBase.h \
 	CvEventReporter.h \
 	CvStatistics.h \
@@ -2348,6 +2440,8 @@ Debug\CvTeamAI.obj: CvTeamAI.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvDLLInterfaceIFaceBase.h \
 	CyArgsList.h \
 	CvRhyes.h
@@ -2396,6 +2490,8 @@ Debug\CvUnit.obj: CvUnit.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyUnit.h \
 	CyArgsList.h \
 	CyPlot.h \
@@ -2453,6 +2549,8 @@ Debug\CvUnitAI.obj: CvUnitAI.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyUnit.h \
 	CyArgsList.h \
 	FAStarNode.h \
@@ -2504,6 +2602,8 @@ Debug\CvXMLLoadUtility.obj: CvXMLLoadUtility.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvDLLXMLIFaceBase.h \
 	CvXMLLoadUtility.h
 Debug\CvXMLLoadUtilityGet.obj: CvXMLLoadUtilityGet.cpp \
@@ -2551,6 +2651,8 @@ Debug\CvXMLLoadUtilityGet.obj: CvXMLLoadUtilityGet.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvDLLXMLIFaceBase.h \
 	CvXMLLoadUtility.h \
 	FInputDevice.h
@@ -2599,6 +2701,8 @@ Debug\CvXMLLoadUtilityInit.obj: CvXMLLoadUtilityInit.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvXMLLoadUtility.h \
 	CvGameTextMgr.h \
 	CvInfoWater.h
@@ -2647,6 +2751,8 @@ Debug\CvXMLLoadUtilitySet.obj: CvXMLLoadUtilitySet.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvDLLXMLIFaceBase.h \
 	CvXMLLoadUtility.h \
 	CvGameTextMgr.h \
@@ -2697,6 +2803,8 @@ Debug\CyArea.obj: CyArea.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyArea.h
 Debug\CyAreaInterface.obj: CyAreaInterface.cpp \
 	CvGameCoreDLL.h \
@@ -2743,6 +2851,8 @@ Debug\CyAreaInterface.obj: CyAreaInterface.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyArea.h
 Debug\CyArgsList.obj: CyArgsList.cpp \
 	CvGameCoreDLL.h \
@@ -2789,6 +2899,8 @@ Debug\CyArgsList.obj: CyArgsList.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyArgsList.h
 Debug\CyArtFileMgr.obj: CyArtFileMgr.cpp \
 	CvGameCoreDLL.h \
@@ -2835,6 +2947,8 @@ Debug\CyArtFileMgr.obj: CyArtFileMgr.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyArtFileMgr.h
 Debug\CyArtFileMgrInterface.obj: CyArtFileMgrInterface.cpp \
 	CvGameCoreDLL.h \
@@ -2881,6 +2995,8 @@ Debug\CyArtFileMgrInterface.obj: CyArtFileMgrInterface.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyArtFileMgr.h
 Debug\CyCity.obj: CyCity.cpp \
 	CvGameCoreDLL.h \
@@ -2927,6 +3043,8 @@ Debug\CyCity.obj: CyCity.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyPlot.h \
 	CyArea.h \
 	CyUnit.h
@@ -2975,6 +3093,8 @@ Debug\CyCityInterface1.obj: CyCityInterface1.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyPlot.h \
 	CyArea.h
 Debug\CyCityInterface2.obj: CyCityInterface2.cpp \
@@ -3022,6 +3142,8 @@ Debug\CyCityInterface2.obj: CyCityInterface2.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyPlot.h \
 	CyArea.h
 Debug\CyDeal.obj: CyDeal.cpp \
@@ -3069,6 +3191,8 @@ Debug\CyDeal.obj: CyDeal.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyDeal.h
 Debug\CyEnumsInterface.obj: CyEnumsInterface.cpp \
 	CvGameCoreDLL.h \
@@ -3115,6 +3239,8 @@ Debug\CyEnumsInterface.obj: CyEnumsInterface.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvGameCoreDLLUnDefNew.h
 Debug\CyGame.obj: CyGame.cpp \
 	CvGameCoreDLL.h \
@@ -3161,6 +3287,8 @@ Debug\CyGame.obj: CyGame.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyGame.h \
 	CyPlayer.h \
 	CyDeal.h \
@@ -3214,6 +3342,8 @@ Debug\CyGameCoreUtils.obj: CyGameCoreUtils.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyGameCoreUtils.h \
 	CyPlot.h \
 	CyUnit.h
@@ -3262,6 +3392,8 @@ Debug\CyGameCoreUtilsInterface.obj: CyGameCoreUtilsInterface.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyGameCoreUtils.h \
 	CyPlot.h \
 	CyUnit.h
@@ -3310,6 +3442,8 @@ Debug\CyGameInterface.obj: CyGameInterface.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyGame.h \
 	CyDeal.h \
 	CyReplayInfo.h \
@@ -3359,6 +3493,8 @@ Debug\CyGameTextMgr.obj: CyGameTextMgr.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvGameTextMgr.h \
 	CyGameTextMgr.h \
 	CyDeal.h \
@@ -3408,6 +3544,8 @@ Debug\CyGameTextMgrInterface.obj: CyGameTextMgrInterface.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyGameTextMgr.h
 Debug\CyGlobalContext.obj: CyGlobalContext.cpp \
 	CvGameCoreDLL.h \
@@ -3454,6 +3592,8 @@ Debug\CyGlobalContext.obj: CyGlobalContext.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyGame.h \
 	CyPlayer.h \
 	CyMap.h \
@@ -3504,6 +3644,8 @@ Debug\CyGlobalContextInterface1.obj: CyGlobalContextInterface1.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyMap.h \
 	CyPlayer.h \
 	CyGame.h \
@@ -3553,6 +3695,8 @@ Debug\CyGlobalContextInterface2.obj: CyGlobalContextInterface2.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyMap.h \
 	CyPlayer.h \
 	CyGame.h \
@@ -3602,6 +3746,8 @@ Debug\CyGlobalContextInterface3.obj: CyGlobalContextInterface3.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyMap.h \
 	CyPlayer.h \
 	CyGame.h \
@@ -3651,6 +3797,8 @@ Debug\CyGlobalContextInterface4.obj: CyGlobalContextInterface4.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyMap.h \
 	CyPlayer.h \
 	CyGame.h \
@@ -3700,6 +3848,8 @@ Debug\CyHallOfFameInfo.obj: CyHallOfFameInfo.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyHallOfFameInfo.h \
 	CvHallOfFameInfo.h \
 	CvReplayInfo.h \
@@ -3749,6 +3899,8 @@ Debug\CyHallOfFameInterface.obj: CyHallOfFameInterface.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyReplayInfo.h \
 	CvReplayInfo.h \
 	CyHallOfFameInfo.h \
@@ -3798,7 +3950,9 @@ Debug\CyInfoInterface1.obj: CyInfoInterface1.cpp \
 	CvDllEntity.h \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
-	CvArtFileMgr.h
+	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h
 Debug\CyInfoInterface2.obj: CyInfoInterface2.cpp \
 	CvGameCoreDLL.h \
 	FAssert.h \
@@ -3843,7 +3997,9 @@ Debug\CyInfoInterface2.obj: CyInfoInterface2.cpp \
 	CvDllEntity.h \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
-	CvArtFileMgr.h
+	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h
 Debug\CyInfoInterface3.obj: CyInfoInterface3.cpp \
 	CvGameCoreDLL.h \
 	FAssert.h \
@@ -3888,7 +4044,9 @@ Debug\CyInfoInterface3.obj: CyInfoInterface3.cpp \
 	CvDllEntity.h \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
-	CvArtFileMgr.h
+	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h
 Debug\CyMap.obj: CyMap.cpp \
 	CvGameCoreDLL.h \
 	FAssert.h \
@@ -3934,6 +4092,8 @@ Debug\CyMap.obj: CyMap.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	cyMap.h \
 	CyPlot.h \
 	CySelectionGroup.h \
@@ -3986,6 +4146,8 @@ Debug\CyMapGenerator.obj: CyMapGenerator.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyMapGenerator.h \
 	CvMapGenerator.h \
 	CyPlot.h
@@ -4034,6 +4196,8 @@ Debug\CyMapGeneratorInterface.obj: CyMapGeneratorInterface.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyMapGenerator.h
 Debug\CyMapInterface.obj: CyMapInterface.cpp \
 	CvGameCoreDLL.h \
@@ -4080,6 +4244,8 @@ Debug\CyMapInterface.obj: CyMapInterface.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyMap.h \
 	CyArea.h \
 	CySelectionGroup.h \
@@ -4130,6 +4296,8 @@ Debug\CyMessageControl.obj: CyMessageControl.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyMessageControl.h \
 	CvMessageControl.h
 Debug\CyMessageControlInterface.obj: CyMessageControlInterface.cpp \
@@ -4177,6 +4345,8 @@ Debug\CyMessageControlInterface.obj: CyMessageControlInterface.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyMessageControl.h
 Debug\CyPlayer.obj: CyPlayer.cpp \
 	CvGameCoreDLL.h \
@@ -4223,6 +4393,8 @@ Debug\CyPlayer.obj: CyPlayer.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyPlayer.h \
 	CyUnit.h \
 	CyArea.h \
@@ -4273,6 +4445,8 @@ Debug\CyPlayerInterface1.obj: CyPlayerInterface1.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyPlayer.h \
 	CyUnit.h \
 	CyPlot.h \
@@ -4323,6 +4497,8 @@ Debug\CyPlayerInterface2.obj: CyPlayerInterface2.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyPlayer.h \
 	CyUnit.h \
 	CyPlot.h \
@@ -4373,6 +4549,8 @@ Debug\CyPlot.obj: CyPlot.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyPlot.h \
 	CyArea.h \
 	CyUnit.h
@@ -4421,6 +4599,8 @@ Debug\CyPlotInterface1.obj: CyPlotInterface1.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyPlot.h \
 	CyArea.h \
 	CyUnit.h
@@ -4468,7 +4648,9 @@ Debug\CyRandomInterface.obj: CyRandomInterface.cpp \
 	CvDllEntity.h \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
-	CvArtFileMgr.h
+	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h
 Debug\CyReplayInfo.obj: CyReplayInfo.cpp \
 	CvGameCoreDLL.h \
 	FAssert.h \
@@ -4514,6 +4696,8 @@ Debug\CyReplayInfo.obj: CyReplayInfo.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyReplayInfo.h \
 	CvReplayInfo.h \
 	CyMap.h
@@ -4562,6 +4746,8 @@ Debug\CySelectionGroup.obj: CySelectionGroup.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CySelectionGroup.h \
 	CyPlot.h \
 	CyArea.h \
@@ -4611,6 +4797,8 @@ Debug\CySelectionGroupInterface.obj: CySelectionGroupInterface.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CySelectionGroup.h \
 	CyPlot.h \
 	CyArea.h \
@@ -4659,7 +4847,9 @@ Debug\CyStructsInterface1.obj: CyStructsInterface1.cpp \
 	CvDllEntity.h \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
-	CvArtFileMgr.h
+	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h
 Debug\CyTeam.obj: CyTeam.cpp \
 	CvGameCoreDLL.h \
 	FAssert.h \
@@ -4705,6 +4895,8 @@ Debug\CyTeam.obj: CyTeam.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyTeam.h \
 	CyArea.h
 Debug\CyTeamInterface.obj: CyTeamInterface.cpp \
@@ -4752,6 +4944,8 @@ Debug\CyTeamInterface.obj: CyTeamInterface.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyArea.h \
 	CyTeam.h
 Debug\CyUnit.obj: CyUnit.cpp \
@@ -4799,6 +4993,8 @@ Debug\CyUnit.obj: CyUnit.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyUnit.h \
 	CyPlot.h \
 	CyArea.h \
@@ -4849,6 +5045,8 @@ Debug\CyUnitInterface1.obj: CyUnitInterface1.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyUnit.h \
 	CyPlot.h \
 	CyArea.h \
@@ -4898,7 +5096,9 @@ Debug\FAssert.obj: FAssert.cpp \
 	CvDllEntity.h \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
-	CvArtFileMgr.h
+	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h
 Debug\FDialogTemplate.obj: FDialogTemplate.cpp \
 	CvGameCoreDll.h \
 	FAssert.h \
@@ -4944,7 +5144,57 @@ Debug\FDialogTemplate.obj: FDialogTemplate.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	FDialogTemplate.h \
+	CvGameCoreDLLUndefNew.h
+Debug\MTCore.obj: MTCore.cpp \
+	CvGameCoreDLL.h \
+	FAssert.h \
+	CvGameCoreDLLDefNew.h \
+	FDataStreamBase.h \
+	FFreeListArrayBase.h \
+	FFreeListTrashArray.h \
+	FFreeListArray.h \
+	CvString.h \
+	CvEnums.h \
+	CvDefines.h \
+	CvStructs.h \
+	CvDLLUtilityIFaceBase.h \
+	LinkedList.h \
+	CvPlayerAI.h \
+	CvPlayer.h \
+	CvCityAI.h \
+	CvCity.h \
+	CvDLLEntity.h \
+	CvUnitAI.h \
+	CvUnit.h \
+	CvSelectionGroupAI.h \
+	CvSelectionGroup.h \
+	CvPlotGroup.h \
+	CvTalkingHeadMessage.h \
+	AI_defines.h \
+	CvGameCoreUtils.h \
+	CvGlobals.h \
+	CvMap.h \
+	CvArea.h \
+	CvPlot.h \
+	CvGameAI.h \
+	CvGame.h \
+	CvDeal.h \
+	CvRandom.h \
+	FProfiler.h \
+	CyCity.h \
+	CvInfos.h \
+	CvTeamAI.h \
+	CvTeam.h \
+	CvDLLPythonIFaceBase.h \
+	CvDllEntity.h \
+	CvDLLEntityIFaceBase.h \
+	CyGlobalContext.h \
+	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvGameCoreDLLUndefNew.h
 Debug\_precompile.obj: _precompile.cpp \
 	CvGameCoreDLL.h \
@@ -4990,7 +5240,9 @@ Debug\_precompile.obj: _precompile.cpp \
 	CvDllEntity.h \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
-	CvArtFileMgr.h
+	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h
 Release\CvGameCoreDLL.pch: CvGameCoreDLL.cpp \
 	CvGameCoreDLL.h \
 	FAssert.h \
@@ -5036,6 +5288,8 @@ Release\CvGameCoreDLL.pch: CvGameCoreDLL.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvGameCoreDLLUndefNew.h \
 	CvDLLInterfaceIFaceBase.h
 Release\CvArea.obj: CvArea.cpp \
@@ -5083,6 +5337,8 @@ Release\CvArea.obj: CvArea.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvDLLInterfaceIFaceBase.h \
 	CvRhyes.h
 Release\CvArtFileMgr.obj: CvArtFileMgr.cpp \
@@ -5130,6 +5386,8 @@ Release\CvArtFileMgr.obj: CvArtFileMgr.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvXMLLoadUtility.h
 Release\CvBugOptions.obj: CvBugOptions.cpp \
 	CvGameCoreDLL.h \
@@ -5176,6 +5434,8 @@ Release\CvBugOptions.obj: CvBugOptions.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyArgsList.h \
 	FVariableSystem.h \
 	CvBugOptions.h
@@ -5224,6 +5484,8 @@ Release\CvCity.obj: CvCity.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvPopupInfo.h \
 	CyArgsList.h \
 	CvGameTextMgr.h \
@@ -5278,6 +5540,8 @@ Release\CvCityAI.obj: CvCityAI.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyArgsList.h \
 	CvDLLInterfaceIFaceBase.h \
 	CvDLLFAStarIFaceBase.h \
@@ -5327,6 +5591,8 @@ Release\CvDeal.obj: CvDeal.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvGameTextMgr.h \
 	CvDLLInterfaceIFaceBase.h \
 	CvEventReporter.h \
@@ -5377,6 +5643,8 @@ Release\CvDiploParameters.obj: CvDiploParameters.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvDiploParameters.h \
 	FVariableSystem.h
 Release\CvDLLButtonPopup.obj: CvDLLButtonPopup.cpp \
@@ -5424,6 +5692,8 @@ Release\CvDLLButtonPopup.obj: CvDLLButtonPopup.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvDLLButtonPopup.h \
 	CvPopupInfo.h \
 	CvPopupReturn.h \
@@ -5483,7 +5753,9 @@ Release\CvDLLEntity.obj: CvDLLEntity.cpp \
 	CvDllEntity.h \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
-	CvArtFileMgr.h
+	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h
 Release\CvDLLPython.obj: CvDLLPython.cpp \
 	CvGameCoreDLL.h \
 	FAssert.h \
@@ -5529,6 +5801,8 @@ Release\CvDLLPython.obj: CvDLLPython.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyMap.h \
 	CyPlayer.h \
 	CyPlot.h \
@@ -5579,6 +5853,8 @@ Release\CvDllPythonEvents.obj: CvDllPythonEvents.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvDllPythonEvents.h \
 	CvDLLEngineIFaceBase.h \
 	CvDLLInterfaceIFaceBase.h \
@@ -5630,6 +5906,8 @@ Release\CvDllTranslator.obj: CvDllTranslator.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvDllTranslator.h
 Release\CvDLLWidgetData.obj: CvDLLWidgetData.cpp \
 	CvGameCoreDLL.h \
@@ -5676,6 +5954,8 @@ Release\CvDLLWidgetData.obj: CvDLLWidgetData.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyArgsList.h \
 	CvGameTextMgr.h \
 	CvDLLInterfaceIFaceBase.h \
@@ -5734,6 +6014,8 @@ Release\CvEventReporter.obj: CvEventReporter.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvEventReporter.h \
 	CvStatistics.h \
 	CvDllPythonEvents.h \
@@ -5783,6 +6065,8 @@ Release\CvFractal.obj: CvFractal.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvFractal.h
 Release\CvGame.obj: CvGame.cpp \
 	CvGameCoreDLL.h \
@@ -5829,6 +6113,8 @@ Release\CvGame.obj: CvGame.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvInitCore.h \
 	CvMapGenerator.h \
 	CvDiploParameters.h \
@@ -5891,7 +6177,9 @@ Release\CvGameAI.obj: CvGameAI.cpp \
 	CvDllEntity.h \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
-	CvArtFileMgr.h
+	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h
 Release\CvGameCoreDLL.obj: CvGameCoreDLL.cpp \
 	CvGameCoreDLL.h \
 	FAssert.h \
@@ -5937,6 +6225,8 @@ Release\CvGameCoreDLL.obj: CvGameCoreDLL.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvGameCoreDLLUndefNew.h \
 	CvDLLInterfaceIFaceBase.h
 Release\CvGameCoreUtils.obj: CvGameCoreUtils.cpp \
@@ -5984,6 +6274,8 @@ Release\CvGameCoreUtils.obj: CvGameCoreUtils.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	FAStarNode.h \
 	CvDLLInterfaceIFaceBase.h \
 	CvDLLFAStarIFaceBase.h \
@@ -6034,6 +6326,8 @@ Release\CvGameInterface.obj: CvGameInterface.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvInitCore.h \
 	CyPlot.h \
 	CyArgsList.h \
@@ -6091,6 +6385,8 @@ Release\CvGameTextMgr.obj: CvGameTextMgr.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvGameTextMgr.h \
 	CvDLLInterfaceIFaceBase.h \
 	CvDLLSymbolIFaceBase.h \
@@ -6145,6 +6441,8 @@ Release\CvGlobals.obj: CvGlobals.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvDLLInterfaceIFaceBase.h \
 	CvDLLXMLIFaceBase.h \
 	CvInfoWater.h \
@@ -6198,6 +6496,8 @@ Release\CvHallOfFameInfo.obj: CvHallOfFameInfo.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvHallOfFameInfo.h \
 	CvReplayInfo.h
 Release\CvInfos.obj: CvInfos.cpp \
@@ -6245,6 +6545,8 @@ Release\CvInfos.obj: CvInfos.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvXMLLoadUtility.h \
 	CvDLLXMLIFaceBase.h \
 	CvGameTextMgr.h \
@@ -6294,6 +6596,8 @@ Release\CvInfoWater.obj: CvInfoWater.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvInfoWater.h \
 	CvXMLLoadUtility.h \
 	CvDLLXMLIFaceBase.h
@@ -6342,6 +6646,8 @@ Release\CvInitCore.obj: CvInitCore.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvInitCore.h \
 	CyArgsList.h \
 	BugMod.h \
@@ -6391,6 +6697,8 @@ Release\CvMap.obj: CvMap.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvFractal.h \
 	CvMapGenerator.h \
 	FAStarNode.h \
@@ -6445,6 +6753,8 @@ Release\CvMapGenerator.obj: CvMapGenerator.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvMapGenerator.h \
 	CvFractal.h \
 	CyPlot.h \
@@ -6494,6 +6804,8 @@ Release\CvMessageControl.obj: CvMessageControl.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvMessageControl.h \
 	CvMessageData.h
 Release\CvMessageData.obj: CvMessageData.cpp \
@@ -6541,6 +6853,8 @@ Release\CvMessageData.obj: CvMessageData.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvMessageData.h \
 	CvDLLInterfaceIFaceBase.h \
 	CvEventReporter.h \
@@ -6592,6 +6906,8 @@ Release\CvPlayer.obj: CvPlayer.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvDiploParameters.h \
 	FVariableSystem.h \
 	CvInitCore.h \
@@ -6654,6 +6970,8 @@ Release\CvPlayerAI.obj: CvPlayerAI.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvDiploParameters.h \
 	FVariableSystem.h \
 	CvInitCore.h \
@@ -6712,6 +7030,8 @@ Release\CvPlot.obj: CvPlot.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvDLLInterfaceIFaceBase.h \
 	CvDLLSymbolIFaceBase.h \
 	CvDLLPlotBuilderIFaceBase.h \
@@ -6768,6 +7088,8 @@ Release\CvPlotGroup.obj: CvPlotGroup.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvDLLFAStarIFaceBase.h \
 	CvRhyes.h
 Release\CvPopupInfo.obj: CvPopupInfo.cpp \
@@ -6815,6 +7137,8 @@ Release\CvPopupInfo.obj: CvPopupInfo.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	cvpopupinfo.h
 Release\CvPopupReturn.obj: CvPopupReturn.cpp \
 	CvGameCoreDLL.h \
@@ -6861,6 +7185,8 @@ Release\CvPopupReturn.obj: CvPopupReturn.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvPopupReturn.h
 Release\CvRandom.obj: CvRandom.cpp \
 	CvGameCoreDLL.h \
@@ -6907,6 +7233,8 @@ Release\CvRandom.obj: CvRandom.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyArgsList.h
 Release\CvReplayInfo.obj: CvReplayInfo.cpp \
 	CvGameCoreDLL.h \
@@ -6953,6 +7281,8 @@ Release\CvReplayInfo.obj: CvReplayInfo.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvReplayInfo.h \
 	CvReplayMessage.h \
 	CvGameTextMgr.h \
@@ -7003,6 +7333,8 @@ Release\CvReplayMessage.obj: CvReplayMessage.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	cvreplaymessage.h
 Release\CvSelectionGroup.obj: CvSelectionGroup.cpp \
 	CvGameCoreDLL.h \
@@ -7049,6 +7381,8 @@ Release\CvSelectionGroup.obj: CvSelectionGroup.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvDLLInterfaceIFaceBase.h \
 	CvDLLFAStarIFaceBase.h \
 	FAStarNode.h \
@@ -7104,6 +7438,8 @@ Release\CvSelectionGroupAI.obj: CvSelectionGroupAI.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CVInfos.h
 Release\CvStatistics.obj: CvStatistics.cpp \
 	CvGameCoreDLL.h \
@@ -7150,6 +7486,8 @@ Release\CvStatistics.obj: CvStatistics.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvStatistics.h
 Release\CvStructs.obj: CvStructs.cpp \
 	CvGameCoreDLL.h \
@@ -7195,7 +7533,9 @@ Release\CvStructs.obj: CvStructs.cpp \
 	CvDllEntity.h \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
-	CvArtFileMgr.h
+	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h
 Release\CvTalkingHeadMessage.obj: CvTalkingHeadMessage.cpp \
 	CvGameCoreDLL.h \
 	FAssert.h \
@@ -7240,7 +7580,9 @@ Release\CvTalkingHeadMessage.obj: CvTalkingHeadMessage.cpp \
 	CvDllEntity.h \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
-	CvArtFileMgr.h
+	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h
 Release\CvTeam.obj: CvTeam.cpp \
 	CvGameCoreDLL.h \
 	FAssert.h \
@@ -7286,6 +7628,8 @@ Release\CvTeam.obj: CvTeam.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvDLLInterfaceIFaceBase.h \
 	CvEventReporter.h \
 	CvStatistics.h \
@@ -7341,6 +7685,8 @@ Release\CvTeamAI.obj: CvTeamAI.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvDLLInterfaceIFaceBase.h \
 	CyArgsList.h \
 	CvRhyes.h
@@ -7389,6 +7735,8 @@ Release\CvUnit.obj: CvUnit.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyUnit.h \
 	CyArgsList.h \
 	CyPlot.h \
@@ -7446,6 +7794,8 @@ Release\CvUnitAI.obj: CvUnitAI.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyUnit.h \
 	CyArgsList.h \
 	FAStarNode.h \
@@ -7497,6 +7847,8 @@ Release\CvXMLLoadUtility.obj: CvXMLLoadUtility.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvDLLXMLIFaceBase.h \
 	CvXMLLoadUtility.h
 Release\CvXMLLoadUtilityGet.obj: CvXMLLoadUtilityGet.cpp \
@@ -7544,6 +7896,8 @@ Release\CvXMLLoadUtilityGet.obj: CvXMLLoadUtilityGet.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvDLLXMLIFaceBase.h \
 	CvXMLLoadUtility.h \
 	FInputDevice.h
@@ -7592,6 +7946,8 @@ Release\CvXMLLoadUtilityInit.obj: CvXMLLoadUtilityInit.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvXMLLoadUtility.h \
 	CvGameTextMgr.h \
 	CvInfoWater.h
@@ -7640,6 +7996,8 @@ Release\CvXMLLoadUtilitySet.obj: CvXMLLoadUtilitySet.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvDLLXMLIFaceBase.h \
 	CvXMLLoadUtility.h \
 	CvGameTextMgr.h \
@@ -7690,6 +8048,8 @@ Release\CyArea.obj: CyArea.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyArea.h
 Release\CyAreaInterface.obj: CyAreaInterface.cpp \
 	CvGameCoreDLL.h \
@@ -7736,6 +8096,8 @@ Release\CyAreaInterface.obj: CyAreaInterface.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyArea.h
 Release\CyArgsList.obj: CyArgsList.cpp \
 	CvGameCoreDLL.h \
@@ -7782,6 +8144,8 @@ Release\CyArgsList.obj: CyArgsList.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyArgsList.h
 Release\CyArtFileMgr.obj: CyArtFileMgr.cpp \
 	CvGameCoreDLL.h \
@@ -7828,6 +8192,8 @@ Release\CyArtFileMgr.obj: CyArtFileMgr.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyArtFileMgr.h
 Release\CyArtFileMgrInterface.obj: CyArtFileMgrInterface.cpp \
 	CvGameCoreDLL.h \
@@ -7874,6 +8240,8 @@ Release\CyArtFileMgrInterface.obj: CyArtFileMgrInterface.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyArtFileMgr.h
 Release\CyCity.obj: CyCity.cpp \
 	CvGameCoreDLL.h \
@@ -7920,6 +8288,8 @@ Release\CyCity.obj: CyCity.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyPlot.h \
 	CyArea.h \
 	CyUnit.h
@@ -7968,6 +8338,8 @@ Release\CyCityInterface1.obj: CyCityInterface1.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyPlot.h \
 	CyArea.h
 Release\CyCityInterface2.obj: CyCityInterface2.cpp \
@@ -8015,6 +8387,8 @@ Release\CyCityInterface2.obj: CyCityInterface2.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyPlot.h \
 	CyArea.h
 Release\CyDeal.obj: CyDeal.cpp \
@@ -8062,6 +8436,8 @@ Release\CyDeal.obj: CyDeal.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyDeal.h
 Release\CyEnumsInterface.obj: CyEnumsInterface.cpp \
 	CvGameCoreDLL.h \
@@ -8108,6 +8484,8 @@ Release\CyEnumsInterface.obj: CyEnumsInterface.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvGameCoreDLLUnDefNew.h
 Release\CyGame.obj: CyGame.cpp \
 	CvGameCoreDLL.h \
@@ -8154,6 +8532,8 @@ Release\CyGame.obj: CyGame.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyGame.h \
 	CyPlayer.h \
 	CyDeal.h \
@@ -8207,6 +8587,8 @@ Release\CyGameCoreUtils.obj: CyGameCoreUtils.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyGameCoreUtils.h \
 	CyPlot.h \
 	CyUnit.h
@@ -8255,6 +8637,8 @@ Release\CyGameCoreUtilsInterface.obj: CyGameCoreUtilsInterface.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyGameCoreUtils.h \
 	CyPlot.h \
 	CyUnit.h
@@ -8303,6 +8687,8 @@ Release\CyGameInterface.obj: CyGameInterface.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyGame.h \
 	CyDeal.h \
 	CyReplayInfo.h \
@@ -8352,6 +8738,8 @@ Release\CyGameTextMgr.obj: CyGameTextMgr.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvGameTextMgr.h \
 	CyGameTextMgr.h \
 	CyDeal.h \
@@ -8401,6 +8789,8 @@ Release\CyGameTextMgrInterface.obj: CyGameTextMgrInterface.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyGameTextMgr.h
 Release\CyGlobalContext.obj: CyGlobalContext.cpp \
 	CvGameCoreDLL.h \
@@ -8447,6 +8837,8 @@ Release\CyGlobalContext.obj: CyGlobalContext.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyGame.h \
 	CyPlayer.h \
 	CyMap.h \
@@ -8497,6 +8889,8 @@ Release\CyGlobalContextInterface1.obj: CyGlobalContextInterface1.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyMap.h \
 	CyPlayer.h \
 	CyGame.h \
@@ -8546,6 +8940,8 @@ Release\CyGlobalContextInterface2.obj: CyGlobalContextInterface2.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyMap.h \
 	CyPlayer.h \
 	CyGame.h \
@@ -8595,6 +8991,8 @@ Release\CyGlobalContextInterface3.obj: CyGlobalContextInterface3.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyMap.h \
 	CyPlayer.h \
 	CyGame.h \
@@ -8644,6 +9042,8 @@ Release\CyGlobalContextInterface4.obj: CyGlobalContextInterface4.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyMap.h \
 	CyPlayer.h \
 	CyGame.h \
@@ -8693,6 +9093,8 @@ Release\CyHallOfFameInfo.obj: CyHallOfFameInfo.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyHallOfFameInfo.h \
 	CvHallOfFameInfo.h \
 	CvReplayInfo.h \
@@ -8742,6 +9144,8 @@ Release\CyHallOfFameInterface.obj: CyHallOfFameInterface.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyReplayInfo.h \
 	CvReplayInfo.h \
 	CyHallOfFameInfo.h \
@@ -8791,7 +9195,9 @@ Release\CyInfoInterface1.obj: CyInfoInterface1.cpp \
 	CvDllEntity.h \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
-	CvArtFileMgr.h
+	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h
 Release\CyInfoInterface2.obj: CyInfoInterface2.cpp \
 	CvGameCoreDLL.h \
 	FAssert.h \
@@ -8836,7 +9242,9 @@ Release\CyInfoInterface2.obj: CyInfoInterface2.cpp \
 	CvDllEntity.h \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
-	CvArtFileMgr.h
+	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h
 Release\CyInfoInterface3.obj: CyInfoInterface3.cpp \
 	CvGameCoreDLL.h \
 	FAssert.h \
@@ -8881,7 +9289,9 @@ Release\CyInfoInterface3.obj: CyInfoInterface3.cpp \
 	CvDllEntity.h \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
-	CvArtFileMgr.h
+	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h
 Release\CyMap.obj: CyMap.cpp \
 	CvGameCoreDLL.h \
 	FAssert.h \
@@ -8927,6 +9337,8 @@ Release\CyMap.obj: CyMap.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	cyMap.h \
 	CyPlot.h \
 	CySelectionGroup.h \
@@ -8979,6 +9391,8 @@ Release\CyMapGenerator.obj: CyMapGenerator.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyMapGenerator.h \
 	CvMapGenerator.h \
 	CyPlot.h
@@ -9027,6 +9441,8 @@ Release\CyMapGeneratorInterface.obj: CyMapGeneratorInterface.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyMapGenerator.h
 Release\CyMapInterface.obj: CyMapInterface.cpp \
 	CvGameCoreDLL.h \
@@ -9073,6 +9489,8 @@ Release\CyMapInterface.obj: CyMapInterface.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyMap.h \
 	CyArea.h \
 	CySelectionGroup.h \
@@ -9123,6 +9541,8 @@ Release\CyMessageControl.obj: CyMessageControl.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyMessageControl.h \
 	CvMessageControl.h
 Release\CyMessageControlInterface.obj: CyMessageControlInterface.cpp \
@@ -9170,6 +9590,8 @@ Release\CyMessageControlInterface.obj: CyMessageControlInterface.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyMessageControl.h
 Release\CyPlayer.obj: CyPlayer.cpp \
 	CvGameCoreDLL.h \
@@ -9216,6 +9638,8 @@ Release\CyPlayer.obj: CyPlayer.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyPlayer.h \
 	CyUnit.h \
 	CyArea.h \
@@ -9266,6 +9690,8 @@ Release\CyPlayerInterface1.obj: CyPlayerInterface1.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyPlayer.h \
 	CyUnit.h \
 	CyPlot.h \
@@ -9316,6 +9742,8 @@ Release\CyPlayerInterface2.obj: CyPlayerInterface2.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyPlayer.h \
 	CyUnit.h \
 	CyPlot.h \
@@ -9366,6 +9794,8 @@ Release\CyPlot.obj: CyPlot.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyPlot.h \
 	CyArea.h \
 	CyUnit.h
@@ -9414,6 +9844,8 @@ Release\CyPlotInterface1.obj: CyPlotInterface1.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyPlot.h \
 	CyArea.h \
 	CyUnit.h
@@ -9461,7 +9893,9 @@ Release\CyRandomInterface.obj: CyRandomInterface.cpp \
 	CvDllEntity.h \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
-	CvArtFileMgr.h
+	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h
 Release\CyReplayInfo.obj: CyReplayInfo.cpp \
 	CvGameCoreDLL.h \
 	FAssert.h \
@@ -9507,6 +9941,8 @@ Release\CyReplayInfo.obj: CyReplayInfo.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyReplayInfo.h \
 	CvReplayInfo.h \
 	CyMap.h
@@ -9555,6 +9991,8 @@ Release\CySelectionGroup.obj: CySelectionGroup.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CySelectionGroup.h \
 	CyPlot.h \
 	CyArea.h \
@@ -9604,6 +10042,8 @@ Release\CySelectionGroupInterface.obj: CySelectionGroupInterface.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CySelectionGroup.h \
 	CyPlot.h \
 	CyArea.h \
@@ -9652,7 +10092,9 @@ Release\CyStructsInterface1.obj: CyStructsInterface1.cpp \
 	CvDllEntity.h \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
-	CvArtFileMgr.h
+	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h
 Release\CyTeam.obj: CyTeam.cpp \
 	CvGameCoreDLL.h \
 	FAssert.h \
@@ -9698,6 +10140,8 @@ Release\CyTeam.obj: CyTeam.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyTeam.h \
 	CyArea.h
 Release\CyTeamInterface.obj: CyTeamInterface.cpp \
@@ -9745,6 +10189,8 @@ Release\CyTeamInterface.obj: CyTeamInterface.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyArea.h \
 	CyTeam.h
 Release\CyUnit.obj: CyUnit.cpp \
@@ -9792,6 +10238,8 @@ Release\CyUnit.obj: CyUnit.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyUnit.h \
 	CyPlot.h \
 	CyArea.h \
@@ -9842,6 +10290,8 @@ Release\CyUnitInterface1.obj: CyUnitInterface1.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CyUnit.h \
 	CyPlot.h \
 	CyArea.h \
@@ -9891,7 +10341,9 @@ Release\FAssert.obj: FAssert.cpp \
 	CvDllEntity.h \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
-	CvArtFileMgr.h
+	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h
 Release\FDialogTemplate.obj: FDialogTemplate.cpp \
 	CvGameCoreDll.h \
 	FAssert.h \
@@ -9937,7 +10389,57 @@ Release\FDialogTemplate.obj: FDialogTemplate.cpp \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
 	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	FDialogTemplate.h \
+	CvGameCoreDLLUndefNew.h
+Release\MTCore.obj: MTCore.cpp \
+	CvGameCoreDLL.h \
+	FAssert.h \
+	CvGameCoreDLLDefNew.h \
+	FDataStreamBase.h \
+	FFreeListArrayBase.h \
+	FFreeListTrashArray.h \
+	FFreeListArray.h \
+	CvString.h \
+	CvEnums.h \
+	CvDefines.h \
+	CvStructs.h \
+	CvDLLUtilityIFaceBase.h \
+	LinkedList.h \
+	CvPlayerAI.h \
+	CvPlayer.h \
+	CvCityAI.h \
+	CvCity.h \
+	CvDLLEntity.h \
+	CvUnitAI.h \
+	CvUnit.h \
+	CvSelectionGroupAI.h \
+	CvSelectionGroup.h \
+	CvPlotGroup.h \
+	CvTalkingHeadMessage.h \
+	AI_defines.h \
+	CvGameCoreUtils.h \
+	CvGlobals.h \
+	CvMap.h \
+	CvArea.h \
+	CvPlot.h \
+	CvGameAI.h \
+	CvGame.h \
+	CvDeal.h \
+	CvRandom.h \
+	FProfiler.h \
+	CyCity.h \
+	CvInfos.h \
+	CvTeamAI.h \
+	CvTeam.h \
+	CvDLLPythonIFaceBase.h \
+	CvDllEntity.h \
+	CvDLLEntityIFaceBase.h \
+	CyGlobalContext.h \
+	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h \
 	CvGameCoreDLLUndefNew.h
 Release\_precompile.obj: _precompile.cpp \
 	CvGameCoreDLL.h \
@@ -9983,4 +10485,6 @@ Release\_precompile.obj: _precompile.cpp \
 	CvDllEntity.h \
 	CvDLLEntityIFaceBase.h \
 	CyGlobalContext.h \
-	CvArtFileMgr.h
+	CvArtFileMgr.h \
+	MTCore.h \
+	CLock.h

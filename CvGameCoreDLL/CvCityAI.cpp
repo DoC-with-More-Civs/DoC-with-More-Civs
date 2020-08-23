@@ -9931,8 +9931,8 @@ void CvCityAI::AI_updateSpecialYieldMultiplier()
 		int iIncome = 1 + kPlayer.getCommerceRate(COMMERCE_GOLD) + kPlayer.getCommerceRate(COMMERCE_RESEARCH) + std::max(0, kPlayer.getGoldPerTurn());
 		int iExpenses = 1 + kPlayer.calculateInflatedCosts() - std::min(0, kPlayer.getGoldPerTurn());
 		FAssert(iIncome > 0);
-
-		int iRatio = (100 * iExpenses) / iIncome;
+		
+		int iRatio = (100 * iExpenses) / std::max(iIncome, 1); // wunshare : bug fixed iIncome can not be zero
 		//Gold -> Production Reduced To
 		// 40- -> 100%
 		// 60 -> 83%

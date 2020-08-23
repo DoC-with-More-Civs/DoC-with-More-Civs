@@ -24,6 +24,8 @@ public:
   {
 	  FAssertMsg(ePlayer != NO_PLAYER, "Player is not assigned a valid value");
 	  FAssertMsg(ePlayer < MAX_PLAYERS, "Player is not assigned a valid value");
+	  // wunshare: bug fixed if ePlayer is not a valid value, return (MAX_PLAYER - 1) to aviod crash
+	  if (ePlayer >= MAX_PLAYERS || ePlayer < NO_PLAYER) ePlayer = (PlayerTypes)(MAX_PLAYERS - 1);
 	  return m_aPlayers[ePlayer]; 
   }
 #endif

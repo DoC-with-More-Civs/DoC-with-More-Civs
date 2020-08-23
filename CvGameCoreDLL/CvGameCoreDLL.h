@@ -207,6 +207,9 @@ namespace python = boost::python;
 #include "CvSelectionGroupAI.h"
 #include "CvUnitAI.h"
 
+#include <process.h> // 线程相关
+#include "MTCore.h"  // 线程相关
+
 #ifdef FINAL_RELEASE
 // Undefine OutputDebugString in final release builds
 #undef OutputDebugString

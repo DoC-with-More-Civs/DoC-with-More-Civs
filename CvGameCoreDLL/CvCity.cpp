@@ -10252,9 +10252,9 @@ void CvCity::setBaseYieldRate(YieldTypes eIndex, int iNewValue)
 	{
 		FAssertMsg(iNewValue >= 0, "iNewValue expected to be >= 0");
 		FAssertMsg(((iNewValue * 100) / 100) >= 0, "((iNewValue * 100) / 100) expected to be >= 0");
-
+		 
 		m_aiBaseYieldRate[eIndex] = iNewValue;
-		FAssert(getYieldRate(eIndex) >= 0);
+//  		FAssert(getYieldRate(eIndex) >= 0);
 
 		updateCommerce();
 

@@ -64,6 +64,7 @@ nmake /NOLOGO /K Release
   <ItemDefinitionGroup>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="MTCore.cpp" />
     <ClCompile Include="_precompile.cpp" />
     <ClCompile Include="CvArea.cpp" />
     <ClCompile Include="CvArtFileMgr.cpp" />
@@ -260,6 +261,7 @@ nmake /NOLOGO /K Release
     <ClInclude Include="FProfiler.h" />
     <ClInclude Include="FVariableSystem.h" />
     <ClInclude Include="LinkedList.h" />
+    <ClInclude Include="MTCore.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
