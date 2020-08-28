@@ -67,6 +67,7 @@ nmake /NOLOGO /K Release
   <ItemDefinitionGroup>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CvAllocator.cpp" />
     <ClCompile Include="MTCore.cpp" />
     <ClCompile Include="_precompile.cpp" />
     <ClCompile Include="CvArea.cpp" />
@@ -171,6 +172,7 @@ nmake /NOLOGO /K Release
   <ItemGroup>
     <ClInclude Include="AI_Defines.h" />
     <ClInclude Include="CheckSum.h" />
+    <ClInclude Include="CvAllocator.h" />
     <ClInclude Include="CvArea.h" />
     <ClInclude Include="CvArtFileMgr.h" />
     <ClInclude Include="CvCity.h" />

@@ -315,6 +315,9 @@
     <ClCompile Include="MTCore.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="CvAllocator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AI_Defines.h">
@@ -609,6 +612,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="CheckSum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CvAllocator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
