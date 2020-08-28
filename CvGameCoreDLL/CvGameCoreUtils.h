@@ -6,6 +6,9 @@
 #define CIV4_GAMECORE_UTILS_H
 
 
+// modified: wunshare
+//	 - CvChecksum
+
 //#include "CvStructs.h"
 #include "CvGlobals.h"
 #include "CvMap.h"
@@ -420,5 +423,24 @@ void getUnitAIString(CvWString& szString, UnitAITypes eUnitAI);
 int calculateExperience(int iLevel, PlayerTypes ePlayer);								// Exposed to Python
 int calculateLevel(int iExperience, PlayerTypes ePlayer);								// Exposed to Python
 // BUG - Unit Experience - end
+
+
+// wunshare start
+//	Koshling - better checksum algorithm that can be used when reasonably high quality
+//	hashes are needed
+class CvChecksum {
+public:
+	CvChecksum() { clear(); }
+	void clear() { sum = 0; r = 55665; c1 = 52845; c2 = 22719; }
+	void add(int i);
+	void add(byte b);
+	int get() { return (int)sum; }
+protected:
+	WORD r;
+	WORD c1;
+	WORD c2;
+	DWORD sum;
+};
+// wunshare end
 
 #endif

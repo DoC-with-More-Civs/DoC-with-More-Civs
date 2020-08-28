@@ -2747,3 +2747,21 @@ void setDirty(InterfaceDirtyBits eDirtyBit, bool bNewValue)
 {
 	gDLL->getInterfaceIFace()->setDirty(eDirtyBit, bNewValue);
 }
+
+// wunshare start
+void CvChecksum::add(int i)
+{
+	union { int value; byte bytes[4]; } data;
+	data.value = i;
+	for (UINT i = 0; i < sizeof(data.bytes); i++)
+	{
+		add(data.bytes[i]);
+	}
+}
+
+void CvChecksum::add(byte b)
+{
+	byte cipher = (b ^ (r >> 8));
+	r = (cipher + r) * c1 + c2;
+	sum = (sum << 8) + ((sum >> 24) ^ cipher);
+}

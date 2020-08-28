@@ -6,20 +6,24 @@
 //
 // includes (pch) for gamecore dll files
 // Author - Mustafa Thamer
-//
+// modified - wunshare
+//	 - 宏定义 USE_INTERNAL_PROFILER	性能分析器
+//	 - 宏定义 MEMORY_TRACKING		内存池跟踪
 
 //
 // WINDOWS
 //
 #pragma warning( disable: 4530 )	// C++ exception handler used, but unwind semantics are not enabled
 
+#define NOMINMAX	// wunshare
 #define WIN32_LEAN_AND_MEAN
 #include <windows.h>
 #include <MMSystem.h>
-#if defined _DEBUG && !defined USE_MEMMANAGER
-#define USE_MEMMANAGER
-#include <crtdbg.h>
-#endif
+// wunshare
+//#if defined _DEBUG && !defined USE_MEMMANAGER 
+//#define USE_MEMMANAGER
+//#include <crtdbg.h>
+//#endif
 #include <vector>
 #include <list>
 #include <tchar.h>
@@ -27,6 +31,13 @@
 #include <assert.h>
 #include <map>
 #include <hash_map>
+
+// wunshare begin
+#include <utility>	
+#include <algorithm>
+
+#include <fstream>
+// wunshare end
 
 #define DllExport   __declspec( dllexport ) 
 
@@ -153,6 +164,74 @@ __forceinline float MaxFloat() { return DWtoF(0x7f7fffff); }
 
 void startProfilingDLL();
 void stopProfilingDLL();
+// wunshare start
+#define USE_INTERNAL_PROFILER 
+#ifdef USE_INTERNAL_PROFILER
+extern bool g_bTraceBackgroundThreads;
+
+//struct ProfileSample;
+//struct ProfileLinkageInfo;
+#include "FProfiler.h"
+void IFPProfileThread(void);
+bool IFPIsMainThread(void);
+void IFPBeginSample(ProfileLinkageInfo* linkageInfo, bool bAsConditional = false);
+void IFPEndSample(ProfileLinkageInfo* linkageInfo, bool bAsConditional = false);
+void IFPCancelSample(ProfileLinkageInfo* linkageInfo);
+void dumpProfileStack(void);
+void EnableDetailedTrace(bool enable);
+void IFPSetCount(ProfileSample* sample, int count);
+#endif
+
+#define MEMORY_TRACKING
+#ifdef MEMORY_TRACKING
+class CMemoryTrack
+{
+#define MAX_TRACKED_ALLOCS	(1000)
+	void*	m_track[MAX_TRACKED_ALLOCS];
+	char*	m_trackName[MAX_TRACKED_ALLOCS];
+	int		m_allocSeq[MAX_TRACKED_ALLOCS];
+	int		m_allocSize[MAX_TRACKED_ALLOCS];
+	int		m_highWater;
+	const char* m_name;
+	bool	m_valid;
+	int		m_seq;
+#define MAX_TRACK_DEPTH		(50)
+	static	CMemoryTrack*	trackStack[MAX_TRACK_DEPTH];
+	static	int m_trackStackDepth;
+
+public:
+	CMemoryTrack(const char* name, bool valid);
+	~CMemoryTrack();
+
+	void NoteAlloc(void* ptr, int size);
+	void NoteDeAlloc(void* ptr);
+
+	static CMemoryTrack* GetCurrent(void);
+};
+
+class CMemoryTrace
+{
+	SIZE_T		m_start;
+	const char*	m_name;
+public:
+	CMemoryTrace(const char* name);
+	~CMemoryTrace();
+};
+
+void DumpMemUsage(const char* fn, int line);
+
+#define DUMP_MEMORY_USAGE()	DumpMemUsage(__FUNCTION__,__LINE__);
+#define MEMORY_TRACK()	CMemoryTrack __memoryTrack(__FUNCTION__, true);
+#define MEMORY_TRACK_NAME(x)	CMemoryTrack __memoryTrack(x, true);
+#define MEMORY_TRACK_EXEMPT()	CMemoryTrack __memoryTrackExemption(NULL, false);
+#define MEMORY_TRACE_FUNCTION() CMemoryTrack __memoryTrace(__FUNCTION__);
+#else
+#define DUMP_MEMORY_USAGE()
+#define MEMORY_TRACK()
+#define MEMORY_TRACK_NAME(x)
+#define MEMORY_TRACK_EXEMPT()
+#defien MEMORY_TRACE_FUNCTION()
+#endif
 
 //
 // Boost Python
@@ -179,36 +258,39 @@ namespace python = boost::python;
 #include "CvStructs.h"
 #include "CvDLLUtilityIFaceBase.h"
 
+// wunshare start
 //jason tests
-#include "CvPlayerAI.h"
-#include "CvGameCoreUtils.h"
-#include "CvMap.h"
-#include "CvGameAI.h"
-#include "CvPlot.h"
-#include "CvUnit.h"
-#include "CvGlobals.h"
-#include "CvCity.h"
-#include "FProfiler.h"
-#include "CyCity.h"
-#include "CvInfos.h"
-#include "CvTeamAI.h"
-#include "CvDLLPythonIFaceBase.h"
-#include "CvRandom.h"
-#include "CvArea.h"
-#include "CvDllEntity.h"
-#include "CvDeal.h"
-#include "CvDLLEntityIFaceBase.h"
-#include "CvGame.h"
-#include "CyGlobalContext.h"
-#include "CvSelectionGroup.h"
-#include "CvTalkingHeadMessage.h"
-#include "CvPlotGroup.h"
-#include "CvCityAI.h"
-#include "CvSelectionGroupAI.h"
-#include "CvUnitAI.h"
+//#include "CvPlayerAI.h"
+//#include "CvGameCoreUtils.h"
+//#include "CvMap.h"
+//#include "CvGameAI.h"
+//#include "CvPlot.h"
+//#include "CvUnit.h"
+//#include "CvGlobals.h"
+//#include "CvCity.h"
+//#include "FProfiler.h"
+//#include "CyCity.h"
+//#include "CvInfos.h"
+//#include "CvTeamAI.h"
+//#include "CvDLLPythonIFaceBase.h"
+//#include "CvRandom.h"
+//#include "CvArea.h"
+//#include "CvDllEntity.h"
+//#include "CvDeal.h"
+//#include "CvDLLEntityIFaceBase.h"
+//#include "CvGame.h"
+//#include "CyGlobalContext.h"
+//#include "CvSelectionGroup.h"
+//#include "CvTalkingHeadMessage.h"
+//#include "CvPlotGroup.h"
+//#include "CvCityAI.h"
+//#include "CvSelectionGroupAI.h"
+//#include "CvUnitAI.h"
 
 #include <process.h> // 线程相关
 #include "MTCore.h"  // 线程相关
+
+// wunshare end
 
 #ifdef FINAL_RELEASE
 // Undefine OutputDebugString in final release builds
