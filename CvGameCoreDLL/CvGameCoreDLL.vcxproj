@@ -170,6 +170,7 @@ nmake /NOLOGO /K Release
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AI_Defines.h" />
+    <ClInclude Include="CheckSum.h" />
     <ClInclude Include="CvArea.h" />
     <ClInclude Include="CvArtFileMgr.h" />
     <ClInclude Include="CvCity.h" />

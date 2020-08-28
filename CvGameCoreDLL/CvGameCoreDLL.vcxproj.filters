@@ -608,6 +608,9 @@
     <ClInclude Include="MTCore.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="CheckSum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="FVariableSystem.inl">
