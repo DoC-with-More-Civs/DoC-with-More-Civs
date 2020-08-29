@@ -62,12 +62,13 @@ nmake /NOLOGO /K Release
     <NMakeForcedUsingAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(NMakeForcedUsingAssemblies)</NMakeForcedUsingAssemblies>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>C:\GOG Games\Civilization IV Complete\Civ4\Beyond the Sword\Mods\RFC Dawn of Civilization\CvGameCoreDLL\Boost-1.32.0\include;$(IncludePath)</IncludePath>
+    <IncludePath>C:\GOG Games\Civilization IV Complete\Civ4\Beyond the Sword\Mods\RFC Dawn of Civilization\CvGameCoreDLL\Python24\include;C:\GOG Games\Civilization IV Complete\Civ4\Beyond the Sword\Mods\RFC Dawn of Civilization\CvGameCoreDLL\Boost-1.32.0\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CvAllocator.cpp" />
+    <ClCompile Include="CvPipeLine.cpp" />
     <ClCompile Include="MTCore.cpp" />
     <ClCompile Include="_precompile.cpp" />
     <ClCompile Include="CvArea.cpp" />
@@ -217,6 +218,7 @@ nmake /NOLOGO /K Release
     <ClInclude Include="CvMapGenerator.h" />
     <ClInclude Include="CvMessageControl.h" />
     <ClInclude Include="CvMessageData.h" />
+    <ClInclude Include="CvPipeLine.h" />
     <ClInclude Include="CvPlayer.h" />
     <ClInclude Include="CvPlayerAI.h" />
     <ClInclude Include="CvPlot.h" />

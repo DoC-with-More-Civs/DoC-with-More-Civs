@@ -318,6 +318,9 @@
     <ClCompile Include="CvAllocator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="CvPipeLine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AI_Defines.h">
@@ -618,6 +621,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="CvTaggedSaveFormatWrapper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CvPipeLine.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -5,6 +5,8 @@
 #ifndef CIV4_CITY_H
 #define CIV4_CITY_H
 
+#include "CvEnums.h"
+#include "CvStructs.h"
 #include "CvDLLEntity.h"
 #include "LinkedList.h"
 

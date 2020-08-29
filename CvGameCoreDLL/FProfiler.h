@@ -132,7 +132,7 @@ private:
 #ifdef USE_INTERNAL_PROFILER
 #define PROFILE_THREAD(name)\
 	static ProfileSample __rootSample(name);\
-	IFProfileThread();\
+	IFPProfileThread();\
 	CProfileScope ProfileScope(&__rootSample);
 
 #define PROFILE(name)\
