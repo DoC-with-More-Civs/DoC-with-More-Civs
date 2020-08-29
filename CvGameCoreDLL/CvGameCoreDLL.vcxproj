@@ -231,6 +231,7 @@ nmake /NOLOGO /K Release
     <ClInclude Include="CvStatistics.h" />
     <ClInclude Include="CvString.h" />
     <ClInclude Include="CvStructs.h" />
+    <ClInclude Include="CvTaggedSaveFormatWrapper.h" />
     <ClInclude Include="CvTalkingHeadMessage.h" />
     <ClInclude Include="CvTeam.h" />
     <ClInclude Include="CvTeamAI.h" />

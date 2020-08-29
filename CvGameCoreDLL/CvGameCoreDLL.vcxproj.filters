@@ -617,6 +617,9 @@
     <ClInclude Include="CvAllocator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="CvTaggedSaveFormatWrapper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="FVariableSystem.inl">

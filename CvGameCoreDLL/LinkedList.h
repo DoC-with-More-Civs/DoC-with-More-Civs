@@ -1,5 +1,7 @@
 #pragma once
 
+#include "CvTaggedSaveFormatWrapper.h"
+
 // LinkedList.h
 
 // A doubly-linked list
@@ -17,31 +19,21 @@ template <class tVARTYPE> class CLLNode
 friend class CLinkList<tVARTYPE>;
 
 public:
+	CLLNode() {}
+    CLLNode(const tVARTYPE& val) {}
 
-    CLLNode(const tVARTYPE& val)
-          {
-	          m_data = val;
-
-	          m_pNext = NULL;
-	          m_pPrev = NULL;
-          }
 	virtual ~CLLNode() {}
 
 	tVARTYPE	m_data;		//list of vartype
-
 protected:
-
 	CLLNode<tVARTYPE>*	m_pNext;
 	CLLNode<tVARTYPE>*	m_pPrev;
-
 };
 
 
 template <class tVARTYPE> class CLinkList
 {
-
 public:
-
 	CLinkList();
 	virtual ~CLinkList();
 
@@ -59,8 +51,13 @@ public:
 
 	CLLNode<tVARTYPE>* nodeNum(int iNum) const;
 
-	void Read( FDataStreamBase* pStream );
-	void Write( FDataStreamBase* pStream ) const;
+	void Read(FDataStreamBase* pStream);
+	void Write(FDataStreamBase* pStream) const;
+
+	void ReadNonWrapper(FDataStreamBase* pStream);
+	void WriteNonWrapper(FDataStreamBase* pStream) const;
+	void ReadNonWrapperSubset(FDataStreamBase* pStream);
+	void WriteNonWrapperSubset(FDataStreamBase* pStream, int index, int iNum) const;
 
 	int getLength() const
 	{
@@ -103,7 +100,7 @@ inline CLinkList<tVARTYPE>::CLinkList()
 template <class tVARTYPE>
 inline CLinkList<tVARTYPE>::~CLinkList()
 {
-  clear();
+	clear();
 }
 
 
@@ -158,6 +155,8 @@ inline void CLinkList<tVARTYPE>::insertAtBeginning(const tVARTYPE& val)
 template <class tVARTYPE>
 inline void CLinkList<tVARTYPE>::insertAtEnd(const tVARTYPE& val)
 {	
+	MEMORY_TRACK_EXEMPT();
+
 	CLLNode<tVARTYPE>* pNode;
 
 	assert((m_pHead == NULL) || (m_iLength > 0));
@@ -184,6 +183,8 @@ inline void CLinkList<tVARTYPE>::insertAtEnd(const tVARTYPE& val)
 template <class tVARTYPE>
 inline void CLinkList<tVARTYPE>::insertBefore(const tVARTYPE& val, CLLNode<tVARTYPE>* pThisNode)
 {
+	MEMORY_TRACK_EXEMPT();
+
 	CLLNode<tVARTYPE>* pNode;
 
 	assert((m_pHead == NULL) || (m_iLength > 0));
@@ -209,6 +210,8 @@ inline void CLinkList<tVARTYPE>::insertBefore(const tVARTYPE& val, CLLNode<tVART
 template <class tVARTYPE>
 inline void CLinkList<tVARTYPE>::insertAfter(const tVARTYPE& val, CLLNode<tVARTYPE>* pThisNode)
 {
+	MEMORY_TRACK_EXEMPT();
+
 	CLLNode<tVARTYPE>* pNode;
 
 	assert((m_pHead == NULL) || (m_iLength > 0));
@@ -280,7 +283,7 @@ inline void CLinkList<tVARTYPE>::moveToEnd(CLLNode<tVARTYPE>* pNode)
 
 	if (getLength() == 1)
 	{
-	return;
+		return;
 	}
 
 	if (pNode == m_pTail)
@@ -322,9 +325,9 @@ inline void CLinkList<tVARTYPE>::moveToEnd(CLLNode<tVARTYPE>* pNode)
 template <class tVARTYPE>
 inline CLLNode<tVARTYPE>* CLinkList<tVARTYPE>::next(CLLNode<tVARTYPE>* pNode) const
 {
-  assert(pNode != NULL);
+	assert(pNode != NULL);
 
-  return pNode->m_pNext;
+	return pNode->m_pNext;
 }
 
 
@@ -366,8 +369,14 @@ inline CLLNode<tVARTYPE>* CLinkList<tVARTYPE>::nodeNum(int iNum) const
 template < class T >
 inline void CLinkList< T >::Read( FDataStreamBase* pStream )
 {
-	int iLength;
-	pStream->Read( &iLength );
+	CvTaggedSaveFormatWrapper& wrapper = CvTaggedSaveFormatWrapper::getSaveFormatWrapper();
+	
+	warpper.AttachToStream(pStream);
+
+	WRAPPER_READ_OBJECT_START(wrapper);
+
+	int iLength = 0;
+	WRAPPER_READ(wrapper, "CLinkList", &iLength);
 	clear();
 
 	if ( iLength )
@@ -375,23 +384,114 @@ inline void CLinkList< T >::Read( FDataStreamBase* pStream )
 		T* pData = new T;
 		for ( int i = 0; i < iLength; i++ )
 		{
-			pStream->Read( sizeof ( T ), ( byte* )pData );
+			WRAPPER_READ_ARRAY_DECORATED(wrapper, "CLinkList", sizeof(T), (byte*)pData, "pData");
 			insertAtEnd( *pData );
 		}
 		SAFE_DELETE( pData );
 	}
+
+	WRAPPER_READ_OBJECT_END(wrapper);
 }
 
 template < class T >
 inline void CLinkList< T >::Write( FDataStreamBase* pStream ) const
 {
+	CvTaggedSaveFormatWrapper& wrapper = CvTaggedSaveFormatWrapper::getSaveFormatWrapper();
+
+	wrapper.AttachToStream(pStream);
+
+	WRAPPER_WRITE_OBJECT_START(wrapper);
+
 	int iLength = getLength();
-	pStream->Write( iLength );
+	WRAPPER_WRITE(wrapper, "CLinkList", iLength);
 	CLLNode< T >* pNode = head();
 	while ( pNode )
 	{
-		pStream->Write( sizeof ( T ), ( byte* )&pNode->m_data );
+		WRAPPER_WRITE_ARRAY_DECORATED(wrapper, "CLinkList", sizeof(T), (byte*)&pNode->m_data, "pData");
 		pNode = next( pNode );
+	}
+
+	WRAPPER_WRITE_OBJECT_END(wrapper);
+}
+
+//
+// same as above, but not using the wrapper (e.g. from message serialization)
+//
+template<class T>
+inline void CLinkList<T>::ReadNonWrapper(FDataStreamBase* pStream)
+{
+	int iLength = 0;
+	pStream->Read(&iLength);
+	clear();
+
+	if (iLength)
+	{ 
+		T* pData = new T;
+		for (int i = 0; i < iLength; i++)
+		{
+			pStream->Read(sizeof(T), (byte*)pData);
+			insertAtEnd(*pData);
+		}
+		SAFE_DELETE(pData);
+	}
+}
+
+template<class T>
+inline void CLinkList<T>::WriteNonWrapper(FDataStreamBase* pStream) const
+{
+	int iLength = getLength();
+	pStream->Write(iLength);
+	CLLNode<T>* pNode = head();
+	while (pNode)
+	{
+		pStream->Write(sizeof(T), (byte*)&pNode->m_data);
+		pNode = next(pNode);
+	}
+}
+
+//
+// same as above, but starting from an index
+//
+template<class T>
+inline void CLinkList<T>::ReadNonWrapperSubset(FDataStreamBase* pStream)
+{
+	int iLength = getLength();
+	int index = 0;
+	pStream->Read(&index);
+	int iNum = 0;
+	pStream->Read(&iNum);
+
+	T val;
+	for (int i = iLength; i < index + iNum; i++)
+	{
+		insertAtEnd(val);
+	}
+
+	CLLNode<T>* pNode = nodeNum(index);
+	for (int i = 0; i < index + iNum; i++)
+	{
+		pStream->Read(sizeof(T), (byte*)&(pNode->m_data));
+	}
+}
+
+template<class T>
+inline void CLinkList<T>::WriteNonWrapperSubset(FDataStreamBase* pStream, int index, int iNum) const
+{
+	int iLength = getLength();
+
+	// If iNum is too large, limit it to the length of the list
+	if (iLength < index + iNum)
+	{
+		iNum = iLength - index;
+	}
+
+	pStream->Write(index);
+	pStream->Write(iNum);
+	CLLNode<T>* pNode = nodeNum(index);
+	for (int i = 0; i < iNum; i++)
+	{
+		pStream->Write(sizeof(T), (byte*)&pNode->m_data);
+		pNode = next(pNode);
 	}
 }
 
