@@ -35,18 +35,52 @@
 #include "CvDLLFAStarIFaceBase.h"
 #include "CvDLLPythonIFaceBase.h"
 
+/*********************************/
+/***** Parallel Maps - Begin *****/
+/*********************************/
+#include "CvDLLInterfaceIFaceBase.h"
+#include <direct.h>	// for getcwd()
+#include <stdlib.h> // for MAX_PATH
+/*******************************/
+/***** Parallel Maps - End *****/
+/*******************************/
+
 // Public Functions...
 
-CvMap::CvMap()
+/************************************************************************************************/
+/* wunshare                         20/8/30                                                     */
+/*                                                                                              */
+/*                                                                                              */
+/************************************************************************************************/
+static CRITICAL_SECTION g_cPathDistanceSection;
+static bool				g_bStaticsInitialized = false;
+/************************************************************************************************/
+/* wunshare                         END                                                   */
+/************************************************************************************************/
+
+CvMap::CvMap(MapTypes eType) /* Parallel Maps */ : m_eType(eType)
 {
+	OutputDebugString("Calling constructor for Map: Start");
+
 	CvMapInitData defaultMapData;
+
+	if (!g_bStaticsInitialized)
+	{
+		InitializeCriticalSection(&g_cPathDistanceSection);
+		g_bStaticsInitialized = true;
+	}
 
 	m_paiNumBonus = NULL;
 	m_paiNumBonusOnLand = NULL;
 
 	m_pMapPlots = NULL;
 
+	m_bCitiesDisplayed = true;
+	m_bUnitsDisplayed = true;
+
 	reset(&defaultMapData);
+
+	OutputDebugString("Calling constructor for Map: End");
 }
 
 
@@ -63,6 +97,8 @@ CvMap::~CvMap()
 //	nothing.
 void CvMap::init(CvMapInitData* pInitInfo/*=NULL*/)
 {
+	OutputDebugString("Initializing Map: Start");
+
 	int iX, iY;
 
 	PROFILE("CvMap::init");
@@ -72,7 +108,7 @@ void CvMap::init(CvMapInitData* pInitInfo/*=NULL*/)
 		GC.getSeaLevelInfo(GC.getInitCore().getSeaLevel()).getDescription(),
 		GC.getInitCore().getNumCustomMapOptions()).c_str() );
 
-	gDLL->getPythonIFace()->callFunction(gDLL->getPythonIFace()->getMapScriptModule(), "beforeInit");
+	PYTHON_CALL_FUNCTION2(__FUNCTION__, gDLL->getPythonIFace()->getMapScriptModule(), "beforeInit");
 
 	//--------------------------------
 	// Init saved data
@@ -100,6 +136,8 @@ void CvMap::init(CvMapInitData* pInitInfo/*=NULL*/)
 	}
 	calculateAreas();
 	gDLL->logMemState("CvMap after init plots");
+
+	OutputDebugString("Initializing Map: End");
 }
 
 
@@ -111,6 +149,23 @@ void CvMap::uninit()
 	SAFE_DELETE_ARRAY(m_pMapPlots);
 
 	m_areas.uninit();
+
+/************************************************************************************************/
+/* wunshare                         20/8/30                                                     */
+/*                                                                                              */
+/*                                                                                              */
+/************************************************************************************************/
+	for (int iI = 0; iI < (int)m_viewports.size(); iI++)
+	{
+		delete m_viewports[iI];
+	}
+
+	m_viewports.clear();
+	m_iCurrentViewportIndex = -1;
+/************************************************************************************************/
+/* wunshare                         END                                                   */
+/************************************************************************************************/
+
 }
 
 // FUNCTION: reset()
@@ -141,6 +196,8 @@ void CvMap::reset(CvMapInitData* pInitInfo)
 		// check map script for grid size override
 		if (GC.getInitCore().getWorldSize() != NO_WORLDSIZE)
 		{
+			PYTHON_ACCESS_LOCK_SCOPE
+
 			std::vector<int> out;
 			CyArgsList argsList;
 			argsList.add(GC.getInitCore().getWorldSize());
@@ -219,6 +276,22 @@ void CvMap::reset(CvMapInitData* pInitInfo)
 	m_iPrimeMeridian = m_iGridWidth / 2;
 	m_iEquator = m_iGridHeight / 2;
 
+/*********************************/
+/***** Parallel Maps - Begin *****/
+/*********************************/
+	// Koshling - why do we ignore the map size in MapInfos if there is only 1??? Changed that for now
+	if (GC.multiMapsEnabled() && GC.getMapInfo().size() > 0)
+	{
+		if (GC.getMapInfo(getType()).getGridWidth() > 0 && )
+		{
+
+		}
+		if (GC.)
+	}
+/*******************************/
+/***** Parallel Maps - End *****/
+/*******************************/
+
 	if (pInitInfo)
 	{
 		if (0 <= pInitInfo->m_iPrimeMeridian && pInitInfo->m_iPrimeMeridian < m_iGridWidth)
@@ -247,6 +320,25 @@ void CvMap::reset(CvMapInitData* pInitInfo)
 	}
 
 	m_areas.removeAll();
+
+/************************************************************************************************/
+/* wunshare                         20/8/30                                                     */
+/*                                                                                              */
+/*                                                                                              */
+/************************************************************************************************/
+	// Create a viewport of the requisite external size without initial positioning (this can be repositioned
+	// at any time before it is graphically initialized, or after with a map switch)
+	setCurrentViewport(addViewport(-1, -1, false));
+
+	if (!GC.viewportEnabled())
+	{
+		// If no viewports are exposed there will only ever be one, and it's exactly aligned to the map
+		getCurrentViewport()->setMapOffset(0, 0);
+	}
+/************************************************************************************************/
+/* wunshare                         END                                                   */
+/************************************************************************************************/
+
 }
 
 
@@ -271,6 +363,8 @@ void CvMap::setup()
 //////////////////////////////////////
 void CvMap::setupGraphical()
 {
+	PROFILE_FUNC();
+
 	if (!GC.IsGraphicsInitialized())
 		return;
 
@@ -279,7 +373,10 @@ void CvMap::setupGraphical()
 		int iI;
 		for (iI = 0; iI < numPlotsINLINE(); iI++)
 		{
-			gDLL->callUpdater();	// allow windows msgs to update
+			if ((iI % 10) == 0)
+			{
+				gDLL->callUpdater();	// allow windows msgs to update
+			}
 			plotByIndexINLINE(iI)->setupGraphical();
 		}
 	}
@@ -336,7 +433,7 @@ void CvMap::setAllPlotTypes(PlotTypes ePlotType)
 
 
 // XXX generalize these funcs? (macro?)
-void CvMap::doTurn() // 被CvGame::doTurn()调用
+void CvMap::doTurn() // 琚獵vGame::doTurn()璋冪敤
 {
 	PROFILE("CvMap::doTurn()")
 
@@ -350,7 +447,7 @@ void CvMap::doTurn() // 被CvGame::doTurn()调用
 	{
 		pPlot = plotByIndexINLINE(iI);
 
-		pPlot->doTurn(); // 更新每个地块
+		pPlot->doTurn(); // 鏇存柊姣忎釜鍦板潡
 
 		if (iGameTurn % iInterval == 0)
 		{

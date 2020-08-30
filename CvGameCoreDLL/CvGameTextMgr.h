@@ -43,6 +43,8 @@ public:
 	DllExport void Reset();
 
 	DllExport int getCurrentLanguage();
+	// wunshare
+	bool isCurrentLanguageLatin1(); // Useful to check if language is latin1 (dbkblk, 2015-03)
 
 	DllExport void setTimeStr(CvWString& szString, int iGameTurn, bool bSave);
 	DllExport void setYearStr(CvWString& szString, int iGameTurn, bool bSave, CalendarTypes eCalendar, int iStartYear, GameSpeedTypes eSpeed);
@@ -74,6 +76,9 @@ public:
 	DllExport void parsePromotionHelp(CvWStringBuffer &szBuffer, PromotionTypes ePromotion, const wchar* pcNewline = NEWLINE);
 	DllExport void parseCivicInfo(CvWStringBuffer &szBuffer, CivicTypes eCivic, bool bCivilopediaText = false, bool bPlayerContext = false, bool bSkipName = false);
 	DllExport void parsePlayerTraits(CvWStringBuffer &szBuffer, PlayerTypes ePlayer);
+	/*** Dexy - Fixed Borders START ****/
+	DllExport void parsePlayerHasFixedBorders(CvWStringBuffer &szBuffer, PlayerTypes ePlayer);
+	/*** Dexy - Fixed BOrders  END  ****/
 	DllExport void parseLeaderHeadHelp(CvWStringBuffer &szBuffer, PlayerTypes eThisPlayer, PlayerTypes eOtherPlayer);
 	DllExport void parseLeaderLineHelp(CvWStringBuffer &szBuffer, PlayerTypes eThisPlayer, PlayerTypes eOtherPlayer);
 	DllExport void parseGreatPeopleHelp(CvWStringBuffer &szBuffer, CvCity& city);
@@ -166,6 +171,9 @@ public:
 	DllExport void buildObsoleteBonusString( CvWStringBuffer& szBuffer, int iItem, bool bList = false, bool bPlayerContext = false);
 	DllExport void buildObsoleteSpecialString( CvWStringBuffer& szBuffer, int iItem, bool bList = false, bool bPlayerContext = false );
 	DllExport void buildMoveString( CvWStringBuffer& szBuffer, TechTypes eTech, bool bList = false, bool bPlayerContext = false );
+	
+	
+	
 	DllExport void buildFreeUnitString( CvWStringBuffer& szBuffer, TechTypes eTech, bool bList = false, bool bPlayerContext = false );
 	DllExport void buildFeatureProductionString( CvWStringBuffer& szBuffer, TechTypes eTech, bool bList = false, bool bPlayerContext = false );
 	DllExport void buildWorkerRateString( CvWStringBuffer& szBuffer, TechTypes eTech, bool bList = false, bool bPlayerContext = false );
@@ -195,6 +203,8 @@ public:
 	DllExport void buildRiverTradeString( CvWStringBuffer& szBuffer, TechTypes eTech, bool bList = false, bool bPlayerContext = false );
 	DllExport void buildSpecialBuildingString( CvWStringBuffer& szBuffer, TechTypes eTech, int iBuildingType, bool bList = false, bool bPlayerContext = false );
 	DllExport void buildYieldChangeString( CvWStringBuffer& szBuffer, TechTypes eTech, int iTieldType, bool bList = false, bool bPlayerContext = false );
+	
+	
 	DllExport bool buildBonusRevealString( CvWStringBuffer& szBuffer, TechTypes eTech, int iBonusType, bool bFirst, bool bList = false, bool bPlayerContext = false );
 	DllExport bool buildCivicRevealString( CvWStringBuffer& szBuffer, TechTypes eTech, int iCivicType, bool bFirst, bool bList = false, bool bPlayerContext = false );
 	DllExport bool buildBonusTradeString(CvWStringBuffer& szBuffer, TechTypes eTech, int iBonusType, bool bFirst, bool bList = false, bool bPlayerContext = false );
@@ -204,7 +214,9 @@ public:
 	DllExport bool buildPromotionString( CvWStringBuffer& szBuffer, TechTypes eTech, int iPromotionType, bool bFirst, bool bList = false, bool bPlayerContext = false );
 	DllExport void buildHintsList(CvWStringBuffer& szBuffer);
 	DllExport void buildBuildingRequiresString(CvWStringBuffer& szBuffer, BuildingTypes eBuilding, bool bCivilopediaText, bool bTechChooserText, const CvCity* pCity);
-
+	//DPII < Maintenance Modifier >
+	void bulidMaintenanceModifiersString(CvWStringBuffer& szBuffer, TechTypes eTech, bool bList = false, bool bPlayerContext = false);
+	
 	// Leoreth
 	DllExport void buildStabilityParameterString(CvWStringBuffer& szBuffer, int iStabilityCategory);
 	DllExport void buildStabilityString(CvWStringBuffer& szBuffer, int iStabilityChange);
@@ -292,8 +304,15 @@ public:
 	DllExport void getPromotionDataForWB(std::vector<CvWBData>& mapPromotionData);
 	DllExport void getBonusDataForWB(std::vector<CvWBData>& mapBonusData);
 	DllExport void getImprovementDataForWB(std::vector<CvWBData>& mapImprovementData);
+	// wunshare
+	DllExport void getRouteDataForWB(std::vector<CvWBData>& mapRouteData);
+
 	DllExport void getReligionDataForWB(bool bHolyCity, std::vector<CvWBData>& mapReligionData);
 	DllExport void getCorporationDataForWB(bool bHeadquarters, std::vector<CvWBData>& mapCorporationData);
+
+	// AiIAndy: Game Object relation texts
+	void getGameObjectName(CvWString& szString, GameObjectTypes eObject);
+	void bulidGameObjectRelationString(CvWStringBuffer& szBuffer, GameObjectTypes eObject, RelationTypes eRelation, int iData);
 
 private:
 	void eventTechHelp(CvWStringBuffer& szBuffer, EventTypes eEvent, TechTypes eTech, PlayerTypes ePlayer, PlayerTypes eOtherPlayer);

@@ -321,6 +321,24 @@
     <ClCompile Include="CvPipeLine.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="CvGameObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CvProperties.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CvPropertyPropagator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CvMapExternal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CvMapInterfaceBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ByteBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AI_Defines.h">
@@ -624,6 +642,30 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="CvPipeLine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CvGameObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CvProperties.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CvXMLLoadUtilityModTools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CvPropertySolver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CvPropertyPropagator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CvMapInterfaceBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CvMapExternal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ByteBuffer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

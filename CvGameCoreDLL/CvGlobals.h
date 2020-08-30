@@ -128,22 +128,156 @@ class CvEspionageMissionInfo;
 class CvUnitArtStyleTypeInfo;
 class CvVoteSourceInfo;
 class CvMainMenuInfo;
+/************************************************************************************************/
+/* wunshare                         20/8/30                                                     */
+/*                                                                                              */
+/*                                                                                              */
+/************************************************************************************************/
+class CvCulturalAgeInfo;
+class CvPropertyInfo;
+class CvOutcomeInfo;
+class CvCivNameInfo;
+class CvUnitCombatInfo;
 
+/************************************************************************************************/
+/* MODULAR_LOADING_CONTROL                 10/24/07                                MRGENIE      */
+/*                                                                                              */
+/*                                                                                              */
+/************************************************************************************************/
+// Python Modular Loading
+class CvPythonModulesInfo;
+// MLF loading
+class CVModLoadControlInfo;
+/************************************************************************************************/
+/* MODULAR_LOADING_CONTROL                 END                                                  */
+/************************************************************************************************/
 
-class CvGlobals
+/*********************************/
+/***** Parallel Maps - Begin *****/
+/*********************************/
+class CvMapInfo;
+class CvMapSwitchInfo;
+/*******************************/
+/***** Parallel Maps - End *****/
+/*******************************/
+
+#include "CvInfoReplacements.h"
+
+// KOSHLING - granular control over callback enabling
+#ifndef GRANULAR_CALLBAC_CONTROL
+#define GRANULAR_CALLBAC_CONTROL
+
+typedef enum
 {
-//	friend class CvDLLUtilityIFace;
+	CALLBACK_TYPE_CAN_TRAIN = 1,
+	CALLBAKC_TYPE_CANNOT_TRAI = 2,
+	CALLBACK_TYPE_CAN_BUILD = 3
+} PythonCallbackTypes;
+
+class GranularCallbackController
+{
+public:
+	GranularCallbackController() { m_rawInputProcessed = false; }
+
+	// Unit list for a named (unit based) callback which must be enabled
+	// Logically OR'd into the current set
+	void RegisterUnitCallback(PythonCallbackTypes eCallbackType, const char* unitList);
+	// Unit list for a named (improvement based) callback which must be enabled
+	// Logically OR'd into the current set
+	void RegisterBuildCallback(PythonCallbackTypes eCallbackType, const char* buildList);
+
+	bool IsUnitCallbackEnabled(PythonCallbackTypes eCallbackType, UnitTypes eUnit) const;
+	bool IsBuildCallbackEnabled(PythonCallbackTypes eCallbackType, BuildTypes eBuild) const;
+private:
+	void ProcessRawInput(void) const;
+
+	std::map<PythonCallbackTypes, std::vector<CvString>> m_rawUnitCallbacks;	// Raw strings aggregated from each registration call
+	std::map<PythonCallbackTypes, std::vector<CvString>> m_rawBuildCallbacks;	// Raw strings aggregated from each registration call	
+	mutable std::map<PythonCallbackTypes, std::map<UnitTypes, bool>> m_unitCallbacks;	// Processed list indexed by unit types
+	mutable std::map<PythonCallbackTypes, std::map<BuildTypes, bool>> m_buildCallbacks;	// Processed list indexed by improvement types
+	mutable bool m_rawInputProcessed;
+};
+#endif
+
+extern CvDLLUtilityIFaceBase* g_DLL;
+
+class cvInternalGlobals
+{
 	friend class CvXMLLoadUtility;
 public:
 
 	// singleton accessor
+	inline static cvInternalGlobals& getInstance();
+
+	cvInternalGlobals();
+	virtual ~cvInternalGlobals();
+
+	void init();
+	void uninit();
+	void clearTypesMap();
+
+	CvDiplomacyScreen* getDiplomacyScreen();
+	CMPDiplomacyScreen* getMPDiplomacyScreen();
+
+	FMPIManager*&	getFMPMgrPtr();
+
+};
+
+
+extern cvInternalGlobals* gGlobals;	// for debugging
+
+class CvGlobals;
+
+#ifdef _DEBUG
+extern int inDLL;
+extern const char* fnName;
+
+class ProxyTracker
+{
+public:
+	ProxyTracker(const CvGlobals* proxy, const char* name);
+	~ProxyTracker();
+};
+
+#define  PROXY_TRACK(x)	ProxyTracker tracker(this, x);
+
+#else
+#define PROXY_TRACK(x)	;
+#endif
+/************************************************************************************************/
+/* wunshare                         END                                                   */
+/************************************************************************************************/
+
+// cvGloabls is a proxy class with the same virtual interfaces cvInternalGlobals
+// which just passes all requests onto the global internal instance. This allow it to
+// be statically constructed so the IT's GetInstance() (as called by the Civ core engine
+// to retrieve a pointer to the DLLs virtual function table) can have a value to return prior
+// to any allocations taking pace (which must be deferred until after SetDLLIFace() has been called
+// by the core engine to establish memory allocators)
+class CvGlobals
+{
+//	friend class CvDLLUtilityIFace;
+	friend class CvXMLLoadUtility;
+	friend class ProxyTracker;
+public:
+	void CheckProxy(const char* fnName) const;
+
+	// singleton accessor
 	DllExport inline static CvGlobals& getInstance();
 
-	DllExport CvGlobals();
-	DllExport virtual ~CvGlobals();
+	DllExport CvGlobals() {}
+	DllExport virtual ~CvGlobals() {}
 
-	DllExport void init();
-	DllExport void uninit();
+	DllExport void init()
+	{
+		PROXY_TRACK("init");
+		gGlobals->init();
+	}
+	DllExport void uninit()
+	{
+		PROXY_TRACK("uninit");
+		gGlobals->uninit();
+	}
 	DllExport void clearTypesMap();
 
 	DllExport CvDiplomacyScreen* getDiplomacyScreen();
@@ -1245,26 +1379,38 @@ protected:
 /************************************************************************************************/
 };
 
-extern CvGlobals gGlobals;	// for debugging
+
+/************************************************************************************************/
+/* wunshare                         20/8/30                                                     */
+/*                                                                                              */
+/*                                                                                              */
+/************************************************************************************************/
+extern CvGlobals gGlobalsProxy;	// for debugging
+
+extern volatile int giProfileDisableed;	// set to 1 or more in threaded areas as the profiler is not thread safe
 
 //
 // inlines
 //
-inline CvGlobals& CvGlobals::getInstance()
+inline cvInternalGlobals& cvInternalCvGloabls::getInstance()
 {
-	return gGlobals;
+	return *gGlobals;
 }
 
+inline CvGlobals& CvGlobals::getInstance()
+{
+	return gGlobalsProxy;
+}
 
 //
 // helpers
 //
-#define GC CvGlobals::getInstance()
-#ifndef _USRDLL
-#define gDLL GC.getDLLIFaceNonInl()
-#else
-#define gDLL GC.getDLLIFace()
-#endif
+#define GC cvInternalGlobals::getInstance()
+#define gDLL g_DLL
+
+/************************************************************************************************/
+/* wunshare                         END                                                   */
+/************************************************************************************************/
 
 #ifndef _USRDLL
 #define NUM_DIRECTION_TYPES (GC.getNumDirections())
@@ -1283,5 +1429,65 @@ inline CvGlobals& CvGlobals::getInstance()
 #define NUM_GRAPHICLEVELS (GC.getNumGraphicLevels())
 #define NUM_GLOBE_LAYER_TYPES (GC.getNumGlobeLayers())
 #endif
+
+/************************************************************************************************/
+/* wunshare                         20/8/30                                                     */
+/*                                                                                              */
+/*                                                                                              */
+/************************************************************************************************/
+
+#ifndef FIXED_MISSION_NUMBER
+#define NUM_MISSION_TYPES (GC.getNumMissionInfos())
+#endif
+
+/************************************************************************************************/
+/* ADVANCED COMBAT ODDS                      17/02/09                          PieceOfMind      */
+/*                                                                                              */
+/************************************************************************************************/
+
+#ifndef ADVANCED_COMBAT_ODDS_H
+#define ADVANCED_COMBAT_ODDS_H
+
+#define ACO_DETAIL_LOW			0
+#define ACO_DETAIL_MEDIUM		1
+#define ACO_DETAIL_HIGH			2
+#define ACO_DETAIL_EVERYTHING	3
+
+#endif
+
+#endif
+
+/**********************************************************************
+
+File:		BugMod.h
+Author:		EmperorFool
+Created:	2009-01-22
+
+Defines common constants and functions for use throughout the BUG Mod.
+
+		Copyright (c) 2009 The BUG Mod. All rights reserved.
+
+**********************************************************************/
+
+#pragma once
+
+#ifndef BUG_MOD_H
+#define BUG_MOD_H
+
+// name of the Python module where all the BUG functions that the DLL calls must live
+// MUST BE A BUILT-IN MODULE IN THE	ENTRYPOINTS FOLDERS
+// currently CvAppInterface
+#define PYBugModule			PYCivModule
+
+// Increment this by 1 each time you commit new/changed functions/constants in the Python API;
+#define BUG_DLL_API_VERSION	6
+
+// Used to signal the BULL saved game format is used
+#define BUG_DLL_SAVE_FORMAT 64
+
+// This are display-only values, and the version should be changed for each release.
+#define BUG_DLL_NAME		L"BULL"
+#define BUG_DLL_VERSION		L"1.3"
+#define BUG_DLL_BUILD		L"219"
 
 #endif

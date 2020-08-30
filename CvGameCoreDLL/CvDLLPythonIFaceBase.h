@@ -45,6 +45,43 @@ public:
 	virtual bool pythonUsingDefaultImpl() = 0;
 };
 
+/************************************************************************************************/
+/* wunshare                         20/8/30                                                     */
+/*                                                                                              */
+/*                                                                                              */
+/************************************************************************************************/
+void IFPLockPythonAccess(void);
+void IFPUnlockPythonAccess(void);
+bool IFPPythonCall(const char* callerFn, const char* moduleName, const char* fxnName, void* fxnArg = NULL);
+bool IFPPythonCall(const char* callerFn, const char* moduleName, const char* fxnName, void* fxnArg, long* result);
+bool IFPPythonCall(const char* callerFn, const char* moduleName, const char* fxnName, void* fxnArg, CvString* result);
+bool IFPPythonCall(const char* callerFn, const char* moduleName, const char* fxnName, void* fxnArg, CvWString* result);
+bool IFPPythonCall(const char* callerFn, const char* moduleName, const char* fxnName, void* fxnArg, std::vector<byte> *pList);
+bool IFPPythonCall(const char* callerFn, const char* moduleName, const char* fxnName, void* fxnArg, std::vector<int> *pIntList);
+bool IFPPythonCall(const char* callerFn, const char* moduleName, const char* fxnName, void* fxnArg, int* pIntList, int* iListSize);
+bool IFPPythonCall(const char* callerFn, const char* moduleName, const char* fxnName, void* fxnArg, std::vector<float> *pFloatList);
+
+class CPythonAccessLock
+{
+public:
+	CPythonAccessLock()
+	{
+		IFPLockPythonAccess();
+	}
+	~CPythonAccessLock()
+	{
+		IFPUnlockPythonAccess();
+	}
+};
+
+#define PYTHON_CALL_FUNCTION2(fn,x,y)		IFPPythonCall(fn,x,y)
+#define PTTHON_CALL_FUNCTION(fn,x,y,z)		IFPPythonCall(fn,x,y,z)
+#define PYTHON_CALL_FUNCTION4(fn,w,x,y,z)	IFPPythonCall(fn,w,x,y,z)
+#define PYTHON_ACCESS_LOCK_SCOPE	CPythonAccessLock __pythonLock;
+/************************************************************************************************/
+/* wunshare                         END                                                   */
+/************************************************************************************************/
+
 template <typename T>
 PyObject* CvDLLPythonIFaceBase::makePythonObject(T* pObj)
 {

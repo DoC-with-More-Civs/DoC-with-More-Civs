@@ -17673,6 +17673,19 @@ void CvGameTextMgr::parsePlayerTraits(CvWStringBuffer &szBuffer, PlayerTypes ePl
 	}
 }
 
+/************************************************************************************************/
+/* wunshare                         20/8/30                                                     */
+/*                                                                                              */
+/*                                                                                              */
+/************************************************************************************************/
+DllExport void CvGameTextMgr::parsePlayerHasFixedBorders(CvWStringBuffer & szBuffer, PlayerTypes ePlayer)
+{
+	bool bHasFixedBorders = GET_PLAYER(ePlayer).hasFixedBorders();
+	szBuffer.append(gDLL->getText(bHasFixedBorders ? "TXT_KEY_PLAYER_HAS_FIXED_BORDERS" : "TXT_KEY_PLAYER_HAS_NOT_FIXED_BORDERS"));
+}
+/************************************************************************************************/
+/* wunshare                         END                                                   */
+/************************************************************************************************/
 void CvGameTextMgr::parseLeaderHeadHelp(CvWStringBuffer &szBuffer, PlayerTypes eThisPlayer, PlayerTypes eOtherPlayer)
 {
 	if (NO_PLAYER == eThisPlayer)

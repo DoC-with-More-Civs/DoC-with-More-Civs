@@ -269,7 +269,7 @@ private:
 	bool									m_inUse;
 };
 
-#define WRAPPER_WRITE(warapper,className,name)	{ staic int _idHint; static int _saveSeq = -1;\
+#define WRAPPER_WRITE(warapper,className,name)	{ static int _idHint; static int _saveSeq = -1;\
 	(wrapper).Write(className "::" #name, _idHint, _saveSeq, name); }
 #define WRAPPER_WRITE_DECORATED(wrapper,className,name,saveName)	{ static int _idHint; static int _saveSeq = -1;\
 	(wrapper).Write(className "::" saveName, _idHint, _saveSeq, name); }
@@ -344,7 +344,7 @@ private:
 	(wrapper).ReadStartObject(__FUNCTION__, _idHint, _saveSeq); }
 #define WRAPPER_READ_OBJECT_END(wrapper)	(wrapper).ReadEndObject()
 
-// Extra mocros used only in order to support older saves wheer things that used to be simple values are not enums
+// Extra macros used only in order to support older saves wheer things that used to be simple values are not enums
 #define WRAPPER_READ_OPTIONAL_CLASS_ARRAY(wrapper,className,classType,count,name)	{ static int _idHint; static int _saveSeq = -1;\
 	(wrapper).ReadClassArrau(className "::" #name, _idHint, _saveSeq, classType, count, name); }
 #endif

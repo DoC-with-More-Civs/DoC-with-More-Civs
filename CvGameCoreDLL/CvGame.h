@@ -8,13 +8,67 @@
 //#include "CvStructs.h"
 #include "CvDeal.h"
 #include "CvRandom.h"
+/*********************************/
+/*******  Wunshare - Start  ******/
+/*********************************/
+#include "CvGameObject.h"
+#include "CvPropertySolver.h
+#include "CvDate.h"
+#include "CvAllocator.h"
+#include "ByteBuffer.h"
+#include "CvMessageData.h"
+/*********************************/
+/*******  Wunshare - End   *******/
+/*********************************/
 
 class CvPlot;
 class CvCity;
 class CvReplayMessage;
 class CvReplayInfo;
 
+// Max Number of barbarian units in existence for a spawn of a new one to be allowed
+// This allows a 'space' for 'real' barbarians to be built before we use up the entire
+// simultaneous unit space of 8191 for any one player
+#define MAX_BARB_UNITS_FOR_SPAWNING 7000
+
 typedef std::vector<const CvReplayMessage*> ReplayMessageList;
+
+typedef enum
+{
+	CITY_EVENT_HURRY,
+	PLOT_EVENT_REVEALED,
+	TEAM_EVENT_TECHACQUIRED,
+	CITY_EVENT_CORP_SPREAD,
+	CITY_EVENT_CORP_REMOVE,
+	PLAYER_EVENT_RELIGION_SPREAD,
+	PLAYER_EVENT_RELIGION_REMOVE,
+	PLAYER_EVENT_RELIGION_FOUNDED,
+} PythonEventTypes;
+
+typedef struct 
+{
+	PythonEventTypes	type;
+	PlayerTypes			ePlayer;
+	int					iData1;
+	int					iData2;
+} PythonEventData;
+
+typedef struct 
+{
+	UIActivityTypes	eType;
+	PlayerTypes		ePlayer;
+	int				iData1;
+	int				iData2;
+	CvWString		szwStrData;
+};
+
+typedef struct
+{
+	int			iDelayTurns;
+	int			iLenTurns;
+	CvWString	szStartTxtKey;
+	CvWString	szEndTxtKey;
+} DarkAgeData;
 
 class CvGame
 {
@@ -30,7 +84,11 @@ public:
 	DllExport void init(HandicapTypes eHandicap);
 	DllExport void reset(HandicapTypes eHandicap, bool bConstructorCall = false);
 
+	CvGameObjectGame* getGameObject() { return &m_GameObject; }
+
 protected:
+
+	CvGameObjectGame m_GameObject;
 
 	void uninit();
 
@@ -41,6 +99,7 @@ public:
 // BUG - MapFinder - start
 	DllExport bool canRegenerateMap() const;								// Exposed to Python
 	DllExport void regenerateMap();											// Exposed to Python
+	DllExport void takeJPEGScreenShot(std::string fileName) const;			// Exposed to Python
 // BUG - MapFinder - end
 
 // BUFFY - Security Checks - start
@@ -73,6 +132,24 @@ public:
 
 	DllExport void testExtendedGame();
 
+/*********************************/
+/***** Parallel Maps - Begin *****/
+/*********************************/
+	MapTypes getCurrentMap() const;
+	void setCurrentMap(mapTypes eNewMap);
+
+	void updateSelectionListInternal(bool bSetCamera, bool bAllowViewPortSwitch, bool bForceAcceptCurrent = false);
+	void cycleSelectionGroupsInternal(bool bClear, bool bForward, bool bWorkers, bool bSetCamera, bool bAllowViewPortSwitch) const;
+
+	void processGreatWall(bool bIn, bool bForce = false, bool bSeeded = true) const;
+	void noteGraphicRebuildNeeded();
+/*********************************/
+/***** Parallel Maps - End *****/
+/*********************************/
+
+	void setOptionEdits();
+	void resetOptionEdits();
+
 	DllExport CvUnit* getPlotUnit(const CvPlot* pPlot, int iIndex) const;
 	DllExport void getPlotUnits(const CvPlot *pPlot, std::vector<CvUnit*>& plotUnits) const;
 
@@ -83,6 +160,7 @@ public:
 
 	DllExport void selectionListMove(CvPlot* pPlot, bool bAlt, bool bShift, bool bCtrl) const;												// Exposed to Python
 	DllExport void selectionListGameNetMessage(int eMessage, int iData2 = -1, int iData3 = -1, int iData4 = -1, int iFlags = 0, bool bAlt = false, bool bShift = false) const;	// Exposed to Python
+	void selectionListGameNetMessageInternal(int eMessage, int iData2, int iData3, int iData4, int iFlags, bool bAlt, bool bShift, bool bInViewportCoordinates) const;
 	DllExport void selectedCitiesGameNetMessage(int eMessage, int iData2 = -1, int iData3 = -1, int iData4 = -1, bool bOption = false, bool bAlt = false, bool bShift = false, bool bCtrl = false) const;	// Exposed to Python
 	DllExport void cityPushOrder(CvCity* pCity, OrderTypes eOrder, int iData, bool bAlt = false, bool bShift = false, bool bCtrl = false) const;	// Exposed to Python
 
@@ -165,7 +243,8 @@ public:
 	DllExport void setGameTurn(int iNewValue);															// Exposed to Python
 	void incrementGameTurn();
 	int getTurnYear(int iGameTurn);																// Exposed to Python
-	int getGameTurnYear();																				// Exposed to Python
+	int getGameTurnYear();																		// Exposed to Python
+	CvDate getCurrentData();
 
 	int getElapsedGameTurns() const;																		// Exposed to Python
 	void incrementElapsedGameTurns();
@@ -529,6 +608,9 @@ public:
 
 	bool pythonIsBonusIgnoreLatitudes() const;
 
+	// wunshare
+	inline bool isRecalculatingModifiers() { return m_bRecalculatingModifiers; }
+
 	DllExport void getGlobeLayers(std::vector<CvGlobeLayerData>& aLayers) const;
 	DllExport void startFlyoutMenu(const CvPlot* pPlot, std::vector<CvFlyoutMenuData>& aFlyoutItems) const;
 	DllExport void applyFlyoutMenu(const CvFlyoutMenuData& kItem);
@@ -571,6 +653,11 @@ public:
 
 	DllExport void handleDiplomacySetAIComment(DiploCommentTypes eComment) const;
 
+	// wunshare
+	void recalculateModifiers(void);
+	// wunshare
+	inline CvAllocator& getAllocator(void) { return m_allocator; }
+
 	// Leoreth
 	bool isNeighbors(PlayerTypes ePlayer1, PlayerTypes ePlayer2) const;
 	TeamTypes determineWinner(TeamTypes eTeam1, TeamTypes eTeam2) const;
@@ -590,10 +677,24 @@ public:
 	void changeYResolution(int iChange);
 
 protected:
+	// wunshare
+	CvAllocator m_allocator;
+
+/*********************************/
+/***** Parallel Maps - Begin *****/
+/*********************************/
+	MapTypes m_eCurrentMap;
+/*******************************/
+/***** Parallel Maps - End *****/
+/*******************************/
 	int m_iElapsedGameTurns;
 	int m_iStartTurn;
 	int m_iStartYear;
 	int m_iEstimateEndTurn;
+	// wunshare
+	CvDate m_iDateTurn;
+	int m_iDateTurn;
+
 	int m_iTurnSlice;
 	int m_iCutoffSlice;
 	int m_iNumGameTurnActive;
@@ -611,6 +712,7 @@ protected:
 	int m_iInitLand;
 	int m_iInitTech;
 	int m_iInitWonders;
+
 	int m_iAIAutoPlay;
 	int m_iCircumnavigated; //Rhye
 
@@ -625,10 +727,13 @@ protected:
 	bool m_bHotPbemBetweenTurns;
 	bool m_bPlayerOptionsSent;
 	bool m_bNukesValid;
+	// wunshare
+	TeamTypes m_circumnavigatingTeam;
 
 	HandicapTypes m_eHandicap;
 	PlayerTypes m_ePausePlayer;
-	UnitTypes m_eBestLandUnit;
+	// wunshar modified
+	mutable UnitTypes m_eBestLandUnit;
 	TeamTypes m_eWinner;
 	VictoryTypes m_eVictory;
 	GameStateTypes m_eGameState;
@@ -637,12 +742,15 @@ protected:
 
 	CvString m_szScriptData;
 
+	// wunshare
+	DarkAgeData* m_pDarkAgeState;
+
 	int* m_aiRankPlayer;        // Ordered by rank...
 	int* m_aiPlayerRank;        // Ordered by player ID...
 	int* m_aiPlayerScore;       // Ordered by player ID...
-	int* m_aiRankTeam;						// Ordered by rank...
-	int* m_aiTeamRank;						// Ordered by team ID...
-	int* m_aiTeamScore;						// Ordered by team ID...
+	int* m_aiRankTeam;			// Ordered by rank...
+	int* m_aiTeamRank;			// Ordered by team ID...
+	int* m_aiTeamScore;			// Ordered by team ID...
 
 	// Leoreth
 	int* m_aiTechRankTeam;
@@ -703,8 +811,16 @@ protected:
 	int		m_iNumCultureVictoryCities;
 	int		m_eCultureVictoryCultureLevel;
 
+	// wunshare
+	bool	m_plotGropuHashesInitialized;
+	bool	m_bRecalculatingModifiers;
+
 	void doTurn();
 	void doDeals();
+
+	// wunshare
+	void doSpawns();
+
 	void doGlobalWarming();
 	void doHolyCity();
 	void doHeadquarters();
@@ -744,6 +860,31 @@ protected:
 	CvPlot* normalizeFindLakePlot(PlayerTypes ePlayer);
 
 	void doUpdateCacheOnTurn();
+/*********************************/
+/*******  Wunshare - Start  ******/
+/*********************************/
+	// AIAndy: Properties 
+	CvProperties m_Properties;
+	CvMainPropertySolver m_PropertySolver;
+
+	// To aid multi-threaded building processing we run it in a mode
+	// whereby vote source changes are accumulated so that the aggregate can be applied
+	// in a non-multi-threaded section
+	bool m_bDeferVoteSourceProcessing;
+	volatile int* m_paiDeferredVoteSources;
+
+	CRITICAL_SECTION				m_reportableEventSection;
+	std::vector<PythonEventData>	m_reportableEvents;
+
+public:
+	CvProperties* getProperties();
+	const CvProperties* getPropertiesConst() const;
+	void reportEvent(PythonEventTypes type, PlayerTypes ePlayer, int iData1, int iData2);
+	void reportQueueEvents();
+
+	std::vector<UIActivityInfo> m_queuedUIActivity;
+	void queueUIActivity(UIActivityInfo& info);
+	void doQueueUIActivity(void);
 };
 
 #endif

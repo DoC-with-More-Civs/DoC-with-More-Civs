@@ -67,8 +67,14 @@ nmake /NOLOGO /K Release
   <ItemDefinitionGroup>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ByteBuffer.cpp" />
     <ClCompile Include="CvAllocator.cpp" />
+    <ClCompile Include="CvGameObject.cpp" />
+    <ClCompile Include="CvMapExternal.cpp" />
+    <ClCompile Include="CvMapInterfaceBase.cpp" />
     <ClCompile Include="CvPipeLine.cpp" />
+    <ClCompile Include="CvProperties.cpp" />
+    <ClCompile Include="CvPropertyPropagator.cpp" />
     <ClCompile Include="MTCore.cpp" />
     <ClCompile Include="_precompile.cpp" />
     <ClCompile Include="CvArea.cpp" />
@@ -172,6 +178,7 @@ nmake /NOLOGO /K Release
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AI_Defines.h" />
+    <ClInclude Include="ByteBuffer.h" />
     <ClInclude Include="CheckSum.h" />
     <ClInclude Include="CvAllocator.h" />
     <ClInclude Include="CvArea.h" />
@@ -208,6 +215,7 @@ nmake /NOLOGO /K Release
     <ClInclude Include="CvGameCoreDLLDefNew.h" />
     <ClInclude Include="CvGameCoreDLLUndefNew.h" />
     <ClInclude Include="CvGameCoreUtils.h" />
+    <ClInclude Include="CvGameObject.h" />
     <ClInclude Include="CvGameTextMgr.h" />
     <ClInclude Include="CvGlobals.h" />
     <ClInclude Include="CvHallOfFameInfo.h" />
@@ -215,7 +223,9 @@ nmake /NOLOGO /K Release
     <ClInclude Include="CvInfoWater.h" />
     <ClInclude Include="CvInitCore.h" />
     <ClInclude Include="CvMap.h" />
+    <ClInclude Include="CvMapExternal.h" />
     <ClInclude Include="CvMapGenerator.h" />
+    <ClInclude Include="CvMapInterfaceBase.h" />
     <ClInclude Include="CvMessageControl.h" />
     <ClInclude Include="CvMessageData.h" />
     <ClInclude Include="CvPipeLine.h" />
@@ -225,6 +235,9 @@ nmake /NOLOGO /K Release
     <ClInclude Include="CvPlotGroup.h" />
     <ClInclude Include="CvPopupInfo.h" />
     <ClInclude Include="CvPopupReturn.h" />
+    <ClInclude Include="CvProperties.h" />
+    <ClInclude Include="CvPropertyPropagator.h" />
+    <ClInclude Include="CvPropertySolver.h" />
     <ClInclude Include="CvRandom.h" />
     <ClInclude Include="CvReplayInfo.h" />
     <ClInclude Include="CvReplayMessage.h" />
@@ -240,6 +253,7 @@ nmake /NOLOGO /K Release
     <ClInclude Include="CvUnit.h" />
     <ClInclude Include="CvUnitAI.h" />
     <ClInclude Include="CvXMLLoadUtility.h" />
+    <ClInclude Include="CvXMLLoadUtilityModTools.h" />
     <ClInclude Include="CyArea.h" />
     <ClInclude Include="CyArgsList.h" />
     <ClInclude Include="CyArtFileMgr.h" />

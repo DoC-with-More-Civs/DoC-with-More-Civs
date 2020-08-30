@@ -120,4 +120,9 @@
 #define DANGER_RANGE			(4)
 // Sanguo Mod Performance, end
 
+
+
+// AiAndy: Number of worker threads to use
+#define NUM_THREADS				(4)
+
 #endif	// CVDEFINES_H

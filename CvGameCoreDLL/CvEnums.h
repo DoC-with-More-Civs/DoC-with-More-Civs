@@ -3529,4 +3529,144 @@ enum RegionSpreadTypes
 	NUM_REGION_SPREAD_TYPES,
 };
 
+
+/*********************************/
+/*******  Wunshare - Start  ******/
+/*********************************/
+// AIAndy: Game object types
+enum GameObjectTypes
+{
+	NO_GAMEOBJECT = -1,
+	GAMEOBJECT_GAME,
+	GAMEOBJECT_TEAM,
+	GAMEOBJECT_PLAYER,
+	GAMEOBJECT_CITY,
+	GAMEOBJECT_UNIT,
+	GAMEOBJECT_PLOT,
+
+	NUM_GAMEOBJECTS
+};
+
+// AIAndy: Game object modifier types
+enum GOMTypes
+{
+	NO_GOM = -1,
+	GOM_BUILDINGS,
+	GOM_PROMOTION,
+	GOM_TRAIT,
+	GOM_FEATURE,
+	GOM_OPTION,
+	GOM_TERRAIN,
+	GOM_GAMESPEED,
+	GOM_ROUTE,
+	GOM_BONUS,
+	GOM_UNITTYPE,
+	GOM_TECH,
+	GOM_CIVIC,
+	GOM_RELIGION,
+	GOM_CORPORATION,
+	GOM_IMPROVEMENT,
+	GOM_UNITCOMBAT,
+	GOM_HANDICAP,
+
+	NUM_GOMS
+};
+
+// AIAndy: Game object relation types
+enum RelationTypes
+{
+	NO_RELATION = -1,
+	RELATION_ASSOCIATED, // owner, owned , .. depending on type
+	RELATION_TRADE,
+	RELATION_NEAR,
+	RELAITON_SAME_PLOT,
+	RELATION_WORKING,
+
+	NUM_RELATIONS
+};
+
+// AIAndy: Built-in game object properties
+enum AttributeTypes
+{
+	NO_ATRRIBUTE = -1,
+	ATTRIBUTE_POPULATION,
+	ATTRIBUTE_HEALTH,
+	ATTRIBUTE_HAPPINESS,
+
+	NUM_ATTRIBUTES
+};
+
+// AIAndy: Built-in game boolean object properties
+enum TagTypes
+{
+	NO_TAG = -1,
+	TAG_ONLY_DEFENSIVE,
+	TAG_SPY,
+	TAG_FIRST_STRIKE_IMMUNE,
+	TAG_PIRATE,
+	TAG_NO_DEFENSIVE_BONUS,
+	TAG_CAN_MOVE_IMPASSABLE,
+	TAG_HIDDEN_NATIONALITY,
+	TAG_BLITZ,
+	TAG_ALWAYS_HEAL,
+	TAG_ENEMY_ROUTE,
+	TAG_WATER,
+	TAG_FRESH_WATER,
+	TAG_PEAK,
+	TAG_HILL,
+	TAG_FLATLAND,
+	TAG_OWNED,
+	TAG_CITY,
+	TAG_ANARCHY,
+
+	NUM_TAGS
+};
+
+// AIAndy: Types of property sources
+enum PropertySourceTypes
+{
+	NO_PROPERTYSOURCE = -1,
+	PROPERTYSOURCE_CONSTANT,
+	PROPERTYSOURCE_CONSTANT_LIMITED,
+	PROPERTYSOURCE_DECAY,
+	PROPERTYSOURCE_ATTRIBUTE_CONSTANT,
+
+	NUM_PROPERTYSOURCES
+};
+
+// AIAndy: Types of property interactions
+enum PropertyInteractionTypes
+{
+	NO_PROPERTYINTERACTION = -1,
+	PROPERTYINTERACTION_CONVERT_CONSTANT,
+	PROPERTYINTERACTION_INHIBITED_GROWTH,
+	PROPERTYINTERACTION_CONVERT_PERCENT,
+
+	NUM_PROPERTYINTERACTIONS
+};
+
+// AIAndy: Types of property propagators
+enum PropertyPropagatorTypes
+{
+	NO_PROPERTYPROPAGATOR = -1,
+	PROPERTYPROPAGATOR_SPREAD,
+	PROPERTYPROPAGATOR_GATHER,
+	PROPERTYPROPAGATOR_DIFFUSE,
+
+	NUM_PROPERTYPROPAGATORS
+};
+
+// UI actions deferred to the foreground thread
+enum UIActivityTypes
+{
+	UIACTIVITY_PLACE_GREAT_WALL,
+	UIACTIVITY_CHANGE_CIVIC_POPUP,
+	UIACTIVITY_CHOOSE_TECH_POPUP,
+
+	NUM_UIaCTIVITY
+};
+/*********************************/
+/*******  Wunshare - End   *******/
+/*********************************/
+
 #endif	// CVENUMS_h
