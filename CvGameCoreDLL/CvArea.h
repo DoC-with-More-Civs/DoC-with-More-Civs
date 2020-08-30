@@ -10,15 +10,39 @@
 class CvCity;
 class CvPlot;
 
+/************************************************************************************************/
+/* wunshare                         20/8/30                                                     */
+/*                                                                                              */
+/*                                                                                              */
+/************************************************************************************************/
+class ByteBuffer;
+
+// Koshling - record of a single combat result
+
+typedef struct CombatResultRecord
+{
+	PlayerTypes	eLoser;
+	UnitTypes	eDefeatedUnitType;
+	UnitTypes	eVictoriousEnemyUnitType;
+} CombatResultRecord;
+
+typedef std::vector<CombatResultRecord> TurnCombatResult;
+
+// Rolling record of this number of turns combat are kept for AI analysis
+#define  COMBAT_RECORD_LENGTH	20
+/************************************************************************************************/
+/* wunshare                         END                                                   */
+/************************************************************************************************/
+
 class CvArea
 {
 
 public:
 
-  CvArea();
-  virtual ~CvArea();
+	CvArea();
+	virtual ~CvArea();
 
-  void init(int iID, bool bWater);
+	void init(int iID, bool bWater);
 	void uninit();
 	void reset(int iID = 0, bool bWater = false, bool bConstructorCall = false);
 
@@ -82,12 +106,37 @@ public:
 	int getPower(PlayerTypes eIndex) const;																		// Exposed to Python
 	void changePower(PlayerTypes eIndex, int iChange);
 
+	// wunshare
+	bool hasBestFoundValue(PlayerTypes eIndex) const;
+
 	int getBestFoundValue(PlayerTypes eIndex) const;													// Exposed to Python
 	void setBestFoundValue(PlayerTypes eIndex, int iNewValue);
+
+	//PDII < Maintenance Modifiers >
+	int getMaintenanceModifier(PlayerTypes eIndex) const;
+	void changeMaintenanceModifier(PlayerTypes eIndex, int iChange);
+
+	int getHomeAreaMaintenanceModifier(PlayerTypes eIndex) const;
+	void changeHomeAreaMaintenanceModifier(PlayerTypes eIndex, int iChange);
+	void setHomeAreaMaintenanceModifier(PlayerTypes eIndex, int iNewValue);
+
+	int getOtherAreaMaintenanceModifier(PlayerTypes eIndex) const;
+	void changeOtherAreaMaintenanceModifier(PlayerTypes eIndex, int iChange);
+	void setOtherAreamaintenanceModifier(PlayerTypes eIndex, int iNewValue);
+
+	int getTotalAreaMaintenanceModifier(PlayerTypes ePlayer) const;
+
+	bool isHomeArea(PlayerTypes eIndex) const;
+	void setHomeArea(PlayerTypes eIndex, CvArea* pOldHomeArea);
+	//PDII < Maintenance Modifiers >
 
 	int getNumRevealedTiles(TeamTypes eIndex) const;													// Exposed to Python
 	int getNumUnrevealedTiles(TeamTypes eIndex) const;												// Exposed to Python
 	void changeNumRevealedTiles(TeamTypes eIndex, int iChange);
+
+	// wunshare
+	int getNumRevealedFeatureTiles(TeamTypes eIndex, FeatureTypes eFeature) const;
+	int getNumRevealedTerrainTiles(TeamTypes eIndex, TerrainTypes eTerrain) const;
 
 	int getCleanPowerCount(TeamTypes eIndex) const;
 	bool isCleanPower(TeamTypes eIndex) const;																// Exposed to Python
@@ -121,6 +170,8 @@ public:
 
 	int getClosestAreaSize(int iSize) const;
 
+	// wunshare
+	void clearModifierTotals(void);
 protected:
 
 	int m_iID;
@@ -144,6 +195,12 @@ protected:
 	int* m_aiFreeSpecialist;
 	int* m_aiPower;
 	int* m_aiBestFoundValue;
+	//DPII < MainTenance Modifiers >
+	int* m_aiMaintenanceModifier;
+	int* m_aiHomeAreaMaintenanceModifier;
+	int* m_aiOtherAreaMaintenanceModifier;
+	int* m_abHomeArea;
+	//DPII < MainTenance Modifiers >
 	int* m_aiNumRevealedTiles;
 	int* m_aiCleanPowerCount;
 	int* m_aiBorderObstacleCount;
@@ -159,12 +216,33 @@ protected:
 	int* m_paiNumBonuses;
 	int* m_paiNumImprovements;
 
+	// wunshare
+	mutable CRITICAL_SECTION m_cPlotTypeCacheSection;
+	mutable TeamTypes	m_eCachedTeamPlotTypeCounts;
+	mutable int			m_iCachedTurnPlotTypeCounts;
+	mutable std::map<FeatureTypes, int>	m_plotFeatureCountCache;
+	mutable std::map<TerrainTypes, int> m_plotTerrainCountCache;
+
 public:
 
 	// for serialization
 	virtual void read(FDataStreamBase* pStream);
 	virtual void write(FDataStreamBase* pStream);
 
+	// Afforess - MP Resync
+	void resync(bool bWrite, ByteBuffer* pBuffer);
+
+	// Koshling - record rolling history of the last N turn of our combat losses and what we lost to
+	void recordCombatDeath(PlayerTypes ePlayer, UnitTypes lostUnitType, UnitTypes lostToUnitTypes);
+	// Return the number of units of the specified type recently lost per 100 turns (normalized figure)
+	// If eUnit is NO_UNIT all types will be tallied
+	int getRecentCombatDeathRate(PlayerTypes ePlayer, UnitTypes eUnit) const;
+	// Return the number of units of the specified AI type recently lost per 100 turns (normalized figure)
+	// If eUnit is NO_UNITAI all types will be tallied
+	int getRecentCombatDeathRate(PlayerTypes ePlayer, UnitAITypes eUnitAIType) const;
+private:
+	int					m_iLastGameTurnRecorded;
+	TurnCombatResult	m_combatRecord[COMBAT_RECORD_LENGTH];
 };
 
 #endif
