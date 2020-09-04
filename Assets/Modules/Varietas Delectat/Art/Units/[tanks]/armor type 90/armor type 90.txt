@@ -1,9 +1,0 @@
-Armor Type 90
-Modelled by me.
-This tank is very similar to Leopard 2A4, and the differerences are almost invisible.
-Anyway we didn't have a Leopard 2A4 before, only a Leopard 2A6...:-)...
-Meshes uploaded on Snafusmith Leopard 1a3, and uses its animations (included)
-The traks are from type 97 Chi-Ha (reshaped). 
-Texture: blueprint found in internet and coloured from a photo example (there'se also a part of the type 97 (author Unknown))
-Feel free to use it as You want.
-KrugerPritz

@@ -511,7 +511,7 @@
 					<bLeaderAvailability>1</bLeaderAvailability>
 				</Leader>
 			</Leaders>
-			<DerivativeCiv>CIVILIZATION_BABYLON</DerivativeCiv>
+			<DerivativeCiv>CIVILIZATION_BABYLONIA</DerivativeCiv>
 			<CivilizationSelectionSound>AS3D_BABYLON_SELECT</CivilizationSelectionSound>
 			<CivilizationActionSound>AS3D_BABYLON_ORDER</CivilizationActionSound>
 		</CivilizationInfo>

@@ -116,11 +116,11 @@ def triggerCollapse(iPlayer):
 
 def scheduleCollapse(iPlayer):
 	data.players[iPlayer].iTurnsToCollapse = 1
-	
-	epoch = "BC"
-	if gc.getGame().getGameTurnYear() > 0: epoch = "AD"
-	filePath = BugPath.join(BugPath.getRootDir(), 'Saves', 'single', 'collapses', '%s Collapse %d %s (turn %d) %s.CivBeyondSwordSave' % (gc.getPlayer(iPlayer).getCivilizationAdjective(0), abs(gc.getGame().getGameTurnYear()), epoch, gc.getGame().getGameTurn(), date.today()))
-	gc.getGame().saveGame(filePath.encode('ascii', 'xmlcharrefreplace'))
+	# wunshare: not allow to savegame when collapse
+	#epoch = "BC"
+	#if gc.getGame().getGameTurnYear() > 0: epoch = "AD"
+	#filePath = BugPath.join(BugPath.getRootDir(), 'Saves', 'single', 'collapses', '%s Collapse %d %s (turn %d) %s.CivBeyondSwordSave' % (gc.getPlayer(iPlayer).getCivilizationAdjective(0), abs(gc.getGame().getGameTurnYear()), epoch, gc.getGame().getGameTurn(), date.today()))
+	#gc.getGame().saveGame(filePath.encode('ascii', 'xmlcharrefreplace'))
 
 def onCityAcquired(city, iOwner, iPlayer):
 	checkStability(iOwner)

@@ -1,8 +1,0 @@
-Armor K1
-.
-2nd texture for this Korean Modern Armor
-Meshes uploaded on Snafusmith Leopard 1, and uses its animations (included)
-The traks are from type 97 Chi-Ha (reshaped). 
-Texture: blueprint found in internet and re-coloured 
-Feel free to use it as You want.
-KrugerPritz
