@@ -75,6 +75,8 @@ nmake /NOLOGO /K Release
     <ClCompile Include="CvPipeLine.cpp" />
     <ClCompile Include="CvProperties.cpp" />
     <ClCompile Include="CvPropertyPropagator.cpp" />
+    <ClCompile Include="CvPropertySolver.cpp" />
+    <ClCompile Include="CvPropertySource.cpp" />
     <ClCompile Include="MTCore.cpp" />
     <ClCompile Include="_precompile.cpp" />
     <ClCompile Include="CvArea.cpp" />
@@ -238,6 +240,7 @@ nmake /NOLOGO /K Release
     <ClInclude Include="CvProperties.h" />
     <ClInclude Include="CvPropertyPropagator.h" />
     <ClInclude Include="CvPropertySolver.h" />
+    <ClInclude Include="CvPropertySource.h" />
     <ClInclude Include="CvRandom.h" />
     <ClInclude Include="CvReplayInfo.h" />
     <ClInclude Include="CvReplayMessage.h" />

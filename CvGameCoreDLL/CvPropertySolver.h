@@ -18,10 +18,13 @@
 //#include "CvPropertyInteraction.h"
 #include "CvPropertyPropagator.h"
 
+#include "CvEnums.h"
+
 #define BOOST_THREAD_NO_LIB
 #define BOOST_THREAD_USE_LIB
 #include <boost/thread/thread.hpp>
 
+class CvGameObject;
 class CvPropertySource;
 class CvPropertySolver;
 class CvPropertyInteraction;

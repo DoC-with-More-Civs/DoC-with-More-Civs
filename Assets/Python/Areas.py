@@ -58,7 +58,7 @@ def getNormalArea(iPlayer, bReborn=None):
 	return getArea(iPlayer, tNormalArea, dNormalAreaExceptions, bReborn, dChangedNormalArea, dChangedNormalAreaExceptions)			
 				
 def getBroaderArea(iPlayer, bReborn=None):				
-	return getArea(iPlayer, tBroaderArea, {}, dChangedBroaderArea)			
+	return getArea(iPlayer, tBroaderArea, {}, bReborn, dChangedBroaderArea)			
 				
 def getRespawnArea(iPlayer):				
 	if iPlayer in dRespawnArea: return getArea(iPlayer, dRespawnArea, {})			

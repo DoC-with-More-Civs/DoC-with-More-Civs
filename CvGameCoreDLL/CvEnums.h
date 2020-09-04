@@ -1130,6 +1130,41 @@ enum EraTypes							// Exposed to Python
 	NO_ERA = -1,
 };
 
+/************************************************************************************************/
+/* wunshare                         20/9/05                                                     */
+/*                                                                                              */
+/*                                                                                              */
+/************************************************************************************************/
+enum CulturalAgeTypes
+{
+	NO_CULTURAL_AGE = -1,
+	FIRST_CULTURAL_AGE
+};
+
+enum AgeSegments
+{
+	NO_AGE_SEGMENT = -1,
+	AGE_SEGMENT_DAWN,
+	AGE_SEGMENT_RISING,
+	AGE_SEGMENT_ZENITH,
+	AGE_SEGMENT_WANING
+};
+
+enum PropertyTypes
+{
+	NO_PROPERTY = -1,
+};
+
+enum OutcomeTypes
+{
+	NO_OUTCOME = -1,
+};
+
+/************************************************************************************************/
+/* wunshare                         END                                                   */
+/************************************************************************************************/
+
+
 enum CivilizationTypes		// Exposed to Python
 {
 	NO_CIVILIZATION = -1,
