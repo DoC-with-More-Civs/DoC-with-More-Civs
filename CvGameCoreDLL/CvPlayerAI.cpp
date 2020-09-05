@@ -10280,7 +10280,7 @@ int CvPlayerAI::AI_civicValue(CivicTypes eCivic) const
 	iValue += ((kCivic.isBuildingOnlyHealthy()) ? (getNumCities() * 3) : 0);
 	iValue += -((kCivic.getWarWearinessModifier() * getNumCities()) / ((bWarPlan) ? 10 : 50));
 	iValue += (kCivic.getFreeSpecialist() * getNumCities() * 12 /*18*/);
-	iValue += (pCapital) ? (kCivic.isCapitalCultureFreeSpecialists() * 12 * max(0, pCapital->getCultureLevel() - 1)) : 0;
+	iValue += (pCapital) ? (kCivic.isCapitalCultureFreeSpecialists() * 12 * std::max(0, pCapital->getCultureLevel() - 1)) : 0;
 
 	// Leoreth: wonder production modifier
 	iTempValue = kCivic.getWonderProductionModifier();

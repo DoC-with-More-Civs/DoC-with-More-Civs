@@ -2705,7 +2705,7 @@ DenialTypes CvTeamAI::AI_defensivePactTrade(TeamTypes eTeam) const
 	}
 
 	// Leoreth: determine defensive pact limit
-	int iDefensivePactLimit = 2;
+	unsigned int iDefensivePactLimit = 2;
 
 	if (iMaxEra >= ERA_INDUSTRIAL)
 	{

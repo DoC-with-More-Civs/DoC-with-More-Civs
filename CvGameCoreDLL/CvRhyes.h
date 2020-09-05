@@ -2,8 +2,7 @@
 #ifndef CVRHYES_H
 #define CVRHYES_H
 
-using namespace std;
-typedef list<char*> LISTCHAR;
+typedef std::list<char*> LISTCHAR;
 
 // rhyes.h
 #define EARTH_X					(150)

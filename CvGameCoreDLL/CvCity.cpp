@@ -9192,7 +9192,7 @@ int CvCity::getFreeSpecialist() const
 	//1SDAN: handle free specialists in capital per culture level here for simplicity
 	if (GET_PLAYER(getOwnerINLINE()).isCapitalCultureFreeSpecialist() && isCapital())
 	{
-		iCapitalCultureSpecialists += max(0, getCultureLevel() - 1);
+		iCapitalCultureSpecialists += std::max(0, getCultureLevel() - 1);
 	}
 
 	return m_iFreeSpecialist+iItalianSpecialists+iCoreSpecialists+iCapitalCultureSpecialists;
@@ -9757,7 +9757,7 @@ void CvCity::setCultureLevel(CultureLevelTypes eNewValue, bool bUpdatePlotGroups
 {
 	CvWString szBuffer;
 	CultureLevelTypes eOldValue;
-	int iI, iSpecialistCount;
+	int iI;
 
 	eOldValue = getCultureLevel();
 

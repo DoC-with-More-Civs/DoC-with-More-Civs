@@ -226,7 +226,7 @@ inline int sgn(int x)
 inline int percent(int iValue, int iFactor, int iDivisor = 100)
 {
 	FAssertMsg(iDivisor >= iFactor, "Percent calculation may overflow");
-	return (long long)iValue * (long long)iFactor / (long long)iDivisor;
+	return (int)((long long)iValue * (long long)iFactor / (long long)iDivisor);
 }
 
 bool isHumanVictoryWonder(BuildingTypes eBuilding, int eWonder, PlayerTypes ePlayer);

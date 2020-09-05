@@ -58,7 +58,7 @@ def getNormalArea(iPlayer, bReborn=None):
 	return getArea(iPlayer, tNormalArea, dNormalAreaExceptions, bReborn, dChangedNormalArea, dChangedNormalAreaExceptions)			
 				
 def getBroaderArea(iPlayer, bReborn=None):				
-	return getArea(iPlayer, tBroaderArea, {}, dChangedBroaderArea)			
+	return getArea(iPlayer, tBroaderArea, {}, bReborn, dChangedBroaderArea)			
 				
 def getRespawnArea(iPlayer):				
 	if iPlayer in dRespawnArea: return getArea(iPlayer, dRespawnArea, {})			
@@ -641,11 +641,12 @@ iEthiopia : [(81, 34), (81, 35), (81, 36), (88, 35), (88, 36), (89, 35), (90, 36
 iByzantium : [(83, 49), (75, 55), (76, 55), (75, 56), (76, 56), (77, 56), (78, 56)],				
 iJapan : [(133, 60), (134, 60), (133, 61), (134, 61), (133, 62), (134, 62)],				
 iVikings : [(75, 67), (77, 67), (78, 67), (77, 68), (78, 68), (79, 68)],				
-iArabia : [(84, 35), (84, 36), (84, 37), (85, 35), (88, 45), (88, 46), (89, 45), (89, 46), (90, 44), (90, 45), (90, 46), (91, 45), (91, 46), (92, 45), (92, 46), (93, 44), (93, 45), (94, 43), (94, 44), (94, 45), (94, 46), (95, 43), (95, 45), (95, 46), (96, 43), (96, 44), (96, 45), (96, 46)],iSpain : [(49, 44), (49, 43), (49, 42), (49, 41)],				
-iTibet : [(107, 47), (108, 47), (107, 53), (108, 53), (107, 54), (108, 54), (109, 54), (110, 54)],				
+iArabia : [(84, 35), (84, 36), (84, 37), (85, 35), (88, 45), (88, 46), (89, 45), (89, 46), (90, 44), (90, 45), (90, 46), (91, 45), (91, 46), (92, 45), (92, 46), (93, 44), (93, 45), (94, 43), (94, 44), (94, 45), (94, 46), (95, 43), (95, 45), (95, 46), (96, 43), (96, 44), (96, 45), (96, 46)],
+iSpain : [(49, 44), (49, 43), (49, 42), (49, 41)],	# bugs			
+iTibet : [(107, 47), (108, 47), (107, 53), (108, 53), (107, 54), (108, 54), (109, 54), (110, 54)],		
 iIndonesia : [(131, 33)],				
 iMoors : [(64, 51), (67, 51)],				
-iSpain : [(63, 48), (64, 48)],				
+iSpain : [(63, 48), (64, 48)],	# bugs			
 iFrance : [(65, 60), (65, 61)],				
 iKhmer:	[(121, 41), (122, 40), (123, 39)],			
 iHolyRome : [(65, 58), (65, 59), (73, 62)],				

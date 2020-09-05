@@ -92,6 +92,53 @@ Debug\CvArea.obj: CvArea.cpp \
 	CvArtFileMgr.h \
 	CvDLLInterfaceIFaceBase.h \
 	CvRhyes.h
+Debug\CvAreaUtils.obj: CvAreaUtils.cpp \
+	CvGameCoreDLL.h \
+	FAssert.h \
+	CvGameCoreDLLDefNew.h \
+	FDataStreamBase.h \
+	FFreeListArrayBase.h \
+	FFreeListTrashArray.h \
+	FFreeListArray.h \
+	CvString.h \
+	CvEnums.h \
+	CvDefines.h \
+	CvStructs.h \
+	CvDLLUtilityIFaceBase.h \
+	LinkedList.h \
+	CvPlayerAI.h \
+	CvPlayer.h \
+	CvCityAI.h \
+	CvCity.h \
+	CvDLLEntity.h \
+	CvUnitAI.h \
+	CvUnit.h \
+	CvSelectionGroupAI.h \
+	CvSelectionGroup.h \
+	CvPlotGroup.h \
+	CvTalkingHeadMessage.h \
+	AI_defines.h \
+	CvGameCoreUtils.h \
+	CvGlobals.h \
+	CvMap.h \
+	CvArea.h \
+	CvPlot.h \
+	CvGameAI.h \
+	CvGame.h \
+	CvDeal.h \
+	CvRandom.h \
+	FProfiler.h \
+	CyCity.h \
+	CvInfos.h \
+	CvTeamAI.h \
+	CvTeam.h \
+	CvDLLPythonIFaceBase.h \
+	CvDllEntity.h \
+	CvDLLEntityIFaceBase.h \
+	CyGlobalContext.h \
+	CvArtFileMgr.h \
+	CvAreaUtils.h \
+	CvConst.h
 Debug\CvArtFileMgr.obj: CvArtFileMgr.cpp \
 	CvGameCoreDLL.h \
 	FAssert.h \
@@ -5085,6 +5132,53 @@ Release\CvArea.obj: CvArea.cpp \
 	CvArtFileMgr.h \
 	CvDLLInterfaceIFaceBase.h \
 	CvRhyes.h
+Release\CvAreaUtils.obj: CvAreaUtils.cpp \
+	CvGameCoreDLL.h \
+	FAssert.h \
+	CvGameCoreDLLDefNew.h \
+	FDataStreamBase.h \
+	FFreeListArrayBase.h \
+	FFreeListTrashArray.h \
+	FFreeListArray.h \
+	CvString.h \
+	CvEnums.h \
+	CvDefines.h \
+	CvStructs.h \
+	CvDLLUtilityIFaceBase.h \
+	LinkedList.h \
+	CvPlayerAI.h \
+	CvPlayer.h \
+	CvCityAI.h \
+	CvCity.h \
+	CvDLLEntity.h \
+	CvUnitAI.h \
+	CvUnit.h \
+	CvSelectionGroupAI.h \
+	CvSelectionGroup.h \
+	CvPlotGroup.h \
+	CvTalkingHeadMessage.h \
+	AI_defines.h \
+	CvGameCoreUtils.h \
+	CvGlobals.h \
+	CvMap.h \
+	CvArea.h \
+	CvPlot.h \
+	CvGameAI.h \
+	CvGame.h \
+	CvDeal.h \
+	CvRandom.h \
+	FProfiler.h \
+	CyCity.h \
+	CvInfos.h \
+	CvTeamAI.h \
+	CvTeam.h \
+	CvDLLPythonIFaceBase.h \
+	CvDllEntity.h \
+	CvDLLEntityIFaceBase.h \
+	CyGlobalContext.h \
+	CvArtFileMgr.h \
+	CvAreaUtils.h \
+	CvConst.h
 Release\CvArtFileMgr.obj: CvArtFileMgr.cpp \
 	CvGameCoreDLL.h \
 	FAssert.h \
