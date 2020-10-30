@@ -1,3 +1,5 @@
+*.@
+*.pdb
 *.pch
 *.ipch
 *.obj
