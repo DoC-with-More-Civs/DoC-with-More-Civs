@@ -2003,7 +2003,7 @@ def getCorePopulationModifier(iEra):
 def getUnionPop(iPlayer, iCorePopulationModifier):
 	iUnionPop = 0
 	for city in utils.getCityList(iPlayer):
-		if plot.isCore(iPlayer):
+		if city.plot().isCore(iPlayer):
 			iUnionPop += iCorePopulationModifier * city.getPopulation() / 100
 
 	return iUnionPop

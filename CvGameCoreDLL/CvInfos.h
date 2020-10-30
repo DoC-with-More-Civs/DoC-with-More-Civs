@@ -13,11 +13,16 @@
 #ifndef CV_INFO_H
 #define CV_INFO_H
 
+#include "CvEnums.h"
+#include "CvString.h"
+#include <vector>
+using std::vector;
+
 #pragma warning( disable: 4251 )		// needs to have dll-interface to be used by clients of class
 #pragma warning( disable: 4127 )
 
 class CvXMLLoadUtility;
-
+class FDataStreamBase;
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //
 //  class : CvInfoBase
@@ -5809,7 +5814,7 @@ public:
 	DllExport CvEffectInfo();
 	DllExport virtual ~CvEffectInfo();
 
-	DllExport const TCHAR* getPath() const { return m_szPath; }
+	DllExport const TCHAR* getPath() const { return (const TCHAR*)m_szPath.GetCString(); }
 	DllExport void setPath(const TCHAR* szVal) { m_szPath = szVal; }
 	DllExport float getUpdateRate( ) const { return m_fUpdateRate; };
 	DllExport void setUpdateRate( float fUpdateRate ) { m_fUpdateRate = fUpdateRate; }
@@ -5845,8 +5850,8 @@ public:
 	DllExport CvAttachableInfo();
 	DllExport virtual ~CvAttachableInfo();
 
-	DllExport const TCHAR* getPath() const { return m_szPath; }
-	DllExport void setPath(const TCHAR* szVal) { m_szPath = szVal; }
+	DllExport const TCHAR* getPath() const { return (const TCHAR*)m_szPath.GetCString(); }
+	DllExport void setPath(const TCHAR* szVal) { m_szPath.assign(szVal); }
 
 	bool read(CvXMLLoadUtility* pXML);
 
@@ -5871,7 +5876,7 @@ public:
 	DllExport CvCameraInfo() {}
 	DllExport virtual ~CvCameraInfo() {}
 
-	DllExport const TCHAR* getPath() const { return m_szPath; }
+	DllExport const TCHAR* getPath() const { return (const TCHAR*)m_szPath.GetCString(); }
 	DllExport void setPath(const TCHAR* szVal) { m_szPath = szVal; }
 
 	bool read(CvXMLLoadUtility* pXML);

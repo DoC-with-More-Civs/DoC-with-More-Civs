@@ -1887,8 +1887,8 @@ void CvGame::normalizeAddExtras()
 			    bool bLandBias = (iWaterCount > NUM_CITY_PLOTS / 2);
 
                 shuffleArray(aiShuffle, NUM_CITY_PLOTS, getMapRand());
-
-				for (int iJ = 0; iJ < NUM_CITY_PLOTS; iJ++)
+				int iJ;
+				for (iJ = 0; iJ < NUM_CITY_PLOTS; iJ++)
 				{
 				    CvPlot* pLoopPlot = plotCity(pStartingPlot->getX_INLINE(), pStartingPlot->getY_INLINE(), aiShuffle[iJ]);
 
@@ -1916,7 +1916,8 @@ void CvGame::normalizeAddExtras()
 								{
 									if (pLoopPlot->getBonusType() == NO_BONUS)
 									{
-										for (int iK = 0; iK < GC.getNumBonusInfos(); iK++)
+										int iK;
+										for (iK = 0; iK < GC.getNumBonusInfos(); iK++)
 										{
 											if (GC.getBonusInfo((BonusTypes)iK).isNormalize())
 											{

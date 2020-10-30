@@ -86,6 +86,7 @@ unsigned int memSize(void* a)
 HANDLE dllModule = NULL;
 // BUG - EXE/DLL Paths - end
 
+#ifndef _DAWN_OF_CIVILIZATION_H_
 BOOL APIENTRY DllMain(HANDLE hModule, 
 					  DWORD  ul_reason_for_call, 
 					  LPVOID lpReserved)
@@ -135,6 +136,7 @@ BOOL APIENTRY DllMain(HANDLE hModule,
 	
 	return TRUE;	// success
 }
+#endif
 
 //
 // enable dll profiler if necessary, clear history

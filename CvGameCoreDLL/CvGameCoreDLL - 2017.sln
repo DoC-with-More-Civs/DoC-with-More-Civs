@@ -5,16 +5,30 @@ VisualStudioVersion = 15.0.28307.1231
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CvGameCoreDLL", "CvGameCoreDLL.vcxproj", "{0839103A-3707-457B-A5A2-BEB34D674844}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DawnOfCivilization", "..\DownOfCivilization\DownOfCivilization.vcxproj", "{DAC65109-2589-41DA-8A60-D1EC1C532741}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
 		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{0839103A-3707-457B-A5A2-BEB34D674844}.Debug|Win32.ActiveCfg = Debug|Win32
 		{0839103A-3707-457B-A5A2-BEB34D674844}.Debug|Win32.Build.0 = Debug|Win32
+		{0839103A-3707-457B-A5A2-BEB34D674844}.Debug|x64.ActiveCfg = Debug|Win32
 		{0839103A-3707-457B-A5A2-BEB34D674844}.Release|Win32.ActiveCfg = Release|Win32
 		{0839103A-3707-457B-A5A2-BEB34D674844}.Release|Win32.Build.0 = Release|Win32
+		{0839103A-3707-457B-A5A2-BEB34D674844}.Release|x64.ActiveCfg = Release|Win32
+		{DAC65109-2589-41DA-8A60-D1EC1C532741}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DAC65109-2589-41DA-8A60-D1EC1C532741}.Debug|Win32.Build.0 = Debug|Win32
+		{DAC65109-2589-41DA-8A60-D1EC1C532741}.Debug|x64.ActiveCfg = Debug|x64
+		{DAC65109-2589-41DA-8A60-D1EC1C532741}.Debug|x64.Build.0 = Debug|x64
+		{DAC65109-2589-41DA-8A60-D1EC1C532741}.Release|Win32.ActiveCfg = Release|Win32
+		{DAC65109-2589-41DA-8A60-D1EC1C532741}.Release|Win32.Build.0 = Release|Win32
+		{DAC65109-2589-41DA-8A60-D1EC1C532741}.Release|x64.ActiveCfg = Release|x64
+		{DAC65109-2589-41DA-8A60-D1EC1C532741}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

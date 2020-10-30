@@ -11,7 +11,7 @@
 // published python interface for CyPlot
 //
 
-void CyPlotPythonInterface1(python::class_<CyPlot>& x)
+void CyPlotPythonInterface1(boost::python::class_<CyPlot>& x)
 {
 	OutputDebugString("Python Extension Module - CyPlotPythonInterface1\n");
 
@@ -49,7 +49,7 @@ void CyPlotPythonInterface1(python::class_<CyPlot>& x)
 		.def("isRiverConnection", &CyPlot::isRiverConnection, "bool (int /*DirectionTypes*/ eDirection)")
 
 		.def("getNearestLandArea", &CyPlot::getNearestLandArea, "int ()")
-		.def("getNearestLandPlot", &CyPlot::getNearestLandPlot, python::return_value_policy<python::manage_new_object>(), "CyPlot* ()")
+		.def("getNearestLandPlot", &CyPlot::getNearestLandPlot, boost::python::return_value_policy<boost::python::manage_new_object>(), "CyPlot* ()")
 		.def("seeFromLevel", &CyPlot::seeFromLevel, "int (int eTeam)")
 		.def("seeThroughLevel", &CyPlot::seeThroughLevel, "int ()")
 		.def("canHaveBonus", &CyPlot::canHaveBonus, "bool (int /*BonusTypes*/ eBonus, bool bIgnoreLatitude)")
@@ -59,8 +59,8 @@ void CyPlotPythonInterface1(python::class_<CyPlot>& x)
 		.def("getBuildTurnsLeft", &CyPlot::getBuildTurnsLeft, "int (int (BuildTypes) eBuild, int iNowExtra, int iThenExtra)")
 		.def("getFeatureProduction", &CyPlot::getFeatureProduction, "int (int (BuildTypes) eBuild, int (TeamTypes) eTeam, CvCity** ppCity)")
 
-		.def("getBestDefender", &CyPlot::getBestDefender, python::return_value_policy<python::manage_new_object>(), "CyUnit* (int (PlayerTypes) eOwner, int (PlayerTypes) eAttackingPlayer, CvUnit* pAttacker, bool bTestAtWar, bool bTestPotentialEnemy, bool bTestCanMove)")
-		.def("getSelectedUnit", &CyPlot::getSelectedUnit, python::return_value_policy<python::manage_new_object>(), "CyUnit* ()")
+		.def("getBestDefender", &CyPlot::getBestDefender, boost::python::return_value_policy<boost::python::manage_new_object>(), "CyUnit* (int (PlayerTypes) eOwner, int (PlayerTypes) eAttackingPlayer, CvUnit* pAttacker, bool bTestAtWar, bool bTestPotentialEnemy, bool bTestCanMove)")
+		.def("getSelectedUnit", &CyPlot::getSelectedUnit, boost::python::return_value_policy<boost::python::manage_new_object>(), "CyUnit* ()")
 		.def("getUnitPower", &CyPlot::getUnitPower, "int (int /*PlayerTypes*/ eOwner)")
 
 		.def("defenseModifier", &CyPlot::defenseModifier, "int (int /*TeamTypes*/, bool bIgnoreBuilding, bool bHelp)")
@@ -122,8 +122,8 @@ void CyPlotPythonInterface1(python::class_<CyPlot>& x)
 		.def("getY", &CyPlot::getY, "int ()")
 		.def("at", &CyPlot::at, "bool (int iX, int iY)")
 		.def("getLatitude", &CyPlot::getLatitude, "int ()")
-		.def("area", &CyPlot::area, python::return_value_policy<python::manage_new_object>(), "CyArea* ()")
-		.def("waterArea", &CyPlot::waterArea, python::return_value_policy<python::manage_new_object>(), "CyArea* ()")
+		.def("area", &CyPlot::area, boost::python::return_value_policy<boost::python::manage_new_object>(), "CyArea* ()")
+		.def("waterArea", &CyPlot::waterArea, boost::python::return_value_policy<boost::python::manage_new_object>(), "CyArea* ()")
 		.def("getArea", &CyPlot::getArea, "int ()")
 		.def("setArea", &CyPlot::setArea, "void (int iNewValue)") //Rhye
 		.def("getFeatureVariety", &CyPlot::getFeatureVariety, "int ()")
@@ -193,9 +193,9 @@ void CyPlotPythonInterface1(python::class_<CyPlot>& x)
 		.def("getRouteType", &CyPlot::getRouteType, "int ()")
 		.def("setRouteType", &CyPlot::setRouteType, "void (int (RouteTypes) eNewValue)")
 
-		.def("getPlotCity", &CyPlot::getPlotCity, python::return_value_policy<python::manage_new_object>(), "CyCity* ()")
-		.def("getWorkingCity", &CyPlot::getWorkingCity, python::return_value_policy<python::manage_new_object>(), "CyCity* ()")
-		.def("getWorkingCityOverride", &CyPlot::getWorkingCityOverride, python::return_value_policy<python::manage_new_object>(), "CyCity* ()")
+		.def("getPlotCity", &CyPlot::getPlotCity, boost::python::return_value_policy<boost::python::manage_new_object>(), "CyCity* ()")
+		.def("getWorkingCity", &CyPlot::getWorkingCity, boost::python::return_value_policy<boost::python::manage_new_object>(), "CyCity* ()")
+		.def("getWorkingCityOverride", &CyPlot::getWorkingCityOverride, boost::python::return_value_policy<boost::python::manage_new_object>(), "CyCity* ()")
 		.def("getRiverID", &CyPlot::getRiverID, "int ()")
 		.def("setRiverID", &CyPlot::setRiverID, "void (int)")
 		.def("getMinOriginalStartDist", &CyPlot::getMinOriginalStartDist, "int ()")
@@ -251,7 +251,7 @@ void CyPlotPythonInterface1(python::class_<CyPlot>& x)
 		.def("changeInvisibleVisibilityCount", &CyPlot::changeInvisibleVisibilityCount, "int (int (TeamTypes eTeam), int (InvisibleTypes) eInvisible, int iChange)")
 
 		.def("getNumUnits", &CyPlot::getNumUnits, "int ()")
-		.def("getUnit", &CyPlot::getUnit, python::return_value_policy<python::manage_new_object>(), "CyUnit* (int iIndex)")
+		.def("getUnit", &CyPlot::getUnit, boost::python::return_value_policy<boost::python::manage_new_object>(), "CyUnit* (int iIndex)")
 
 		.def("getScriptData", &CyPlot::getScriptData, "str () - Get stored custom data")
 		.def("setScriptData", &CyPlot::setScriptData, "void (str) - Set stored custom data")

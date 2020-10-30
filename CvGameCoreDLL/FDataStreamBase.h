@@ -21,6 +21,11 @@
 #define		FDATASTREAMBASE_H
 #pragma		once
 
+#include "CvGameCoreDLL.h"
+#include <string>
+using std::string;
+using std::wstring;
+
 //
 // Stream abstract base class
 //

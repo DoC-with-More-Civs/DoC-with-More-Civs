@@ -5,9 +5,11 @@
 #ifndef CIV4_PLOT_H
 #define CIV4_PLOT_H
 
-//#include "CvStructs.h"
+#include "CvStructs.h"
+#include "CvEnums.h"
 #include "LinkedList.h"
 #include <bitset>
+#include <vector>
 
 #pragma warning( disable: 4251 )		// needs to have dll-interface to be used by clients of class
 

@@ -6,9 +6,15 @@
 #define CIV4_AREA_H
 
 //#include "CvStructs.h"
+#include "CvEnums.h"
 
 class CvCity;
 class CvPlot;
+class FDataStreamBase;
+
+#ifdef _DAWN_OF_CIVILIZATION_H_
+class CvAreaMPI;
+#endif
 
 class CvArea
 {
@@ -165,6 +171,9 @@ public:
 	virtual void read(FDataStreamBase* pStream);
 	virtual void write(FDataStreamBase* pStream);
 
+#ifdef _DAWN_OF_CIVILIZATION_H_
+	CvAreaMPI* m_pAreaMPI;
+#endif
 };
 
 #endif

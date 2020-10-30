@@ -8,13 +8,18 @@
 // Creator - Mustafa Thamer
 // Copyright 2005 Firaxis Games
 //
-
 //#include "CvEnums.h"
-# include <boost/python/object.hpp>
-namespace python = boost::python;
+#include <vector>
+using std::vector;
+
+#include <boost/python/object.hpp>
+//namespace python = boost::python;
 
 class CvUnit;
 class CvPlot;
+class CvString;
+class CvWString;
+
 class CvDLLPythonIFaceBase
 {
 public:
@@ -55,7 +60,7 @@ PyObject* CvDLLPythonIFaceBase::makePythonObject(T* pObj)
 	PyObject* pyobj = bpo.ptr();
 	Py_INCREF(pyobj);
 	assert(pyobj->ob_refcnt==2);
-	return pyobj;	// decrefs pyobj when bpo goes out of scope
+	return pyobj;	// dec refs pyobj when bpo goes out of scope
 }
 
 //
@@ -163,5 +168,195 @@ int CvDLLPythonIFaceBase::putStringSeqInArray(PyObject* src, T** aDst)
 	}
 	return size;
 }
+
+
+class CvDLLPythonIFaceBaseNew
+{
+	CvDLLPythonIFaceBaseNew()
+	{
+		Py_Initialize();
+	}
+
+	~CvDLLPythonIFaceBaseNew()
+	{
+		Py_Finalize();
+	}
+
+	bool isInitialized()
+	{
+		return Py_IsInitialized();
+	}
+
+	// 暂时不知道实现
+	virtual const char* getMapScriptModule()
+	{
+		return gDLL->getPythonIFace()->getMapScriptModule();
+	}
+
+	// 暂时不知道实现
+	virtual PyObject* MakeFunctionArgs(void** args, int argc)
+	{
+		return gDLL->getPythonIFace()->MakeFunctionArgs(args, argc);
+	}
+
+	virtual bool moduleExists(const char* moduleName, bool bLoadIfNecessary)
+	{
+		return PyImport_ImportModule((char*)moduleName);
+	}
+
+	virtual bool callFunction(const char* moduleName, const char* fxnName, void* fxnArg = NULL)
+	{
+		PyObject* pMoudle = NULL;
+		PyObject* pFunc = NULL;
+		pMoudle = PyImport_ImportModule((char*)moduleName);
+		if (pMoudle)
+		{
+			pFunc = PyObject_GetAttrString(pFunc, (char*)fxnName);
+			PyEval_CallObject(pFunc, (PyObject*)fxnArg);
+			return true;
+		}
+		else
+			return false;
+	}
+
+	virtual bool callFunction(const char* moduleName, const char* fxnName, void* fxnArg, long* result)
+	{
+		PyObject* pMoudle = NULL;
+		PyObject* pFunc = NULL;
+		pMoudle = PyImport_ImportModule((char*)moduleName);
+		if (pMoudle)
+		{
+			pFunc = PyObject_GetAttrString(pFunc, (char*)fxnName);
+			PyObject* pReturn = PyEval_CallObject(pFunc, (PyObject*)fxnArg);
+			FAssertMsg(PyInt_Check(pReturn), "return value is not an int");
+			PyArg_Parse(pReturn, "l", result);
+			return true;
+		}
+		else
+			return false;
+	}
+
+	virtual bool callFunction(const char* moduleName, const char* fxnName, void* fxnArg, CvString* result)
+	{
+		PyObject* pMoudle = NULL;
+		PyObject* pFunc = NULL;
+		pMoudle = PyImport_ImportModule((char*)moduleName);
+		if (pMoudle)
+		{
+			pFunc = PyObject_GetAttrString(pFunc, (char*)fxnName);
+			PyObject* pReturn = PyEval_CallObject(pFunc, (PyObject*)fxnArg);
+			FAssertMsg(PyString_Check(pReturn), "return value is not a string");
+			result->assign(PyString_AsString(pReturn));
+			return true;
+		}
+		else
+			return false;
+	}
+
+	virtual bool callFunction(const char* moduleName, const char* fxnName, void* fxnArg, CvWString* result)
+	{
+		PyObject* pMoudle = NULL;
+		PyObject* pFunc = NULL;
+		pMoudle = PyImport_ImportModule((char*)moduleName);
+		if (pMoudle)
+		{
+			pFunc = PyObject_GetAttrString(pFunc, (char*)fxnName);
+			PyObject* pReturn = PyEval_CallObject(pFunc, (PyObject*)fxnArg);
+			result->Copy(PyString_AsString(pReturn));
+			return true;
+		}
+		else
+			return false;
+	}
+
+	virtual bool callFunction(const char* moduleName, const char* fxnName, void* fxnArg, std::vector<byte>* pList)
+	{
+		PyObject* pMoudle = NULL;
+		PyObject* pFunc = NULL;
+		pMoudle = PyImport_ImportModule((char*)moduleName);
+		if (pMoudle)
+		{
+			pFunc = PyObject_GetAttrString(pFunc, (char*)fxnName);
+			PyObject* pReturn = PyEval_CallObject(pFunc, (PyObject*)fxnArg);
+			int size = PySequence_Length(pReturn);
+			if (size < 1)
+			{
+				return true;
+			}
+			int i;
+			for (i = 0;i < size;i++)
+			{
+				PyObject* item = PySequence_GetItem(pReturn, i); /* Can't fail */
+				FAssertMsg(PyInt_Check(item), "sequence item is not a byte");
+				PyArg_Parse(pReturn, "c", &(*pList)[i]);
+				Py_DECREF(item);
+			}
+		}
+		else
+			return false;
+	}
+
+	virtual bool callFunction(const char* moduleName, const char* fxnName, void* fxnArg, std::vector<int> *pIntList)
+	{
+		PyObject* pMoudle = NULL;
+		PyObject* pFunc = NULL;
+		pMoudle = PyImport_ImportModule((char*)moduleName);
+		if (pMoudle)
+		{
+			pFunc = PyObject_GetAttrString(pFunc, (char*)fxnName);
+			PyObject* pReturn = PyEval_CallObject(pFunc, (PyObject*)fxnArg);
+			int size = PySequence_Length(pReturn);
+			if (size < 1)
+				return true;
+			for (int i = 0;i < size;i++)
+			{
+				PyObject* item = PySequence_GetItem(pReturn, i); /* Can't fail */
+				FAssertMsg(PyInt_Check(item), "sequence item is not an int");
+				(*pIntList)[i] = (int)PyInt_AsLong(item);
+				Py_DECREF(item);
+			}
+			return true;
+		}
+		else
+			return false;
+	}
+
+	// 暂时不知道实现
+	virtual bool callFunction(const char* moduleName, const char* fxnName, void* fxnArg, int* pIntList, int* iListSize)
+	{
+		return gDLL->getPythonIFace()->callFunction(moduleName, fxnName, fxnArg, pIntList, iListSize);
+	}
+
+	virtual bool callFunction(const char* moduleName, const char* fxnName, void* fxnArg, std::vector<float> *pFloatList)
+	{
+		PyObject* pMoudle = NULL;
+		PyObject* pFunc = NULL;
+		pMoudle = PyImport_ImportModule((char*)moduleName);
+		if (pMoudle)
+		{
+			pFunc = PyObject_GetAttrString(pFunc, (char*)fxnName);
+			PyObject* pReturn = PyEval_CallObject(pFunc, (PyObject*)fxnArg);
+			int size = PySequence_Length(pReturn);
+			if (size < 1)
+				return true;
+			for (int i = 0;i < size;i++)
+			{
+				PyObject* item = PySequence_GetItem(pReturn, i); /* Can't fail */
+				FAssertMsg(PyFloat_Check(item), "sequence item is not an float");
+				(*pFloatList)[i] = (float)PyFloat_AsDouble(item);
+				Py_DECREF(item);
+			}
+			return true;
+		}
+		else
+			return false;
+	}
+
+	// 暂时不知道实现
+	virtual bool callPythonFunction(const char* szModName, const char* szFxnName, int iArg, long* result)
+	{
+		return gDLL->getPythonIFace()->callPythonFunction(szModName, szFxnName, iArg, result);
+	}
+};
 
 #endif	//  CvDLLPythonIFaceBase_h

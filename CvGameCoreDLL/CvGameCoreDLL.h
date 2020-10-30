@@ -12,9 +12,9 @@
 // WINDOWS
 //
 #pragma warning( disable: 4530 )	// C++ exception handler used, but unwind semantics are not enabled
-
+#define _SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS // for stdext::hash_map
 #define WIN32_LEAN_AND_MEAN
-#include <windows.h>
+#include <Windows.h>
 #include <MMSystem.h>
 #if defined _DEBUG && !defined USE_MEMMANAGER
 #define USE_MEMMANAGER
@@ -165,7 +165,7 @@ void stopProfilingDLL();
 # include <boost/python/object.hpp>
 # include <boost/python/def.hpp>
 
-namespace python = boost::python;
+// namespace python = boost::python;
 
 #include "FAssert.h"
 #include "CvGameCoreDLLDefNew.h"

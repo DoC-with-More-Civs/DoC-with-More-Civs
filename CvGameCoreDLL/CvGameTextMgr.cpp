@@ -21176,9 +21176,9 @@ void CvGameTextMgr::getFontSymbols(std::vector< std::vector<wchar> >& aacSymbols
 void CvGameTextMgr::assignFontIds(int iFirstSymbolCode, int iPadAmount)
 {
 	int iCurSymbolID = iFirstSymbolCode;
-
+	int i;
 	// set yield symbols
-	for (int i = 0; i < NUM_YIELD_TYPES; i++)
+	for (i = 0; i < NUM_YIELD_TYPES; i++)
 	{
 		GC.getYieldInfo((YieldTypes) i).setChar(iCurSymbolID);
 		++iCurSymbolID;
@@ -21190,7 +21190,7 @@ void CvGameTextMgr::assignFontIds(int iFirstSymbolCode, int iPadAmount)
 	} while (iCurSymbolID % iPadAmount != 0);
 
 	// set commerce symbols
-	for (i=0;i<GC.getNUM_COMMERCE_TYPES();i++)
+	for (i = 0; i < GC.getNUM_COMMERCE_TYPES(); i++)
 	{
 		GC.getCommerceInfo((CommerceTypes) i).setChar(iCurSymbolID);
 		++iCurSymbolID;
@@ -21209,7 +21209,7 @@ void CvGameTextMgr::assignFontIds(int iFirstSymbolCode, int iPadAmount)
 		} while (iCurSymbolID % iPadAmount != 0);
 	}
 
-	for (int i = 0; i < GC.getNumReligionInfos(); i++)
+	for (i = 0; i < GC.getNumReligionInfos(); i++)
 	{
 		GC.getReligionInfo((ReligionTypes) i).setChar(iCurSymbolID);
 		++iCurSymbolID;

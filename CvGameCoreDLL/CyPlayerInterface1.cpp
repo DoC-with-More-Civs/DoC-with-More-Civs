@@ -15,26 +15,26 @@
 // published python interface for CyPlayer
 //
 
-void CyPlayerPythonInterface1(python::class_<CyPlayer>& x)
+void CyPlayerPythonInterface1(boost::python::class_<CyPlayer>& x)
 {
 	OutputDebugString("Python Extension Module - CyPlayerPythonInterface1\n");
 
 	// set the docstring of the current module scope
-	python::scope().attr("__doc__") = "Civilization IV Player Class";
+	boost::python::scope().attr("__doc__") = "Civilization IV Player Class";
 	x
 		.def("isNone", &CyPlayer::isNone, "checks for a null player")
 		.def("startingPlotRange", &CyPlayer::startingPlotRange, "int ()")
 		.def("startingPlotWithinRange", &CyPlayer::startingPlotWithinRange, "bool (CyPlot *pPlot, int /*PlayerTypes*/ ePlayer, int iRange, int iPass)")
 
-		.def("findStartingPlot", &CyPlayer::findStartingPlot, python::return_value_policy<python::manage_new_object>(), "findStartingPlot(bool bRandomize) - Finds a starting plot for player")
+		.def("findStartingPlot", &CyPlayer::findStartingPlot, boost::python::return_value_policy<boost::python::manage_new_object>(), "findStartingPlot(bool bRandomize) - Finds a starting plot for player")
 
-		.def("initCity", &CyPlayer::initCity, python::return_value_policy<python::manage_new_object>(), "initCity( plotX, plotY ) - spawns a city at x,y")
+		.def("initCity", &CyPlayer::initCity, boost::python::return_value_policy<boost::python::manage_new_object>(), "initCity( plotX, plotY ) - spawns a city at x,y")
 		.def("acquireCity", &CyPlayer::acquireCity, "void (CyCity* pCity, bool bConquest, bool bTrade)")
 		.def("killCities", &CyPlayer::killCities, "void ()")
 
 		.def("getNewCityName", &CyPlayer::getNewCityName, "wstring ()")
 
-		.def("initUnit", &CyPlayer::initUnit, python::return_value_policy<python::manage_new_object>(), "CyUnit* initUnit(UnitTypes iIndex, plotX, plotY, UnitAITypes iIndex)  - place Unit at X,Y   NOTE: Always use UnitAITypes.NO_UNITAI")
+		.def("initUnit", &CyPlayer::initUnit, boost::python::return_value_policy<boost::python::manage_new_object>(), "CyUnit* initUnit(UnitTypes iIndex, plotX, plotY, UnitAITypes iIndex)  - place Unit at X,Y   NOTE: Always use UnitAITypes.NO_UNITAI")
 		.def("disbandUnit", &CyPlayer::disbandUnit, "void (bool bAnnounce)")
 
 		.def("killUnits", &CyPlayer::killUnits, "void ()")
@@ -180,7 +180,7 @@ void CyPlayerPythonInterface1(python::class_<CyPlayer>& x)
 		.def("specialistYield", &CyPlayer::specialistYield, "int (int (SpecialistTypes) eSpecialist, int (YieldTypes) eCommerce)")
 		.def("specialistCommerce", &CyPlayer::specialistCommerce, "int (int (SpecialistTypes) eSpecialist, int (CommerceTypes) eCommerce)")
 
-		.def("getStartingPlot", &CyPlayer::getStartingPlot, python::return_value_policy<python::manage_new_object>(), "CyPlot* ()")
+		.def("getStartingPlot", &CyPlayer::getStartingPlot, boost::python::return_value_policy<boost::python::manage_new_object>(), "CyPlot* ()")
 		.def("setStartingPlot", &CyPlayer::setStartingPlot, "void (CyPlot*, bool) - sets the player's starting plot")
 		.def("getTotalPopulation", &CyPlayer::getTotalPopulation, "int ()")
 		.def("getAveragePopulation", &CyPlayer::getAveragePopulation, "int ()")
@@ -323,7 +323,7 @@ void CyPlayerPythonInterface1(python::class_<CyPlayer>& x)
 		.def("getBuildingsProductionModifier", &CyPlayer::getBuildingsProductionModifier, "int ()")
 		.def("changeBuildingsProductionModifier", &CyPlayer::changeBuildingsProductionModifier, "void (int iChange)")
 		.def("getStateReligionFreeExperience", &CyPlayer::getStateReligionFreeExperience, "int ()")
-		.def("getCapitalCity", &CyPlayer::getCapitalCity, python::return_value_policy<python::manage_new_object>(), "CyCity* (int iID)")
+		.def("getCapitalCity", &CyPlayer::getCapitalCity, boost::python::return_value_policy<boost::python::manage_new_object>(), "CyCity* (int iID)")
 		.def("getCitiesLost", &CyPlayer::getCitiesLost, "int ()")
 
 		.def("getWinsVsBarbs", &CyPlayer::getWinsVsBarbs, "int ()")
@@ -453,21 +453,21 @@ void CyPlayerPythonInterface1(python::class_<CyPlayer>& x)
 		.def("firstCity", &CyPlayer::firstCity, "tuple(CyCity, int iterOut) (bool bReverse) - gets the first city")
 		.def("nextCity", &CyPlayer::nextCity, "tuple(CyCity, int iterOut) (int iterIn, bool bReverse) - gets the next city")
 		.def("getNumCities", &CyPlayer::getNumCities, "int ()")
-		.def("getCity", &CyPlayer::getCity, python::return_value_policy<python::manage_new_object>(), "CyCity* (int iID)")
+		.def("getCity", &CyPlayer::getCity, boost::python::return_value_policy<boost::python::manage_new_object>(), "CyCity* (int iID)")
 		.def("firstUnit", &CyPlayer::firstUnit, "tuple(CyUnit, int iterOut) (bool bReverse) - gets the first unit")
 		.def("nextUnit", &CyPlayer::nextUnit, "tuple(CyUnit, int iterOut) (int iterIn, bool bReverse) - gets the next unit")
 		.def("getNumUnits", &CyPlayer::getNumUnits, "int ()")
-		.def("getUnit", &CyPlayer::getUnit, python::return_value_policy<python::manage_new_object>(), "CyUnit* (int iID)")
+		.def("getUnit", &CyPlayer::getUnit, boost::python::return_value_policy<boost::python::manage_new_object>(), "CyUnit* (int iID)")
 		.def("firstSelectionGroup", &CyPlayer::firstSelectionGroup, "tuple(CySelectionGroup, int iterOut) (bool bReverse) - gets the first selectionGroup")
 		.def("nextSelectionGroup", &CyPlayer::nextSelectionGroup, "tuple(CySelectionGroup, int iterOut) (int iterIn, bool bReverse) - gets the next selectionGroup")
 		.def("getNumSelectionGroups", &CyPlayer::getNumSelectionGroups, "int ()")
-		.def("getSelectionGroup", &CyPlayer::getSelectionGroup, python::return_value_policy<python::manage_new_object>(), "CvSelectionGroup* (int iID)")
+		.def("getSelectionGroup", &CyPlayer::getSelectionGroup, boost::python::return_value_policy<boost::python::manage_new_object>(), "CvSelectionGroup* (int iID)")
 
 		.def("trigger", &CyPlayer::trigger, "void (/*EventTriggerTypes*/int eEventTrigger)")
-		.def("getEventOccured", &CyPlayer::getEventOccured, python::return_value_policy<python::reference_existing_object>(), "EventTriggeredData* (int /*EventTypes*/ eEvent)")
+		.def("getEventOccured", &CyPlayer::getEventOccured, boost::python::return_value_policy<boost::python::reference_existing_object>(), "EventTriggeredData* (int /*EventTypes*/ eEvent)")
 		.def("resetEventOccured", &CyPlayer::resetEventOccured, "void (int /*EventTypes*/ eEvent)")
-		.def("getEventTriggered", &CyPlayer::getEventTriggered, python::return_value_policy<python::reference_existing_object>(), "EventTriggeredData* (int iID)")
-		.def("initTriggeredData", &CyPlayer::initTriggeredData, python::return_value_policy<python::reference_existing_object>(), "EventTriggeredData* (int eEventTrigger, bool bFire, int iCityId, int iPlotX, int iPlotY, PlayerTypes eOtherPlayer, int iOtherPlayerCityId, ReligionTypes eReligion, CorporationTypes eCorporation, int iUnitId, BuildingTypes eBuilding)")
+		.def("getEventTriggered", &CyPlayer::getEventTriggered, boost::python::return_value_policy<boost::python::reference_existing_object>(), "EventTriggeredData* (int iID)")
+		.def("initTriggeredData", &CyPlayer::initTriggeredData, boost::python::return_value_policy<boost::python::reference_existing_object>(), "EventTriggeredData* (int eEventTrigger, bool bFire, int iCityId, int iPlotX, int iPlotY, PlayerTypes eOtherPlayer, int iOtherPlayerCityId, ReligionTypes eReligion, CorporationTypes eCorporation, int iUnitId, BuildingTypes eBuilding)")
 		.def("getEventTriggerWeight", &CyPlayer::getEventTriggerWeight, "int getEventTriggerWeight(int eEventTrigger)")
 		;
 }

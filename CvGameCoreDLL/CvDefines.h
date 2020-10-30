@@ -120,4 +120,13 @@
 #define DANGER_RANGE			(4)
 // Sanguo Mod Performance, end
 
+#define _DAWN_OF_CIVILIZATION_H_ // to do: must remove to makefile
+
+// wunshare MPI performance
+#ifdef _DAWN_OF_CIVILIZATION_H_
+#ifndef CACHE_LINE_LEN
+#define CACHE_LINE_LEN	(64)
+#endif
+#endif
+
 #endif	// CVDEFINES_H

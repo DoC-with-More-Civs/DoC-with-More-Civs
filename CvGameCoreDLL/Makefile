@@ -6,10 +6,17 @@
 TOOLKIT=C:\civ4dll compiler(portable)\Microsoft Visual C++ Toolkit 2003
 PSDK=C:\civ4dll compiler(portable)\Microsoft Platform SDK
 CIVINSTALL=C:\GOG Games\Civilization IV Complete\Civ4\Beyond the Sword
-GLOBALBOOST=$(CIVINSTALL)\CvGameCoreDLL\Boost-1.32.0
-GLOBALPYTHON=$(CIVINSTALL)\CvGameCoreDLL\Python24
 ## Uncomment to have newly compiled dlls copied to your mod's Assets directory
 YOURMOD=$(CIVINSTALL)\Mods\RFC Dawn of Civilization
+GLOBALBOOST=$(YOURMOD)\CvGameCoreDLL\Boost-1.32.0 
+GLOBALPYTHON=$(YOURMOD)\CvGameCoreDLL\Python24
+
+##### _DAWN_OF_CIVILIZATION_H_ #####
+MPI_INCS=$(YOURMOD)\DownOfCivilization
+MPI_LIB_PATHS=/LIBPATH:"$(YOURMOD)\CvGameCoreDLL\Release" /LIBPATH:"$(YOURMOD)\DownOfCivilization\Release" 
+
+MPI_LIBS= DawnOfCivilization.lib CvAreaMPI.obj
+##### _DAWN_OF_CIVILIZATION_H_ #####
 
 #### Tools ####
 CC="$(TOOLKIT)\bin\cl.exe"
@@ -51,11 +58,14 @@ Debug_OTHER=Debug\CvGameCoreDLL.exp Debug\CvGameCoreDLL.ilk
 Release_OTHER=Release\CvGameCoreDLL.exp
 
 #### CFLAGS ####
-GLOBAL_CFLAGS=/GR /Gy /W3 /EHsc /Gd /Gm- /DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /Yu"CvGameCoreDLL.h"
+#GLOBAL_CFLAGS=/GR /Gy /W3 /EHsc /Gd /Gm- /DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /Yu"CvGameCoreDLL.h"
+
+##### _DAWN_OF_CIVILIZATION_H_ #####
+GLOBAL_CFLAGS=/GR /Gy /W3 /EHsc /Gd /Gm- /DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /D_DAWN_OF_CIVILIZATION_H_ /Yu"CvGameCoreDLL.h"
+##### _DAWN_OF_CIVILIZATION_H_ #####
+
 Debug_CFLAGS=/MD /Zi /Od /D_DEBUG /RTC1 /Fp"$(Debug_PCH)" $(GLOBAL_CFLAGS) 
-# Debug_CFLAGS=/MD /Zi /Od /D_DEBUG /RTC1 $(GLOBAL_CFLAGS) 
 Release_CFLAGS=/MD /O2 /Oy /Oi /G7 /DNDEBUG /DFINAL_RELEASE /Fp"$(Release_PCH)" $(GLOBAL_CFLAGS) 
-# Release_CFLAGS=/MD /O2 /Oy /Oi /G7 /DNDEBUG /DFINAL_RELEASE $(GLOBAL_CFLAGS) 
 
 #### LDFLAGS ####
 GLOBAL_LDFLAGS=/DLL /NOLOGO /SUBSYSTEM:WINDOWS /LARGEADDRESSAWARE /TLBID:1
@@ -65,14 +75,14 @@ Release_LDFLAGS=/INCREMENTAL:NO /OPT:REF /OPT:ICF /PDB:"$(Release_PDB)" $(GLOBAL
 #### INCLUDES ####
 GLOBAL_INCS=/I"$(TOOLKIT)/include" /I"$(PSDK)/Include" /I"$(PSDK)/Include/mfc" /I"$(GLOBALBOOST)/include" /I"$(GLOBALPYTHON)/include"
 PROJECT_INCS=/IBoost-1.32.0/include /IPython24/include
-Debug_INCS=$(PROJECT_INCS) $(GLOBAL_INCS)
-Release_INCS=$(PROJECT_INCS) $(GLOBAL_INCS)
+Debug_INCS=$(PROJECT_INCS) $(GLOBAL_INCS) /I"$(MPI_INCS)"
+Release_INCS=$(PROJECT_INCS) $(GLOBAL_INCS) /I"$(MPI_INCS)"
 
 #### LIBS ####
-GLOBAL_LIBS=/LIBPATH:"$(TOOLKIT)/lib" /LIBPATH:"$(PSDK)/Lib"  /LIBPATH:"$(GLOBALBOOST)/libs" /LIBPATH:"$(GLOBALPYTHON)/libs" winmm.lib user32.lib
-PROJECT_LIBS=/LIBPATH:Python24/libs /LIBPATH:boost-1.32.0/libs/ boost_python-vc71-mt-1_32.lib
-Debug_LIBS=$(PROJECT_LIBS) $(GLOBAL_LIBS) msvcprt.lib Psapi.lib
-Release_LIBS=$(PROJECT_LIBS) $(GLOBAL_LIBS) Psapi.lib
+GLOBAL_LIBS=/LIBPATH:"$(TOOLKIT)/lib" /LIBPATH:"$(PSDK)/Lib"  /LIBPATH:"$(GLOBALBOOST)/libs" /LIBPATH:"$(GLOBALPYTHON)/libs" winmm.lib user32.lib Psapi.lib $(MPI_LIB_PATHS)
+PROJECT_LIBS=/LIBPATH:Python24/libs /LIBPATH:boost-1.32.0/libs/ boost_python-vc71-mt-1_32.lib $(MPI_LIBS)
+Debug_LIBS=$(PROJECT_LIBS) $(GLOBAL_LIBS) msvcprt.lib 
+Release_LIBS=$(PROJECT_LIBS) $(GLOBAL_LIBS)
 
 #### Objects ####
 Debug_LINKOBJS=$(Debug_OBJS)

@@ -13,12 +13,12 @@
 // published python interface for CyPlayer
 //
 
-void CyPlayerPythonInterface2(python::class_<CyPlayer>& x)
+void CyPlayerPythonInterface2(boost::python::class_<CyPlayer>& x)
 {
 	OutputDebugString("Python Extension Module - CyPlayerPythonInterface2\n");
 
 	// set the docstring of the current module scope 
-	python::scope().attr("__doc__") = "Civilization IV Player Class"; 
+	boost::python::scope().attr("__doc__") = "Civilization IV Player Class"; 
 	x
 		.def("AI_updateFoundValues", &CyPlayer::AI_updateFoundValues, "void (bool bStartingLoc)")
 		.def("AI_foundValue", &CyPlayer::AI_foundValue, "int (int, int, int, bool)")
@@ -117,7 +117,7 @@ void CyPlayerPythonInterface2(python::class_<CyPlayer>& x)
 		.def("AI_bestCivic", &CyPlayer::AI_bestCivic, "int (int iCivicOptionType)")
 		.def("setFreeTechsOnDiscovery", &CyPlayer::setFreeTechsOnDiscovery, "void (int iNewValue)")
 		.def("AI_getNumCitySites", &CyPlayer::AI_getNumCitySites, "int ()")
-		.def("AI_getCitySite", &CyPlayer::AI_getCitySite, python::return_value_policy<python::manage_new_object>(), "CyPlot* (int iPlayer)")
+		.def("AI_getCitySite", &CyPlayer::AI_getCitySite, boost::python::return_value_policy<boost::python::manage_new_object>(), "CyPlot* (int iPlayer)")
 		.def("AI_getMemoryAttitude", &CyPlayer::AI_getMemoryAttitude, "int (int iPlayer, int iMemory)")
 		.def("restoreGeneralThreshold", &CyPlayer::restoreGeneralThreshold, "void ()")
 		.def("canResearchGiven", &CyPlayer::canResearchGiven, "bool (int eTech, bool bTrade, int eGivenTech)")

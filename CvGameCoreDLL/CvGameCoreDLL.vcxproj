@@ -46,7 +46,7 @@
     <NMakeCleanCommandLine Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">nmake /NOLOGO Debug_clean</NMakeCleanCommandLine>
     <NMakeOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CvGameCoreDLL.dll</NMakeOutput>
     <NMakeOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CvGameCoreDLL.dll</NMakeOutput>
-    <NMakePreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WIN32;NDEBUG;_USRDLL;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakePreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WIN32;NDEBUG;_USRDLL;_WINDOWS;CVGAMECOREDLL_EXPORTS;FINAL_RELEASE;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
     <NMakePreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;NDEBUG;_USRDLL;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
     <NMakeIncludeSearchPath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
     <NMakeIncludeSearchPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
@@ -57,9 +57,21 @@
     <NMakeForcedUsingAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(NMakeForcedUsingAssemblies)</NMakeForcedUsingAssemblies>
     <NMakeForcedUsingAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(NMakeForcedUsingAssemblies)</NMakeForcedUsingAssemblies>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>C:\GOG Games\Civilization IV Complete\Civ4\Beyond the Sword\Mods\RFC Dawn of Civilization\CvGameCoreDLL\Boost-1.32.0\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>C:\civ4dll compiler%28portable%29\Microsoft Platform SDK\Include\mfc;C:\civ4dll compiler%28portable%29\Microsoft Visual C++ Toolkit 2003\include;C:\civ4dll compiler%28portable%29\Microsoft Platform SDK\Include;C:\GOG Games\Civilization IV Complete\Civ4\Beyond the Sword\Mods\RFC Dawn of Civilization\CvGameCoreDLL\Python24\include;C:\GOG Games\Civilization IV Complete\Civ4\Beyond the Sword\Mods\RFC Dawn of Civilization\CvGameCoreDLL\Boost-1.32.0\include;C:\GOG Games\Civilization IV Complete\Civ4\Beyond the Sword\Mods\RFC Dawn of Civilization\DownOfCivilization</IncludePath>
+    <ReferencePath />
+    <LibraryPath />
+    <SourcePath />
+  </PropertyGroup>
   <ItemDefinitionGroup>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CvAreaUtils.cpp" />
+    <ClCompile Include="CvStability.cpp" />
+    <ClCompile Include="CvUtils.cpp" />
     <ClCompile Include="_precompile.cpp" />
     <ClCompile Include="CvArea.cpp" />
     <ClCompile Include="CvArtFileMgr.cpp" />
@@ -172,6 +184,7 @@
     <ClInclude Include="CvBugMod.h" />
     <ClInclude Include="CvCity.h" />
     <ClInclude Include="CvCityAI.h" />
+    <ClInclude Include="CvData.h" />
     <ClInclude Include="CvDeal.h" />
     <ClInclude Include="CvDefines.h" />
     <ClInclude Include="CvDiploParameters.h" />
@@ -222,8 +235,10 @@
     <ClInclude Include="CvReplayInfo.h" />
     <ClInclude Include="CvReplayMessage.h" />
     <ClInclude Include="CvRhyes.h" />
+    <ClInclude Include="CvRiseAndFall.h" />
     <ClInclude Include="CvSelectionGroup.h" />
     <ClInclude Include="CvSelectionGroupAI.h" />
+    <ClInclude Include="CvStability.h" />
     <ClInclude Include="CvStatistics.h" />
     <ClInclude Include="CvString.h" />
     <ClInclude Include="CvStructs.h" />
@@ -232,6 +247,7 @@
     <ClInclude Include="CvTeamAI.h" />
     <ClInclude Include="CvUnit.h" />
     <ClInclude Include="CvUnitAI.h" />
+    <ClInclude Include="CvUtils.h" />
     <ClInclude Include="CvXMLLoadUtility.h" />
     <ClInclude Include="CyArea.h" />
     <ClInclude Include="CyArgsList.h" />

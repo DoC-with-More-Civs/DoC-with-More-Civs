@@ -11,7 +11,7 @@ void CyHallOfFameInterface()
 {
 	OutputDebugString("Python Extension Module - CyReplayInterface\n");
 
-	python::class_<CyReplayInfo>("CyReplayInfo")
+	boost::python::class_<CyReplayInfo>("CyReplayInfo")
 		.def("isNone", &CyReplayInfo::isNone, "bool () - Returns whether or not this is a valid object")
 
 		.def("createInfo", &CyReplayInfo::createInfo, "void ()")
@@ -69,9 +69,9 @@ void CyHallOfFameInterface()
 		.def("getModName", &CyReplayInfo::getModName, "std::wstring ()")
 		;
 		
-	python::class_<CyHallOfFameInfo>("CyHallOfFameInfo")
+	boost::python::class_<CyHallOfFameInfo>("CyHallOfFameInfo")
 		.def("loadReplays", &CyHallOfFameInfo::loadReplays, "void ()")
 		.def("getNumGames", &CyHallOfFameInfo::getNumGames, "int ()")
-		.def("getReplayInfo", &CyHallOfFameInfo::getReplayInfo, python::return_value_policy<python::manage_new_object>(), "CyReplayInfo* (int i)")
+		.def("getReplayInfo", &CyHallOfFameInfo::getReplayInfo, boost::python::return_value_policy<boost::python::manage_new_object>(), "CyReplayInfo* (int i)")
 		;
 }

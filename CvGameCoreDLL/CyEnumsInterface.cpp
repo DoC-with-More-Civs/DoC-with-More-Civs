@@ -2,30 +2,30 @@
 #include"CvEnums.h"
 
 #include "CvGameCoreDLLUnDefNew.h"
-# include <boost/python/enum.hpp>
+#include <boost/python/enum.hpp>
 #include "CvGameCoreDLLDefNew.h"
 
 //
-// Python interface for free enums
+// boost::python interface for free enums
 //
 
 void CyEnumsPythonInterface()
 {
 	OutputDebugString("Python Extension Module - CyEnumsPythonInterface\n");
 
-	python::enum_<GameStateTypes>("GameStateTypes")
+	boost::python::enum_<GameStateTypes>("GameStateTypes")
 		.value("GAMESTATE_ON", GAMESTATE_ON)
 		.value("GAMESTATE_OVER", GAMESTATE_OVER)
 		.value("GAMESTATE_EXTENDED", GAMESTATE_EXTENDED)
 		;
 
-	python::enum_<PopupStates>("PopupStates")
+	boost::python::enum_<PopupStates>("PopupStates")
 		.value("POPUPSTATE_IMMEDIATE", POPUPSTATE_IMMEDIATE)
 		.value("POPUPSTATE_QUEUED", POPUPSTATE_QUEUED)
 		.value("POPUPSTATE_MINIMIZED", POPUPSTATE_MINIMIZED)
 		;
 
-	python::enum_<CameraLookAtTypes>("CameraLookAtTypes")
+	boost::python::enum_<CameraLookAtTypes>("CameraLookAtTypes")
 		.value("CAMERALOOKAT_NORMAL", CAMERALOOKAT_NORMAL)
 		.value("CAMERALOOKAT_CITY_ZOOM_IN", CAMERALOOKAT_CITY_ZOOM_IN)
 		.value("CAMERALOOKAT_BATTLE", CAMERALOOKAT_BATTLE)
@@ -33,20 +33,20 @@ void CyEnumsPythonInterface()
 		.value("CAMERALOOKAT_IMMEDIATE", CAMERALOOKAT_IMMEDIATE)
 		;
 
-	python::enum_<CameraMovementSpeeds>("CameraMovementSpeeds")
+	boost::python::enum_<CameraMovementSpeeds>("CameraMovementSpeeds")
 		.value("CAMERAMOVEMENTSPEED_NORMAL", CAMERAMOVEMENTSPEED_NORMAL)
 		.value("CAMERAMOVEMENTSPEED_SLOW", CAMERAMOVEMENTSPEED_SLOW)
 		.value("CAMERAMOVEMENTSPEED_FAST", CAMERAMOVEMENTSPEED_FAST)
 		;
 
-	python::enum_<ZoomLevelTypes>("ZoomLevelTypes")
+	boost::python::enum_<ZoomLevelTypes>("ZoomLevelTypes")
 		.value("ZOOM_UNKNOWN", ZOOM_UNKNOWN)
 		.value("ZOOM_GLOBEVIEW", ZOOM_GLOBEVIEW)
 		.value("ZOOM_NORMAL", ZOOM_NORMAL)
 		.value("ZOOM_DETAIL", ZOOM_DETAIL)
 		;
 
-	python::enum_<DirectionTypes>("DirectionTypes")
+	boost::python::enum_<DirectionTypes>("DirectionTypes")
 		.value("NO_DIRECTION", NO_DIRECTION)
 		.value("DIRECTION_NORTH", DIRECTION_NORTH)
 		.value("DIRECTION_NORTHEAST", DIRECTION_NORTHEAST)
@@ -59,7 +59,7 @@ void CyEnumsPythonInterface()
 		.value("NUM_DIRECTION_TYPES", NUM_DIRECTION_TYPES)
 		;
 
-	python::enum_<CardinalDirectionTypes>("CardinalDirectionTypes")
+	boost::python::enum_<CardinalDirectionTypes>("CardinalDirectionTypes")
 		.value("NO_CARDINALDIRECTION", NO_CARDINALDIRECTION)
 		.value("CARDINALDIRECTION_NORTH", CARDINALDIRECTION_NORTH)
 		.value("CARDINALDIRECTION_EAST", CARDINALDIRECTION_EAST)
@@ -68,15 +68,15 @@ void CyEnumsPythonInterface()
 		.value("NUM_CARDINALDIRECTION_TYPES", NUM_CARDINALDIRECTION_TYPES)
 		;
 
-	python::enum_<ColorTypes>("ColorTypes")
+	boost::python::enum_<ColorTypes>("ColorTypes")
 		.value("NO_COLOR", NO_COLOR)
 		;
 
-	python::enum_<PlayerColorTypes>("PlayerColorTypes")
+	boost::python::enum_<PlayerColorTypes>("PlayerColorTypes")
 		.value("NO_PLAYERCOLOR", NO_PLAYERCOLOR)
 		;
 
-	python::enum_<PlotStyles>("PlotStyles")
+	boost::python::enum_<PlotStyles>("PlotStyles")
 		.value("PLOT_STYLE_NONE", PLOT_STYLE_NONE)
 		.value("PLOT_STYLE_NUMPAD_1", PLOT_STYLE_NUMPAD_1)
 		.value("PLOT_STYLE_NUMPAD_2", PLOT_STYLE_NUMPAD_2)
@@ -107,7 +107,7 @@ void CyEnumsPythonInterface()
 		.value("PLOT_STYLE_CIRCLES", PLOT_STYLE_CIRCLES)
 		;
 
-	python::enum_<PlotLandscapeLayers>("PlotLandscapeLayers")
+	boost::python::enum_<PlotLandscapeLayers>("PlotLandscapeLayers")
 		.value("PLOT_LANDSCAPE_LAYER_ALL", PLOT_LANDSCAPE_LAYER_ALL)
 		.value("PLOT_LANDSCAPE_LAYER_BASE", PLOT_LANDSCAPE_LAYER_BASE)
 		.value("PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS", PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS)
@@ -116,7 +116,7 @@ void CyEnumsPythonInterface()
 		.value("PLOT_LANDSCAPE_LAYER_REVEALED_PLOTS", PLOT_LANDSCAPE_LAYER_REVEALED_PLOTS)
 		;
 
-	python::enum_<AreaBorderLayers>("AreaBorderLayers")
+	boost::python::enum_<AreaBorderLayers>("AreaBorderLayers")
 		.value("AREA_BORDER_LAYER_REVEALED_PLOTS", AREA_BORDER_LAYER_REVEALED_PLOTS)
 		.value("AREA_BORDER_LAYER_WORLD_BUILDER", AREA_BORDER_LAYER_WORLD_BUILDER)
 		.value("AREA_BORDER_LAYER_FOUNDING_BORDER", AREA_BORDER_LAYER_FOUNDING_BORDER)
@@ -128,7 +128,7 @@ void CyEnumsPythonInterface()
 		.value("NUM_AREA_BORDER_LAYERS", NUM_AREA_BORDER_LAYERS)
 		;
 
-	python::enum_<InterfaceModeTypes>("InterfaceModeTypes")
+	boost::python::enum_<InterfaceModeTypes>("InterfaceModeTypes")
 		.value("NO_INTERFACEMODE", NO_INTERFACEMODE)
 		.value("INTERFACEMODE_SELECTION", INTERFACEMODE_SELECTION)
 		.value("INTERFACEMODE_PING", INTERFACEMODE_PING)
@@ -157,7 +157,7 @@ void CyEnumsPythonInterface()
 		.value("NUM_INTERFACEMODE_TYPES", NUM_INTERFACEMODE_TYPES)
 		;
 
-	python::enum_<InterfaceMessageTypes>("InterfaceMessageTypes")
+	boost::python::enum_<InterfaceMessageTypes>("InterfaceMessageTypes")
 		.value("NO_MESSAGE_TYPE", NO_MESSAGE_TYPE)
 		.value("MESSAGE_TYPE_INFO", MESSAGE_TYPE_INFO)
 		.value("MESSAGE_TYPE_DISPLAY_ONLY", MESSAGE_TYPE_DISPLAY_ONLY)
@@ -169,7 +169,7 @@ void CyEnumsPythonInterface()
 		.value("NUM_INTERFACE_MESSAGE_TYPES", NUM_INTERFACE_MESSAGE_TYPES)
 		;
 
-	python::enum_<MinimapModeTypes>("MinimapModeTypes")
+	boost::python::enum_<MinimapModeTypes>("MinimapModeTypes")
 		.value("NO_MINIMAPMODE", NO_MINIMAPMODE)
 		.value("MINIMAPMODE_TERRITORY", MINIMAPMODE_TERRITORY)
 		.value("MINIMAPMODE_TERRAIN", MINIMAPMODE_TERRAIN)
@@ -178,14 +178,14 @@ void CyEnumsPythonInterface()
 		.value("NUM_MINIMAPMODE_TYPES", NUM_MINIMAPMODE_TYPES)
 		;
 
-	python::enum_<EngineDirtyBits>("EngineDirtyBits")
+	boost::python::enum_<EngineDirtyBits>("EngineDirtyBits")
 		.value("GlobeTexture_DIRTY_BIT", GlobeTexture_DIRTY_BIT)
 		.value("MinimapTexture_DIRTY_BIT", MinimapTexture_DIRTY_BIT)
 		.value("CultureBorders_DIRTY_BIT", CultureBorders_DIRTY_BIT)
 		.value("NUM_ENGINE_DIRTY_BITS", NUM_ENGINE_DIRTY_BITS)
 		;
 
-	python::enum_<InterfaceDirtyBits>("InterfaceDirtyBits")
+	boost::python::enum_<InterfaceDirtyBits>("InterfaceDirtyBits")
 		.value("SelectionCamera_DIRTY_BIT", SelectionCamera_DIRTY_BIT)
 		.value("Fog_DIRTY_BIT", Fog_DIRTY_BIT)
 		.value("GlobeLayer_DIRTY_BIT", GlobeLayer_DIRTY_BIT)
@@ -224,14 +224,14 @@ void CyEnumsPythonInterface()
 		.value("NUM_INTERFACE_DIRTY_BITS", NUM_INTERFACE_DIRTY_BITS)
 		;
 
-	python::enum_<CityTabTypes>("CityTabTypes")
+	boost::python::enum_<CityTabTypes>("CityTabTypes")
 		.value("CITYTAB_UNITS", CITYTAB_UNITS)
 		.value("CITYTAB_BUILDINGS", CITYTAB_BUILDINGS)
 		.value("CITYTAB_WONDERS", CITYTAB_WONDERS)
 		.value("NUM_CITYTAB_TYPES", NUM_CITYTAB_TYPES)
 		;
 
-	python::enum_<WidgetTypes>("WidgetTypes")
+	boost::python::enum_<WidgetTypes>("WidgetTypes")
 		.value("WIDGET_PLOT_LIST", WIDGET_PLOT_LIST)
 		.value("WIDGET_PLOT_LIST_SHIFT", WIDGET_PLOT_LIST_SHIFT)
 		.value("WIDGET_CITY_SCROLL", WIDGET_CITY_SCROLL)
@@ -446,7 +446,7 @@ void CyEnumsPythonInterface()
 		.value("NUM_WIDGET_TYPES", NUM_WIDGET_TYPES)
 		;
 
-	python::enum_<ButtonPopupTypes>("ButtonPopupTypes")
+	boost::python::enum_<ButtonPopupTypes>("ButtonPopupTypes")
 		.value("BUTTONPOPUP_TEXT", BUTTONPOPUP_TEXT)
 		.value("BUTTONPOPUP_MAIN_MENU", BUTTONPOPUP_MAIN_MENU)
 		.value("BUTTONPOPUP_CONFIRM_MENU", BUTTONPOPUP_CONFIRM_MENU)
@@ -487,19 +487,19 @@ void CyEnumsPythonInterface()
 		.value("NUM_BUTTONPOPUP_TYPES", NUM_BUTTONPOPUP_TYPES)
 		;
 
-	python::enum_<ClimateTypes>("ClimateTypes")
+	boost::python::enum_<ClimateTypes>("ClimateTypes")
 		.value("NO_CLIMATE", NO_CLIMATE)
 		;
 
-	python::enum_<SeaLevelTypes>("SeaLevelTypes")
+	boost::python::enum_<SeaLevelTypes>("SeaLevelTypes")
 		.value("NO_SEALEVEL", NO_SEALEVEL)
 		;
 
-	python::enum_<CustomMapOptionTypes>("CustomMapOptionTypes")
+	boost::python::enum_<CustomMapOptionTypes>("CustomMapOptionTypes")
 		.value("NO_CUSTOM_MAPOPTION", NO_CUSTOM_MAPOPTION)
 		;
 
-	python::enum_<WorldSizeTypes>("WorldSizeTypes")
+	boost::python::enum_<WorldSizeTypes>("WorldSizeTypes")
 		.value("NO_WORLDSIZE", NO_WORLDSIZE)
 		.value("WORLDSIZE_DUEL", WORLDSIZE_DUEL)
 		.value("WORLDSIZE_TINY", WORLDSIZE_TINY)
@@ -510,11 +510,11 @@ void CyEnumsPythonInterface()
 		.value("NUM_WORLDSIZE_TYPES", NUM_WORLDSIZE_TYPES)
 		;
 
-	python::enum_<TerrainTypes>("TerrainTypes")
+	boost::python::enum_<TerrainTypes>("TerrainTypes")
 		.value("NO_TERRAIN", NO_TERRAIN)
 		;
 
-	python::enum_<PlotTypes>("PlotTypes")
+	boost::python::enum_<PlotTypes>("PlotTypes")
 		.value("NO_PLOT", NO_PLOT)
 		.value("PLOT_PEAK", PLOT_PEAK)
 		.value("PLOT_HILLS", PLOT_HILLS)
@@ -523,7 +523,7 @@ void CyEnumsPythonInterface()
 		.value("NUM_PLOT_TYPES", NUM_PLOT_TYPES)
 		;
 
-	python::enum_<YieldTypes>("YieldTypes")
+	boost::python::enum_<YieldTypes>("YieldTypes")
 		.value("NO_YIELD", NO_YIELD)
 		.value("YIELD_FOOD", YIELD_FOOD)
 		.value("YIELD_PRODUCTION", YIELD_PRODUCTION)
@@ -531,7 +531,7 @@ void CyEnumsPythonInterface()
 		.value("NUM_YIELD_TYPES", NUM_YIELD_TYPES)
 		;
 
-	python::enum_<CommerceTypes>("CommerceTypes")
+	boost::python::enum_<CommerceTypes>("CommerceTypes")
 		.value("COMMERCE_GOLD", COMMERCE_GOLD)
 		.value("COMMERCE_RESEARCH", COMMERCE_RESEARCH)
 		.value("COMMERCE_CULTURE", COMMERCE_CULTURE)
@@ -539,19 +539,19 @@ void CyEnumsPythonInterface()
 		.value("NUM_COMMERCE_TYPES", NUM_COMMERCE_TYPES)
 		;
 
-	python::enum_<AdvisorTypes>("AdvisorTypes")
+	boost::python::enum_<AdvisorTypes>("AdvisorTypes")
 		.value("NO_ADVISOR", NO_ADVISOR)
 		;
 
-	python::enum_<FlavorTypes>("FlavorTypes")
+	boost::python::enum_<FlavorTypes>("FlavorTypes")
 		.value("NO_FLAVOR", NO_FLAVOR)
 		;
 
-	python::enum_<EmphasizeTypes>("EmphasizeTypes")
+	boost::python::enum_<EmphasizeTypes>("EmphasizeTypes")
 		.value("NO_EMPHASIZE", NO_EMPHASIZE)
 		;
 
-	python::enum_<GameOptionTypes>("GameOptionTypes")
+	boost::python::enum_<GameOptionTypes>("GameOptionTypes")
 		.value("NO_GAMEOPTION", NO_GAMEOPTION)
 		.value("GAMEOPTION_ADVANCED_START", GAMEOPTION_ADVANCED_START)
 		.value("GAMEOPTION_NO_CITY_RAZING", GAMEOPTION_NO_CITY_RAZING)
@@ -585,7 +585,7 @@ void CyEnumsPythonInterface()
 		.value("NUM_GAMEOPTION_TYPES", NUM_GAMEOPTION_TYPES)
 		;
 
-	python::enum_<MultiplayerOptionTypes>("MultiplayerOptionTypes")
+	boost::python::enum_<MultiplayerOptionTypes>("MultiplayerOptionTypes")
 		.value("NO_MPOPTION", NO_MPOPTION)
 		.value("MPOPTION_SIMULTANEOUS_TURNS", MPOPTION_SIMULTANEOUS_TURNS)
 		.value("MPOPTION_TAKEOVER_AI", MPOPTION_TAKEOVER_AI)
@@ -595,13 +595,13 @@ void CyEnumsPythonInterface()
 		.value("NUM_MPOPTION_TYPES", NUM_MPOPTION_TYPES)
 		;
 
-	python::enum_<SpecialOptionTypes>("SpecialOptionTypes")
+	boost::python::enum_<SpecialOptionTypes>("SpecialOptionTypes")
 		.value("NO_SPECIALOPTION", NO_SPECIALOPTION)
 		.value("SPECIALOPTION_REPORT_STATS", SPECIALOPTION_REPORT_STATS)
 		.value("NUM_SPECIALOPTION_TYPES", NUM_SPECIALOPTION_TYPES)
 		;
 
-	python::enum_<PlayerOptionTypes>("PlayerOptionTypes")
+	boost::python::enum_<PlayerOptionTypes>("PlayerOptionTypes")
 		.value("NO_PLAYEROPTION", NO_PLAYEROPTION)
 		.value("PLAYEROPTION_ADVISOR_POPUPS", PLAYEROPTION_ADVISOR_POPUPS)
 		.value("PLAYEROPTION_ADVISOR_HELP", PLAYEROPTION_ADVISOR_HELP)
@@ -628,7 +628,7 @@ void CyEnumsPythonInterface()
 		.value("NUM_PLAYEROPTION_TYPES", NUM_PLAYEROPTION_TYPES)
 		;
 
-	python::enum_<GraphicOptionTypes>("GraphicOptionTypes")
+	boost::python::enum_<GraphicOptionTypes>("GraphicOptionTypes")
 		.value("NO_GRAPHICOPTION", NO_GRAPHICOPTION)
 		.value("GRAPHICOPTION_SINGLE_UNIT_GRAPHICS", GRAPHICOPTION_SINGLE_UNIT_GRAPHICS)
 		.value("GRAPHICOPTION_HEALTH_BARS", GRAPHICOPTION_HEALTH_BARS)
@@ -646,7 +646,7 @@ void CyEnumsPythonInterface()
 		.value("NUM_GRAPHICOPTION_TYPES", NUM_GRAPHICOPTION_TYPES)
 		;
 
-	python::enum_<ForceControlTypes>("ForceControlTypes")
+	boost::python::enum_<ForceControlTypes>("ForceControlTypes")
 		.value("NO_FORCECONTROL", NO_FORCECONTROL)
 		.value("FORCECONTROL_SPEED", FORCECONTROL_SPEED)
 		.value("FORCECONTROL_HANDICAP", FORCECONTROL_HANDICAP)
@@ -658,47 +658,47 @@ void CyEnumsPythonInterface()
 		.value("NUM_FORCECONTROL_TYPES", NUM_FORCECONTROL_TYPES)
 		;
 
-	python::enum_<VictoryTypes>("VictoryTypes")
+	boost::python::enum_<VictoryTypes>("VictoryTypes")
 		.value("NO_VICTORY", NO_VICTORY)
 		;
 
-	python::enum_<FeatureTypes>("FeatureTypes")
+	boost::python::enum_<FeatureTypes>("FeatureTypes")
 		.value("NO_FEATURE", NO_FEATURE)
 		;
 
-	python::enum_<BonusTypes>("BonusTypes")
+	boost::python::enum_<BonusTypes>("BonusTypes")
 		.value("NO_BONUS", NO_BONUS)
 		;
 
-	python::enum_<BonusClassTypes>("BonusClassTypes")
+	boost::python::enum_<BonusClassTypes>("BonusClassTypes")
 		.value("NO_BONUSCLASS", NO_BONUSCLASS)
 		;
 
-	python::enum_<ImprovementTypes>("ImprovementTypes")
+	boost::python::enum_<ImprovementTypes>("ImprovementTypes")
 		.value("NO_IMPROVEMENT", NO_IMPROVEMENT)
 		;
 
-	python::enum_<RouteTypes>("RouteTypes")
+	boost::python::enum_<RouteTypes>("RouteTypes")
 		.value("NO_ROUTE", NO_ROUTE)
 		;
 
-	python::enum_<RiverTypes>("RiverTypes")
+	boost::python::enum_<RiverTypes>("RiverTypes")
 		.value("NO_RIVER", NO_RIVER)
 		;
 
-	python::enum_<GoodyTypes>("GoodyTypes")
+	boost::python::enum_<GoodyTypes>("GoodyTypes")
 		.value("NO_GOODY", NO_GOODY)
 		;
 
-	python::enum_<BuildTypes>("BuildTypes")
+	boost::python::enum_<BuildTypes>("BuildTypes")
 		.value("NO_BUILD", NO_BUILD)
 		;
 
-	python::enum_<SymbolTypes>("SymbolTypes")
+	boost::python::enum_<SymbolTypes>("SymbolTypes")
 		.value("NO_SYMBOL", NO_SYMBOL)
 		;
 
-	python::enum_<FontSymbols>("FontSymbols")
+	boost::python::enum_<FontSymbols>("FontSymbols")
 		.value("HAPPY_CHAR", HAPPY_CHAR)
 		.value("UNHAPPY_CHAR", UNHAPPY_CHAR)
 		.value("HEALTHY_CHAR", HEALTHY_CHAR)
@@ -737,39 +737,39 @@ void CyEnumsPythonInterface()
 		.value("MAX_NUM_SYMBOLS", MAX_NUM_SYMBOLS)
 		;
 
-	python::enum_<HandicapTypes>("HandicapTypes")
+	boost::python::enum_<HandicapTypes>("HandicapTypes")
 		.value("NO_HANDICAP", NO_HANDICAP)
 		;
 
-	python::enum_<GameSpeedTypes>("GameSpeedTypes")
+	boost::python::enum_<GameSpeedTypes>("GameSpeedTypes")
 		.value("NO_GAMESPEED", NO_GAMESPEED)
 		;
 
-	python::enum_<TurnTimerTypes>("TurnTimerTypes")
+	boost::python::enum_<TurnTimerTypes>("TurnTimerTypes")
 		.value("NO_TURNTIMER", NO_TURNTIMER)
 		;
 
-	python::enum_<EraTypes>("EraTypes")
+	boost::python::enum_<EraTypes>("EraTypes")
 		.value("NO_ERA", NO_ERA)
 		;
 
-	python::enum_<CivilizationTypes>("CivilizationTypes")
+	boost::python::enum_<CivilizationTypes>("CivilizationTypes")
 		.value("NO_CIVILIZATION", NO_CIVILIZATION)
 		;
 
-	python::enum_<LeaderHeadTypes>("LeaderHeadTypes")
+	boost::python::enum_<LeaderHeadTypes>("LeaderHeadTypes")
 		.value("NO_LEADER", NO_LEADER)
 		;
 
-	python::enum_<ArtStyleTypes>("ArtStyleTypes")
+	boost::python::enum_<ArtStyleTypes>("ArtStyleTypes")
 		.value("NO_ARTSTYLE", NO_ARTSTYLE)
 		;
 
-	python::enum_<UnitArtStyleTypes>("UnitArtStyleTypes")
+	boost::python::enum_<UnitArtStyleTypes>("UnitArtStyleTypes")
 		.value("NO_UNIT_ARTSTYLE", NO_UNIT_ARTSTYLE)
 		;
 
-	python::enum_<CitySizeTypes>("CitySizeTypes")
+	boost::python::enum_<CitySizeTypes>("CitySizeTypes")
 		.value("NO_CITYSIZE", NO_CITYSIZE)
 		.value("CITYSIZE_SMALL", CITYSIZE_SMALL)
 		.value("CITYSIZE_MEDIUM", CITYSIZE_MEDIUM)
@@ -777,21 +777,21 @@ void CyEnumsPythonInterface()
 		.value("NUM_CITYSIZE_TYPES", NUM_CITYSIZE_TYPES)
 		;
 
-	python::enum_<FootstepAudioTypes>("FootstepAudioTypes")
+	boost::python::enum_<FootstepAudioTypes>("FootstepAudioTypes")
 		.value("NO_FOOTSTEPAUDIO", NO_FOOTSTEPAUDIO)
 		;
 
-	python::enum_<FootstepAudioTags>("FootstepAudioTags")
+	boost::python::enum_<FootstepAudioTags>("FootstepAudioTags")
 		.value("NO_FOOTSTEPAUDIO_TAG", NO_FOOTSTEPAUDIO_TAG)
 		;
 
-	python::enum_<ChatTargetTypes>("ChatTargetTypes")
+	boost::python::enum_<ChatTargetTypes>("ChatTargetTypes")
 		.value("NO_CHATTARGET", NO_CHATTARGET)
 		.value("CHATTARGET_ALL", CHATTARGET_ALL)
 		.value("CHATTARGET_TEAM", CHATTARGET_TEAM)
 		;
 
-	python::enum_<VoiceTargetTypes>("VoiceTargetTypes")
+	boost::python::enum_<VoiceTargetTypes>("VoiceTargetTypes")
 		.value("NO_VOICETARGET", NO_VOICETARGET)
 		.value("VOICETARGET_DIPLO", VOICETARGET_DIPLO)
 		.value("VOICETARGET_TEAM", VOICETARGET_TEAM)
@@ -799,19 +799,19 @@ void CyEnumsPythonInterface()
 		.value("NUM_VOICETARGETS", NUM_VOICETARGETS)
 		;
 
-	python::enum_<TeamTypes>("TeamTypes")
+	boost::python::enum_<TeamTypes>("TeamTypes")
 		.value("NO_TEAM", NO_TEAM)
 		;
 
-	python::enum_<PlayerTypes>("PlayerTypes")
+	boost::python::enum_<PlayerTypes>("PlayerTypes")
 		.value("NO_PLAYER", NO_PLAYER)
 		;
 
-	python::enum_<TraitTypes>("TraitTypes")
+	boost::python::enum_<TraitTypes>("TraitTypes")
 		.value("NO_TRAIT", NO_TRAIT)
 		;
 
-	python::enum_<OrderTypes>("OrderTypes")
+	boost::python::enum_<OrderTypes>("OrderTypes")
 		.value("NO_ORDER", NO_ORDER)
 		.value("ORDER_TRAIN", ORDER_TRAIN)
 		.value("ORDER_CONSTRUCT", ORDER_CONSTRUCT)
@@ -820,7 +820,7 @@ void CyEnumsPythonInterface()
 		.value("NUM_ORDER_TYPES", NUM_ORDER_TYPES)
 		;
 
-	python::enum_<TaskTypes>("TaskTypes")
+	boost::python::enum_<TaskTypes>("TaskTypes")
 		.value("TASK_RAZE", TASK_RAZE)
 		.value("TASK_DISBAND", TASK_DISBAND)
 		.value("TASK_GIFT", TASK_GIFT)
@@ -839,31 +839,31 @@ void CyEnumsPythonInterface()
 		.value("NUM_TASK_TYPES", NUM_TASK_TYPES)
 		;
 
-	python::enum_<BuildingClassTypes>("BuildingClassTypes")
+	boost::python::enum_<BuildingClassTypes>("BuildingClassTypes")
 		.value("NO_BUILDINGCLASS", NO_BUILDINGCLASS)
 		;
 
-	python::enum_<BuildingTypes>("BuildingTypes")
+	boost::python::enum_<BuildingTypes>("BuildingTypes")
 		.value("NO_BUILDING", NO_BUILDING)
 		;
 
-	python::enum_<SpecialBuildingTypes>("SpecialBuildingTypes")
+	boost::python::enum_<SpecialBuildingTypes>("SpecialBuildingTypes")
 		.value("NO_SPECIALBUILDING", NO_SPECIALBUILDING)
 		;
 
-	python::enum_<ProjectTypes>("ProjectTypes")
+	boost::python::enum_<ProjectTypes>("ProjectTypes")
 		.value("NO_PROJECT", NO_PROJECT)
 		;
 
-	python::enum_<ProcessTypes>("ProcessTypes")
+	boost::python::enum_<ProcessTypes>("ProcessTypes")
 		.value("NO_PROCESS", NO_PROCESS)
 		;
 
-	python::enum_<VoteTypes>("VoteTypes")
+	boost::python::enum_<VoteTypes>("VoteTypes")
 		.value("NO_VOTE", NO_VOTE)
 		;
 
-	python::enum_<PlayerVoteTypes>("PlayerVoteTypes")
+	boost::python::enum_<PlayerVoteTypes>("PlayerVoteTypes")
 		.value("NO_PLAYER_VOTE_CHECKED", NO_PLAYER_VOTE_CHECKED)
 		.value("PLAYER_VOTE_NEVER", PLAYER_VOTE_NEVER)
 		.value("PLAYER_VOTE_ABSTAIN", PLAYER_VOTE_ABSTAIN)
@@ -872,7 +872,7 @@ void CyEnumsPythonInterface()
 		.value("NO_PLAYER_VOTE", NO_PLAYER_VOTE)
 		;
 
-	python::enum_<InfoBarTypes>("InfoBarTypes")
+	boost::python::enum_<InfoBarTypes>("InfoBarTypes")
 		.value("INFOBAR_STORED", INFOBAR_STORED)
 		.value("INFOBAR_RATE", INFOBAR_RATE)
 		.value("INFOBAR_RATE_EXTRA", INFOBAR_RATE_EXTRA)
@@ -880,22 +880,22 @@ void CyEnumsPythonInterface()
 		.value("NUM_INFOBAR_TYPES", NUM_INFOBAR_TYPES)
 		;
 
-	python::enum_<HealthBarTypes>("HealthBarTypes")
+	boost::python::enum_<HealthBarTypes>("HealthBarTypes")
 		.value("HEALTHBAR_ALIVE_ATTACK", HEALTHBAR_ALIVE_ATTACK)
 		.value("HEALTHBAR_ALIVE_DEFEND", HEALTHBAR_ALIVE_DEFEND)
 		.value("HEALTHBAR_DEAD", HEALTHBAR_DEAD)
 		.value("NUM_HEALTHBAR_TYPES", NUM_HEALTHBAR_TYPES)
 		;
 
-	python::enum_<ConceptTypes>("ConceptTypes")
+	boost::python::enum_<ConceptTypes>("ConceptTypes")
 		.value("NO_CONCEPT", NO_CONCEPT)
 		;
 
-	python::enum_<NewConceptTypes>("NewConceptTypes")
+	boost::python::enum_<NewConceptTypes>("NewConceptTypes")
 		.value("NO_NEW_CONCEPT", NO_NEW_CONCEPT)
 		;
 
-	python::enum_<CalendarTypes>("CalendarTypes")
+	boost::python::enum_<CalendarTypes>("CalendarTypes")
 		.value("CALENDAR_DEFAULT", CALENDAR_DEFAULT)
 		.value("CALENDAR_BI_YEARLY", CALENDAR_BI_YEARLY)
 		.value("CALENDAR_YEARS", CALENDAR_YEARS)
@@ -905,15 +905,15 @@ void CyEnumsPythonInterface()
 		.value("CALENDAR_WEEKS", CALENDAR_WEEKS)
 		;
 
-	python::enum_<SeasonTypes>("SeasonTypes")
+	boost::python::enum_<SeasonTypes>("SeasonTypes")
 		.value("NO_SEASON", NO_SEASON)
 		;
 
-	python::enum_<MonthTypes>("MonthTypes")
+	boost::python::enum_<MonthTypes>("MonthTypes")
 		.value("NO_MONTH", NO_MONTH)
 		;
 
-	python::enum_<DenialTypes>("DenialTypes")
+	boost::python::enum_<DenialTypes>("DenialTypes")
 		.value("NO_DENIAL", NO_DENIAL)
 		.value("DENIAL_UNKNOWN", DENIAL_UNKNOWN)
 		.value("DENIAL_NEVER", DENIAL_NEVER)
@@ -941,7 +941,7 @@ void CyEnumsPythonInterface()
 		.value("DENIAL_TOO_FAR", DENIAL_TOO_FAR)
 		;
 
-	python::enum_<DomainTypes>("DomainTypes")
+	boost::python::enum_<DomainTypes>("DomainTypes")
 		.value("DOMAIN_SEA", DOMAIN_SEA)
 		.value("DOMAIN_AIR", DOMAIN_AIR)
 		.value("DOMAIN_LAND", DOMAIN_LAND)
@@ -949,23 +949,23 @@ void CyEnumsPythonInterface()
 		.value("NUM_DOMAIN_TYPES", NUM_DOMAIN_TYPES)
 		;
 
-	python::enum_<UnitClassTypes>("UnitClassTypes")
+	boost::python::enum_<UnitClassTypes>("UnitClassTypes")
 		.value("NO_UNITCLASS", NO_UNITCLASS)
 		;
 
-	python::enum_<UnitTypes>("UnitTypes")
+	boost::python::enum_<UnitTypes>("UnitTypes")
 		.value("NO_UNIT", NO_UNIT)
 		;
 
-	python::enum_<SpecialUnitTypes>("SpecialUnitTypes")
+	boost::python::enum_<SpecialUnitTypes>("SpecialUnitTypes")
 		.value("NO_SPECIALUNIT", NO_SPECIALUNIT)
 		;
 
-	python::enum_<UnitCombatTypes>("UnitCombatTypes")
+	boost::python::enum_<UnitCombatTypes>("UnitCombatTypes")
 		.value("NO_UNITCOMBAT", NO_UNITCOMBAT)
 		;
 
-	python::enum_<UnitAITypes>("UnitAITypes")
+	boost::python::enum_<UnitAITypes>("UnitAITypes")
 		.value("NO_UNITAI", NO_UNITAI)
 		.value("UNITAI_UNKNOWN", UNITAI_UNKNOWN)
 		.value("UNITAI_ANIMAL", UNITAI_ANIMAL)
@@ -1011,22 +1011,22 @@ void CyEnumsPythonInterface()
 		.value("NUM_UNITAI_TYPES", NUM_UNITAI_TYPES)
 		;
 
-	python::enum_<InvisibleTypes>("InvisibleTypes")
+	boost::python::enum_<InvisibleTypes>("InvisibleTypes")
 		.value("NO_INVISIBLE", NO_INVISIBLE)
 		;
 
-	python::enum_<VoteSourceTypes>("VoteSourceTypes")
+	boost::python::enum_<VoteSourceTypes>("VoteSourceTypes")
 		.value("NO_VOTESOURCE", NO_VOTESOURCE)
 		;
 
-	python::enum_<ProbabilityTypes>("ProbabilityTypes")
+	boost::python::enum_<ProbabilityTypes>("ProbabilityTypes")
 		.value("NO_PROBABILITY", NO_PROBABILITY)
 		.value("PROBABILITY_LOW", PROBABILITY_LOW)
 		.value("PROBABILITY_REAL", PROBABILITY_REAL)
 		.value("PROBABILITY_HIGH", PROBABILITY_HIGH)
 		;
 
-	python::enum_<ActivityTypes>("ActivityTypes")
+	boost::python::enum_<ActivityTypes>("ActivityTypes")
 		.value("NO_ACTIVITY", NO_ACTIVITY)
 		.value("ACTIVITY_AWAKE", ACTIVITY_AWAKE)
 		.value("ACTIVITY_HOLD", ACTIVITY_HOLD)
@@ -1047,7 +1047,7 @@ void CyEnumsPythonInterface()
 		.value("NUM_ACTIVITY_TYPES", NUM_ACTIVITY_TYPES)
 		;
 
-	python::enum_<AutomateTypes>("AutomateTypes")
+	boost::python::enum_<AutomateTypes>("AutomateTypes")
 		.value("NO_AUTOMATE", NO_AUTOMATE)
 		.value("AUTOMATE_BUILD", AUTOMATE_BUILD)
 		.value("AUTOMATE_NETWORK", AUTOMATE_NETWORK)
@@ -1057,7 +1057,7 @@ void CyEnumsPythonInterface()
 		.value("NUM_AUTOMATE_TYPES", NUM_AUTOMATE_TYPES)
 		;
 
-	python::enum_<MissionTypes>("MissionTypes")
+	boost::python::enum_<MissionTypes>("MissionTypes")
 		.value("NO_MISSION", NO_MISSION)
 		.value("MISSION_MOVE_TO", MISSION_MOVE_TO)
 		.value("MISSION_ROUTE_TO", MISSION_ROUTE_TO)
@@ -1121,7 +1121,7 @@ void CyEnumsPythonInterface()
 		.value("NUM_MISSION_TYPES", NUM_MISSION_TYPES )
 		;
 
-	python::enum_<MissionAITypes>("MissionAITypes")
+	boost::python::enum_<MissionAITypes>("MissionAITypes")
 		.value("NO_MISSIONAI", NO_MISSIONAI)
 		.value("MISSIONAI_SHADOW", MISSIONAI_SHADOW)
 		.value("MISSIONAI_GROUP", MISSIONAI_GROUP)
@@ -1149,7 +1149,7 @@ void CyEnumsPythonInterface()
 		;
 
 	// any additions need to be reflected in GlobalTypes.xml
-	python::enum_<CommandTypes>("CommandTypes")
+	boost::python::enum_<CommandTypes>("CommandTypes")
 		.value("NO_COMMAND", NO_COMMAND)
 		.value("COMMAND_PROMOTION", COMMAND_PROMOTION)
 		.value("COMMAND_UPGRADE", COMMAND_UPGRADE)
@@ -1168,7 +1168,7 @@ void CyEnumsPythonInterface()
 		.value("NUM_COMMAND_TYPES", NUM_COMMAND_TYPES)
 		;
 
-	python::enum_<ControlTypes>("ControlTypes")
+	boost::python::enum_<ControlTypes>("ControlTypes")
 		.value("NO_CONTROL", NO_CONTROL)
 		.value("CONTROL_CENTERONSELECTION", CONTROL_CENTERONSELECTION)
 		.value("CONTROL_SELECTYUNITTYPE", CONTROL_SELECTYUNITTYPE)
@@ -1238,47 +1238,47 @@ void CyEnumsPythonInterface()
 		.value("NUM_CONTROL_TYPES", NUM_CONTROL_TYPES)
 		;
 
-	python::enum_<PromotionTypes>("PromotionTypes")
+	boost::python::enum_<PromotionTypes>("PromotionTypes")
 		.value("NO_PROMOTION", NO_PROMOTION)
 		;
 
-	python::enum_<TechTypes>("TechTypes")
+	boost::python::enum_<TechTypes>("TechTypes")
 		.value("NO_TECH", NO_TECH)
 		;
 
-	python::enum_<SpecialistTypes>("SpecialistTypes")
+	boost::python::enum_<SpecialistTypes>("SpecialistTypes")
 		.value("NO_SPECIALIST", NO_SPECIALIST)
 		;
 
-	python::enum_<ReligionTypes>("ReligionTypes")
+	boost::python::enum_<ReligionTypes>("ReligionTypes")
 		.value("NO_RELIGION", NO_RELIGION)
 		;
 
-	python::enum_<CorporationTypes>("CorporationTypes")
+	boost::python::enum_<CorporationTypes>("CorporationTypes")
 		.value("NO_CORPORATION", NO_CORPORATION)
 		;
 
-	python::enum_<HurryTypes>("HurryTypes")
+	boost::python::enum_<HurryTypes>("HurryTypes")
 		.value("NO_HURRY", NO_HURRY)
 		;
 
-	python::enum_<UpkeepTypes>("UpkeepTypes")
+	boost::python::enum_<UpkeepTypes>("UpkeepTypes")
 		.value("NO_UPKEEP", NO_UPKEEP)
 		;
 
-	python::enum_<CultureLevelTypes>("CultureLevelTypes")
+	boost::python::enum_<CultureLevelTypes>("CultureLevelTypes")
 		.value("NO_CULTURELEVEL", NO_CULTURELEVEL)
 		;
 
-	python::enum_<CivicOptionTypes>("CivicOptionTypes")
+	boost::python::enum_<CivicOptionTypes>("CivicOptionTypes")
 		.value("NO_CIVICOPTION", NO_CIVICOPTION)
 		;
 
-	python::enum_<CivicTypes>("CivicTypes")
+	boost::python::enum_<CivicTypes>("CivicTypes")
 		.value("NO_CIVIC", NO_CIVIC)
 		;
 
-	python::enum_<WarPlanTypes>("WarPlanTypes")
+	boost::python::enum_<WarPlanTypes>("WarPlanTypes")
 		.value("NO_WARPLAN", NO_WARPLAN)
 		.value("WARPLAN_ATTACKED_RECENT", WARPLAN_ATTACKED_RECENT)
 		.value("WARPLAN_ATTACKED", WARPLAN_ATTACKED)
@@ -1289,7 +1289,7 @@ void CyEnumsPythonInterface()
 		.value("WARPLAN_DOGPILE", WARPLAN_DOGPILE)
 		;
 
-	python::enum_<AreaAITypes>("AreaAITypes")
+	boost::python::enum_<AreaAITypes>("AreaAITypes")
 		.value("NO_AREAAI", NO_AREAAI)
 		.value("AREAAI_OFFENSIVE", AREAAI_OFFENSIVE)
 		.value("AREAAI_DEFENSIVE", AREAAI_DEFENSIVE)
@@ -1298,20 +1298,20 @@ void CyEnumsPythonInterface()
 		.value("AREAAI_NEUTRAL", AREAAI_NEUTRAL)
 		;
 
-	python::enum_<EndTurnButtonStates>("EndTurnButtonStates")
+	boost::python::enum_<EndTurnButtonStates>("EndTurnButtonStates")
 		.value("END_TURN_GO", END_TURN_GO)
 		.value("END_TURN_OVER_HIGHLIGHT", END_TURN_OVER_HIGHLIGHT)
 		.value("END_TURN_OVER_DARK", END_TURN_OVER_DARK)
 		.value("NUM_END_TURN_STATES", NUM_END_TURN_STATES)
 		;
 
-	python::enum_<FogOfWarModeTypes>("FogOfWarModeTypes")
+	boost::python::enum_<FogOfWarModeTypes>("FogOfWarModeTypes")
 		.value("FOGOFWARMODE_OFF", FOGOFWARMODE_OFF)
 		.value("FOGOFWARMODE_UNEXPLORED", FOGOFWARMODE_UNEXPLORED)
 		.value("NUM_FOGOFWARMODE_TYPES", NUM_FOGOFWARMODE_TYPES)
 		;
 
-	python::enum_<AnimationTypes>("AnimationTypes")
+	boost::python::enum_<AnimationTypes>("AnimationTypes")
 		.value("NONE_ANIMATION", NONE_ANIMATION)
 		.value("BONUSANIMATION_UNIMPROVED", BONUSANIMATION_UNIMPROVED)
 		.value("BONUSANIMATION_NOT_WORKED", BONUSANIMATION_NOT_WORKED)
@@ -1325,11 +1325,11 @@ void CyEnumsPythonInterface()
 		.value("IMPROVEMENTANIMATION_ON_EXTRA_4", IMPROVEMENTANIMATION_ON_EXTRA_4)
 		;
 
-	python::enum_<EntityEventTypes>("EntityEventTypes")
+	boost::python::enum_<EntityEventTypes>("EntityEventTypes")
 		.value( "ENTITY_EVENT_NONE", ENTITY_EVENT_NONE )
 		;
 
-	python::enum_<AnimationPathTypes>("AnimationPathTypes")
+	boost::python::enum_<AnimationPathTypes>("AnimationPathTypes")
 		.value( "ANIMATIONPATH_NONE", ANIMATIONPATH_NONE )
 		.value( "ANIMATIONPATH_IDLE", ANIMATIONPATH_IDLE )
 		.value( "ANIMATIONPATH_MOVE", ANIMATIONPATH_MOVE )
@@ -1353,15 +1353,15 @@ void CyEnumsPythonInterface()
 		.value( "ANIMATIONPATH_AIRBOMB", ANIMATIONPATH_AIRBOMB )
 		;
 
-	python::enum_<AnimationCategoryTypes>("AnimationCategoryTypes")
+	boost::python::enum_<AnimationCategoryTypes>("AnimationCategoryTypes")
 		.value("ANIMCAT_NONE", ANIMCAT_NONE)
 		;
 
-	python::enum_<CursorTypes>("CursorTypes")
+	boost::python::enum_<CursorTypes>("CursorTypes")
 		.value("NO_CURSOR", NO_CURSOR)
 		;
 
-	python::enum_<TradeableItems>("TradeableItems")
+	boost::python::enum_<TradeableItems>("TradeableItems")
 		.value("NO_TRADEABLE_ITEMS", TRADE_ITEM_NONE)
 		.value("TRADE_GOLD", TRADE_GOLD)
 		.value("TRADE_GOLD_PER_TURN", TRADE_GOLD_PER_TURN)
@@ -1386,7 +1386,7 @@ void CyEnumsPythonInterface()
 		.value("NUM_TRADEABLE_ITEMS", NUM_TRADEABLE_ITEMS)
 		;
 
-	python::enum_<DiploEventTypes>("DiploEventTypes")
+	boost::python::enum_<DiploEventTypes>("DiploEventTypes")
 		.value("NO_DIPLOEVENT", NO_DIPLOEVENT)
 		.value("DIPLOEVENT_CONTACT", DIPLOEVENT_CONTACT)
 		.value("DIPLOEVENT_AI_CONTACT", DIPLOEVENT_AI_CONTACT)
@@ -1412,11 +1412,11 @@ void CyEnumsPythonInterface()
 		.value("NUM_DIPLOEVENT_TYPES", NUM_DIPLOEVENT_TYPES)
 		;
 
-	python::enum_<DiploCommentTypes>("DiploCommentTypes")
+	boost::python::enum_<DiploCommentTypes>("DiploCommentTypes")
 		.value("NO_DIPLOCOMMENT", NO_DIPLOCOMMENT)
 		;
 
-	python::enum_<NetContactTypes>("NetContactTypes")
+	boost::python::enum_<NetContactTypes>("NetContactTypes")
 		.value("NO_NETCONTACT", NO_NETCONTACT)
 		.value("NETCONTACT_INITIAL", NETCONTACT_INITIAL)
 		.value("NETCONTACT_RESPONSE", NETCONTACT_RESPONSE)
@@ -1425,7 +1425,7 @@ void CyEnumsPythonInterface()
 		.value("NUM_NETCONTACT_TYPES", NUM_NETCONTACT_TYPES)
 		;
 
-	python::enum_<ContactTypes>("ContactTypes")
+	boost::python::enum_<ContactTypes>("ContactTypes")
 		.value("CONTACT_RELIGION_PRESSURE", CONTACT_RELIGION_PRESSURE)
 		.value("CONTACT_CIVIC_PRESSURE", CONTACT_CIVIC_PRESSURE)
 		.value("CONTACT_JOIN_WAR", CONTACT_JOIN_WAR)
@@ -1443,7 +1443,7 @@ void CyEnumsPythonInterface()
 		.value("NUM_CONTACT_TYPES", NUM_CONTACT_TYPES)
 		;
 
-	python::enum_<MemoryTypes>("MemoryTypes")
+	boost::python::enum_<MemoryTypes>("MemoryTypes")
 		.value("MEMORY_DECLARED_WAR", MEMORY_DECLARED_WAR)
 		.value("MEMORY_DECLARED_WAR_ON_FRIEND", MEMORY_DECLARED_WAR_ON_FRIEND)
 		.value("MEMORY_HIRED_WAR_ALLY", MEMORY_HIRED_WAR_ALLY)
@@ -1480,7 +1480,7 @@ void CyEnumsPythonInterface()
 		.value("NUM_MEMORY_TYPES", NUM_MEMORY_TYPES)
 		;
 
-	python::enum_<AttitudeTypes>("AttitudeTypes")
+	boost::python::enum_<AttitudeTypes>("AttitudeTypes")
 		.value("NO_ATTITUDE", NO_ATTITUDE)
 		.value("ATTITUDE_FURIOUS", ATTITUDE_FURIOUS)
 		.value("ATTITUDE_ANNOYED", ATTITUDE_ANNOYED)
@@ -1490,7 +1490,7 @@ void CyEnumsPythonInterface()
 		.value("NUM_ATTITUDE_TYPES", NUM_ATTITUDE_TYPES)
 		;
 
-	python::enum_<LeaderheadAction>("LeaderheadAction")
+	boost::python::enum_<LeaderheadAction>("LeaderheadAction")
 		.value( "NO_LEADERANIM", NO_LEADERANIM )
 		.value( "LEADERANIM_GREETING", LEADERANIM_GREETING )
 		.value( "LEADERANIM_FRIENDLY", LEADERANIM_FRIENDLY )
@@ -1503,7 +1503,7 @@ void CyEnumsPythonInterface()
 		.value( "NUM_LEADERANIM_TYPES", NUM_LEADERANIM_TYPES )
 		;
 
-	python::enum_<DiplomacyPowerTypes>("DiplomacyPowerTypes")
+	boost::python::enum_<DiplomacyPowerTypes>("DiplomacyPowerTypes")
 		.value("NO_DIPLOMACYPOWER", NO_DIPLOMACYPOWER)
 		.value("DIPLOMACYPOWER_WEAKER", DIPLOMACYPOWER_WEAKER)
 		.value("DIPLOMACYPOWER_EQUAL", DIPLOMACYPOWER_EQUAL)
@@ -1511,7 +1511,7 @@ void CyEnumsPythonInterface()
 		.value("NUM_DIPLOMACYPOWER_TYPES", NUM_DIPLOMACYPOWER_TYPES)
 		;
 
-	python::enum_<FeatTypes>("FeatTypes")
+	boost::python::enum_<FeatTypes>("FeatTypes")
 		.value("FEAT_UNITCOMBAT_ARCHER", FEAT_UNITCOMBAT_ARCHER)
 		.value("FEAT_UNITCOMBAT_MOUNTED", FEAT_UNITCOMBAT_MOUNTED)
 		.value("FEAT_UNITCOMBAT_MELEE", FEAT_UNITCOMBAT_MELEE)
@@ -1546,7 +1546,7 @@ void CyEnumsPythonInterface()
 		.value("NUM_FEAT_TYPES", NUM_FEAT_TYPES)
 		;
 
-	python::enum_<SaveGameTypes>("SaveGameTypes")
+	boost::python::enum_<SaveGameTypes>("SaveGameTypes")
 		.value("SAVEGAME_NONE", SAVEGAME_NONE)
 		.value("SAVEGAME_AUTO", SAVEGAME_AUTO)
 		.value("SAVEGAME_RECOVERY", SAVEGAME_RECOVERY)
@@ -1560,7 +1560,7 @@ void CyEnumsPythonInterface()
 		.value("NUM_SAVEGAME_TYPES", NUM_SAVEGAME_TYPES)
 		;
 
-	python::enum_<GameType>("GameType")
+	boost::python::enum_<GameType>("GameType")
 		.value("GAME_NONE", GAME_NONE)
 		.value("GAME_SP_NEW", GAME_SP_NEW)
 		.value("GAME_SP_SCENARIO", GAME_SP_SCENARIO)
@@ -1578,14 +1578,14 @@ void CyEnumsPythonInterface()
 		.value("NUM_GAMETYPES", NUM_GAMETYPES)
 		;
 
-	python::enum_<GameMode>("GameMode")
+	boost::python::enum_<GameMode>("GameMode")
 		.value("NO_GAMEMODE", NO_GAMEMODE)
 		.value("GAMEMODE_NORMAL", GAMEMODE_NORMAL)
 		.value("GAMEMODE_PITBOSS", GAMEMODE_PITBOSS)
 		.value("NUM_GAMEMODES", NUM_GAMEMODES)
 		;
 
-	python::enum_<InterfaceVisibility>("InterfaceVisibility")
+	boost::python::enum_<InterfaceVisibility>("InterfaceVisibility")
 		.value("INTERFACE_SHOW", INTERFACE_SHOW)
 		.value("INTERFACE_HIDE", INTERFACE_HIDE)
 		.value("INTERFACE_HIDE_ALL", INTERFACE_HIDE_ALL)
@@ -1593,7 +1593,7 @@ void CyEnumsPythonInterface()
 		.value("INTERFACE_ADVANCED_START", INTERFACE_ADVANCED_START)
 		;
 
-	python::enum_<GenericButtonSizes>("GenericButtonSizes")
+	boost::python::enum_<GenericButtonSizes>("GenericButtonSizes")
 		.value("BUTTON_SIZE_46", BUTTON_SIZE_46)
 		.value("BUTTON_SIZE_32", BUTTON_SIZE_32)
 		.value("BUTTON_SIZE_24", BUTTON_SIZE_24)
@@ -1601,7 +1601,7 @@ void CyEnumsPythonInterface()
 		.value("BUTTON_SIZE_CUSTOM", BUTTON_SIZE_CUSTOM)
 		;
 
-	python::enum_<WorldBuilderPopupTypes>("WorldBuilderPopupTypes")
+	boost::python::enum_<WorldBuilderPopupTypes>("WorldBuilderPopupTypes")
 		.value("WBPOPUP_NONE", WBPOPUP_NONE)
 		.value("WBPOPUP_START", WBPOPUP_START)
 		.value("WBPOPUP_CITY", WBPOPUP_CITY)
@@ -1615,7 +1615,7 @@ void CyEnumsPythonInterface()
 		.value("NUM_WBPOPUP", NUM_WBPOPUP)
 		;
 
-	python::enum_<EventType>("EventType")
+	boost::python::enum_<EventType>("EventType")
 		.value("EVT_LBUTTONDOWN", EVT_LBUTTONDOWN)
 		.value("EVT_LBUTTONDBLCLICK", EVT_LBUTTONDBLCLICK)
 		.value("EVT_RBUTTONDOWN", EVT_RBUTTONDOWN)
@@ -1625,7 +1625,7 @@ void CyEnumsPythonInterface()
 		.value("EVT_KEYUP", EVT_KEYUP)
 		;
 
-	python::enum_<LoadType>("LoadType")
+	boost::python::enum_<LoadType>("LoadType")
 		.value("LOAD_NORMAL", LOAD_NORMAL)
 		.value("LOAD_INIT", LOAD_INIT)
 		.value("LOAD_SETUP", LOAD_SETUP)
@@ -1633,7 +1633,7 @@ void CyEnumsPythonInterface()
 		.value("LOAD_REPLAY", LOAD_REPLAY)
 		;
 
-	python::enum_<FontTypes>("FontTypes")
+	boost::python::enum_<FontTypes>("FontTypes")
 		.value("TITLE_FONT", TITLE_FONT)
 		.value("GAME_FONT", GAME_FONT)
 		.value("SMALL_FONT", SMALL_FONT)
@@ -1641,7 +1641,7 @@ void CyEnumsPythonInterface()
 		.value("MENU_HIGHLIGHT_FONT", MENU_HIGHLIGHT_FONT)
 		;
 
-	python::enum_<PanelStyles>("PanelStyles")
+	boost::python::enum_<PanelStyles>("PanelStyles")
 		.value("PANEL_STYLE_STANDARD",PANEL_STYLE_STANDARD)
 		.value("PANEL_STYLE_SOLID",PANEL_STYLE_SOLID)
 		.value("PANEL_STYLE_EMPTY",PANEL_STYLE_EMPTY)
@@ -1700,7 +1700,7 @@ void CyEnumsPythonInterface()
 		.value("PANEL_STYLE_MAIN_SELECT",PANEL_STYLE_MAIN_SELECT)
 		;
 
-	python::enum_<ButtonStyles>("ButtonStyles")
+	boost::python::enum_<ButtonStyles>("ButtonStyles")
 		.value("BUTTON_STYLE_STANDARD", BUTTON_STYLE_STANDARD)
 		.value("BUTTON_STYLE_ETCHED", BUTTON_STYLE_ETCHED)
 		.value("BUTTON_STYLE_FLAT", BUTTON_STYLE_FLAT)
@@ -1730,7 +1730,7 @@ void CyEnumsPythonInterface()
 		.value("BUTTON_STYLE_ARROW_RIGHT", BUTTON_STYLE_ARROW_RIGHT)
 		;
 
-	python::enum_<TableStyles>("TableStyles")
+	boost::python::enum_<TableStyles>("TableStyles")
 		.value("TABLE_STYLE_STANDARD", TABLE_STYLE_STANDARD)
 		.value("TABLE_STYLE_EMPTY", TABLE_STYLE_EMPTY)
 		.value("TABLE_STYLE_ALTEMPTY", TABLE_STYLE_ALTEMPTY)
@@ -1740,13 +1740,13 @@ void CyEnumsPythonInterface()
 		.value("TABLE_STYLE_STAGINGROOM", TABLE_STYLE_STAGINGROOM)
 		;
 
-	python::enum_<EventContextTypes>("EventContextTypes")
+	boost::python::enum_<EventContextTypes>("EventContextTypes")
 		.value("NO_EVENTCONTEXT", NO_EVENTCONTEXT)
 		.value("EVENTCONTEXT_SELF", EVENTCONTEXT_SELF)
 		.value("EVENTCONTEXT_ALL", EVENTCONTEXT_ALL)
 		;
 
-	python::enum_<TabGroupTypes>("TabGroupTypes")
+	boost::python::enum_<TabGroupTypes>("TabGroupTypes")
 		.value("NO_TABGROUP", NO_TABGROUP)
 
 		.value("TABGROUP_GAME", TABGROUP_GAME)
@@ -1758,7 +1758,7 @@ void CyEnumsPythonInterface()
 		.value("NUM_TABGROUPS", NUM_TABGROUPS)
 		;
 
-	python::enum_<ReplayMessageTypes>("ReplayMessageTypes")
+	boost::python::enum_<ReplayMessageTypes>("ReplayMessageTypes")
 		.value("NO_REPLAY_MESSAGE", NO_REPLAY_MESSAGE)
 
 		.value("REPLAY_MESSAGE_MAJOR_EVENT", REPLAY_MESSAGE_MAJOR_EVENT)
@@ -1768,7 +1768,7 @@ void CyEnumsPythonInterface()
 		.value("NUM_REPLAY_MESSAGE_TYPES", NUM_REPLAY_MESSAGE_TYPES)
 		;
 
-	python::enum_<AudioTag>("AudioTag")
+	boost::python::enum_<AudioTag>("AudioTag")
 		.value("AUDIOTAG_NONE", AUDIOTAG_NONE)
 		.value("AUDIOTAG_SOUNDID", AUDIOTAG_SOUNDID)
 		.value("AUDIOTAG_CONTEXTID", AUDIOTAG_CONTEXTID)
@@ -1782,7 +1782,7 @@ void CyEnumsPythonInterface()
 		.value("AUDIOTAG_COUNT", AUDIOTAG_COUNT)
 		;
 
-	python::enum_<CivilopediaPageTypes>("CivilopediaPageTypes")
+	boost::python::enum_<CivilopediaPageTypes>("CivilopediaPageTypes")
 		.value("NO_CIVILOPEDIA_PAGE", NO_CIVILOPEDIA_PAGE)
 
 		.value("CIVILOPEDIA_PAGE_TECH", CIVILOPEDIA_PAGE_TECH)
@@ -1809,7 +1809,7 @@ void CyEnumsPythonInterface()
 		.value("NUM_CIVILOPEDIA_PAGE_TYPES", NUM_CIVILOPEDIA_PAGE_TYPES)
 		;
 
-	python::enum_<ActionSubTypes>("ActionSubTypes")
+	boost::python::enum_<ActionSubTypes>("ActionSubTypes")
 		.value("NO_ACTIONSUBTYPE", NO_ACTIONSUBTYPE)
 
 		.value("ACTIONSUBTYPE_INTERFACEMODE", ACTIONSUBTYPE_INTERFACEMODE)
@@ -1827,7 +1827,7 @@ void CyEnumsPythonInterface()
 		.value("NUM_ACTIONSUBTYPES", NUM_ACTIONSUBTYPES)
 		;
 
-	python::enum_<GameMessageTypes>("GameMessageTypes")
+	boost::python::enum_<GameMessageTypes>("GameMessageTypes")
 		.value("GAMEMESSAGE_NETWORK_READY", GAMEMESSAGE_NETWORK_READY)
 		.value("GAMEMESSAGE_SAVE_GAME_FLAG", GAMEMESSAGE_SAVE_GAME_FLAG)
 		.value("GAMEMESSAGE_SAVE_FLAG_ACK", GAMEMESSAGE_SAVE_FLAG_ACK)
@@ -1925,7 +1925,7 @@ void CyEnumsPythonInterface()
 		.value("GAMEMESSAGE_MOD_NET_MESSAGE", GAMEMESSAGE_MOD_NET_MESSAGE)
 		;
 
-	python::enum_<PopupControlLayout>("PopupControlLayout")
+	boost::python::enum_<PopupControlLayout>("PopupControlLayout")
 		.value("POPUP_LAYOUT_LEFT", POPUP_LAYOUT_LEFT)
 		.value("POPUP_LAYOUT_CENTER", POPUP_LAYOUT_CENTER)
 		.value("POPUP_LAYOUT_RIGHT", POPUP_LAYOUT_RIGHT)
@@ -1933,7 +1933,7 @@ void CyEnumsPythonInterface()
 		.value("POPUP_LAYOUT_NUMLAYOUTS", POPUP_LAYOUT_NUMLAYOUTS)
 		;
 
-	python::enum_<JustificationTypes>("JustificationTypes")
+	boost::python::enum_<JustificationTypes>("JustificationTypes")
 		.value("DLL_FONT_LEFT_JUSTIFY", DLL_FONT_LEFT_JUSTIFY)
 		.value("DLL_FONT_RIGHT_JUSTIFY", DLL_FONT_RIGHT_JUSTIFY)
 		.value("DLL_FONT_CENTER_JUSTIFY", DLL_FONT_CENTER_JUSTIFY)
@@ -1941,7 +1941,7 @@ void CyEnumsPythonInterface()
 		.value("DLL_FONT_ADDITIVE", DLL_FONT_ADDITIVE)
 		;
 
-	python::enum_<ToolTipAlignTypes>("ToolTipAlignTypes")
+	boost::python::enum_<ToolTipAlignTypes>("ToolTipAlignTypes")
 		.value("TOOLTIP_TOP_LEFT", TOOLTIP_TOP_LEFT)
 		.value("TOOLTIP_TOP_INLEFT", TOOLTIP_TOP_INLEFT)
 		.value("TOOLTIP_TOP_CENTER", TOOLTIP_TOP_CENTER)
@@ -1963,14 +1963,14 @@ void CyEnumsPythonInterface()
 		.value("TOOLTIP_INTOP_LEFT", TOOLTIP_INTOP_LEFT)
 		;
 
-	python::enum_<ActivationTypes>("ActivationTypes")
+	boost::python::enum_<ActivationTypes>("ActivationTypes")
 		.value("ACTIVATE_NORMAL", ACTIVATE_NORMAL)
 		.value("ACTIVATE_CHILDFOCUS", ACTIVATE_CHILDFOCUS)
 		.value("ACTIVATE_MIMICPARENT", ACTIVATE_MIMICPARENT)
 		.value("ACTIVATE_MIMICPARENTFOCUS", ACTIVATE_MIMICPARENTFOCUS)
 		;
 
-	python::enum_<HitTestTypes>("HitTestTypes")
+	boost::python::enum_<HitTestTypes>("HitTestTypes")
 		.value("HITTEST_DEFAULT", HITTEST_DEFAULT)
 		.value("HITTEST_NOHIT", HITTEST_NOHIT)
 		.value("HITTEST_SOLID", HITTEST_SOLID)
@@ -1978,7 +1978,7 @@ void CyEnumsPythonInterface()
 		.value("HITTEST_CHILDREN", HITTEST_CHILDREN)
 		;
 
-	python::enum_<GraphicLevelTypes>("GraphicLevelTypes")
+	boost::python::enum_<GraphicLevelTypes>("GraphicLevelTypes")
 		.value("GRAPHICLEVEL_HIGH", GRAPHICLEVEL_HIGH)
 		.value("GRAPHICLEVEL_MEDIUM", GRAPHICLEVEL_MEDIUM)
 		.value("GRAPHICLEVEL_LOW", GRAPHICLEVEL_LOW)
@@ -1986,19 +1986,19 @@ void CyEnumsPythonInterface()
 		.value("NUM_GRAPHICLEVELS", NUM_GRAPHICLEVELS)
 		;
 
-	python::enum_<EventTypes>("EventTypes")
+	boost::python::enum_<EventTypes>("EventTypes")
 		.value("NO_EVENT", NO_EVENT)
 		;
 
-	python::enum_<EventTriggerTypes>("EventTriggerTypes")
+	boost::python::enum_<EventTriggerTypes>("EventTriggerTypes")
 		.value("NO_EVENTTRIGGER", NO_EVENTTRIGGER)
 		;
 
-	python::enum_<EspionageMissionTypes>("EspionageMissionTypes")
+	boost::python::enum_<EspionageMissionTypes>("EspionageMissionTypes")
 		.value("NO_ESPIONAGEMISSION", NO_ESPIONAGEMISSION)
 		;
 
-	python::enum_<AdvancedStartActionTypes>("AdvancedStartActionTypes")
+	boost::python::enum_<AdvancedStartActionTypes>("AdvancedStartActionTypes")
 		.value("NO_ADVANCEDSTARTACTION", NO_ADVANCEDSTARTACTION)
 
 		.value("ADVANCEDSTARTACTION_EXIT", ADVANCEDSTARTACTION_EXIT)
@@ -2014,14 +2014,14 @@ void CyEnumsPythonInterface()
 		.value("ADVANCEDSTARTACTION_AUTOMATE", ADVANCEDSTARTACTION_AUTOMATE)
 		;
 
-	python::enum_<ReligionSpreadTypes>("ReligionSpreadTypes")
+	boost::python::enum_<ReligionSpreadTypes>("ReligionSpreadTypes")
 		.value("RELIGION_SPREAD_NONE", RELIGION_SPREAD_NONE)
 		.value("RELIGION_SPREAD_MINORITY", RELIGION_SPREAD_MINORITY)
 		.value("RELIGION_SPREAD_NORMAL", RELIGION_SPREAD_NORMAL)
 		.value("RELIGION_SPREAD_FAST", RELIGION_SPREAD_FAST)
 		;
 
-	python::enum_<RegionSpreadTypes>("RegionSpreadTypes")
+	boost::python::enum_<RegionSpreadTypes>("RegionSpreadTypes")
 		.value("REGION_SPREAD_NONE", REGION_SPREAD_NONE)
 		.value("REGION_SPREAD_MINORITY", REGION_SPREAD_MINORITY)
 		.value("REGION_SPREAD_PERIPHERY", REGION_SPREAD_PERIPHERY)

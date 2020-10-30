@@ -327,6 +327,15 @@
     <ClCompile Include="CyCityInterface2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="CvAreaUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CvStability.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CvUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CvArea.h">
@@ -622,6 +631,18 @@
     </ClInclude>
     <ClInclude Include="CvDLLEngineIFaceBase.h">
       <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CvStability.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CvUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CvData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CvRiseAndFall.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

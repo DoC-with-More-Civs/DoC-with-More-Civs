@@ -10,7 +10,7 @@ void CyTeamPythonInterface()
 {
 	OutputDebugString("Python Extension Module - CyTeamPythonInterface\n");
 
-	python::class_<CyTeam>("CyTeam")
+	boost::python::class_<CyTeam>("CyTeam")
 		.def("isNone", &CyTeam::isNone, "bool () - is this instance valid?")
 
 		.def("addTeam", &CyTeam::addTeam, "void (int /*TeamTypes*/ eTeam)")

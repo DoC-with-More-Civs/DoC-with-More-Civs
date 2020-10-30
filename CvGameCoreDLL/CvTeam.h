@@ -5,8 +5,13 @@
 #ifndef CIV4_TEAM_H
 #define CIV4_TEAM_H
 
-//#include "CvEnums.h"
+#include "CvEnums.h"
 #include <set>
+#include <vector>
+#include <map>
+using std::set;
+using std::vector;
+using std::map;
 
 class CvArea;
 

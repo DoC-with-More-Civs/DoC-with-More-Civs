@@ -7,14 +7,16 @@
 #include "CyArtFileMgr.h"
 #include "CvInfos.h"
 
-//# include <boost/python/manage_new_object.hpp>
-//# include <boost/python/return_value_policy.hpp>
+#include <boost/python/manage_new_object.hpp>
+#include <boost/python/return_value_policy.hpp>
+#include <boost/python/reference_existing_object.hpp>
 
 //
 // published python interface for CyUnit
 //
 
-void CyUnitPythonInterface1(python::class_<CyUnit>& x)
+
+void CyUnitPythonInterface1(boost::python::class_<CyUnit>& x)
 {
 	OutputDebugString("Python Extension Module - CyUnitPythonInterface1\n");
 
@@ -30,7 +32,7 @@ void CyUnitPythonInterface1(python::class_<CyUnit>& x)
 		.def("canDoCommand", &CyUnit::canDoCommand, "bool (eCommand, iData1, iData2, bTestVisible = False) - can the unit perform eCommand?")
 		.def("doCommand", &CyUnit::doCommand, "void (eCommand, iData1, iData2) - force the unit to perform eCommand")
 
-		.def("getPathEndTurnPlot", &CyUnit::getPathEndTurnPlot, python::return_value_policy<python::manage_new_object>(), "CyPlot* ()")
+		.def("getPathEndTurnPlot", &CyUnit::getPathEndTurnPlot, boost::python::return_value_policy<boost::python::manage_new_object>(), "CyPlot* ()")
 		.def("generatePath", &CyUnit::generatePath, "bool (CyPlot* pToPlot, int iFlags = 0, bool bReuse = false, int* piPathTurns = NULL)")
 
 		.def("canEnterTerritory", &CyUnit::canEnterTerritory, "bool (int (TeamTypes) eTeam, bool bIgnoreRightOfPassage)")
@@ -73,7 +75,7 @@ void CyUnitPythonInterface1(python::class_<CyUnit>& x)
 		.def("canAirBomb", &CyUnit::canAirBomb, "bool ()")
 		.def("canAirBombAt", &CyUnit::canAirBombAt, "bool (CyPlot* pPlot, int iX, int iY)")
 
-		.def("bombardTarget", &CyUnit::bombardTarget, python::return_value_policy<python::manage_new_object>(), "CyCity* (CyPlot* pPlot)")
+		.def("bombardTarget", &CyUnit::bombardTarget, boost::python::return_value_policy<boost::python::manage_new_object>(), "CyCity* (CyPlot* pPlot)")
 		.def("canBombard", &CyUnit::canBombard, "bool (CyPlot* pPlot)")
 
 		.def("canPillage", &CyUnit::canPillage, "bool (CyPlot* pPlot)")
@@ -197,7 +199,7 @@ void CyUnitPythonInterface1(python::class_<CyUnit>& x)
 		.def("canAirAttack", &CyUnit::canAirAttack, "bool ()")
 		.def("canAirDefend", &CyUnit::canAirDefend, "bool (CyPlot*)")
 		.def("airCombatDamage", &CyUnit::airCombatDamage, "int (CyUnit* pDefender)")
-		.def("bestInterceptor", &CyUnit::bestInterceptor, python::return_value_policy<python::manage_new_object>(), "CyUnit* (CyPlot*)")
+		.def("bestInterceptor", &CyUnit::bestInterceptor, boost::python::return_value_policy<boost::python::manage_new_object>(), "CyUnit* (CyPlot*)")
 
 		.def("isAutomated", &CyUnit::isAutomated, "bool ()")
 		.def("isWaiting", &CyUnit::isWaiting, "bool ()")
@@ -264,7 +266,7 @@ void CyUnitPythonInterface1(python::class_<CyUnit>& x)
 		.def("getGroupID", &CyUnit::getGroupID, "int ()")
 		.def("isInGroup", &CyUnit::isInGroup, "bool ()")
 		.def("isGroupHead", &CyUnit::isGroupHead, "bool ()")
-		.def("getGroup", &CyUnit::getGroup, python::return_value_policy<python::manage_new_object>(), "CySelectionGroup* ()")
+		.def("getGroup", &CyUnit::getGroup, boost::python::return_value_policy<boost::python::manage_new_object>(), "CySelectionGroup* ()")
 
 		.def("getHotKeyNumber", &CyUnit::getHotKeyNumber, "int () - returns the HotKey number for this unit")
 		.def("setHotKeyNumber", &CyUnit::setHotKeyNumber, "void (int iNewValue)")
@@ -275,9 +277,9 @@ void CyUnitPythonInterface1(python::class_<CyUnit>& x)
 		.def("setXYOld", &CyUnit::setXYOld, "int (int iX, int iY)") //Rhye
 		.def("at", &CyUnit::at, "bool (int iX, int iY)")
 		.def("atPlot", &CyUnit::atPlot, "bool (CyPlot* pPlot)")
-		.def("plot", &CyUnit::plot, python::return_value_policy<python::manage_new_object>(), "CyPlot* ()")
-		.def("area", &CyUnit::area, python::return_value_policy<python::manage_new_object>(), "CyArea* ()")
-		.def("getReconPlot", &CyUnit::getReconPlot, python::return_value_policy<python::manage_new_object>(), "CyPlot* ()")
+		.def("plot", &CyUnit::plot, boost::python::return_value_policy<boost::python::manage_new_object>(), "CyPlot* ()")
+		.def("area", &CyUnit::area, boost::python::return_value_policy<boost::python::manage_new_object>(), "CyArea* ()")
+		.def("getReconPlot", &CyUnit::getReconPlot, boost::python::return_value_policy<boost::python::manage_new_object>(), "CyPlot* ()")
 		.def("setReconPlot", &CyUnit::setReconPlot, "void (CyPlot)")				 
 
 		.def("getGameTurnCreated", &CyUnit::getGameTurnCreated, "int ()")
@@ -358,7 +360,7 @@ void CyUnitPythonInterface1(python::class_<CyUnit>& x)
 		.def("getLeaderUnitType", &CyUnit::getLeaderUnitType, "int ()")
 		.def("setLeaderUnitType", &CyUnit::setLeaderUnitType, "void (int iNewValue)")
 
-		.def("getTransportUnit", &CyUnit::getTransportUnit, python::return_value_policy<python::manage_new_object>(), "CyUnit* ()")
+		.def("getTransportUnit", &CyUnit::getTransportUnit, boost::python::return_value_policy<boost::python::manage_new_object>(), "CyUnit* ()")
 		.def("isCargo", &CyUnit::isCargo, "bool ()")
 		.def("setTransportUnit", &CyUnit::setTransportUnit, "void (CyUnit* pTransportUnit)")
 
@@ -398,7 +400,7 @@ void CyUnitPythonInterface1(python::class_<CyUnit>& x)
 		.def("attackForDamage", &CyUnit::attackForDamage, "void attackForDamage(CyUnit *defender, int attakerDamageChange, int defenderDamageChange)")
 		.def("rangeStrike", &CyUnit::rangeStrike, "void rangeStrike(int iX, int iY)")
 
-		.def("getArtInfo", &CyUnit::getArtInfo,  python::return_value_policy<python::reference_existing_object>(), "CvArtInfoUnit* (int i, eEra)")
+		.def("getArtInfo", &CyUnit::getArtInfo, boost::python::return_value_policy<boost::python::reference_existing_object>(), "CvArtInfoUnit* (int i, eEra)")
 		.def("getButton", &CyUnit::getButton, "std::string ()")
 
 		// Leoreth

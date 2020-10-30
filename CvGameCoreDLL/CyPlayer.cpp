@@ -2050,22 +2050,22 @@ std::wstring CyPlayer::getCityName(int iIndex)
 }
 
 // returns tuple of (CyCity, iterOut)
-python::tuple CyPlayer::firstCity(bool bRev)
+boost::python::tuple CyPlayer::firstCity(bool bRev)
 {
 	int iterIn = 0;
 	CvCity* pvObj = m_pPlayer ? m_pPlayer->firstCity(&iterIn, bRev) : NULL;
 	CyCity* pyObj = pvObj ? new CyCity(pvObj) : NULL;
-	python::tuple tup=python::make_tuple(pyObj, iterIn);
+	boost::python::tuple tup=boost::python::make_tuple(pyObj, iterIn);
 	delete pyObj;
 	return tup;
 }
 
 // returns tuple of (CyCity, iterOut)
-python::tuple CyPlayer::nextCity(int iterIn, bool bRev)
+boost::python::tuple CyPlayer::nextCity(int iterIn, bool bRev)
 {
 	CvCity* pvObj = m_pPlayer ? m_pPlayer->nextCity(&iterIn, bRev) : NULL;
 	CyCity* pyObj = pvObj ? new CyCity(pvObj) : NULL;
-	python::tuple tup=python::make_tuple(pyObj, iterIn);
+	boost::python::tuple tup=boost::python::make_tuple(pyObj, iterIn);
 	delete pyObj;
 	return tup;
 }
@@ -2081,22 +2081,22 @@ CyCity* CyPlayer::getCity(int iID)
 }
 
 // returns tuple of (CyUnit, iterOut)
-python::tuple CyPlayer::firstUnit(bool bRev)
+boost::python::tuple CyPlayer::firstUnit(bool bRev)
 {
 	int iterIn = 0;
 	CvUnit* pvUnit = m_pPlayer ? m_pPlayer->firstUnit(&iterIn, bRev) : NULL;
 	CyUnit* pyUnit = pvUnit ? new CyUnit(pvUnit) : NULL;
-	python::tuple tup=python::make_tuple(pyUnit, iterIn);
+	boost::python::tuple tup=boost::python::make_tuple(pyUnit, iterIn);
 	delete pyUnit;
 	return tup;
 }
 
 // returns tuple of (CyUnit, iterOut)
-python::tuple CyPlayer::nextUnit(int iterIn, bool bRev)
+boost::python::tuple CyPlayer::nextUnit(int iterIn, bool bRev)
 {
 	CvUnit* pvObj = m_pPlayer ? m_pPlayer->nextUnit(&iterIn, bRev) : NULL;
 	CyUnit* pyObj = pvObj ? new CyUnit(pvObj) : NULL;
-	python::tuple tup=python::make_tuple(pyObj, iterIn);
+	boost::python::tuple tup=boost::python::make_tuple(pyObj, iterIn);
 	delete pyObj;
 	return tup;
 
@@ -2113,22 +2113,22 @@ CyUnit* CyPlayer::getUnit(int iID)
 }
 
 // returns tuple of (CySelectionGroup, iterOut)
-python::tuple CyPlayer::firstSelectionGroup(bool bRev)
+boost::python::tuple CyPlayer::firstSelectionGroup(bool bRev)
 {
 	int iterIn = 0;
 	CvSelectionGroup* pvObj = m_pPlayer ? m_pPlayer->firstSelectionGroup(&iterIn, bRev) : NULL;
 	CySelectionGroup* pyObj = pvObj ? new CySelectionGroup(pvObj) : NULL;
-	python::tuple tup=python::make_tuple(pyObj, iterIn);
+	boost::python::tuple tup=boost::python::make_tuple(pyObj, iterIn);
 	delete pyObj;
 	return tup;
 }
 
 // returns tuple of (CySelectionGroup, iterOut)
-python::tuple CyPlayer::nextSelectionGroup(int iterIn, bool bRev)
+boost::python::tuple CyPlayer::nextSelectionGroup(int iterIn, bool bRev)
 {
 	CvSelectionGroup* pvObj = m_pPlayer ? m_pPlayer->nextSelectionGroup(&iterIn, bRev) : NULL;
 	CySelectionGroup* pyObj = pvObj ? new CySelectionGroup(pvObj) : NULL;
-	python::tuple tup=python::make_tuple(pyObj, iterIn);
+	boost::python::tuple tup=boost::python::make_tuple(pyObj, iterIn);
 	delete pyObj;
 	return tup;
 }

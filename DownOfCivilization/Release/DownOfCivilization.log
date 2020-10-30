@@ -1,0 +1,33 @@
+﻿  CvAreaUtils.cpp
+C:\GOG Games\Civilization IV Complete\Civ4\Beyond the Sword\Mods\RFC Dawn of Civilization\CvGameCoreDLL\CvGameCoreDLL.h(15): warning C4005: “_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS”: 宏重定义
+          命令行参数: 参见前面的“_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS”定义
+  Unknown compiler version - please run the configure tests and report the results
+c:\gog games\civilization iv complete\civ4\beyond the sword\mods\rfc dawn of civilization\downofcivilization\config_py2cpp.h(98): warning C4005: “CACHE_LINE_LEN”: 宏重定义
+          c:\gog games\civilization iv complete\civ4\beyond the sword\mods\rfc dawn of civilization\cvgamecoredll\CvDefines.h(128) : 参见“CACHE_LINE_LEN”的前一个定义
+  CvConst.cpp
+C:\GOG Games\Civilization IV Complete\Civ4\Beyond the Sword\Mods\RFC Dawn of Civilization\CvGameCoreDLL\CvGameCoreDLL.h(15): warning C4005: “_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS”: 宏重定义
+          命令行参数: 参见前面的“_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS”定义
+  Unknown compiler version - please run the configure tests and report the results
+c:\gog games\civilization iv complete\civ4\beyond the sword\mods\rfc dawn of civilization\downofcivilization\config_py2cpp.h(98): warning C4005: “CACHE_LINE_LEN”: 宏重定义
+          c:\gog games\civilization iv complete\civ4\beyond the sword\mods\rfc dawn of civilization\cvgamecoredll\CvDefines.h(128) : 参见“CACHE_LINE_LEN”的前一个定义
+  CvStability.cpp
+C:\GOG Games\Civilization IV Complete\Civ4\Beyond the Sword\Mods\RFC Dawn of Civilization\CvGameCoreDLL\CvGameCoreDLL.h(15): warning C4005: “_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS”: 宏重定义
+          命令行参数: 参见前面的“_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS”定义
+  Unknown compiler version - please run the configure tests and report the results
+c:\gog games\civilization iv complete\civ4\beyond the sword\mods\rfc dawn of civilization\downofcivilization\config_py2cpp.h(98): warning C4005: “CACHE_LINE_LEN”: 宏重定义
+          c:\gog games\civilization iv complete\civ4\beyond the sword\mods\rfc dawn of civilization\cvgamecoredll\CvDefines.h(128) : 参见“CACHE_LINE_LEN”的前一个定义
+  CvUtils.cpp
+C:\GOG Games\Civilization IV Complete\Civ4\Beyond the Sword\Mods\RFC Dawn of Civilization\CvGameCoreDLL\CvGameCoreDLL.h(15): warning C4005: “_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS”: 宏重定义
+          命令行参数: 参见前面的“_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS”定义
+  Unknown compiler version - please run the configure tests and report the results
+c:\gog games\civilization iv complete\civ4\beyond the sword\mods\rfc dawn of civilization\downofcivilization\config_py2cpp.h(98): warning C4005: “CACHE_LINE_LEN”: 宏重定义
+          c:\gog games\civilization iv complete\civ4\beyond the sword\mods\rfc dawn of civilization\cvgamecoredll\CvDefines.h(128) : 参见“CACHE_LINE_LEN”的前一个定义
+  DownOfCivilization.cpp
+C:\GOG Games\Civilization IV Complete\Civ4\Beyond the Sword\Mods\RFC Dawn of Civilization\CvGameCoreDLL\CvGameCoreDLL.h(15): warning C4005: “_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS”: 宏重定义
+          命令行参数: 参见前面的“_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS”定义
+  Unknown compiler version - please run the configure tests and report the results
+  dllmain.cpp
+C:\GOG Games\Civilization IV Complete\Civ4\Beyond the Sword\Mods\RFC Dawn of Civilization\CvGameCoreDLL\CvGameCoreDLL.h(15): warning C4005: “_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS”: 宏重定义
+          命令行参数: 参见前面的“_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS”定义
+  Unknown compiler version - please run the configure tests and report the results
+LINK : fatal error LNK1181: 无法打开输入文件“CvGameCoreLib.lib”

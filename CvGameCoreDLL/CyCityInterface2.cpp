@@ -13,7 +13,7 @@
 // published python interface for CyCity
 //
 
-void CyCityPythonInterface2(python::class_<CyCity>& x)
+void CyCityPythonInterface2(boost::python::class_<CyCity>& x)
 {
 	OutputDebugString("Python Extension Module - CyCityPythonInterface2\n");
 
@@ -75,7 +75,7 @@ void CyCityPythonInterface2(python::class_<CyCity>& x)
 		.def("isHasCorporation", &CyCity::isHasCorporation, "bool (CorporationID) - does city have CorporationID?")
 		.def("setHasCorporation", &CyCity::setHasCorporation, "void (CorporationID, bool bNewValue, bool bAnnounce, bool bArrows) - corporation begins to spread")
 		.def("isActiveCorporation", &CyCity::isActiveCorporation, "bool (CorporationID) - does city have active CorporationID?")
-		.def("getTradeCity", &CyCity::getTradeCity, python::return_value_policy<python::manage_new_object>(), "CyCity (int iIndex) - remove SpecialistType[iIndex]")
+		.def("getTradeCity", &CyCity::getTradeCity, boost::python::return_value_policy<boost::python::manage_new_object>(), "CyCity (int iIndex) - remove SpecialistType[iIndex]")
 		.def("getTradeRoutes", &CyCity::getTradeRoutes, "int ()")
 		.def("getReligionCount", &CyCity::getReligionCount, "int ()") // edead
 
@@ -83,10 +83,10 @@ void CyCityPythonInterface2(python::class_<CyCity>& x)
 		.def("pushOrder", &CyCity::pushOrder, "void (OrderTypes eOrder, int iData1, int iData2, bool bSave, bool bPop, bool bAppend, bool bForce)")
 		.def("popOrder", &CyCity::popOrder, "int (int iNum, bool bFinish, bool bChoose)")
 		.def("getOrderQueueLength", &CyCity::getOrderQueueLength, "void ()")
-		.def("getOrderFromQueue", &CyCity::getOrderFromQueue, python::return_value_policy<python::manage_new_object>(), "OrderData* (int iIndex)")
+		.def("getOrderFromQueue", &CyCity::getOrderFromQueue, boost::python::return_value_policy<boost::python::manage_new_object>(), "OrderData* (int iIndex)")
 
-		.def("setWallOverridePoints", &CyCity::setWallOverridePoints, "setWallOverridePoints(const python::tuple& kPoints)")
-		.def("getWallOverridePoints", &CyCity::getWallOverridePoints, "python::tuple getWallOverridePoints()")
+		.def("setWallOverridePoints", &CyCity::setWallOverridePoints, "setWallOverridePoints(const boost::python::tuple& kPoints)")
+		.def("getWallOverridePoints", &CyCity::getWallOverridePoints, "boost::python::tuple getWallOverridePoints()")
 
 		.def("AI_avoidGrowth", &CyCity::AI_avoidGrowth, "bool ()")
 		.def("AI_isEmphasize", &CyCity::AI_isEmphasize, "bool (int iEmphasizeType)")
@@ -123,7 +123,7 @@ void CyCityPythonInterface2(python::class_<CyCity>& x)
 		.def("calculateOverallCulturePercent", &CyCity::calculateOverallCulturePercent, "int (int ePlayer)")
 		.def("getNextCoveredPlot", &CyCity::getNextCoveredPlot, "int ()")
 		.def("getCulturePlotIndex", &CyCity::getCulturePlotIndex, "int (int i)")
-		.def("getCulturePlot", &CyCity::getCulturePlot, python::return_value_policy<python::manage_new_object>(), "CyPlot* (int i)")
+		.def("getCulturePlot", &CyCity::getCulturePlot, boost::python::return_value_policy<boost::python::manage_new_object>(), "CyPlot* (int i)")
 		.def("getCultureCost", &CyCity::getCultureCost, "int (int i)")
 		.def("getEffectiveNextCoveredPlot", &CyCity::getEffectiveNextCoveredPlot, "int ()")
 		.def("isCoveredBeforeExpansion", &CyCity::isCoveredBeforeExpansion, "bool (int i)")

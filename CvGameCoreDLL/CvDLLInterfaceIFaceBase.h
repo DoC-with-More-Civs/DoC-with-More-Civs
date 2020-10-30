@@ -9,7 +9,10 @@
 
 //#include "CvStructs.h"
 #include "LinkedList.h"
+#include "CvEnums.h"
+#include <list>
 
+template <class tVARTYPE> class CLLNode;
 class CvUnit;
 class CvCity;
 class CvPlot;

@@ -2,6 +2,8 @@
 #ifndef CVRHYES_H
 #define CVRHYES_H
 
+#include <list>
+
 typedef std::list<char*> LISTCHAR;
 
 // rhyes.h

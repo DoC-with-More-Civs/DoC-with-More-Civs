@@ -12,7 +12,7 @@ void CyMapGeneratorPythonInterface()
 {
 	OutputDebugString("Python Extension Module - CyMapGeneratorPythonInterface\n");
 
-	python::class_<CyMapGenerator>("CyMapGenerator")
+	boost::python::class_<CyMapGenerator>("CyMapGenerator")
 		.def("isNone", &CyMapGenerator::isNone, "bool () - valid CyMapGenerator() interface")
 
 		.def("canPlaceBonusAt", &CyMapGenerator::canPlaceBonusAt, "bool (int /*BonusTypes*/ eBonus, int iX, int iY, bool bIgnoreLatitude)")

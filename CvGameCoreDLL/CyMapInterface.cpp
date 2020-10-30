@@ -17,7 +17,7 @@ void CyMapPythonInterface()
 {
 	OutputDebugString("Python Extension Module - CyMapPythonInterface\n");
 
-	python::class_<CyMap>("CyMap")
+	boost::python::class_<CyMap>("CyMap")
 		.def("isNone", &CyMap::isNone, "bool () - valid CyMap() interface")
 
 		.def("erasePlots", &CyMap::erasePlots, "() - erases the plots")
@@ -25,11 +25,11 @@ void CyMapPythonInterface()
 		.def("setAllPlotTypes", &CyMap::setAllPlotTypes, "void (int /*PlotTypes*/ ePlotType) - sets all plots to ePlotType")
 
 		.def("updateVisibility", &CyMap::updateVisibility, "() - updates the plots visibility")
-		.def("syncRandPlot", &CyMap::syncRandPlot, python::return_value_policy<python::manage_new_object>(), "CyPlot* (iFlags,iArea,iMinUnitDistance,iTimeout) - random plot based on conditions")
-		.def("findCity", &CyMap::findCity, python::return_value_policy<python::manage_new_object>(), "CyCity* (int iX, int iY, int (PlayerTypes) eOwner = NO_PLAYER, int (TeamTypes) eTeam = NO_TEAM, bool bSameArea = true, bool bCoastalOnly = false, int (TeamTypes) eTeamAtWarWith = NO_TEAM, int (DirectionTypes) eDirection = NO_DIRECTION, CvCity* pSkipCity = NULL) - finds city")
-		.def("findSelectionGroup", &CyMap::findSelectionGroup, python::return_value_policy<python::manage_new_object>(), "CvSelectionGroup* (int iX, int iY, int /*PlayerTypes*/ eOwner, bool bReadyToSelect, bool bWorkers)")
+		.def("syncRandPlot", &CyMap::syncRandPlot, boost::python::return_value_policy<boost::python::manage_new_object>(), "CyPlot* (iFlags,iArea,iMinUnitDistance,iTimeout) - random plot based on conditions")
+		.def("findCity", &CyMap::findCity, boost::python::return_value_policy<boost::python::manage_new_object>(), "CyCity* (int iX, int iY, int (PlayerTypes) eOwner = NO_PLAYER, int (TeamTypes) eTeam = NO_TEAM, bool bSameArea = true, bool bCoastalOnly = false, int (TeamTypes) eTeamAtWarWith = NO_TEAM, int (DirectionTypes) eDirection = NO_DIRECTION, CvCity* pSkipCity = NULL) - finds city")
+		.def("findSelectionGroup", &CyMap::findSelectionGroup, boost::python::return_value_policy<boost::python::manage_new_object>(), "CvSelectionGroup* (int iX, int iY, int /*PlayerTypes*/ eOwner, bool bReadyToSelect, bool bWorkers)")
 
-		.def("findBiggestArea", &CyMap::findBiggestArea, python::return_value_policy<python::manage_new_object>(), "CyArea* ()")
+		.def("findBiggestArea", &CyMap::findBiggestArea, boost::python::return_value_policy<boost::python::manage_new_object>(), "CyArea* ()")
 
 		.def("getMapFractalFlags", &CyMap::getMapFractalFlags, "int ()")
 		.def("findWater", &CyMap::findWater, "bool (CyPlot* pPlot, int iRange, bool bFreshWater)")
@@ -63,15 +63,15 @@ void CyMapPythonInterface()
 		.def("getNumBonuses", &CyMap::getNumBonuses, "int () - total bonuses")
 		.def("getNumBonusesOnLand", &CyMap::getNumBonusesOnLand, "int () - total bonuses on land plots")
 
-		.def("plotByIndex", &CyMap::plotByIndex, python::return_value_policy<python::manage_new_object>(), "CyPlot (iIndex) - get a plot by its Index")
-		.def("sPlotByIndex", &CyMap::sPlotByIndex, python::return_value_policy<python::reference_existing_object>(), "CyPlot (iIndex) - static - get plot by iIndex")
-		.def("plot", &CyMap::plot, python::return_value_policy<python::manage_new_object>(), "CyPlot (iX,iY) - get CyPlot at (iX,iY)")
-		.def("sPlot", &CyMap::sPlot, python::return_value_policy<python::reference_existing_object>(), "CyPlot (iX,iY) - static - get CyPlot at (iX,iY)")
-		.def("pointToPlot", &CyMap::pointToPlot, python::return_value_policy<python::manage_new_object>())
+		.def("plotByIndex", &CyMap::plotByIndex, boost::python::return_value_policy<boost::python::manage_new_object>(), "CyPlot (iIndex) - get a plot by its Index")
+		.def("sPlotByIndex", &CyMap::sPlotByIndex, boost::python::return_value_policy<boost::python::reference_existing_object>(), "CyPlot (iIndex) - static - get plot by iIndex")
+		.def("plot", &CyMap::plot, boost::python::return_value_policy<boost::python::manage_new_object>(), "CyPlot (iX,iY) - get CyPlot at (iX,iY)")
+		.def("sPlot", &CyMap::sPlot, boost::python::return_value_policy<boost::python::reference_existing_object>(), "CyPlot (iX,iY) - static - get CyPlot at (iX,iY)")
+		.def("pointToPlot", &CyMap::pointToPlot, boost::python::return_value_policy<boost::python::manage_new_object>())
 		.def("getIndexAfterLastArea", &CyMap::getIndexAfterLastArea, "int () - index for handling NULL areas")
 		.def("getNumAreas", &CyMap::getNumAreas, "int () - total areas")
 		.def("getNumLandAreas", &CyMap::getNumLandAreas, "int () - total land areas")
-		.def("getArea", &CyMap::getArea, python::return_value_policy<python::manage_new_object>(), "CyArea (iID) - get CyArea at iID")
+		.def("getArea", &CyMap::getArea, boost::python::return_value_policy<boost::python::manage_new_object>(), "CyArea (iID) - get CyArea at iID")
 		.def("recalculateAreas", &CyMap::recalculateAreas, "void () - Recalculates the areaID for each plot. Should be preceded by CyMap.setPlotTypes(...)")
 		.def("resetPathDistance", &CyMap::resetPathDistance, "void ()")
 

@@ -948,78 +948,46 @@ enum VictoryTypes					// Exposed to Python
 enum FeatureTypes					// Exposed to Python
 {
 	NO_FEATURE = -1,
-	FEATURE_ICE,
-	FEATURE_JUNGLE,
-	FEATURE_OASIS,
-	FEATURE_FLOOD_PLAINS,
-	FEATURE_FOREST,
-	FEATURE_MARSH,
-	FEATURE_CAPE,
-	FEATURE_ISLANDS,
-	FEATURE_RAINFOREST,
-	FEATURE_FALLOUT,
+	FEATURE_ICE, FEATURE_JUNGLE, FEATURE_OASIS, FEATURE_FLOOD_PLAINS,
+	FEATURE_FOREST, FEATURE_MARSH, FEATURE_CAPE, FEATURE_ISLANDS,
+	FEATURE_RAINFOREST, FEATURE_FALLOUT,
 	FEATURE_TAIGA,
-	NUM_FEATURES
+	NUM_FEATURES,
+	iNoFeature = -1,
+	iSeaIce, iJungle, iOasis, iFloodPlains, 
+	iForest, iMud, iCape, iIslands, 
+	iRainforest, iFallout, iTaiga, // error: what is the "iTaiga"
+	iNumFeatures // = 10
 };
 
+// initialize bonuses variables to bonuses IDs from WBS
 enum BonusTypes						// Exposed to Python
 {
 	NO_BONUS = -1,
-	
-	BONUS_ALUMINUM,
-	BONUS_AMBER,
-	BONUS_CAMEL,
-	BONUS_CITRUS,
-	BONUS_COAL,
-	BONUS_COPPER,
-	BONUS_DATES,
-	BONUS_HORSE,
-	BONUS_IRON,
-	BONUS_MARBLE,
-	BONUS_OIL,
-	BONUS_STONE,
-	BONUS_URANIUM,
-	BONUS_BANANA,
-	BONUS_CLAM,
-	BONUS_CORN,
-	BONUS_COW,
-	BONUS_CRAB,
-	BONUS_DEER,
-	BONUS_FISH,
-	BONUS_PIG,
-	BONUS_POTATO,
-	BONUS_RICE,
-	BONUS_SHEEP,
-	BONUS_WHEAT,
-	BONUS_COCOA,
-	BONUS_COFFEE,
-	BONUS_COTTON,
-	BONUS_DYE,
-	BONUS_FUR,
-	BONUS_GEMS,
-	BONUS_GOLD,
-	BONUS_INCENSE,
-	BONUS_IVORY,
-	BONUS_JADE,
-	BONUS_MILLET,
-	BONUS_OBSIDIAN,
-	BONUS_OLIVES,
-	BONUS_OPIUM,
-	BONUS_PEARL,
-	BONUS_RARE_EARTHS,
-	BONUS_RUBBER,
-	BONUS_SALT,
-	BONUS_SILK,
-	BONUS_SILVER,
-	BONUS_SPICES,
-	BONUS_SUGAR,
-	BONUS_TEA,
-	BONUS_TOBACCO,
-	BONUS_WINE,
-	BONUS_WHALE,
-	BONUS_HIT_FOOTBALL_EVENT,
-	BONUS_HIT_SINGLES,
-	BONUS_HIT_MOVIES,
+	BONUS_ALUMINUM, BONUS_AMBER, BONUS_CAMEL, BONUS_CITRUS, BONUS_COAL,
+	BONUS_COPPER, BONUS_DATES, BONUS_HORSE, BONUS_IRON, BONUS_MARBLE,
+	BONUS_OIL, BONUS_STONE, BONUS_URANIUM, BONUS_BANANA, BONUS_CLAM,
+	BONUS_CORN, BONUS_COW, BONUS_CRAB, BONUS_DEER, BONUS_FISH,
+	BONUS_PIG, BONUS_POTATO, BONUS_RICE, BONUS_SHEEP, BONUS_WHEAT,
+	BONUS_COCOA, BONUS_COFFEE, BONUS_COTTON, BONUS_DYE, BONUS_FUR,
+	BONUS_GEMS, BONUS_GOLD, BONUS_INCENSE, BONUS_IVORY, BONUS_JADE,
+	BONUS_MILLET, BONUS_OBSIDIAN, BONUS_OLIVES, BONUS_OPIUM, BONUS_PEARL,
+	BONUS_RARE_EARTHS, BONUS_RUBBER, BONUS_SALT, BONUS_SILK, BONUS_SILVER,
+	BONUS_SPICES, BONUS_SUGAR, BONUS_TEA, BONUS_TOBACCO, BONUS_WINE,
+	BONUS_WHALE, BONUS_HIT_FOOTBALL_EVENT, BONUS_HIT_SINGLES, BONUS_HIT_MOVIES,
+	iNoBonus = -1,
+	iAluminium, iAmber, iCamel, iCitrus, iCoal,
+	iCopper, iDates, iHorse, iIron, iMarble,
+	iOil, iStone, iUranium, iBanana, iClam,
+	iCorn, iCow, iCrab, iDeer, iFish,
+	iPig, iPotato, iRice, iSheep, iWheat,
+	iCocoa, iCoffee, iCotton, iDye, iFur,
+	iGems, iGold, iIncense, iIvory, iJade,
+	iMillet, iObsidian, iOlives, iOpium, iPearls,
+	iRareEarths, iRubber, iSalt, iSilk, iSilver,
+	iSpices, iSugar, iTea, iTobacco, iWine,
+	iWhales, iSoccer, iSongs, iMovies,
+	iNumBonuses // = 54
 };
 
 enum BonusClassTypes			// Exposed to Python
@@ -1027,14 +995,21 @@ enum BonusClassTypes			// Exposed to Python
 	NO_BONUSCLASS = -1,
 };
 
+// Improvements
 enum ImprovementTypes			// Exposed to Python
 {
 	NO_IMPROVEMENT = -1,
+	iLandWorked, iWaterWorked, iCityRuins, iHut, iFarm, iPaddyField, iFishingBoats, iOceanFishery, iWhalingBoats, iMine,
+	iWorkshop, iLumbermill, iWindmill, iWatermill, iPlantation, iSlavePlantation, iQuarry, iPasture, iCamp, iWell,
+	iOffshorePlatform, iWinery, iCottage, iHamlet, iVillage, iTown, iFort, iForestPreserve, iMarinePreserve, iSolarCollector,
+	iNumImprovements // = 30
 };
 
 enum RouteTypes						// Exposed to Python
 {
 	NO_ROUTE = -1,
+	iRouteRoad, iRouteRailroad, iRouteRomanRoad, iRouteHighway,
+	iNumRoutes // = 4
 };
 
 enum RiverTypes						// Exposed to Python
@@ -1125,40 +1100,50 @@ enum TurnTimerTypes				// Exposed to Python
 	NO_TURNTIMER = -1,
 };
 
+// Eras
 enum EraTypes							// Exposed to Python
 {
 	NO_ERA = -1,
+	iAncient, iClassical, iMedieval, iRenaissance, iIndustrial, iGlobal, iDigital,
+	iNumEras // = 7
 };
 
+// civilizations, not players
 enum CivilizationTypes		// Exposed to Python
 {
 	NO_CIVILIZATION = -1,
+	iCivAmerica, iCivArabia, iCivArgentina, iCivArmenia, iCivAssyria,
+	iCivAustralia, iCivAztec, iCivBabylonia, iCivBoers, iCivBrazil,
+	iCivBurma, iCivByzantium, iCivCanada, iCivCarthage, iCivCelt,
+	iCivChad, iCivChalukya, iCivChimu, iCivChina, iCivColombia,
+	iCivEgypt, iCivEngland, iCivEthiopia, iCivFrance, iCivGermany,
+	iCivGreece, iCivHarappa, iCivHittites, iCivHolyRome, iCivHungary,
+	iCivInca, iCivIndia, iCivIndonesia, iCivInuit, iCivIran,
+	iCivIsrael, iCivItaly, iCivJapan, iCivKhazars, iCivKhitan,
+	iCivKhmer, iCivKievanRus, iCivKongo, iCivKorea, iCivLithuania,
+	iCivMali, iCivMamluks, iCivManchuria, iCivMaya, iCivMexico,
+	iCivMississippi, iCivMongols, iCivMoors, iCivMughals, iCivMuisca, 
+	iCivNativeAmericans, iCivNetherlands, iCivNigeria, iCivNorteChico, iCivNovgorod,
+	iCivNubia, iCivOlmecs, iCivOman, iCivOttomans, iCivPersia,
+	iCivPhilippines, iCivPoland, iCivPolynesia, iCivPortugal, iCivRome,
+	iCivRussia, iCivScotland, iCivSpain, iCivSumeria, iCivSwahili,
+	iCivSweden, iCivTamils, iCivTatar, iCivTeotihuacan, iCivThailand,
+	iCivTibet, iCivTiwanaku, iCivTurks, iCivVietnam, iCivVikings,
+	iCivWari, iCivXiongnu, iCivYemen, iCivYuezhi, iCivZimbabwe,
+	iCivZulu, iCivIndependent, iCivIndependent2, iCivNative, iCivMinor, 
+	iCivBarbarian,
+	iNumCivilizations  //  = 96
 };
 
 enum LeaderHeadTypes			// Exposed to Python
 {
 	NO_LEADER = -1,
 
-	LEADER_BARBARIAN,
-	LEADER_NATIVE,
-	LEADER_INDEPENDENT,
-	ALEXANDER_THE_GREAT,
-	ASOKA,
-	AUGUSTUS,
-	BISMARCK,
-	BOUDICA,
-	BRENNUS,
-	CATHERINE,
-	CHARLEMAGNE,
-	CHURCHILL,
-	CYRUS,
-	DARIUS,
-	DE_GAULLE,
-	ELIZABETH,
-	FREDERICK,
-	GANDHI,
-	GENGHIS_KHAN,
-	SARGON,
+	LEADER_BARBARIAN, LEADER_NATIVE, LEADER_INDEPENDENT, ALEXANDER_THE_GREAT,
+	ASOKA, AUGUSTUS, BISMARCK, BOUDICA,
+	BRENNUS, CATHERINE, CHARLEMAGNE, CHURCHILL,
+	CYRUS, DARIUS, DE_GAULLE, ELIZABETH,
+	FREDERICK, GANDHI, GENGHIS_KHAN, SARGON,
 	HAMMURABI,
 	HANNIBAL,
 	CLEOPATRA,
@@ -1319,7 +1304,27 @@ enum LeaderHeadTypes			// Exposed to Python
 	MODU_CHANYU,
 	MINDAUGAS,
 	SUPPI,
-	NUM_LEADERHEADS
+	NUM_LEADERHEADS,
+	iNoLeader = -1,
+	iLeaderBarbarian, iNativeLeader, iIndependentLeader, iAlexanderTheGreat, 
+	iAsoka, iAugustus, iBismarck, iBoudica, iBrennus, iCatherine,
+	iCharlemagne, iChurchill, iCyrus, iDarius, iDeGaulle, iElizabeth, iFrederick, iGandhi, iGenghisKhan, iSargon,
+	iHammurabi, iHannibal, iCleopatra, iHuaynaCapac, iIsabella, iJoao, iJuliusCaesar, iJustinian, iKublaiKhan, iLincoln,
+	iLouis, iMansaMusa, iMao, iMehmed, iMontezuma, iNapoleon, iPacal, iPericles, iPeter, iQinShiHuang,
+	iRamesses, iRagnar, iRoosevelt, iSaladin, iSittingBull, iStalin, iSuleiman, iSuryavarman, iOdaNobunaga, iVictoria,
+	iWangKon, iWashington, iWillemVanOranje, iZaraYaqob, iKammu, iMeiji, iAkbar, iHiram, iMenelik, iGustav,
+	iMongkut, iPhilip, iBarbarossa, iCharles, iFrancis, iIvan, iAfonso, iAtaturk, iMaria, iHitler,
+	iFranco, iAlexanderII, iCavour, iAbbas, iKhomeini, iTaizong, iHongwu, iDharmasetu, iHayamWuruk, iSuharto,
+	iShahuji, iNaresuan, iAlpArslan, iBaibars, iNasser, iAlfred, iTrudeau, iChandragupta, iTughluq, iBasil,
+	iRahman, iRajendra, iLobsangGyatso, iSobieski, iVatavelli, iMbemba, iHarun, iSongtsen, iCasimir, iYaqub,
+	iLorenzo, iSantaAnna, iJuarez, iCardenas, iPedro, iSanMartin, iPeron, iBolivar, iAhoeitu, iKrishnaDevaRaya,
+	iMussolini, iSejong, iBhutto, iPilsudski, iWalesa, iGerhardsen, iVargas, iMacDonald, iCastilla, iWilliam,
+	iGeorge, iKhosrow, iBumin, iTamerlane, iEzana, iChristian, iGustavVasa, iKarl, iCurtin, iMenzies, iMustasim, iKangxi, iCixi, iOduduwa, iEwuare,
+	iAminatu, iLapuLapu, iKruger, iMandela, iShirazi, iDawud, iBarghash, iTrung, iChieuHoang, iHoChiMinh, iRusvingo, iMutota,
+	iAnawrahta, iShinSawbu, iBayinnuang, iBohdan, iYaroslav, iIstvan, iKossuth, iAtlatlCauac, iBenGurion, iSaif, iArwa, iBulan, iPiye, iDunama,
+	iRobert, iCollins, iWiracocha, iAbaoji, iMalkuHuyustus, iWariCapac, iAshur, iTacaynamo, iAshot, iPulakesi, iRedHorn, iAua, iSacuamanchica, iRurik, iUzbeg, iTezcatlipoca, iKanishka, iModuChanyu,
+	iMindaugas, iSuppi, iDeganawida,
+	iNumLeaders // = 182
 };
 
 // Used for managing Art Differences based on nationality
@@ -1390,95 +1395,56 @@ enum TeamTypes					// Exposed to Python
 	NO_TEAM = -1,
 };
 
+// initialize player variables to player IDs from WBS
 enum PlayerTypes				// Exposed to Python
 {
 	NO_PLAYER = -1,
-	EGYPT,
-	BABYLONIA,
-	HARAPPA,
-	NORTECHICO,
-	NUBIA,
-	ASSYRIA,
-	CHINA,
-	HITTITES,
-	GREECE,
-	OLMECS,
-	INDIA,
-	PHOENICIA,
-	CELTIA,
-	POLYNESIA,
-	PERSIA,
-	ROME,
-	YUEZHI,
-	MAYA,
-	TAMILS,
-	XIONGNU,
-	ETHIOPIA,
-	VIETNAM,
-	TEOTIHUACAN,
-	ARMENIA,
-	INUIT,
-	MISSISSIPPI,
-	KOREA,
-	TIWANAKU,
-	BYZANTIUM,
-	WARI,
-	JAPAN,
-	VIKINGS,
-	TURKS,
-	ARABIA,
-	TIBET,
-	INDONESIA,
-	BURMA,
-	KHAZARS,
-	CHAD,
-	MOORS,
-	SPAIN,
-	FRANCE,
-	OMAN,
-	KHITAN,
-	KHMER,
-	MUISCA,
-	YEMEN,
-	ENGLAND,
-	HOLY_ROME,
-	NOVGOROD,
-	KIEVAN_RUS,
-	HUNGARY,
-	PHILIPPINES,
-	SWAHILI,
-	MAMLUKS,
-	MALI,
-	POLAND,
-	ZIMBABWE,
-	PORTUGAL,
-	INCA,
-	ITALY,
-	NIGERIA,
-	LITHUANIA,
-	MONGOLIA,
-	AZTECS,
-	MUGHALS,
-	TATAR,
-	TURKEY,
-	RUSSIA,
-	THAILAND,
-	CONGO,
-	SWEDEN,
-	NETHERLANDS,
-	MANCHURIA,
-	GERMANY,
-	AMERICA,
-	ARGENTINA,
-	BRAZIL,
-	AUSTRALIA,
-	BOERS,
-	CANADA,
-	ISRAEL,
-	INDEPENDENT,
-	INDEPENDENT2,
-	NATIVE,
-	BARBARIAN
+	EGYPT, BABYLONIA, HARAPPA, NORTECHICO, NUBIA,
+	ASSYRIA, CHINA, HITTITES, GREECE, OLMECS,
+	INDIA, PHOENICIA, CELTIA, POLYNESIA, PERSIA,
+	ROME, YUEZHI, MAYA, TAMILS, XIONGNU, ETHIOPIA,
+	VIETNAM, TEOTIHUACAN, ARMENIA, INUIT, MISSISSIPPI,
+	KOREA, TIWANAKU, BYZANTIUM, WARI, JAPAN,
+	VIKINGS, TURKS, ARABIA, TIBET, INDONESIA,
+	BURMA, KHAZARS, CHAD, MOORS, SPAIN,
+	FRANCE, OMAN, KHITAN, KHMER, MUISCA,
+	YEMEN, ENGLAND, HOLY_ROME, NOVGOROD, KIEVAN_RUS,
+	HUNGARY, PHILIPPINES, SWAHILI, MAMLUKS, MALI,
+	POLAND, ZIMBABWE, PORTUGAL, INCA, ITALY,
+	NIGERIA, LITHUANIA, MONGOLIA, AZTECS, MUGHALS,
+	TATAR, TURKEY, RUSSIA, THAILAND, CONGO,
+	SWEDEN,NETHERLANDS, MANCHURIA, GERMANY, AMERICA,
+	ARGENTINA, BRAZIL, AUSTRALIA, BOERS, CANADA,
+	ISRAEL, INDEPENDENT, INDEPENDENT2, NATIVE, BARBARIAN,
+
+	iNoPlayer = -1,
+
+	iEgypt, iBabylonia, iHarappa, iNorteChico, iNubia,
+	iAssyria, iChina, iHittites, iGreece, iOlmecs,
+	iIndia, iCarthage, iCeltia, iPolynesia, iPersia,
+	iRome, iYuezhi, iMaya, iTamils, iXiongnu,
+	iEthiopia, iVietnam, iTeotihuacan, iArmenia, iInuit,
+	iMississippi, iKorea, iTiwanaku, iByzantium, iWari,
+	iJapan, iVikings, iTurks, iArabia, iTibet,
+	iIndonesia, iBurma, iKhazars, iChad, iMoors,
+	iSpain, iFrance, iOman, iKhitan, iKhmer,
+	iMuisca, iYemen, iEngland, iHolyRome, iNovgorod,
+	iKievanRus, iHungary, iPhilippines, iSwahili, iMamluks,
+	iMali, iPoland, iZimbabwe, iPortugal, iInca,
+	iItaly, iNigeria, iLithuania, iMongolia, iAztecs,
+	iMughals, iTatar, iOttomans, iRussia, iThailand,
+	iCongo, iSweden, iNetherlands, iManchuria, iGermany,
+	iAmerica, iArgentina, iBrazil, iAustralia, iBoers,
+	iCanada, iIsrael,
+
+	iNumPlayers, // = 82
+
+	iIndependent = iNumPlayers,
+	iIndependent2,
+	iNative,
+	iNumTotalPlayers,
+	iBarbarian,
+	iNumTotalPlayersB
 };
 
 enum TraitTypes					// Exposed to Python
@@ -1530,9 +1496,43 @@ enum BuildingClassTypes				// Exposed to Python
 	NO_BUILDINGCLASS = -1,
 };
 
+// Buildings
 enum BuildingTypes						// Exposed to Python
 {
 	NO_BUILDING = -1,
+	iPalace, iBarracks, iEkal, iIkhanda, iCastra, iGranary, iTerrace, iColcas, iIgloo, iSmokehouse, iShieling, iKraal, iSaltovo, iPaganTemple, iMonument, iKhachkar, iObelisk, iStele, iCandi, iEdict, iMalae, iTotemPole, iZiara, iStatue, iDeffufas,
+	iShicra, iColossalHead, iWalls, iIya, iDun, iKasbah, iStable, iGer, iEstancia, iBullring, iGerTereg, iLibrary, iEdubba, iTaixue,
+	iHoTrai, iSangam, iPaya, iGandharaSchool, iHarbor, iCothon, iFishery, iPort, iMina, iAqueduct, iBaray, iNoria, iStepwell, iChinampa, iAbAnbar, iDam, iTheatre, iOdeon,
+	iHippodrome, iOpera, iArena, iBallCourt, iCharreadaArena, iGarden, iBasilica, iLighthouse, iTradingPost, iZango, iWeaver, iMbwadi,
+	iMarket, iForum, iGlassmaker, iAgora, iBazaar, iSouq, iJail, iSacrificialAltar, iDivan, iBath, iReservoir, iTemazcal, iHammam, iForge, iIronForge,
+	iMint, iArtStudio, iDutchMill, iStoneCutter, iGoldsmith, iCastle, iCitadel, iMountainFortress, iVegvar, iKancha, iPharmacy, iApothecary, iAlchemist, iPostOffice, iTambo, iShreni, iYam, iCaravanserai,
+	iWharf, iCoffeehouse, iSalon, iPavilion, iPublicHouse, iTeahouse, iPagoda, iMeadhall, iBank, iRoyalExchange, iSaltMine, iRiksbank, iPiaohao, iConstabulary, iMountedPolice, iCustomsHouse, iFeitoria, iCollegantia, iTradeGuild, iImmigrationOffice, iUniversity,
+	iSeowon, iGompa, iPublicUniversity, iNizamiyya, iCivicSquare, iRathaus, iSejmik, iSambadrome, iWene, iPendopo, iDinh, iKalasasaya, iSewer, iEarlySewer, iStarFort, iQila, iRussiaKremlin, iPlaas, iEstate, iMausoleum, iFazenda,
+	iHacienda, iChateau, iFolwark, iColonyAdministration, iDrydock, iLevee, iDike, iFLoatingMarket, iObservatory, iKushitePyramid, iKatun, iWarehouse, iKonets, iCourthouse, iTatarOrda, iXeer, iSatrapCourt, iVeche, iSeimelis, iFactory, iAssemblyPlant, iZaibatsu,
+	iDistillery, iPark, iKibbutz, iEffigyMound, iCoalPlant, iRailwayStation, iLaboratory, iResearchInstitute, iNewsPress, iIndustrialPark, iCinema, iHospital, iMendicantOrder,
+	iSupermarket, iColdStoragePlant, iPublicTransportation, iDepartmentStore, iMall, iBroadcastTower, iMicrowaveStation, iIntelligenceAgency, iElectricalGrid, iAirport, iBunker, iPillbox,
+	iBombShelters, iHydroPlant, iSecurityBureau, iStadium, iContainerTerminal, iNuclearPlant, iSupercomputer, iHotel, iResort, iRecyclingCenter, iLogisticsCenter,
+	iSolarPlant, iFiberNetwork, iAutomatedFactory, iVerticalFarm, iJewishTemple, iJewishCathedral, iJewishMonastery, iJewishShrine, iOrthodoxTemple, iOrthodoxCathedral,
+	iOrthodoxMonastery, iOrthodoxShrine, iCatholicChurch, iCatholicCathedral, iCatholicMonastery, iCatholicShrine, iProtestantTemple, iProtestantCathedral, iProtestantMonastery, iProtestantShrine,
+	iIslamicTemple, iIslamicCathedral, iIslamicMonastery, iIslamicShrine, iHinduTemple, iHinduCathedral, iHinduMonastery, iHinduShrine, iBuddhistTemple, iBuddhistCathedral,
+	iBuddhistMonastery, iBuddhistShrine, iConfucianTemple, iConfucianCathedral, iConfucianMonastery, iConfucianShrine, iTaoistTemple, iTaoistCathedral, iTaoistMonastery, iTaoistShrine,
+	iZoroastrianTemple, iZoroastrianCathedral, iZoroastrianMonastery, iZoroastrianShrine, iAcademy, iAdministrativeCenter, iManufactory, iArmoury, iMuseum, iStockExchange,
+	iTradingCompanyBuilding, iIberianTradingCompanyBuilding, iNationalMonument, iNationalTheatre, iNationalGallery, iNationalCollege, iMilitaryAcademy, iSecretService, iIronworks, iRedCross,
+	iNationalPark, iCentralBank, iSpaceport, iGreatSphinx, iPyramids, iPyramidOfTheSun, iOracle, iGreatWall, iIshtarGate, iTerracottaArmy, iHangingGardens,
+	iGreatCothon, iDujiangyan, iApadanaPalace, iColossus, iStatueOfZeus, iGreatMausoleum, iParthenon, iTempleOfArtemis, iGreatLighthouse, iMoaiStatues,
+	iFlavianAmphitheatre, iAquaAppia, iAlKhazneh, iTempleOfKukulkan, iMachuPicchu, iGreatLibrary, iFloatingGardens, iGondeshapur, iJetavanaramaya, iNalanda,
+	iTheodosianWalls, iHagiaSophia, iBorobudur, iMezquita, iShwedagonPaya, iMountAthos, iIronPillar, iPrambanan, iSalsalBuddha, iCheomseongdae,
+	iHimejiCastle, iGrandCanal, iWatPreahPisnulok, iKhajuraho, iSpiralMinaret, iDomeOfTheRock, iHouseOfWisdom, iKrakDesChevaliers, iMonolithicChurch, iUniversityOfSankore,
+	iNotreDame, iOldSynagogue, iSaintSophia, iSilverTreeFountain, iSantaMariaDelFiore, iAlamut, iSanMarcoBasilica, iSistineChapel, iPorcelainTower, iTopkapiPalace,
+	iKremlin, iSaintThomasChurch, iVijayaStambha, iGurEAmir, iRedFort, iTajMahal, iForbiddenPalace, iVersailles, iBlueMosque, iEscorial,
+	iTorreDeBelem, iPotalaPalace, iOxfordUniversity, iHarmandirSahib, iSaintBasilsCathedral, iBourse, iItsukushimaShrine, iImageOfTheWorldSquare, iLouvre, iEmeraldBuddha,
+	iShalimarGardens, iTrafalgarSquare, iHermitage, iGuadalupeBasilica, iSaltCathedral, iAmberRoom, iStatueOfLiberty, iBrandenburgGate, iAbbeyMills, iBellRockLighthouse,
+	iChapultepecCastle, iEiffelTower, iWestminsterPalace, iTriumphalArch, iMenloPark, iCrystalPalace, iTsukijiFishMarket, iBrooklynBridge, iHollywood, iEmpireStateBuilding,
+	iLasLajasSanctuary, iPalaceOfNations, iMoleAntonelliana, iNeuschwanstein, iFrontenac, iWembley, iLubyanka, iCristoRedentor, iMetropolitain, iNobelPrize,
+	iGoldenGateBridge, iBletchleyPark, iSagradaFamilia, iCERN, iItaipuDam, iGraceland, iCNTower, iPentagon, iUnitedNations, iCrystalCathedral,
+	iMotherlandCalls, iBerlaymont, iWorldTradeCenter, iAtomium, iIronDome, iHarbourOpera, iGreatZimbabwe, iLotusTemple, iGlobalSeedVault, iGardensByTheBay, iBurjKhalifa,
+	iHubbleSpaceTelescope, iChannelTunnel, iSkytree, iOrientalPearlTower, iDeltaWorks, iSpaceElevator, iLargeHadronCollider, iITER, iGateOfTheSun, iSerpentMound,
+	iNumBuildings // = 404
 };
 
 enum SpecialBuildingTypes			// Exposed to Python
@@ -1544,28 +1544,24 @@ enum ProjectTypes				// Exposed to Python
 {
 	NO_PROJECT = -1,
 
-	PROJECT_MANHATTAN_PROJECT,
-	PROJECT_THE_INTERNET,
-	PROJECT_HUMAN_GENOME_PROJECT,
-	PROJECT_STRATEGIC_DEFENSE_INITIATIVE,
-	PROJECT_GLOBAL_POSITIONING_SYSTEM,
-	PROJECT_INTERNATIONAL_SPACE_STATION,
-	PROJECT_BALLISTIC_MISSILE,
-	PROJECT_FIRST_SATELLITE,
-	PROJECT_MAN_IN_SPACE,
-	PROJECT_LUNAR_LANDING,
-	PROJECT_GOLDEN_RECORD,
-	PROJECT_MARS_MISSION,
-	PROJECT_LUNAR_COLONY,
-	PROJECT_INTERSTELLAR_PROBE,
-	PROJECT_MARS_FRAMING,
-	PROJECT_MARS_POWER_SOURCE,
-	PROJECT_MARS_EXTRACTOR,
-	PROJECT_MARS_HABITAT,
-	PROJECT_MARS_HYDROPONICS,
-	PROJECT_MARS_LABORATORY,
-	PROJECT_MARS_CONTROL_CENTER,
-	NUM_PROJECTS,
+	PROJECT_MANHATTAN_PROJECT, PROJECT_THE_INTERNET, PROJECT_HUMAN_GENOME_PROJECT, 
+	PROJECT_STRATEGIC_DEFENSE_INITIATIVE, PROJECT_GLOBAL_POSITIONING_SYSTEM, PROJECT_INTERNATIONAL_SPACE_STATION, 
+	PROJECT_BALLISTIC_MISSILE, PROJECT_FIRST_SATELLITE, PROJECT_MAN_IN_SPACE, 
+	PROJECT_LUNAR_LANDING, PROJECT_GOLDEN_RECORD, PROJECT_MARS_MISSION, 
+	PROJECT_LUNAR_COLONY, PROJECT_INTERSTELLAR_PROBE, PROJECT_MARS_FRAMING, 
+	PROJECT_MARS_POWER_SOURCE, PROJECT_MARS_EXTRACTOR, PROJECT_MARS_HABITAT, 
+	PROJECT_MARS_HYDROPONICS, PROJECT_MARS_LABORATORY, PROJECT_MARS_CONTROL_CENTER,
+	NUM_PROJECTS, // = 21
+
+	iNoProject = -1,
+	iManhattanProject, iTheInternet, iHumanGenome, 
+	iSDI, iGPS, iISS, 
+	iBallisticMissile, iFirstSatellite, iManInSpace, 
+	iLunarLanding, iGoldenRecord, iMarsMission, 
+	iLunarColony, iInterstellarProbe, iMarsFraming,
+	iMarsPowerSource, iMarsExtractor, iMarsHabitat, 
+	iMarsHydroponics, iMarsLaboratory, iMarsControlCenter,
+	iNumPorjects // = 21
 };
 
 enum AxisTypes
@@ -1726,9 +1722,30 @@ enum UnitClassTypes		// Exposed to Python
 	NO_UNITCLASS = -1,
 };
 
+// initialize unit variables to unit indices from XML
 enum UnitTypes				// Exposed to Python
 {
 	NO_UNIT = -1,
+	iLion, iTiger, iBear, iPolarBear, iPanther, iJaguarAnimal, iWolf, iHyena, iRabbit, iSettler, iCityBuilder, iPioneer, iKhagan, iDogSled, iWorker, iArtisan, iPunjabiWorker, iArchitect, iAyllu, iLabourer,
+	iMadeireiro, iScout, iExplorer, iCaravan, iBandeirante, iSpy, iSisqeno, iReligiousPersecutor, iJewishMissionary, iOrthodoxMissionary, iCatholicMissionary, iProtestantMissionary,
+	iIslamicMissionary, iHinduMissionary, iBuddhistMissionary, iConfucianMissionary, iTaoistMissionary, iZoroastrianMissionary, iWarrior, iMilitia, iCityGuard, iKoa, iFalconDancer, iAxeman, iLightSwordsman,
+	iVulture, iDogSoldier, iKhopesh, iSwordsman, iJaguar, iLegion, iGallicWarrior, iAucac, iShotelai, iHeavySwordsman, iUshkuinik, iVishap, iSamurai,
+	iHuscarl, iGhazi, iPombos, iDoppelSoldner, iKallarani, iSpearman, iHoplite, iSacredBand, iImmortal, iEagle, iHolkans, iImpi, iHeavySpearman, iSheltron, iKyundaw, iBambooRuncing, iPhakak, iDruzhina, iPikeman,
+	iLandsknecht, iTagmata, iAshigaru, iDobDob, iRozwiWarrior, iArquebusier, iFirelancer, iTercio, iStrelets, iJanissary, iOromoWarrior, iQizilbash, iMohawk, iMusketeer, iBandeirantes,
+	iRedcoat, iKarolin, iFusilier, iMinuteman, iIronHelmet, iRifleman, iMehalSefari, iMahardlek, iGrenadier, iRocketeer, iGrenzer, iAlbionLegion, iGardist, iNaffatun, iAntiTank,
+	iInfantry, iBersagliere, iPatricios, iEjercito, iSepoy, iDigger, iSamInfantry, iMobileSam, iMarine, iNavySeal, iGuardaNacional, iParatrooper, iMechanizedInfantry, iArcher, iAsharittuBowman, iMedjay, iPictaAucac,
+	iSkirmisher, iHolkan, iKelebolo, iChimuSuchucChiquiAucac, iGuechaWarrior, iLongbowman, iPatiyodha, iNgolo, iSlinger, iRattanArcher, iCrossbowman, iChokonu, iBalestriere, iChariot, iWarChariot,
+	iHuluganni, iCidainh, iScythedChariot, iHorseman, iCompanion, iNumidianCavalry, iAsvaka, iGuli, iCamelRider, iHorseArcher, iMangudai, iKhampa,
+	iOghuz, iBerber, iCamelArcher, iArabianCamelArcher, iLancer, iIronpagoda, iVaru, iSavaran, iMobileGuard, iKeshik, iCataphract, iChangSuek, iRoyalMamluk, iYanLifida, iHuszar, iFarari, iChevalier, iGhulamWarrior, iVytis,
+	iPistolier, iMountedBrave, iSavannaHunter, iCamelGunner, iMoorsCamelGunner, iCuirassier, iTatarNoyan, iEightBanner, iGendarme, iConquistador, iWingedHussar, iCondotierro, iHussar, iCossack, iLlanero,
+	iDragoon, iGuard, iGrenadierCavalry, iCavalry, iRural, iKommando, iWarElephant, iBallistaElephant, iAtlasElephant, iMahout, iTank, iPanzer, iMainBattleTank, iMerkava,
+	iGunship, iCatapult, iRam, iBallista, iTrebuchet, iFirelance, iSiegeEngineer, iBombard, iHwacha, iTabor, iSiegeElephant, iGreatBombard, iCannon, iHeavyCannon, iArtillery,
+	iMachineGun, iHowitzer, iHeavyHowitzer, iMobileArtillery, iWorkboat, iGalley, iWaka, iBireme, iBalangay, iWarGalley, iHeavyGalley, iDromon,
+	iLongship, iCog, iDharani, iDhow, iGalleass, iDjong, iKobukson, iLanternas, iCaravel, iCarrack, iBaghlah, iGalleon, iEastIndiaman, iPrivateer, iCorsair, iFrigate, iShipOfTheLine, iManOfWar, iSteamship, iIronclad, iTorpedoBoat, iCruiser,
+	iTransport, iDestroyer, iCorvette, iBattleship, iMissileCruiser, iStealthDestroyer, iSubmarine, iNuclearSubmarine, iCarrier, iBiplane, iFighter, iZero, iJetFighter, iArrow, iBomber, iStealthBomber, iGuidedMissile, iDrone, iNuclearBomber, iICBM, iSatellite,
+	iGreatProphet, iGreatArtist, iGreatScientist, iGreatMerchant, iGreatEngineer, iGreatStatesman, iGreatGeneral, iArgentineGreatGeneral, iGreatSpy, iFemaleGreatProphet,
+	iFemaleGreatArtist, iFemaleGreatScientist, iFemaleGreatMerchant, iFemaleGreatEngineer, iFemaleGreatStatesman, iFemaleGreatGeneral, iFemaleGreatSpy, iSlave, iAztecSlave,
+	iNumUnits // = 288
 };
 
 enum SpecialUnitTypes	// Exposed to Python
@@ -2153,52 +2170,86 @@ enum PromotionTypes				// Exposed to Python
 	NUM_PROMOTIONS
 };
 
+// initialize tech variables to unit indices from XML
 enum TechTypes						// Exposed to Python
 {
 	NO_TECH = -1,
+	iTanning, iMining, iPottery, iPastoralism, iAgriculture,
+	iMythology, iSailing, iSmelting, iMasonry, iLeverage,
+	iProperty, iCeremony, iDivination, iSeafaring, iAlloys,
+	iConstruction, iRiding, iArithmetics, iWriting, iCalendar,
+	iShipbuilding, iBloomery, iCement, iMathematics, iContract,
+	iLiterature, iPriesthood, iNavigation, iGeneralship, iEngineering,
+	iAesthetics, iCurrency, iLaw, iPhilosophy, iMedicine,
+	iNobility, iSteel, iArchitecture, iArtisanry, iPolitics,
+	iScholarship, iEthics, iFeudalism, iFortification, iMachinery,
+	iAlchemy, iGuilds, iCivilService, iTheology, iCommune,
+	iCropRotation, iPaper, iCompass, iPatronage, iEducation,
+	iDoctrine, iGunpowder, iCompanies, iFinance, iCartography,
+	iHumanities, iPrinting, iJudiciary, iFirearms, iLogistics,
+	iExploration, iOptics, iAcademia, iStatecraft, iHeritage,
+	iCombinedArms, iEconomics, iGeography, iScientificMethod, iUrbanPlanning,
+	iCivilLiberties, iHorticulture, iReplaceableParts, iHydraulics, iPhysics,
+	iGeology, iMeasurement, iSociology, iSocialContract, iMachineTools,
+	iThermodynamics, iMetallurgy, iChemistry, iBiology, iRepresentation,
+	iNationalism, iBallistics, iEngine, iRailroad, iElectricity,
+	iRefrigeration, iLabourUnions, iJournalism, iPneumatics, iAssemblyLine,
+	iRefining, iFilm, iMicrobiology, iConsumerism, iCivilRights,
+	iInfrastructure, iFlight, iSynthetics, iRadio, iPsychology,
+	iMacroeconomics, iSocialServices, iAviation, iRocketry, iFission,
+	iElectronics, iTelevision, iPowerProjection, iGlobalism, iRadar,
+	iSpaceflight, iNuclearPower, iLaser, iComputers, iTourism,
+	iEcology, iAerodynamics, iSatellites, iSuperconductors, iRobotics,
+	iTelecommunications, iRenewableEnergy, iGenetics, iSupermaterials, iFusion,
+	iNanotechnology, iAutomation, iBiotechnology, iUnifiedTheory, iArtificialIntelligence,
+	iTranshumanism,
+	iNumTechs // = 141
 };
 
+// Specialists
 enum SpecialistTypes			// Exposed to Python
 {
-	NO_SPECIALIST = -1,
-	SPECIALIST_CITIZEN,
-	SPECIALIST_PRIEST,
-	SPECIALIST_ARTIST,
-	SPECIALIST_SCIENTIST,
-	SPECIALIST_MERCHANT,
-	SPECIALIST_ENGINEER,
-	SPECIALIST_STATESMAN,
-	SPECIALIST_GREAT_PRIEST,
-	SPECIALIST_GREAT_ARTIST,
-	SPECIALIST_GREAT_SCIENTIST,
-	SPECIALIST_GREAT_MERCHANT,
-	SPECIALIST_GREAT_ENGINEER,
-	SPECIALIST_GREAT_STATESMAN,
-	SPECIALIST_GREAT_GENERAL,
-	SPECIALIST_GREAT_SPY,
-	SPECIALIST_SLAVE,
-	NUM_SPECIALIST_TYPES
+	NO_SPECIALIST = -1, 
+	SPECIALIST_CITIZEN, SPECIALIST_PRIEST, SPECIALIST_ARTIST,
+	SPECIALIST_SCIENTIST, SPECIALIST_MERCHANT, SPECIALIST_ENGINEER, 
+	SPECIALIST_STATESMAN, SPECIALIST_GREAT_PRIEST, SPECIALIST_GREAT_ARTIST, 
+	SPECIALIST_GREAT_SCIENTIST, SPECIALIST_GREAT_MERCHANT, SPECIALIST_GREAT_ENGINEER, 
+	SPECIALIST_GREAT_STATESMAN, SPECIALIST_GREAT_GENERAL, SPECIALIST_GREAT_SPY, 
+	SPECIALIST_RESEARCH_SATELLIET, SPECIALIS_COMMERCIAL_STATELLITE,
+	SPECIALIST_MILLITARY_SATELLITE, SPECIALIST_SLAVE,
+	NUM_SPECIALIST_TYPES,
+	iNoSpecialist = -1,
+	iSpecialistCitizen, iSpecialistPriest, iSpecialistArtist,
+	iSpecialistScientist, iSpecialistMerchant, iSpecialistEngineer,
+	iSpecialistStatesman, iSpecialistGreatProphet, iSpecialistGreatArtist,
+	iSpecialistGreatScientist, iSpecialistGreatMerchant, iSpecialistGreatEngineer,
+	iSpecialistGreatStatesman, iSpecialistGreatGeneral, iSpecialistGreatSpy,
+	iSpecialistResearchSatellite, iSpecialistCommercialSatellite,
+	iSpecialistMilitarySatellite, iSpecialistSlave,
+	iNumSpecialists // = 19
 };
 
+// initialize religion variables to religion indices from XML
 enum ReligionTypes				// Exposed to Python
 {
 	NO_RELIGION = -1,
-	JUDAISM,
-	ORTHODOXY,
-	CATHOLICISM,
-	PROTESTANTISM,
-	ISLAM,
-	HINDUISM,
-	BUDDHISM,
-	CONFUCIANISM,
-	TAOISM,
-	ZOROASTRIANISM,
-	NUM_RELIGIONS,
+	JUDAISM, ORTHODOXY, CATHOLICISM, PROTESTANTISM, ISLAM,
+	HINDUISM, BUDDHISM, CONFUCIANISM, TAOISM, ZOROASTRIANISM,
+	NUM_RELIGIONS, // = 10
+	iNoReligion = -1,
+	iJudaism, iOrthodoxy, iCatholicism, iProtestantism, iIslam, 
+	iHinduism, iBuddhism, iConfucianism, iTaoism, iZoroastrianism,
+	iNumReligions // = 10
 };
 
+// corporations
 enum CorporationTypes				// Exposed to Python
 {
 	NO_CORPORATION = -1,
+	iTransSaharanRoute, iSpiceRoute, iSilkRoute, iTradingCompany, 
+	iCerealIndustry, iFishingIndustry, iTextileIndustry, iSteelIndustry, 
+	iOilIndustry, iLuxuryIndustry, iComputerIndustry,
+	iNumCorporations // = 11
 };
 
 enum HurryTypes						// Exposed to Python
@@ -2216,69 +2267,49 @@ enum CultureLevelTypes		// Exposed to Python
 	NO_CULTURELEVEL = -1,
 };
 
+
 enum CivicOptionTypes			// Exposed to Python
 {
 	NO_CIVICOPTION = -1,
-
-	CIVICOPTION_GOVERNMENT,
-	CIVICOPTION_LEGITIMACY,
-	CIVICOPTION_SOCIETY,
-	CIVICOPTION_ECONOMY,
-	CIVICOPTION_RELIGION,
-	CIVICOPTION_TERRITORY,
+	CIVICOPTION_GOVERNMENT, CIVICOPTION_LEGITIMACY, CIVICOPTION_SOCIETY,
+	CIVICOPTION_ECONOMY, CIVICOPTION_RELIGION, CIVICOPTION_TERRITORY,
+	iNoCivicOption = -1,
+	iCivicsGovernment, iCivicsLegitimacy, iCivicsSociety, 
+	iCivicsEconomy, iCivicsReligion, iCivicsTerritory,
+	iNumCivicCategories // = 6
 };
 
+// Civics
 enum CivicTypes						// Exposed to Python
 {
 	NO_CIVIC = -1,
 
-	CIVIC_CHIEFDOM,
-	CIVIC_DESPOTISM,
-	CIVIC_MONARCHY,
-	CIVIC_REPUBLIC,
-	CIVIC_ELECTIVE,
-	CIVIC_STATE_PARTY,
-	CIVIC_DEMOCRACY,
+	CIVIC_CHIEFDOM, CIVIC_DESPOTISM, CIVIC_MONARCHY, CIVIC_REPUBLIC, 
+	CIVIC_ELECTIVE, CIVIC_STATE_PARTY, CIVIC_DEMOCRACY,
 
-	CIVIC_AUTHORITY,
-	CIVIC_CITIZENSHIP,
-	CIVIC_VASSALAGE,
-	CIVIC_MERITOCRACY,
-	CIVIC_CENTRALISM,
-	CIVIC_REVOLUTIONISM,
-	CIVIC_CONSTITUTION,
+	CIVIC_AUTHORITY, CIVIC_CITIZENSHIP, CIVIC_VASSALAGE, CIVIC_MERITOCRACY, 
+	CIVIC_CENTRALISM, CIVIC_REVOLUTIONISM, CIVIC_CONSTITUTION,
 
-	CIVIC_TRADITIONALISM,
-	CIVIC_SLAVERY,
-	CIVIC_MANORIALISM,
-	CIVIC_CASTE_SYSTEM,
-	CIVIC_INDIVIDUALISM,
-	CIVIC_TOTALITARIANISM,
-	CIVIC_EGALITARIANISM,
+	CIVIC_TRADITIONALISM, CIVIC_SLAVERY, CIVIC_MANORIALISM, CIVIC_CASTE_SYSTEM,
+	CIVIC_INDIVIDUALISM, CIVIC_TOTALITARIANISM, CIVIC_EGALITARIANISM,
 
-	CIVIC_RECIPROCITY,
-	CIVIC_REDISTRIBUTION,
-	CIVIC_MERCHANT_TRADE,
-	CIVIC_REGULATED_TRADE,
-	CIVIC_FREE_ENTERPRISE,
-	CIVIC_CENTRAL_PLANNING,
-	CIVIC_PUBLIC_WELFARE,
+	CIVIC_RECIPROCITY, CIVIC_REDISTRIBUTION, CIVIC_MERCHANT_TRADE, CIVIC_REGULATED_TRADE,
+	CIVIC_FREE_ENTERPRISE, CIVIC_CENTRAL_PLANNING, CIVIC_PUBLIC_WELFARE,
 
-	CIVIC_ANIMISM,
-	CIVIC_DEIFICATION,
-	CIVIC_CLERGY,
-	CIVIC_MONASTICISM,
-	CIVIC_THEOCRACY,
-	CIVIC_TOLERANCE,
-	CIVIC_SECULARISM,
+	CIVIC_ANIMISM, CIVIC_DEIFICATION, CIVIC_CLERGY, CIVIC_MONASTICISM, CIVIC_THEOCRACY,
+	CIVIC_TOLERANCE, CIVIC_SECULARISM,
 
-	CIVIC_SOVEREIGNTY,
-	CIVIC_CONQUEST,
-	CIVIC_TRIBUTARIES,
-	CIVIC_ISOLATIONISM,
-	CIVIC_COLONIALISM,
-	CIVIC_NATIONHOOD,
-	CIVIC_MULTILATERALISM,
+	CIVIC_SOVEREIGNTY, CIVIC_CONQUEST, CIVIC_TRIBUTARIES, CIVIC_ISOLATIONISM, 
+	CIVIC_COLONIALISM, CIVIC_NATIONHOOD, CIVIC_MULTILATERALISM,
+
+	iNoCivic = -1,
+	iChiefdom, iDespotism, iMonarchy, iRepublic, iElective, iStateParty, iDemocracy,
+	iAuthority, iCitizenship, iVassalage, iMeritocracy, iCentralism, iRevolutionism, iConstitution,
+	iTraditionalism, iSlavery, iManorialism, iCasteSystem, iIndividualism, iTotalitarianism, iEgalitarianism,
+	iReciprocity, iRedistribution, iMerchantTrade, iRegulatedTrade, iFreeEnterprise, iCentralPlanning, iPublicWelfare,
+	iAnimism, iDeification, iClergy, iMonasticism, iTheocracy, iTolerance, iSecularism,
+	iSovereignty, iConquest, iTributaries, iIsolationism, iColonialism, iNationhood, iMultilateralism,
+	iNumCivics // = 42
 };
 
 enum WarPlanTypes					// Exposed to Python
@@ -3441,32 +3472,34 @@ enum CivilopediaWidgetShowTypes
 	CIVILOPEDIA_WIDGET_SHOW_WATER,
 };
 
+// Stability Parameters
 enum ParameterTypes
 {
-	PARAMETER_CORE_PERIPHERY,
-	PARAMETER_CORE_SCORE,
-	PARAMETER_PERIPHERY_SCORE,
-	PARAMETER_RECENT_EXPANSION,
-	PARAMETER_RAZED_CITIES,
-	PARAMETER_ISOLATIONISM,
-	PARAMETER_ECONOMIC_GROWTH,
-	PARAMETER_TRADE,
-	PARAMETER_MERCANTILISM,
-	PARAMETER_CENTRAL_PLANNING,
-	PARAMETER_HAPPINESS,
-	PARAMETER_CIVIC_COMBINATIONS,
-	PARAMETER_CIVICS_ERA_TECH,
-	PARAMETER_RELIGION,
-	PARAMETER_VASSALS,
-	PARAMETER_DEFENSIVE_PACTS,
-	PARAMETER_RELATIONS,
-	PARAMETER_NATIONHOOD,
-	PARAMETER_THEOCRACY,
-	PARAMETER_MULTILATERALISM,
-	PARAMETER_WAR_SUCCESS,
-	PARAMETER_WAR_WEARINESS,
-	PARAMETER_BARBARIAN_LOSSES,
-	NUM_PARAMETERS,
+	// Expansion
+	PARAMETER_CORE_PERIPHERY, PARAMETER_CORE_SCORE, PARAMETER_PERIPHERY_SCORE,
+	PARAMETER_RECENT_EXPANSION, PARAMETER_RAZED_CITIES, PARAMETER_ISOLATIONISM,
+	// Economy
+	PARAMETER_ECONOMIC_GROWTH, PARAMETER_TRADE, PARAMETER_MERCANTILISM, PARAMETER_CENTRAL_PLANNING, 
+	// Domestic
+	PARAMETER_HAPPINESS, PARAMETER_CIVIC_COMBINATIONS, PARAMETER_CIVICS_ERA_TECH, PARAMETER_RELIGION,
+	// Foreign
+	PARAMETER_VASSALS, PARAMETER_DEFENSIVE_PACTS, PARAMETER_RELATIONS, PARAMETER_NATIONHOOD, PARAMETER_THEOCRACY, PARAMETER_MULTILATERALISM,
+	// Military 
+	PARAMETER_WAR_SUCCESS, PARAMETER_WAR_WEARINESS, PARAMETER_BARBARIAN_LOSSES,
+	NUM_PARAMETERS, //= 23
+
+	iNoParameterType = -1,
+	// Expansion
+	iParameterCorePeriphery, iParameterCoreScore, iParameterPeripheryScore, iParameterRecentExpansion, iParameterRazedCities, iParameterIsolationism,
+	// Economy
+	iParameterEconomicGrowth, iParameterTrade, iParameterMercantilism, iParameterCentralPlanning,
+	// Domestic
+	iParameterHappiness, iParameterCivicCombinations, iParameterCivicsEraTech, iParameterReligion,
+	// Foreign	
+	iParameterVassals, iParameterDefensivePacts, iParameterRelations, iParameterNationhood, iParameterTheocracy, iParameterMultilateralism,
+	// Military 
+	iParameterWarSuccess, iParameterWarWeariness, iParameterBarbarianLosses,
+	iNumStabilityParameters //= 23
 };
 
 // Leoreth

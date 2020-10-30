@@ -1,0 +1,28 @@
+﻿生成启动时间为 2020/9/23 9:31:41。
+     1>项目“C:\GOG Games\Civilization IV Complete\Civ4\Beyond the Sword\Mods\RFC Dawn of Civilization\DownOfCivilization\Python-2.4.3\PCbuild\make_versioninfo.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“.\x86-temp-release\make_versioninfo\make_versioninfo.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\Include /I..\PC /Zi /nologo /W3 /WX- /O2 /Ob1 /Oy- /D WIN32 /D NDEBUG /D _CONSOLE /D _MBCS /GF /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\x86-temp-release\make_versioninfo/" /Fd".\x86-temp-release\make_versioninfo/vc100.pdb" /Gd /TC /analyze- /errorReport:prompt ..\PC\make_versioninfo.c
+         make_versioninfo.c
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\./make_versioninfo.exe" /INCREMENTAL:NO /NOLOGO odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:".\x86-temp-release\make_versioninfo\make_versioninfo.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:".\./make_versioninfo.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /BASE:"0x1d000000" /DYNAMICBASE /NXCOMPAT /IMPLIB:".\.\make_versioninfo.lib" /MACHINE:X86 ".\x86-temp-release\make_versioninfo/make_versioninfo.obj"
+         make_versioninfo.vcxproj -> C:\GOG Games\Civilization IV Complete\Civ4\Beyond the Sword\Mods\RFC Dawn of Civilization\DownOfCivilization\Python-2.4.3\PCbuild\.\.\make_versioninfo.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:".\./make_versioninfo.exe;#1" /manifest ".\x86-temp-release\make_versioninfo\make_versioninfo.exe.intermediate.manifest"
+       CustomBuildStep:
+         Description: Performing Custom Build Step
+         .\make_versioninfo.exe >..\PC\pythonnt_rc.h
+         
+         :VCEnd
+       PostBuildEvent:
+         make_versioninfo.exe > ..\PC\python_nt.h
+         :VCEnd
+       FinalizeBuildStatus:
+         正在删除文件“.\x86-temp-release\make_versioninfo\make_versioninfo.unsuccessfulbuild”。
+         正在对“.\x86-temp-release\make_versioninfo\make_versioninfo.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“C:\GOG Games\Civilization IV Complete\Civ4\Beyond the Sword\Mods\RFC Dawn of Civilization\DownOfCivilization\Python-2.4.3\PCbuild\make_versioninfo.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:00.52

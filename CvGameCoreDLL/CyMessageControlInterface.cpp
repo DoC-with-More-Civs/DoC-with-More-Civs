@@ -7,7 +7,7 @@
 
 void CyMessageControlInterface()
 {
-	python::class_<CyMessageControl>("CyMessageControl")
+	boost::python::class_<CyMessageControl>("CyMessageControl")
 		.def("sendPushOrder", &CyMessageControl::sendPushOrder, "void (int iCityID, int eOrder, int iData, bool bAlt, bool bShift, bool bCtrl)")
 		.def("sendDoTask", &CyMessageControl::sendDoTask, "void (int iCity, int eTask, int iData1, int iData2, bool bOption, bool bAlt, bool bShift, bool bCtrl)")
 		.def("sendTurnComplete", &CyMessageControl::sendTurnComplete, "void () - allows you to force a turn to end")

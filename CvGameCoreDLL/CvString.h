@@ -15,6 +15,9 @@
 // Firaxis Games, copyright 2005
 //
 
+#define stricmp		_stricmp
+#define strnicmp	_strnicmp
+
 // wide string
 class CvWString : public std::wstring
 {
@@ -41,7 +44,7 @@ public:
 			if (iLen)
 			{
 				wchar *w = new wchar[iLen+1];
-				swprintf(w, L"%S", s);	// convert
+				swprintf(w, iLen+1, L"%S", s);	// convert
 				assign(w);
 				delete [] w;
 			}

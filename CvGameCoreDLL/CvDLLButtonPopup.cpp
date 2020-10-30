@@ -34,6 +34,7 @@
 
 #define PASSWORD_DEFAULT (L"*****")
 
+
 CvDLLButtonPopup* CvDLLButtonPopup::m_pInst = NULL;
 
 CvDLLButtonPopup& CvDLLButtonPopup::getInstance()

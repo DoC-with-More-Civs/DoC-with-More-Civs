@@ -1,0 +1,687 @@
+﻿生成启动时间为 2020/9/23 9:31:57。
+     1>项目“C:\GOG Games\Civilization IV Complete\Civ4\Beyond the Sword\Mods\RFC Dawn of Civilization\DownOfCivilization\Python-2.4.3\PCbuild\pythoncore.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“.\x86-temp-release\pythoncore\pythoncore.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\Include /I..\PC /Zi /nologo /W3 /WX- /O2 /Ob1 /Oy- /D NDEBUG /D WIN32 /D _WINDOWS /D USE_DL_EXPORT /D _WINDLL /GF /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\x86-temp-release\pythoncore/" /Fd".\x86-temp-release\pythoncore/vc100.pdb" /Gd /TC /analyze- /errorReport:prompt ..\Modules\_bisectmodule.c ..\Modules\cjkcodecs\_codecs_cn.c ..\Modules\cjkcodecs\_codecs_hk.c ..\Modules\cjkcodecs\_codecs_iso2022.c ..\Modules\cjkcodecs\_codecs_jp.c ..\Modules\cjkcodecs\_codecs_kr.c ..\Modules\cjkcodecs\_codecs_tw.c ..\Modules\_csv.c ..\Modules\_heapqmodule.c ..\Modules\_sre.c ..\Pc\_subprocess.c ..\Pc\_winreg.c ..\Modules\collectionsmodule.c ..\Modules\datetimemodule.c ..\Objects\genobject.c ..\Modules\mmapmodule.c ..\Modules\cjkcodecs\multibytecodec.c ..\Modules\parsermodule.c ..\Python\pystrtod.c ..\Modules\symtablemodule.c /Zm200  
+         _bisectmodule.c
+         _codecs_cn.c
+     1>c:\gog games\civilization iv complete\civ4\beyond the sword\mods\rfc dawn of civilization\downofcivilization\python-2.4.3\modules\cjkcodecs\cjkcodecs.h(302): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         _codecs_hk.c
+     1>c:\gog games\civilization iv complete\civ4\beyond the sword\mods\rfc dawn of civilization\downofcivilization\python-2.4.3\modules\cjkcodecs\cjkcodecs.h(302): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         _codecs_iso2022.c
+     1>c:\gog games\civilization iv complete\civ4\beyond the sword\mods\rfc dawn of civilization\downofcivilization\python-2.4.3\modules\cjkcodecs\cjkcodecs.h(302): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         _codecs_jp.c
+     1>c:\gog games\civilization iv complete\civ4\beyond the sword\mods\rfc dawn of civilization\downofcivilization\python-2.4.3\modules\cjkcodecs\cjkcodecs.h(302): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         _codecs_kr.c
+     1>c:\gog games\civilization iv complete\civ4\beyond the sword\mods\rfc dawn of civilization\downofcivilization\python-2.4.3\modules\cjkcodecs\cjkcodecs.h(302): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         _codecs_tw.c
+     1>c:\gog games\civilization iv complete\civ4\beyond the sword\mods\rfc dawn of civilization\downofcivilization\python-2.4.3\modules\cjkcodecs\cjkcodecs.h(302): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         _csv.c
+         _heapqmodule.c
+         _sre.c
+         _subprocess.c
+         _winreg.c
+     1>C:\GOG Games\Civilization IV Complete\Civ4\Beyond the Sword\Mods\RFC Dawn of Civilization\DownOfCivilization\Python-2.4.3\Include\structmember.h(73): warning C4005: “WRITE_RESTRICTED”: 宏重定义
+                 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\winnt.h(8171) : 参见“WRITE_RESTRICTED”的前一个定义
+     1>..\Pc\_winreg.c(745): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\Pc\_winreg.c(747): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\Pc\_winreg.c(804): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         collectionsmodule.c
+         datetimemodule.c
+     1>..\Modules\datetimemodule.c(2250): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\time.inl(112) : 参见“localtime”的声明
+     1>..\Modules\datetimemodule.c(3746): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\time.inl(112) : 参见“localtime”的声明
+     1>..\Modules\datetimemodule.c(3746): warning C4996: 'gmtime': This function or variable may be unsafe. Consider using gmtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\time.inl(99) : 参见“gmtime”的声明
+     1>..\Modules\datetimemodule.c(3762): warning C4996: 'gmtime': This function or variable may be unsafe. Consider using gmtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\time.inl(99) : 参见“gmtime”的声明
+     1>..\Modules\datetimemodule.c(3783): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\time.inl(112) : 参见“localtime”的声明
+     1>..\Modules\datetimemodule.c(3802): warning C4996: 'gmtime': This function or variable may be unsafe. Consider using gmtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\time.inl(99) : 参见“gmtime”的声明
+         genobject.c
+         mmapmodule.c
+     1>..\Modules\mmapmodule.c(998): warning C4996: 'lseek': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _lseek. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\io.h(310) : 参见“lseek”的声明
+     1>..\Modules\mmapmodule.c(1048): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         multibytecodec.c
+         parsermodule.c
+         pystrtod.c
+         symtablemodule.c
+         正在生成代码...
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\Include /I..\PC /Zi /nologo /W3 /WX- /O2 /Ob1 /Oy- /D NDEBUG /D WIN32 /D _WINDOWS /D USE_DL_EXPORT /GF /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\x86-temp-release\pythoncore/" /Fd".\x86-temp-release\pythoncore/vc100.pdb" /Gd /TC /analyze- /errorReport:prompt ..\Modules\_codecsmodule.c ..\Modules\_hotshot.c ..\Modules\_localemodule.c ..\Modules\_randommodule.c ..\Modules\_weakref.c ..\Objects\abstract.c ..\Parser\acceler.c ..\Modules\arraymodule.c ..\Modules\audioop.c ..\Modules\binascii.c ..\Parser\bitset.c ..\Python\bltinmodule.c ..\Objects\boolobject.c ..\Objects\bufferobject.c ..\Objects\cellobject.c ..\Python\ceval.c ..\Objects\classobject.c ..\Modules\cmathmodule.c ..\Objects\cobject.c ..\Python\codecs.c ..\Python\compile.c ..\Objects\complexobject.c ..\PC\config.c ..\Modules\cPickle.c ..\Modules\cStringIO.c ..\Objects\descrobject.c ..\Objects\dictobject.c ..\PC\dl_nt.c ..\Python\dynload_win.c ..\Objects\enumobject.c ..\Modules\errnomodule.c ..\Python\errors.c ..\Python\exceptions.c ..\Objects\fileobject.c ..\Objects\floatobject.c ..\Objects\frameobject.c ..\Python\frozen.c ..\Objects\funcobject.c ..\Python\future.c ..\Modules\gcmodule.c ..\Python\getargs.c ..\Python\getcompiler.c ..\Python\getcopyright.c ..\Python\getmtime.c ..\Python\getopt.c ..\PC\getpathp.c ..\Python\getplatform.c ..\Python\getversion.c ..\Python\graminit.c ..\Parser\grammar1.c ..\Modules\imageop.c ..\Python\import.c ..\Python\importdl.c ..\Objects\intobject.c ..\Objects\iterobject.c ..\Modules\itertoolsmodule.c ..\Parser\listnode.c ..\Objects\listobject.c ..\Objects\longobject.c ..\Modules\main.c ..\Python\marshal.c ..\Modules\mathmodule.c ..\Modules\md5c.c ..\Modules\md5module.c ..\Parser\metagrammar.c ..\Objects\methodobject.c ..\Python\modsupport.c ..\Objects\moduleobject.c ..\PC\msvcrtmodule.c ..\Parser\myreadline.c ..\Python\mysnprintf.c ..\Python\mystrtoul.c ..\Parser\node.c ..\Objects\object.c ..\Objects\obmalloc.c ..\Modules\operator.c ..\Parser\parser.c ..\Parser\parsetok.c ..\Modules\posixmodule.c ..\Python\pyfpe.c ..\Python\pystate.c ..\Python\pythonrun.c ..\Objects\rangeobject.c ..\Modules\regexmodule.c ..\Modules\regexpr.c ..\Modules\rgbimgmodule.c ..\Objects\setobject.c ..\Modules\shamodule.c ..\Modules\signalmodule.c ..\Objects\sliceobject.c ..\Objects\stringobject.c ..\Modules\stropmodule.c ..\Python\structmember.c ..\Modules\structmodule.c ..\Objects\structseq.c ..\Python\symtable.c ..\Python\sysmodule.c ..\Python\thread.c ..\Modules\threadmodule.c ..\Modules\timemodule.c ..\Parser\tokenizer.c ..\Python\traceback.c ..\Objects\tupleobject.c ..\Objects\typeobject.c ..\Objects\unicodectype.c ..\Objects\unicodeobject.c ..\Objects\weakrefobject.c ..\Modules\xxsubtype.c ..\Modules\yuvconvert.c ..\Modules\zipimport.c /Zm200  
+         _codecsmodule.c
+         _hotshot.c
+     1>C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\winnt.h(8171): warning C4005: “WRITE_RESTRICTED”: 宏重定义
+                 C:\GOG Games\Civilization IV Complete\Civ4\Beyond the Sword\Mods\RFC Dawn of Civilization\DownOfCivilization\Python-2.4.3\Include\structmember.h(73) : 参见“WRITE_RESTRICTED”的前一个定义
+     1>..\Modules\_hotshot.c(137): warning C4996: 'fileno': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _fileno. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(723) : 参见“fileno”的声明
+     1>..\Modules\_hotshot.c(1045): warning C4996: 'fileno': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _fileno. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(723) : 参见“fileno”的声明
+     1>..\Modules\_hotshot.c(1349): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : 参见“fopen”的声明
+     1>..\Modules\_hotshot.c(1456): warning C4996: 'getcwd': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getcwd. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\direct.h(117) : 参见“getcwd”的声明
+     1>..\Modules\_hotshot.c(1512): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : 参见“fopen”的声明
+         _localemodule.c
+         _randommodule.c
+         _weakref.c
+         abstract.c
+         acceler.c
+         arraymodule.c
+         audioop.c
+         binascii.c
+         bitset.c
+         bltinmodule.c
+     1>..\Python\bltinmodule.c(614): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : 参见“fopen”的声明
+     1>..\Python\bltinmodule.c(1614): warning C4996: 'isatty': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _isatty. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\io.h(308) : 参见“isatty”的声明
+     1>..\Python\bltinmodule.c(1614): warning C4996: 'fileno': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _fileno. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(723) : 参见“fileno”的声明
+         boolobject.c
+         bufferobject.c
+         cellobject.c
+         ceval.c
+         classobject.c
+     1>..\Objects\classobject.c(2355): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\Objects\classobject.c(2365): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(188) : 参见“strncpy”的声明
+     1>..\Objects\classobject.c(2378): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         cmathmodule.c
+         cobject.c
+         codecs.c
+         正在生成代码...
+         正在编译...
+         compile.c
+     1>..\Python\compile.c(1436): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(188) : 参见“strncpy”的声明
+     1>..\Python\compile.c(1437): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\Python\compile.c(1630): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\Python\compile.c(1783): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\Python\compile.c(1801): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>..\Python\compile.c(2698): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         complexobject.c
+     1>..\Objects\complexobject.c(279): warning C4996: 'strncat': This function or variable may be unsafe. Consider using strncat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(175) : 参见“strncat”的声明
+         config.c
+         cPickle.c
+         cStringIO.c
+         descrobject.c
+         dictobject.c
+         dl_nt.c
+         dynload_win.c
+     1>..\Python\dynload_win.c(221): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\Python\dynload_win.c(224): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(188) : 参见“strncpy”的声明
+         enumobject.c
+         errnomodule.c
+         errors.c
+     1>..\Python\errors.c(287): warning C4996: '__sys_nerr': This function or variable may be unsafe. Consider using strerror instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdlib.h(266) : 参见“__sys_nerr”的声明
+     1>..\Python\errors.c(288): warning C4996: '__sys_errlist': This function or variable may be unsafe. Consider using strerror instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdlib.h(263) : 参见“__sys_errlist”的声明
+     1>..\Python\errors.c(306): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>..\Python\errors.c(390): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>..\Python\errors.c(747): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : 参见“fopen”的声明
+         exceptions.c
+     1>..\Python\exceptions.c(1791): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\Python\exceptions.c(1792): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\Python\exceptions.c(1793): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         fileobject.c
+     1>C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\winnt.h(8171): warning C4005: “WRITE_RESTRICTED”: 宏重定义
+                 C:\GOG Games\Civilization IV Complete\Civ4\Beyond the Sword\Mods\RFC Dawn of Civilization\DownOfCivilization\Python-2.4.3\Include\structmember.h(73) : 参见“WRITE_RESTRICTED”的前一个定义
+     1>..\Objects\fileobject.c(82): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(157) : 参见“strerror”的声明
+     1>..\Objects\fileobject.c(166): warning C4996: '_wfopen': This function or variable may be unsafe. Consider using _wfopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(601) : 参见“_wfopen”的声明
+     1>..\Objects\fileobject.c(174): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : 参见“fopen”的声明
+     1>..\Objects\fileobject.c(312): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(157) : 参见“strerror”的声明
+     1>..\Objects\fileobject.c(667): warning C4996: 'isatty': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _isatty. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\io.h(308) : 参见“isatty”的声明
+     1>..\Objects\fileobject.c(702): warning C4996: 'lseek': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _lseek. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\io.h(310) : 参见“lseek”的声明
+         floatobject.c
+         frameobject.c
+         frozen.c
+         funcobject.c
+         future.c
+         gcmodule.c
+         正在生成代码...
+         正在编译...
+         getargs.c
+         getcompiler.c
+         getcopyright.c
+         getmtime.c
+     1>..\Python\getmtime.c(13): warning C4996: 'fileno': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _fileno. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(723) : 参见“fileno”的声明
+         getopt.c
+         getpathp.c
+     1>..\PC\getpathp.c(129): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\PC\getpathp.c(161): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(188) : 参见“strncpy”的声明
+     1>..\PC\getpathp.c(187): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\PC\getpathp.c(306): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(188) : 参见“strncpy”的声明
+     1>..\PC\getpathp.c(360): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdlib.h(433) : 参见“getenv”的声明
+     1>..\PC\getpathp.c(409): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(188) : 参见“strncpy”的声明
+     1>..\PC\getpathp.c(418): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(188) : 参见“strncpy”的声明
+     1>..\PC\getpathp.c(422): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(188) : 参见“strncpy”的声明
+     1>..\PC\getpathp.c(447): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdlib.h(433) : 参见“getenv”的声明
+     1>..\PC\getpathp.c(459): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\PC\getpathp.c(468): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(188) : 参见“strncpy”的声明
+     1>..\PC\getpathp.c(477): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(188) : 参见“strncpy”的声明
+     1>..\PC\getpathp.c(479): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(188) : 参见“strncpy”的声明
+     1>..\PC\getpathp.c(559): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\PC\getpathp.c(565): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\PC\getpathp.c(570): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\PC\getpathp.c(576): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\PC\getpathp.c(583): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\PC\getpathp.c(604): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\PC\getpathp.c(609): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(188) : 参见“strncpy”的声明
+     1>..\PC\getpathp.c(619): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\PC\getpathp.c(644): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(188) : 参见“strncpy”的声明
+         getplatform.c
+         getversion.c
+         graminit.c
+         grammar1.c
+         imageop.c
+         import.c
+     1>..\Python\import.c(693): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : 参见“fopen”的声明
+     1>..\Python\import.c(796): warning C4996: 'unlink': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _unlink. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\io.h(212) : 参见“unlink”的声明
+     1>..\Python\import.c(804): warning C4996: 'open': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _open. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\io.h(312) : 参见“open”的声明
+     1>..\Python\import.c(808): warning C4996: 'fdopen': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _fdopen. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(721) : 参见“fdopen”的声明
+     1>..\Python\import.c(842): warning C4996: 'unlink': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _unlink. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\io.h(212) : 参见“unlink”的声明
+     1>..\Python\import.c(890): warning C4244: “函数”: 从“time_t”转换到“long”，可能丢失数据
+     1>..\Python\import.c(907): warning C4244: “函数”: 从“time_t”转换到“long”，可能丢失数据
+     1>..\Python\import.c(1095): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\Python\import.c(1140): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\Python\import.c(1141): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\Python\import.c(1142): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\Python\import.c(1143): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\Python\import.c(1145): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\Python\import.c(1154): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\Python\import.c(1158): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\Python\import.c(1214): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\Python\import.c(1252): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\Python\import.c(1310): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\Python\import.c(1316): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : 参见“fopen”的声明
+     1>..\Python\import.c(1434): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdlib.h(433) : 参见“getenv”的声明
+     1>..\Python\import.c(1585): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\Python\import.c(1596): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\Python\import.c(2018): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\Python\import.c(2033): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(188) : 参见“strncpy”的声明
+     1>..\Python\import.c(2082): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(188) : 参见“strncpy”的声明
+     1>..\Python\import.c(2096): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(188) : 参见“strncpy”的声明
+     1>..\Python\import.c(2176): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\Python\import.c(2596): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : 参见“fopen”的声明
+         importdl.c
+         intobject.c
+     1>..\Objects\intobject.c(853): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         iterobject.c
+         itertoolsmodule.c
+         listnode.c
+         listobject.c
+         longobject.c
+         main.c
+     1>..\Modules\main.c(124): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdlib.h(433) : 参见“getenv”的声明
+     1>..\Modules\main.c(126): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : 参见“fopen”的声明
+     1>..\Modules\main.c(200): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\Modules\main.c(201): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\Modules\main.c(213): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\Modules\main.c(323): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdlib.h(433) : 参见“getenv”的声明
+     1>..\Modules\main.c(326): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdlib.h(433) : 参见“getenv”的声明
+     1>..\Modules\main.c(341): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : 参见“fopen”的声明
+     1>..\Modules\main.c(344): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(157) : 参见“strerror”的声明
+     1>..\Modules\main.c(366): warning C4996: 'fileno': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _fileno. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(723) : 参见“fileno”的声明
+     1>..\Modules\main.c(378): warning C4996: 'fileno': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _fileno. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(723) : 参见“fileno”的声明
+     1>..\Modules\main.c(379): warning C4996: 'fileno': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _fileno. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(723) : 参见“fileno”的声明
+     1>..\Modules\main.c(471): warning C4996: 'isatty': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _isatty. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\io.h(308) : 参见“isatty”的声明
+     1>..\Modules\main.c(503): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdlib.h(433) : 参见“getenv”的声明
+         正在生成代码...
+         正在编译...
+         marshal.c
+     1>..\Python\marshal.c(730): warning C4996: 'fileno': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _fileno. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(723) : 参见“fileno”的声明
+         mathmodule.c
+         md5c.c
+         md5module.c
+         metagrammar.c
+         methodobject.c
+         modsupport.c
+         moduleobject.c
+         msvcrtmodule.c
+         myreadline.c
+     1>..\Parser\myreadline.c(205): warning C4996: 'isatty': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _isatty. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\io.h(308) : 参见“isatty”的声明
+     1>..\Parser\myreadline.c(205): warning C4996: 'fileno': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _fileno. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(723) : 参见“fileno”的声明
+         mysnprintf.c
+     1>..\Python\mysnprintf.c(65): warning C4996: '_vsnprintf': This function or variable may be unsafe. Consider using _vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(363) : 参见“_vsnprintf”的声明
+         mystrtoul.c
+         node.c
+         object.c
+         obmalloc.c
+         operator.c
+         parser.c
+         parsetok.c
+     1>..\Parser\parsetok.c(153): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(188) : 参见“strncpy”的声明
+     1>..\Parser\parsetok.c(194): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(188) : 参见“strncpy”的声明
+         posixmodule.c
+     1>..\Modules\posixmodule.c(908): warning C4005: “ARRAYSIZE”: 宏重定义
+                 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include\winnt.h(1140) : 参见“ARRAYSIZE”的前一个定义
+     1>..\Modules\posixmodule.c(994): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\Modules\posixmodule.c(1056): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(188) : 参见“strncpy”的声明
+     1>..\Modules\posixmodule.c(1064): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(188) : 参见“strncpy”的声明
+     1>..\Modules\posixmodule.c(1120): warning C4996: 'access': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _access. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\io.h(299) : 参见“access”的声明
+     1>..\Modules\posixmodule.c(1200): warning C4996: 'chdir': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _chdir. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\direct.h(123) : 参见“chdir”的声明
+     1>..\Modules\posixmodule.c(1257): warning C4996: 'chmod': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _chmod. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\io.h(300) : 参见“chmod”的声明
+     1>..\Modules\posixmodule.c(1379): warning C4996: 'getcwd': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getcwd. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\direct.h(117) : 参见“getcwd”的声明
+     1>..\Modules\posixmodule.c(1415): warning C4996: 'getcwd': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getcwd. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\direct.h(117) : 参见“getcwd”的声明
+     1>..\Modules\posixmodule.c(1472): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(306) : 参见“wcsncpy”的声明
+     1>..\Modules\posixmodule.c(1478): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\Modules\posixmodule.c(1531): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\Modules\posixmodule.c(1789): warning C4996: 'mkdir': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _mkdir. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\direct.h(124) : 参见“mkdir”的声明
+     1>..\Modules\posixmodule.c(1868): warning C4996: 'rmdir': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _rmdir. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\direct.h(125) : 参见“rmdir”的声明
+     1>..\Modules\posixmodule.c(1920): warning C4996: 'umask': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _umask. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\io.h(317) : 参见“umask”的声明
+     1>..\Modules\posixmodule.c(1939): warning C4996: 'unlink': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _unlink. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\io.h(212) : 参见“unlink”的声明
+     1>..\Modules\posixmodule.c(2199): warning C4996: 'execv': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _execv. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\process.h(191) : 参见“execv”的声明
+     1>..\Modules\posixmodule.c(2332): warning C4996: 'execve': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _execve. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\process.h(192) : 参见“execve”的声明
+     1>..\Modules\posixmodule.c(3011): warning C4996: 'getpid': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getpid. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\process.h(206) : 参见“getpid”的声明
+     1>..\Modules\posixmodule.c(4168): warning C4996: 'strncat': This function or variable may be unsafe. Consider using strncat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(175) : 参见“strncat”的声明
+     1>..\Modules\posixmodule.c(4175): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(188) : 参见“strncpy”的声明
+     1>..\Modules\posixmodule.c(4177): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\Modules\posixmodule.c(4181): warning C4996: 'strncat': This function or variable may be unsafe. Consider using strncat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(175) : 参见“strncat”的声明
+     1>..\Modules\posixmodule.c(5230): warning C4996: '_wopen': This function or variable may be unsafe. Consider using _wsopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\io.h(272) : 参见“_wopen”的声明
+     1>..\Modules\posixmodule.c(5248): warning C4996: 'open': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _open. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\io.h(312) : 参见“open”的声明
+     1>..\Modules\posixmodule.c(5268): warning C4996: 'close': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _close. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\io.h(302) : 参见“close”的声明
+     1>..\Modules\posixmodule.c(5288): warning C4996: 'dup': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _dup. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\io.h(304) : 参见“dup”的声明
+     1>..\Modules\posixmodule.c(5307): warning C4996: 'dup2': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _dup2. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\io.h(305) : 参见“dup2”的声明
+     1>..\Modules\posixmodule.c(5383): warning C4996: 'read': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _read. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\io.h(313) : 参见“read”的声明
+     1>..\Modules\posixmodule.c(5407): warning C4996: 'write': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _write. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\io.h(318) : 参见“write”的声明
+     1>..\Modules\posixmodule.c(5463): warning C4996: 'fdopen': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _fdopen. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(721) : 参见“fdopen”的声明
+     1>..\Modules\posixmodule.c(5484): warning C4996: 'isatty': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _isatty. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\io.h(308) : 参见“isatty”的声明
+     1>..\Modules\posixmodule.c(5713): warning C4996: 'putenv': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _putenv. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdlib.h(869) : 参见“putenv”的声明
+     1>..\Modules\posixmodule.c(5782): warning C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(157) : 参见“strerror”的声明
+     1>..\Modules\posixmodule.c(6160): warning C4996: 'tmpfile': This function or variable may be unsafe. Consider using tmpfile_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(338) : 参见“tmpfile”的声明
+     1>..\Modules\posixmodule.c(6186): warning C4996: 'tmpnam': This function or variable may be unsafe. Consider using tmpnam_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(344) : 参见“tmpnam”的声明
+         pyfpe.c
+         正在生成代码...
+         正在编译...
+         pystate.c
+         pythonrun.c
+     1>..\Python\pythonrun.c(151): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdlib.h(433) : 参见“getenv”的声明
+     1>..\Python\pythonrun.c(153): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdlib.h(433) : 参见“getenv”的声明
+     1>..\Python\pythonrun.c(155): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdlib.h(433) : 参见“getenv”的声明
+     1>..\Python\pythonrun.c(583): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdlib.h(433) : 参见“getenv”的声明
+     1>..\Python\pythonrun.c(851): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : 参见“fopen”的声明
+     1>..\Python\pythonrun.c(1603): warning C4996: 'isatty': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _isatty. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\io.h(308) : 参见“isatty”的声明
+     1>..\Python\pythonrun.c(1603): warning C4996: 'fileno': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _fileno. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(723) : 参见“fileno”的声明
+         rangeobject.c
+         regexmodule.c
+         regexpr.c
+         rgbimgmodule.c
+     1>..\Modules\rgbimgmodule.c(242): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : 参见“fopen”的声明
+     1>..\Modules\rgbimgmodule.c(281): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : 参见“fopen”的声明
+     1>..\Modules\rgbimgmodule.c(578): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : 参见“fopen”的声明
+         setobject.c
+         shamodule.c
+         signalmodule.c
+     1>..\Modules\signalmodule.c(123): warning C4996: 'getpid': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getpid. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\process.h(206) : 参见“getpid”的声明
+     1>..\Modules\signalmodule.c(315): warning C4996: 'getpid': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getpid. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\process.h(206) : 参见“getpid”的声明
+     1>..\Modules\signalmodule.c(671): warning C4996: 'getpid': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getpid. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\process.h(206) : 参见“getpid”的声明
+         sliceobject.c
+         stringobject.c
+     1>..\Objects\stringobject.c(264): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>..\Objects\stringobject.c(266): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>..\Objects\stringobject.c(270): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>..\Objects\stringobject.c(274): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>..\Objects\stringobject.c(286): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>..\Objects\stringobject.c(301): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\Objects\stringobject.c(842): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+         stropmodule.c
+         structmember.c
+         structmodule.c
+         structseq.c
+         symtable.c
+         sysmodule.c
+     1>..\Python\sysmodule.c(954): warning C4996: 'fileno': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _fileno. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(723) : 参见“fileno”的声明
+     1>..\Python\sysmodule.c(974): warning C4996: 'isatty': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _isatty. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\io.h(308) : 参见“isatty”的声明
+     1>..\Python\sysmodule.c(975): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>..\Python\sysmodule.c(979): warning C4996: 'isatty': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _isatty. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\io.h(308) : 参见“isatty”的声明
+     1>..\Python\sysmodule.c(980): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+         thread.c
+         threadmodule.c
+         timemodule.c
+     1>..\Modules\timemodule.c(308): warning C4996: 'gmtime': This function or variable may be unsafe. Consider using gmtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\time.inl(99) : 参见“gmtime”的声明
+     1>..\Modules\timemodule.c(324): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\time.inl(112) : 参见“localtime”的声明
+     1>..\Modules\timemodule.c(394): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\time.inl(112) : 参见“localtime”的声明
+     1>..\Modules\timemodule.c(504): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\time.inl(112) : 参见“localtime”的声明
+     1>..\Modules\timemodule.c(507): warning C4996: 'asctime': This function or variable may be unsafe. Consider using asctime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\time.h(153) : 参见“asctime”的声明
+     1>..\Modules\timemodule.c(539): warning C4996: 'ctime': This function or variable may be unsafe. Consider using ctime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\time.inl(86) : 参见“ctime”的声明
+     1>..\Modules\timemodule.c(566): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\time.inl(112) : 参见“localtime”的声明
+     1>..\Modules\timemodule.c(642): warning C4996: 'tzset': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _tzset. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\time.h(273) : 参见“tzset”的声明
+     1>..\Modules\timemodule.c(646): warning C4996: 'timezone': This function or variable may be unsafe. Consider using _get_timezone instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\time.h(269) : 参见“timezone”的声明
+     1>..\Modules\timemodule.c(654): warning C4996: 'timezone': This function or variable may be unsafe. Consider using _get_timezone instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\time.h(269) : 参见“timezone”的声明
+     1>..\Modules\timemodule.c(657): warning C4996: 'daylight': This function or variable may be unsafe. Consider using _get_daylight instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\time.h(268) : 参见“daylight”的声明
+     1>..\Modules\timemodule.c(659): warning C4996: 'tzname': This function or variable may be unsafe. Consider using _get_tzname instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\time.h(270) : 参见“tzname”的声明
+     1>..\Modules\timemodule.c(790): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdlib.h(433) : 参见“getenv”的声明
+         正在生成代码...
+         正在编译...
+         tokenizer.c
+     1>..\Parser\tokenizer.c(505): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>..\Parser\tokenizer.c(794): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\Parser\tokenizer.c(867): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         traceback.c
+     1>..\Python\traceback.c(145): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : 参见“fopen”的声明
+     1>..\Python\traceback.c(170): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\Python\traceback.c(175): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\Python\traceback.c(176): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : 参见“fopen”的声明
+         tupleobject.c
+         typeobject.c
+         unicodectype.c
+         unicodeobject.c
+     1>..\Objects\unicodeobject.c(728): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(188) : 参见“strncpy”的声明
+     1>..\Objects\unicodeobject.c(2589): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>..\Objects\unicodeobject.c(3122): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>..\Objects\unicodeobject.c(3544): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>..\Objects\unicodeobject.c(3697): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>..\Objects\unicodeobject.c(7328): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         weakrefobject.c
+         xxsubtype.c
+         yuvconvert.c
+         zipimport.c
+     1>..\Modules\zipimport.c(85): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\Modules\zipimport.c(246): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\Modules\zipimport.c(247): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\Modules\zipimport.c(278): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\Modules\zipimport.c(421): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\Modules\zipimport.c(483): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\Modules\zipimport.c(486): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\Modules\zipimport.c(673): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\Modules\zipimport.c(675): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : 参见“fopen”的声明
+     1>..\Modules\zipimport.c(745): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(188) : 参见“strncpy”的声明
+     1>..\Modules\zipimport.c(822): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : 参见“fopen”的声明
+     1>..\Modules\zipimport.c(1092): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         正在生成代码...
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\Include /I..\PC /Zi /nologo /W3 /WX- /O2 /Ob1 /Oy- /D BUILD=69 /D NDEBUG /D WIN32 /D _WINDOWS /D USE_DL_EXPORT /D _WINDLL /GF /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\x86-temp-release\pythoncore/" /Fd".\x86-temp-release\pythoncore/vc100.pdb" /Gd /TC /analyze- /errorReport:prompt ..\Modules\getbuildinfo.c /Zm200  
+         getbuildinfo.c
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\Python /I..\Include /I..\PC /Zi /nologo /W3 /WX- /O2 /Ob1 /Oy- /D NDEBUG /D WIN32 /D _WINDOWS /D USE_DL_EXPORT /GF /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\x86-temp-release\pythoncore/" /Fd".\x86-temp-release\pythoncore/vc100.pdb" /Gd /TC /analyze- /errorReport:prompt ..\PC\import_nt.c /Zm200  
+         import_nt.c
+     1>..\PC\import_nt.c(76): warning C4996: 'strnicmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _strnicmp. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(248) : 参见“strnicmp”的声明
+     1>..\PC\import_nt.c(81): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : 参见“fopen”的声明
+       ResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D NDEBUG /l"0x0409" /I\Pyinst\python\PC /I..\Include /nologo /fo".\x86-temp-release\pythoncore\python_nt.res" ..\PC\python_nt.rc 
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(C:\GOG Games\Civilization IV Complete\Civ4\Beyond the Sword\Mods\RFC Dawn of Civilization\DownOfCivilization\Python-2.4.3\PCbuild\.\.\pythoncore.dll) 与 Linker 的 OutputFile 属性值(C:\GOG Games\Civilization IV Complete\Civ4\Beyond the Sword\Mods\RFC Dawn of Civilization\DownOfCivilization\Python-2.4.3\PCbuild\python24.dll)不匹配。这可能导致项目生成不正确。若要更正此问题，请确保 $(OutDir)、$(TargetName) 和 $(TargetExt) 属性值与 %(Link.OutputFile) 中指定的值匹配。
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(992,5): warning MSB8012: TargetName(pythoncore) 与 Linker 的 OutputFile 属性值(python24)不匹配。这可能导致项目生成不正确。若要更正此问题，请确保 $(OutDir)、$(TargetName) 和 $(TargetExt) 属性值与 %(Link.OutputFile) 中指定的值匹配。
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"./python24.dll" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /NODEFAULTLIB:libc /MANIFEST /ManifestFile:".\x86-temp-release\pythoncore\pythoncore.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:".\./python24.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /BASE:"0x1e000000" /DYNAMICBASE /NXCOMPAT /IMPLIB:".\./python24.lib" /MACHINE:X86 /DLL ".\x86-temp-release\pythoncore\python_nt.res"
+         ".\x86-temp-release\pythoncore/_bisectmodule.obj"
+         ".\x86-temp-release\pythoncore/_codecs_cn.obj"
+         ".\x86-temp-release\pythoncore/_codecs_hk.obj"
+         ".\x86-temp-release\pythoncore/_codecs_iso2022.obj"
+         ".\x86-temp-release\pythoncore/_codecs_jp.obj"
+         ".\x86-temp-release\pythoncore/_codecs_kr.obj"
+         ".\x86-temp-release\pythoncore/_codecs_tw.obj"
+         ".\x86-temp-release\pythoncore/_codecsmodule.obj"
+         ".\x86-temp-release\pythoncore/_csv.obj"
+         ".\x86-temp-release\pythoncore/_heapqmodule.obj"
+         ".\x86-temp-release\pythoncore/_hotshot.obj"
+         ".\x86-temp-release\pythoncore/_localemodule.obj"
+         ".\x86-temp-release\pythoncore/_randommodule.obj"
+         ".\x86-temp-release\pythoncore/_sre.obj"
+         ".\x86-temp-release\pythoncore/_subprocess.obj"
+         ".\x86-temp-release\pythoncore/_weakref.obj"
+         ".\x86-temp-release\pythoncore/_winreg.obj"
+         ".\x86-temp-release\pythoncore/abstract.obj"
+         ".\x86-temp-release\pythoncore/acceler.obj"
+         ".\x86-temp-release\pythoncore/arraymodule.obj"
+         ".\x86-temp-release\pythoncore/audioop.obj"
+         ".\x86-temp-release\pythoncore/binascii.obj"
+         ".\x86-temp-release\pythoncore/bitset.obj"
+         ".\x86-temp-release\pythoncore/bltinmodule.obj"
+         ".\x86-temp-release\pythoncore/boolobject.obj"
+         ".\x86-temp-release\pythoncore/bufferobject.obj"
+         ".\x86-temp-release\pythoncore/cellobject.obj"
+         ".\x86-temp-release\pythoncore/ceval.obj"
+         ".\x86-temp-release\pythoncore/classobject.obj"
+         ".\x86-temp-release\pythoncore/cmathmodule.obj"
+         ".\x86-temp-release\pythoncore/cobject.obj"
+         ".\x86-temp-release\pythoncore/codecs.obj"
+         ".\x86-temp-release\pythoncore/collectionsmodule.obj"
+         ".\x86-temp-release\pythoncore/compile.obj"
+         ".\x86-temp-release\pythoncore/complexobject.obj"
+         ".\x86-temp-release\pythoncore/config.obj"
+         ".\x86-temp-release\pythoncore/cPickle.obj"
+         ".\x86-temp-release\pythoncore/cStringIO.obj"
+         ".\x86-temp-release\pythoncore/datetimemodule.obj"
+         ".\x86-temp-release\pythoncore/descrobject.obj"
+         ".\x86-temp-release\pythoncore/dictobject.obj"
+         ".\x86-temp-release\pythoncore/dl_nt.obj"
+         ".\x86-temp-release\pythoncore/dynload_win.obj"
+         ".\x86-temp-release\pythoncore/enumobject.obj"
+         ".\x86-temp-release\pythoncore/errnomodule.obj"
+         ".\x86-temp-release\pythoncore/errors.obj"
+         ".\x86-temp-release\pythoncore/exceptions.obj"
+         ".\x86-temp-release\pythoncore/fileobject.obj"
+         ".\x86-temp-release\pythoncore/floatobject.obj"
+         ".\x86-temp-release\pythoncore/frameobject.obj"
+         ".\x86-temp-release\pythoncore/frozen.obj"
+         ".\x86-temp-release\pythoncore/funcobject.obj"
+         ".\x86-temp-release\pythoncore/future.obj"
+         ".\x86-temp-release\pythoncore/gcmodule.obj"
+         ".\x86-temp-release\pythoncore/genobject.obj"
+         ".\x86-temp-release\pythoncore/getargs.obj"
+         ".\x86-temp-release\pythoncore/getbuildinfo.obj"
+         ".\x86-temp-release\pythoncore/getcompiler.obj"
+         ".\x86-temp-release\pythoncore/getcopyright.obj"
+         ".\x86-temp-release\pythoncore/getmtime.obj"
+         ".\x86-temp-release\pythoncore/getopt.obj"
+         ".\x86-temp-release\pythoncore/getpathp.obj"
+         ".\x86-temp-release\pythoncore/getplatform.obj"
+         ".\x86-temp-release\pythoncore/getversion.obj"
+         ".\x86-temp-release\pythoncore/graminit.obj"
+         ".\x86-temp-release\pythoncore/grammar1.obj"
+         ".\x86-temp-release\pythoncore/imageop.obj"
+         ".\x86-temp-release\pythoncore/import.obj"
+         ".\x86-temp-release\pythoncore/import_nt.obj"
+         ".\x86-temp-release\pythoncore/importdl.obj"
+         ".\x86-temp-release\pythoncore/intobject.obj"
+         ".\x86-temp-release\pythoncore/iterobject.obj"
+         ".\x86-temp-release\pythoncore/itertoolsmodule.obj"
+         ".\x86-temp-release\pythoncore/listnode.obj"
+         ".\x86-temp-release\pythoncore/listobject.obj"
+         ".\x86-temp-release\pythoncore/longobject.obj"
+         ".\x86-temp-release\pythoncore/main.obj"
+         ".\x86-temp-release\pythoncore/marshal.obj"
+         ".\x86-temp-release\pythoncore/mathmodule.obj"
+         ".\x86-temp-release\pythoncore/md5c.obj"
+         ".\x86-temp-release\pythoncore/md5module.obj"
+         ".\x86-temp-release\pythoncore/metagrammar.obj"
+         ".\x86-temp-release\pythoncore/methodobject.obj"
+         ".\x86-temp-release\pythoncore/mmapmodule.obj"
+         ".\x86-temp-release\pythoncore/modsupport.obj"
+         ".\x86-temp-release\pythoncore/moduleobject.obj"
+         ".\x86-temp-release\pythoncore/msvcrtmodule.obj"
+         ".\x86-temp-release\pythoncore/multibytecodec.obj"
+         ".\x86-temp-release\pythoncore/myreadline.obj"
+         ".\x86-temp-release\pythoncore/mysnprintf.obj"
+         ".\x86-temp-release\pythoncore/mystrtoul.obj"
+         ".\x86-temp-release\pythoncore/node.obj"
+         ".\x86-temp-release\pythoncore/object.obj"
+         ".\x86-temp-release\pythoncore/obmalloc.obj"
+         ".\x86-temp-release\pythoncore/operator.obj"
+         ".\x86-temp-release\pythoncore/parser.obj"
+         ".\x86-temp-release\pythoncore/parsermodule.obj"
+         ".\x86-temp-release\pythoncore/parsetok.obj"
+         ".\x86-temp-release\pythoncore/posixmodule.obj"
+         ".\x86-temp-release\pythoncore/pyfpe.obj"
+         ".\x86-temp-release\pythoncore/pystate.obj"
+         ".\x86-temp-release\pythoncore/pystrtod.obj"
+         ".\x86-temp-release\pythoncore/pythonrun.obj"
+         ".\x86-temp-release\pythoncore/rangeobject.obj"
+         ".\x86-temp-release\pythoncore/regexmodule.obj"
+         ".\x86-temp-release\pythoncore/regexpr.obj"
+         ".\x86-temp-release\pythoncore/rgbimgmodule.obj"
+         ".\x86-temp-release\pythoncore/setobject.obj"
+         ".\x86-temp-release\pythoncore/shamodule.obj"
+         ".\x86-temp-release\pythoncore/signalmodule.obj"
+         ".\x86-temp-release\pythoncore/sliceobject.obj"
+         ".\x86-temp-release\pythoncore/stringobject.obj"
+         ".\x86-temp-release\pythoncore/stropmodule.obj"
+         ".\x86-temp-release\pythoncore/structmember.obj"
+         ".\x86-temp-release\pythoncore/structmodule.obj"
+         ".\x86-temp-release\pythoncore/structseq.obj"
+         ".\x86-temp-release\pythoncore/symtable.obj"
+         ".\x86-temp-release\pythoncore/symtablemodule.obj"
+         ".\x86-temp-release\pythoncore/sysmodule.obj"
+         ".\x86-temp-release\pythoncore/thread.obj"
+         ".\x86-temp-release\pythoncore/threadmodule.obj"
+         ".\x86-temp-release\pythoncore/timemodule.obj"
+         ".\x86-temp-release\pythoncore/tokenizer.obj"
+         ".\x86-temp-release\pythoncore/traceback.obj"
+         ".\x86-temp-release\pythoncore/tupleobject.obj"
+         ".\x86-temp-release\pythoncore/typeobject.obj"
+         ".\x86-temp-release\pythoncore/unicodectype.obj"
+         ".\x86-temp-release\pythoncore/unicodeobject.obj"
+         ".\x86-temp-release\pythoncore/weakrefobject.obj"
+         ".\x86-temp-release\pythoncore/xxsubtype.obj"
+         ".\x86-temp-release\pythoncore/yuvconvert.obj"
+         ".\x86-temp-release\pythoncore/zipimport.obj"
+            正在创建库 .\./python24.lib 和对象 .\./python24.exp
+         pythoncore.vcxproj -> C:\GOG Games\Civilization IV Complete\Civ4\Beyond the Sword\Mods\RFC Dawn of Civilization\DownOfCivilization\Python-2.4.3\PCbuild\.\.\pythoncore.dll
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"./python24.dll;#2" /manifest ".\x86-temp-release\pythoncore\pythoncore.dll.intermediate.manifest"
+       FinalizeBuildStatus:
+         正在删除文件“.\x86-temp-release\pythoncore\pythoncore.unsuccessfulbuild”。
+         正在对“.\x86-temp-release\pythoncore\pythoncore.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“C:\GOG Games\Civilization IV Complete\Civ4\Beyond the Sword\Mods\RFC Dawn of Civilization\DownOfCivilization\Python-2.4.3\PCbuild\pythoncore.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:21.80

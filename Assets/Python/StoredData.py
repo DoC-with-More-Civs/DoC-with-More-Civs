@@ -95,35 +95,37 @@ class PlayerData:
 		
 	def resetHappinessTrend(self):
 		self.lHappinessTrend = []
-		
+	
 	def resetWarTrend(self, iEnemy):
 		self.lWarTrend[iEnemy] = []
-	
+
 	def resetWarTrends(self):
 		for iEnemy in range(iNumPlayers):
 			self.resetWarTrend(iEnemy)
-	
+
 	def pushEconomyTrend(self, iValue):
 		self.lEconomyTrend.append(iValue)
 		if len(self.lEconomyTrend) > 10:
 			self.lEconomyTrend.pop(0)
-			
+ 
 	def pushHappinessTrend(self, iValue):
 		self.lHappinessTrend.append(iValue)
 		if len(self.lHappinessTrend) > 10:
 			self.lHappinessTrend.pop(0)
-			
+
 	def pushWarTrend(self, iEnemy, iValue):
 		self.lWarTrend[iEnemy].append(iValue)
 		if len(self.lWarTrend[iEnemy]) > 10:
-			self.lWarTrend[iEnemy].pop(10)
+			#self.lWarTrend[iEnemy].pop(10) # pop(10)?
+			self.lWarTrend[iEnemy].pop(0)
 			
 	def getLastDifference(self):
 		return -self.iLastDifference
 		
 	def getLastWarTrend(self, iEnemy):
 		lTrend = self.lWarTrend[iEnemy]
-		for i in reversed(range(len(lTrend))):
+        # 反向遍历，返回非0值
+		for i in reversed(range(len(lTrend))): 
 			if lTrend[i] != 0: return lTrend[i]
 		return 0
 		

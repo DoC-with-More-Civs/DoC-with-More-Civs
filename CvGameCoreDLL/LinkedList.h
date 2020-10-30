@@ -8,6 +8,8 @@
 #define		LINKEDLIST_H
 #pragma		once
 
+#include "FDataStreamBase.h"
+
 template <class tVARTYPE> class CLinkList;
 
 
@@ -361,7 +363,7 @@ inline CLLNode<tVARTYPE>* CLinkList<tVARTYPE>::nodeNum(int iNum) const
 }
 
 //
-// use when linked list contains non-streamable types
+// use when linked list contains non-stream able types
 //
 template < class T >
 inline void CLinkList< T >::Read( FDataStreamBase* pStream )
@@ -400,7 +402,7 @@ inline void CLinkList< T >::Write( FDataStreamBase* pStream ) const
 //-------------------------------
 
 //
-// use when linked list contains streamable types
+// use when linked list contains stream able types
 //
 template < class T >
 inline void ReadStreamableLinkList( CLinkList< T >& llist, FDataStreamBase* pStream )

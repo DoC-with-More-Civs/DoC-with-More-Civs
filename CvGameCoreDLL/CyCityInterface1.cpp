@@ -13,7 +13,7 @@
 // published python interface for CyCity
 //
 
-void CyCityPythonInterface1(python::class_<CyCity>& x)
+void CyCityPythonInterface1(boost::python::class_<CyCity>& x)
 {
 	OutputDebugString("Python Extension Module - CyCityPythonInterface1\n");
 
@@ -26,7 +26,7 @@ void CyCityPythonInterface1(python::class_<CyCity>& x)
 		.def("createGreatPeople", &CyCity::createGreatPeople, "void (int /*UnitTypes*/ eGreatPersonUnit, bool bIncrementThreshold) - Creates a great person in this city and whether it should increment the threshold to the next level")
 
 		.def("getCityPlotIndex", &CyCity::getCityPlotIndex, "int (CyPlot* pPlot)")
-		.def("getCityIndexPlot", &CyCity::getCityIndexPlot, python::return_value_policy<python::manage_new_object>(), "CyPlot* (int iIndex)")		
+		.def("getCityIndexPlot", &CyCity::getCityIndexPlot, boost::python::return_value_policy<boost::python::manage_new_object>(), "CyPlot* (int iIndex)")		
 		.def("canWork", &CyCity::canWork, "bool (CyPlot*) - can the city work the plot?")
 		.def("clearWorkingOverride", &CyCity::clearWorkingOverride, "void (int iIndex)")
 		.def("countNumImprovedPlots", &CyCity::countNumImprovedPlots, "int ()")
@@ -164,12 +164,12 @@ void CyCityPythonInterface1(python::class_<CyCity>& x)
 		.def("getY", &CyCity::getY, "int () - Y coordinate for the cities plot")
 		.def("at", &CyCity::at, "bool (iX, iY) - is the city at (iX, iY) ?")
 		.def("atPlot", &CyCity::atPlot, "bool (CyPlot) - is pPlot the cities plot?")
-		.def("plot", &CyCity::plot, python::return_value_policy<python::manage_new_object>(), "CyPlot () - returns cities plot instance")
+		.def("plot", &CyCity::plot, boost::python::return_value_policy<boost::python::manage_new_object>(), "CyPlot () - returns cities plot instance")
 		.def("isConnectedTo", &CyCity::isConnectedTo, "bool (CyCity*) - is city connected to CyCity* via the Trade Network?")
 		.def("isConnectedToCapital", &CyCity::isConnectedToCapital, "bool (iOwner) - connected to the capital?")
-		.def("area", &CyCity::area, python::return_value_policy<python::manage_new_object>(), "CyArea() () - returns CyArea instance for location of city")
-		.def("waterArea", &CyCity::waterArea, python::return_value_policy<python::manage_new_object>(), "CyArea* ()")
-		.def("getRallyPlot", &CyCity::getRallyPlot, python::return_value_policy<python::manage_new_object>(), "CyPlot () - returns city's rally plot instance")
+		.def("area", &CyCity::area, boost::python::return_value_policy<boost::python::manage_new_object>(), "CyArea() () - returns CyArea instance for location of city")
+		.def("waterArea", &CyCity::waterArea, boost::python::return_value_policy<boost::python::manage_new_object>(), "CyArea* ()")
+		.def("getRallyPlot", &CyCity::getRallyPlot, boost::python::return_value_policy<boost::python::manage_new_object>(), "CyPlot () - returns city's rally plot instance")
 		.def("getGameTurnFounded", &CyCity::getGameTurnFounded, "int () - GameTurn the city was founded")
 
 		.def("getGameTurnAcquired", &CyCity::getGameTurnAcquired, "int ()")

@@ -13,56 +13,56 @@ void CyStructsPythonInterface1()
 {
 	OutputDebugString("Python Extension Module - CyStructsPythonInterface1\n");
 
-	python::class_<NiPoint3>("NiPoint3")
-		.def(python::init<float, float, float>())	// ctor which takes 3 floats
+	boost::python::class_<NiPoint3>("NiPoint3")
+		.def(boost::python::init<float, float, float>())	// ctor which takes 3 floats
 		.def_readwrite("x", &NiPoint3::x)
 		.def_readwrite("y", &NiPoint3::y)
 		.def_readwrite("z", &NiPoint3::z)
 		;
 
-	python::class_<NiPoint2>("NiPoint2")
-		.def(python::init<float, float>())	// ctor which takes 2 floats
+	boost::python::class_<NiPoint2>("NiPoint2")
+		.def(boost::python::init<float, float>())	// ctor which takes 2 floats
 		.def_readwrite("x", &NiPoint2::x)
 		.def_readwrite("y", &NiPoint2::y)
 		;
 
-	python::class_<NiColorA>("NiColorA")
-		.def(python::init<float, float, float, float>())	// ctor which takes 4 floats
+	boost::python::class_<NiColorA>("NiColorA")
+		.def(boost::python::init<float, float, float, float>())	// ctor which takes 4 floats
 		.def_readwrite("r", &NiColorA::r)
 		.def_readwrite("g", &NiColorA::g)
 		.def_readwrite("b", &NiColorA::b)
 		.def_readwrite("a", &NiColorA::a)
 		;
 
-	python::class_<POINT>("POINT")
+	boost::python::class_<POINT>("POINT")
 		.def_readwrite("x", &POINT::x)
 		.def_readwrite("y", &POINT::y)
 		;
 
-	python::class_<XYCoords>("XYCoords")
-		.def(python::init<int, int>())	// ctor which takes 2 ints
+	boost::python::class_<XYCoords>("XYCoords")
+		.def(boost::python::init<int, int>())	// ctor which takes 2 ints
 		.def_readwrite("iX", &XYCoords::iX)
 		.def_readwrite("iY", &XYCoords::iY)
 		;
 
-	python::class_<IDInfo>("IDInfo")
+	boost::python::class_<IDInfo>("IDInfo")
 		.def_readwrite("eOwner", &IDInfo::eOwner)
 		.def_readwrite("iID", &IDInfo::iID)
 		;
 
-	python::class_<GameTurnInfo>("GameTurnInfo")
+	boost::python::class_<GameTurnInfo>("GameTurnInfo")
 		.def_readwrite("iMonthIncrement", &GameTurnInfo::iMonthIncrement)
 		.def_readwrite("iNumGameTurnsPerIncrement", &GameTurnInfo::iNumGameTurnsPerIncrement)
 		;
 
-	python::class_<OrderData>("OrderData")
+	boost::python::class_<OrderData>("OrderData")
 		.def_readwrite("eOrderType", &OrderData::eOrderType)
 		.def_readwrite("iData1", &OrderData::iData1)
 		.def_readwrite("iData2", &OrderData::iData2)
 		.def_readwrite("bSave", &OrderData::bSave)
 		;
 
-	python::class_<MissionData>("MissionData")
+	boost::python::class_<MissionData>("MissionData")
 		.def_readwrite("eMissionType", &MissionData::eMissionType)
 		.def_readwrite("iData1", &MissionData::iData1)
 		.def_readwrite("iData2", &MissionData::iData2)
@@ -70,14 +70,14 @@ void CyStructsPythonInterface1()
 		.def_readwrite("iPushTurn", &MissionData::iPushTurn)
 		;
 
-	python::class_<TradeData>("TradeData")
+	boost::python::class_<TradeData>("TradeData")
 		.def_readwrite("ItemType", &TradeData::m_eItemType)
 		.def_readwrite("iData", &TradeData::m_iData)
 		.def_readwrite("bOffering", &TradeData::m_bOffering)
 		.def_readwrite("bHidden", &TradeData::m_bHidden)
 		;
 
-	python::class_<EventTriggeredData>("EventTriggeredData")
+	boost::python::class_<EventTriggeredData>("EventTriggeredData")
 		.def_readwrite("iId", &EventTriggeredData::m_iId)
 		.def_readwrite("eTrigger", &EventTriggeredData::m_eTrigger)
 		.def_readwrite("iTurn", &EventTriggeredData::m_iTurn)
@@ -93,17 +93,17 @@ void CyStructsPythonInterface1()
 		.def_readwrite("eBuilding", &EventTriggeredData::m_eBuilding)
 		;
 
-	python::class_<EventMessage>("EventMessage")
+	boost::python::class_<EventMessage>("EventMessage")
 		.def_readwrite("iExpirationTurn", &EventMessage::iExpirationTurn)
 		.def("getDescription", &EventMessage::getDescription)
 		;
 
-	python::class_<FOWVis>("FOWVis")
+	boost::python::class_<FOWVis>("FOWVis")
 		.def_readwrite("uiCount", &FOWVis::uiCount)
 		.def("getOffsets", &FOWVis::getOffsets)  // array of "Offset" points
 		;
 
-	python::class_<PBGameSetupData>("PBGameSetupData")
+	boost::python::class_<PBGameSetupData>("PBGameSetupData")
 		.def_readwrite("iSize", &PBGameSetupData::iSize)
 		.def_readwrite("iClimate", &PBGameSetupData::iClimate)
 		.def_readwrite("iSeaLevel", &PBGameSetupData::iSeaLevel)
@@ -122,7 +122,7 @@ void CyStructsPythonInterface1()
 		.def("getMPOptionAt", &PBGameSetupData::getMPOptionAt)
 		;
 		
-	python::class_<PBPlayerSetupData>("PBPlayerSetupData")
+	boost::python::class_<PBPlayerSetupData>("PBPlayerSetupData")
 		.def_readwrite("iWho", &PBPlayerSetupData::iWho)
 		.def_readwrite("iCiv", &PBPlayerSetupData::iCiv)
 		.def_readwrite("iLeader", &PBPlayerSetupData::iLeader)
@@ -131,7 +131,7 @@ void CyStructsPythonInterface1()
 		.def("getStatusText", &PBPlayerSetupData::getStatusText)
 		;
 
-	python::class_<PBPlayerAdminData>("PBPlayerAdminData")
+	boost::python::class_<PBPlayerAdminData>("PBPlayerAdminData")
 		.def("getName", &PBPlayerAdminData::getName)
 		.def("getPing", &PBPlayerAdminData::getPing)
 		.def("getScore", &PBPlayerAdminData::getScore)
@@ -140,7 +140,7 @@ void CyStructsPythonInterface1()
 		.def_readwrite("bTurnActive", &PBPlayerAdminData::bTurnActive)
 		;
 	//Added ST
-	python::class_<CombatDetails>("CombatDetails")
+	boost::python::class_<CombatDetails>("CombatDetails")
 		.def_readwrite("iExtraCombatPercent", &CombatDetails::iExtraCombatPercent)
 		.def_readwrite("iAnimalCombatModifierTA", &CombatDetails::iAnimalCombatModifierTA)
 		.def_readwrite("iAIAnimalCombatModifierTA", &CombatDetails::iAIAnimalCombatModifierTA)

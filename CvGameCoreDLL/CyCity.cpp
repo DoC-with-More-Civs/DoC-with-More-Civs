@@ -2459,7 +2459,7 @@ OrderData* CyCity::getOrderFromQueue(int iIndex)
 	return m_pCity ? m_pCity->getOrderFromQueue(iIndex) : NULL;
 }
 
-void CyCity::setWallOverridePoints(const python::tuple& kPoints)
+void CyCity::setWallOverridePoints(const boost::python::tuple& kPoints)
 {
 	if (!m_pCity)
 		return;
@@ -2483,15 +2483,15 @@ void CyCity::setWallOverridePoints(const python::tuple& kPoints)
 	
 }
 
-python::tuple CyCity::getWallOverridePoints() const
+boost::python::tuple CyCity::getWallOverridePoints() const
 {
-	python::tuple tup = python::make_tuple();
+	boost::python::tuple tup = boost::python::make_tuple();
 	if (m_pCity)
 	{
 		std::vector< std::pair<float, float> > pointsVec = m_pCity->getWallOverridePoints();
 		uint i;
 		for(i=0;i<pointsVec.size();i++)
-			tup += python::make_tuple(pointsVec[i].first, pointsVec[i].second);
+			tup += boost::python::make_tuple(pointsVec[i].first, pointsVec[i].second);
 	}
 
 	return tup;

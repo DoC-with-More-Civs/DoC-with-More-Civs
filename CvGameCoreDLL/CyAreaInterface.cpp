@@ -9,7 +9,7 @@ void CyAreaPythonInterface()
 {
 	OutputDebugString("Python Extension Module - CyAreaPythonInterface\n");
 
-	python::class_<CyArea>("CyArea")
+	boost::python::class_<CyArea>("CyArea")
 		.def("isNone", &CyArea::isNone, "bool () - Returns whether the pointer points to a real Area")
 		
 		.def("calculateTotalBestNatureYield", &CyArea::calculateTotalBestNatureYield, "int () - Returns the total tile yield from the area")
@@ -47,7 +47,7 @@ void CyAreaPythonInterface()
 		.def("isBorderObstacle", &CyArea::isBorderObstacle, "bool (int (TeamTypes) iIndex)")
 
 		.def("getAreaAIType", &CyArea::getAreaAIType, "int (AreaAITypes) (int (TeamTypes) eIndex) - Returns the AreaAIType for this team in this area")
-		.def("getTargetCity", &CyArea::getTargetCity, python::return_value_policy<python::reference_existing_object>(), "CyCity* (int (PlayerTypes) eIndex) - Returns ?")
+		.def("getTargetCity", &CyArea::getTargetCity, boost::python::return_value_policy<boost::python::reference_existing_object>(), "CyCity* (int (PlayerTypes) eIndex) - Returns ?")
 		.def("getYieldRateModifier", &CyArea::getYieldRateModifier, "int (int (PlayerTypes) iPlayer, int (YieldTypes) iIndex2 - Returns ?")
 		.def("getNumTrainAIUnits", &CyArea::getNumTrainAIUnits, "int (int (PlayerTypes) iPlayer, int (UnitAITypes) iIndex2) - Returns ?")
 		.def("getNumAIUnits", &CyArea::getNumAIUnits, "int (int (PlayerTypes) iPlayer, int (UnitAITypes) iIndex2) - Returns the number of units for this AI which have this AI type")

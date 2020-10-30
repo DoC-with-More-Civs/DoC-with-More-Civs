@@ -470,16 +470,16 @@ public:
 	void addCityName(std::wstring szName);
 	int getNumCityNames();
 	std::wstring getCityName(int iIndex);
-	python::tuple firstCity(bool bRev);	// returns tuple of (CyCity, iterOut)
-	python::tuple nextCity(int iterIn, bool bRev);		// returns tuple of (CyCity, iterOut)
+	boost::python::tuple firstCity(bool bRev);	// returns tuple of (CyCity, iterOut)
+	boost::python::tuple nextCity(int iterIn, bool bRev);		// returns tuple of (CyCity, iterOut)
 	int getNumCities();
 	CyCity* getCity(int iID);
-	python::tuple firstUnit(bool bRev);	// returns tuple of (CyUnit, iterOut)
-	python::tuple nextUnit(int iterIn, bool bRev);		// returns tuple of (CyUnit, iterOut)
+	boost::python::tuple firstUnit(bool bRev);	// returns tuple of (CyUnit, iterOut)
+	boost::python::tuple nextUnit(int iterIn, bool bRev);		// returns tuple of (CyUnit, iterOut)
 	int getNumUnits();
 	CyUnit* getUnit(int iID);
-	python::tuple firstSelectionGroup(bool bRev);	// returns tuple of (CySelectionGroup, iterOut)
-	python::tuple nextSelectionGroup(int iterIn, bool bRev);	// returns tuple of (CySelectionGroup, iterOut)
+	boost::python::tuple firstSelectionGroup(bool bRev);	// returns tuple of (CySelectionGroup, iterOut)
+	boost::python::tuple nextSelectionGroup(int iterIn, bool bRev);	// returns tuple of (CySelectionGroup, iterOut)
 	int getNumSelectionGroups();
 	CySelectionGroup* getSelectionGroup(int iID);
 
