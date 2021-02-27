@@ -61,11 +61,9 @@ tMinorCities = (
 (700, (67, 48), iIndependent2, 'Tunis', 3, iCrossbowman, 2),	# Tunis
 (738, (118, 45), iIndependent2, 'Darllit', 2, iArcher, 1),		# Dali
 (800, (71, 59), iIndependent, 'Vindobona', 1, iCrossbowman, 1),	# Wien
-(800, (70, 61), iIndependent2, 'Praha', 1, iCrossbowman, 1),	# Prague
 (800, (58, 67), iIndependent, 'York', 1, iCrossbowman, 1),	# York
 #(800, (85, 69), iIndependent2, 'Beloozero', 1, iCrossbowman, 1),	# Beloozero
 (830, (66, 65), iIndependent, 'Hamburg', 2, iCrossbowman, 1),	# Hamburg
-(850, (66, 65), iIndependent, 'L&#252;beck', 2, iCrossbowman, 1),	# Lubeck
 #(860, (82, 68), iIndependent, 'Novgorod', 3, iCrossbowman, 3),		# Novgorod
 (870, (27, 28), iIndependent, 'Chan Chan', 2, iArcher, 2),			# Chan Chan
 (870, (26, 31), iNative, 'Tucume', 2, iPictaAucac, 1),			# Tucume
@@ -80,7 +78,9 @@ tMinorCities = (
 (1115, (131, 61), iIndependent, "Huining", 3, iHorseArcher, 3),		# Huining
 (1154, (96, 40), iIndependent, "Masqat", 3, iCrossbowman, 3),	# Muscat
 (1157, (69, 64), iIndependent, 'Brandenburg', 3, iCrossbowman, 2),		# Brandenburg
-(1157, (67, 60), iIndependent, 'Ansach', 3, iCrossbowman, 2),		# Ansach
+(1200, (67, 60), iIndependent, 'Ansach', 3, iCrossbowman, 2),		# Ansach
+(1200, (66, 65), iIndependent, 'L&#252;beck', 2, iCrossbowman, 1),	# Lubeck
+(1200, (70, 61), iIndependent2, 'Praha', 1, iCrossbowman, 1),	# Prague
 (1200, (92, 65), iBarbarian, 'Qazan', 2, iHorseArcher, 1),		# Kazan
 (1200, (78, 68), iIndependent, 'Riga', 3, iCrossbowman, 2),		# Riga
 #(1200, (89, 61), iBarbarian, 'Tsaritsyn', 3, iHorseArcher, 1),		# Tsaritsyn

@@ -28433,7 +28433,6 @@ BeginPlot
 	x=60,y=55
 	RiverNSDirection=0
 	isWOfRiver
-                RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -28449,7 +28448,6 @@ EndPlot
 BeginPlot
 	x=60,y=57
 	BonusType=BONUS_HORSE
-                RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -28899,7 +28897,6 @@ EndPlot
 BeginPlot
 	x=61,y=55
 	BonusType=BONUS_SHEEP
-	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -28918,7 +28915,6 @@ BeginPlot
 	x=61,y=58
 	RiverNSDirection=0
 	isWOfRiver
-                RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -28927,7 +28923,6 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=3
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
-                RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -29358,7 +29353,6 @@ EndPlot
 BeginPlot
 	x=62,y=55
 	BonusType=BONUS_WINE
-                RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -29379,7 +29373,6 @@ BeginPlot
 	x=62,y=58
 	isNOfRiver
 	RiverWEDirection=3
-                RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -31240,7 +31233,6 @@ BeginPlot
 	x=66,y=61
 	isNOfRiver
 	RiverWEDirection=3
-	ImprovementType=IMPROVEMENT_TOWN
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
